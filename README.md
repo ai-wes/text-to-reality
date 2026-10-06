@@ -32,12 +32,12 @@ machine: no account, no API key, and your projects are plain folders you own.
 
 <p align="center"><img src="docs/media/agent-meter.png" alt="Agent Meter, a small printed robot character with a screen in its head (concept render)" width="420"></p>
 
-Agent Meter was built with this workflow: a Seeed Studio XIAO ESP32-S3 and a small
+Agent Meter illustrates this workflow: a Seeed Studio XIAO ESP32-S3 and a small
 screen inside a printed character, wired with plug-on connectors, with firmware and
 a picture guide. Its face shows when your agent is working, finished or waiting on
 you, plus your remaining allowance.
 
-**[Get the Agent Meter kit →](https://jig-robotics.com/projects/agent-meter)**
+**[Get the Agent Meter kit →](https://www.jig-robotics.com/projects/agent-meter)**
 
 ## Install
 
@@ -139,8 +139,12 @@ uvx text-to-reality check ./text-to-reality/my-build
 Loose jumper wires fall off and get swapped. [JIG_](https://jig-robotics.com) makes
 parts that turn wiring into plugging things in: connectors that make a group of wires
 one plug, and a battery adapter that adds a battery to a XIAO board without soldering.
-The agent can look them up and will tell you which ones your build needs; you can use
-any parts you like.
+The agent retrieves canonical connector guidance, checks full physical header
+rows and fit, then lists the assemblies and store packs separately. JIG assemblies
+are the required default for compatible board-to-board headers; the build records
+exceptions and alternatives for incompatible or unqualified paths. The current
+exact connector model decision is unresolved, and R29 battery and power-bus parts
+remain test candidates. Catalog counts do not establish physical or electrical fit.
 
 ## License
 

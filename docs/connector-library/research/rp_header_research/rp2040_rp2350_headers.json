@@ -1,0 +1,681 @@
+{
+  "checked_utc": "2026-10-06",
+  "scope": "RP2040/RP2350 header-count catalog for jig planning",
+  "notation": "Two independent 1x20 rows require two 20-position combs; not a contiguous standard 2x20 connector. Bare holes have no mating gender. User-installed headers change gender/population. Never infer mechanical fit from count.",
+  "source_urls": {
+    "pico_family": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html",
+    "pico2_mechanical": "https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf",
+    "pico_debug": "https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf",
+    "xiao2040": "https://wiki.seeedstudio.com/XIAO-RP2040/",
+    "xiao2040_schematic": "https://files.seeedstudio.com/wiki/XIAO-RP2040/res/Seeed-Studio-XIAO-RP2040-v1.3.pdf",
+    "xiao_pitch": "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/",
+    "xiao2350": "https://wiki.seeedstudio.com/xiao_rp2350_arduino/",
+    "xiao2350_product": "https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html",
+    "xiao2350_schematic": "https://files.seeedstudio.com/wiki/XIAO-RP2350/res/Seeed-Studio-XIAO-RP2350-v1.0.pdf",
+    "feather": "https://www.adafruit.com/product/4884",
+    "feather_pinout": "https://learn.adafruit.com/adafruit-feather-rp2040-pico/pinouts",
+    "feather_spec": "https://learn.adafruit.com/adafruit-feather/feather-specification",
+    "qtpy": "https://www.adafruit.com/product/4900",
+    "qtpy_pinout": "https://learn.adafruit.com/adafruit-qt-py-2040/pinouts",
+    "promicro": "https://www.sparkfun.com/sparkfun-pro-micro-rp2040.html",
+    "promicro_guide": "https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide/all",
+    "promicro_pinout": "https://cdn.sparkfun.com/assets/e/2/7/6/b/ProMicroRP2040_Graphical_Datasheet.pdf"
+  },
+  "boards": [
+    {
+      "name": "Raspberry Pi Pico",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 2.54,
+        "populated": false,
+        "connector": "unpopulated SWD through-holes",
+        "location": "bottom edge",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Bottom debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico H",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 1.0,
+        "populated": true,
+        "connector": "keyed JST SH-compatible board header",
+        "location": "bottom edge",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Bottom debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico W",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 2.54,
+        "populated": false,
+        "connector": "unpopulated SWD through-holes",
+        "location": "central below MCU",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Antenna keepout; central debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico WH",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 1.0,
+        "populated": true,
+        "connector": "keyed JST SH-compatible board header",
+        "location": "central below MCU",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Antenna keepout; central debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico 2",
+      "mcu": "RP2350",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 2.54,
+        "populated": false,
+        "connector": "unpopulated SWD through-holes",
+        "location": "bottom edge",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Bottom debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico 2 with headers",
+      "mcu": "RP2350",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 1.0,
+        "populated": true,
+        "connector": "keyed JST SH-compatible board header",
+        "location": "bottom edge",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Bottom debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico 2 W",
+      "mcu": "RP2350",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 2.54,
+        "populated": false,
+        "connector": "unpopulated SWD through-holes",
+        "location": "central below MCU",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Antenna keepout; central debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Raspberry Pi Pico 2 W with headers",
+      "mcu": "RP2350",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 20,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated": true
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 20,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 40,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "revision_scope": "Exact official variant; PCB revision not pinned by family documentation",
+      "source_ids": [
+        "pico_family",
+        "pico2_mechanical",
+        "pico_debug"
+      ],
+      "debug_group": {
+        "row_count": 1,
+        "pins_per_row": 3,
+        "pitch_mm": 1.0,
+        "populated": true,
+        "connector": "keyed JST SH-compatible board header",
+        "location": "central below MCU",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Micro-USB overhang and BOOTSEL access",
+        "Antenna keepout; central debug connector/pads"
+      ],
+      "row_center_spacing_mm": 17.78
+    },
+    {
+      "name": "Seeed Studio XIAO RP2040 (standard, unsoldered)",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 7,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 14,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "sku": "102010428",
+      "revision_scope": "v1.3 schematic; excludes RP2040 Plus and presoldered variants",
+      "source_ids": [
+        "xiao2040",
+        "xiao2040_schematic",
+        "xiao_pitch"
+      ],
+      "debug_group": {
+        "connector": "underside SWD pads; not an edge comb",
+        "pitch_mm": null,
+        "populated": false,
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "USB-C housing, buttons, underside components/test pads; inspect clamp access"
+      ],
+      "count_basis": "14 edge contacts = 11 GPIO plus three power contacts; XIAO is not ESP32"
+    },
+    {
+      "name": "Seeed Studio XIAO RP2350 (unsoldered)",
+      "mcu": "RP2350",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 7,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 14,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "sku": "102010550",
+      "revision_scope": "v1.0 schematic; unsoldered product option, not presoldered SKU",
+      "source_ids": [
+        "xiao2350",
+        "xiao2350_product",
+        "xiao2350_schematic",
+        "xiao_pitch"
+      ],
+      "debug_group": {
+        "connector": "underside SWD debug pads",
+        "pitch_mm": null,
+        "populated": false,
+        "included_in_edge_combs": false
+      },
+      "other_contacts": "Eight additional GPIO on underside plus battery/debug pads; not extra edge-row contacts",
+      "mechanical_cautions": [
+        "USB-C housing, buttons, underside contacts/components; preserve battery-pad clearance"
+      ],
+      "count_basis": "Standard 14-contact XIAO edge footprint; advertised 19 GPIO does not mean 19 header positions"
+    },
+    {
+      "name": "Adafruit Feather RP2040",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 16,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 12,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 12,
+          "quantity": 1
+        },
+        {
+          "positions": 16,
+          "quantity": 1
+        }
+      ],
+      "edge_position_total": 28,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "sku": "4884",
+      "revision_scope": "2022-11-28 update: right-angle BOOT button; basic Feather RP2040 only",
+      "source_ids": [
+        "feather",
+        "feather_pinout",
+        "feather_spec"
+      ],
+      "row_center_spacing_mm": 20.32,
+      "debug_group": {
+        "row_count": 2,
+        "pins_per_row": 5,
+        "pitch_mm": 1.27,
+        "populated": false,
+        "connector": "unpopulated 10-contact SMT SWD footprint; backside SWCLK/SWDIO pads also present",
+        "included_in_edge_combs": false
+      },
+      "mechanical_cautions": [
+        "Unequal 16- and 12-position rows have longitudinal offset; not a 2x14 header",
+        "USB-C, JST-PH battery connector, STEMMA QT, and right-angle BOOT button need clearance"
+      ],
+      "population_note": "Loose header supplied; user soldering required"
+    },
+    {
+      "name": "Adafruit QT Py RP2040",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 7,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 14,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "sku": "4900",
+      "revision_scope": "2023-06-13 tactile-button update; product permits old/new buttons; edge count unchanged",
+      "source_ids": [
+        "qtpy",
+        "qtpy_pinout",
+        "xiao_pitch"
+      ],
+      "debug_group": {
+        "connector": "No dedicated header identified in consulted product/pinout documentation",
+        "verification": "not an assertion that all SWD pads are absent",
+        "included_in_edge_combs": false
+      },
+      "other_contacts": "Populated 4-contact STEMMA QT connector (1 mm JST SH-compatible); not part of edge rows",
+      "mechanical_cautions": [
+        "USB-C at one end and STEMMA QT at opposite end",
+        "Bottom-mounted RP2040/flash require clearance or carrier cutout"
+      ],
+      "population_note": "Loose 0.1-inch header supplied",
+      "count_basis": "11 GPIO breakout contacts plus power = 14 edges; two further GPIO are on QT connector"
+    },
+    {
+      "name": "SparkFun Pro Micro - RP2040",
+      "mcu": "RP2040",
+      "header_groups": [
+        {
+          "name": "edge row 1",
+          "row_count": 1,
+          "pins_per_row": 12,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        },
+        {
+          "name": "edge row 2",
+          "row_count": 1,
+          "pins_per_row": 12,
+          "pitch_mm": 2.54,
+          "gender": "none (unpopulated plated holes/pads)",
+          "populated": false
+        }
+      ],
+      "full_row_combs": [
+        {
+          "positions": 12,
+          "quantity": 2
+        }
+      ],
+      "edge_position_total": 24,
+      "fit_status": "count-and-pitch mapping only; physical fit not certified",
+      "sku": "DEV-18288",
+      "revision_scope": "Current DEV-18288; product notes DFM component-layout changes; exact PCB revision not identified",
+      "source_ids": [
+        "promicro",
+        "promicro_guide",
+        "promicro_pinout"
+      ],
+      "debug_group": {
+        "connector": "Two underside pads D/SWDIO and C/SWCLK; solder-wire access",
+        "pitch_mm": null,
+        "populated": false,
+        "included_in_edge_combs": false
+      },
+      "other_contacts": "Populated 4-contact Qwiic; separate underside USB pads",
+      "mechanical_cautions": [
+        "USB-C protrudes about 0.05 inch (1.27 mm)",
+        "0.8 mm PCB thickness; Qwiic connector and reset/boot buttons need clearance"
+      ],
+      "population_note": "Headers not installed; official guide explicitly uses two 1x12 male strips",
+      "count_basis": "Two 12-contact rows; 20 GPIO marketing count includes two Qwiic-only GPIO"
+    }
+  ],
+  "unresolved": [
+    "Exact PCB production revision should be checked on physical board for Pico and SparkFun",
+    "XIAO debug-pad geometry and QT Py SWD exposure are not fully characterized",
+    "Comb tooth thickness, lead-in, pin cross-section, insertion direction, keepouts and force remain unverified"
+  ]
+}

@@ -1,0 +1,62 @@
+# Choosing parts
+
+The goal is a build with no soldering, no crimping and no breadboard. Most of that
+is decided here.
+
+## Boards and modules
+
+- Prefer modules sold **with headers already soldered** (often listed as "pre-soldered"
+  or with an "H" suffix, like Raspberry Pi Pico H).
+- Prefer boards with USB-C and built-in USB programming (ESP32-S3, ESP32-C3, RP2040,
+  Seeed Studio XIAO).
+- For sensors and displays, prefer breakouts with standard 2.54 mm (0.1 in) header
+  pins. Grove/STEMMA QT/Qwiic cables are also solder-free; use one system per build.
+- Check voltage: most modern modules are 3.3 V. Note any 5 V module and how it's
+  powered.
+- Use `board_headers` to see how many header rows a board has and how many pins
+  are in each.
+
+## Wires and connectors
+
+Jumper wires work, but loose ones fall off and get swapped. JIG_ wire connectors
+group the wires going to one header row into a single plug:
+
+- **One connector per header row, with the same pin count as the whole row.**
+  A 7-pin row needs a 7-pin connector even if three pins are used.
+- Two historical nominal housing sizes: small (about 12 x 2 x 2 mm) and large
+  (about 14 x 2.5 x 2.5 mm). Measure the actual housings and wire insulation
+  against the exact approved model envelope; a size label does not approve fit.
+- `connectors_for_boards` returns the connectors and packs for a list of boards.
+  Put them in `bom.json` with `"jig_part": "jig-connector"`.
+
+Use `find_jig_parts` for the full list, including a battery adapter that lets a
+Seeed Studio XIAO run on a battery without soldering.
+
+Read [canonical connector usage](connector-usage.md) and call
+`connector_guidance` before selection. JIG is the required default for
+compatible board-to-board header wiring, with explicit exceptions for
+incompatible or unqualified paths. The current model choice is unresolved.
+R29 battery and bus-block candidates do not provide qualified power paths;
+bus blocks require soldering and electrically common their outputs.
+
+## Power
+
+- USB power from a computer or phone charger is simplest; say which.
+- For batteries, name the exact cell, connector and how it charges. Don't invent
+  battery life; give a calculation with its assumptions or say it needs testing.
+
+## Printed parts
+
+- Model the enclosure around the real module dimensions; write the dimensions you
+  assumed into the brief so they can be checked.
+- Leave room for the connectors and wires, and an opening for USB.
+- Avoid features under about 1 mm; they print poorly. Prefer snap fits or screws
+  that need no glue.
+- If text-to-cad's `cad` skill is installed, use it to model and export. Record the
+  source file and the exports (STL or 3MF) under `mechanical`.
+
+## The parts list
+
+Every part goes in `bom.json` with its quantity: boards, modules, connectors, wires,
+screws, printed parts and the USB cable. Note parts the person already owns. See
+[package format](package-format.md#bomjson).

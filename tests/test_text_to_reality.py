@@ -42,10 +42,11 @@ def test_new_project_lists_what_is_left(tmp_path):
     assert "parts: not finished" in report["problems"]
 
 
-def test_complete_package_passes_and_links_parts(tmp_path):
+def test_counts_only_header_package_is_blocked_and_links_parts(tmp_path):
     _, folder = finished_project(tmp_path)
     report = package.validate(folder)
-    assert report["complete"], report["problems"]
+    assert not report["complete"]
+    assert any("approved_connector_model_unresolved" in p for p in report["problems"])
     assert report["get_the_parts"] == [{"name": "JIG_ wire connectors", "url": "https://jig-robotics.com/support/dupont-housings"}]
 
 
@@ -93,7 +94,9 @@ def test_connectors_use_one_per_full_row():
     assert rows[19]["pack"] == "2 x 19-pin (printed to order)" and rows[19]["printed_to_order"]
     assert result["unknown_boards"] == ["mystery"]
     custom = catalog.connectors_for([{"board": "my board", "rows": [6, 6], "quantity": 3}], "large")
-    assert custom["connectors"] == [{"size": "large", "pins": 6, "connectors": 6, "pack": "5 x 6-pin", "packs_to_order": 2, "printed_to_order": False}]
+    assert custom["connectors"][0]["connectors"] == 6
+    assert custom["connectors"][0]["packs_to_order"] == 2
+    assert custom["connectors"][0]["fit_approved"] is False
 
 
 def test_history_and_outcomes(tmp_path):
@@ -109,10 +112,15 @@ def test_server_exposes_the_tools(tmp_path):
     server = create_server(Store(tmp_path))
     names = {tool.name for tool in asyncio.run(server.list_tools())}
     assert names == {"create_project", "list_projects", "project_status", "record_files", "set_stage", "check_package",
-                     "new_revision", "log_outcome", "build_history", "find_jig_parts", "board_headers", "connectors_for_boards"}
+                     "new_revision", "log_outcome", "build_history", "find_jig_parts", "board_headers", "connectors_for_boards", "connector_guidance"}
 
 
 def test_cli_check(tmp_path, capsys):
-    _, folder = finished_project(tmp_path)
+    store, folder = finished_project(tmp_path)
+    (folder / "wiring.json").write_text(json.dumps({
+        "connections": [{"from": "computer USB", "to": "device USB"}],
+        "connector_scope": {"kind": "no_header_wiring", "reason": "USB-only device"},
+    }))
+    store.record("desk-meter", "electronics", ["wiring.json"])
     assert main(["check", str(folder)]) == 0
     assert json.loads(capsys.readouterr().out)["complete"]

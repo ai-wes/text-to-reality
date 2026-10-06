@@ -1,0 +1,1460 @@
+{
+  "title": "JIG full-header module catalog research",
+  "checked_date": "2026-10-06",
+  "scope": "16 exact manufacturer modules/variants; geometry research only",
+  "method": "CAD plated-through-hole count where available; otherwise manufacturer product/hookup documentation. Null values are unresolved. No electrical, current, retention or actual JIG fit claim.",
+  "records": [
+    {
+      "manufacturer": "Adafruit",
+      "sku": "3886",
+      "product_name": "MPU-6050 6-DoF Accel and Gyro Sensor",
+      "revision_scope": "STEMMA QT board; current official PCB file",
+      "product_url": "https://www.adafruit.com/product/3886",
+      "header_groups": [
+        {
+          "ref": "JP2",
+          "rows": 1,
+          "positions": 6,
+          "pitch_mm": 2.54,
+          "footprint": "1X06_ROUND",
+          "origin_mm": [
+            12.7,
+            15.24
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "AD0"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "FSYNC_IN"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SCL_EXT"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDA_EXT"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CLKIN"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ]
+        },
+        {
+          "ref": "JP3",
+          "rows": 1,
+          "positions": 6,
+          "pitch_mm": 2.54,
+          "footprint": "1X06_ROUND_70",
+          "origin_mm": [
+            12.7,
+            2.54
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "INT"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 12,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        6,
+        6
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/3886",
+        "https://github.com/adafruit/Adafruit-MPU6050-PCB/blob/master/Adafruit%20MPU6050.brd"
+      ],
+      "cad_file_blob_sha": "d5ed5e629f8704068be3e8f00dcbc087844df193",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count",
+      "notes": [
+        "Two separated single rows of six, 12.7 mm apart; repeated GND must count",
+        "Not a compact 2x6 dual-row connector"
+      ]
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "4479",
+      "product_name": "LIS3MDL Triple-axis Magnetometer",
+      "revision_scope": "STEMMA QT board; current official PCB file",
+      "product_url": "https://www.adafruit.com/product/4479",
+      "header_groups": [
+        {
+          "ref": "JP4",
+          "rows": 1,
+          "positions": 6,
+          "pitch_mm": 2.54,
+          "footprint": "1X06_ROUND_70",
+          "origin_mm": [
+            12.7,
+            2.54
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "INT"
+            }
+          ]
+        },
+        {
+          "ref": "JP1",
+          "rows": 1,
+          "positions": 4,
+          "pitch_mm": 2.54,
+          "footprint": "1X04_ROUND",
+          "origin_mm": [
+            12.7,
+            15.24
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "DRDY"
+            },
+            {
+              "name": "3",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDO"
+            },
+            {
+              "name": "4",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "CS_5V"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 10,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        6,
+        4
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/4479",
+        "https://github.com/adafruit/Adafruit-LIS3MDL-PCB/blob/master/Adafruit%20LIS3MDL.brd"
+      ],
+      "cad_file_blob_sha": "d3174da30865f3c6c53165624196737e54fa420b",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count",
+      "notes": [
+        "One 6-position row plus one centered 4-position row, 12.7 mm apart; repeated GND must count"
+      ]
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "3297",
+      "product_name": "DRV8833 DC/Stepper Motor Driver Breakout",
+      "revision_scope": "official Eagle board revision supplied in repository",
+      "product_url": "https://www.adafruit.com/product/3297",
+      "header_groups": [
+        {
+          "ref": "JP2",
+          "rows": 1,
+          "positions": 2,
+          "pitch_mm": 2.54,
+          "footprint": "1X02_ROUND",
+          "origin_mm": [
+            12.954,
+            6.35
+          ],
+          "rotation": "R270",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "AOUT2"
+            },
+            {
+              "name": "2",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "AOUT1"
+            }
+          ]
+        },
+        {
+          "ref": "JP3",
+          "rows": 1,
+          "positions": 2,
+          "pitch_mm": 2.54,
+          "footprint": "1X02_ROUND",
+          "origin_mm": [
+            12.954,
+            11.43
+          ],
+          "rotation": "R270",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "BOUT1"
+            },
+            {
+              "name": "2",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "BOUT2"
+            }
+          ]
+        },
+        {
+          "ref": "JP4",
+          "rows": 1,
+          "positions": 2,
+          "pitch_mm": 2.54,
+          "footprint": "1X02_ROUND",
+          "origin_mm": [
+            12.954,
+            16.51
+          ],
+          "rotation": "R90",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "ASEN"
+            },
+            {
+              "name": "2",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "BSEN"
+            }
+          ]
+        },
+        {
+          "ref": "JP5",
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": 2.54,
+          "footprint": "1X08_ROUND_70",
+          "origin_mm": [
+            0.254,
+            11.43
+          ],
+          "rotation": "R270",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VMOTOR"
+            },
+            {
+              "name": "2",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "3",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "NFAULT"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "BIN1"
+            },
+            {
+              "name": "5",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "BIN2"
+            },
+            {
+              "name": "6",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "!SLEEP"
+            },
+            {
+              "name": "7",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "AIN2"
+            },
+            {
+              "name": "8",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "AIN1"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 14,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "screw-terminal footprint",
+          "positions": 2,
+          "pitch_mm": 3.5,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        8,
+        6
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/3297",
+        "https://github.com/adafruit/Adafruit-DRV8833-Motor-Driver-Breakout-PCB/blob/master/Adafruit%20DRV8833.brd"
+      ],
+      "cad_file_blob_sha": "b2bc1c841e3b60ba27142c3dd710f315846e6637",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count",
+      "notes": [
+        "CAD uses three 1x2 footprints on one edge, at one continuous 2.54 mm grid: six positions can be covered by one full-row 6-way geometry; other edge is 1x8",
+        "The 2-position 3.5 mm screw terminal is separate; no motor-current or power suitability claim"
+      ]
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "4566",
+      "product_name": "AHT20 Temperature & Humidity Sensor",
+      "revision_scope": "STEMMA QT; product updated to PTFE sensor Dec 2024; PCB revisions A/B/C exist",
+      "product_url": "https://www.adafruit.com/product/4566",
+      "header_groups": [
+        {
+          "ref": "JP2",
+          "rows": 1,
+          "positions": 4,
+          "pitch_mm": 2.54,
+          "footprint": "1X04_ROUND_76",
+          "origin_mm": [
+            12.7,
+            2.54
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "3",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "4",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SDA"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 4,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        4
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/4566",
+        "https://github.com/adafruit/Adafruit-AHT20-PCB/blob/master/Adafruit%20AHT20%20Temperature%20%26%20Humidity.brd"
+      ],
+      "cad_file_blob_sha": "f58fcaa713b9ab2a90df62bd4dceb49aa2530aca",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count"
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "3317",
+      "product_name": "VL53L0X Time of Flight Distance Sensor",
+      "revision_scope": "STEMMA QT July 21 2020 redesign; excludes earlier 7-position board",
+      "product_url": "https://www.adafruit.com/product/3317",
+      "header_groups": [
+        {
+          "ref": "JP2",
+          "rows": 1,
+          "positions": 6,
+          "pitch_mm": 2.54,
+          "footprint": "1X06_ROUND_70",
+          "origin_mm": [
+            12.7,
+            2.54
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GPIO"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "XSHUT"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 6,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        6
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/3317",
+        "https://github.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/blob/master/Adafruit%20VL530X%20STEMMA%20QT.brd"
+      ],
+      "cad_file_blob_sha": "d74f8525dc79cce1dbfa4cf5f9e203facfc38873",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count",
+      "notes": [
+        "Bundled loose 8-pin strip must not be mistaken for board row length",
+        "Current QT row is 6 positions; old 2.8V output was removed even though generic pinout guide still mentions it"
+      ]
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "326",
+      "product_name": "0.96-inch 128x64 Monochrome OLED",
+      "revision_scope": "STEMMA QT August 3 2020 redesign; April 2024 silkscreen refresh",
+      "product_url": "https://www.adafruit.com/product/326",
+      "header_groups": [
+        {
+          "ref": "JP2",
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": 2.54,
+          "footprint": "1X08_ROUND_70",
+          "origin_mm": [
+            14.605,
+            29.21
+          ],
+          "rotation": "R180",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "2",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "3",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "DC/SA0_5.0V"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "RST_5.0V"
+            },
+            {
+              "name": "5",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "CS_5.0V"
+            },
+            {
+              "name": "6",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "7",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "8",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 8,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        8
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/326",
+        "https://github.com/adafruit/Adafruit-128x64-Monochrome-OLED-PCB/blob/master/Adafruit%200.96in%20128x64%20OLED%20STEMMA%20QT.brd"
+      ],
+      "cad_file_blob_sha": "3e15e053ae726248d45ce16f08d1e68f96068661",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count"
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "2857",
+      "product_name": "SHT31-D Temperature & Humidity Sensor",
+      "revision_scope": "STEMMA QT April 6 2021 redesign; header ordering differs from original",
+      "product_url": "https://www.adafruit.com/product/2857",
+      "header_groups": [
+        {
+          "ref": "JP1",
+          "rows": 1,
+          "positions": 7,
+          "pitch_mm": 2.54,
+          "footprint": "1X07_ROUND_70",
+          "origin_mm": [
+            12.7,
+            2.54
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "3",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "4",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "5",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "ADDR"
+            },
+            {
+              "name": "6",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "!RESET"
+            },
+            {
+              "name": "7",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "ALERT"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 7,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        7
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/2857",
+        "https://github.com/adafruit/Adafruit-SHT31-Sensor-Breakout-PCB/blob/master/Adafruit%20SHT31-D%20STEMMA%20QT%20Breakout.brd"
+      ],
+      "cad_file_blob_sha": "c124dd97341deab467a4edef9473e2b90c82ac84",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count"
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "2652",
+      "product_name": "BME280 Temperature Humidity Pressure Sensor",
+      "revision_scope": "STEMMA QT Nov 11 2020 redesign; guide explicitly uses BMP280 QT PCB",
+      "product_url": "https://www.adafruit.com/product/2652",
+      "header_groups": [
+        {
+          "ref": "JP1",
+          "rows": 1,
+          "positions": 7,
+          "pitch_mm": 2.54,
+          "footprint": "1X07_ROUND_70",
+          "origin_mm": [
+            12.7,
+            2.54
+          ],
+          "rotation": "R0",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCK/SCL"
+            },
+            {
+              "name": "5",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDO/ADR"
+            },
+            {
+              "name": "6",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDI/SDA"
+            },
+            {
+              "name": "7",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "CS"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 7,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "STEMMA QT / Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        7
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/2652",
+        "https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB/blob/master/Adafruit%20BMP280%20STEMMA%20QT.brd",
+        "https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/downloads"
+      ],
+      "cad_file_blob_sha": "d562f51703abefaa66fe5d92005fac4db0fcce42",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count"
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "358",
+      "product_name": "1.8-inch Color TFT LCD with microSD Breakout",
+      "revision_scope": "EYESPI Dec 30 2022 revision; manufacturer states same header size/pinout; repository CAD documents legacy breakout",
+      "product_url": "https://www.adafruit.com/product/358",
+      "header_groups": [
+        {
+          "ref": "U$2",
+          "rows": 1,
+          "positions": 10,
+          "pitch_mm": 2.54,
+          "footprint": "1X10-BIG",
+          "origin_mm": [
+            -25.4,
+            0
+          ],
+          "rotation": "R270",
+          "pads": [
+            {
+              "name": "1",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "2",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "3",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "4",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "5",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "6",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "7",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "8",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "9",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            },
+            {
+              "name": "10",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90"
+            }
+          ]
+        }
+      ],
+      "total_header_positions": 10,
+      "header_state": "unpopulated plated through holes; loose male header supplied; soldering required for installed-pin use",
+      "gender": "none as shipped at header footprint; male if supplied strip installed",
+      "presoldered_variant": "not verified for this SKU",
+      "other_connectors": [
+        {
+          "type": "EYESPI FPC",
+          "positions": 18,
+          "pitch_mm": 0.5,
+          "comb_compatible": false
+        },
+        {
+          "type": "microSD socket",
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        10
+      ],
+      "candidate_status": "geometry candidate only; verify actual header installation, pin cross-section, access and retention before fit claim",
+      "source_urls": [
+        "https://www.adafruit.com/product/358",
+        "https://github.com/adafruit/Adafruit_1.8_Inch_TFT_Breakout_PCB/blob/master/jdt1800-bob.brd"
+      ],
+      "cad_file_blob_sha": "d0007aae7aaa0baa2ca2d3786d570c9e4dda9f1b",
+      "evidence": "Physical plated-through-hole count and pitch derived from manufacturer Eagle PCB package pads and placed elements, not GPIO/function count"
+    },
+    {
+      "manufacturer": "SparkFun",
+      "sku": "SEN-15440",
+      "product_name": "Atmospheric Sensor Breakout BME280 (Qwiic)",
+      "revision_scope": "Qwiic revision, official PCB blob b541de5335c5ecf9556e50a40ca30bff9d564f66",
+      "product_url": "https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html",
+      "header_groups": [
+        {
+          "rows": 1,
+          "positions": 6,
+          "pitch_mm": 2.54
+        }
+      ],
+      "total_header_positions": 6,
+      "header_state": "unpopulated PTH; solder header separately",
+      "gender": "none as shipped; user-selected header if soldered",
+      "presoldered_variant": "not verified",
+      "other_connectors": [
+        {
+          "type": "Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        6
+      ],
+      "candidate_status": "geometry candidate; physical fit and installed header population not tested",
+      "source_urls": [
+        "https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html",
+        "https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-overview",
+        "https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/blob/master/Hardware/Qwiic_Atmospheric_Sensor.brd"
+      ],
+      "notes": [
+        "CAD places J3 1x4 and J4 1x2 along same 2.54 mm line, one continuous six-position physical row"
+      ]
+    },
+    {
+      "manufacturer": "SparkFun",
+      "sku": "LCD-13003",
+      "product_name": "Micro OLED Breakout 0.66-inch 64x48",
+      "revision_scope": "original non-Qwiic product; PCB revision identifier not established",
+      "product_url": "https://www.sparkfun.com/sparkfun-micro-oled-breakout.html",
+      "header_groups": [
+        {
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": 2.54
+        },
+        {
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": 2.54
+        }
+      ],
+      "total_header_positions": 16,
+      "header_state": "unpopulated PTH; solder header separately",
+      "gender": "none as shipped; user-selected header if soldered",
+      "presoldered_variant": "LCD-13722",
+      "other_connectors": [],
+      "candidate_comb_positions": [
+        8,
+        8
+      ],
+      "candidate_status": "geometry candidate; physical fit and installed header population not tested",
+      "source_urls": [
+        "https://www.sparkfun.com/sparkfun-micro-oled-breakout.html",
+        "https://learn.sparkfun.com/tutorials/micro-oled-breakout-hookup-guide/all?print=1"
+      ],
+      "notes": [
+        "All 16 physical breakout positions count, including parallel-interface row; SPI/I2C hookup wire count is not full-header count",
+        "Two separated single rows, not compact dual-row 2x8 connector; row spacing not established"
+      ]
+    },
+    {
+      "manufacturer": "SparkFun",
+      "sku": "LCD-13722",
+      "product_name": "Micro OLED Breakout with Headers 0.66-inch 64x48",
+      "revision_scope": "with-headers SKU of original non-Qwiic Micro OLED",
+      "product_url": "https://www.sparkfun.com/sparkfun-micro-oled-breakout-with-headers.html",
+      "header_groups": [
+        {
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": 2.54
+        },
+        {
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": 2.54
+        }
+      ],
+      "total_header_positions": 16,
+      "header_state": "presoldered header version; exact population of both rows not independently verified",
+      "gender": "male; exact installed row population needs sample/photo check",
+      "presoldered_variant": "this SKU",
+      "other_connectors": [],
+      "candidate_comb_positions": [
+        8,
+        8
+      ],
+      "candidate_status": "geometry candidate; physical fit and installed header population not tested",
+      "source_urls": [
+        "https://www.sparkfun.com/sparkfun-micro-oled-breakout-with-headers.html",
+        "https://learn.sparkfun.com/tutorials/micro-oled-breakout-hookup-guide/all?print=1"
+      ],
+      "notes": [
+        "16 board breakout positions verified by manufacturer; do not equate that with verified as-shipped 16 populated male pins",
+        "Hold installed-header compatibility claim until current product image or sample confirms which row(s) populated"
+      ]
+    },
+    {
+      "manufacturer": "SparkFun",
+      "sku": "LCD-22495",
+      "product_name": "Micro OLED Breakout Qwiic 0.66-inch 64x48",
+      "revision_scope": "v11, changed mounting holes",
+      "product_url": "https://www.sparkfun.com/sparkfun-micro-oled-breakout-qwiic-lcd-22495.html",
+      "header_groups": [
+        {
+          "rows": 1,
+          "positions": 4,
+          "pitch_mm": 2.54
+        }
+      ],
+      "total_header_positions": 4,
+      "header_state": "unpopulated 1x4 PTH; solder header separately",
+      "gender": "none as shipped; user-selected header if soldered",
+      "presoldered_variant": "not verified",
+      "other_connectors": [
+        {
+          "type": "Qwiic JST SH",
+          "quantity": 2,
+          "positions_each": 4,
+          "pitch_mm": 1,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [
+        4
+      ],
+      "candidate_status": "geometry candidate; physical fit and installed header population not tested",
+      "source_urls": [
+        "https://www.sparkfun.com/sparkfun-micro-oled-breakout-qwiic-lcd-22495.html",
+        "https://docs.sparkfun.com/SparkFun_Qwiic_OLED_Arduino_Library/hug_micro_view/",
+        "https://learn.sparkfun.com/tutorials/qwiic-micro-oled-hookup-guide/hardwa"
+      ],
+      "notes": [
+        "Do not reuse 16-position original Micro OLED footprint for Qwiic version"
+      ]
+    },
+    {
+      "manufacturer": "Waveshare",
+      "sku": "24102",
+      "product_name": "0.96inch OLED Module (D), white",
+      "revision_scope": "SSD1315, 26x26 mm; D option specifically",
+      "product_url": "https://www.waveshare.com/0.96inch-oled-module-c.htm?sku=24102",
+      "header_groups": [
+        {
+          "rows": 1,
+          "positions": 7,
+          "pitch_mm": null
+        }
+      ],
+      "total_header_positions": 7,
+      "header_state": "manufacturer lists straight/vertical header and female-female 7-pin cable; current assembly needs visual verification",
+      "gender": "male inferred from supplied female-female cable; verify sample",
+      "presoldered_variant": "listed vertical-pin version; solder population not independently verified",
+      "other_connectors": [],
+      "candidate_comb_positions": [
+        7
+      ],
+      "candidate_status": "blocked pending measured/official dimensional pitch, pin geometry and assembly verification",
+      "source_urls": [
+        "https://www.waveshare.com/0.96inch-oled-module-c.htm?sku=24102",
+        "https://www.waveshare.com/wiki/0.96inch_OLED_Module"
+      ],
+      "notes": [
+        "Do not assume SSD1306 board geometry; this exact SKU uses SSD1315",
+        "The URL contains -c but selected SKU 24102 is D, white"
+      ]
+    },
+    {
+      "manufacturer": "Waveshare",
+      "sku": "9092",
+      "product_name": "0.96inch OLED (B)",
+      "revision_scope": "33x33.5 mm, SSD1306, vertical-header product B",
+      "product_url": "https://www.waveshare.com/product/displays/oled/0.96inch-oled-b.htm",
+      "header_groups": [
+        {
+          "rows": 1,
+          "positions": 8,
+          "pitch_mm": null
+        }
+      ],
+      "total_header_positions": 8,
+      "header_state": "manufacturer describes straight/vertical pinheader; populated geometry not independently inspected",
+      "gender": "male header described; sample verification required",
+      "presoldered_variant": "B vertical header; A is angled/horizontal and separate SKU",
+      "other_connectors": [],
+      "candidate_comb_positions": [
+        8
+      ],
+      "candidate_status": "blocked pending official pitch and header assembly verification",
+      "source_urls": [
+        "https://www.waveshare.com/product/displays/oled/0.96inch-oled-b.htm",
+        "https://www.waveshare.com/wiki/0.96inch_OLED_%28B%29"
+      ],
+      "notes": [
+        "Count includes physical NC position, yielding eight rather than seven active signal/power names"
+      ]
+    },
+    {
+      "manufacturer": "Waveshare",
+      "sku": "15867",
+      "product_name": "1.3inch LCD Module, 240x240 IPS",
+      "revision_scope": "current documentation specifies PH2.0 8-pin; older documentation mentions pinheader; revision must be identified",
+      "product_url": "https://www.waveshare.com/catalog/product/view/id/3637/s/1.3inch-lcd-module/category/356/",
+      "header_groups": [],
+      "total_header_positions": null,
+      "header_state": "not established; current module connects through PH2.0 8-pin",
+      "gender": "PH2.0 board connector; not an exposed 2.54 mm comb header",
+      "presoldered_variant": "not established",
+      "other_connectors": [
+        {
+          "type": "PH2.0",
+          "quantity": 1,
+          "positions_each": 8,
+          "pitch_mm": 2,
+          "comb_compatible": false
+        }
+      ],
+      "candidate_comb_positions": [],
+      "candidate_status": "not a validated exposed-header comb candidate; PH connector excluded",
+      "source_urls": [
+        "https://www.waveshare.com/wiki/1.3inch_LCD_Module",
+        "https://docs.waveshare.net/1.3inch_LCD_Module/",
+        "https://www.waveshare.com/catalog/product/view/id/3637/s/1.3inch-lcd-module/category/346/"
+      ],
+      "notes": [
+        "Eight interface wires are not proof of an exposed 1x8 2.54 mm header",
+        "Verify old/current hardware revision before any comb requirement"
+      ]
+    }
+  ]
+}

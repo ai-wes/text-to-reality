@@ -3,4 +3,5 @@ __pycache__/
 .venv/
 dist/
 .pytest_cache/
-text-to-reality/
+/text-to-reality/
+.history/

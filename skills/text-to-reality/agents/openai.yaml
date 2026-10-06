@@ -1,0 +1,4 @@
+interface:
+  display_name: "Text to reality"
+  short_description: "Turn an idea into a device anyone can build by following pictures."
+  default_prompt: "Use $text-to-reality to turn my idea into a build package: parts list, printed parts, wiring, code, a picture guide and tests."

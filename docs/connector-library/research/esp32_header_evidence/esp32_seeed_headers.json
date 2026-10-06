@@ -1,0 +1,1174 @@
+{
+  "schema_version": "neutral-header-catalog-0.1",
+  "scope": "Main side-row connector count mapping; no board or jig fit certified",
+  "records": [
+    {
+      "board_id": "seeed-xiao-esp32c3",
+      "manufacturer": "Seeed Studio",
+      "board_name": "XIAO ESP32C3",
+      "revision": "not pinned; base non-Plus model",
+      "header_groups": [
+        {
+          "group_id": "left",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "right",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 14,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 7,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "battery and debug pads excluded from main-header mapping"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender",
+        "XIAO family package document predates S3/C6; their exact mechanical resources must be reviewed before fit approval"
+      ],
+      "obstruction_notes": [
+        "USB-C shell and antenna/cable require clearance",
+        "Battery/debug underside pads are outside the two 7-position main rows"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf"
+        },
+        {
+          "kind": "manufacturer_packaging_variants",
+          "url": "https://www.seeedstudio.com/blog/2025/10/24/seeed-studio-xiao-now-available-in-tape-reel/"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "seeed-xiao-esp32s3",
+      "manufacturer": "Seeed Studio",
+      "board_name": "XIAO ESP32S3",
+      "revision": "not pinned; base non-Plus model",
+      "header_groups": [
+        {
+          "group_id": "left",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "right",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 14,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 7,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "battery and debug pads excluded from main-header mapping"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender",
+        "Current wiki covers S3, Sense and Plus together; Plus extra pads must not be added to this record",
+        "XIAO family package document predates S3/C6; their exact mechanical resources must be reviewed before fit approval"
+      ],
+      "obstruction_notes": [
+        "USB-C shell and antenna/cable require clearance",
+        "Battery/debug underside pads are outside the two 7-position main rows"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf"
+        },
+        {
+          "kind": "manufacturer_model_mechanical_resources",
+          "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#resources"
+        },
+        {
+          "kind": "manufacturer_packaging_variants",
+          "url": "https://www.seeedstudio.com/blog/2025/10/24/seeed-studio-xiao-now-available-in-tape-reel/"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "seeed-xiao-esp32s3-sense",
+      "manufacturer": "Seeed Studio",
+      "board_name": "XIAO ESP32S3 Sense",
+      "revision": "not pinned; camera/expansion configuration must be specified",
+      "header_groups": [
+        {
+          "group_id": "left",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "right",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 14,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 7,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "battery and debug pads excluded from main-header mapping",
+        "Sense B2B expansion connector excluded; pitch/contact count not verified"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender",
+        "Current wiki covers S3, Sense and Plus together; Plus extra pads must not be added to this record",
+        "XIAO family package document predates S3/C6; their exact mechanical resources must be reviewed before fit approval"
+      ],
+      "obstruction_notes": [
+        "USB-C shell and antenna/cable require clearance",
+        "Battery/debug underside pads are outside the two 7-position main rows",
+        "Sense expansion, camera, microSD and optional heat sink change envelope; B2B connector is not a single-row 2.54-mm header"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf"
+        },
+        {
+          "kind": "manufacturer_model_mechanical_resources",
+          "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#resources"
+        },
+        {
+          "kind": "manufacturer_packaging_variants",
+          "url": "https://www.seeedstudio.com/blog/2025/10/24/seeed-studio-xiao-now-available-in-tape-reel/"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "seeed-xiao-esp32c6",
+      "manufacturer": "Seeed Studio",
+      "board_name": "XIAO ESP32C6",
+      "revision": "v1.0 schematic linked by current wiki; assembly revision to verify",
+      "header_groups": [
+        {
+          "group_id": "left",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "right",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 7,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "none on bare board; user-installed header determines mating gender",
+          "populated_status": "bare castellated/through-hole side pads in default wiki configuration; pre-soldered retail options exist",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 14,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 7,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "battery and debug pads excluded from main-header mapping"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender",
+        "XIAO family package document predates S3/C6; their exact mechanical resources must be reviewed before fit approval"
+      ],
+      "obstruction_notes": [
+        "USB-C shell and antenna/cable require clearance",
+        "Battery/debug underside pads are outside the two 7-position main rows"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf"
+        },
+        {
+          "kind": "manufacturer_model_schematic",
+          "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf"
+        },
+        {
+          "kind": "manufacturer_packaging_variants",
+          "url": "https://www.seeedstudio.com/blog/2025/10/24/seeed-studio-xiao-now-available-in-tape-reel/"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-devkitc-v4-wroom32e-male",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-DevKitC V4, ESP32-WROOM-32E, male headers",
+      "revision": "V4",
+      "header_groups": [
+        {
+          "group_id": "J2",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 19,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 19,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 38,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 19,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "Two assembly gender options are explicitly documented; do not assume all DevKitC V4 units have male pins",
+        "Micro-USB, EN/BOOT buttons and module shield constrain connector body/overhang",
+        "SPI-flash pins remain physical header positions although unavailable for normal use"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_sch.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-devkitc-v4-wroom32e-female",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-DevKitC V4, ESP32-WROOM-32E, female headers",
+      "revision": "V4",
+      "header_groups": [
+        {
+          "group_id": "J2",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 19,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "female",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 19,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "female",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 38,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 19,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "Two assembly gender options are explicitly documented; do not assume all DevKitC V4 units have male pins",
+        "Micro-USB, EN/BOOT buttons and module shield constrain connector body/overhang",
+        "SPI-flash pins remain physical header positions although unavailable for normal use"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_sch.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-s3-devkitc-1-v1.0",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-S3-DevKitC-1",
+      "revision": "v1.0",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 22,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 22,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 44,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 22,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "high",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "Dual USB connectors/cables and EN/BOOT buttons require body clearance",
+        "RGB LED uses GPIO48 in v1.0 and GPIO38 in v1.1; main-row count remains 22 per side",
+        "Module memory variant changes electrical availability; counts are physical positions"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.0.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/PCB_ESP32-S3-DevKitC-1_V1_20210312CB.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-s3-devkitc-1-v1.1",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-S3-DevKitC-1",
+      "revision": "v1.1",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 22,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 22,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 44,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 22,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "Dual USB connectors/cables and EN/BOOT buttons require body clearance",
+        "RGB LED uses GPIO48 in v1.0 and GPIO38 in v1.1; main-row count remains 22 per side",
+        "Module memory variant changes electrical availability; counts are physical positions"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp_idf/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-s2-devkitc-1-v1",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-S2-DevKitC-1",
+      "revision": "v1.0",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 22,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 22,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 44,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 22,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "USB connector/cable, module shield and buttons need clearance checks"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s2/esp32-s2-devkitc-1/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/DXF_ESP32-S2-DevKitC-1_V1_20210511.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp-idf/SCH_ESP32-S2-DEVKITC-1_V1_20220817.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-c3-devkitc-02-v1.1",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-C3-DevKitC-02",
+      "revision": "v1.1 (schematic)",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 30,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 15,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "high",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "USB connector/cable, module shield and buttons need clearance checks"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitc-02/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITC-02_V1_1_20210126A.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-c3-devkitm-1-v1.0",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-C3-DevKitM-1",
+      "revision": "v1.0 (schematic)",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 30,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 15,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "high",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "USB connector/cable, module shield and buttons need clearance checks"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitm-1/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITM-1_V1_20200915A.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-c6-devkitc-1-v1.1",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-C6-DevKitC-1",
+      "revision": "v1.1",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 16,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 16,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J5",
+          "role": "current_measurement",
+          "row_count": 1,
+          "pins_per_row": 2,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated_status": "populated; jumper fitted by default",
+          "missing_positions": [],
+          "shroud": "jumper cap",
+          "orientation": "straight in initial lots; curved from PW-2023-02-0139"
+        }
+      ],
+      "main_header_position_count": 32,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 16,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "J5 current-measurement header, nominal 1x2 2.54 mm; jumper fitted by default, not included in side-row demand"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "high",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender",
+        "Linked dimensions drawing is v1.2; v1.1 fit must be checked against its own drawing/physical sample"
+      ],
+      "obstruction_notes": [
+        "Position 16 on each main row is NC but still counts as a physical position",
+        "J5 current jumper and two USB-C ports require clearance",
+        "J5 changed from straight to curved headers for PW-2023-02-0139 and later; inspect lot"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide_v1.1.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-dimensions_v1.2.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-schematics.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-c6-devkitc-1-v1.2",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-C6-DevKitC-1",
+      "revision": "v1.2",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 16,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 16,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "explicit primary schematic/drawing",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J5",
+          "role": "current_measurement",
+          "row_count": 1,
+          "pins_per_row": 2,
+          "pitch_mm": 2.54,
+          "gender": "male",
+          "populated_status": "populated; jumper fitted by default",
+          "missing_positions": [],
+          "shroud": "jumper cap",
+          "orientation": "straight in initial lots; curved from PW-2023-02-0139"
+        }
+      ],
+      "main_header_position_count": 32,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 16,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "J5 current-measurement header, nominal 1x2 2.54 mm; jumper fitted by default, not included in side-row demand"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "high",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "Position 16 on each main row is NC but still counts as a physical position",
+        "J5 current jumper and two USB-C ports require clearance",
+        "J5 changed from straight to curved headers for PW-2023-02-0139 and later; inspect lot"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-dimensions_v1.2.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-schematics_v1.2.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-c6-devkitm-1-v1.0",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-C6-DevKitM-1",
+      "revision": "v1.0 (schematic)",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 30,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 15,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "J5 current-measurement header with factory jumper; contact geometry not independently verified, not included in side-row demand"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender"
+      ],
+      "obstruction_notes": [
+        "Two USB-C ports and J5 current jumper require clearance",
+        "NC/clock-reserved positions remain physical contacts"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitm-1/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-dimensions.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-schematics.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    },
+    {
+      "board_id": "espressif-esp32-h2-devkitm-1-v1.3",
+      "manufacturer": "Espressif",
+      "board_name": "ESP32-H2-DevKitM-1",
+      "revision": "v1.3 (schematic)",
+      "header_groups": [
+        {
+          "group_id": "J1",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        },
+        {
+          "group_id": "J3",
+          "role": "main_io",
+          "row_count": 1,
+          "pins_per_row": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal; dimensional source linked but exact pitch not independently extracted",
+          "gender": "male (documented board configuration; verify purchased unit)",
+          "populated_status": "populated pin headers in documented configuration",
+          "missing_positions": [],
+          "shroud": "unshrouded nominal configuration; actual body envelope unverified"
+        }
+      ],
+      "main_header_position_count": 30,
+      "full_single_row_connector_needs": [
+        {
+          "quantity": 2,
+          "positions": 15,
+          "row_count": 1,
+          "pitch_mm": 2.54,
+          "scope": "two main side rows only"
+        }
+      ],
+      "other_connectors_or_pads": [
+        "J5 current-measurement header with factory jumper; contact geometry not independently verified, not included in side-row demand"
+      ],
+      "fit_status": "not_certified",
+      "confidence": {
+        "main_row_count": "high",
+        "pitch": "provisional",
+        "mechanical_fit": "not_validated"
+      },
+      "unknowns": [
+        "row-to-row center spacing not independently extracted",
+        "connector mating height, body width and overhang clearance not validated",
+        "verify physical board revision and assembly option before selecting mating gender",
+        "Mechanical drawing is v1.2 while schematic is v1.3; confirm physical fit on v1.3 sample"
+      ],
+      "obstruction_notes": [
+        "Two USB-C ports and J5 current jumper require clearance",
+        "NC/clock-reserved positions remain physical contacts"
+      ],
+      "sources": [
+        {
+          "kind": "manufacturer_user_guide_pinout",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html"
+        },
+        {
+          "kind": "manufacturer_mechanical",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-h2-devkitm-1_v1.2_dimension.pdf"
+        },
+        {
+          "kind": "manufacturer_schematic",
+          "url": "https://dl.espressif.com/dl/schematics/esp32-h2-devkitm-1_v1.3_schematics.pdf"
+        }
+      ],
+      "checked_date": "2026-10-06"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "ESP32 DevKit 30-pin / 38-pin generic clone",
+      "reason": "No exact manufacturer and revision; not a reliable physical identity"
+    }
+  ],
+  "limitations": [
+    "Count includes power, ground, reserved and NC positions, not just GPIO",
+    "Two single-row connectors are distinct from one adjacent 2xN dual-row connector",
+    "Pitch provisional flags must survive downstream integration",
+    "Main-row mapping excludes USB, antenna, B2B and underside pads; auxiliary headers explicitly distinguished"
+  ]
+}

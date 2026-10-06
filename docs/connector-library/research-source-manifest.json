@@ -1,0 +1,646 @@
+{
+  "bundle_version": 1,
+  "created_utc": "2026-10-06T18:40:18.391189+00:00",
+  "purpose": "Source-preserving research handoff for catalog integration; not a compatibility certification",
+  "record_count_semantics": "Counts are supplied research records, including explicit revisions and assembly variants. They are not deduplicated base-board totals. Index entries are references, not additional board records.",
+  "constraints": [
+    "Keep physical opposite edge rows separate; do not flatten multi-row connectors",
+    "Do not infer physical fit from pin count, nominal pitch, or footprint",
+    "Retain manufacturer, revision, SKU, gender, populated status, source evidence and unresolved qualifications",
+    "Packaging does not alter repository schema or publish a catalog",
+    "Overlapping family names across MCU types are not duplicate variants"
+  ],
+  "batches": [
+    {
+      "directory": "esp32_header_evidence",
+      "catalog_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "records_key": "records",
+      "record_count": 15
+    },
+    {
+      "directory": "rp_header_research",
+      "catalog_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "records_key": "boards",
+      "record_count": 13
+    },
+    {
+      "directory": "arduino_header_research",
+      "catalog_file": "arduino_header_research/arduino_headers.json",
+      "records_key": "boards",
+      "record_count": 12
+    },
+    {
+      "directory": "module_header_research",
+      "catalog_file": "module_header_research/jig_module_header_catalog.json",
+      "records_key": "records",
+      "record_count": 16
+    }
+  ],
+  "record_index": [
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/0",
+      "source_id": "seeed-xiao-esp32c3",
+      "name": "XIAO ESP32C3"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/1",
+      "source_id": "seeed-xiao-esp32s3",
+      "name": "XIAO ESP32S3"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/2",
+      "source_id": "seeed-xiao-esp32s3-sense",
+      "name": "XIAO ESP32S3 Sense"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/3",
+      "source_id": "seeed-xiao-esp32c6",
+      "name": "XIAO ESP32C6"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/4",
+      "source_id": "espressif-esp32-devkitc-v4-wroom32e-male",
+      "name": "ESP32-DevKitC V4, ESP32-WROOM-32E, male headers"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/5",
+      "source_id": "espressif-esp32-devkitc-v4-wroom32e-female",
+      "name": "ESP32-DevKitC V4, ESP32-WROOM-32E, female headers"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/6",
+      "source_id": "espressif-esp32-s3-devkitc-1-v1.0",
+      "name": "ESP32-S3-DevKitC-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/7",
+      "source_id": "espressif-esp32-s3-devkitc-1-v1.1",
+      "name": "ESP32-S3-DevKitC-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/8",
+      "source_id": "espressif-esp32-s2-devkitc-1-v1",
+      "name": "ESP32-S2-DevKitC-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/9",
+      "source_id": "espressif-esp32-c3-devkitc-02-v1.1",
+      "name": "ESP32-C3-DevKitC-02"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/10",
+      "source_id": "espressif-esp32-c3-devkitm-1-v1.0",
+      "name": "ESP32-C3-DevKitM-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/11",
+      "source_id": "espressif-esp32-c6-devkitc-1-v1.1",
+      "name": "ESP32-C6-DevKitC-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/12",
+      "source_id": "espressif-esp32-c6-devkitc-1-v1.2",
+      "name": "ESP32-C6-DevKitC-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/13",
+      "source_id": "espressif-esp32-c6-devkitm-1-v1.0",
+      "name": "ESP32-C6-DevKitM-1"
+    },
+    {
+      "batch": "esp32_header_evidence",
+      "source_file": "esp32_header_evidence/esp32_seeed_headers.json",
+      "json_pointer": "/records/14",
+      "source_id": "espressif-esp32-h2-devkitm-1-v1.3",
+      "name": "ESP32-H2-DevKitM-1"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/0",
+      "source_id": null,
+      "name": "Raspberry Pi Pico"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/1",
+      "source_id": null,
+      "name": "Raspberry Pi Pico H"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/2",
+      "source_id": null,
+      "name": "Raspberry Pi Pico W"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/3",
+      "source_id": null,
+      "name": "Raspberry Pi Pico WH"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/4",
+      "source_id": null,
+      "name": "Raspberry Pi Pico 2"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/5",
+      "source_id": null,
+      "name": "Raspberry Pi Pico 2 with headers"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/6",
+      "source_id": null,
+      "name": "Raspberry Pi Pico 2 W"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/7",
+      "source_id": null,
+      "name": "Raspberry Pi Pico 2 W with headers"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/8",
+      "source_id": null,
+      "name": "Seeed Studio XIAO RP2040 (standard, unsoldered)"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/9",
+      "source_id": null,
+      "name": "Seeed Studio XIAO RP2350 (unsoldered)"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/10",
+      "source_id": null,
+      "name": "Adafruit Feather RP2040"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/11",
+      "source_id": null,
+      "name": "Adafruit QT Py RP2040"
+    },
+    {
+      "batch": "rp_header_research",
+      "source_file": "rp_header_research/rp2040_rp2350_headers.json",
+      "json_pointer": "/boards/12",
+      "source_id": null,
+      "name": "SparkFun Pro Micro - RP2040"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/0",
+      "source_id": "nano_classic",
+      "name": "Nano (classic 3.x)"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/1",
+      "source_id": "nano_every",
+      "name": "Nano Every"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/2",
+      "source_id": "nano_33_iot",
+      "name": "Nano 33 IoT"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/3",
+      "source_id": "nano_33_ble",
+      "name": "Nano 33 BLE (original)"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/4",
+      "source_id": "nano_33_ble_rev2",
+      "name": "Nano 33 BLE Rev2"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/5",
+      "source_id": "nano_esp32",
+      "name": "Nano ESP32"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/6",
+      "source_id": "uno_r3",
+      "name": "UNO R3 (DIP)"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/7",
+      "source_id": "uno_r4_minima",
+      "name": "UNO R4 Minima"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/8",
+      "source_id": "uno_r4_wifi",
+      "name": "UNO R4 WiFi"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/9",
+      "source_id": "leonardo",
+      "name": "Leonardo with headers"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/10",
+      "source_id": "mega_2560_r3",
+      "name": "Mega 2560 Rev3"
+    },
+    {
+      "batch": "arduino_header_research",
+      "source_file": "arduino_header_research/arduino_headers.json",
+      "json_pointer": "/boards/11",
+      "source_id": "micro",
+      "name": "Micro with headers"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/0",
+      "source_id": "Adafruit-3886",
+      "name": "MPU-6050 6-DoF Accel and Gyro Sensor"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/1",
+      "source_id": "Adafruit-4479",
+      "name": "LIS3MDL Triple-axis Magnetometer"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/2",
+      "source_id": "Adafruit-3297",
+      "name": "DRV8833 DC/Stepper Motor Driver Breakout"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/3",
+      "source_id": "Adafruit-4566",
+      "name": "AHT20 Temperature & Humidity Sensor"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/4",
+      "source_id": "Adafruit-3317",
+      "name": "VL53L0X Time of Flight Distance Sensor"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/5",
+      "source_id": "Adafruit-326",
+      "name": "0.96-inch 128x64 Monochrome OLED"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/6",
+      "source_id": "Adafruit-2857",
+      "name": "SHT31-D Temperature & Humidity Sensor"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/7",
+      "source_id": "Adafruit-2652",
+      "name": "BME280 Temperature Humidity Pressure Sensor"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/8",
+      "source_id": "Adafruit-358",
+      "name": "1.8-inch Color TFT LCD with microSD Breakout"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/9",
+      "source_id": "SparkFun-SEN-15440",
+      "name": "Atmospheric Sensor Breakout BME280 (Qwiic)"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/10",
+      "source_id": "SparkFun-LCD-13003",
+      "name": "Micro OLED Breakout 0.66-inch 64x48"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/11",
+      "source_id": "SparkFun-LCD-13722",
+      "name": "Micro OLED Breakout with Headers 0.66-inch 64x48"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/12",
+      "source_id": "SparkFun-LCD-22495",
+      "name": "Micro OLED Breakout Qwiic 0.66-inch 64x48"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/13",
+      "source_id": "Waveshare-24102",
+      "name": "0.96inch OLED Module (D), white"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/14",
+      "source_id": "Waveshare-9092",
+      "name": "0.96inch OLED (B)"
+    },
+    {
+      "batch": "module_header_research",
+      "source_file": "module_header_research/jig_module_header_catalog.json",
+      "json_pointer": "/records/15",
+      "source_id": "Waveshare-15867",
+      "name": "1.3inch LCD Module, 240x240 IPS"
+    }
+  ],
+  "files": [
+    {
+      "path": "esp32_header_evidence/EVIDENCE.md",
+      "bytes": 3632,
+      "sha256": "ec775e1370fff242f80dcf1f6440b7ba5be02c19f325374f875f1cd36e49867a"
+    },
+    {
+      "path": "esp32_header_evidence/build_catalog.py",
+      "bytes": 9761,
+      "sha256": "b210509da0cbf5771adcde43e38347ec182ec9a3c391331fe717b61181fa16ba"
+    },
+    {
+      "path": "esp32_header_evidence/esp32_seeed_headers.csv",
+      "bytes": 17962,
+      "sha256": "767842de4e6e110ef06158900324915fc017a68bf23c7bff338893cb39b5eeae"
+    },
+    {
+      "path": "esp32_header_evidence/esp32_seeed_headers.json",
+      "bytes": 47050,
+      "sha256": "12f1f297bb588fbacfd1cc67e350d28db5558bcb0fb72faf701b55f1de4c8f21"
+    },
+    {
+      "path": "rp_header_research/build_catalog.py",
+      "bytes": 7571,
+      "sha256": "fb219aa8b613820b68ea3ffc06b6b018e816034bfc9ea9768a0bd9b113cf0f41"
+    },
+    {
+      "path": "rp_header_research/rp2040_rp2350_headers.json",
+      "bytes": 21433,
+      "sha256": "f41e3ac8fc89b222b83bf244feba25955cd727e53c2129d4e4bba18645befb27"
+    },
+    {
+      "path": "rp_header_research/source_summary.md",
+      "bytes": 4339,
+      "sha256": "7168033a23a5eb526e9b57b55a13447fe0001a2f87053d2a5994cd7209cf4be2"
+    },
+    {
+      "path": "arduino_header_research/A000005-ds.pdf",
+      "bytes": 2159577,
+      "sha256": "704189acd4411bcab9284514d4fa5b66d2f71562577b143958cf2c7ca5656c0e"
+    },
+    {
+      "path": "arduino_header_research/A000005-mech.png",
+      "bytes": 114238,
+      "sha256": "9b4940875811539ff200df027fbc8d607ed731e23b7defb220766c989708dd84"
+    },
+    {
+      "path": "arduino_header_research/A000005.pdf",
+      "bytes": 235594,
+      "sha256": "2b9140b09cb66c788c1c4e01da33498a63e245fc133ac7d32697e140b00ea317"
+    },
+    {
+      "path": "arduino_header_research/A000005.png",
+      "bytes": 149271,
+      "sha256": "ea583c1e9be5c764d5134059f7e21438a91741be555d15a0b7784243ae8a307e"
+    },
+    {
+      "path": "arduino_header_research/A000066.pdf",
+      "bytes": 345772,
+      "sha256": "088b4d7d776abf443cb050c31875221aa5fc7f0533470b33e035c249cf240007"
+    },
+    {
+      "path": "arduino_header_research/A000066.png",
+      "bytes": 180415,
+      "sha256": "96e744a8985b2d3aed5ec97a633662f5810cdc5314d8d33e335db4eb3b5fd7f0"
+    },
+    {
+      "path": "arduino_header_research/A000067.pdf",
+      "bytes": 455940,
+      "sha256": "ecc6204d0683269e8ee3f328764c92932121f2d98daca7fd3ff3ea45bd4d090f"
+    },
+    {
+      "path": "arduino_header_research/A000067.png",
+      "bytes": 213223,
+      "sha256": "228854fe22b4769266720515abead7258402c8334b9aeef02268fcf7baa6c3c7"
+    },
+    {
+      "path": "arduino_header_research/ABX00027.pdf",
+      "bytes": 233849,
+      "sha256": "ffe2b9ea2a77b01564906a6562544d7a08ff41e3d5bf7b88e7482b1674b5dc7d"
+    },
+    {
+      "path": "arduino_header_research/ABX00027.png",
+      "bytes": 152373,
+      "sha256": "a0266a26f75a591737595611ba56971b45e23bc9759d87a539fd012616a3c9a8"
+    },
+    {
+      "path": "arduino_header_research/ABX00028.pdf",
+      "bytes": 237946,
+      "sha256": "028f44dd75001dcdfe181e581ea8a51385af2ccc65e68012f87dc9cc1252f2bb"
+    },
+    {
+      "path": "arduino_header_research/ABX00028.png",
+      "bytes": 156820,
+      "sha256": "d0bedca67658db9c33ed3d226906ffd25408c4477aceeba0c2eb556b4f0b4a7d"
+    },
+    {
+      "path": "arduino_header_research/ABX00030.pdf",
+      "bytes": 191087,
+      "sha256": "c7a26cd478fba8a5401d3b1135ab6c6d4cecd54787dfbaaac0614c4e7b0342e6"
+    },
+    {
+      "path": "arduino_header_research/ABX00030.png",
+      "bytes": 150332,
+      "sha256": "9d1864f1c9db447fb8fabcd298b330e2bb482975d6a0d1144ac0922ba4ea017e"
+    },
+    {
+      "path": "arduino_header_research/ABX00071.pdf",
+      "bytes": 2084148,
+      "sha256": "913ac69dcbfa46aa5e78be797222cbd9c7525983c5e41997fba56234aa3df1bd"
+    },
+    {
+      "path": "arduino_header_research/ABX00071.png",
+      "bytes": 171904,
+      "sha256": "2450bd19f03b00b6f6e5f01c2946f42c23ee56ca002c16bf3d19b244fa771280"
+    },
+    {
+      "path": "arduino_header_research/ABX00080-ds.pdf",
+      "bytes": 2246694,
+      "sha256": "64ffe173cf23fbbb8bf057e897373724996caaf0bf542b5c4597da02d01e1353"
+    },
+    {
+      "path": "arduino_header_research/ABX00080-mech.png",
+      "bytes": 77006,
+      "sha256": "49b7364b60f75be7ad121969f65ee41415daeac87d6f37767e8e8cc300434fdd"
+    },
+    {
+      "path": "arduino_header_research/ABX00080.pdf",
+      "bytes": 315055,
+      "sha256": "853b0664a1cf51040738a51385693f9a5c615d4337035d6b36c3c00f6ff76f3c"
+    },
+    {
+      "path": "arduino_header_research/ABX00080.png",
+      "bytes": 186294,
+      "sha256": "a0c0948690381f416a8b820afe488af572ffde876244b1c58549ab569e8de92f"
+    },
+    {
+      "path": "arduino_header_research/ABX00083-ds.pdf",
+      "bytes": 2451301,
+      "sha256": "496ce83c0a1e52761a06dc651d534abcc53ffa3dadeaff9e9ff2190936e7e5e5"
+    },
+    {
+      "path": "arduino_header_research/ABX00083-mech.png",
+      "bytes": 81382,
+      "sha256": "a0ba57b52d08b1d57186061166c10a968daea985e2a2966818c108ec1d980c53"
+    },
+    {
+      "path": "arduino_header_research/ABX00083.pdf",
+      "bytes": 1946902,
+      "sha256": "2418c2a90c9099d20f3425647607ce0b2ba426a0f1ff04ced50416fc789dc47d"
+    },
+    {
+      "path": "arduino_header_research/ABX00083.png",
+      "bytes": 159535,
+      "sha256": "4f306e7af536e1ef27a5154cf6fae13b5c40b197391c2306d57c1311244c538b"
+    },
+    {
+      "path": "arduino_header_research/ABX00087.pdf",
+      "bytes": 2490523,
+      "sha256": "5c4dc5fcee15d3f870eb3a01f0c114993032f39e4d8facc52f84dd75d7ce26cc"
+    },
+    {
+      "path": "arduino_header_research/ABX00087.png",
+      "bytes": 273859,
+      "sha256": "1ed3074a088859a22a7c2b9652866d744f283569bab6a0d3daefbe31248d8c80"
+    },
+    {
+      "path": "arduino_header_research/arduino_headers.json",
+      "bytes": 53066,
+      "sha256": "0838e8d31674766765da6cb5fd7ccce30a0ce743ffeac0b6f48e02f6aa488ef4"
+    },
+    {
+      "path": "arduino_header_research/build_catalog.py",
+      "bytes": 9589,
+      "sha256": "8f4f254215ae2e4dec775b247af3220955c31e792cd2a5afb503f75837b0a3ac"
+    },
+    {
+      "path": "arduino_header_research/evidence_summary.md",
+      "bytes": 4328,
+      "sha256": "1b8582c8253fda0ef18ed6ca9db93a366b588cb11c7312e3fd3afdeded4a6346"
+    },
+    {
+      "path": "arduino_header_research/micro.pdf",
+      "bytes": 263963,
+      "sha256": "4e39fad1819d23b646e83af885cd129276ffe7a736c620f7c7959ebe56706a4f"
+    },
+    {
+      "path": "arduino_header_research/micro.png",
+      "bytes": 130201,
+      "sha256": "2a255df3a9725ebcbb9b25c295afb52573d090d5aa08bb0c9dca64defeda387a"
+    },
+    {
+      "path": "module_header_research/jig_module_cad_evidence.json",
+      "bytes": 21957,
+      "sha256": "bfb1a68b2090843f2daed7e8a77c4765f5638444e4d439596583a1e91aea378e"
+    },
+    {
+      "path": "module_header_research/jig_module_header_catalog.json",
+      "bytes": 46345,
+      "sha256": "1524fc6992aaac422a096ce31bab7f109c956aef2dd1a86408b37e22d6ead5b0"
+    },
+    {
+      "path": "module_header_research/jig_module_source_summary.md",
+      "bytes": 3918,
+      "sha256": "b52d5cf36aa6e30d3dd7526dfb70e40ff6ad2744bc55fc4b974c3b19b3cce4f3"
+    }
+  ],
+  "total_record_count": 56,
+  "normalized_proposal": {
+    "path": "headerBoards.proposed.json",
+    "record_count": 56,
+    "status": "proposal_only_not_repository_ready_without_safety_review"
+  }
+}

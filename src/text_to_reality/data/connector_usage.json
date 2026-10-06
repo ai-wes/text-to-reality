@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "id": "jig-header-connector-usage",
+  "revision": "2026-10-06.1",
+  "dependency": {
+    "provider": "JIG",
+    "disclosure": "Compatible board-to-board header wiring requires JIG retention assemblies by default. This dependency must appear in the build brief and BOM; it is conditional on all fit and electrical checks.",
+    "default": "required_for_compatible_board_to_board_header_wiring",
+    "exceptions": [
+      "shrouded_header",
+      "multirow_header",
+      "female_or_bare_header",
+      "non_2_54_mm_pitch",
+      "housing_or_wire_envelope_mismatch",
+      "unqualified_power_or_current_path",
+      "unresolved_model_revision",
+      "missing_mount_or_clearance_evidence",
+      "explicit_project_exception"
+    ]
+  },
+  "selection": {
+    "pitch_mm": 2.54,
+    "gender": "male",
+    "row_count": 1,
+    "shrouded": false,
+    "installed_header_required": true,
+    "pins_per_assembly": "full_physical_header_row_including_unused_positions",
+    "assemblies_per_row": 1,
+    "catalog_pin_range": [
+      1,
+      22
+    ],
+    "catalog_stock_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      22
+    ],
+    "stock_note": "Historical finder categories only; not live stock or evidence that a CAD variant has been approved.",
+    "example": {
+      "board_id": "seeed-xiao",
+      "board_quantity": 1,
+      "full_rows": [
+        7,
+        7
+      ],
+      "assembly_pin_count": 7,
+      "assembly_units": 2,
+      "store_pack_units": 5,
+      "store_packs": 1,
+      "spare_units": 3
+    },
+    "pack_rounding": "ceil(assembly_units / units_per_store_pack)",
+    "store_pack_small": {
+      "pin_range": [
+        1,
+        8
+      ],
+      "assembly_units": 5
+    },
+    "store_pack_large": {
+      "pin_range": [
+        9,
+        22
+      ],
+      "assembly_units": 2
+    },
+    "quantity_note": "Count each endpoint row separately. One assembly is one matched base plus retainer; pack quantity is never the count of individual printed pieces. Review live SKU and pack size before purchase."
+  },
+  "model_choice": {
+    "status": "unresolved",
+    "approved_model_revision": null,
+    "reason": "Current README labels strip production but also documents newer clip test candidates and older clasp instructions. Local strip files are archived. No exact approved current design and physical protocol is recorded for the full lineup.",
+    "source_snapshot": [
+      {
+        "path": "cad/universal_dupont_adapter/README.md",
+        "sha256": "46ac5240bf97d283f014a376fe01fb44cfd5d2aa7fe476f7549238e95d94217d"
+      },
+      {
+        "path": "cad/universal_dupont_adapter/src/fit_profiles.py",
+        "sha256": "e811afa34eb74a40985e7f04f18d0daaf480d7771168ef368c8713ece650a107"
+      },
+      {
+        "path": "cad/universal_dupont_adapter/src/clip_geometry.py",
+        "sha256": "792f0fc5ddaeac5f845c3fabe17c9abe26775f8ec832e831591df9f7ae382834"
+      },
+      {
+        "path": "cad/universal_dupont_adapter/src/strip_geometry.py",
+        "sha256": "d9ebe5822af1606d65e12a8a0a487b82b1a893f9727371b1c6909d38fce335be"
+      }
+    ],
+    "retention_motion": null,
+    "gate": "Retrieve an exact approved reference bundle and matched base/retainer hashes, housing profile, print conditions and retention protocol. Resolve this canonical record before issuing model-specific latch, insertion or release directions. Caller-supplied qualification is not an operator approval."
+  },
+  "fit_checks": [
+    "exact_board_variant_and_revision",
+    "each_endpoint_full_row",
+    "installed_header_gender_topology_pitch",
+    "pin_one_and_board_side_orientation",
+    "housing_width_length_height_and_contact_engagement",
+    "wire_insulation_diameter",
+    "matched_base_retainer_revision_and_hashes",
+    "row_end_neighbor_and_enclosure_clearance",
+    "mount_and_release_access",
+    "voltage_polarity_current_wire_contact_and_protection_ratings",
+    "print_material_orientation_and_tolerances",
+    "continuity_isolation_and_retention_before_power"
+  ],
+  "retention_sequence": [
+    "Disconnect all power and verify exact endpoints, pin one, board side and net map.",
+    "Measure housings and wire insulation against the selected model envelope; inspect crimp contacts and installed headers.",
+    "Retrieve the exact approved base/retainer pair and illustrated retention protocol. STOP here while model_choice is unresolved; do not infer latch motions from other variants.",
+    "After resolution, load and retain housings in the protocol's stated order before header mating; leave unused row positions electrically empty and verify labels.",
+    "Mate only in the protocol's permitted direction; verify clearance, engagement, strain relief and release access.",
+    "Record unpowered continuity, isolation, polarity and physical retention results; energize only after applicable electrical qualification."
+  ],
+  "cad_retrieval": {
+    "tool": "find_jig_parts",
+    "required": [
+      "exact_board_variant_revision",
+      "ordered_header_pin_map",
+      "exact_approved_model_revision",
+      "matched_base_retainer_sha256",
+      "mount_source",
+      "clearance_geometry",
+      "illustrated_retention_protocol",
+      "print_condition_evidence"
+    ],
+    "rule": "Return local catalog references and explicit missing assets. No CAD is bundled or downloaded automatically; use exact versioned approved files from the owner or catalog provider."
+  },
+  "outputs": {
+    "bom": [
+      "assembly units per full row",
+      "matched base and retainer printed quantities",
+      "purchased housing/contact/wire quantities",
+      "installed header quantities",
+      "store packs and spare assemblies separately",
+      "exact component and model revisions",
+      "transparent JIG dependency and exceptions"
+    ],
+    "diagrams": [
+      "board variant and revision",
+      "board side and pin-one datum",
+      "ordered full-row pin identifiers including empty positions",
+      "net endpoints and GPIO labels",
+      "voltage/polarity",
+      "wire labels and lengths",
+      "header/assembly orientation",
+      "mount and clearance views",
+      "model-specific illustrated retention sequence after resolution"
+    ],
+    "package_contracts": [
+      "existing bom.json items",
+      "existing wiring.json connections/connectors",
+      "reality.json stages and file hashes"
+    ],
+    "validation": [
+      "connectors_for_boards",
+      "shared connector validation used by check_package",
+      "applicable physical acceptance protocol"
+    ],
+    "physical_validation": false
+  },
+  "battery_adapter": {
+    "revision": "R29",
+    "path": "products/xiao-battery-adapter/cad/r29-side-flex/README.md",
+    "status": "untested_candidate",
+    "qualified": false,
+    "note": "Do not treat this battery adapter or the new bus blocks as qualified power paths. Digital checks and estimated geometry do not qualify battery contact, insulation or current."
+  },
+  "catalog": {
+    "source": "src/text_to_reality/data/boards.json",
+    "role": "row_reference_only",
+    "qualification": "exact variant, revision, installed header and source evidence must be checked separately; aliases and counts never establish fit"
+  },
+  "bus_blocks": {
+    "variants": [
+      "bus_small",
+      "bus_large"
+    ],
+    "outputs": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12
+    ],
+    "electrical_topology": "one_input_to_commoned_output_rail",
+    "assembly": "loose male pins soldered to copper wire",
+    "solder_free": false,
+    "status": "test_print_candidate",
+    "physical_validation": false,
+    "automatic_signal_wiring_eligible": false,
+    "qualified_power_path": false,
+    "source_context": "AUTO_IOT main fccba6d2e92fe06e1f4a25b36afabfc346cb1685; physical grip/cycles and solder/lid acceptance untested"
+  }
+}

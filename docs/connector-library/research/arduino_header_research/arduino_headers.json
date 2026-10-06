@@ -1,0 +1,1410 @@
+{
+  "schema": "neutral-physical-header-catalog-v1",
+  "research_date": "2026-10-06",
+  "scope": "12 exact Arduino board models; genuine manufacturer designs only, clone layouts excluded",
+  "rules": [
+    "Counts describe physical header positions, not GPIO counts",
+    "Separate opposite board edges are separate 1-row groups, not one adjacent 2-row connector",
+    "Female socket groups cannot directly mate with female jumper combs",
+    "2-row ICSP/debug groups are excluded from full single-row comb counts; never flatten 2\u00d73 into 1\u00d76",
+    "Candidate counts require actual JIG size availability and measured housing/clearance validation; all fits unverified",
+    "For without-header SKUs, geometry is footprint-only until correct male headers are soldered",
+    "USB and other non-header connectors are listed as obstructions, not exhaustively catalogued"
+  ],
+  "boards": [
+    {
+      "id": "nano_classic",
+      "manufacturer": "Arduino",
+      "model": "Nano (classic 3.x)",
+      "sku": "A000005",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/A000005-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/A000005-datasheet.pdf",
+          "role": "manufacturer connector and mechanical sections"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-nano",
+          "role": "assembly SKU and populated headers"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer A000005 datasheet p12 mechanical drawing explicitly dimensions 2.54 mm side pitch and ICSP pitch",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer A000005 datasheet p12 mechanical drawing explicitly dimensions 2.54 mm side pitch and ICSP pitch",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer A000005 datasheet p12 mechanical drawing explicitly dimensions 2.54 mm side pitch and ICSP pitch",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 ICSP, never a 1\u00d76 comb",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "A000005",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/arduino-nano"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "USB connector/cable at short edge: check comb end-wall overhang",
+        "Board underside components and solder joints: check body seating; do not infer clearance from pitch",
+        "ICSP and reset button at opposite end from Mini-B USB"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 15,
+          "quantity": 2,
+          "condition": "For listed presoldered-male assembly only; candidate geometry, not verified fit"
+        }
+      ],
+      "opposite_side_row_spacing_mm": 15.24
+    },
+    {
+      "id": "nano_every",
+      "manufacturer": "Arduino",
+      "model": "Nano Every",
+      "sku": "ABX00028",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano-every/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00028-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00028-datasheet.pdf",
+          "role": "manufacturer connector and mechanical sections"
+        },
+        {
+          "url": "https://store.arduino.cc/products/nano-every-with-headers",
+          "role": "assembly SKU and populated headers"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "underside_debug_pads",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "test_pads",
+          "population": "not_a_header",
+          "notes": "Bottom debug pad array; pin 4 absent in Every/BLE/BLE Rev2. IoT manual has inconsistent signal names; verify schematic before electrical use.",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified",
+          "populated_contacts": 5,
+          "missing_positions": [
+            4
+          ]
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00033",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/nano-every-with-headers"
+        },
+        {
+          "sku": "ABX00028",
+          "main_headers": "unpopulated; solder suitable male headers before using female comb",
+          "source": "https://docs.arduino.cc/hardware/nano-every/"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "USB connector/cable at short edge: check comb end-wall overhang",
+        "Board underside components and solder joints: check body seating; do not infer clearance from pitch"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 15,
+          "quantity": 2,
+          "condition": "For listed presoldered-male assembly only; candidate geometry, not verified fit"
+        }
+      ]
+    },
+    {
+      "id": "nano_33_iot",
+      "manufacturer": "Arduino",
+      "model": "Nano 33 IoT",
+      "sku": "ABX00027",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano-33-iot/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00027-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00027-datasheet.pdf",
+          "role": "manufacturer connector and mechanical sections"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-nano-33-iot-with-headers",
+          "role": "assembly SKU and populated headers"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "underside_debug_pads",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "test_pads",
+          "population": "not_a_header",
+          "notes": "Bottom debug pad array; pin 4 absent in Every/BLE/BLE Rev2. IoT manual has inconsistent signal names; verify schematic before electrical use.",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00032",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/arduino-nano-33-iot-with-headers"
+        },
+        {
+          "sku": "ABX00027",
+          "main_headers": "unpopulated; solder suitable male headers before using female comb",
+          "source": "https://docs.arduino.cc/hardware/nano-33-iot/"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "USB connector/cable at short edge: check comb end-wall overhang",
+        "Board underside components and solder joints: check body seating; do not infer clearance from pitch",
+        "Radio module and antenna end: check body overlap and antenna keep-out"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification",
+        "Datasheet debug signal table appears copied from another board; pad geometry is useful but signals must be checked against schematic"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 15,
+          "quantity": 2,
+          "condition": "For listed presoldered-male assembly only; candidate geometry, not verified fit"
+        }
+      ]
+    },
+    {
+      "id": "nano_33_ble",
+      "manufacturer": "Arduino",
+      "model": "Nano 33 BLE (original)",
+      "sku": "ABX00030",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano-33-ble/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00030-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00030-datasheet.pdf",
+          "role": "manufacturer connector and mechanical sections"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-nano-33-ble-with-headers",
+          "role": "assembly SKU and populated headers"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "underside_debug_pads",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "test_pads",
+          "population": "not_a_header",
+          "notes": "Bottom debug pad array; pin 4 absent in Every/BLE/BLE Rev2. IoT manual has inconsistent signal names; verify schematic before electrical use.",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified",
+          "populated_contacts": 5,
+          "missing_positions": [
+            4
+          ]
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00034",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/arduino-nano-33-ble-with-headers"
+        },
+        {
+          "sku": "ABX00030",
+          "main_headers": "unpopulated; solder suitable male headers before using female comb",
+          "source": "https://store.arduino.cc/products/arduino-nano-33-ble"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "USB connector/cable at short edge: check comb end-wall overhang",
+        "Board underside components and solder joints: check body seating; do not infer clearance from pitch",
+        "Radio module and antenna end: check body overlap and antenna keep-out"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 15,
+          "quantity": 2,
+          "condition": "For listed presoldered-male assembly only; candidate geometry, not verified fit"
+        }
+      ]
+    },
+    {
+      "id": "nano_33_ble_rev2",
+      "manufacturer": "Arduino",
+      "model": "Nano 33 BLE Rev2",
+      "sku": "ABX00071",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano-33-ble-rev2/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00071-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00071-datasheet.pdf",
+          "role": "manufacturer connector and mechanical sections"
+        },
+        {
+          "url": "https://store.arduino.cc/products/nano-33-ble-rev2-with-headers",
+          "role": "assembly SKU and populated headers"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "underside_debug_pads",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "Manufacturer datasheet mechanical section specifies 100 mil grid (2.54 mm); debug pad pitch stated separately",
+          "gender": "test_pads",
+          "population": "not_a_header",
+          "notes": "Bottom debug pad array; pin 4 absent in Every/BLE/BLE Rev2. IoT manual has inconsistent signal names; verify schematic before electrical use.",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified",
+          "populated_contacts": 5,
+          "missing_positions": [
+            4
+          ]
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00072",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/nano-33-ble-rev2-with-headers"
+        },
+        {
+          "sku": "ABX00071",
+          "main_headers": "unpopulated; solder suitable male headers before using female comb",
+          "source": "https://docs.arduino.cc/hardware/nano-33-ble-rev2/"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "USB connector/cable at short edge: check comb end-wall overhang",
+        "Board underside components and solder joints: check body seating; do not infer clearance from pitch",
+        "Radio module and antenna end: check body overlap and antenna keep-out"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 15,
+          "quantity": 2,
+          "condition": "For listed presoldered-male assembly only; candidate geometry, not verified fit"
+        }
+      ]
+    },
+    {
+      "id": "nano_esp32",
+      "manufacturer": "Arduino",
+      "model": "Nano ESP32",
+      "sku": "ABX00083",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano-esp32/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00083-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+          "role": "manufacturer connector and mechanical sections"
+        },
+        {
+          "url": "https://store.arduino.cc/products/nano-esp32-with-headers",
+          "role": "assembly SKU and populated headers"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital",
+          "rows": 1,
+          "pins_per_row": 15,
+          "total_positions": 15,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 15,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00083",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/nano-esp32-with-headers"
+        },
+        {
+          "sku": "ABX00092",
+          "main_headers": "unpopulated; solder suitable male headers before using female comb",
+          "source": "https://store.arduino.cc/products/nano-esp32"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "USB connector/cable at short edge: check comb end-wall overhang",
+        "Board underside components and solder joints: check body seating; do not infer clearance from pitch",
+        "Radio module and antenna end; USB-C shell/cable; B0/B1 boot pads are not extra rows"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification",
+        "Published mechanical page dimensions mounting holes, not header pitch; nominal Nano 2.54 mm pitch needs CAD or caliper confirmation"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 15,
+          "quantity": 2,
+          "condition": "For listed presoldered-male assembly only; candidate geometry, not verified fit"
+        }
+      ]
+    },
+    {
+      "id": "uno_r3",
+      "manufacturer": "Arduino",
+      "model": "UNO R3 (DIP)",
+      "sku": "A000066",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/uno-rev3/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-uno-rev3",
+          "role": "populated socket assembly"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "digital_D0_D7",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D8_D13_GND_AREF_SDA_SCL",
+          "rows": 1,
+          "pins_per_row": 10,
+          "total_positions": 10,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "power",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "analog_A0_A5",
+          "rows": 1,
+          "pins_per_row": 6,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_main",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 SPI/ICSP header; excluded from single-row full-group candidates",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_USB_bridge",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Second 2\u00d73 header for ATmega16U2",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "A000066",
+          "main_headers": "presoldered female sockets",
+          "source": "https://store.arduino.cc/products/arduino-uno-rev3"
+        }
+      ],
+      "nonstandard_gaps": [
+        {
+          "between": "D7 and D8",
+          "center_distance_mm": 4.064,
+          "status": "manufacturer documented shield footprint",
+          "note": "160 mil gap; do not concatenate 8 and 10 positions into an 18-position 2.54 mm comb"
+        },
+        {
+          "between": "power and analog",
+          "center_distance_mm": null,
+          "note": "Separate pin segments; do not concatenate, exact end spacing unverified"
+        }
+      ],
+      "obstruction_checks": [
+        "USB shell/cable and barrel jack at short edge",
+        "Reset switch and auxiliary headers constrain oversized comb bodies"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [],
+      "direct_female_comb_main_header_compatibility": false
+    },
+    {
+      "id": "uno_r4_minima",
+      "manufacturer": "Arduino",
+      "model": "UNO R4 Minima",
+      "sku": "ABX00080",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/uno-r4-minima/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00080-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://store.arduino.cc/products/uno-r4-minima",
+          "role": "populated socket assembly"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00080-datasheet.pdf",
+          "role": "auxiliary connector identification"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "digital_D0_D7",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D8_D13_GND_AREF_SDA_SCL",
+          "rows": 1,
+          "pins_per_row": 10,
+          "total_positions": 10,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "power",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "analog_A0_A5",
+          "rows": 1,
+          "pins_per_row": 6,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_main",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 SPI/ICSP header; excluded from single-row full-group candidates",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "SWD_JTAG",
+          "rows": 2,
+          "pins_per_row": 5,
+          "total_positions": 10,
+          "pitch_mm": null,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "10-position debug header; pitch deliberately unknown until CAD/part checked",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00080",
+          "main_headers": "presoldered female sockets",
+          "source": "https://store.arduino.cc/products/uno-r4-minima"
+        }
+      ],
+      "nonstandard_gaps": [
+        {
+          "between": "D7 and D8",
+          "center_distance_mm": 4.064,
+          "status": "manufacturer documented for classic UNO shield footprint; R4 inheritance needs CAD check",
+          "note": "160 mil gap; do not concatenate 8 and 10 positions into an 18-position 2.54 mm comb"
+        },
+        {
+          "between": "power and analog",
+          "center_distance_mm": null,
+          "note": "Separate pin segments; do not concatenate, exact end spacing unverified"
+        }
+      ],
+      "obstruction_checks": [
+        "USB shell/cable and barrel jack at short edge",
+        "Reset switch and auxiliary headers constrain oversized comb bodies"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [],
+      "direct_female_comb_main_header_compatibility": false
+    },
+    {
+      "id": "uno_r4_wifi",
+      "manufacturer": "Arduino",
+      "model": "UNO R4 WiFi",
+      "sku": "ABX00087",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/uno-r4-wifi/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00087-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://store.arduino.cc/products/uno-r4-wifi",
+          "role": "populated socket assembly"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00087-datasheet.pdf",
+          "role": "auxiliary connector identification"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "digital_D0_D7",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D8_D13_GND_AREF_SDA_SCL",
+          "rows": 1,
+          "pins_per_row": 10,
+          "total_positions": 10,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "power",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "analog_A0_A5",
+          "rows": 1,
+          "pins_per_row": 6,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_main",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 SPI/ICSP header; excluded from single-row full-group candidates",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ESP_debug",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 ESP header near reset; 3.3V signals",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "OFF_GND_VRTC",
+          "rows": 1,
+          "pins_per_row": 3,
+          "total_positions": 3,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "unpopulated_holes",
+          "population": "unpopulated",
+          "notes": "Separate 1\u00d73 optional power/control footprint",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "Qwiic",
+          "rows": 1,
+          "pins_per_row": 4,
+          "total_positions": 4,
+          "pitch_mm": 1.0,
+          "pitch_evidence": "Qwiic/JST SH connector family; not a 2.54 mm comb target",
+          "gender": "keyed_connector",
+          "population": "presoldered",
+          "notes": "JST SH style keyed 4-pin connector, not jumper header",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "ABX00087",
+          "main_headers": "presoldered female sockets",
+          "source": "https://store.arduino.cc/products/uno-r4-wifi"
+        }
+      ],
+      "nonstandard_gaps": [
+        {
+          "between": "D7 and D8",
+          "center_distance_mm": 4.064,
+          "status": "manufacturer documented for classic UNO shield footprint; R4 inheritance needs CAD check",
+          "note": "160 mil gap; do not concatenate 8 and 10 positions into an 18-position 2.54 mm comb"
+        },
+        {
+          "between": "power and analog",
+          "center_distance_mm": null,
+          "note": "Separate pin segments; do not concatenate, exact end spacing unverified"
+        }
+      ],
+      "obstruction_checks": [
+        "USB shell/cable and barrel jack at short edge",
+        "Reset switch and auxiliary headers constrain oversized comb bodies"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [],
+      "direct_female_comb_main_header_compatibility": false
+    },
+    {
+      "id": "leonardo",
+      "manufacturer": "Arduino",
+      "model": "Leonardo with headers",
+      "sku": "A000057",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/leonardo/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/A000057-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-leonardo-with-headers",
+          "role": "populated socket assembly"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "digital_D0_D7",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D8_D13_GND_AREF_SDA_SCL",
+          "rows": 1,
+          "pins_per_row": 10,
+          "total_positions": 10,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "power",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "analog_A0_A5",
+          "rows": 1,
+          "pins_per_row": 6,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_main",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 SPI/ICSP header; excluded from single-row full-group candidates",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "A000057",
+          "main_headers": "presoldered female sockets",
+          "source": "https://store.arduino.cc/products/arduino-leonardo-with-headers"
+        },
+        {
+          "sku": "A000052",
+          "main_headers": "without headers; user population determines gender",
+          "source": "https://store.arduino.cc/products/arduino-leonardo-without-headers"
+        }
+      ],
+      "nonstandard_gaps": [
+        {
+          "between": "D7 and D8",
+          "center_distance_mm": 4.064,
+          "status": "manufacturer documented shield footprint",
+          "note": "160 mil gap; do not concatenate 8 and 10 positions into an 18-position 2.54 mm comb"
+        },
+        {
+          "between": "power and analog",
+          "center_distance_mm": null,
+          "note": "Separate pin segments; do not concatenate, exact end spacing unverified"
+        }
+      ],
+      "obstruction_checks": [
+        "USB shell/cable and barrel jack at short edge",
+        "Reset switch and auxiliary headers constrain oversized comb bodies"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [],
+      "direct_female_comb_main_header_compatibility": false
+    },
+    {
+      "id": "mega_2560_r3",
+      "manufacturer": "Arduino",
+      "model": "Mega 2560 Rev3",
+      "sku": "A000067",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/mega-2560/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/A000067-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-mega-2560-rev3",
+          "role": "pitch and 160 mil gap"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "power",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "analog_A0_A7",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "analog_A8_A15",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D0_D7",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D8_D13_GND_AREF_SDA_SCL",
+          "rows": 1,
+          "pins_per_row": 10,
+          "total_positions": 10,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_D14_D21",
+          "rows": 1,
+          "pins_per_row": 8,
+          "total_positions": 8,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "digital_end_D22_D53_power_ground",
+          "rows": 2,
+          "pins_per_row": 18,
+          "total_positions": 36,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "female",
+          "population": "presoldered",
+          "notes": "36 positions: 32 digital plus power and ground positions",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_main",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP_USB_bridge",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "A000067",
+          "main_headers": "presoldered female sockets",
+          "source": "https://store.arduino.cc/products/arduino-mega-2560-rev3"
+        }
+      ],
+      "nonstandard_gaps": [
+        {
+          "between": "D7 and D8",
+          "center_distance_mm": 4.064,
+          "note": "Manufacturer specifies 160 mil versus 100 mil elsewhere"
+        },
+        {
+          "between": "other separate side sockets",
+          "center_distance_mm": null,
+          "note": "Preserve all groups; do not merge across gaps"
+        }
+      ],
+      "obstruction_checks": [
+        "USB-B and barrel jack",
+        "Two ICSP headers and reset switch",
+        "2\u00d718 end socket and nearby edge headers constrain bodies"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification"
+      ],
+      "candidate_main_combs": [],
+      "direct_female_comb_main_header_compatibility": false
+    },
+    {
+      "id": "micro",
+      "manufacturer": "Arduino",
+      "model": "Micro with headers",
+      "sku": "A000053",
+      "board_revision": "named product revision only; PCB fabrication revision unverified",
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/micro/",
+          "role": "manufacturer product documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/A000053-full-pinout.pdf",
+          "role": "manufacturer physical pinout; positions counted, not GPIO totals"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-micro",
+          "role": "SKU and header population"
+        },
+        {
+          "url": "https://store.arduino.cc/products/arduino-micro-without-headers",
+          "role": "SKU and header population"
+        }
+      ],
+      "header_groups": [
+        {
+          "id": "side_analog_power_SPI",
+          "rows": 1,
+          "pins_per_row": 17,
+          "total_positions": 17,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Includes two NC physical positions; do not remove them from count",
+          "full_single_row_comb_candidate": 17,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "side_digital_SPI",
+          "rows": 1,
+          "pins_per_row": 17,
+          "total_positions": 17,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "",
+          "full_single_row_comb_candidate": 17,
+          "fit_status": "unverified"
+        },
+        {
+          "id": "ICSP",
+          "rows": 2,
+          "pins_per_row": 3,
+          "total_positions": 6,
+          "pitch_mm": 2.54,
+          "pitch_evidence": "nominal 100 mil board/header convention; exact mechanical tolerance unverified",
+          "gender": "male",
+          "population": "presoldered",
+          "notes": "Separate 2\u00d73 connector",
+          "full_single_row_comb_candidate": null,
+          "fit_status": "unverified"
+        }
+      ],
+      "assembly_variants": [
+        {
+          "sku": "A000053",
+          "main_headers": "presoldered male",
+          "source": "https://store.arduino.cc/products/arduino-micro"
+        },
+        {
+          "sku": "A000093",
+          "main_headers": "unpopulated",
+          "source": "https://store.arduino.cc/products/arduino-micro-without-headers"
+        }
+      ],
+      "nonstandard_gaps": [],
+      "obstruction_checks": [
+        "Micro-USB shell/cable at one end",
+        "Reset switch and ICSP header at opposite end",
+        "Underside components and solder joints"
+      ],
+      "fit_status": "unverified",
+      "unknowns": [
+        "Exact pin projection, housing width, JIG wall thickness and insertion clearance not established",
+        "No physical fit test or electrical compatibility certification",
+        "Nominal 2.54 mm pitch inferred from official breadboard format, not verified from a dimensioned drawing in this pass"
+      ],
+      "candidate_main_combs": [
+        {
+          "pins": 17,
+          "quantity": 2,
+          "condition": "For male-header A000053; nominal geometry only, pitch/CAD and physical fit check still required"
+        }
+      ]
+    }
+  ]
+}

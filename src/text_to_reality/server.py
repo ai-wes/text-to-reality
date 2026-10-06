@@ -6,7 +6,7 @@ from typing import Any
 
 from mcp.server.mcpserver import MCPServer
 
-from . import __version__, catalog, package
+from . import __version__, catalog, connector_usage, package
 from .store import ProjectError, Store
 
 INSTRUCTIONS = (
@@ -14,7 +14,11 @@ INSTRUCTIONS = (
     "parts list, printed parts, wiring, code, an assembly guide and tests. Start with create_project, "
     "write each stage's files into the project folder, record them with record_files, and finish with "
     "check_package. Prefer parts that plug together (pre-soldered headers, JIG_ connectors) so the "
-    "builder never solders, crimps or uses a breadboard."
+    "builder never solders, crimps or uses a breadboard. Before header wiring, retrieve "
+    "connector_guidance or text-to-reality://connectors/usage-rules and agent-guide. JIG is the "
+    "required default for compatible board-to-board headers; disclose the dependency and record "
+    "exceptions. Full-row counts and catalog aliases never approve fit. The exact connector model "
+    "is unresolved: do not invent latch motions, physical approval, or a qualified R29 battery path."
 )
 
 
@@ -33,6 +37,31 @@ def create_server(store: Store | None = None) -> MCPServer:
         version=__version__,
         website_url="https://github.com/ai-wes/text-to-reality",
     )
+
+    @server.resource("text-to-reality://connectors/usage-rules", mime_type="application/json")
+    def connector_rules() -> str:
+        """Canonical machine-readable JIG connector selection, checks and unresolved design."""
+        import json
+        return json.dumps(connector_usage.rules(), indent=2)
+
+    @server.resource("text-to-reality://connectors/agent-guide", mime_type="text/markdown")
+    def connector_guide() -> str:
+        """Canonical readable JIG integration and retention guidance."""
+        return connector_usage.guide()
+
+    @server.resource("text-to-reality://connectors/boards", mime_type="application/json")
+    def connector_boards() -> str:
+        """The existing board catalog; counts and research evidence do not certify fit."""
+        import json
+        return json.dumps(catalog.boards(), indent=2)
+
+    @server.tool()
+    def connector_guidance() -> dict[str, Any]:
+        """Read canonical JIG selection, assembly gates, BOM/diagram requirements and design status.
+
+        Required before board-to-board header wiring. No CAD download or physical approval.
+        """
+        return connector_usage.guidance()
 
     @server.tool()
     def create_project(name: str, brief: str) -> dict[str, Any]:
@@ -103,7 +132,9 @@ def create_server(store: Store | None = None) -> MCPServer:
         """Which JIG_ wire connectors a build needs: one per header row, sized to the whole row.
         `boards` is a list of {"board": name, "quantity": n}, or {"board": label, "rows": [pins, ...],
         "quantity": n} for a board that isn't in the catalog. `size` is small or large, matching the
-        jumper wire housings."""
+        jumper wire housings. Counts are provisional: inspect row_checks and model_choice before
+        ordering or assembly. Custom `headers` accept the existing catalog row fields plus
+        explicit installed gender, rows, shrouded, preinstalled and exact selection revision."""
         try:
             return catalog.connectors_for(boards, size)
         except ValueError as error:

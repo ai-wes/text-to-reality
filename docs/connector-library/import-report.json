@@ -1,0 +1,233 @@
+{
+  "manifest_verified_files": 41,
+  "legacy_records": 20,
+  "research_records": 56,
+  "catalog_records": 75,
+  "merge": [
+    {
+      "id": "seeed-xiao-esp32c3",
+      "action": "added_variant"
+    },
+    {
+      "id": "seeed-xiao-esp32s3",
+      "action": "added_variant"
+    },
+    {
+      "id": "seeed-xiao-esp32s3-sense",
+      "action": "added_variant"
+    },
+    {
+      "id": "seeed-xiao-esp32c6",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-devkitc-v4-wroom32e-male",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-devkitc-v4-wroom32e-female",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-s3-devkitc-1-v1-0",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-s3-devkitc-1-v1-1",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-s2-devkitc-1-v1",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-c3-devkitc-02-v1-1",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-c3-devkitm-1-v1-0",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-c6-devkitc-1-v1-1",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-c6-devkitc-1-v1-2",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-c6-devkitm-1-v1-0",
+      "action": "added_variant"
+    },
+    {
+      "id": "espressif-esp32-h2-devkitm-1-v1-3",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico",
+      "action": "enriched_existing"
+    },
+    {
+      "id": "raspberry-pi-pico-h",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico-w",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico-wh",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico-2",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico-2-with-headers",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico-2-w",
+      "action": "added_variant"
+    },
+    {
+      "id": "raspberry-pi-pico-2-w-with-headers",
+      "action": "added_variant"
+    },
+    {
+      "id": "seeed-studio-xiao-rp2040-standard-unsoldered",
+      "action": "added_variant"
+    },
+    {
+      "id": "seeed-studio-xiao-rp2350-unsoldered",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-feather-rp2040",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-qt-py-rp2040",
+      "action": "added_variant"
+    },
+    {
+      "id": "sparkfun-pro-micro-rp2040",
+      "action": "added_variant"
+    },
+    {
+      "id": "nano-classic",
+      "action": "added_variant"
+    },
+    {
+      "id": "nano-every",
+      "action": "added_variant"
+    },
+    {
+      "id": "nano-33-iot",
+      "action": "added_variant"
+    },
+    {
+      "id": "nano-33-ble",
+      "action": "added_variant"
+    },
+    {
+      "id": "nano-33-ble-rev2",
+      "action": "added_variant"
+    },
+    {
+      "id": "nano-esp32",
+      "action": "added_variant"
+    },
+    {
+      "id": "uno-r3",
+      "action": "added_variant"
+    },
+    {
+      "id": "uno-r4-minima",
+      "action": "added_variant"
+    },
+    {
+      "id": "uno-r4-wifi",
+      "action": "added_variant"
+    },
+    {
+      "id": "leonardo",
+      "action": "added_variant"
+    },
+    {
+      "id": "mega-2560-r3",
+      "action": "added_variant"
+    },
+    {
+      "id": "micro",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-3886",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-4479",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-3297",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-4566",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-3317",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-326",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-2857",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-2652",
+      "action": "added_variant"
+    },
+    {
+      "id": "adafruit-358",
+      "action": "added_variant"
+    },
+    {
+      "id": "sparkfun-sen-15440",
+      "action": "added_variant"
+    },
+    {
+      "id": "sparkfun-lcd-13003",
+      "action": "added_variant"
+    },
+    {
+      "id": "sparkfun-lcd-13722",
+      "action": "added_variant"
+    },
+    {
+      "id": "sparkfun-lcd-22495",
+      "action": "added_variant"
+    },
+    {
+      "id": "waveshare-24102",
+      "action": "added_variant"
+    },
+    {
+      "id": "waveshare-9092",
+      "action": "added_variant"
+    },
+    {
+      "id": "waveshare-15867",
+      "action": "added_variant"
+    }
+  ],
+  "physical_validation": false
+}

@@ -8,6 +8,8 @@ from functools import cache
 from importlib import resources
 from typing import Any
 
+from . import connector_usage
+
 STANDARD_PIN_COUNTS = (1, 2, 3, 4, 5, 6, 7, 8, 22)
 MAX_PIN_COUNT = 22
 CONNECTOR_URL = "https://jig-robotics.com/support/dupont-housings"
@@ -50,13 +52,26 @@ def find_boards(query: str) -> list[dict[str, Any]]:
 def board(name_or_id: str) -> dict[str, Any] | None:
     needle = name_or_id.strip().lower()
     for entry in boards():
-        if needle in {entry["id"].lower(), entry["name"].lower(), *(a.lower() for a in entry["aliases"])}:
+        if needle == entry["id"].lower():
             return entry
+    exact = [entry for entry in boards() if needle == entry["name"].lower()]
+    if exact:
+        return exact[0] if len(exact) == 1 else None
+    aliases = [entry for entry in boards() if needle in {a.lower() for a in entry["aliases"]}]
+    if aliases:
+        researched = [entry for entry in aliases if entry.get("source_record")
+                      and needle not in {a.lower() for a in entry.get("legacy_aliases", [])}]
+        if researched:
+            return researched[0] if len(researched) == 1 else None
+        return aliases[0] if len(aliases) == 1 else None
     matches = find_boards(name_or_id)
     return matches[0] if len(matches) == 1 else None
 
 
 def pack_for(pins: int) -> dict[str, Any]:
+    connector_usage.positive_int(pins, "pins")
+    if pins > MAX_PIN_COUNT:
+        raise ValueError("pins exceeds the supported 22-position range")
     if pins <= 8:
         return {"connectors_per_pack": 5, "pack": f"5 x {pins}-pin"}
     if pins == 22:
@@ -75,23 +90,54 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
     totals: dict[int, int] = {}
     unknown: list[str] = []
     resolved: list[dict[str, Any]] = []
+    issues: list[dict[str, Any]] = []
     for selection in selections:
-        quantity = int(selection.get("quantity", 1))
-        if quantity < 1:
-            raise ValueError("quantity must be at least 1")
-        if "rows" in selection:
-            rows = [int(r) for r in selection["rows"]]
+        if not isinstance(selection, dict):
+            raise ValueError("each board selection must be an object")
+        quantity = connector_usage.positive_int(selection.get("quantity", 1), "quantity")
+        revision = selection.get("revision")
+        if "headers" in selection:
+            headers = selection["headers"]
             label = selection.get("board", "custom board")
-        else:
+        if "rows" in selection and "headers" in selection:
+            raise ValueError("supply rows or headers, not both")
+        if "rows" in selection:
+            if not isinstance(selection["rows"], list):
+                raise ValueError("rows must be a list of full physical row counts")
+            headers = [{"id": f"row-{i + 1}", "pin_count": connector_usage.positive_int(r, "row pins")}
+                       for i, r in enumerate(selection["rows"])]
+            label = selection.get("board", "custom board")
+        elif "headers" not in selection:
             entry = board(str(selection.get("board", "")))
             if entry is None:
                 unknown.append(str(selection.get("board", "")))
                 continue
-            rows = [h["pin_count"] for h in entry["headers"]]
+            headers = entry["headers"]
             label = entry["name"]
-        resolved.append({"board": label, "quantity": quantity, "header_rows": rows})
-        for pins in rows:
+            revision = revision or entry.get("revision")
+        if not isinstance(headers, list) or any(not isinstance(h, dict) for h in headers):
+            raise ValueError("headers must be a list of header objects")
+        if any(not isinstance(h.get("id"), str) or not h["id"].strip() for h in headers):
+            raise ValueError("every header needs an exact non-empty row ID")
+        if len({h.get("id") for h in headers}) != len(headers):
+            raise ValueError("header IDs must identify separate physical rows uniquely")
+        if not headers:
+            issues.append({"board": label, "header_id": None,
+                           "issues": ["no_compatible_single_row_headers"], "excluded": True})
+        rows = []
+        for header in headers:
+            pins = connector_usage.positive_int(header.get("pin_count"), "full row pins")
+            row_issues = connector_usage.header_issues(header)
+            if not revision:
+                row_issues.append("exact_board_revision_missing")
+            issues.append({"board": label, "header_id": header.get("id"),
+                           "issues": row_issues, "excluded": connector_usage.incompatible_header(header)})
+            if connector_usage.incompatible_header(header):
+                continue
+            rows.append(pins)
             totals[pins] = totals.get(pins, 0) + quantity
+        resolved.append({"board": label, "quantity": quantity, "header_rows": rows,
+                         "revision": revision, "headers": headers})
     connectors = []
     for pins in sorted(totals):
         count = totals[pins]
@@ -103,6 +149,11 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
             item["pack"] = pack["pack"]
             item["packs_to_order"] = math.ceil(count / pack["connectors_per_pack"])
             item["printed_to_order"] = pins not in STANDARD_PIN_COUNTS
+            item["assembly_units_per_pack"] = pack["connectors_per_pack"]
+            item["spare_assemblies"] = item["packs_to_order"] * pack["connectors_per_pack"] - count
+            item["base_units"] = count
+            item["retainer_units"] = count
+        item["fit_approved"] = False
         connectors.append(item)
     return {
         "rule": "One connector per header row, sized to the whole row.",
@@ -110,4 +161,19 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
         "connectors": connectors,
         "unknown_boards": unknown,
         "order_url": CONNECTOR_URL,
+        "usage_revision": connector_usage.rules()["revision"],
+        "dependency": connector_usage.rules()["dependency"],
+        "model_choice": connector_usage.rules()["model_choice"],
+        "row_checks": issues,
+        "status": "planning_only_model_unresolved",
+        "physical_validation": False,
+        "bom_draft": [{"part": f"JIG {c['pins']}-pin {size} matched assembly", "quantity": c["connectors"],
+                       "unit": "assembly", "pins": c["pins"], "size": size, "jig_part": "jig-connector",
+                       "model_revision": None} for c in connectors],
+        "row_diagrams": [{"board": b["board"], "revision": b["revision"],
+                          "header_id": h.get("id"), "full_row_positions": h["pin_count"],
+                          "ordered_pin_ids": h.get("pin_ids"), "orientation": h.get("orientation"),
+                          "note": "Pin identifiers, board side and pin-one datum require exact source/measurements; never infer from row count."}
+                         for b in resolved for h in b["headers"]],
+        "note": "Counts are provisional full-row assemblies, never fit approval. Resolve all row checks and the exact model before ordering or assembly.",
     }

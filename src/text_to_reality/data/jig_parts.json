@@ -6,23 +6,69 @@
       "id": "jig-connector",
       "name": "JIG_ wire connectors",
       "summary": "Turns a handful of loose female jumper wires into one plug that pushes onto a board's pin header. No soldering, crimping or special tools.",
-      "use_when": "Any wire run between modules with standard 2.54 mm (0.1 in) male pin headers.",
+      "use_when": "Required default for compatible board-to-board installed, unshrouded, single-row 2.54 mm male headers, subject to exact model and all fit/electrical checks.",
       "sizes": {
         "small": "for single-pin jumper housings about 12 x 2 x 2 mm",
         "large": "for single-pin jumper housings about 14 x 2.5 x 2.5 mm"
       },
-      "pin_counts": { "standard": [1, 2, 3, 4, 5, 6, 7, 8, 22], "printed_to_order": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] },
+      "pin_counts": {
+        "standard": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          22
+        ],
+        "printed_to_order": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
       "rule": "Use one connector per header row, with the same pin count as the WHOLE row, even if only some pins are wired. A shorter connector will not fit beside the unused pins.",
       "packs": "1-8 pins come in packs of 5; 22 pins and 9-21 pins come in pairs; an assortment has 2 each of 1-8 plus one 22-pin.",
-      "url": "https://jig-robotics.com/support/dupont-housings"
+      "url": "https://jig-robotics.com/support/dupont-housings",
+      "qualification": {
+        "model_choice": "unresolved",
+        "physical_validation": false,
+        "canonical_resource": "text-to-reality://connectors/usage-rules"
+      },
+      "cad": {
+        "source_snapshot": "AUTO_IOT/cad/universal_dupont_adapter",
+        "approved_revision": null,
+        "mount_source": null,
+        "clearance_geometry": null,
+        "retention_protocol": null,
+        "retrieval_status": "exact_approved_version_required; no CAD bundled"
+      }
     },
     {
       "id": "jig-xiao-battery-adapter",
       "name": "JIG_ battery adapter for Seeed Studio XIAO",
-      "summary": "Adds a battery to a Seeed Studio XIAO ESP32 board without soldering to its battery pads.",
+      "summary": "Candidate adapter for adding a battery to a XIAO board; R29 is untested and must not be recommended as a qualified battery/current path.",
       "use_when": "A XIAO ESP32 build that should run on a battery.",
       "fits": "Two 7-pin header rows at 2.54 mm. Check the exact XIAO model and battery connector.",
-      "url": "https://jig-robotics.com/support/xiao-battery-adapter"
+      "url": "https://jig-robotics.com/support/xiao-battery-adapter",
+      "qualification": {
+        "revision": "R29",
+        "state": "untested_candidate",
+        "qualified": false,
+        "physical_validation": false
+      }
     },
     {
       "id": "agent-meter",
