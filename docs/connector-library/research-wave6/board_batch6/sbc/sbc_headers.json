@@ -1,0 +1,1614 @@
+{
+  "schema_version": "neutral-header-catalog-1",
+  "batch": "sbc_wave6",
+  "boards": [
+    {
+      "id": "beagleboard-beaglebone-ai-64",
+      "name": "BeagleBone AI-64",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+      "board_variant": "Rev B1 source geometry",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 50,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            25,
+            25
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "notes": "Full 2x25 connector: numbered 1\u201346 plus E1\u2013E4; not a 46-contact Black-compatible physical clone",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        },
+        {
+          "id": "J1-FAN",
+          "pin_count": 4,
+          "pitch_mm": 1.25,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "fan_auxiliary",
+          "geometry": "shrouded_right_angle",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "gender_basis": "Manufacturer BOM nomenclature",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        },
+        {
+          "id": "J2-UART",
+          "pin_count": 3,
+          "pitch_mm": 1.5,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "shrouded_jst_zh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "gender_basis": "Manufacturer BOM nomenclature",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        },
+        {
+          "id": "J3-UART",
+          "pin_count": 3,
+          "pitch_mm": 1.5,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "shrouded_jst_zh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "gender_basis": "Manufacturer BOM nomenclature",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        },
+        {
+          "id": "J10",
+          "pin_count": 16,
+          "pitch_mm": 1.27,
+          "rows": 2,
+          "pins_per_row": [
+            8,
+            8
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "auxiliary",
+          "geometry": "shrouded_box_header",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        },
+        {
+          "id": "J11-TagConnect",
+          "pin_count": 10,
+          "pitch_mm": 1.27,
+          "rows": 2,
+          "pins_per_row": [
+            5,
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "tag_connect_contact_pads",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Contact pads, not installed header pins; BOM DNP",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+              "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+              "pages": [
+                8,
+                9,
+                37,
+                38,
+                52,
+                53
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+              "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+              "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+              "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/beaglebone-ai-64.pdf",
+          "claim": "Current June 4 2026 manual: P8=46/P9=50, plus connector descriptions",
+          "pages": [
+            8,
+            9,
+            37,
+            38,
+            52,
+            53
+          ]
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_BOM_220602.csv",
+          "claim": "Rev B1 BOM items 124/125 explicitly fitted female 2x23/2x25 at 2.54 mm; items 122/123/131 define separate auxiliaries",
+          "sha": "263618c43200ccf7077c6e6ee3bd0c2b114d4d18"
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglebone-ai-64/blob/main/hw/BeagleBone_AI-64_Rev_B1_SCH_220602.pdf",
+          "claim": "CAD schematic cross-check: P9 has normal 1\u201346 plus E1\u2013E4, full 50 contacts; P8 46"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": "Main-header exception checked independently against current manual and original CAD/BOM. No electrical compatibility claim",
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "beagleboard-beaglebone-ai",
+      "name": "BeagleBone AI",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/beaglebone-ai.pdf",
+      "board_variant": "AM5729 BeagleBone AI",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai.pdf",
+              "claim": "Current manual has two 46-contact cape headers and separate three-pin serial debug",
+              "pages": [
+                8,
+                17,
+                18,
+                42,
+                57
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_bom.csv",
+              "claim": "BOM item 95 explicitly female 2x23 2.54 mm; J92 JST B3B-ZR three positions at 1.5 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_RevA2_sch.pdf",
+              "claim": "Rev A2 schematic source retained for exact layout review"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai.pdf",
+              "claim": "Current manual has two 46-contact cape headers and separate three-pin serial debug",
+              "pages": [
+                8,
+                17,
+                18,
+                42,
+                57
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_bom.csv",
+              "claim": "BOM item 95 explicitly female 2x23 2.54 mm; J92 JST B3B-ZR three positions at 1.5 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_RevA2_sch.pdf",
+              "claim": "Rev A2 schematic source retained for exact layout review"
+            }
+          ]
+        },
+        {
+          "id": "J92-UART",
+          "pin_count": 3,
+          "pitch_mm": 1.5,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "shrouded_jst_zh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-ai.pdf",
+              "claim": "Current manual has two 46-contact cape headers and separate three-pin serial debug",
+              "pages": [
+                8,
+                17,
+                18,
+                42,
+                57
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_bom.csv",
+              "claim": "BOM item 95 explicitly female 2x23 2.54 mm; J92 JST B3B-ZR three positions at 1.5 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_RevA2_sch.pdf",
+              "claim": "Rev A2 schematic source retained for exact layout review"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/beaglebone-ai.pdf",
+          "claim": "Current manual has two 46-contact cape headers and separate three-pin serial debug",
+          "pages": [
+            8,
+            17,
+            18,
+            42,
+            57
+          ]
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_bom.csv",
+          "claim": "BOM item 95 explicitly female 2x23 2.54 mm; J92 JST B3B-ZR three positions at 1.5 mm"
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglebone-ai/blob/master/BeagleBone-AI_RevA2_sch.pdf",
+          "claim": "Rev A2 schematic source retained for exact layout review"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": "JTAG access requires board-specific modifications; no installed JTAG header is inferred from Black",
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "beagleboard-beaglebone-black-wireless",
+      "name": "BeagleBone Black Wireless",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://www.beagleboard.org/boards/beaglebone-black-wireless",
+      "board_variant": "Black Wireless, not Ethernet Black",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://www.beagleboard.org/boards/beaglebone-black-wireless",
+              "claim": "Exact model: two 46-contact expansions and populated six-pin TTL serial; optional nominal 20-position JTAG"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_BOM.csv",
+              "claim": "P8/P9 female 46-position 0.1-inch dual-row; X1 six-position 0.100-inch vertical pin header"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_SCH.pdf",
+              "claim": "Manufacturer exact wireless schematic"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://www.beagleboard.org/boards/beaglebone-black-wireless",
+              "claim": "Exact model: two 46-contact expansions and populated six-pin TTL serial; optional nominal 20-position JTAG"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_BOM.csv",
+              "claim": "P8/P9 female 46-position 0.1-inch dual-row; X1 six-position 0.100-inch vertical pin header"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_SCH.pdf",
+              "claim": "Manufacturer exact wireless schematic"
+            }
+          ]
+        },
+        {
+          "id": "X1-UART0",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.beagleboard.org/boards/beaglebone-black-wireless",
+              "claim": "Exact model: two 46-contact expansions and populated six-pin TTL serial; optional nominal 20-position JTAG"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_BOM.csv",
+              "claim": "P8/P9 female 46-position 0.1-inch dual-row; X1 six-position 0.100-inch vertical pin header"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_SCH.pdf",
+              "claim": "Manufacturer exact wireless schematic"
+            }
+          ]
+        },
+        {
+          "id": "CTI-JTAG",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "nominal_positions": 20,
+          "notes": "Exact optional contact omission/keying not established; Black non-wireless keying is not silently copied",
+          "evidence": [
+            {
+              "url": "https://www.beagleboard.org/boards/beaglebone-black-wireless",
+              "claim": "Exact model: two 46-contact expansions and populated six-pin TTL serial; optional nominal 20-position JTAG"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_BOM.csv",
+              "claim": "P8/P9 female 46-position 0.1-inch dual-row; X1 six-position 0.100-inch vertical pin header"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_SCH.pdf",
+              "claim": "Manufacturer exact wireless schematic"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.beagleboard.org/boards/beaglebone-black-wireless",
+          "claim": "Exact model: two 46-contact expansions and populated six-pin TTL serial; optional nominal 20-position JTAG"
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_BOM.csv",
+          "claim": "P8/P9 female 46-position 0.1-inch dual-row; X1 six-position 0.100-inch vertical pin header"
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglebone-black-wireless/blob/master/BeagleBone_Black_Wireless_SCH.pdf",
+          "claim": "Manufacturer exact wireless schematic"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": null,
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "seeed-beaglebone-green-wireless",
+      "name": "Seeed Studio BeagleBone Green Wireless",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "Seeed Studio",
+      "source": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+      "board_variant": "Green Wireless V1.0 source geometry",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "2x23 verified; exact pitch not dimensioned in retrieved drawing and remains null",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+              "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+            },
+            {
+              "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+              "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+              "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 46,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "2x23 verified; exact pitch not dimensioned in retrieved drawing and remains null",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+              "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+            },
+            {
+              "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+              "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+              "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+            }
+          ]
+        },
+        {
+          "id": "J1-UART0",
+          "pin_count": 6,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+              "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+            },
+            {
+              "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+              "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+              "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+            }
+          ]
+        },
+        {
+          "id": "P2-JTAG",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "nominal_positions": 20,
+          "notes": "Nominal 20-position CTI layout, not populated; keying/contact omission unverified",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+              "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+            },
+            {
+              "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+              "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+              "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+            }
+          ]
+        },
+        {
+          "id": "J4-Grove",
+          "pin_count": 4,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "i2c_auxiliary",
+          "geometry": "shrouded_right_angle",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+              "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+            },
+            {
+              "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+              "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+              "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+            }
+          ]
+        },
+        {
+          "id": "J5-Grove",
+          "pin_count": 4,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "uart_auxiliary",
+          "geometry": "shrouded_right_angle",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+              "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+            },
+            {
+              "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+              "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+              "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/",
+          "claim": "Exact wireless model has two 46-contact cape headers and two Grove connectors"
+        },
+        {
+          "url": "https://github.com/SeeedDocument/BeagleBone_Green_Wireless/blob/master/resources/BeagleBone_Green%20Wireless_V1.0_SCH_20160314.pdf",
+          "claim": "Schematic explicitly female 2x23 P8/P9, six-way J1 serial, CTI JTAG DNI and separate four-way Grove connectors"
+        },
+        {
+          "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/resources/BBGW-PCBA.pdf",
+          "claim": "Manufacturer mechanical drawing inspected for installed gender/population and separate connector layout"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": "Pitch nulls intentionally retained; compatibility marketing is not substituted for an exact dimension",
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "beagleboard-pocketbeagle",
+      "name": "PocketBeagle",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/pocketbeagle.pdf",
+      "board_variant": "original PocketBeagle",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P1",
+          "pin_count": 36,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            18,
+            18
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/pocketbeagle.pdf",
+              "claim": "Manufacturer manual explicitly two unpopulated 36-position headers",
+              "pages": [
+                27,
+                32,
+                46
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/pocketbeagle/blob/master/KiCAD/PocketBeagle.kicad_pcb",
+              "claim": "Exact PCB pads independently parsed: P1 and P2 each 36 through-hole pads in 2x18; x steps 2.54 mm and y \u00b11.27 mm establish both pitch axes"
+            }
+          ]
+        },
+        {
+          "id": "P2",
+          "pin_count": 36,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            18,
+            18
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/pocketbeagle.pdf",
+              "claim": "Manufacturer manual explicitly two unpopulated 36-position headers",
+              "pages": [
+                27,
+                32,
+                46
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/pocketbeagle/blob/master/KiCAD/PocketBeagle.kicad_pcb",
+              "claim": "Exact PCB pads independently parsed: P1 and P2 each 36 through-hole pads in 2x18; x steps 2.54 mm and y \u00b11.27 mm establish both pitch axes"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/pocketbeagle.pdf",
+          "claim": "Manufacturer manual explicitly two unpopulated 36-position headers",
+          "pages": [
+            27,
+            32,
+            46
+          ]
+        },
+        {
+          "url": "https://github.com/beagleboard/pocketbeagle/blob/master/KiCAD/PocketBeagle.kicad_pcb",
+          "claim": "Exact PCB pads independently parsed: P1 and P2 each 36 through-hole pads in 2x18; x steps 2.54 mm and y \u00b11.27 mm establish both pitch axes"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": "Seven underside JTAG test pads are not converted into an arbitrary pin-header row; no installed UART header separate from cape interfaces",
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "beagleboard-pocketbeagle-2",
+      "name": "PocketBeagle 2",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/pocketbeagle-2.pdf",
+      "board_variant": "PocketBeagle 2",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P1",
+          "pin_count": 36,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            18,
+            18
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "mounting_side": "bottom",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/pocketbeagle-2.pdf",
+              "claim": "Current manual and inspected underside image show pre-soldered female P1/P2, JST-SH 1 mm UART and TagConnect debug pads",
+              "pages": [
+                7,
+                8,
+                32,
+                33,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/pocketbeagle-2/blob/main/pocketbeagle2_sch.pdf",
+              "claim": "Schematic explicitly Header 2x18 2.54mm for both P1/P2; 10-contact TagConnect footprint"
+            }
+          ]
+        },
+        {
+          "id": "P2",
+          "pin_count": 36,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            18,
+            18
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "mounting_side": "bottom",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/pocketbeagle-2.pdf",
+              "claim": "Current manual and inspected underside image show pre-soldered female P1/P2, JST-SH 1 mm UART and TagConnect debug pads",
+              "pages": [
+                7,
+                8,
+                32,
+                33,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/pocketbeagle-2/blob/main/pocketbeagle2_sch.pdf",
+              "claim": "Schematic explicitly Header 2x18 2.54mm for both P1/P2; 10-contact TagConnect footprint"
+            }
+          ]
+        },
+        {
+          "id": "UART",
+          "pin_count": 3,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "shrouded_jst_sh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/pocketbeagle-2.pdf",
+              "claim": "Current manual and inspected underside image show pre-soldered female P1/P2, JST-SH 1 mm UART and TagConnect debug pads",
+              "pages": [
+                7,
+                8,
+                32,
+                33,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/pocketbeagle-2/blob/main/pocketbeagle2_sch.pdf",
+              "claim": "Schematic explicitly Header 2x18 2.54mm for both P1/P2; 10-contact TagConnect footprint"
+            }
+          ]
+        },
+        {
+          "id": "JTAG-TagConnect",
+          "pin_count": 10,
+          "pitch_mm": 1.27,
+          "rows": 2,
+          "pins_per_row": [
+            5,
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "tag_connect_contact_pads",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/pocketbeagle-2.pdf",
+              "claim": "Current manual and inspected underside image show pre-soldered female P1/P2, JST-SH 1 mm UART and TagConnect debug pads",
+              "pages": [
+                7,
+                8,
+                32,
+                33,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/pocketbeagle-2/blob/main/pocketbeagle2_sch.pdf",
+              "claim": "Schematic explicitly Header 2x18 2.54mm for both P1/P2; 10-contact TagConnect footprint"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/pocketbeagle-2.pdf",
+          "claim": "Current manual and inspected underside image show pre-soldered female P1/P2, JST-SH 1 mm UART and TagConnect debug pads",
+          "pages": [
+            7,
+            8,
+            32,
+            33,
+            36
+          ]
+        },
+        {
+          "url": "https://github.com/beagleboard/pocketbeagle-2/blob/main/pocketbeagle2_sch.pdf",
+          "claim": "Schematic explicitly Header 2x18 2.54mm for both P1/P2; 10-contact TagConnect footprint"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": "A0/A1 CPU history recorded by manual; not split into invented physical-model records",
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "beagleboard-beagleplay",
+      "name": "BeaglePlay",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/beagleplay.pdf",
+      "board_variant": "BeaglePlay",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "J21-mikroBUS",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            8,
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "mikrobus_socket",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": null,
+          "notes": "Single complete 16-contact socket with two separated 8-contact sides. Do not interpret 2.54 mm pin pitch as spacing between the two sides",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beagleplay.pdf",
+              "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+              "pages": [
+                10,
+                11,
+                25,
+                26,
+                35,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+              "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+            }
+          ]
+        },
+        {
+          "id": "J6-UART",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beagleplay.pdf",
+              "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+              "pages": [
+                10,
+                11,
+                25,
+                26,
+                35,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+              "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+            }
+          ]
+        },
+        {
+          "id": "J7-Grove",
+          "pin_count": 4,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "i2c_analog_auxiliary",
+          "geometry": "shrouded_right_angle",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beagleplay.pdf",
+              "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+              "pages": [
+                10,
+                11,
+                25,
+                26,
+                35,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+              "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+            }
+          ]
+        },
+        {
+          "id": "J18-Qwiic",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "i2c_auxiliary",
+          "geometry": "shrouded_jst_sh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beagleplay.pdf",
+              "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+              "pages": [
+                10,
+                11,
+                25,
+                26,
+                35,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+              "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+            }
+          ]
+        },
+        {
+          "id": "AM62-JTAG-pads",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "tag_connect_contact_pads",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beagleplay.pdf",
+              "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+              "pages": [
+                10,
+                11,
+                25,
+                26,
+                35,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+              "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+            }
+          ]
+        },
+        {
+          "id": "CC1352-JTAG-pads",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "tag_connect_contact_pads",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beagleplay.pdf",
+              "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+              "pages": [
+                10,
+                11,
+                25,
+                26,
+                35,
+                36
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+              "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/beagleplay.pdf",
+          "claim": "Current manual and inspected image identify complete mikroBUS socket and separate UART/Grove/Qwiic, plus two debug pad footprints",
+          "pages": [
+            10,
+            11,
+            25,
+            26,
+            35,
+            36
+          ]
+        },
+        {
+          "url": "https://github.com/beagleboard/beagleplay/blob/main/BeaglePlay_bom.csv",
+          "claim": "BOM: J21 MIKROE-5210 2x8 female 2.54 mm; J6 1x3 male 2.54 mm; J7 Grove female four-position 2 mm; J18 Qwiic female four-position 1 mm"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": "TagConnect pad counts left unresolved; no total-contact inflation",
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    },
+    {
+      "id": "beagleboard-beaglev-ahead",
+      "name": "BeagleV-Ahead",
+      "aliases": [],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+      "board_variant": "TH1520 BeagleV-Ahead, not BeagleV-Fire",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+              "claim": "Exact TH1520 BeagleV-Ahead has P8/P9 46 contacts; inspected official photo confirms fitted female headers and separate serial/auxiliary connectors",
+              "pages": [
+                10,
+                30,
+                39,
+                44
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/design/202003615_PCBA_BeagleVAhead_A11_Design-BOM.csv",
+              "claim": "BOM explicitly female P8/P9 2x23 2.54 mm; J10 male 1x6 2.54 mm; J7 2x8 boxed header at 1.27 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/BeagleV-Ahead_SCH.pdf",
+              "claim": "Exact manufacturer CAD schematic and debug pad layout"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+              "claim": "Exact TH1520 BeagleV-Ahead has P8/P9 46 contacts; inspected official photo confirms fitted female headers and separate serial/auxiliary connectors",
+              "pages": [
+                10,
+                30,
+                39,
+                44
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/design/202003615_PCBA_BeagleVAhead_A11_Design-BOM.csv",
+              "claim": "BOM explicitly female P8/P9 2x23 2.54 mm; J10 male 1x6 2.54 mm; J7 2x8 boxed header at 1.27 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/BeagleV-Ahead_SCH.pdf",
+              "claim": "Exact manufacturer CAD schematic and debug pad layout"
+            }
+          ]
+        },
+        {
+          "id": "J10-UART",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+              "claim": "Exact TH1520 BeagleV-Ahead has P8/P9 46 contacts; inspected official photo confirms fitted female headers and separate serial/auxiliary connectors",
+              "pages": [
+                10,
+                30,
+                39,
+                44
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/design/202003615_PCBA_BeagleVAhead_A11_Design-BOM.csv",
+              "claim": "BOM explicitly female P8/P9 2x23 2.54 mm; J10 male 1x6 2.54 mm; J7 2x8 boxed header at 1.27 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/BeagleV-Ahead_SCH.pdf",
+              "claim": "Exact manufacturer CAD schematic and debug pad layout"
+            }
+          ]
+        },
+        {
+          "id": "J7-mikroBUS-shuttle",
+          "pin_count": 16,
+          "pitch_mm": 1.27,
+          "rows": 2,
+          "pins_per_row": [
+            8,
+            8
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "auxiliary",
+          "geometry": "shrouded_box_header",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+              "claim": "Exact TH1520 BeagleV-Ahead has P8/P9 46 contacts; inspected official photo confirms fitted female headers and separate serial/auxiliary connectors",
+              "pages": [
+                10,
+                30,
+                39,
+                44
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/design/202003615_PCBA_BeagleVAhead_A11_Design-BOM.csv",
+              "claim": "BOM explicitly female P8/P9 2x23 2.54 mm; J10 male 1x6 2.54 mm; J7 2x8 boxed header at 1.27 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/BeagleV-Ahead_SCH.pdf",
+              "claim": "Exact manufacturer CAD schematic and debug pad layout"
+            }
+          ]
+        },
+        {
+          "id": "JTAG-TagConnect",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag_footprint",
+          "geometry": "tag_connect_contact_pads",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+              "claim": "Exact TH1520 BeagleV-Ahead has P8/P9 46 contacts; inspected official photo confirms fitted female headers and separate serial/auxiliary connectors",
+              "pages": [
+                10,
+                30,
+                39,
+                44
+              ]
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/design/202003615_PCBA_BeagleVAhead_A11_Design-BOM.csv",
+              "claim": "BOM explicitly female P8/P9 2x23 2.54 mm; J10 male 1x6 2.54 mm; J7 2x8 boxed header at 1.27 mm"
+            },
+            {
+              "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/BeagleV-Ahead_SCH.pdf",
+              "claim": "Exact manufacturer CAD schematic and debug pad layout"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/beaglev-ahead.pdf",
+          "claim": "Exact TH1520 BeagleV-Ahead has P8/P9 46 contacts; inspected official photo confirms fitted female headers and separate serial/auxiliary connectors",
+          "pages": [
+            10,
+            30,
+            39,
+            44
+          ]
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/design/202003615_PCBA_BeagleVAhead_A11_Design-BOM.csv",
+          "claim": "BOM explicitly female P8/P9 2x23 2.54 mm; J10 male 1x6 2.54 mm; J7 2x8 boxed header at 1.27 mm"
+        },
+        {
+          "url": "https://github.com/beagleboard/beaglev-ahead/blob/main/BeagleV-Ahead_SCH.pdf",
+          "claim": "Exact manufacturer CAD schematic and debug pad layout"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "notes": null,
+      "excluded_nonheader_features": [
+        "USB, video, Ethernet, microSD, M.2 and FFC interfaces",
+        "RF coax connectors, battery holders and unrelated production test pads"
+      ],
+      "revision_notes": "One exact marketed model. Source CAD revision is recorded as evidence; physical unit revision must be matched before jig use"
+    }
+  ]
+}

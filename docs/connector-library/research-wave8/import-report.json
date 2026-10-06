@@ -1,0 +1,82 @@
+{
+  "batch_id": "wave8-presoldered-2026-10-06",
+  "added_ids": [
+    "seeed-102010388",
+    "seeed-102010630",
+    "seeed-102010631",
+    "seeed-102010632",
+    "seeed-102010633",
+    "seeed-102010635",
+    "seeed-102010636",
+    "seeed-102010637",
+    "adafruit-3046",
+    "adafruit-3591"
+  ],
+  "identical_replay_ids": [],
+  "existing_ids_preserved": 310,
+  "catalog_records": 320,
+  "verified_source_files": 70,
+  "ambiguous_labels": {
+    "esp32-c6-devkitc-1": [
+      "espressif-esp32-c6-devkitc-1-v1-1",
+      "espressif-esp32-c6-devkitc-1-v1-2"
+    ],
+    "esp32-s3-devkitc-1": [
+      "esp32-s3-devkitc-1",
+      "espressif-esp32-s3-devkitc-1-v1-0",
+      "espressif-esp32-s3-devkitc-1-v1-1"
+    ],
+    "nano 33 iot": [
+      "arduino-nano",
+      "nano-33-iot"
+    ],
+    "nano esp32": [
+      "arduino-nano",
+      "nano-esp32"
+    ],
+    "nano every": [
+      "arduino-nano",
+      "nano-every"
+    ],
+    "pico 2": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-2"
+    ],
+    "pico h": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-h"
+    ],
+    "pico w": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-w"
+    ],
+    "pico wh": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-wh"
+    ],
+    "vl53l1x": [
+      "adafruit-3967",
+      "pololu-3415"
+    ],
+    "xiao esp32c3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c3"
+    ],
+    "xiao esp32c6": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c6"
+    ],
+    "xiao esp32s3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3"
+    ],
+    "xiao esp32s3 sense": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3-sense"
+    ]
+  },
+  "catalog_sha256": "a883b0af6d9a3b8d11e361e378ac26b4a909fd0badf8b41de7fce008d53d73a1",
+  "physical_validation": false,
+  "model_approval_modified": false,
+  "status": "validated_research_only"
+}

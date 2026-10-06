@@ -1,0 +1,1 @@
+PASS: 12 unique exact SKUs; no prior-56 or prior Adafruit-wave duplicate; 28 CAD-verified 2.54 mm single-row groups; 8 Metro groups female; no fit qualification; all exact commits and PCB hashes retained.

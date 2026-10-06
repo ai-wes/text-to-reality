@@ -1,0 +1,116 @@
+[
+  {
+    "id": "adafruit-3458",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-328P-PCB/blob/62859c243921da2d1221681373356f1559855cbc/Adafruit%20Feather%20328P.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2795",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Adalogger-PCB/blob/c7e87d6e0feb5d3e048c3715038c0e4ce71cdfa0/Adafruit%20Feather%2032u4%20Adalogger.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2771",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Basic-Proto-PCB/blob/42d06b39d8afeb23881364d3a9fabe1cc80b6dd5/Adafruit%20Feather%2032u4%20Basic%20rev%20B.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2796",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-Adalogger-PCB/blob/0147a7204c11ae57fc42c5424d5c700bcca875b2/Adafruit%20Feather%20M0%20Adalogger.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2772",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-Basic-Proto-PCB/blob/1de541ff46165575234d826ae64be64a82e8bc93/Adafruit%20Feather%20M0%20Basic%20rev%20C.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3403",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-Express-PCB/blob/5017ef41885371f8a26ba1b8ab9dd700bd7ce655/Adafruit%20Feather%20M0%20Express.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3857",
+    "claim": "Physical row sizes 16+12; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M4-Express-PCB/blob/d98407a6071813bc35c39c6e88ca09c0c9ef6f18/Adafruit%20Feather%20M4%20Express.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3675",
+    "claim": "Physical row sizes 14+14+5; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-ItsyBitsy-32u4-PCB/blob/b48fb1454afa84d1d83d4641d6c31fb49d360222/Itsy%20Bitsy%2032u4%203V.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3677",
+    "claim": "Physical row sizes 14+14+5; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-ItsyBitsy-32u4-PCB/blob/b48fb1454afa84d1d83d4641d6c31fb49d360222/Itsy%20Bitsy%2032u4%205V.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3727",
+    "claim": "Physical row sizes 14+14+5; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-ItsyBitsy-M0-PCB/blob/master/Adafruit%20ItsyBitsy%20M0.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3800",
+    "claim": "Physical row sizes 14+14+5; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-ItsyBitsy-M4-Express-PCB/blob/77ccac24a6eb36fca6f780fd45511d039f0e574f/Adafruit%20ItsyBitsy%20M4.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4481",
+    "claim": "Physical row sizes 14+14; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-ItsyBitsy-nRF52840-Express-PCB/blob/master/Adafruit%20ItsyBitsy%20nRF52840%20Express.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5325",
+    "claim": "Physical row sizes 7+7; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-S2-PCB/blob/master/Adafruit%20QT%20Py%20ESP32-S2.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5426",
+    "claim": "Physical row sizes 7+7; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-S3-PCB/blob/master/Adafruit%20QT%20Py%20ESP32-S3.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4600",
+    "claim": "Physical row sizes 7+7; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-QT-Py-PCB/blob/a8caed9ad5f2670c662f0b0a68af62cceb3cec96/Adafruit%20QT%20Py.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3500",
+    "claim": "Physical row sizes 5+5; each pitch measured from CAD pad coordinates",
+    "source": "https://github.com/adafruit/Adafruit-Trinket-M0-PCB/blob/4103b9cd2722fadc28dc3969bbe067c6873e0540/Trinket%20M0%20rev%20D.brd",
+    "rank": 1
+  },
+  {
+    "id": "seeed-xiao-nrf52840",
+    "claim": "Two separate 7-position rows, 2.54 mm pitch measured from manufacturer CAD; castellated copies deduplicated",
+    "source": "https://files.seeedstudio.com/wiki/XIAO-BLE/Res/260828_Seeed_Studio_XIAO_nRF52840_v1.2.zip",
+    "rank": 1
+  },
+  {
+    "id": "seeed-xiao-nrf52840-sense",
+    "claim": "Two separate 7-position rows, 2.54 mm pitch measured from manufacturer CAD; castellated copies deduplicated",
+    "source": "https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed-Studio-XIAO-nRF52840V1.1-KiCad-Project-260105.zip",
+    "rank": 1
+  },
+  {
+    "id": "seeed-xiao-samd21",
+    "claim": "Two separate 7-position rows, 2.54 mm pitch measured from manufacturer CAD; castellated copies deduplicated",
+    "source": "https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/Seeeduino-XIAO-v1.0.zip",
+    "rank": 1
+  }
+]

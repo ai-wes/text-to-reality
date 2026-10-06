@@ -1,0 +1,13 @@
+{
+  "records": 10,
+  "manufacturer_counts": {
+    "SparkFun": 6,
+    "Waveshare": 4
+  },
+  "CAD_checksums_verified": 6,
+  "has_PTH_header_records": 5,
+  "explicit_connector_exclusions": 5,
+  "single_reset_auxiliary_groups": 2,
+  "physical_fit_verified": false,
+  "as_shipped_population_unknown_for_SparkFun_PTH": true
+}

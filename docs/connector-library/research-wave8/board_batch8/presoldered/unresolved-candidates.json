@@ -1,0 +1,24 @@
+[
+  {
+    "sku": "102010634",
+    "parent_board_id": "seeed-xiao-esp32s3",
+    "name": "XIAO ESP32-S3 Pre-Soldered",
+    "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Pre-Soldered-p-6334.html",
+    "verified": "Exact SKU and 7+7 installed male headers established by official SKU photo",
+    "status": "withheld_from_import",
+    "blocker": "Official non-Sense KiCad link downloads a Sense v1.5 archive identical to the Sense link. Non-Sense DXF downloaded but header pitch not extracted. Do not promote Sense CAD as exact non-Sense CAD.",
+    "needed": "Correct non-Sense manufacturer CAD or readable exact non-Sense dimension drawing to close independent pitch check"
+  },
+  {
+    "family": "SparkFun Pro Micro RP2040/RP2350",
+    "status": "excluded",
+    "source": "https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide/all",
+    "reason": "Official guide requires user-soldered headers; no distinct factory-soldered SKU verified in bounded search"
+  },
+  {
+    "family": "Adafruit HUZZAH stacking variants",
+    "status": "excluded",
+    "source": "https://www.adafruit.com/product/3619",
+    "reason": "Mixed top female/bottom male stacking geometry outside simple male-header batch"
+  }
+]

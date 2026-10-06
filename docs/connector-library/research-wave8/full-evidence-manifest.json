@@ -1,0 +1,729 @@
+{
+  "bundle_version": 1,
+  "wave": 8,
+  "created_utc": "2026-10-06T20:10:44.947060+00:00",
+  "purpose": "Source-preserving proposal for catalog integration; no physical or model approval",
+  "record_count_semantics": "Ten completed exact factory-presoldered SKU research records. No physical fit approval. Candidate leads and CAD mismatches excluded from board counts. Not accepted runtime integration counts.",
+  "constraints": [
+    "Never flatten multi-row connectors",
+    "Keep physical edge rows separate",
+    "Preserve nullable or provisional dimensions and population",
+    "No physical fit, electrical compatibility, retention or model approval is established"
+  ],
+  "batches": [
+    {
+      "directory": "board_batch8/presoldered",
+      "catalog_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "records_key": "boards",
+      "record_count": 10
+    }
+  ],
+  "record_index": [
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/0",
+      "source_id": "seeed-102010388",
+      "normalized_id": "seeed-102010388",
+      "name": "Seeed Studio XIAO SAMD21 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/1",
+      "source_id": "seeed-102010630",
+      "normalized_id": "seeed-102010630",
+      "name": "Seeed Studio XIAO RP2040 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/2",
+      "source_id": "seeed-102010631",
+      "normalized_id": "seeed-102010631",
+      "name": "Seeed Studio XIAO nRF52840 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/3",
+      "source_id": "seeed-102010632",
+      "normalized_id": "seeed-102010632",
+      "name": "Seeed Studio XIAO nRF52840 Sense (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/4",
+      "source_id": "seeed-102010633",
+      "normalized_id": "seeed-102010633",
+      "name": "XIAO ESP32C3 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/5",
+      "source_id": "seeed-102010635",
+      "normalized_id": "seeed-102010635",
+      "name": "XIAO ESP32S3 Sense (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/6",
+      "source_id": "seeed-102010636",
+      "normalized_id": "seeed-102010636",
+      "name": "XIAO ESP32C6 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/7",
+      "source_id": "seeed-102010637",
+      "normalized_id": "seeed-102010637",
+      "name": "Seeed Studio XIAO RP2350 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/8",
+      "source_id": "adafruit-3046",
+      "normalized_id": "adafruit-3046",
+      "name": "Adafruit Feather HUZZAH ESP8266 (Factory Pre-Soldered Male Headers)"
+    },
+    {
+      "batch": "presoldered",
+      "source_file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "json_pointer": "/boards/9",
+      "source_id": "adafruit-3591",
+      "normalized_id": "adafruit-3591",
+      "name": "Adafruit HUZZAH32 ESP32 Feather (Factory Pre-Soldered Male Headers)"
+    }
+  ],
+  "files": [
+    {
+      "path": "board_batch8/presoldered/102010388-0.jpg",
+      "bytes": 29962,
+      "sha256": "3de2cec0c19a0d816bd4ee2d727316ef6cf89734129d977f7362b0e109aaa638"
+    },
+    {
+      "path": "board_batch8/presoldered/102010388-1.jpg",
+      "bytes": 2276,
+      "sha256": "86edbb4ff4ab6f26ac349e99d564c8c16377515c9fa923514dce658b4a60befc"
+    },
+    {
+      "path": "board_batch8/presoldered/102010388-2.jpg",
+      "bytes": 1160,
+      "sha256": "04b37fa3bd68173f6433452e1d6bd472a0c4ab9e573ef88888183a1d005b1c7d"
+    },
+    {
+      "path": "board_batch8/presoldered/102010388.html",
+      "bytes": 978933,
+      "sha256": "cd1d37d0b0de05274019bacf1ea76a93af8c811d79aa836a629c56166e0f4656"
+    },
+    {
+      "path": "board_batch8/presoldered/102010630-0.jpg",
+      "bytes": 26129,
+      "sha256": "11a12f5a3ad3efb561a7ee44ddc039384ae454bd5227635f645965bd9573cf39"
+    },
+    {
+      "path": "board_batch8/presoldered/102010630-1.jpg",
+      "bytes": 2184,
+      "sha256": "e1e37fcb22bb47cd7a2004ba48b99aa2a18b6e235747c553b551ca94d24a2d2b"
+    },
+    {
+      "path": "board_batch8/presoldered/102010630-2.jpg",
+      "bytes": 1173,
+      "sha256": "be084569464291cb4a7aae3d1d2262689c68eebbbc08de8610c74d7fef0270e3"
+    },
+    {
+      "path": "board_batch8/presoldered/102010630.html",
+      "bytes": 961195,
+      "sha256": "c8afea0d9cb393a20ca8ec99aa5e5e7d762038f949410e2e0a036ff72ff50719"
+    },
+    {
+      "path": "board_batch8/presoldered/102010631-0.jpg",
+      "bytes": 28426,
+      "sha256": "87bf4e3d9707a608805b946f7a84ab7dd597a58f204987d0ef42ee64b171f775"
+    },
+    {
+      "path": "board_batch8/presoldered/102010631-1.jpg",
+      "bytes": 2148,
+      "sha256": "4046abf6ec738521a96e08a8ae52231b214bf98dd5bd4814f2b211af3f601218"
+    },
+    {
+      "path": "board_batch8/presoldered/102010631-2.jpg",
+      "bytes": 1203,
+      "sha256": "c946d597dea884c0db454248e31a4210badb8b852450c181b8dc6e289f714c31"
+    },
+    {
+      "path": "board_batch8/presoldered/102010631.html",
+      "bytes": 962441,
+      "sha256": "138c1959826b4ec3352986808ab4e4b8ee0a4b58c60e01df278fb744c9d12155"
+    },
+    {
+      "path": "board_batch8/presoldered/102010632-0.jpg",
+      "bytes": 27358,
+      "sha256": "f0cad70bfe3f5ef41da223d4315ee6a97d0d96fed8cca44b44617469b425938e"
+    },
+    {
+      "path": "board_batch8/presoldered/102010632-1.jpg",
+      "bytes": 2125,
+      "sha256": "56325841b3e75d683cd687b6e7e1712617458eef715addfd96ba573e4cc863c9"
+    },
+    {
+      "path": "board_batch8/presoldered/102010632-2.jpg",
+      "bytes": 1269,
+      "sha256": "b0eb8ed924d035e5fa6abeab114e1c297acea496fd9cabddc5627e8dc5dbe8d9"
+    },
+    {
+      "path": "board_batch8/presoldered/102010632.html",
+      "bytes": 963766,
+      "sha256": "d9801de63e5721e1a6b3b92622a7f57f887930090705c1c160aefd99a02a8eb8"
+    },
+    {
+      "path": "board_batch8/presoldered/102010633-0.jpg",
+      "bytes": 27519,
+      "sha256": "ba732e17e16e1faf0a12e02de0db7d166aa94ab3c3dbbd0c9574d3d9cb81a360"
+    },
+    {
+      "path": "board_batch8/presoldered/102010633-1.jpg",
+      "bytes": 2189,
+      "sha256": "2bdf1e60247ed5ae0567e64d319c7ad3f91573e308ec582e313ea974ba6a4f5b"
+    },
+    {
+      "path": "board_batch8/presoldered/102010633-2.jpg",
+      "bytes": 1195,
+      "sha256": "75c775450db96b4e219e7c1e1e6cdd2ef2a0ff0c33e77045b35cec1abf7718da"
+    },
+    {
+      "path": "board_batch8/presoldered/102010633.html",
+      "bytes": 970526,
+      "sha256": "c66c3b00e304a27f83d81adb6c87ca27b7655d70d95cfd09ae00f2e9ea047c9a"
+    },
+    {
+      "path": "board_batch8/presoldered/102010634-0.jpg",
+      "bytes": 28048,
+      "sha256": "24014f21375048ea45ebf20892a238067a0194dfc0ded19b9cf29e6309051f07"
+    },
+    {
+      "path": "board_batch8/presoldered/102010634-1.jpg",
+      "bytes": 2273,
+      "sha256": "0df12a720759f291dd284321d9582d48ec073486687d8649b0a15194d419501a"
+    },
+    {
+      "path": "board_batch8/presoldered/102010634-2.jpg",
+      "bytes": 1313,
+      "sha256": "4c98b1c3aa8987bc19161dff1a715fb3f7b1f18a98b2aba2807910dc5978f497"
+    },
+    {
+      "path": "board_batch8/presoldered/102010634.html",
+      "bytes": 966429,
+      "sha256": "814fea6b91e48b8e6b30fe0b0a4ddf1f6783c8dec1a038c5b0c6bc7ba0d5fad6"
+    },
+    {
+      "path": "board_batch8/presoldered/102010635-0.jpg",
+      "bytes": 29125,
+      "sha256": "e8544ee731b57444ad431a95c013dd09b8d4dd092373a437e47c8932021861de"
+    },
+    {
+      "path": "board_batch8/presoldered/102010635-1.jpg",
+      "bytes": 2236,
+      "sha256": "ab1b80ebbe284883868004d9e636e6d99776f17add2551e83e75bbfdd43fb5ce"
+    },
+    {
+      "path": "board_batch8/presoldered/102010635-2.jpg",
+      "bytes": 1418,
+      "sha256": "588b2643ce1d8f985302c48d09d56f9be3d3b560c8ceb2a1e9b6d35a6ed89c11"
+    },
+    {
+      "path": "board_batch8/presoldered/102010635.html",
+      "bytes": 970352,
+      "sha256": "a5caa759422bca1812700ce4c0583014f476a9dfb97db0d9bfe5df0393bccbd2"
+    },
+    {
+      "path": "board_batch8/presoldered/102010636-0.jpg",
+      "bytes": 27226,
+      "sha256": "9652ee8adbca86528a65a7fe4df290b32e75ad77ea8a7ed101d76885e6a02515"
+    },
+    {
+      "path": "board_batch8/presoldered/102010636-1.jpg",
+      "bytes": 2083,
+      "sha256": "0e45b60c46670ddd625f36b55144edb956f2637a32811bcbbff7f871d6b7b39c"
+    },
+    {
+      "path": "board_batch8/presoldered/102010636-2.jpg",
+      "bytes": 1208,
+      "sha256": "6d0ce2b9fb0d76080e3136035af47dd55e354cfae3d8883e08c290023b7906f7"
+    },
+    {
+      "path": "board_batch8/presoldered/102010636.html",
+      "bytes": 968453,
+      "sha256": "d956c78fbaffca5bbc9077de4c728cce9c16b08898ed85376e77dd127471a6a2"
+    },
+    {
+      "path": "board_batch8/presoldered/102010637-0.jpg",
+      "bytes": 27311,
+      "sha256": "f618a029139ecdbf50d579fee123b3e11673874a5db9f2ebc0c0a700dea01469"
+    },
+    {
+      "path": "board_batch8/presoldered/102010637-1.jpg",
+      "bytes": 2206,
+      "sha256": "91fb2222daba48dc0bfa028cd597af9823455b6f82397bd0b817d8ecc03d772d"
+    },
+    {
+      "path": "board_batch8/presoldered/102010637-2.jpg",
+      "bytes": 1210,
+      "sha256": "15ec640677291924602354470c7af521e4fde6dd5a4bdc6501e9aa603d4188d1"
+    },
+    {
+      "path": "board_batch8/presoldered/102010637.html",
+      "bytes": 956043,
+      "sha256": "a67e75c6b6472f3ceb68144f873fcfa6cb201037482e95007405f8248effd893"
+    },
+    {
+      "path": "board_batch8/presoldered/3046.html",
+      "bytes": 95717,
+      "sha256": "6c1cf91c1e460405b715fbdf47a07a4d62f048dccb731b56ec55fdc9b17d81a7"
+    },
+    {
+      "path": "board_batch8/presoldered/3046.jpg",
+      "bytes": 129155,
+      "sha256": "ee97b3999c0053849f7fe9b94a39f521260b71a222ea265db8647fd4e47d057d"
+    },
+    {
+      "path": "board_batch8/presoldered/3591.html",
+      "bytes": 98481,
+      "sha256": "6e491acffb000907d9e0703fc4ca1025fa3bd6c132d736af6595bcecb9ebb52c"
+    },
+    {
+      "path": "board_batch8/presoldered/3591.jpg",
+      "bytes": 128978,
+      "sha256": "9a5a7af7f89f0f06111197b50dff800888006c230aefbf9adabe3952b008e03f"
+    },
+    {
+      "path": "board_batch8/presoldered/Adafruit-Feather-ESP8266-HUZZAH-PCB/Adafruit ESP8266 Feather rev G.brd",
+      "bytes": 899772,
+      "sha256": "c7f249dfa2b899d480b497107b002c45218093275dbc5b5e70952b957d8ad9f3"
+    },
+    {
+      "path": "board_batch8/presoldered/Adafruit-HUZZAH32-ESP32-Feather-PCB/Adafruit HUZZAH32 ESP32 Feather.brd",
+      "bytes": 774658,
+      "sha256": "992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200"
+    },
+    {
+      "path": "board_batch8/presoldered/EVIDENCE.md",
+      "bytes": 5193,
+      "sha256": "6de1d310edfb95484611121efff9ecdbf52eda93a9f32b840c801c33681d3ce6"
+    },
+    {
+      "path": "board_batch8/presoldered/VALIDATION.txt",
+      "bytes": 443,
+      "sha256": "199dfad55942a31f5d6a9e4a80769d0e1df11209f17b1075921fd6e7a2228f57"
+    },
+    {
+      "path": "board_batch8/presoldered/build_catalog.py",
+      "bytes": 7600,
+      "sha256": "c3a7a7be0d32daa3bb3b7978cc2f8c91b97fc6880d29cd2fa982196832371e48"
+    },
+    {
+      "path": "board_batch8/presoldered/c3.html",
+      "bytes": 970526,
+      "sha256": "a28ac7e9b52802abd002db167d488fb7251ae30d85813c000a8d3c7c415313ae"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/01 Descriptions.kicad_sch",
+      "bytes": 85952,
+      "sha256": "60f10c8701774fdbfe8659c573ed6d6119327ec9d80a293b331339271de21709"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/02 Block Diagram.kicad_sch",
+      "bytes": 127479,
+      "sha256": "d9b44fdf73cf4332184a47e05866d26e32e0f3d59b3958aa07f3dc938abd1869"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/03 Power.kicad_sch",
+      "bytes": 363010,
+      "sha256": "b8209426898fd519211ce9258eb9164940545bce3a0851966995ad236d414fee"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/04 ESP32 C6.kicad_sch",
+      "bytes": 373762,
+      "sha256": "9adb7444f9657442b9f4dbc63f2d0f50628eb225e1cf09e40970d2d1a49efc88"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pcb",
+      "bytes": 2756545,
+      "sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_prl",
+      "bytes": 2099,
+      "sha256": "845af23cda9c45319ad52adda1e8967d95b98b06b513411a38ba1bb28089aee3"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pro",
+      "bytes": 21418,
+      "sha256": "32530f60d46a7f41f7b40a0a13b0db65d1cf9f5ed5f0b13848852c8cad186dd3"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_sch",
+      "bytes": 86320,
+      "sha256": "ffc9f9812ce318ced06d1e4697861e689dec628895df9d27702e05ae48a16847"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-B_Cu.gbr",
+      "bytes": 85629,
+      "sha256": "a2b052695ef6570b175f8833442ed975b634c636ba7fc38f6a7440dffe8c077c"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-B_Mask.gbr",
+      "bytes": 7500,
+      "sha256": "65cbde236a5601094e02a20d1d67837b01e8b88644d59f30b66e1d97bb2ec41a"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-B_Paste.gbr",
+      "bytes": 4368,
+      "sha256": "5bdf0d698250abae3d49be94d7a17790a9e0c73f2f20e39b3352ec889cc75462"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-B_Silkscreen.gbr",
+      "bytes": 121028,
+      "sha256": "0550822eb08ad0fe1a85da706558aae91daefa2e9161ace1e1beeaee5220aab5"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-Edge_Cuts.gbr",
+      "bytes": 1951,
+      "sha256": "1f4286d923ba19c549d9267c8acafaa45678052c7bf94875a0b5a4a1831cd5e7"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-F_Cu.gbr",
+      "bytes": 143288,
+      "sha256": "4179e1b85872c65e5a96d834ee56c881fa937c304e3b176c96c1cc6c618ea6be"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-F_Mask.gbr",
+      "bytes": 17220,
+      "sha256": "40ba1a6770ae8cb45b9b3b2b33c4092010d82edff0b93ddf260eda235b633b9e"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-F_Paste.gbr",
+      "bytes": 15049,
+      "sha256": "d4ba5dab2c981bc0d63ddb3e97579eb948bc3db781e67792d1a77637848bda7b"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-F_Silkscreen.gbr",
+      "bytes": 195301,
+      "sha256": "1f29f8eec56579cfe66711bc4d652e678e98b6bdeebd7d22ebaa3e6b975424b1"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-In1_Cu.gbr",
+      "bytes": 93905,
+      "sha256": "f4e8bc174865c2f5886e6d1de7148bdab3d68461d1d4ddfe0d34cff203c69693"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-In2_Cu.gbr",
+      "bytes": 78893,
+      "sha256": "f2e9e6633c7c562e37b23ab3a238bdc25cc21a5bf7579c7f16ff202ae636e889"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-NPTH-drl.gbr",
+      "bytes": 620,
+      "sha256": "4b082c3eb2e711968b13615b49f3afd8f869d159b181b1e88e9bb77d890486a9"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-PTH-drl.gbr",
+      "bytes": 5527,
+      "sha256": "6a7b821d8114a0785e23ebcedba19773280a3b503cabd4192cbf0b8bdacf810c"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6_gerber/XIAO ESP32 C6-job.gbrjob",
+      "bytes": 3937,
+      "sha256": "15dbb6f98b0583e48a8075aa4230ec552cfaa1f03b25a68ea03db2e4d3fe6d87"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/extracted-pads.json",
+      "bytes": 8898,
+      "sha256": "d2f0b907ff842066004a4bc7b560a74b654af6207098c8cf8c078f8f63ccbd39"
+    },
+    {
+      "path": "board_batch8/presoldered/c6-cad.zip",
+      "bytes": 1126886,
+      "sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc"
+    },
+    {
+      "path": "board_batch8/presoldered/c6wiki.html",
+      "bytes": 151200,
+      "sha256": "d4972f38575b2c1f2d3edd1a06e546c2c75c4d46be4e2f2e8af4ebead65fd3d6"
+    },
+    {
+      "path": "board_batch8/presoldered/cad-inspection.txt",
+      "bytes": 15370,
+      "sha256": "5c20b40e81200544e8def94be4e2140cf9c18ec89bdf1f53adf42ceb900e6fb4"
+    },
+    {
+      "path": "board_batch8/presoldered/duplicate-audit.json",
+      "bytes": 1984,
+      "sha256": "e4f43218da4f440e97fc83ac23f2105b6edc86fe5ea48c48b797e50354b5b456"
+    },
+    {
+      "path": "board_batch8/presoldered/fetch.py",
+      "bytes": 1533,
+      "sha256": "5756746d29a84f9509e82a0300572651a7d6624575dddf899ac8e72d09debf7b"
+    },
+    {
+      "path": "board_batch8/presoldered/fetch_cad.py",
+      "bytes": 986,
+      "sha256": "111c73a2c587db48bc68a38de38e95118e0cb6638b3008b7b0f3fb558544c7d2"
+    },
+    {
+      "path": "board_batch8/presoldered/finalize.py",
+      "bytes": 1506,
+      "sha256": "81a635d292e9865b8cbe9332298dd06ce0f5400fda6f7c4618f8b6b9cd212f84"
+    },
+    {
+      "path": "board_batch8/presoldered/findings-ledger.json",
+      "bytes": 5650,
+      "sha256": "2ede40fdc20cb217753bbe5b1bd8889e134ded4a78838df45b08c160ef2bb75a"
+    },
+    {
+      "path": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+      "bytes": 48774,
+      "sha256": "448c814305b0ada2630ce7398c72a61fa82fcac1abe0571574cf7bf91874ce8b"
+    },
+    {
+      "path": "board_batch8/presoldered/inspect_cad.py",
+      "bytes": 927,
+      "sha256": "b0e29bb0ff821e0661d8a22d82ac2491a2868b5b3039618b3ccf8bb32efec5c0"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/01 Descriptions.kicad_sch",
+      "bytes": 2780,
+      "sha256": "373005b894c4023cc3b18984b5d3609fb7a9a8897185ba62d1c253887177347a"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/02 Block Diagram.kicad_sch",
+      "bytes": 186049,
+      "sha256": "0018054d5c3e44352b569ae2f6c56a9ca4afb362c9d5397c3bf3f1ac0cc8d009"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/03 Power.kicad_sch",
+      "bytes": 245584,
+      "sha256": "538a9158385fb5f49481d90b09d2602a5677a3a2be0cc4f8c5c29be23cfb8761"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/04 RP2350.kicad_sch",
+      "bytes": 347220,
+      "sha256": "7de33189837fb0620c1c0b7e6b51225032a74d1f6342181104984be3a6d09b68"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/XIAO RP2350 v1.0_SCH_PDF.pdf",
+      "bytes": 302708,
+      "sha256": "bd1c16ac32eb65bc1c389afbfea3ee90e321ba4b7e1804a6505d646774490bdd"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/XIAO RP2350.kicad_pcb",
+      "bytes": 3679192,
+      "sha256": "f74481ce0381f8b160e49450b7bb138aa79b1182cfd1c794c790c034279de909"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/XIAO RP2350.kicad_prl",
+      "bytes": 1326,
+      "sha256": "dc6f50ba75b84405069b66bf311cf44fb528ba96f273a21dc5c0171bb426547f"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/XIAO RP2350.kicad_pro",
+      "bytes": 23177,
+      "sha256": "c7a7a32cc66d2288bc1caee0065b543b3dfcd6b9fd61949f62d66e2b585b6d31"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/XIAO RP2350.kicad_sch",
+      "bytes": 2901,
+      "sha256": "d0e520100424ae9d74970f809ae55332f32fd90bc321ac2c08db4e2767b463d7"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/extracted-pads.json",
+      "bytes": 9252,
+      "sha256": "719c2001f686a503bfafe1a4e8a7f111a11384ea11c77126844620c6f03e5ee3"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/fp-info-cache",
+      "bytes": 32947,
+      "sha256": "df5fff8d2edcf4b32befbb47042a56696490b0538a29eff939ad15aca3fd45f1"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350-cad.zip",
+      "bytes": 1145969,
+      "sha256": "a4e379f4ff3e31bfea1d53506241a86a171d7f36bbe65b142329ef09bf821d3c"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350.dxf",
+      "bytes": 1418153,
+      "sha256": "bb0d09ed2c670287d9b4f2909ed8511cf62ffd065d203cf6d749c08f94d67418"
+    },
+    {
+      "path": "board_batch8/presoldered/rp2350.dxf.circles.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/01 Descriptions.kicad_sch",
+      "bytes": 93292,
+      "sha256": "738749871c44cf66821ec7ed32f7af81ba5ac7e54ff304fa5de2ce0116d93e1a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/02 Block Diagram.kicad_sch",
+      "bytes": 370444,
+      "sha256": "33c4a016201e4707e21a6deb4716ed04d0df2a63e8f747644c9317365e8a9ae2"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/03 XIAO ESP32-S3-Sense.kicad_sch",
+      "bytes": 464240,
+      "sha256": "5b2763e63f537f57ffe90bb9831bffa1a30bc3db6d476c6cd9f8589f673e836a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_pcb",
+      "bytes": 1281214,
+      "sha256": "d20724aa7198a897871cc1ce87f1a322d0b9cf77521fd2fc4ccda61bc5e4af6c"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_prl",
+      "bytes": 2499,
+      "sha256": "ea0ce0df6559c4b54479141217fbf60da530523dd48b07cb9a2a945dc4b06090"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_pro",
+      "bytes": 15305,
+      "sha256": "ce19b6a9ea4e610e71fc61e7da900d5d4b6a52f102e1c72c84b35454915fbf4a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_sch",
+      "bytes": 85636,
+      "sha256": "04db1f46871c5fb86891b4ce49e68880df7de2b112621867e8b20c9c015df34f"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO_ESP32S3 Sense_v1.5.drawio",
+      "bytes": 34628,
+      "sha256": "ebcaab1d03ed9271aa180f08b05da9697e344390ae264bd9bdb2471ed6607789"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO_ESP32S3 Sense_v1.5.drawio.png",
+      "bytes": 197107,
+      "sha256": "a1c76f957564ec9401c45f1fb2e4403c47a049892084954f4e439a918a48e5e8"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/extracted-pads.json",
+      "bytes": 9389,
+      "sha256": "61730e32d01eec9370366fe1eddc1438fef6c28746e951f1fe3e7767f2d8039a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3-cad.zip",
+      "bytes": 836170,
+      "sha256": "a82247725c8a8bcd8cac81a7acbd126396217e5b680f6dfe28958851e02d5cdb"
+    },
+    {
+      "path": "board_batch8/presoldered/s3.dxf",
+      "bytes": 1713469,
+      "sha256": "5fd32e3ba7a4bd85b8cc0f5d9413e26dd947e84e27b2d0f03350a7d367903f23"
+    },
+    {
+      "path": "board_batch8/presoldered/s3.dxf.circles.json",
+      "bytes": 141,
+      "sha256": "6de855741f342dea639cd10adde5bfed7cc424ee90e6ce8285eb854e5433d30f"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/01 Descriptions.kicad_sch",
+      "bytes": 93292,
+      "sha256": "738749871c44cf66821ec7ed32f7af81ba5ac7e54ff304fa5de2ce0116d93e1a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/02 Block Diagram.kicad_sch",
+      "bytes": 370444,
+      "sha256": "33c4a016201e4707e21a6deb4716ed04d0df2a63e8f747644c9317365e8a9ae2"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/03 XIAO ESP32-S3-Sense.kicad_sch",
+      "bytes": 464240,
+      "sha256": "5b2763e63f537f57ffe90bb9831bffa1a30bc3db6d476c6cd9f8589f673e836a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_pcb",
+      "bytes": 1281214,
+      "sha256": "d20724aa7198a897871cc1ce87f1a322d0b9cf77521fd2fc4ccda61bc5e4af6c"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_prl",
+      "bytes": 2499,
+      "sha256": "ea0ce0df6559c4b54479141217fbf60da530523dd48b07cb9a2a945dc4b06090"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_pro",
+      "bytes": 15305,
+      "sha256": "ce19b6a9ea4e610e71fc61e7da900d5d4b6a52f102e1c72c84b35454915fbf4a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO ESP32S3_V1.5.kicad_sch",
+      "bytes": 85636,
+      "sha256": "04db1f46871c5fb86891b4ce49e68880df7de2b112621867e8b20c9c015df34f"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO_ESP32S3 Sense_v1.5.drawio",
+      "bytes": 34628,
+      "sha256": "ebcaab1d03ed9271aa180f08b05da9697e344390ae264bd9bdb2471ed6607789"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/XIAO_ESP32S3 Sense_v1.5.drawio.png",
+      "bytes": 197107,
+      "sha256": "a1c76f957564ec9401c45f1fb2e4403c47a049892084954f4e439a918a48e5e8"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/extracted-pads.json",
+      "bytes": 9389,
+      "sha256": "61730e32d01eec9370366fe1eddc1438fef6c28746e951f1fe3e7767f2d8039a"
+    },
+    {
+      "path": "board_batch8/presoldered/s3sense-cad.zip",
+      "bytes": 836170,
+      "sha256": "a82247725c8a8bcd8cac81a7acbd126396217e5b680f6dfe28958851e02d5cdb"
+    },
+    {
+      "path": "board_batch8/presoldered/sources.json",
+      "bytes": 5767,
+      "sha256": "1774d0e6a0133708b78e19023d377ba258c55d838679189dc81ba793d6b98f06"
+    },
+    {
+      "path": "board_batch8/presoldered/unresolved-candidates.json",
+      "bytes": 1227,
+      "sha256": "e705e708cde1dc1b27f9a6cbb66c0d66a1c38254a02d3583f92e7e6607476bbd"
+    },
+    {
+      "path": "board_batch8/presoldered/xiao-nrf52840/Seeed Studio XIAO nRF52840 v1.2.kicad_pcb",
+      "bytes": 1515300,
+      "sha256": "4d0a45f2427ba6750d1017441a266375ef59ea2088825e4dc96eeb507a75e167"
+    },
+    {
+      "path": "board_batch8/presoldered/xiao-nrf52840-sense/Seeed Studio XIAO nRF52840 v1.1.kicad_pcb",
+      "bytes": 1241738,
+      "sha256": "0add0614db7506e50f48c62e4368c60eb725638caceec57fd023c7dab3622bff"
+    },
+    {
+      "path": "board_batch8/presoldered/xiao-samd21/Seeeduino XIAO_v1.0_191112.brd",
+      "bytes": 197591,
+      "sha256": "7a21925c831d3c00e8b9d1004f02f19c81d13796fc83ec4e9099266fa440262c"
+    }
+  ],
+  "identity_adjustments": [],
+  "omitted_support_directories": [
+    ".git repository machinery",
+    "__pycache__ caches"
+  ],
+  "omitted_redundant_archives": [],
+  "total_record_count": 10,
+  "normalized_proposal": {
+    "path": "headerBoards.proposed.json",
+    "record_count": 10,
+    "status": "proposal_only_not_repository_ready_without_safety_review"
+  },
+  "previous_record_count_checked": 291,
+  "note": "Full local evidence inventory; bulky PDF bytes omitted from compact archive, but their hashes and primary URLs retained."
+}

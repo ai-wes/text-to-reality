@@ -1,0 +1,1 @@
+19 records; unique IDs; no overlap against prior 56 IDs; all 42 header groups have coordinate-backed 2.54 mm pitch; fit unverified; automatic_fit_eligible=false.

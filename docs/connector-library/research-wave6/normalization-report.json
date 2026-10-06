@@ -1,0 +1,54 @@
+{
+  "accepted": 8,
+  "quarantined": [],
+  "adjustments": [
+    {
+      "id": "beagleboard-beaglebone-ai-64",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-beaglebone-ai",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-beaglebone-black-wireless",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "seeed-beaglebone-green-wireless",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-pocketbeagle",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-pocketbeagle-2",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-beagleplay",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-beaglev-ahead",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    }
+  ]
+}

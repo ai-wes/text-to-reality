@@ -1,0 +1,83 @@
+[
+  {
+    "sku": "102010388",
+    "url": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010388-seeed-studio-xiao-samd21-_pre-soldered__1.jpg"
+    ]
+  },
+  {
+    "sku": "102010630",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010630-seeed-studio-xiao-rp2040-_pre-soldered__1.jpg"
+    ]
+  },
+  {
+    "sku": "102010631",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg"
+    ]
+  },
+  {
+    "sku": "102010632",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg"
+    ]
+  },
+  {
+    "sku": "102010633",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg"
+    ]
+  },
+  {
+    "sku": "102010634",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Pre-Soldered-p-6334.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010634-seeed-studio-xiao-esp32s3-_pre-soldered__1.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010634-seeed-studio-xiao-esp32s3-_pre-soldered__1.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010634-seeed-studio-xiao-esp32s3-_pre-soldered_.jpg"
+    ]
+  },
+  {
+    "sku": "102010635",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/2/-/2-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg"
+    ]
+  },
+  {
+    "sku": "102010636",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg"
+    ]
+  },
+  {
+    "sku": "102010637",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+    "images": [
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/48035b5512857d0ab907b31a092da78f/1/0/102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg"
+    ]
+  }
+]

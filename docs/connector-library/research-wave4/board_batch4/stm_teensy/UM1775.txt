@@ -1,0 +1,1856 @@
+                                                                               UM1775
+                                                                           User manual
+                                              Discovery kit with STM32L053C8 MCU
+
+
+            Introduction
+            The STM32L053 Discovery kit (32L0358DISCOVERY) helps the user to discover the full
+            feature range of the STM32L0 Series and develop applications. It is based on the
+            STM32L053C8T6 microcontroller and includes an embedded ST-LINK/V2-1
+            debugger/programmer, linear touch sensor, touchkeys, IDD current measurement, 2.13” E-
+            paper display, NFC connector for the PLUG-CR95HF-B board, LEDs, push-buttons and a
+            USB Mini-B connector.
+            The STM32L053 Discovery kit comes with a comprehensive STM32 software HAL library
+            with various packaged software examples available in the STM32CubeL0 MCU Package.
+
+                                          Figure 1. STM32L053 Discovery board
+
+
+
+
+            Picture is not contractual.
+
+
+
+February 2022                                   UM1775 Rev 6                                    1/39
+                                                                                           www.st.com
+Contents                                                                                                                         UM1775
+
+
+Contents
+
+1          Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2          Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.1      Codification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3          Development environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.1      System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.2      Development toolchains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+4          Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+5          Quick start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+           5.1      Getting started . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+6          Hardware layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           6.1      Embedded ST-LINK/V2-1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                    6.1.1       Drivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                    6.1.2       ST-LINK/V2-1 firmware upgrade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+                    6.1.3       VCP configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+                    6.1.4       Using ST-LINK/V2-1 to program/debug the STM32L053C8T6 on board .
+                                15
+                    6.1.5       Using ST-LINK/V2-1 to program/debug an external
+                                STM32 application . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+           6.2      Power supply and power selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                    6.2.1       Power supply input from the USB connector . . . . . . . . . . . . . . . . . . . . . 18
+                    6.2.2       External power supply inputs: 5V_IN or USB USER CN3 . . . . . . . . . . . 19
+           6.3      LEDs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.4      Pushbuttons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.5      NFC connector for PLUG-CR95HF-B board . . . . . . . . . . . . . . . . . . . . . . 20
+           6.6      Electronic paper display (EPD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+           6.7      JP4 (IDD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+           6.8      BOOT0 configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+           6.9      Linear touch sensor / touchkeys . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+           6.10     USB device support . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+
+2/39                                                  UM1775 Rev 6
+UM1775                                                                                                                          Contents
+
+
+               6.11     USART configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+               6.12     OSC clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+               6.13     OSC 32 KHz clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+               6.14     Solder bridges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+               6.15     Extension connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+7              Mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+
+8              32L0358DISCOVERY Discovery kit information . . . . . . . . . . . . . . . . . . 33
+               8.1      Product marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+               8.2      32L0358DISCOVERY product history . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                        8.2.1       Product identification 32L0538DISCO/ . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                        8.2.2       Product identification DK32L0538$AU1 . . . . . . . . . . . . . . . . . . . . . . . . 34
+               8.3      Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                        8.3.1       MB1143 revision B-01 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                        8.3.2       MB1143 revision B-03 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+               8.4      Board known limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                        8.4.1       MB1143 revision B-01 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                        8.4.2       MB1143 revision B-03 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+
+
+9              Federal Communications Commission (FCC)
+               and ISED Canada Compliance Statements . . . . . . . . . . . . . . . . . . . . . . 35
+               9.1      FCC Compliance Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+                        9.1.1       Part 15.19 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+                        9.1.2       Part 15.21 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+                        9.1.3       Part 15.105 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+               9.2      ISED Compliance Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+
+10             CE conformity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+
+
+
+                                                         UM1775 Rev 6                                                                    3/39
+                                                                                                                                                  3
+List of tables                                                                                                                       UM1775
+
+
+List of tables
+
+Table 1.    Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 2.    Codification explanation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 3.    ON/OFF conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Table 4.    Jumper states . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Table 5.    Debug connector CN5 (SWD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Table 6.    NFC connector pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 7.    Solder bridges. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Table 8.    Extension connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Table 9.    Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+
+
+
+4/39                                                       UM1775 Rev 6
+UM1775                                                                                                                         List of figures
+
+
+List of figures
+
+Figure 1.    STM32L053 Discovery board . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 2.    STM32L053 Discovery board hardware block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Figure 3.    Top layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 4.    Bottom layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 5.    Updating the list of drivers in device manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 6.    STM32L053 Discovery board connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Figure 7.    ST-LINK/V2-1 connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Figure 8.    NFC board plugged on the STM32L053 Discovery board . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Figure 9.    Jumper JP4 in position OFF . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Figure 10.   Jumper JP4 in position ON (default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Figure 11.   No Jumper on JP4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Figure 12.   STM32L053 Discovery board mechanical drawing. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+
+
+
+
+                                                             UM1775 Rev 6                                                                       5/39
+                                                                                                                                                         5
+Features                                                                                                       UM1775
+
+
+1          Features
+
+           The STM32L053 Discovery kit offers the following features:
+           •     STM32L053C8T6 microcontroller, based on the Arm®(a) Cortex®-M0+ processor, with
+                 64 Kbytes of flash memory and 8 Kbytes of RAM, in an LQFP48 package
+           •     2.13" E-paper display, 122×250 pixels
+           •     USB 2.0 FS
+           •     One linear touch sensor or four touchkeys
+           •     Reset and user push-buttons
+           •     Four LEDs:
+                 –     LD1 (red/green) for USB communication
+                 –     LD2 (red) for 3.3 V power on
+                 –     Two user LEDs: LD3 (green), LD4 (red)
+           •     IDD current measurement
+           •     Board connectors:
+                 –     USB Mini-B connector
+                 –     NFC expansion connector for the PLUG-CR95HF-B daughterboard
+                 –     2.54 mm pitch expansion header for direct access to various features of the
+                       STM32L053C8T6 microcontroller and easy probing of the LQFP48 I/Os
+           •     Flexible power-supply options: ST-LINK USB VBUS, USB connector, or external
+                 sources
+           •     External application power supply: 3 V and 5 V
+           •     Comprehensive free software libraries and examples available with the STM32CubeL0
+                 MCU Package
+           •     On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability:
+                 mass storage, Virtual COM port, and debug port
+           •     Support of a wide choice of Integrated Development Environments (IDEs) including
+                 IAR Embedded Workbench®, MDK-ARM, and STM32CubeIDE
+
+
+
+
+           a. Arm is a registered trademark of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+
+
+
+6/39                                               UM1775 Rev 6
+UM1775                                                                        Ordering information
+
+
+2        Ordering information
+
+         To order the 32L0358DISCOVERY Discovery kit, refer to Table 1. Additional information is
+         available from the datasheet and reference manual of the target microcontroller.
+
+                                       Table 1. Ordering information
+                  Order code                      Board reference              Target STM32
+
+              STM32L0538-DISCO                        MB1143                 STM32L053C8T6
+
+
+
+2.1      Codification
+         The meaning of the codification is explained in Table 2.
+
+                                     Table 2. Codification explanation
+          STM32L0XXY-DISCO                      Description            Example: STM32L0538-DISCO
+
+                                MCU series in STM32 32-bit Arm Cortex
+               STM32L0                                                STM32L0 Series
+                                MCUs
+                                                                     STM32L0x3 includes the
+                  XX            MCU product line in the series
+                                                                     STM32L053xx MCUs
+                                STM32 flash memory size:
+                   Y                                                 64 Kbytes
+                                – 8 for 64 Kbytes
+                 DISCO          Discovery kit                        Discovery kit
+
+
+
+
+                                          UM1775 Rev 6                                        7/39
+                                                                                                     38
+Development environment                                                                        UM1775
+
+
+3         Development environment
+
+3.1       System requirements
+          •     Multi.OS support: Windows® 10, Linux® (a) 64-bit, or macOS® (b)
+          •     USB Type-A or USB Type-C® to Mini-B cable
+
+
+3.2       Development toolchains
+          •     IAR Systems - IAR Embedded Workbench® (c)
+          •     Keil® - MDK-ARM(c) (d) (e)
+          •     STMicroelectronics - STM32CubeIDE
+
+
+
+4         Conventions
+          Table 3 provides the definition of some conventions used in the present document.
+                                               Table 3. ON/OFF conventions
+                       Convention                                                Definition
+
+           Jumper JPx ON                           Jumper fitted
+           Jumper JPx OFF                          Jumper not fitted
+           Solder bridge SBx ON                    SBx connections closed by solder
+           Solder bridge SBx OFF                   SBx connections left open
+
+
+
+
+          a. Linux® is a registered trademark of Linus Torvalds.
+          b. macOS® is a trademark of Apple Inc. registered in the U.S. and other countries.
+             All other trademarks are the property of their respective owners.
+          c.   On Windows® only.
+          d. Free MDK-ARM for Arm® Cortex®-M0/M0+ cores.
+          e. All other trademarks are the property of their respective owners.
+
+
+
+8/39                                              UM1775 Rev 6
+UM1775                                                                                 Quick start
+
+
+5        Quick start
+
+         The STM32L053 Discovery kit is a low-cost and easy-to-use development kit to quickly
+         evaluate and start a development with the STM32L053C8T6 ultra-low-power microcontroller
+         in the STM32L0 Series.
+         Before installing and using the product, accept the Evaluation Product License Agreement
+         from the www.st.com/stm32l0-discovery webpage.
+         For more information on the STM32L053 Discovery kit, visit the www.st.com/stm32l0-
+         discovery webpage.
+
+
+5.1      Getting started
+         Refer to the sequence of operations described on the product packaging.
+
+
+
+
+                                        UM1775 Rev 6                                          9/39
+                                                                                                     38
+Hardware layout                                                                                  UM1775
+
+
+6         Hardware layout
+
+          The STM32L053 Discovery board is designed around the STM32L053C8T6 microcontroller
+          in a 48-pin LQFP package.
+          Figure 2 illustrates the connections between the STM32L053C8T6 and its peripherals (ST-
+          LINK/V2-1, linear touch sensor, touchkeys, IDD current measurement, 2.13” E-paper
+          display, NFC connector for PLUG-CR95HF-B board, LEDs, push-buttons and an USB Mini-
+          B connector).
+          Figure 3 and Figure 4 help users to locate these features on the STM32L053 Discovery
+          board.
+
+                     Figure 2. STM32L053 Discovery board hardware block diagram
+
+                                                       USB ST-LINK        USB USER
+                                                         Mini-B             Mini-B
+
+
+
+                                                 Embedded
+                                                ST-LINK/V2-1
+                      SWD
+
+
+
+
+                                                                                I/O
+
+
+                                                     STM32L053C8T6
+                                    I/O                                           I/O
+                      Header
+
+
+
+
+                                                                                        Header
+                                                            I/O             RESET
+
+
+                                           LEDs                              B2
+                                          LD3, LD4                          RESET
+
+
+                                        Linear                                B1
+                                     touch sensor                            USER
+
+
+                                        NFC                              IDD current
+                                      connector                         measurement
+
+
+                                                      E-paper display
+
+                                                                                                  MSv39739V2
+
+
+
+
+10/39                                        UM1775 Rev 6
+UM1775                                                                            Hardware layout
+
+
+                                                Figure 3. Top layout
+
+
+
+                                                                                  PWR
+                               ST-LINK/V2-1
+                                                                                  (LD2)
+                       COM                          USB ST-LINK        USB USER
+                      (LD1)
+
+
+
+            NFC connector
+                   (CN1)
+
+                  Reserved
+                     (JP1)
+                  Reserved
+                     (JP2)
+
+                                                                                  ST-LINK/DISCOVERY
+                                                                                  selector (CN4)
+
+
+
+                     RX,TX
+                      (JP3)
+
+               VCP RX, TX                                                         5 V power
+                (SB2, SB3)                                                        supply input
+                 3 V power
+              supply output
+                                                                                  5 V power
+                                                                                  supply output
+              Configuration
+                 (BOOT0)
+
+
+
+
+          IDD measurement
+                     (JP4)
+
+
+
+
+                                                                                  2.13" E-paper display
+                Green LED                                                         (U4)
+                     (LD3)
+
+
+
+                  Red LED
+                     (LD4)
+                User button                                                       Reset button
+                       (B1)                                                       (B2)
+
+
+
+
+         Linear touch sensor
+                           /
+                  Touchkeys
+
+
+
+
+                                                                                                 MSv34155V3
+
+
+
+
+                                              UM1775 Rev 6                                            11/39
+                                                                                                              38
+Hardware layout                                                                 UM1775
+
+
+                                         Figure 4. Bottom layout
+
+
+
+
+                           Reserved
+                       (SB4, 5, 6, 11)
+
+
+
+
+                              Default
+                         (SB7,8,9,12)
+
+
+
+
+                           STM_RST
+                             (SB10)
+                                                                   NRST
+                                                                   (SB13)
+
+
+
+
+                             RX, TX
+                           (SB14,15)
+
+
+
+
+                           X2 crystal
+                           (SB18,19)
+
+
+                              Crystal                              USB_USER
+                                (X2)                               (SB16, 17)
+                                MCO
+                              (SB20)                               STM32L053C8T6
+                             OSC_IN                                (U8)
+                              (SB21)
+
+
+                         B2 – RESET                                B1 – USER
+                              (SB29)                               (SB22)
+                        Touch sensor
+            (SB23, 24, 25, 26, 27, 28)
+
+
+
+
+                                                                                MSv34156V3
+
+
+
+
+12/39                                    UM1775 Rev 6
+UM1775                                                                               Hardware layout
+
+
+6.1      Embedded ST-LINK/V2-1
+         The ST-LINK/V2-1 programming and debugging tool is integrated on the STM32L053
+         Discovery board.
+         The embedded ST-LINK/V2-1 supports only SWD for STM32 devices.
+         For information about the debugging and programming features, refer to the ST-LINK/V2 in-
+         circuit debugger/programmer for STM8 and STM32 user manual (UM1075). For a
+         comparison of the various ST-LINK solutions, refer to the Overview of ST-LINK derivatives
+         technical note (TN1235).
+         There are two different ways to use the embedded ST-LINK/V2-1 depending on the jumper
+         states (see Table 4):
+         •   program/debug the MCU on board (Section 6.1.4).
+         •   program/debug an MCU in an external application board using a cable connected to
+             SWD connector CN5 (Section 6.1.5).
+
+                                           Table 4. Jumper states
+               Jumper state                                    Description
+
+         Both CN4 jumpers ON       ST-LINK/V2-1 functions enabled for on board programming (default)
+                                   ST-LINK/V2-1 functions enabled for application through external CN5
+         Both CN4 jumpers OFF
+                                   connector (SWD supported)
+
+
+6.1.1    Drivers
+         ST-LINK/V2-1 requires a dedicated USB driver, which, for Windows® 7, Windows® 8 and
+         Windows® 10, is available from www.st.com.
+         In cases where the STM32L053 Discovery board is connected to the PC before the driver is
+         installed, some STM32L053 Discovery board interfaces might be declared as “Unknown” in
+         the PC device manager. In such cases, the user must install the dedicated driver files and
+         update the driver of the connected device from the device manager, as shown in Figure 5.
+Note:    It is preferable to use the “USB Composite Device” handle for a full recovery.
+
+                         Figure 5. Updating the list of drivers in device manager
+
+
+
+
+                                          UM1775 Rev 6                                            13/39
+                                                                                                          38
+Hardware layout                                                                                 UM1775
+
+
+6.1.2     ST-LINK/V2-1 firmware upgrade
+          ST-LINK/V2-1 embeds a mechanism for in-situ firmware upgrade through the USB port. As
+          firmware may evolve during the lifespan of the ST-LINK/V2-1 product (for example new
+          functionalities, bug fixes, support for new microcontroller families), visiting the www.st.com
+          website is recommended before starting to use the STM32L053 Discovery board, then
+          periodically to stay up-to-date with the latest firmware version.
+
+6.1.3     VCP configuration
+          ST-LINK/V2-1 supports the Virtual COM port (VCP). To enable this function, the solder
+          bridges SB2 and SB3 are closed (See Figure 3: Top layout). Table 7: Solder bridges
+          indicates this with the ON state.
+
+
+
+
+14/39                                      UM1775 Rev 6
+UM1775                                                                           Hardware layout
+
+
+6.1.4    Using ST-LINK/V2-1 to program/debug the STM32L053C8T6 on board
+         To program the STM32L053C8T6 on board, simply plug in the two jumpers on CN4, as
+         shown in Figure 6 in pink, but do not use the CN5 connector as that could disturb the
+         communication with the STM32L053C8T6 of the STM32L053 Discovery board.
+
+                          Figure 6. STM32L053 Discovery board connections
+
+
+
+
+                                        UM1775 Rev 6                                         15/39
+                                                                                                     38
+Hardware layout                                                                                UM1775
+
+
+6.1.5     Using ST-LINK/V2-1 to program/debug an external
+          STM32 application
+          It is very easy to use ST-LINK/V2-1 to program an STM32 microcontroller on an external
+          application. Simply remove the two jumpers from CN4 as shown in Figure 7 and connect the
+          application to the CN5 debug connector according to Table 5.
+Note:     SB13, must be OFF if CN5 pin 5 (NRST) is used in the external application.
+
+                                   Table 5. Debug connector CN5 (SWD)
+                       Pïn                          CN5                          Designation
+
+                        1               VDD_TARGET                    VDD from application
+                        2               SWLCK                         SWD clock
+                        3               GND                           Ground
+                        4               SWDIO                         SWD data input/output
+                        5               NRST                          RESET of target MCU
+                        6               SWO                           Reserved
+
+
+
+
+16/39                                    UM1775 Rev 6
+UM1775                                                                           Hardware layout
+
+
+                                  Figure 7. ST-LINK/V2-1 connections
+
+
+
+
+6.2      Power supply and power selection
+         The power supply is provided either by the host PC through the USB cable, or by an
+         external 5 V power supply.
+         The STM32L053 Discovery board requires 300 mA from the host PC: about 90 mA are
+         needed by a simple E-paper demo application, 100 mA for an extension board, and 100 mA
+         as a safety margin.
+
+
+
+
+                                        UM1775 Rev 6                                          17/39
+                                                                                                      38
+Hardware layout                                                                                   UM1775
+
+
+          The D3, D4 and D6 diodes protect the 5 V pins from external power supplies:
+          •       5 V and 3 V can be used as output power supplies when an extension board is
+                  connected to pins P2 and P3.
+                  In this case, the 5V_O and 3V_O pins deliver a 5 V or 3.3 V power supply and the
+                  power consumption of the extension board must be lower than 100 mA.
+          •       5 V can also be used as input power supply, for instance when the USB connector is
+                  not connected to the PC (pin 5V_I of header P3).
+                  In this case, the STM32L053 Discovery board must be powered by a power supply unit
+                  or by an auxiliary equipment complying with standard EN-60950-1: 2006+A11/2009. It
+                  must be Safety Extra Low Voltage (SELV) with limited power capability.
+
+6.2.1     Power supply input from the USB connector
+          ST-LINK/V2-1 supports USB power management allowing the request of more than 100 mA
+          from the host PC.
+          All parts of the STM32L053 Discovery board and extension board can be powered from the
+          ST-LINK/V2-1 USB connector CN2 (U5V or VBUS). Note that only the ST-LINK/V2-1 part is
+          power supplied before the USB enumeration as the host PC only provides 100 mA to the
+          board at that time. During the USB enumeration, the STM32L053 Discovery board requires
+          300 mA from the host PC.
+          •       If the host is able to provide the required power, the target STM32 microcontroller is
+                  powered and the red LED LD2 is turned ON. The STM32L053 Discovery board and its
+                  extension board can consume not more than a maximum of 300 mA.
+          •       If the host is not able to provide the required current, the target STM32 microcontroller
+                  and the MCU part including the extension board are not power supplied. As a
+                  consequence the red LED LD2 remains turned OFF. In such a case, it is mandatory to
+                  use an external power supply as explained in the next section.
+          Warning: If the maximum current consumption of the STM32L053 Discovery board and its
+          extension board exceeds 300 mA, it is mandatory to power the STM32L053 Discovery
+          board with an external power supply connected to 5V_IN.
+Note:     In cases where this board is powered by a USB charger or USB battery, there is no USB
+          enumeration. Therefore, LED LD1 remains OFF permanently and the target MCU is not
+          powered. In this specific case, the jumper JP2 must be ON to allow the target MCU to be
+          powered anyway. This is a special use case without enumeration and JP2 is not soldered.
+          To use this optional power supply, solder a 2-pin header in JP2 and set a jumper.
+
+
+
+
+18/39                                         UM1775 Rev 6
+UM1775                                                                                 Hardware layout
+
+
+6.2.2    External power supply inputs: 5V_IN or USB USER CN3
+         The external power source 5V_IN or USB USER CN3 is automatically detected. In this case
+         the current consumption of the STM32L053 Discovery board and its extension board may
+         exceed the allowed current on the USB. In this condition it is still possible to use the USB for
+         communication, for programming or debugging only, but it is mandatory to power supply the
+         board first using 5V_IN or USB USER CN3 then connecting the USB cable to the PC.
+         Proceeding this way ensures that the enumeration occurs with the support of the external
+         power source.
+         The following power sequence procedure must be respected:
+         1.   Connect the external power source to 5V_IN or USB USER CN3.
+         2.   Power on the external power supply 5V_IN or USB USER CN3.
+         3.   Check that LD2 is turned on.
+         4.   Connect the PC to USB connector CN2.
+         If this order is not respected, the board may be supplied by VBUS first, then by 5V_IN or USB
+         USER CN3. Consequently, the following risks may be encountered:
+         1.   If more than 300 mA is needed by the board, the PC may be damaged or the current
+              supply can be limited by the PC. As a consequence the board is not powered correctly.
+         2.   300 mA is requested at enumeration (since JP2 must be OFF) so there is a risk that the
+              request is rejected and the enumeration does not succeed if the PC cannot provide
+              such current. Consequently the board is not power supplied (LED LD2 remains OFF).
+
+
+6.3      LEDs
+         •    LD1 COM:
+              LD1 default status is red. LD1 turns to green to indicate that communication is in
+              progress between the PC and ST-LINK/V2-1.
+         •    LD2 PWR:
+              The red LED indicates that the board is powered.
+         •    User LD3:
+              The green LED is a user LED connected to the I/O PB4 of the STM32L053C8T6.
+         •    User LD4:
+              The red LED is a user LED connected to the I/O PA5 of the STM32L053C8T6.
+
+
+6.4      Pushbuttons
+         •    B1 USER:
+              User and Wake-Up button connected to the I/O PA0 of the STM32L053C8T6.
+         •    B2 RESET:
+              The pushbutton connected to NRST is used to RESET the STM32L053C8T6.
+
+
+
+
+                                           UM1775 Rev 6                                             19/39
+                                                                                                            38
+Hardware layout                                                                        UM1775
+
+
+6.5       NFC connector for PLUG-CR95HF-B board
+          A NFC (Near Field Communication) transceiver board can be connected to the STM32L053
+          Discovery board, for example the PLUG-CR95HF-B board.
+          The NFC board is plugged in connector CN1 of STM32L053 Discovery board as following:
+
+                    Figure 8. NFC board plugged on the STM32L053 Discovery board
+
+
+
+
+20/39                                   UM1775 Rev 6
+UM1775                                                                                     Hardware layout
+
+
+         The NFC board can be accessed in the SPI or UART mode.
+                                          Table 6. NFC connector pinout
+             CN1 pin    NFC signals      STM32L053C8T6                           Description
+
+                       NFC_IRQOUTN                            Interrupt output for NFC connected to
+                1                        PB7
+                       or UART1_TX                            STM32L053C8T6 UART1 RX
+                       NFC_IRQINN or                          Interrupt input for CR95HF connected to
+                2                        PB6
+                       UART1_RX                               STM32L053C8T6 UART1 TX
+                3      NFC_NSS           PB12                 SPI slave select
+                4      NFC_MISO          PB14                 SPI data, slave output
+                5      NFC_MOSI          PB15                 SPI data, slave input
+                6      NFC_SCK           PB13                 SPI serial clock
+                7      +3V3              -                    Main power supply/power supply for RF drivers
+                8      GND               -                    Ground
+
+
+
+6.6      Electronic paper display (EPD)
+         The STM32L053 Discovery board includes an E-paper display with high contrast, high
+         reflectance and ultra-wide viewing angle.
+         This display is a TFT active matrix electrophoretic display. The 2.13" active area contains
+         122×250 pixels and it is capable to display images at 1-bit white, black full display
+         capabilities. An associated integrated circuit contains the buffers, interface, control logic,
+         oscillator, and DC-DC converter.
+         The STM32L053C8T6 controls this peripheral and is able to switch off its power supply.
+
+
+6.7      JP4 (IDD)
+         Jumper JP4, labeled Idd, allows STM32L053C8T6 consumption direct measurement by a
+         module on board able to measure from 100 nA to 50 mA or by removing the jumper and
+         connecting an ammeter.
+         •      Jumper in position OFF: STM32L053C8T6 is powered.
+
+                                       Figure 9. Jumper JP4 in position OFF
+
+
+
+
+                                               UM1775 Rev 6                                             21/39
+                                                                                                                38
+Hardware layout                                                                              UM1775
+
+
+          •       Jumper in position ON (default): a module onboard is designed to measure from
+                  100 nA to 50 mA by using several MOSFET and switching automatically depending on
+                  the read value.
+
+                                Figure 10. Jumper JP4 in position ON (default)
+
+
+
+
+          •       NO Jumper on JP4: an ammeter must be connected to measure the STM32L053C8T6
+                  current through pins 1 and 2 (if there is no ammeter, the STM32L053C8T6 is not
+                  powered).
+
+                                         Figure 11. No Jumper on JP4
+
+
+
+
+6.8       BOOT0 configuration
+          BOOT0 is at level “0” through a pull-down R65. To set BOOT0 at level “1”, use a
+          configuration with a jumper between P2.6 (BOOT0) and P2.5 (VDD).
+Note:     To set BOOT0 at level "1" continuously, prefer to unsolder the resistor R65 to avoid a
+          consumption of 6 mA while connecting pin P2.6 (BOOT0) and P2.5 (VDD) with a jumper or
+          a wire.
+
+
+6.9       Linear touch sensor / touchkeys
+          To demonstrate touch sensing capabilities, the STM32L053 Discovery board includes a
+          linear touch sensor, which can be used either as a three-position linear touch sensor or as
+          four touchkeys.
+          Three pairs of I/O ports are assigned to the linear touch sensor / touchkeys. Each pair must
+          belong to the same analog switch group:
+          •       PA2, PA3 (group 1)
+          •       PA6, PA7 (group 2)
+          •       PB0, PB1 (group 3)
+
+
+
+22/39                                      UM1775 Rev 6
+UM1775                                                                            Hardware layout
+
+
+         To minimize the noise, these pairs are dedicated to the linear touch sensor and touchkeys.
+         They are not connected to external headers. To design a touch sensing application, refer to
+         the following documentation and firmware:
+         •   For details concerning the I/O ports, refer to the STM32L053C8T6 datasheet.
+         •   For more detail concerning touch sensing application design and layout, refer to the
+             application note Design with surface sensors for touch sensing applications on MCUs
+             (AN4312).
+         •   STM32 touch sensing library available from www.st.com/stm32l0-discovery.
+         The STM32L053C8T6 MCU controls the linear touch sensor and the touchkeys.
+
+
+6.10     USB device support
+         The STM32L053C8T6 MCU is also used to drive the second USB Mini-B connector (USB
+         USER), which allows the use of the board as a USB Device. The STM32L053 Discovery
+         board can then act as a USB joystick, mouse, or other similar device. If both USBs are
+         connected, diodes D3 and D4 protect the board and use the power from USB ST-LINK or
+         USB USER (see Section 6.2.2: External power supply inputs: 5V_IN or USB USER CN3).
+         The board can be powered through this USB USER connector, in which case LED2 PWR
+         lights up, LED1 COM blinks and it can run an application in standalone mode.
+         The STM32L053C8T6 MCU controls the USB USER through PA11 and PA12.
+
+
+6.11     USART configuration
+         The USART1 interface available on PA9 and PA10 of the STM32L053C8T6 can be
+         connected to the ST-LINK/V2-1 MCU to use the Virtual COM port function.
+         By default, the USART1 communication between the target STM32L053C8T6 and the
+         ST-LINK/V2-1 MCU is not enabled.
+         To use the Virtual COM port function with:
+         •   The on-board STM32L053C8T6, set SB2 and SB3 ON. (SB14,15 must be OFF)
+         •   An external MCU, remove solder from SB2 and SB3, solder a 2-pin header on JP3,
+             then connect RX and TX of the external MCU directly to RX and TX of JP3
+
+
+6.12     OSC clock supply
+         If PH0 is only used as GPIO instead of as a clock, then SB21 is ON. (SB20 must be OFF)
+         MCO from ST-LINK/V2-1 (from MCO of the STM32L053C8T6)
+         This frequency cannot be changed, it is fixed at 8 MHz and connected to PH0-OSC_IN of
+         the STM32L053C8T6. The configuration needed is:
+             –    SB20 ON and SB21 OFF
+         Oscillator from external PH0 (from external oscillator through pin 7 of the P3 connector)
+         The configuration needed is:
+             –    SB21 ON and SB20 OFF
+Note:    Refer to application note AN2867 for STM32 microcontrollers oscillator design guide.
+
+
+
+                                         UM1775 Rev 6                                           23/39
+                                                                                                        38
+Hardware layout                                                                              UM1775
+
+
+6.13      OSC 32 KHz clock supply
+          If PC14 and PC15 are only used as GPIOs instead of as a clock, then SB18 and SB19 are
+          ON and R70 and R71 are removed.
+          HSE oscillator onboard from X2 crystal (not provided)
+          For typical frequencies and its capacitors and resistors, please refer to the STM32L053C8T6
+          Datasheet. The configuration needed is:
+                  –   SB18, SB19 OFF
+                  –   X2, R70, R71, C47, C50 soldered
+          Oscillator from external PC14 (from external oscillator through pin 5 of the P3 connector)
+          the configuration needed is:
+                  –   SB18 ON
+                  –   SB19 OFF
+                  –   R70 removed
+
+Note:     Refer to application note AN2867 for STM32 microcontrollers oscillator design guide.
+
+
+
+
+24/39                                      UM1775 Rev 6
+UM1775                                                                                               Hardware layout
+
+
+6.14           Solder bridges
+
+                                                   Table 7. Solder bridges
+                                     (1)
+Bridge                         State       Description
+
+                                           X2, C47, C50, R70 and R71 provide a clock. PC14, PC15 are disconnected
+                               OFF
+SB18, 19 (X2 crystal)                      from P3.
+                               ON          PC14, PC15 are connected from P3. Remove only R70 and R71
+SB7,8,9,12 (default)           ON          Reserved, do not modify
+SB4,5,6,11 (reserved)          OFF         Reserved, do not modify
+SB14,15 (reserved)             OFF         Reserved, do not modify
+                               ON          B2 Push Button is connected to NRST of STM32L053C8T6
+SB29 (B2-RESET)
+                               OFF         B2 Push Button is not connected to NRST of STM32L053C8T6
+                               ON          B1 Push Button is connected to PA0
+SB22 (B1-USER)
+                               OFF         B1 Push Button is not connected to PA0
+                                           PA2, PA3 of STM32F103CBT6 are not connected to PA10, PA9 of
+                               OFF
+                                           STM32L053C8T6
+SB2,3 (VCP RX, TX)(2)
+                                           PA2, PA3 of STM32F103CBT6 are connected to PA10, PA9 of
+                               ON
+                                           STM32L053C8T6
+                               OFF         USB1_DP and USB1_DM are dedicated to the USB USER connector CN3
+SB16,17 (USB_USER)                         USB1_DP is connected to PA12 and USB1_DM is connected to PA11. Both are
+                               ON
+                                           available as GPIO on P2, P3 headers.
+
+SB23,24,25,26,27,28            OFF         PA2, PA3, PA6, PA7, PB0, PB1 are dedicated to touch sensor.
+(touch sensor)                 ON          PA2, PA3, PA6, PA7, PB0, PB1 are available as GPIO on P2, P3 headers.
+
+SB1 (ST-LINK/V2-1              ON          ST-LINK/V2-1 module is powered
+PWR)                           OFF         ST-LINK/V2-1 module is not powered
+                                           Clock signal from header P3.7 is connected to OSC_IN of STM32L053C8T6 or
+                               OFF
+SB21 (OSC_IN)                              PH0 is available as GPIO. SB20 must be OFF
+                               ON          No connection between header P3.7 and PH0 of STM32L053C8T6
+                                           T_NRST signal from connector CN5 and STM32F103CBT6, is connected to
+                               ON
+SB13 (NRST)                                NRST of STM32L053C8T6
+                               OFF         T_NRST signal is not connected
+                               OFF         No incidence on NRST signal of STM32F103CBT6
+SB10 (STM_RST)
+                               ON          NRST signal of STM32F103CBT6 is connected to GND
+                                           MCO clock signal from STM32F103CBT6 is connected to OSC_IN of
+                               ON
+SB20 (MCO)                                 STM32L053C8T6. SB21 must be OFF
+                               OFF         MCO signal of STM32F103CBT6 is not used.
+1. Default value is in bold.
+2. Default state is OFF for boards labeled MB1143 B-01 and older.
+
+
+
+
+                                                         UM1775 Rev 6                                              25/39
+                                                                                                                           38
+Hardware layout                                                                                                                                                                                                UM1775
+
+
+6.15                Extension connectors
+                    The male headers P2 and P3 can connect the STM32L053 Discovery board to a standard
+                    prototyping/wrapping board. STM32L053C8T6 GPIOs are available on these connectors.
+                    P2 and P3 can also be probed by an oscilloscope, logical analyzer or voltmeter.
+
+
+                                                                              Table 8. Extension connectors
+     MCU pin                                                                                                                   Board function
+
+
+
+
+                                                                                                              Linear touch sensor
+                    LQFP48 pin num.
+
+
+
+
+                                                                                                                                    E-paper Display
+                                                                                    NFC CR95HF-B
+
+
+
+
+                                                                                                                                                                               Power Supply
+    Main function
+
+
+
+
+                                                                PushButtons
+
+
+
+
+                                                                                                                                                      Idd Measure
+                                                                                                   USB USER
+                                      NRST BOOT0 SYSTEM
+
+
+
+
+                                                                                                                                                                    Free I/O
+
+
+
+
+                                                                                                                                                                                                                    SBx(1)
+                                                          VCP
+
+
+
+
+                                                                              LED
+
+
+
+
+                                                                                                                                                                                                        CN1
+
+                                                                                                                                                                                                              CN3
+                                                                                                                                                                                              P2
+
+                                                                                                                                                                                                   P3
+  BOOT0             44                                     -        -          -        -             -              -                    -               -            -           -          6    -     -     -       -
+
+
+   NRST                 7                                  -        -          -        -             -              -                    -               -            -           -          -    9     -     -       -
+                                                                BP_USER
+
+
+
+
+    PA0             10                       -             -                   -        -             -              -                    -               -            -           -          -    11    -     -       -
+                                                                                                                                                      MFX_WAKEUP
+
+
+
+
+    PA1              11                      -             -        -          -        -             -              -                    -                            -           -          -    12    -     -       -
+                                                                                                              TS_G1_IO4 TS_G1_IO3
+
+
+
+
+                                                                                                                                                                                                                    SB28
+    PA2             12                       -             -        -          -        -             -                                   -               -            -           -          -    13    -     -
+                                                                                                                                                                                                                    SB27
+
+
+
+    PA3             13                       -             -        -          -        -             -                                   -               -            -           -          -    14    -     -
+                                                                                                                                                                    PA4
+
+
+
+
+    PA4             14                       -             -        -          -        -             -              -                    -               -                        -          -    15    -     -       -
+                                                                                    RED
+
+
+
+
+    PA5             15                       -             -        -          -                      -              -                    -               -            -           -          -    16    -     -       -
+                                                                                                              TS_G2_IO3
+
+
+
+
+                                                                                                                                                                                                                    SB26
+
+
+
+
+    PA6             16                       -             -        -          -        -             -                                   -               -            -           -          -    17    -     -
+
+
+
+
+26/39                                                                                              UM1775 Rev 6
+UM1775                                                                                                                                                                                                                        Hardware layout
+
+
+                                                                       Table 8. Extension connectors (continued)
+    MCU pin                                                                                                                                          Board function
+
+
+
+
+                                                                                                                          TS_G2_IO4 Linear touch sensor
+                   LQFP48 pin num.
+
+
+
+
+                                                                                                                                                          E-paper Display
+                                                                                           NFC CR95HF-B
+
+
+
+
+                                                                                                                                                                                                     Power Supply
+   Main function
+
+
+
+
+                                                                       PushButtons
+
+
+
+
+                                                                                                                                                                            Idd Measure
+                                                                                                          USB USER
+                                     SYSTEM
+
+
+
+
+                                                                                                                                                                                          Free I/O
+
+
+
+
+                                                                                                                                                                                                                                             SBx(1)
+                                                   VCP
+
+
+
+
+                                                                                     LED
+
+
+
+
+                                                                                                                                                                                                                                CN1
+
+                                                                                                                                                                                                                                      CN3
+                                                                                                                                                                                                                    P2
+
+                                                                                                                                                                                                                         P3
+
+
+
+
+                                                                                                                                                                                                                                             SB25
+  PA7              17                    -                -                -          -        -               -                                                -               -            -           -          -    18      -     -
+
+
+
+
+                                                                                                                                                          ePD1_BUSY
+  PA8              29                    -                -                -          -        -               -                     -                                          -            -           -          19   -       -     -        -
+                                                   USART_RX USART_TX
+
+
+
+
+  PA9              30                    -                                 -          -        -               -                     -                          -               -            -           -          18   -       -     -        -
+
+
+
+
+  PA10             31                    -                                 -          -        -               -                     -                          -               -            -           -          17   -       -     -        -
+                                                                                                          USB_DP USB_DM
+
+
+
+
+                                                                                                                                                                                                                                             SB17
+  PA11             32                    -                -                -          -        -                                     -                          -               -            -           -          16   -       -    2(2)
+
+
+
+
+                                                                                                                                                                                                                                             SB16
+  PA12             33                    -                -                -          -        -                                     -                          -               -            -           -          15   -       -    3(2)
+                                     SWCLK SWDIO
+
+
+
+
+  PA13             34                                     -                -          -        -               -                     -                          -               -            -           -          14   -       -     -        -
+
+
+
+  PA14             37                                     -                -          -        -               -                     -                          -               -            -           -          13   -       -     -        -
+                                                                                                                                                          ePD1_CS
+
+
+
+
+  PA15             38                    -                -                -          -        -               -                     -                                          -            -           -          12   -       -     -        -
+                                                                                                                          TS_G3_IO2
+
+
+
+
+                                                                                                                                                                                                                                             SB24
+
+
+
+
+  PB0              18                    -                -                -          -        -               -                                                -               -            -           -          -    19      -     -
+
+
+
+
+                                                                                                          UM1775 Rev 6                                                                                                                       27/39
+                                                                                                                                                                                                                                                      38
+Hardware layout                                                                                                                                                                                                               UM1775
+
+
+                                                     Table 8. Extension connectors (continued)
+     MCU pin                                                                                                                              Board function
+
+
+
+
+                                                                                                               TS_G3_IO3 Linear touch sensor
+                    LQFP48 pin num.
+
+
+
+
+                                                                                                                                               E-paper Display
+                                                                           NFC CR95HF-B
+
+
+
+
+                                                                                                                                                                                              Power Supply
+    Main function
+
+
+
+
+                                                     PushButtons
+
+
+
+
+                                                                                                                                                                     Idd Measure
+                                                                                                    USB USER
+                                      SYSTEM
+
+
+
+
+                                                                                                                                                                                   Free I/O
+
+
+
+
+                                                                                                                                                                                                                                   SBx(1)
+                                               VCP
+
+
+
+
+                                                                   LED
+
+
+
+
+                                                                                                                                                                                                                       CN1
+
+                                                                                                                                                                                                                             CN3
+                                                                                                                                                                                                             P2
+
+                                                                                                                                                                                                                  P3
+
+
+
+
+                                                                                                                                                                                                                                   SB23
+   PB1              19                  -       -        -           -              -                  -                                              -                  -            -           -          -    20    -     -
+
+
+
+
+                                                                                                                                               ePD1_SCK ePD1_RESET
+   PB2              20                  -       -        -           -              -                  -                  -                                              -            -           -          -    21    -     -       -
+
+
+
+
+   PB3              39                  -       -        -           -              -                  -                  -                                              -            -           -          11   -     -     -       -
+                                                                   GREEN
+
+
+
+
+   PB4              40                  -       -        -                          -                  -                  -                           -                  -            -           -          10   -     -     -       -
+                                                                                                                                               ePD1_MOSI
+
+
+
+
+   PB5              41                  -       -        -           -              -                  -                  -                                              -            -           -          9    -     -     -       -
+                                                                           NFC_IRQOUTN NFC_IRQINN
+
+
+
+
+   PB6              42                  -       -        -           -                                 -                  -                           -                  -            -           -          8    -    2      -       -
+
+
+
+
+   PB7              43                  -       -        -           -                                 -                  -                           -                  -            -           -          7    -    1      -       -
+                                                                                                                                                                     MFX_I2C_SCL
+
+
+
+
+   PB8              45                  -       -        -           -              -                  -                  -                           -                               -           -          4    -     -     -       -
+
+
+
+
+28/39                                                                                               UM1775 Rev 6
+UM1775                                                                                                                                                                                                                             Hardware layout
+
+
+                                                    Table 8. Extension connectors (continued)
+    MCU pin                                                                                                                             Board function
+
+
+
+
+                                                                                                                       Linear touch sensor
+                   LQFP48 pin num.
+
+
+
+
+                                                                                                                                             E-paper Display
+                                                                        NFC CR95HF-B
+
+
+
+
+                                                                                                                                                                                                          Power Supply
+   Main function
+
+
+
+
+                                                    PushButtons
+
+
+
+
+                                                                                                                                                                     MFX_I2C_SDA Idd Measure
+                                                                                                            USB USER
+                                     SYSTEM
+
+
+
+
+                                                                                                                                                                                               Free I/O
+
+
+
+
+                                                                                                                                                                                                                                                 SBx(1)
+                                              VCP
+
+
+
+
+                                                                  LED
+
+
+
+
+                                                                                                                                                                                                                                     CN1
+
+                                                                                                                                                                                                                                           CN3
+                                                                                                                                                                                                                         P2
+
+                                                                                                                                                                                                                              P3
+  PB9              46                  -       -        -          -                 -                         -              -                      -                                            -           -          3    -       -     -       -
+
+
+
+
+  PB10             21                  -       -        -          -                 -                         -              -              ePD1_D/C ePD1_PWR8ENn            -                   -           -          -    22      -     -       -
+
+
+
+
+  PB11             22                  -       -        -          -                 -                         -              -                                               -                   -           -          -    23      -     -       -
+                                                                        NFC_MOSI NFC_MISO NFC_SCK NFC_NSS
+
+
+
+
+  PB12             25                  -       -        -          -                                           -              -                      -                        -                   -           -          23   -      3      -       -
+
+
+
+
+  PB13             26                  -       -        -          -                                           -              -                      -                        -                   -           -          22   -      6      -       -
+
+
+
+
+  PB14             27                  -       -        -          -                                           -              -                      -                        -                   -           -          21   -      4      -       -
+
+
+
+
+  PB15             28                  -       -        -          -                                           -              -                      -                        -                   -           -          20   -      5      -       -
+                                                                                                                                                                     MFX_IRQ_OUT
+
+
+
+
+  PC13                 2               -       -        -          -                 -                         -              -                      -                                            -           -          -    4       -     -       -
+
+
+
+
+                                                                                                            UM1775 Rev 6                                                                                                                         29/39
+                                                                                                                                                                                                                                                          38
+Hardware layout                                                                                                                                                                                                                                           UM1775
+
+
+                                                                               Table 8. Extension connectors (continued)
+     MCU pin                                                                                                                                  Board function
+
+
+
+
+                                                                                                                             Linear touch sensor
+                    LQFP48 pin num.
+
+
+
+
+                                                                                                                                                   E-paper Display
+                                                                                                   NFC CR95HF-B
+
+
+
+
+                                                                                                                                                                                              Power Supply
+    Main function
+
+
+
+
+                                                                               PushButtons
+
+
+
+
+                                                                                                                                                                     Idd Measure
+                                                                                                                  USB USER
+                                      OSC_IN OSC32_OUT OSC32_IN SYSTEM
+
+
+
+
+                                                                                                                                                                                   Free I/O
+
+
+
+
+                                                                                                                                                                                                                                                                SBx(1)
+                                                                         VCP
+
+
+
+
+                                                                                             LED
+
+
+
+
+                                                                                                                                                                                                                                                   CN1
+
+                                                                                                                                                                                                                                                         CN3
+                                                                                                                                                                                                                                         P2
+
+                                                                                                                                                                                                                                              P3
+                                                                                                                                                                                   PC14
+   PC14                 3                                                 -        -          -        -             -              -                    -               -                                    -                          -    5     -     -        -
+
+
+
+
+                                                                                                                                                                                   PC15
+   PC15                 4                                                 -        -          -        -             -              -                    -               -                                    -                          -    6     -     -        -
+
+
+
+
+   PH0                  5                                                 -        -          -        -             -              -                    -               -            -                       -                          -    7     -     -        -
+
+                                                                                                                                                                                   PH1
+   PH1                  6                          -                      -        -          -        -             -              -                    -               -                                    -                          -    8     -     -        -
+                                                                                                                                                                                              VDD VDD VDD 5V_OUT 5V_IN 3V3 5V_USB_USER
+
+
+         -                -                        -                      -        -          -        -             -              -                    -               -            -                                                  -    -     -     1        -
+
+
+
+
+         -                -                        -                      -        -          -        -             -              -                    -               -            -                                                  1    -    7      -        -
+
+         -                -                        -                      -        -          -        -             -              -                    -               -            -                                                  -    1     -     -        -
+
+
+
+         -                -                        -                      -        -          -        -             -              -                    -               -            -                                                  -    3     -     -        -
+
+
+   VDD              24                             -                      -        -          -        -             -              -                    -               -            -                                                  5    -     -     -        -
+
+   VDD              48                             -                      -        -          -        -             -              -                    -               -            -                                                  -    -     -     -        -
+
+ VDD_USB            36                             -                      -        -          -        -             -              -                    -               -            -                                                  -    -     -     -        -
+
+   VDDA                 9                          -                      -        -          -        -             -              -                    -               -            -                                                  -    -     -     -        -
+                                                                                                                                                                                              -
+                                                                                                                                                                                              GND VDD
+
+
+
+
+   VLCD                 1                          -                      -        -          -        -             -              -                    -               -            -                                                  -    -     -     -        -
+
+   VSS              23                             -                      -        -          -        -             -              -                    -               -            -                                                  2    2    8     4(2)      -
+
+
+
+
+30/39                                                                                                             UM1775 Rev 6
+UM1775                                                                                                                                                                                                       Hardware layout
+
+
+                                                      Table 8. Extension connectors (continued)
+      MCU pin                                                                                                        Board function
+
+
+
+
+                                                                                                    Linear touch sensor
+                     LQFP48 pin num.
+
+
+
+
+                                                                                                                          E-paper Display
+                                                                          NFC CR95HF-B
+
+
+
+
+                                                                                                                                                                     NC GND GND GND Power Supply
+     Main function
+
+
+
+
+                                                      PushButtons
+
+
+
+
+                                                                                                                                            Idd Measure
+                                                                                         USB USER
+                                       SYSTEM
+
+
+
+
+                                                                                                                                                          Free I/O
+
+
+
+
+                                                                                                                                                                                                                           SBx(1)
+                                                VCP
+
+
+
+
+                                                                    LED
+
+
+
+
+                                                                                                                                                                                                               CN1
+
+                                                                                                                                                                                                                     CN3
+                                                                                                                                                                                                   P2
+
+                                                                                                                                                                                                        P3
+    VSS              35                  -       -        -          -        -             -              -                    -               -            -                                     25   10      -    5        -
+
+    VSS              47                  -       -        -          -        -             -              -                    -               -            -                                     -    25      -    6        -
+
+   VSSA                  8               -       -        -          -        -             -              -                    -               -            -                                     -            -     -       -
+
+
+
+
+                                                                                                                                                                                                        -
+          -                -             -       -        -          -        -             -              -                    -               -            -                                     24   24      -     -       -
+
+1. Signals available depending on SBx value. Refer to Table 7: Solder bridges.
+2. Connected through a resistor
+
+
+
+
+                                                                                         UM1775 Rev 6                                                                                                                      31/39
+                                                                                                                                                                                                                                    38
+Mechanical drawing                                                             UM1775
+
+
+7         Mechanical drawing
+
+                     Figure 12. STM32L053 Discovery board mechanical drawing
+
+
+
+
+32/39                                UM1775 Rev 6
+UM1775                                               32L0358DISCOVERY Discovery kit information
+
+
+8        32L0358DISCOVERY Discovery kit information
+
+8.1      Product marking
+         The stickers located on the top or bottom side of the PCB provide product information:
+         •    Product order code and product identification for the first sticker
+         •    Board reference with revision, and serial number for the second sticker
+         On the first sticker, the first line provides the product order code, and the second line the
+         product identification.
+         On the second sticker, the first line has the following format: “MBxxxx-Variant-yzz”, where
+         “MBxxxx” is the board reference, “Variant” (optional) identifies the mounting variant when
+         several exist, "y" is the PCB revision and "zz" is the assembly revision, for example B01.
+         The second line shows the board serial number used for traceability.
+         Evaluation tools marked as “ES” or “E” are not yet qualified and therefore not ready to be
+         used as reference design or in production. Any consequences deriving from such usage will
+         not be at ST charge. In no event, ST will be liable for any customer usage of these
+         engineering sample tools as reference designs or in production.
+         “E” or “ES” marking examples of location:
+         •    On the targeted STM32 that is soldered on the board (For an illustration of STM32
+              marking, refer to the STM32 datasheet “Package information” paragraph at the
+              www.st.com website).
+         •    Next to the evaluation tool ordering part number that is stuck or silk-screen printed on
+              the board.
+         Some boards feature a specific STM32 device version, which allows the operation of any
+         bundled commercial stack/library available. This STM32 device shows a "U" marking option
+         at the end of the standard part number and is not available for sales.
+         In order to use the same commercial stack in his application, a developer may need to
+         purchase a part number specific to this stack/library. The price of those part numbers
+         includes the stack/library royalties.
+
+
+
+
+                                           UM1775 Rev 6                                             33/39
+                                                                                                            38
+32L0358DISCOVERY Discovery kit information                                                    UM1775
+
+
+8.2       32L0358DISCOVERY product history
+
+8.2.1     Product identification 32L0538DISCO/
+          This product identification is based on the mother board MB1143-Default-B01.
+          It embeds the STM32L053C8T6 microcontroller with silicon revision code "Z". The
+          limitations of this silicon revision are detailed in the errata sheet STM32L053x6/8 device
+          errata (ES0253).
+
+8.2.2     Product identification DK32L0538$AU1
+          This product identification is based on the mother board MB1143-L053C8T6-B03.
+          It embeds the STM32L053C8T6 microcontroller with silicon revision code "X" or “P” or “1”.
+          The limitations of these silicon revisions are detailed in the errata sheet STM32L053x6/8
+          device errata (ES0253).
+
+
+8.3       Board revision history
+
+8.3.1     MB1143 revision B-01
+          The revision B-01 of the MB1143 board is the initial release.
+
+8.3.2     MB1143 revision B-03
+          The revision B-03 of the MB1143 board corresponds to:
+          •   E-paper display U4 replaced with impact on firmware
+          •   Several part references updated due to obsolescence (such as transistors or others,
+              see bill of materials for details)
+
+
+8.4       Board known limitations
+
+8.4.1     MB1143 revision B-01
+          None.
+
+8.4.2     MB1143 revision B-03
+          No demonstration software is provided from this revision.
+
+
+
+
+34/39                                      UM1775 Rev 6
+UM1775 Federal Communications Commission (FCC) and ISED Canada Compliance Statements
+
+
+9         Federal Communications Commission (FCC)
+          and ISED Canada Compliance Statements
+
+9.1       FCC Compliance Statement
+
+9.1.1     Part 15.19
+          This device complies with Part 15 of the FCC Rules. Operation is subject to the following
+          two conditions: (1) this device may not cause harmful interference, and (2) this device must
+          accept any interference received, including interference that may cause undesired
+          operation.
+
+9.1.2     Part 15.21
+          Any changes or modifications to this equipment not expressly approved by
+          STMicroelectronics may cause harmful interference and void the user’s authority to operate
+          this equipment.
+
+9.1.3     Part 15.105
+          This equipment has been tested and found to comply with the limits for a Class B digital
+          device, pursuant to part 15 of the FCC Rules. These limits are designed to provide
+          reasonable protection against harmful interference in a residential installation. This
+          equipment generates uses and can radiate radio frequency energy and, if not installed and
+          used in accordance with the instructions, may cause harmful interference to radio
+          communications. However, there is no guarantee that interference will not occur in a
+          particular installation. If this equipment does cause harmful interference to radio or
+          television reception, which can be determined by turning the equipment off and on, the user
+          is encouraged to try to correct the interference by one or more of the following measures:
+          •   Reorient or relocate the receiving antenna.
+          •   Increase the separation between the equipment and the receiver.
+          •   Connect the equipment into an outlet on a circuit different from that to which the
+              receiver is connected.
+          •   Consult the dealer or an experienced radio/TV technician for help.
+Note:     Use only shielded cables.
+
+          Responsible party (in the USA)
+          Terry Blanchard
+          Americas Region Legal | Group Vice President and Regional Legal Counsel, The Americas
+          STMicroelectronics, Inc.
+          750 Canyon Drive | Suite 300 | Coppell, Texas 75019
+          USA
+          Telephone: +1 972-466-7845
+
+
+
+
+                                          UM1775 Rev 6                                             35/39
+                                                                                                           38
+Federal Communications Commission (FCC) and ISED Canada Compliance Statements UM1775
+
+
+9.2       ISED Compliance Statement
+          Compliance Statement
+          ISED Canada ICES-003 Compliance Label: CAN ICES-3 (B) / NMB-3 (B).
+
+          Déclaration de conformité
+          Étiquette de conformité à la NMB-003 d'ISDE Canada : CAN ICES-3 (B) / NMB-3 (B).
+
+
+
+
+36/39                                   UM1775 Rev 6
+UM1775                                                                             CE conformity
+
+
+10       CE conformity
+
+         EN 55032 / CISPR32 (2012) Class B product
+         Warning: This device is compliant with Class B of EN55032 / CISPR32. In a residential
+         environment, this equipment may cause radio interference.
+         Avertissement : cet équipement est conforme à la Classe B de la EN55032 / CISPR 32.
+         Dans un environnement résidentiel, cet équipement peut créer des interférences radio.
+
+
+
+
+                                        UM1775 Rev 6                                         37/39
+                                                                                                     38
+Revision history                                                                             UM1775
+
+
+Revision history
+
+                                 Table 9. Document revision history
+                      Date       Revision                            Changes
+
+                   20-Jun-2014      1          initial release
+                   24-Jun-2014      2          Removed embedded USB bootloader paragraph.Rev 6
+                                               mbed-enabled logo added on the cover page.
+                                               Added mbed-enabled in Section 3: Features.
+                                               Added Section 2.1: Product marking
+                   20-Jan-2016      3          Windows Vista removed from Section 4.1.1: Drivers.
+                                               SB14, SB15 swapped with SB2, SB3 in Table 5: Solder
+                                               bridges, default position of SB2,SB3 set to ON and
+                                               ports modified from PB4, PB3 to PA10, PA9.
+                                               Added Section 4.1.3: VCP configuration
+                                               Removed Electrical schematics and Demonstration
+                                               software.
+                                               Added Chapter 8: 32L0358DISCOVERY Discovery kit
+                                               information, Appendix A: Federal Communications
+                                               Commission (FCC) and ISED Canada Compliance
+                                               Statements and Appendix B: CE conformity.
+                                               Updated Section 6.1: Embedded ST-LINK/V2-1,
+                                               Section 6.6: Electronic paper display (EPD) and
+                   10-Sep-2021      4          Section 6.9: Linear touch sensor / touchkeys.
+                                               Updated Figure 2: STM32L053 Discovery board
+                                               hardware block diagram and Figure 3: Top layout.
+                                               Revised the beginning of the document:
+                                               – Updated Introduction, Section 1: Features,
+                                                  Section 2: Ordering information, Section 3.1: System
+                                                  requirements, Section 3.2: Development toolchains
+                                                  and Section 5.1: Getting started
+                                               – Added Section 2.1: Codification
+                                               Updated Section 6.7: JP4 (IDD) with default jumper
+                   6-Dec-2021       5          position ON.
+                                               Removed the references to Arm® Mbed™.
+                                               Updated the board revision history in Section 8.4.2:
+                   24-Feb-2022      6
+                                               MB1143 revision B-03.
+
+
+
+
+38/39                                   UM1775 Rev 6
+UM1775
+
+
+
+
+                                           IMPORTANT NOTICE – PLEASE READ CAREFULLY
+
+
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and
+improvements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on
+ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order
+acknowledgement.
+
+
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or
+the design of Purchasers’ products.
+
+
+No license, express or implied, to any intellectual property right is granted by ST herein.
+
+
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+
+
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, please refer to www.st.com/trademarks. All other
+product or service names are the property of their respective owners.
+
+
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+
+
+                                               © 2022 STMicroelectronics – All rights reserved
+
+
+
+
+                                                              UM1775 Rev 6                                                            39/39
+                                                                                                                                                39
+

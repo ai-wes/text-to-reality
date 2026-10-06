@@ -1,0 +1,84 @@
+{
+  "batch_id": "wave7-nucleo144-2026-10-06",
+  "added_ids": [
+    "st-nucleo-f207zg",
+    "st-nucleo-f303ze",
+    "st-nucleo-f412zg",
+    "st-nucleo-f413zh",
+    "st-nucleo-f429zi",
+    "st-nucleo-f439zi",
+    "st-nucleo-f446ze",
+    "st-nucleo-f722ze",
+    "st-nucleo-f746zg",
+    "st-nucleo-f756zg",
+    "st-nucleo-f767zi",
+    "st-nucleo-h743zi"
+  ],
+  "identical_replay_ids": [],
+  "existing_ids_preserved": 298,
+  "catalog_records": 310,
+  "verified_source_files": 13,
+  "ambiguous_labels": {
+    "esp32-c6-devkitc-1": [
+      "espressif-esp32-c6-devkitc-1-v1-1",
+      "espressif-esp32-c6-devkitc-1-v1-2"
+    ],
+    "esp32-s3-devkitc-1": [
+      "esp32-s3-devkitc-1",
+      "espressif-esp32-s3-devkitc-1-v1-0",
+      "espressif-esp32-s3-devkitc-1-v1-1"
+    ],
+    "nano 33 iot": [
+      "arduino-nano",
+      "nano-33-iot"
+    ],
+    "nano esp32": [
+      "arduino-nano",
+      "nano-esp32"
+    ],
+    "nano every": [
+      "arduino-nano",
+      "nano-every"
+    ],
+    "pico 2": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-2"
+    ],
+    "pico h": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-h"
+    ],
+    "pico w": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-w"
+    ],
+    "pico wh": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-wh"
+    ],
+    "vl53l1x": [
+      "adafruit-3967",
+      "pololu-3415"
+    ],
+    "xiao esp32c3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c3"
+    ],
+    "xiao esp32c6": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c6"
+    ],
+    "xiao esp32s3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3"
+    ],
+    "xiao esp32s3 sense": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3-sense"
+    ]
+  },
+  "catalog_sha256": "dc396e22eb8ad3d9ab70c8af647257c632381cd72a1355d825f0d4ef83ece900",
+  "physical_validation": false,
+  "model_approval_modified": false,
+  "status": "validated_research_only"
+}

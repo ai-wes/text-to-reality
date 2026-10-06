@@ -1,0 +1,8 @@
+PASS: 10 unique new exact-SKU boards
+PASS: 20 whole single-row male headers; 168 positions
+PASS: 8 XIAO boards each 7+7; 2 Adafruit Feathers each 16+12
+PASS: no replacement or relabeling of bare parent records
+PASS: all automatic fit and physical-fit flags false
+PASS: every declared local evidence file exists
+PASS: prior catalog/ZIP IDs checked; no duplicates
+WITHHELD: non-Sense XIAO ESP32-S3 SKU 102010634 for exact-model pitch provenance

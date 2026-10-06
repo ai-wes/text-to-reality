@@ -1,0 +1,283 @@
+{
+  "bundle_version": 1,
+  "wave": 6,
+  "created_utc": "2026-10-06T19:47:53.531127+00:00",
+  "purpose": "Source-preserving proposal for catalog integration; no physical or model approval",
+  "record_count_semantics": "Eight completed SBC research records; all full multi-row or auxiliary connector groups excluded from single-row comb proposals. Not accepted runtime integration counts. Candidate lead prose excluded.",
+  "constraints": [
+    "Never flatten multi-row connectors",
+    "Keep physical edge rows separate",
+    "Preserve nullable or provisional dimensions and population",
+    "No physical fit, electrical compatibility, retention or model approval is established"
+  ],
+  "batches": [
+    {
+      "directory": "board_batch6/sbc",
+      "catalog_file": "board_batch6/sbc/sbc_headers.json",
+      "records_key": "boards",
+      "record_count": 8
+    }
+  ],
+  "record_index": [
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/0",
+      "source_id": "beagleboard-beaglebone-ai-64",
+      "normalized_id": "beagleboard-beaglebone-ai-64",
+      "name": "BeagleBone AI-64"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/1",
+      "source_id": "beagleboard-beaglebone-ai",
+      "normalized_id": "beagleboard-beaglebone-ai",
+      "name": "BeagleBone AI"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/2",
+      "source_id": "beagleboard-beaglebone-black-wireless",
+      "normalized_id": "beagleboard-beaglebone-black-wireless",
+      "name": "BeagleBone Black Wireless"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/3",
+      "source_id": "seeed-beaglebone-green-wireless",
+      "normalized_id": "seeed-beaglebone-green-wireless",
+      "name": "Seeed Studio BeagleBone Green Wireless"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/4",
+      "source_id": "beagleboard-pocketbeagle",
+      "normalized_id": "beagleboard-pocketbeagle",
+      "name": "PocketBeagle"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/5",
+      "source_id": "beagleboard-pocketbeagle-2",
+      "normalized_id": "beagleboard-pocketbeagle-2",
+      "name": "PocketBeagle 2"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/6",
+      "source_id": "beagleboard-beagleplay",
+      "normalized_id": "beagleboard-beagleplay",
+      "name": "BeaglePlay"
+    },
+    {
+      "batch": "sbc",
+      "source_file": "board_batch6/sbc/sbc_headers.json",
+      "json_pointer": "/boards/7",
+      "source_id": "beagleboard-beaglev-ahead",
+      "normalized_id": "beagleboard-beaglev-ahead",
+      "name": "BeagleV-Ahead"
+    }
+  ],
+  "files": [
+    {
+      "path": "board_batch6/sbc/EVIDENCE.md",
+      "bytes": 7550,
+      "sha256": "9744f8d7b73fd3c4584ace046692410dcc155244ff29dbcdc99a8d51b06b2d37"
+    },
+    {
+      "path": "board_batch6/sbc/LEADS.md",
+      "bytes": 474,
+      "sha256": "70612d77e3f6ca623ea1c6ad66eb891ad1492dca1ab9bedd0e3c04fa1db38d46"
+    },
+    {
+      "path": "board_batch6/sbc/ahead_bom.csv",
+      "bytes": 20021,
+      "sha256": "65fabe7a433a460d1f8af92e3f952fa43e39767e0ebface8a3b3c4f63fcbcec9"
+    },
+    {
+      "path": "board_batch6/sbc/ahead_schematic.txt",
+      "bytes": 680474,
+      "sha256": "fe9bf8941fc152a4458ad07c4eae86751c3bd38def67ad6617c3d7c4cb037a3e"
+    },
+    {
+      "path": "board_batch6/sbc/ai64_bom.csv",
+      "bytes": 25907,
+      "sha256": "2d65e011d8b1072fa5387f766c6c615971bf064d65516aad8cdbc577e1b75409"
+    },
+    {
+      "path": "board_batch6/sbc/ai64_p9_cad_schematic.png",
+      "bytes": 318660,
+      "sha256": "e981e2786adbe93a7ccc0d7b803f331be84932e8ea05be1080f2f7aca8a1d98a"
+    },
+    {
+      "path": "board_batch6/sbc/ai64_schematic.txt",
+      "bytes": 952126,
+      "sha256": "7f7ea81589c094069eea31b81c093fc3c2b167d8a3759a2cfd231b760ed60daa"
+    },
+    {
+      "path": "board_batch6/sbc/ai_bom.csv",
+      "bytes": 15635,
+      "sha256": "3808aeef50359f2ebf00a47989d2fff55092cb5c0d30866bab18285d7e3d6aca"
+    },
+    {
+      "path": "board_batch6/sbc/ai_schematic.txt",
+      "bytes": 524239,
+      "sha256": "c9e9c71830e876e566b7c5264d786b3b70d3364f5284114857ed8ff4c31f828b"
+    },
+    {
+      "path": "board_batch6/sbc/beaglebone-ai-64.txt",
+      "bytes": 680049,
+      "sha256": "4139ccde521c92452674af1257e38a200516dddeb9939cfae7ff16f026b960f3"
+    },
+    {
+      "path": "board_batch6/sbc/beaglebone-ai.txt",
+      "bytes": 165415,
+      "sha256": "c4282776e50ff7f71dfaddc98c2c846b94617196292566ae23c014464c450055"
+    },
+    {
+      "path": "board_batch6/sbc/beaglebone-ai_p8.png",
+      "bytes": 330733,
+      "sha256": "d7c4df695de8d3bcb6a810602786b4a7c7590cb13b4dae05f641d96138402cdf"
+    },
+    {
+      "path": "board_batch6/sbc/beagleplay.txt",
+      "bytes": 496303,
+      "sha256": "58fa264cc8c3a379f05e4c26d0de0f1a856dfae90b1ee26124141cfe8337bf7c"
+    },
+    {
+      "path": "board_batch6/sbc/beagleplay_p10.png",
+      "bytes": 389542,
+      "sha256": "aad8ebd3ff04d435ce3815edd975b11ab74e18aabdfe63a2a6565e359899e079"
+    },
+    {
+      "path": "board_batch6/sbc/beaglev-ahead.txt",
+      "bytes": 66010,
+      "sha256": "331f3dbf265ef12ef23992d1ac3978b3b0ed5a7cea1d5ed2f224d1c18cf8e4c3"
+    },
+    {
+      "path": "board_batch6/sbc/beaglev-ahead_p10.png",
+      "bytes": 625454,
+      "sha256": "f714104812d23acbceca3cc110b2717d4cf61b072a5f27acf98633a133d4d9d2"
+    },
+    {
+      "path": "board_batch6/sbc/black_wireless_bom.csv",
+      "bytes": 5692,
+      "sha256": "6570c9f138db7686e7bc3be4ff1505c7a50e9412028a30d40fab579a1195aebb"
+    },
+    {
+      "path": "board_batch6/sbc/black_wireless_schematic.txt",
+      "bytes": 229533,
+      "sha256": "0eba24be76c6ffbee9a3dfd72f2a00220aea4daeb7e0d1862fd31e4d8074061d"
+    },
+    {
+      "path": "board_batch6/sbc/green_wireless_mechanical.png",
+      "bytes": 79981,
+      "sha256": "f8b67871dd8526e4672d1a4da1a04037cb969e52da04c67515ac6cb79f197402"
+    },
+    {
+      "path": "board_batch6/sbc/green_wireless_mechanical.txt",
+      "bytes": 1,
+      "sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977"
+    },
+    {
+      "path": "board_batch6/sbc/green_wireless_schematic.txt",
+      "bytes": 384535,
+      "sha256": "f6b7b859febd5e83bf337e7c4662ad362591f55ced10e9432105ddedeb0aeb22"
+    },
+    {
+      "path": "board_batch6/sbc/play_bom.csv",
+      "bytes": 15287,
+      "sha256": "d56ede54e1ff1dbf78933c9b378c161acb69c399ea848b4c65520947e3ebe63c"
+    },
+    {
+      "path": "board_batch6/sbc/pocket2_mechanical.txt",
+      "bytes": 609,
+      "sha256": "d3d7ad144d7f9df8056f99ec7908c3a8a3275f3f44182b67492efc601b3757b3"
+    },
+    {
+      "path": "board_batch6/sbc/pocket2_schematic.txt",
+      "bytes": 353283,
+      "sha256": "374e0e23d1d03a53740e2fabfafeefa7fd44c13c3abe8e1cda08e5fd4a797104"
+    },
+    {
+      "path": "board_batch6/sbc/pocket_bom.csv",
+      "bytes": 1789,
+      "sha256": "fcc56db5b7c4949bf1d3d2cfaef1b94fd8aa5871aa10f0e712546bca5e11956b"
+    },
+    {
+      "path": "board_batch6/sbc/pocket_cad_verified_headers.json",
+      "bytes": 4292,
+      "sha256": "3b894a8a7bf3712c8f402a34125b7f023eb4dbffb176245d6b8a152dca3399d4"
+    },
+    {
+      "path": "board_batch6/sbc/pocket_pcb.kicad_pcb",
+      "bytes": 941269,
+      "sha256": "3208e126a89e999404de619b72e22453a6f87b3621808b505c58708654cccb30"
+    },
+    {
+      "path": "board_batch6/sbc/pocket_schematic.txt",
+      "bytes": 73441,
+      "sha256": "dc7ec437416b898479ee6bce4962dc0d04c9f523a23dfbe11f1fb0280024852d"
+    },
+    {
+      "path": "board_batch6/sbc/pocketbeagle-2.txt",
+      "bytes": 85889,
+      "sha256": "f9ae7f19264ac6ca1d4f6726a12b9a8888aa5886e8a92488bb09147b462fa901"
+    },
+    {
+      "path": "board_batch6/sbc/pocketbeagle-2_p32.png",
+      "bytes": 184365,
+      "sha256": "8d3e0ecfc4b02059ba435a7b9bd50493598945d109ee96efeec47b545b2c1463"
+    },
+    {
+      "path": "board_batch6/sbc/pocketbeagle-2_p8.png",
+      "bytes": 267604,
+      "sha256": "6a1c4b60ffe1eb630ba66b21eae594d43cebad51056ae758776da6b649f1046d"
+    },
+    {
+      "path": "board_batch6/sbc/pocketbeagle.txt",
+      "bytes": 93098,
+      "sha256": "796b435ab3b42026b260348b33dcb2507715ad7d50a8a6b930b308b134219837"
+    },
+    {
+      "path": "board_batch6/sbc/sbc_headers.json",
+      "bytes": 61447,
+      "sha256": "ca742de668e3c1af091c6c677da7f88028a81277bcb017276616575145838a80"
+    },
+    {
+      "path": "headerBoards.proposed.json",
+      "bytes": 131819,
+      "sha256": "d69c15b2c310e1af76f942793e2422e8e87d8f8247698fadb50a8ccfeae46fd1"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 784,
+      "sha256": "6931b5c9f8a7c3e8bb91f7f740f0d457f7982fe947c0b9cfee187dc852f393d1"
+    },
+    {
+      "path": "full-evidence-manifest.json",
+      "bytes": 12061,
+      "sha256": "85781d44881cabe54051637544494fe358611cefe63c8fd9dc299a845119ed22"
+    }
+  ],
+  "identity_adjustments": [],
+  "omitted_support_directories": [
+    ".git repository machinery",
+    "__pycache__ caches"
+  ],
+  "omitted_redundant_archives": [],
+  "total_record_count": 8,
+  "normalized_proposal": {
+    "path": "headerBoards.proposed.json",
+    "record_count": 8,
+    "status": "proposal_only_not_repository_ready_without_safety_review"
+  },
+  "previous_record_count_checked": 271,
+  "edition": "compact_incremental_sbc_only"
+}

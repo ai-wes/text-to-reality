@@ -1,0 +1,1191 @@
+{
+  "bundle_version": 1,
+  "wave": 3,
+  "created_utc": "2026-10-06T19:25:13.316969+00:00",
+  "purpose": "Source-preserving proposal for catalog integration; no physical or model approval",
+  "record_count_semantics": "Exact source records, including scoped revisions and assembly variants; not a unique base-family count",
+  "constraints": [
+    "Never flatten multi-row connectors",
+    "Keep physical edge rows separate",
+    "Preserve nullable or provisional dimensions and population",
+    "No physical fit, electrical compatibility, retention or model approval is established"
+  ],
+  "batches": [
+    {
+      "directory": "board_batch3/stm_teensy",
+      "catalog_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "records_key": "boards",
+      "record_count": 16
+    },
+    {
+      "directory": "board_batch3/feather",
+      "catalog_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "records_key": "boards",
+      "record_count": 15
+    },
+    {
+      "directory": "board_batch3/displays",
+      "catalog_file": "board_batch3/displays/catalog.json",
+      "records_key": "records",
+      "record_count": 14
+    },
+    {
+      "directory": "board_batch3/sensors",
+      "catalog_file": "board_batch3/sensors/sensor_catalog.json",
+      "records_key": "records",
+      "record_count": 12
+    }
+  ],
+  "record_index": [
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/0",
+      "source_id": "st-nucleo-f030r8",
+      "normalized_id": "st-nucleo-f030r8",
+      "name": "NUCLEO-F030R8"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/1",
+      "source_id": "st-nucleo-f070rb",
+      "normalized_id": "st-nucleo-f070rb",
+      "name": "NUCLEO-F070RB"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/2",
+      "source_id": "st-nucleo-f072rb",
+      "normalized_id": "st-nucleo-f072rb",
+      "name": "NUCLEO-F072RB"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/3",
+      "source_id": "st-nucleo-f091rc",
+      "normalized_id": "st-nucleo-f091rc",
+      "name": "NUCLEO-F091RC"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/4",
+      "source_id": "st-nucleo-f103rb",
+      "normalized_id": "st-nucleo-f103rb",
+      "name": "NUCLEO-F103RB"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/5",
+      "source_id": "st-nucleo-f302r8",
+      "normalized_id": "st-nucleo-f302r8",
+      "name": "NUCLEO-F302R8"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/6",
+      "source_id": "st-nucleo-f303re",
+      "normalized_id": "st-nucleo-f303re",
+      "name": "NUCLEO-F303RE"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/7",
+      "source_id": "st-nucleo-f334r8",
+      "normalized_id": "st-nucleo-f334r8",
+      "name": "NUCLEO-F334R8"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/8",
+      "source_id": "st-nucleo-f410rb",
+      "normalized_id": "st-nucleo-f410rb",
+      "name": "NUCLEO-F410RB"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/9",
+      "source_id": "st-nucleo-l010rb",
+      "normalized_id": "st-nucleo-l010rb",
+      "name": "NUCLEO-L010RB"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/10",
+      "source_id": "st-nucleo-l053r8",
+      "normalized_id": "st-nucleo-l053r8",
+      "name": "NUCLEO-L053R8"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/11",
+      "source_id": "st-nucleo-l073rz",
+      "normalized_id": "st-nucleo-l073rz",
+      "name": "NUCLEO-L073RZ"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/12",
+      "source_id": "st-nucleo-l152re",
+      "normalized_id": "st-nucleo-l152re",
+      "name": "NUCLEO-L152RE"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/13",
+      "source_id": "st-nucleo-l452re",
+      "normalized_id": "st-nucleo-l452re",
+      "name": "NUCLEO-L452RE"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/14",
+      "source_id": "pjrc-teensy-20-bare",
+      "normalized_id": "pjrc-teensy-20-bare",
+      "name": "Teensy 2.0 (bare board)"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/15",
+      "source_id": "pjrc-teensy-20pp-bare",
+      "normalized_id": "pjrc-teensy-20pp-bare",
+      "name": "Teensy++ 2.0 (bare board)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/0",
+      "source_id": "adafruit-3406",
+      "normalized_id": "adafruit-3406",
+      "name": "Adafruit Feather nRF52 Bluefruit LE (nRF52832)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/1",
+      "source_id": "adafruit-4062",
+      "normalized_id": "adafruit-4062",
+      "name": "Adafruit Feather nRF52840 Express"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/2",
+      "source_id": "adafruit-4516",
+      "normalized_id": "adafruit-4516",
+      "name": "Adafruit Feather nRF52840 Sense"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/3",
+      "source_id": "adafruit-2995",
+      "normalized_id": "adafruit-2995",
+      "name": "Adafruit Feather M0 Bluefruit LE"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/4",
+      "source_id": "adafruit-2829",
+      "normalized_id": "adafruit-2829",
+      "name": "Adafruit Feather 32u4 Bluefruit LE"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/5",
+      "source_id": "adafruit-3010",
+      "normalized_id": "adafruit-3010",
+      "name": "Adafruit Feather M0 WiFi (ATSAMD21 + ATWINC1500)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/6",
+      "source_id": "adafruit-5395",
+      "normalized_id": "adafruit-5395",
+      "name": "Adafruit QT Py ESP32 Pico (8MB Flash / 2MB PSRAM)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/7",
+      "source_id": "adafruit-5405",
+      "normalized_id": "adafruit-5405",
+      "name": "Adafruit QT Py ESP32-C3"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/8",
+      "source_id": "adafruit-1500",
+      "normalized_id": "adafruit-1500",
+      "name": "Adafruit Trinket 3.3V (microUSB)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/9",
+      "source_id": "adafruit-1501",
+      "normalized_id": "adafruit-1501",
+      "name": "Adafruit Trinket 5V (microUSB)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/10",
+      "source_id": "adafruit-2000",
+      "normalized_id": "adafruit-2000",
+      "name": "Adafruit Pro Trinket 5V 16MHz"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/11",
+      "source_id": "adafruit-2010",
+      "normalized_id": "adafruit-2010",
+      "name": "Adafruit Pro Trinket 3V 12MHz"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/12",
+      "source_id": "adafruit-3178",
+      "normalized_id": "adafruit-3178",
+      "name": "Adafruit Feather M0 RFM95 LoRa (900MHz)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/13",
+      "source_id": "adafruit-3179",
+      "normalized_id": "adafruit-3179",
+      "name": "Adafruit Feather M0 RFM96 LoRa (433MHz)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/14",
+      "source_id": "adafruit-3078",
+      "normalized_id": "adafruit-3078",
+      "name": "Adafruit Feather 32u4 RFM95 LoRa (868 or 915MHz)"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/0",
+      "source_id": "adafruit-4741",
+      "normalized_id": "adafruit-4741",
+      "name": "Grayscale 1.5 inch 128x128 OLED STEMMA QT"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/1",
+      "source_id": "adafruit-5297",
+      "normalized_id": "adafruit-5297",
+      "name": "Monochrome 1.12 inch 128x128 OLED STEMMA QT"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/2",
+      "source_id": "adafruit-2088",
+      "normalized_id": "adafruit-2088",
+      "name": "1.44 inch 128x128 ST7735R TFT EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/3",
+      "source_id": "adafruit-4383",
+      "normalized_id": "adafruit-4383",
+      "name": "1.14 inch 240x135 ST7789 TFT microSD"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/4",
+      "source_id": "adafruit-3533",
+      "normalized_id": "adafruit-3533",
+      "name": "0.96 inch 160x80 ST7735 TFT microSD"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/5",
+      "source_id": "adafruit-4311",
+      "normalized_id": "adafruit-4311",
+      "name": "2.0 inch 320x240 ST7789 IPS TFT EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/6",
+      "source_id": "adafruit-1673",
+      "normalized_id": "adafruit-1673",
+      "name": "1.27 inch 128x96 Color OLED microSD, original CAD"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/7",
+      "source_id": "adafruit-4224",
+      "normalized_id": "adafruit-4224",
+      "name": "eInk Breakout Friend with 32KB SRAM"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/8",
+      "source_id": "adafruit-4197",
+      "normalized_id": "adafruit-4197",
+      "name": "2.13 inch Monochrome eInk SSD1680 EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/9",
+      "source_id": "adafruit-4947",
+      "normalized_id": "adafruit-4947",
+      "name": "2.13 inch 250x122 Tri-Color eInk SSD1680Z EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/10",
+      "source_id": "adafruit-1028",
+      "normalized_id": "adafruit-1028",
+      "name": "2.9 inch Tri-Color eInk Display, original pre-EYESPI CAD"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/11",
+      "source_id": "adafruit-4196",
+      "normalized_id": "adafruit-4196",
+      "name": "1.54 inch 200x200 Monochrome eInk SSD1681 EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/12",
+      "source_id": "adafruit-4868",
+      "normalized_id": "adafruit-4868",
+      "name": "1.54 inch 200x200 Tri-Color eInk SSD1681 EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch3/displays/catalog.json",
+      "json_pointer": "/records/13",
+      "source_id": "adafruit-4098",
+      "normalized_id": "adafruit-4098",
+      "name": "2.7 inch Tri-Color eInk SRAM EYESPI"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/0",
+      "source_id": "pololu-1182",
+      "normalized_id": "pololu-1182",
+      "name": "A4988 Stepper Motor Driver Carrier"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/1",
+      "source_id": "pololu-2133",
+      "normalized_id": "pololu-2133",
+      "name": "DRV8825 Stepper Motor Driver Carrier, High Current"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/2",
+      "source_id": "pololu-2134",
+      "normalized_id": "pololu-2134",
+      "name": "DRV8834 Low-Voltage Stepper Motor Driver Carrier"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/3",
+      "source_id": "pololu-2135",
+      "normalized_id": "pololu-2135",
+      "name": "DRV8835 Dual Motor Driver Carrier"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/4",
+      "source_id": "pololu-2990",
+      "normalized_id": "pololu-2990",
+      "name": "DRV8838 Single Brushed DC Motor Driver Carrier"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/5",
+      "source_id": "pololu-4036",
+      "normalized_id": "pololu-4036",
+      "name": "DRV8876 Single Brushed DC Motor Driver Carrier"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/6",
+      "source_id": "pololu-4038",
+      "normalized_id": "pololu-4038",
+      "name": "DRV8256E Single Brushed DC Motor Driver Carrier"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/7",
+      "source_id": "pololu-3415",
+      "normalized_id": "pololu-3415",
+      "name": "VL53L1X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 400cm Max"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/8",
+      "source_id": "pololu-2489",
+      "normalized_id": "pololu-2489",
+      "name": "VL6180X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 60cm max"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/9",
+      "source_id": "pololu-3418",
+      "normalized_id": "pololu-3418",
+      "name": "VL53L7CX Time-of-Flight 8\u00d78-Zone Wide FOV Distance Sensor Carrier with Voltage Regulator, 350cm Max"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/10",
+      "source_id": "pololu-2739",
+      "normalized_id": "pololu-2739",
+      "name": "AltIMU-10 v5 Gyro, Accelerometer, Compass, and Altimeter (LSM6DS33, LIS3MDL, and LPS25H Carrier)"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch3/sensors/sensor_catalog.json",
+      "json_pointer": "/records/11",
+      "source_id": "pololu-2490",
+      "normalized_id": "pololu-2490",
+      "name": "VL53L0X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 200cm Max"
+    }
+  ],
+  "files": [
+    {
+      "path": "board_batch3/displays/Adafruit-0.96-160x80-TFT-Display-Breakout-PCB--Adafruit 0.96in 160x80 TFT Display.brd",
+      "bytes": 165809,
+      "sha256": "2d7a0bcf265f73929d3a9a9ace4b8d40c43a0cd5c1f7fae5fc7e6fa2c3a41912"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-0.96-160x80-TFT-Display-Breakout-PCB.tree.json",
+      "bytes": 216,
+      "sha256": "c2df0204d5e073b8407d7a645b206723dc4343b1d16d4ee1cb49da9d8ff7a217"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.12in-128x128-OLED-PCB--Adafruit Monochrome 1.12in 128x128 OLED.brd",
+      "bytes": 292943,
+      "sha256": "48e85dd52b41a510614c275ef7638f7a2f35ae1d6fa9f21a2d13053a70e19b9d"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.12in-128x128-OLED-PCB.tree.json",
+      "bytes": 219,
+      "sha256": "33386a86d488a40d7d3ca8b8ac701d07a9edc1af198e5a04da4d298cd9e18740"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.14-inch-240x135-TFT-PCB--Adafruit 1.14-inch 240x135 Color TFT.brd",
+      "bytes": 170719,
+      "sha256": "9a1f762be5009829f24f51933e0b15c66eb699f6df0304310680fcb1bab151cf"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.14-inch-240x135-TFT-PCB.tree.json",
+      "bytes": 218,
+      "sha256": "0487b721d1450c54a625ea5c8b4d277e288842dbf6613731b93df5ee4af683ce"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.27inch-Color-OLED-Breakout-PCB--Adafruit 1.27 128x96 RGB OLED.brd",
+      "bytes": 178280,
+      "sha256": "86f7e52d2b87adc53690feecd85d4a46c0e7c120d2010fa90a5d3ce3dbe3d7e7"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.27inch-Color-OLED-Breakout-PCB.tree.json",
+      "bytes": 211,
+      "sha256": "d3f7c4c16c6401c6904f90178b051f8b81155a759fab553a2e78934e6c48dff3"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.44-TFT-Breakout-PCB--Adafruit EYESPI 1.44 inch TFT Breakout.brd",
+      "bytes": 1039209,
+      "sha256": "645acb380659b2a9847bd7dcda4de0b384807303366795c665a64a83c10fd95c"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.44-TFT-Breakout-PCB--Adafruit TFT144 Breakout rev B.brd",
+      "bytes": 149781,
+      "sha256": "6827d239ab24aedd6ab2711b669dfd3b0a7fe317d4f152c63511c870839c3fd1"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.44-TFT-Breakout-PCB--Adafruit TFT144 Breakout.brd",
+      "bytes": 144207,
+      "sha256": "c97c2de4574d672a31c0d8fa0becd1c1de21749cbb2d5b09653509c5fbe647e5"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-1.44-TFT-Breakout-PCB.tree.json",
+      "bytes": 412,
+      "sha256": "83ae51f22928a961822717d935de6e080ecf829302d6c23dbd10cce69752c697"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-2.0-inch-240x320-TFT-PCB--Adafruit 2.0 inch 240x320 IPS TFT.brd",
+      "bytes": 295865,
+      "sha256": "2b21a355b2b5703d798eee93a3bfa68c505cc45ddc679c3f63cf217c894bc161"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-2.0-inch-240x320-TFT-PCB--Adafruit EYESPI 2.0 Inch 240x320 IPS TFT.brd",
+      "bytes": 1294909,
+      "sha256": "7747d0234e04c21be8dd7f28bbb2556b879dd4c64d06d7770222075fd02edc0a"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-2.0-inch-240x320-TFT-PCB.tree.json",
+      "bytes": 324,
+      "sha256": "c53fe44cc8e974529341fe98bfe69b4deca723e4fa61f22c020df3f1ec889e22"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 1.54in eInk Breakout with EYESPI.brd",
+      "bytes": 1060176,
+      "sha256": "c932a5e3d1aa460c0004f68f4fcae9b03a51e9ac8ffd23b1ab6578462a342e0e"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 1.54in eInk Breakout.brd",
+      "bytes": 339572,
+      "sha256": "a3f311a9753b31a53b6e8f60850f586a3b20bcbe82bbff9258484b89c9517439"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.13in Tri-Color eInk Display.brd",
+      "bytes": 336957,
+      "sha256": "f16ce911b6502c2523b5d2c804e778026f1b34ad9206f299be2b474d409305a2"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.13in Tri-Color eInk FeatherWing.brd",
+      "bytes": 221692,
+      "sha256": "b6e3b0b5c3142a781d91143874bd878216c0dbd6914399325b631b7c61a43cd5"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.13in Tri-Color eInk with EYESPI.brd",
+      "bytes": 1503257,
+      "sha256": "166fb17952f52be8737eefecdf92279d168a4fe3f290fc262297df7f78ea1c69"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.7in Tri-Color eInk Display with EYESPI.brd",
+      "bytes": 1654231,
+      "sha256": "e8f66edc4a09446b3fec3f77c1ddaedf3679d1b7044d673fba3621d9a4aaddd7"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.7in Tri-Color eInk Display.brd",
+      "bytes": 346802,
+      "sha256": "0e95ddbab248bc1e90757b9da6501b67dbd35e31e3cd85a7024fe822792b35ac"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.9in eInk Display.brd",
+      "bytes": 359478,
+      "sha256": "566cf9826efa6239ead05cbfc87c51132ee3780ad77b54171b0f20a4865acb3c"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit 2.9in eInk FeatherWing.brd",
+      "bytes": 551402,
+      "sha256": "30b5919cb90d8dd5218465b8619e22b8a8229b38d1444b0f6ccf05c12c533a01"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit eInk Breakout Friend.brd",
+      "bytes": 177221,
+      "sha256": "554f2724769799bd3e4e94ce3ee41607ceb1af2388399668f7fc1048e65dc7d7"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs--Adafruit eInk Feather Friend.brd",
+      "bytes": 659017,
+      "sha256": "eb924b32885bce7d28d70360114c4e358b18bc8928e92b096fefdb116b0eeb8d"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-E-Paper-Display-Breakout-PCBs.tree.json",
+      "bytes": 1265,
+      "sha256": "b84e854165dbd4cb8f18433f68844447e8fd08c28c6e7c4b329a6f5afe0c3099"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-Grayscale-1.5-inch-128x128-OLED-PCB--Adafruit Grayscale 1.5-inch 128x128 OLED.brd",
+      "bytes": 296051,
+      "sha256": "b9786c1559e19ee6f9fe46a395714e21289259ee0e33e4bc73dbdbb21e683931"
+    },
+    {
+      "path": "board_batch3/displays/Adafruit-Grayscale-1.5-inch-128x128-OLED-PCB.tree.json",
+      "bytes": 220,
+      "sha256": "43f20df4d134cdd241fc76c9724350c19df1ffea59623a16de89569b5996bd56"
+    },
+    {
+      "path": "board_batch3/displays/build.py",
+      "bytes": 4004,
+      "sha256": "7b37f2cd694dac7a05bc6ea3cb83cba6bda8dbb5972da856112bf4b3d716a4c4"
+    },
+    {
+      "path": "board_batch3/displays/catalog.json",
+      "bytes": 82014,
+      "sha256": "0e60535d145dda09bc84acdd2494069dbff981795b3efbcd60fedda4866206ab"
+    },
+    {
+      "path": "board_batch3/displays/finalize.py",
+      "bytes": 1959,
+      "sha256": "a63917a4d3b88505335045ce95fb734681a6516b6b309770e56bc6dfcc1e8cc4"
+    },
+    {
+      "path": "board_batch3/displays/patch_final.py",
+      "bytes": 3182,
+      "sha256": "327101a8505d9352b55f2bbfe391ed7130ff27d5f9533f7854a94bb6ffc49a97"
+    },
+    {
+      "path": "board_batch3/displays/qa.json",
+      "bytes": 454,
+      "sha256": "eccaa544b8a0fd005ab24a57667157eef21e4307455746b5a00a39aca43675e6"
+    },
+    {
+      "path": "board_batch3/displays/zip_more.py",
+      "bytes": 1164,
+      "sha256": "ab1edadfb41c87381cc28abd7b6339ed3feb6fa3122db21d322c4d2167897e38"
+    },
+    {
+      "path": "board_batch3/displays/zipcad.py",
+      "bytes": 1156,
+      "sha256": "b7f2fdd035aeab07905d55830f2fe9fb62e497529efe15efc86b2be4433af569"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-32u4-Bluefruit-LE-PCB/Adafruit Feather 32u4 Bluefruit LE.brd",
+      "bytes": 613775,
+      "sha256": "293c29fe2e51166129c54af4d5adfab23ced18188499ac0876fd749a20d97210"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-32u4-Bluefruit-LE-PCB/README.md",
+      "bytes": 2824,
+      "sha256": "1b3d2f654e35589805b7bd111f3d31ea220f369eb3104a3ce02b9d78751b903c"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-32u4-RFM-LoRa-PCB/Adafruit Feather 32u4 RFMxx.brd",
+      "bytes": 484426,
+      "sha256": "204cad75a0a7917b3c58e99bb17da82575a0e6cd0eb3dc92853f81060f56238c"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-32u4-RFM-LoRa-PCB/README.md",
+      "bytes": 1562,
+      "sha256": "a5cc17b8a1bf8c7d939d1ab83e26fa9542edd4aa8f12b63efc717abcff2851e7"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-Bluefruit-LE-PCB/Adafruit Feather Zero BLE rev A.brd",
+      "bytes": 610018,
+      "sha256": "8ed913e496f3823c1678e33e0665e226041cbb2a5398c21b8e7e5795d8bfec8e"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-Bluefruit-LE-PCB/README.md",
+      "bytes": 1867,
+      "sha256": "cdd73493c6b2ba89aecf614cccf575608db5eec19c629d80abe4e7f784ee2f6a"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-RFM-LoRa-PCB/Adafruit Feather M0 RFMxx.brd",
+      "bytes": 397327,
+      "sha256": "afb8977bc8f2a5a3b0089127d41b5ded9cf543720e972457404833e25ae5203b"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-RFM-LoRa-PCB/README.md",
+      "bytes": 2523,
+      "sha256": "edca73733966848fd18488cdbfd950e6b4607fe900b480171ce8f8d57ffbafa0"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-WiFi-WINC1500-PCB/Adafruit Feather M0 WiFi.brd",
+      "bytes": 402579,
+      "sha256": "70b7ba94af635b61d615fabc40b16735ac3a3734f5988f3db12c5f5554ddb2bb"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-WiFi-WINC1500-PCB/README.md",
+      "bytes": 582,
+      "sha256": "c175a2c5e8a3530af50e003d64c35ff917c6e697376b776d6626ced4c36820ce"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-nRF52840-Sense-PCB/Adafruit Feather nRF52840 Sense Rev C.brd",
+      "bytes": 2897702,
+      "sha256": "a9a3b602e66aa91108a267fbbac28605c50b4349b979730210bb9786474debd2"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-nRF52840-Sense-PCB/Adafruit Feather nRF52840 Sense.brd",
+      "bytes": 2893497,
+      "sha256": "fed1eb2ee94535c64417710ff8493cd653fe49ddf1fb4629e65987a07de65a8e"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-nRF52840-Sense-PCB/README.md",
+      "bytes": 3436,
+      "sha256": "1fe51bb68b27b5af58dc3aa0ec8efeb6b80bb871ac42568b21e10abc7707b834"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Pro-Trinket-PCBs/Adafruit Pro Trinket 3v3.brd",
+      "bytes": 270559,
+      "sha256": "d048477a81cd08ee6971012802683f6f78a79e5850ecf7d324aafe03eeac9ddd"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Pro-Trinket-PCBs/Adafruit Pro Trinket 5v0.brd",
+      "bytes": 272846,
+      "sha256": "94508718c904a62b34be5a734519ea1a3ef4ce1ddfdbf54a2f0ed9e62d513cef"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Pro-Trinket-PCBs/README.md",
+      "bytes": 1945,
+      "sha256": "4ff0affa56034b0ffb36b712beffba4e1439d808ecc976880f0ef6da055c212c"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-QT-Py-ESP32-C3-PCB/Adafruit QT Py ESP32-C3.brd",
+      "bytes": 652776,
+      "sha256": "629effaf43d2b46e0b0d41e3e65eecc33b8e5d75da1336589cde89e68426bbe9"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-QT-Py-ESP32-C3-PCB/README.md",
+      "bytes": 2272,
+      "sha256": "cbbb892337faa209912a67a01b11406544ee55e26c3804a8ad08e0d3f7e5cc4f"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-QT-Py-ESP32-Pico-PCB/Adafruit QT Py ESP32 Pico.brd",
+      "bytes": 549680,
+      "sha256": "142bf01e4eb9730f70a09034e4839f63496d1596be0b6f66a6edc563beb732b6"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-QT-Py-ESP32-Pico-PCB/README.md",
+      "bytes": 4407,
+      "sha256": "b0abb2ae20512ac85d3a20557c3dedbf4951976a2a713f668a189bf98bf4204c"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Trinket-PCB/Adafruit Trinket 3.3V.brd",
+      "bytes": 147389,
+      "sha256": "f0b34b7eb81064aca6b893dd5bfb28eba59a6de152519c6ea6d10c8cb5c7265a"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Trinket-PCB/Adafruit Trinket 3V microUSB.brd",
+      "bytes": 243271,
+      "sha256": "6a9850a5658be68b5fab5548d104a3d48e6c81da8e82a2d6518e51ca94f1720e"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Trinket-PCB/Adafruit Trinket 5V microUSB.brd",
+      "bytes": 248634,
+      "sha256": "c1c00e34236061165cd98bf317a6effa48a8c28b8c453e2833e2c3b563171431"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Trinket-PCB/Adafruit Trinket 5V.brd",
+      "bytes": 148640,
+      "sha256": "a5025d8d6d3e00007515d4cb55b8e5aad94038fa9cb8cb9ea7001de7e1d44a84"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Trinket-PCB/README.md",
+      "bytes": 2037,
+      "sha256": "de70b5ba80cbd42006e1924a624d3675e8e92690ebdfd76fcb82b1d4403e502a"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-nRF52-Bluefruit-Feather-PCB/Adafruit nRF52 Bluefruit Feather rev G.brd",
+      "bytes": 719278,
+      "sha256": "7bc419d66e42329046c2342dfef3d7fe19a473928a6a7252addbeef1236094aa"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-nRF52-Bluefruit-Feather-PCB/Adafruit nRF52 Bluefruit Feather.brd",
+      "bytes": 718778,
+      "sha256": "5cd9829f89c522238ffb0738844730d6bf81c03fcda6b17d2f0638beb2e7a792"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-nRF52-Bluefruit-Feather-PCB/Adafruit nRF52840 Bluefruit Feather Express Rev D.brd",
+      "bytes": 2114387,
+      "sha256": "aaa17212b3d0c40b136e55f04006a2f672407976c6a8f9a39625545911e0f9c9"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-nRF52-Bluefruit-Feather-PCB/Adafruit nRF52840 Bluefruit Feather Express Rev E.brd",
+      "bytes": 2121388,
+      "sha256": "e631974024af75d188f4613dc0ee8625b83050396966364918a6115d7d61748b"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-nRF52-Bluefruit-Feather-PCB/README.md",
+      "bytes": 787,
+      "sha256": "d3f2006976a9dfe292e44b43e0657a2e7e7d42c04e84b6e99d28bce4cc894808"
+    },
+    {
+      "path": "board_batch3/feather/EVIDENCE.md",
+      "bytes": 4829,
+      "sha256": "631f46f0a1273ed13c1c381e555de20e865839103ae6425dbbc157c57b274e95"
+    },
+    {
+      "path": "board_batch3/feather/VALIDATION.txt",
+      "bytes": 229,
+      "sha256": "325113776cf048b0dc9c603432445930009b81bc2b3ae69f8d10a45c83d800d7"
+    },
+    {
+      "path": "board_batch3/feather/build_catalog.py",
+      "bytes": 7442,
+      "sha256": "dc8d2b1ed9847bc1ad264c9cd6c624b8818aebae115b3f9c7a075d1a553fa673"
+    },
+    {
+      "path": "board_batch3/feather/cad-inspection.txt",
+      "bytes": 17617,
+      "sha256": "8e8bd31520ef32884b4af283dbef79bc75b04d106e38954f9ec4a19b721b5af6"
+    },
+    {
+      "path": "board_batch3/feather/findings-ledger.json",
+      "bytes": 4419,
+      "sha256": "e8fb72e30d0fad39973fe90105fe3613ad24e09ead08b2fe182e437f00760f50"
+    },
+    {
+      "path": "board_batch3/feather/headerBoards.feather.proposed.json",
+      "bytes": 169391,
+      "sha256": "7373765dcf98d9ac262924b94531e800a2a36d7983c2cc25ac4ed06cfd41dc5c"
+    },
+    {
+      "path": "board_batch3/feather/inspect.py",
+      "bytes": 583,
+      "sha256": "e3ed7f6675908da22e53526445bd6e64a99f3713c358dc09689661f8e20c17b4"
+    },
+    {
+      "path": "board_batch3/sensors/1182_0J10061.jpg",
+      "bytes": 121461,
+      "sha256": "c682b5f532bdd307d07deddfcf685480722bcac58893a2e8ca7e6baaeca33e1c"
+    },
+    {
+      "path": "board_batch3/sensors/2133_0J4231.jpg",
+      "bytes": 308912,
+      "sha256": "77e5d47b97d550821af4839822f1abfddc045f1774ef6fc4fbbc178e987de753"
+    },
+    {
+      "path": "board_batch3/sensors/2134_0J4347.jpg",
+      "bytes": 33538,
+      "sha256": "3b8fc96ae01e552751620400726558320fa22f18f69ddce266aacfcb583d30e7"
+    },
+    {
+      "path": "board_batch3/sensors/2135_0J4055.jpg",
+      "bytes": 321676,
+      "sha256": "2270d18c9dc1dd3140a58d4b0436799a6204d1d6128ae9b877bb84fd289fb9e4"
+    },
+    {
+      "path": "board_batch3/sensors/2489_0J6785.jpg",
+      "bytes": 409273,
+      "sha256": "8cf22a3878774f464a776779357544b182c8c180eacb570df3bff96dd390e3f8"
+    },
+    {
+      "path": "board_batch3/sensors/2489_0J6786.jpg",
+      "bytes": 128821,
+      "sha256": "078f8447095f66e119791ae408e8ec58c2c6e3776640516d103d816b12424c86"
+    },
+    {
+      "path": "board_batch3/sensors/2490_0J7225.jpg",
+      "bytes": 402502,
+      "sha256": "49fe2ed748020d4e42d83b086fda17161f803916f72d77597eac46a85e402529"
+    },
+    {
+      "path": "board_batch3/sensors/2490_0J7226.jpg",
+      "bytes": 121970,
+      "sha256": "3b342bfbf9651e982417df82456cb785f76e06dbe0928d8b8770c1cca46b0efa"
+    },
+    {
+      "path": "board_batch3/sensors/2739_0J7061.jpg",
+      "bytes": 192704,
+      "sha256": "fa9f1915a207556412f3af49830391507aaedec76910af55c3f5d582a7036b1f"
+    },
+    {
+      "path": "board_batch3/sensors/2739_0J7069.jpg",
+      "bytes": 314580,
+      "sha256": "f33b9914ec31ae6c46bb2da8d8413c83ac77af6f5fd5d7eb69c0250823c63085"
+    },
+    {
+      "path": "board_batch3/sensors/2990_0J5751.jpg",
+      "bytes": 111294,
+      "sha256": "f9a2681c0c87aa21baf50c074d3650350c85d66c31397f1e89c3d6e4de3d3865"
+    },
+    {
+      "path": "board_batch3/sensors/3415_0J7225.jpg",
+      "bytes": 402502,
+      "sha256": "49fe2ed748020d4e42d83b086fda17161f803916f72d77597eac46a85e402529"
+    },
+    {
+      "path": "board_batch3/sensors/3415_0J7226.jpg",
+      "bytes": 121970,
+      "sha256": "3b342bfbf9651e982417df82456cb785f76e06dbe0928d8b8770c1cca46b0efa"
+    },
+    {
+      "path": "board_batch3/sensors/3415_0J8679.jpg",
+      "bytes": 123960,
+      "sha256": "849004dbeff00b4f2d7dc86d3cba53fec88e00f58acd5729809d4cdc6ecc02e2"
+    },
+    {
+      "path": "board_batch3/sensors/3418_0J11642.jpg",
+      "bytes": 266697,
+      "sha256": "d7965f599acf518d01c049804fb840caae769ea7330e1248d9cac7e39fff1665"
+    },
+    {
+      "path": "board_batch3/sensors/3418_0J12241.jpg",
+      "bytes": 127866,
+      "sha256": "213a217b2306e593282421d80ace97d30f17ea5de7fc59e19b8c159a5d2043d6"
+    },
+    {
+      "path": "board_batch3/sensors/4036_0J11426.jpg",
+      "bytes": 313756,
+      "sha256": "80dfa7bafaede6468d2722bba1bf827e0f85194375f8cf88882f877492e5654a"
+    },
+    {
+      "path": "board_batch3/sensors/4036_0J11427.jpg",
+      "bytes": 293153,
+      "sha256": "337b513bbd66d3fc0540bfe84f576694be4d108ed2a2725fb72eb28c162d9a26"
+    },
+    {
+      "path": "board_batch3/sensors/4036_0J11571.jpg",
+      "bytes": 290745,
+      "sha256": "db08df9aae254e34fe3a36c104febe7deaf35343d24316f26342539885bdb909"
+    },
+    {
+      "path": "board_batch3/sensors/4036_0J11574.jpg",
+      "bytes": 306910,
+      "sha256": "2e7602acf4e05530c252919abc5fdf776819e89c49203cb1b8a627ef1de9e85c"
+    },
+    {
+      "path": "board_batch3/sensors/4038_0J11305.jpg",
+      "bytes": 286244,
+      "sha256": "013322ca85d310ac75b18dad2e48e490cd02e4d8ffda0405f2803b5e0bd33a5b"
+    },
+    {
+      "path": "board_batch3/sensors/4038_0J11387.jpg",
+      "bytes": 288782,
+      "sha256": "5fb17d794de7e79ffb16ea6c46e7230e8bfaf4edc823bdf6f3a73c789a5a653e"
+    },
+    {
+      "path": "board_batch3/sensors/build.py",
+      "bytes": 8941,
+      "sha256": "86f921348b5f7ed31a71dd1cd8eaeb15f36cc3db17f98b11f4024a60aa86ee4b"
+    },
+    {
+      "path": "board_batch3/sensors/evidence.md",
+      "bytes": 6976,
+      "sha256": "b2cb9e6adee88d3b4be5c54c5f433332679d582d0bb78ef1e7ca1323184d411a"
+    },
+    {
+      "path": "board_batch3/sensors/fetch.py",
+      "bytes": 824,
+      "sha256": "1b539bf314023c5ff79ff78aeec14919dc7bb4c8b2ae376d68c714b1a160c3d2"
+    },
+    {
+      "path": "board_batch3/sensors/get_drawings.py",
+      "bytes": 939,
+      "sha256": "5a9118d351d78dd3910aefce439e4e900c09b51e68487c9ab04ff44288136a50"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_1182.html",
+      "bytes": 66667,
+      "sha256": "225fb6edf7ada0f7bffbbf97d016838484f180cfbb79a040931f8d40af150e01"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2133.html",
+      "bytes": 80592,
+      "sha256": "c88b65fdc20966bdebba1c98ab0cd2d2a4595235fed7b93605ad758b6b24059e"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2134.html",
+      "bytes": 81473,
+      "sha256": "c069e2d91b1ef3cc2c84c9b9dc37c35ded83ecb4a9dfba2ef5d3a4751f536bfe"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2135.html",
+      "bytes": 75295,
+      "sha256": "06b9bb9731ff6260ab8b3154c27e43f1c9721fe3b3dca79251b2c3177f0024aa"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2489.html",
+      "bytes": 80829,
+      "sha256": "059b84085457db5bc0ac847ad558e6433ab7829bd98a2f7c9fd9f014e6bd9a1f"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2490.html",
+      "bytes": 84493,
+      "sha256": "9066b3d16868391028f12d34a690cc9237ad26f6e5c37cc99aee50c22c735a01"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2739.html",
+      "bytes": 68987,
+      "sha256": "a10ae9a57d26fa871c505ed93011d0ac0238af23a232c7ff43d19c5bab7a3e53"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_2990.html",
+      "bytes": 73205,
+      "sha256": "b276b4ca0b16e60d2ff976a58eaa1c496f9be9afe0080a9615e8ef4c046f61c0"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_3415.html",
+      "bytes": 89803,
+      "sha256": "16156482e287d53d91bd3506c96b3531a6d203d61cbdac8a22c94b201f6c51ae"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_3418.html",
+      "bytes": 85180,
+      "sha256": "6e55ac8e46b350706216ccc6eaf14279d5e4cf51f7a23897331ded7f2cbf17aa"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_4036.html",
+      "bytes": 84635,
+      "sha256": "deddfde04d6c634c4ac207f927ec71f5e4e98ef3735debd3cf9088beb7e7a51f"
+    },
+    {
+      "path": "board_batch3/sensors/pololu_4038.html",
+      "bytes": 72785,
+      "sha256": "e0b82787cf92e9957b9169b1ec84f8c97f94a83b4deefcdf685b585aa94e223c"
+    },
+    {
+      "path": "board_batch3/sensors/sensor_catalog.json",
+      "bytes": 40657,
+      "sha256": "ca5e2150f23a95a944b89bfdaf5965a76e2715e02fd8c413198ddee8c85fb021"
+    },
+    {
+      "path": "board_batch3/sensors/sources.json",
+      "bytes": 22210,
+      "sha256": "3b2ceb6852cc691b136e29c031f807c5ad188e62a80675972187895d0a548cd7"
+    },
+    {
+      "path": "board_batch3/stm_teensy/EVIDENCE.md",
+      "bytes": 4078,
+      "sha256": "4279bcac96a25780f428e041dad6e6e79c3e1f49a62287754deb880116e19534"
+    },
+    {
+      "path": "board_batch3/stm_teensy/UM1724.pdf",
+      "bytes": 3781926,
+      "sha256": "576d9bee3bc32c8ee70bf0d77cf9494cec06ea7c1d9ff98eebf2738cb9314a14"
+    },
+    {
+      "path": "board_batch3/stm_teensy/UM1724.txt",
+      "bytes": 286068,
+      "sha256": "5327176f20c35c719454626e53e534f91b57678e34b25ed54e309ce3bcb9308b"
+    },
+    {
+      "path": "board_batch3/stm_teensy/UM1724_p16_mechanical.png",
+      "bytes": 321998,
+      "sha256": "93ea3b74b50b04d22f5faa296496d581b641fe4ace5b4258f78467b9a938830e"
+    },
+    {
+      "path": "board_batch3/stm_teensy/build_catalog.py",
+      "bytes": 3609,
+      "sha256": "c6886b60189b281130c7e8727ba2b367ff7b776b39c4defc52c99693dbef4ec7"
+    },
+    {
+      "path": "board_batch3/stm_teensy/dimensions_teensy20.png",
+      "bytes": 12265,
+      "sha256": "80ebfde25ff8d4d80a06cd424dad2eae04683c27b108a25821faa8c5f24e8f74"
+    },
+    {
+      "path": "board_batch3/stm_teensy/dimensions_teensy20pp.png",
+      "bytes": 17602,
+      "sha256": "8a776dffb7258d0a96b35cb25f5f4f79f32df20408f0ebe961d1ca45d077c680"
+    },
+    {
+      "path": "board_batch3/stm_teensy/stm_teensy_headers.json",
+      "bytes": 288703,
+      "sha256": "8f04634730a14b4b97462d5ba7ed93ec3f9fa181ac594af0eb1fe35d9fdd09d7"
+    },
+    {
+      "path": "board_batch3/stm_teensy/teensy20.html",
+      "bytes": 8040,
+      "sha256": "0352942685b28c3562e46197ddf6702cb6ebf0fe66b8eadac217bde700e5fd51"
+    },
+    {
+      "path": "board_batch3/stm_teensy/teensy20_card.png",
+      "bytes": 118932,
+      "sha256": "a3fb5b89090b106a89fb83300fc3812297665fa4965edb4bca870b9bd476557f"
+    },
+    {
+      "path": "board_batch3/stm_teensy/teensy20pp.html",
+      "bytes": 11069,
+      "sha256": "2ead7c0e3eb238dd22973cc63495f9fc5100c1afe65ad716b03c3ba6d254849d"
+    },
+    {
+      "path": "board_batch3/stm_teensy/teensy20pp_card.png",
+      "bytes": 129932,
+      "sha256": "64b3465aacecd6f8e7ef22feee33830c50158637fd1a52e7617f6defe559886c"
+    },
+    {
+      "path": "headerBoards.proposed.json",
+      "bytes": 1333133,
+      "sha256": "a264fc36fff0b10c7ba2ddf59fbc79314d462af37c817773d83975e26008593a"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 607,
+      "sha256": "d73ceb9ee51923295f21ae615cea7aa5a3de6ca77835d01b253bbdcae7c649c5"
+    }
+  ],
+  "identity_adjustments": [],
+  "omitted_support_directories": [
+    ".git repository machinery",
+    "__pycache__ caches"
+  ],
+  "omitted_redundant_archives": [
+    {
+      "path": "board_batch3/feather/Adafruit-Pro-Trinket-PCBs.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-Bluefruit-LE-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-WiFi-WINC1500-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-nRF52-Bluefruit-Feather-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-32u4-RFM-LoRa-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-QT-Py-ESP32-Pico-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-QT-Py-ESP32-C3-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-32u4-Bluefruit-LE-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-nRF52840-Sense-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Trinket-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch3/feather/Adafruit-Feather-M0-RFM-LoRa-PCB.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    }
+  ],
+  "total_record_count": 57,
+  "normalized_proposal": {
+    "path": "headerBoards.proposed.json",
+    "record_count": 57,
+    "status": "proposal_only_not_repository_ready_without_safety_review"
+  }
+}

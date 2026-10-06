@@ -1,0 +1,5556 @@
+{
+  "schemaVersion": 1,
+  "checked_utc": "2026-10-06",
+  "note": "Research import only; preserve role, gender, population and auxiliary connector gates. No mechanical fit qualified.",
+  "boards": [
+    {
+      "id": "adafruit-3406",
+      "name": "Adafruit Feather nRF52 Bluefruit LE (nRF52832)",
+      "aliases": [
+        "Adafruit product 3406"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3406",
+      "headers": [
+        {
+          "id": "MS1-1-16",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "MS1",
+              "pad": "1",
+              "signal": "RESET",
+              "board_xy_mm": [
+                -2.921,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "2",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                -0.381,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "3",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                2.159,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                4.699,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "5",
+              "signal": "A0/0.02",
+              "board_xy_mm": [
+                7.239,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "6",
+              "signal": "A1/0.03",
+              "board_xy_mm": [
+                9.779,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "7",
+              "signal": "A2/0.04",
+              "board_xy_mm": [
+                12.319,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "8",
+              "signal": "A3/0.05",
+              "board_xy_mm": [
+                14.859,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "9",
+              "signal": "A4/0.28",
+              "board_xy_mm": [
+                17.399,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "10",
+              "signal": "A5/0.29",
+              "board_xy_mm": [
+                19.939,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "11",
+              "signal": "SCK",
+              "board_xy_mm": [
+                22.479,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "12",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                25.019,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "13",
+              "signal": "MISO",
+              "board_xy_mm": [
+                27.559,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "14",
+              "signal": "RXD",
+              "board_xy_mm": [
+                30.099,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "15",
+              "signal": "TXD",
+              "board_xy_mm": [
+                32.639,
+                -17.272
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "16",
+              "signal": "DFU",
+              "board_xy_mm": [
+                35.179,
+                -17.272
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+          "note": "Complete physical row including power/control/NC positions."
+        },
+        {
+          "id": "MS1-17-28",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "MS1",
+              "pad": "28",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                7.239,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "27",
+              "signal": "EN",
+              "board_xy_mm": [
+                9.779,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "26",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                12.319,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "25",
+              "signal": "P0.16",
+              "board_xy_mm": [
+                14.859,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "24",
+              "signal": "P0.15",
+              "board_xy_mm": [
+                17.399,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "23",
+              "signal": "P0.07",
+              "board_xy_mm": [
+                19.939,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "22",
+              "signal": "P0.11",
+              "board_xy_mm": [
+                22.479,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "21",
+              "signal": "A7/P0.31",
+              "board_xy_mm": [
+                25.019,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "20",
+              "signal": "A6/P0.30",
+              "board_xy_mm": [
+                27.559,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "19",
+              "signal": "P0.27",
+              "board_xy_mm": [
+                30.099,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "18",
+              "signal": "SCL",
+              "board_xy_mm": [
+                32.639,
+                3.048
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "17",
+              "signal": "SDA",
+              "board_xy_mm": [
+                35.179,
+                3.048
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+          "note": "Complete physical row including power/control/NC positions."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "2X05_1.27MM_BOX_POSTS",
+          "value": "4u20317",
+          "role": "SWD debug",
+          "population": "unpopulated footprint; optional box header separately installed",
+          "gender": "none",
+          "pitch_mm": 1.27,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+          "pin_count": 10,
+          "rows": 2,
+          "note": "Two adjacent rows of five at 1.27 mm; not a 1x10 2.54 mm comb.",
+          "cad_pads": [
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "8",
+              "x": "1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "10",
+              "x": "2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "1",
+              "x": "-2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "5",
+              "x": "0",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "7",
+              "x": "1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "9",
+              "x": "2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            }
+          ]
+        },
+        {
+          "id": "X2",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd"
+        },
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "4u20329",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd"
+        },
+        {
+          "id": "JP1",
+          "package": "1X01_2MM",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "P0.10/NFC2",
+              "board_xy_mm": [
+                22.7965,
+                -12.954
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "JP2",
+          "package": "1X01_2MM",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "P0.09/NFC1",
+              "board_xy_mm": [
+                20.7645,
+                -12.954
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "TP3",
+          "package": "TESTPOINT_ROUND_2MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd"
+        },
+        {
+          "id": "TP4",
+          "package": "TESTPOINT_ROUND_2MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit nRF52 Bluefruit Feather rev G.brd",
+        "git_ref": "master",
+        "git_commit": "20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a",
+        "sha256": "7bc419d66e42329046c2342dfef3d7fe19a473928a6a7252addbeef1236094aa",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+          "local_file": "Adafruit-nRF52-Bluefruit-Feather-PCB/Adafruit nRF52 Bluefruit Feather rev G.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3406"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/README.md",
+          "local_file": "Adafruit-nRF52-Bluefruit-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-4062",
+      "name": "Adafruit Feather nRF52840 Express",
+      "aliases": [
+        "Adafruit product 4062"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/4062",
+      "headers": [
+        {
+          "id": "MS1-1-16",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "MS1",
+              "pad": "1",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "2",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "3",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "5",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "6",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "7",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "8",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "9",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "10",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "11",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "12",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "13",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "14",
+              "signal": "RXD",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "15",
+              "signal": "TXD",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "16",
+              "signal": "D2",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd",
+          "note": "Complete physical row including power/control/NC positions."
+        },
+        {
+          "id": "MS1-17-28",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "MS1",
+              "pad": "28",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "27",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "26",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "25",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "24",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "23",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "22",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "21",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "20",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "19",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "18",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "17",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd",
+          "note": "Complete physical row including power/control/NC positions."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X2",
+          "package": "2X05_1.27MM_BOX_POSTS",
+          "value": "2x5 0.05\"",
+          "role": "SWD debug",
+          "population": "Manufacturer lists SWD connector; exact physical population not independently inspected",
+          "gender": null,
+          "pitch_mm": 1.27,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd",
+          "pin_count": 10,
+          "rows": 2,
+          "note": "Two adjacent rows of five at 1.27 mm; not a 1x10 2.54 mm comb.",
+          "cad_pads": [
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "8",
+              "x": "1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "10",
+              "x": "2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "1",
+              "x": "-2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "5",
+              "x": "0",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "7",
+              "x": "1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "9",
+              "x": "2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            }
+          ]
+        },
+        {
+          "id": "X3",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd"
+        },
+        {
+          "id": "X1",
+          "package": "4UCONN_20329_V2",
+          "value": "MicroUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit nRF52840 Bluefruit Feather Express Rev E.brd",
+        "git_ref": "master",
+        "git_commit": "20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a",
+        "sha256": "e631974024af75d188f4613dc0ee8625b83050396966364918a6115d7d61748b",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd",
+          "local_file": "Adafruit-nRF52-Bluefruit-Feather-PCB/Adafruit nRF52840 Bluefruit Feather Express Rev E.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/4062"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/README.md",
+          "local_file": "Adafruit-nRF52-Bluefruit-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-4516",
+      "name": "Adafruit Feather nRF52840 Sense",
+      "aliases": [
+        "Adafruit product 4516"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/4516",
+      "headers": [
+        {
+          "id": "MS1-1-16",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "MS1",
+              "pad": "1",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "2",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "3",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "5",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "6",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "7",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "8",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "9",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "10",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "11",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "12",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "13",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "14",
+              "signal": "RXD",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "15",
+              "signal": "TXD",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "16",
+              "signal": "D2",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/Adafruit%20Feather%20nRF52840%20Sense%20Rev%20C.brd",
+          "note": "Complete physical row including power/control/NC positions."
+        },
+        {
+          "id": "MS1-17-28",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "MS1",
+              "pad": "28",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "27",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "26",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "25",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "24",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "23",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "22",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "21",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "20",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "19",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "18",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "MS1",
+              "pad": "17",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/Adafruit%20Feather%20nRF52840%20Sense%20Rev%20C.brd",
+          "note": "Complete physical row including power/control/NC positions."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "4UCONN_20329_V2",
+          "value": "MicroUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/Adafruit%20Feather%20nRF52840%20Sense%20Rev%20C.brd"
+        },
+        {
+          "id": "X3",
+          "package": "JSTPH2_BATT",
+          "value": "CON_JST_PH_2PIN_MT_BATT",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/Adafruit%20Feather%20nRF52840%20Sense%20Rev%20C.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather nRF52840 Sense Rev C.brd",
+        "git_ref": "master",
+        "git_commit": "afeb0acb67e98c807cfdfbf7b5fe5e6e49490796",
+        "sha256": "a9a3b602e66aa91108a267fbbac28605c50b4349b979730210bb9786474debd2",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/Adafruit%20Feather%20nRF52840%20Sense%20Rev%20C.brd",
+          "local_file": "Adafruit-Feather-nRF52840-Sense-PCB/Adafruit Feather nRF52840 Sense Rev C.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/4516"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/README.md",
+          "local_file": "Adafruit-Feather-nRF52840-Sense-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-2995",
+      "name": "Adafruit Feather M0 Bluefruit LE",
+      "aliases": [
+        "Adafruit product 2995"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/2995",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "D0",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "D1",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "DFU",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd"
+        },
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd"
+        },
+        {
+          "id": "TP2",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather Zero BLE rev A.brd",
+        "git_ref": "master",
+        "git_commit": "b2e0b3f2930568da3471d6c42cb4919d573d3481",
+        "sha256": "8ed913e496f3823c1678e33e0665e226041cbb2a5398c21b8e7e5795d8bfec8e",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd",
+          "local_file": "Adafruit-Feather-M0-Bluefruit-LE-PCB/Adafruit Feather Zero BLE rev A.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/2995"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/README.md",
+          "local_file": "Adafruit-Feather-M0-Bluefruit-LE-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-2829",
+      "name": "Adafruit Feather 32u4 Bluefruit LE",
+      "aliases": [
+        "Adafruit product 2829"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/2829",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RST",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "0",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "1",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "DFU",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/Adafruit%20Feather%2032u4%20Bluefruit%20LE.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "3",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "2",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/Adafruit%20Feather%2032u4%20Bluefruit%20LE.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/Adafruit%20Feather%2032u4%20Bluefruit%20LE.brd"
+        },
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/Adafruit%20Feather%2032u4%20Bluefruit%20LE.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather 32u4 Bluefruit LE.brd",
+        "git_ref": "master",
+        "git_commit": "fab08d3f5f0755a29559b81ad54239b746906b56",
+        "sha256": "293c29fe2e51166129c54af4d5adfab23ced18188499ac0876fd749a20d97210",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/Adafruit%20Feather%2032u4%20Bluefruit%20LE.brd",
+          "local_file": "Adafruit-Feather-32u4-Bluefruit-LE-PCB/Adafruit Feather 32u4 Bluefruit LE.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/2829"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/README.md",
+          "local_file": "Adafruit-Feather-32u4-Bluefruit-LE-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-3010",
+      "name": "Adafruit Feather M0 WiFi (ATSAMD21 + ATWINC1500)",
+      "aliases": [
+        "Adafruit product 3010"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3010",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "D0",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "D1",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "WAKE",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd"
+        },
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd"
+        },
+        {
+          "id": "TP2",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather M0 WiFi.brd",
+        "git_ref": "master",
+        "git_commit": "20e781d8d7d0b31002f9d2a8eaef18429f983815",
+        "sha256": "70b7ba94af635b61d615fabc40b16735ac3a3734f5988f3db12c5f5554ddb2bb",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd",
+          "local_file": "Adafruit-Feather-M0-WiFi-WINC1500-PCB/Adafruit Feather M0 WiFi.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3010"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/README.md",
+          "local_file": "Adafruit-Feather-M0-WiFi-WINC1500-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5395",
+      "name": "Adafruit QT Py ESP32 Pico (8MB Flash / 2MB PSRAM)",
+      "aliases": [
+        "Adafruit product 5395"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5395",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "TX",
+              "board_xy_mm": [
+                1.27,
+                2.7305
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCL",
+              "board_xy_mm": [
+                1.27,
+                5.2705
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "SDA",
+              "board_xy_mm": [
+                1.27,
+                7.8105
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "A3",
+              "board_xy_mm": [
+                1.27,
+                10.3505
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "A2",
+              "board_xy_mm": [
+                1.27,
+                12.8905
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "A1",
+              "board_xy_mm": [
+                1.27,
+                15.4305
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "A0",
+              "board_xy_mm": [
+                1.27,
+                17.9705
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd",
+          "note": "Castellated edge duplicates excluded."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "RX",
+              "board_xy_mm": [
+                16.51,
+                2.7305
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "SCK",
+              "board_xy_mm": [
+                16.51,
+                5.2705
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "MISO",
+              "board_xy_mm": [
+                16.51,
+                7.8105
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                16.51,
+                10.3505
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                16.51,
+                12.8905
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "GND",
+              "board_xy_mm": [
+                16.51,
+                15.4305
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "+5V",
+              "board_xy_mm": [
+                16.51,
+                17.9705
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd",
+          "note": "Castellated edge duplicates excluded."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X6",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB TYPE C",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_SKINNY",
+          "value": "STEMMA_I2C_QTSKINNY",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd"
+        },
+        {
+          "id": "VBAT",
+          "package": "TESTPOINT_PLUS_1X3MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd"
+        },
+        {
+          "id": "GND",
+          "package": "TESTPOINT_MINUS_1X3MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit QT Py ESP32 Pico.brd",
+        "git_ref": "main",
+        "git_commit": "f45b12704ccbb7180d89db28e1af7bd861124133",
+        "sha256": "142bf01e4eb9730f70a09034e4839f63496d1596be0b6f66a6edc563beb732b6",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd",
+          "local_file": "Adafruit-QT-Py-ESP32-Pico-PCB/Adafruit QT Py ESP32 Pico.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5395"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/README.md",
+          "local_file": "Adafruit-QT-Py-ESP32-Pico-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5405",
+      "name": "Adafruit QT Py ESP32-C3",
+      "aliases": [
+        "Adafruit product 5405"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5405",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "TX",
+              "board_xy_mm": [
+                1.27,
+                2.7305
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCL",
+              "board_xy_mm": [
+                1.27,
+                5.2705
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "SDA",
+              "board_xy_mm": [
+                1.27,
+                7.8105
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "A3",
+              "board_xy_mm": [
+                1.27,
+                10.3505
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "A2",
+              "board_xy_mm": [
+                1.27,
+                12.8905
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "A1",
+              "board_xy_mm": [
+                1.27,
+                15.4305
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "A0",
+              "board_xy_mm": [
+                1.27,
+                17.9705
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd",
+          "note": "Castellated edge duplicates excluded."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "RX",
+              "board_xy_mm": [
+                16.51,
+                2.7305
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "SCK",
+              "board_xy_mm": [
+                16.51,
+                5.2705
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "MISO",
+              "board_xy_mm": [
+                16.51,
+                7.8105
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                16.51,
+                10.3505
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                16.51,
+                12.8905
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "GND",
+              "board_xy_mm": [
+                16.51,
+                15.4305
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "+5V",
+              "board_xy_mm": [
+                16.51,
+                17.9705
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd",
+          "note": "Castellated edge duplicates excluded."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X6",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB TYPE C",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_SKINNY",
+          "value": "STEMMA_I2C_QTSKINNY",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd"
+        },
+        {
+          "id": "VBAT",
+          "package": "TESTPOINT_PLUS_1X3MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd"
+        },
+        {
+          "id": "GND",
+          "package": "TESTPOINT_MINUS_1X3MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit QT Py ESP32-C3.brd",
+        "git_ref": "main",
+        "git_commit": "8618fb52d806fb184ec5807490db0a9b084ffa9c",
+        "sha256": "629effaf43d2b46e0b0d41e3e65eecc33b8e5d75da1336589cde89e68426bbe9",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd",
+          "local_file": "Adafruit-QT-Py-ESP32-C3-PCB/Adafruit QT Py ESP32-C3.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5405"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/README.md",
+          "local_file": "Adafruit-QT-Py-ESP32-C3-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-1500",
+      "name": "Adafruit Trinket 3.3V (microUSB)",
+      "aliases": [
+        "Adafruit product 1500"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/1500",
+      "headers": [
+        {
+          "id": "CN3+JP2",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "CN3",
+              "pad": "1",
+              "signal": "RESET",
+              "board_xy_mm": [
+                -6.35,
+                -6.35
+              ]
+            },
+            {
+              "element": "CN3",
+              "pad": "2",
+              "signal": "B3",
+              "board_xy_mm": [
+                -6.35,
+                -3.81
+              ]
+            },
+            {
+              "element": "CN3",
+              "pad": "3",
+              "signal": "B4",
+              "board_xy_mm": [
+                -6.35,
+                -1.27
+              ]
+            },
+            {
+              "element": "CN3",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                -6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                -6.35,
+                3.81
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%203V%20microUSB.brd",
+          "note": "Physically continuous five-position row: manufacturer splits it into 1x4 and 1x1 schematic elements; board coordinates establish 2.54 mm pitch throughout."
+        },
+        {
+          "id": "CN4+JP1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "CN4",
+              "pad": "1",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                6.35,
+                -6.35
+              ]
+            },
+            {
+              "element": "CN4",
+              "pad": "2",
+              "signal": "B2",
+              "board_xy_mm": [
+                6.35,
+                -3.81
+              ]
+            },
+            {
+              "element": "CN4",
+              "pad": "3",
+              "signal": "B1",
+              "board_xy_mm": [
+                6.35,
+                -1.27
+              ]
+            },
+            {
+              "element": "CN4",
+              "pad": "4",
+              "signal": "B0",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                6.35,
+                3.81
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%203V%20microUSB.brd",
+          "note": "Physically continuous five-position row: manufacturer splits it into 1x4 and 1x1 schematic elements; board coordinates establish 2.54 mm pitch throughout."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CN1",
+          "package": "4UCONN_20329",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%203V%20microUSB.brd"
+        },
+        {
+          "id": "BAT",
+          "package": "JSTPH2",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%203V%20microUSB.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Trinket 3V microUSB.brd",
+        "git_ref": "master",
+        "git_commit": "3a2695463e52f72434d20daca6502fc62e8e2fcc",
+        "sha256": "6a9850a5658be68b5fab5548d104a3d48e6c81da8e82a2d6518e51ca94f1720e",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%203V%20microUSB.brd",
+          "local_file": "Adafruit-Trinket-PCB/Adafruit Trinket 3V microUSB.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/1500"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/README.md",
+          "local_file": "Adafruit-Trinket-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-1501",
+      "name": "Adafruit Trinket 5V (microUSB)",
+      "aliases": [
+        "Adafruit product 1501"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/1501",
+      "headers": [
+        {
+          "id": "CN3+JP2",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "CN3",
+              "pad": "1",
+              "signal": "RESET",
+              "board_xy_mm": [
+                -6.35,
+                -6.35
+              ]
+            },
+            {
+              "element": "CN3",
+              "pad": "2",
+              "signal": "B3",
+              "board_xy_mm": [
+                -6.35,
+                -3.81
+              ]
+            },
+            {
+              "element": "CN3",
+              "pad": "3",
+              "signal": "B4",
+              "board_xy_mm": [
+                -6.35,
+                -1.27
+              ]
+            },
+            {
+              "element": "CN3",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                -6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                -6.35,
+                3.81
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%205V%20microUSB.brd",
+          "note": "Physically continuous five-position row: manufacturer splits it into 1x4 and 1x1 schematic elements; board coordinates establish 2.54 mm pitch throughout."
+        },
+        {
+          "id": "CN4+JP1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "CN4",
+              "pad": "1",
+              "signal": "+5V",
+              "board_xy_mm": [
+                6.35,
+                -6.35
+              ]
+            },
+            {
+              "element": "CN4",
+              "pad": "2",
+              "signal": "B2",
+              "board_xy_mm": [
+                6.35,
+                -3.81
+              ]
+            },
+            {
+              "element": "CN4",
+              "pad": "3",
+              "signal": "B1",
+              "board_xy_mm": [
+                6.35,
+                -1.27
+              ]
+            },
+            {
+              "element": "CN4",
+              "pad": "4",
+              "signal": "B0",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                6.35,
+                3.81
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%205V%20microUSB.brd",
+          "note": "Physically continuous five-position row: manufacturer splits it into 1x4 and 1x1 schematic elements; board coordinates establish 2.54 mm pitch throughout."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CN1",
+          "package": "4UCONN_20329",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%205V%20microUSB.brd"
+        },
+        {
+          "id": "BAT",
+          "package": "JSTPH2",
+          "value": "JST-PH2",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%205V%20microUSB.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Trinket 5V microUSB.brd",
+        "git_ref": "master",
+        "git_commit": "3a2695463e52f72434d20daca6502fc62e8e2fcc",
+        "sha256": "c1c00e34236061165cd98bf317a6effa48a8c28b8c453e2833e2c3b563171431",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%205V%20microUSB.brd",
+          "local_file": "Adafruit-Trinket-PCB/Adafruit Trinket 5V microUSB.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/1501"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/README.md",
+          "local_file": "Adafruit-Trinket-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-2000",
+      "name": "Adafruit Pro Trinket 5V 16MHz",
+      "aliases": [
+        "Adafruit product 2000"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/2000",
+      "headers": [
+        {
+          "id": "JP4",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP4",
+              "pad": "12",
+              "signal": "A5",
+              "board_xy_mm": [
+                -7.62,
+                3.81
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "11",
+              "signal": "A4",
+              "board_xy_mm": [
+                -7.62,
+                6.35
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "10",
+              "signal": "A3",
+              "board_xy_mm": [
+                -7.62,
+                8.89
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "9",
+              "signal": "A2",
+              "board_xy_mm": [
+                -7.62,
+                11.43
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "8",
+              "signal": "A1",
+              "board_xy_mm": [
+                -7.62,
+                13.97
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "7",
+              "signal": "A0",
+              "board_xy_mm": [
+                -7.62,
+                16.51
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "6",
+              "signal": "AREF",
+              "board_xy_mm": [
+                -7.62,
+                19.05
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "5",
+              "signal": "D13",
+              "board_xy_mm": [
+                -7.62,
+                21.59
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "4",
+              "signal": "D12",
+              "board_xy_mm": [
+                -7.62,
+                24.13
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "3",
+              "signal": "D11",
+              "board_xy_mm": [
+                -7.62,
+                26.67
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "2",
+              "signal": "D10",
+              "board_xy_mm": [
+                -7.62,
+                29.21
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "1",
+              "signal": "D9",
+              "board_xy_mm": [
+                -7.62,
+                31.75
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "FTDI",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "FTDI",
+              "pad": "1",
+              "signal": "GND",
+              "board_xy_mm": [
+                -6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "2",
+              "signal": "GND",
+              "board_xy_mm": [
+                -3.81,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                -1.27,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "4",
+              "signal": "RXD",
+              "board_xy_mm": [
+                1.27,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "5",
+              "signal": "TXD",
+              "board_xy_mm": [
+                3.81,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "6",
+              "signal": "DTR/RTS",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP1",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "RESET",
+              "board_xy_mm": [
+                7.62,
+                3.81
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "RXD",
+              "board_xy_mm": [
+                7.62,
+                6.35
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "TXD",
+              "board_xy_mm": [
+                7.62,
+                8.89
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "D3",
+              "board_xy_mm": [
+                7.62,
+                11.43
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "D4",
+              "board_xy_mm": [
+                7.62,
+                13.97
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "D5",
+              "board_xy_mm": [
+                7.62,
+                16.51
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "D6",
+              "board_xy_mm": [
+                7.62,
+                19.05
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "D8",
+              "board_xy_mm": [
+                7.62,
+                21.59
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "+5V",
+              "board_xy_mm": [
+                7.62,
+                24.13
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                7.62,
+                26.67
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "GND",
+              "board_xy_mm": [
+                7.62,
+                29.21
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                7.62,
+                31.75
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP2",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP2",
+              "pad": "2",
+              "signal": "A7",
+              "board_xy_mm": [
+                -5.08,
+                13.97
+              ]
+            },
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "A6",
+              "board_xy_mm": [
+                -5.08,
+                16.51
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CN1",
+          "package": "4UCONN_20329",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd"
+        },
+        {
+          "id": "BAT",
+          "package": "JSTPH2",
+          "value": "JST 2-PH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Pro Trinket 5v0.brd",
+        "git_ref": "master",
+        "git_commit": "8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a",
+        "sha256": "94508718c904a62b34be5a734519ea1a3ef4ce1ddfdbf54a2f0ed9e62d513cef",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd",
+          "local_file": "Adafruit-Pro-Trinket-PCBs/Adafruit Pro Trinket 5v0.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/2000"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/README.md",
+          "local_file": "Adafruit-Pro-Trinket-PCBs/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-2010",
+      "name": "Adafruit Pro Trinket 3V 12MHz",
+      "aliases": [
+        "Adafruit product 2010"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/2010",
+      "headers": [
+        {
+          "id": "JP4",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP4",
+              "pad": "12",
+              "signal": "A5",
+              "board_xy_mm": [
+                -7.62,
+                3.81
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "11",
+              "signal": "A4",
+              "board_xy_mm": [
+                -7.62,
+                6.35
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "10",
+              "signal": "A3",
+              "board_xy_mm": [
+                -7.62,
+                8.89
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "9",
+              "signal": "A2",
+              "board_xy_mm": [
+                -7.62,
+                11.43
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "8",
+              "signal": "A1",
+              "board_xy_mm": [
+                -7.62,
+                13.97
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "7",
+              "signal": "A0",
+              "board_xy_mm": [
+                -7.62,
+                16.51
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "6",
+              "signal": "AREF",
+              "board_xy_mm": [
+                -7.62,
+                19.05
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "5",
+              "signal": "D13",
+              "board_xy_mm": [
+                -7.62,
+                21.59
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "4",
+              "signal": "D12",
+              "board_xy_mm": [
+                -7.62,
+                24.13
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "3",
+              "signal": "D11",
+              "board_xy_mm": [
+                -7.62,
+                26.67
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "2",
+              "signal": "D10",
+              "board_xy_mm": [
+                -7.62,
+                29.21
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "1",
+              "signal": "D9",
+              "board_xy_mm": [
+                -7.62,
+                31.75
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "FTDI",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "FTDI",
+              "pad": "1",
+              "signal": "GND",
+              "board_xy_mm": [
+                -6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "2",
+              "signal": "GND",
+              "board_xy_mm": [
+                -3.81,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                -1.27,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "4",
+              "signal": "RXD",
+              "board_xy_mm": [
+                1.27,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "5",
+              "signal": "TXD",
+              "board_xy_mm": [
+                3.81,
+                1.27
+              ]
+            },
+            {
+              "element": "FTDI",
+              "pad": "6",
+              "signal": "DTR/RTS",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP1",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "RESET",
+              "board_xy_mm": [
+                7.62,
+                3.81
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "RXD",
+              "board_xy_mm": [
+                7.62,
+                6.35
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "TXD",
+              "board_xy_mm": [
+                7.62,
+                8.89
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "D3",
+              "board_xy_mm": [
+                7.62,
+                11.43
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "D4",
+              "board_xy_mm": [
+                7.62,
+                13.97
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "D5",
+              "board_xy_mm": [
+                7.62,
+                16.51
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "D6",
+              "board_xy_mm": [
+                7.62,
+                19.05
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "D8",
+              "board_xy_mm": [
+                7.62,
+                21.59
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                7.62,
+                24.13
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                7.62,
+                26.67
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "GND",
+              "board_xy_mm": [
+                7.62,
+                29.21
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                7.62,
+                31.75
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP2",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP2",
+              "pad": "2",
+              "signal": "A7",
+              "board_xy_mm": [
+                -5.08,
+                13.97
+              ]
+            },
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "A6",
+              "board_xy_mm": [
+                -5.08,
+                16.51
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CN1",
+          "package": "4UCONN_20329",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd"
+        },
+        {
+          "id": "BAT",
+          "package": "JSTPH2",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Pro Trinket 3v3.brd",
+        "git_ref": "master",
+        "git_commit": "8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a",
+        "sha256": "d048477a81cd08ee6971012802683f6f78a79e5850ecf7d324aafe03eeac9ddd",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd",
+          "local_file": "Adafruit-Pro-Trinket-PCBs/Adafruit Pro Trinket 3v3.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/2010"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/README.md",
+          "local_file": "Adafruit-Pro-Trinket-PCBs/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-3178",
+      "name": "Adafruit Feather M0 RFM95 LoRa (900MHz)",
+      "aliases": [
+        "Adafruit product 3178"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3178",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "D0",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "D1",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "DIO1",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP5",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP5",
+              "pad": "1",
+              "signal": "DIO5",
+              "board_xy_mm": [
+                49.53,
+                12.7
+              ]
+            },
+            {
+              "element": "JP5",
+              "pad": "2",
+              "signal": "DIO3",
+              "board_xy_mm": [
+                49.53,
+                15.24
+              ]
+            },
+            {
+              "element": "JP5",
+              "pad": "3",
+              "signal": "DIO2",
+              "board_xy_mm": [
+                49.53,
+                17.78
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "TP2",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "JP2",
+          "package": "1X01_ROUND",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "ANT",
+              "board_xy_mm": [
+                49.53,
+                5.08
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "X4",
+          "package": "U.FL",
+          "value": "uFL",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather M0 RFMxx.brd",
+        "git_ref": "master",
+        "git_commit": "1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83",
+        "sha256": "afb8977bc8f2a5a3b0089127d41b5ded9cf543720e972457404833e25ae5203b",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "local_file": "Adafruit-Feather-M0-RFM-LoRa-PCB/Adafruit Feather M0 RFMxx.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3178"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/README.md",
+          "local_file": "Adafruit-Feather-M0-RFM-LoRa-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-3179",
+      "name": "Adafruit Feather M0 RFM96 LoRa (433MHz)",
+      "aliases": [
+        "Adafruit product 3179"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3179",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "D0",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "D1",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "DIO1",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP5",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP5",
+              "pad": "1",
+              "signal": "DIO5",
+              "board_xy_mm": [
+                49.53,
+                12.7
+              ]
+            },
+            {
+              "element": "JP5",
+              "pad": "2",
+              "signal": "DIO3",
+              "board_xy_mm": [
+                49.53,
+                15.24
+              ]
+            },
+            {
+              "element": "JP5",
+              "pad": "3",
+              "signal": "DIO2",
+              "board_xy_mm": [
+                49.53,
+                17.78
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "TP2",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        },
+        {
+          "id": "JP2",
+          "package": "1X01_ROUND",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "JP2",
+              "pad": "1",
+              "signal": "ANT",
+              "board_xy_mm": [
+                49.53,
+                5.08
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "X4",
+          "package": "U.FL",
+          "value": "uFL",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather M0 RFMxx.brd",
+        "git_ref": "master",
+        "git_commit": "1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83",
+        "sha256": "afb8977bc8f2a5a3b0089127d41b5ded9cf543720e972457404833e25ae5203b",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+          "local_file": "Adafruit-Feather-M0-RFM-LoRa-PCB/Adafruit Feather M0 RFMxx.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3179"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/README.md",
+          "local_file": "Adafruit-Feather-M0-RFM-LoRa-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-3078",
+      "name": "Adafruit Feather 32u4 RFM95 LoRa (868 or 915MHz)",
+      "aliases": [
+        "Adafruit product 3078"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3078",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RST",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "+3V3",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "AREF",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "0",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "1",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "DIO1",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "3",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "2",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP4",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "auxiliary_header_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP4",
+              "pad": "1",
+              "signal": "DIO3",
+              "board_xy_mm": [
+                49.53,
+                12.7
+              ]
+            },
+            {
+              "element": "JP4",
+              "pad": "2",
+              "signal": "DIO2",
+              "board_xy_mm": [
+                49.53,
+                15.24
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "microUSB",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd"
+        },
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd"
+        },
+        {
+          "id": "ANT",
+          "package": "1X01_ROUND",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "ANT",
+              "pad": "1",
+              "signal": "ANT",
+              "board_xy_mm": [
+                49.53,
+                5.461
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "X2",
+          "package": "U.FL",
+          "value": "uFL",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather 32u4 RFMxx.brd",
+        "git_ref": "master",
+        "git_commit": "ace22faec73dda4b8dcfec16e1667551456689dd",
+        "sha256": "204cad75a0a7917b3c58e99bb17da82575a0e6cd0eb3dc92853f81060f56238c",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd",
+          "local_file": "Adafruit-Feather-32u4-RFM-LoRa-PCB/Adafruit Feather 32u4 RFMxx.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3078"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/README.md",
+          "local_file": "Adafruit-Feather-32u4-RFM-LoRa-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    }
+  ]
+}

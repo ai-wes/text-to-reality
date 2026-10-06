@@ -1,0 +1,129 @@
+{
+  "batch_id": "wave3-2026-10-06",
+  "added_ids": [
+    "st-nucleo-f030r8",
+    "st-nucleo-f070rb",
+    "st-nucleo-f072rb",
+    "st-nucleo-f091rc",
+    "st-nucleo-f103rb",
+    "st-nucleo-f302r8",
+    "st-nucleo-f303re",
+    "st-nucleo-f334r8",
+    "st-nucleo-f410rb",
+    "st-nucleo-l010rb",
+    "st-nucleo-l053r8",
+    "st-nucleo-l073rz",
+    "st-nucleo-l152re",
+    "st-nucleo-l452re",
+    "pjrc-teensy-20-bare",
+    "pjrc-teensy-20pp-bare",
+    "adafruit-3406",
+    "adafruit-4062",
+    "adafruit-4516",
+    "adafruit-2995",
+    "adafruit-2829",
+    "adafruit-3010",
+    "adafruit-5395",
+    "adafruit-5405",
+    "adafruit-1500",
+    "adafruit-1501",
+    "adafruit-2000",
+    "adafruit-2010",
+    "adafruit-3178",
+    "adafruit-3179",
+    "adafruit-3078",
+    "adafruit-4741",
+    "adafruit-5297",
+    "adafruit-2088",
+    "adafruit-4383",
+    "adafruit-3533",
+    "adafruit-4311",
+    "adafruit-1673",
+    "adafruit-4224",
+    "adafruit-4197",
+    "adafruit-4947",
+    "adafruit-1028",
+    "adafruit-4196",
+    "adafruit-4868",
+    "adafruit-4098",
+    "pololu-1182",
+    "pololu-2133",
+    "pololu-2134",
+    "pololu-2135",
+    "pololu-2990",
+    "pololu-4036",
+    "pololu-4038",
+    "pololu-3415",
+    "pololu-2489",
+    "pololu-3418",
+    "pololu-2739",
+    "pololu-2490"
+  ],
+  "identical_replay_ids": [],
+  "existing_ids_preserved": 151,
+  "catalog_records": 208,
+  "verified_source_files": 54,
+  "ambiguous_labels": {
+    "esp32-c6-devkitc-1": [
+      "espressif-esp32-c6-devkitc-1-v1-1",
+      "espressif-esp32-c6-devkitc-1-v1-2"
+    ],
+    "esp32-s3-devkitc-1": [
+      "esp32-s3-devkitc-1",
+      "espressif-esp32-s3-devkitc-1-v1-0",
+      "espressif-esp32-s3-devkitc-1-v1-1"
+    ],
+    "nano 33 iot": [
+      "arduino-nano",
+      "nano-33-iot"
+    ],
+    "nano esp32": [
+      "arduino-nano",
+      "nano-esp32"
+    ],
+    "nano every": [
+      "arduino-nano",
+      "nano-every"
+    ],
+    "pico 2": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-2"
+    ],
+    "pico h": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-h"
+    ],
+    "pico w": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-w"
+    ],
+    "pico wh": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-wh"
+    ],
+    "vl53l1x": [
+      "adafruit-3967",
+      "pololu-3415"
+    ],
+    "xiao esp32c3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c3"
+    ],
+    "xiao esp32c6": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c6"
+    ],
+    "xiao esp32s3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3"
+    ],
+    "xiao esp32s3 sense": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3-sense"
+    ]
+  },
+  "catalog_sha256": "4f66db26bc85f0b49b69c7e1ca7124ace81cb431751f05685c0b782749e44917",
+  "physical_validation": false,
+  "model_approval_modified": false,
+  "status": "validated_research_only"
+}

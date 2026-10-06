@@ -1,0 +1,194 @@
+[
+  {
+    "sku": "29530",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5-in-oled-action-feature.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/29530-1p5-in-oled-action-feature.jpg",
+    "sha256": "2de5773ef1d9794377e48a9206ac8dd8a3cc4eae9c3253640d15b495e9fc27a2"
+  },
+  {
+    "sku": "29530",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-OLED-Back.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/29530-1p5in-OLED-Back.jpg",
+    "sha256": "f8c8efbed80a5a08bb11507811f38780f51a72c502b4ecaeae2085ab85afbb1b"
+  },
+  {
+    "sku": "29530",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-OLED-Feature.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/29530-1p5in-OLED-Feature.jpg",
+    "sha256": "95fb4166bb41844645164b91d14d0eb9941d3b92c58b0d47629dfa8f7822c96a"
+  },
+  {
+    "sku": "29530",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-OLED-Front.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/29530-1p5in-OLED-Front.jpg",
+    "sha256": "d8efcab1747647d4d71e8060b6cfedfa55f14d832c21af84355e1c533ff7462b"
+  },
+  {
+    "sku": "29530",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-OLED-Scale.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/29530-1p5in-OLED-Scale.jpg",
+    "sha256": "44f4218e00e5d2dbaa0396e0d6fc6727b46bd02221e2faf367dcca17f0716dd9"
+  },
+  {
+    "sku": "29530",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-oled-action-1-hello.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/29530-1p5in-oled-action-1-hello.jpg",
+    "sha256": "8ad0f371e8fd5b26120560f539e9655c45107845205feee1a1f570aeae770bf8"
+  },
+  {
+    "sku": "16396",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-01.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-01.jpg",
+    "sha256": "a7bf4dc2a076185beb1f5b51a1509385ba5dc40373392f1b67ba2e0f7472c3be"
+  },
+  {
+    "sku": "16396",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-02.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-02.jpg",
+    "sha256": "4bc7edb9782da673da610e230aa7b4c17d5a5b7e3051648eaddad9958f8df526"
+  },
+  {
+    "sku": "16396",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+    "sha256": "3b6ac609f13f375c8cb3454da1067d842dabc34661ce403c63a0d6848d1a2c90"
+  },
+  {
+    "sku": "16396",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-04.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-04.jpg",
+    "sha256": "c6e079c915bce2912e6508ca05c5759197de4bd9b09d15becd4940bcd7ab6bed"
+  },
+  {
+    "sku": "16396",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-05.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-05.jpg",
+    "sha256": "5fec765fc47301be6e6c0df58f2daa1b26037a127e24af9ca23725c80362fe6e"
+  },
+  {
+    "sku": "16397",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-01.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-01.jpg",
+    "sha256": "36045b1367bc574f17bb6e5e3ff133d43ba7fffe0653490bbe9e83d90a164936"
+  },
+  {
+    "sku": "16397",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-02.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-02.jpg",
+    "sha256": "2ffb3c3037706c628adf8c8aff8f154165bb17f089ac61d424e8781d78e5c6a8"
+  },
+  {
+    "sku": "16397",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+    "sha256": "826babe42c3b1b19987df76d34548722a2e48cb0bb5393b50f20a1ac2b6ffa2d"
+  },
+  {
+    "sku": "16397",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-04.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-04.jpg",
+    "sha256": "90256c3f9a58ef308f2bb9c497799a1afa9b456cf40cf0032541d0de2f3657ac"
+  },
+  {
+    "sku": "16397",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-05.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-05.jpg",
+    "sha256": "ceeefdaa448c72cd642e4614d9dacc00ea6789a7a51635da227bd4908bb700cb"
+  },
+  {
+    "sku": "15143",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a01.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a01.jpg",
+    "sha256": "b644ddf1ec1ba34e4dad73b3159801db7e6851b5928b23b8168a3439f3299d1a"
+  },
+  {
+    "sku": "15143",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a02.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a02.jpg",
+    "sha256": "7b1ef66a6d05b0571631e5b2542fb3a79ce9d494f22883667ec5ec3a9db2a966"
+  },
+  {
+    "sku": "15143",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a03.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a03.jpg",
+    "sha256": "7ad8ceb9b606384c67a973ee9054d68142d4590f82a3869a20a80969d1c8c5f3"
+  },
+  {
+    "sku": "15143",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a04.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a04.jpg",
+    "sha256": "c90195bc8a014850a7946ef87377c0e70f3089d157ca4688e57f2c8e03bd8608"
+  },
+  {
+    "sku": "15143",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a05.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a05.jpg",
+    "sha256": "632968568117a67a5643e6644f7aeb6623900509043fb1354925e08a16b28227"
+  },
+  {
+    "sku": "23453",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Back-NoDisplay.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/23453-Qwiic-OLED-Back-NoDisplay.jpg",
+    "sha256": "8288a9011f6121d4ad9c7e85741094901ec53e803686c55ae675efff36b2ff11"
+  },
+  {
+    "sku": "23453",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Feature-NoDisplay.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/23453-Qwiic-OLED-Feature-NoDisplay.jpg",
+    "sha256": "3968b0e1fe5ededd36c0e47395d171cb8bfe734f17754e8da0717e0bbb8b5055"
+  },
+  {
+    "sku": "23453",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Feature-WithDisplay.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/23453-Qwiic-OLED-Feature-WithDisplay.jpg",
+    "sha256": "a1ff285fb866c1564c92b84ee2d016fa17a2f748bc1081860e076e6977627393"
+  },
+  {
+    "sku": "23453",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Front-NoDisplay.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/23453-Qwiic-OLED-Front-NoDisplay.jpg",
+    "sha256": "c5eeca96970499b02b6a58304fedae7bf859d64b2f3e5dfa84e23b26543d633b"
+  },
+  {
+    "sku": "23453",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Front-WithDisplay.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/23453-Qwiic-OLED-Front-WithDisplay.jpg",
+    "sha256": "ed012801416527d6b73f6b5c9e760d7f10e2dcb310ec0b262af302ac5604ebf6"
+  },
+  {
+    "sku": "23453",
+    "url": "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Size-NoDisplay.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/23453-Qwiic-OLED-Size-NoDisplay.jpg",
+    "sha256": "d0c369acbb5f6e0f79ca2c04bd4975b78d5949c8758f643aa195b9660b50c49f"
+  },
+  {
+    "sku": "16398",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-01.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-01.jpg",
+    "sha256": "d78fe400533c1274bef69f2d30347370f1bfce228240c63f46ef2e7a64f958bb"
+  },
+  {
+    "sku": "16398",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-02.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-02.jpg",
+    "sha256": "72009b49e751d9ae46559ad4b20e9db05b91ba9bb1545b67fc315963e9d1ccd7"
+  },
+  {
+    "sku": "16398",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+    "sha256": "323a48b741b167808b0883dec17659deb91db88174333b56c25cc7b1cf44f025"
+  },
+  {
+    "sku": "16398",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-04.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-04.jpg",
+    "sha256": "f3521c76765d37a2f5cdefaef1fa11a4f492a16c67ec75752cf546ca11d17218"
+  },
+  {
+    "sku": "16398",
+    "url": "https://www.sparkfun.com/media/catalog/product/1/6/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-05.jpg",
+    "path": "/workspace/shared/board_batch5/display_enrichment/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-05.jpg",
+    "sha256": "20e5168ab5f7b1bc678fd57a13710a4aa6552f8b1735b7c6c92e5a81da62a2a3"
+  }
+]

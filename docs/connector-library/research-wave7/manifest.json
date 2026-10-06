@@ -1,0 +1,200 @@
+{
+  "bundle_version": 1,
+  "wave": 7,
+  "created_utc": "2026-10-06T19:51:54.023540+00:00",
+  "purpose": "Source-preserving proposal for catalog integration; no physical or model approval",
+  "record_count_semantics": "Twelve completed Nucleo-144 research records; all full multi-row or auxiliary connector groups excluded from single-row comb proposals. Not accepted runtime integration counts. Candidate lead prose excluded.",
+  "constraints": [
+    "Never flatten multi-row connectors",
+    "Keep physical edge rows separate",
+    "Preserve nullable or provisional dimensions and population",
+    "No physical fit, electrical compatibility, retention or model approval is established"
+  ],
+  "batches": [
+    {
+      "directory": "board_batch7/stm_nucleo144",
+      "catalog_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "records_key": "boards",
+      "record_count": 12
+    }
+  ],
+  "record_index": [
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/0",
+      "source_id": "st-nucleo-f207zg",
+      "normalized_id": "st-nucleo-f207zg",
+      "name": "NUCLEO-F207ZG"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/1",
+      "source_id": "st-nucleo-f303ze",
+      "normalized_id": "st-nucleo-f303ze",
+      "name": "NUCLEO-F303ZE"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/2",
+      "source_id": "st-nucleo-f412zg",
+      "normalized_id": "st-nucleo-f412zg",
+      "name": "NUCLEO-F412ZG"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/3",
+      "source_id": "st-nucleo-f413zh",
+      "normalized_id": "st-nucleo-f413zh",
+      "name": "NUCLEO-F413ZH"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/4",
+      "source_id": "st-nucleo-f429zi",
+      "normalized_id": "st-nucleo-f429zi",
+      "name": "NUCLEO-F429ZI"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/5",
+      "source_id": "st-nucleo-f439zi",
+      "normalized_id": "st-nucleo-f439zi",
+      "name": "NUCLEO-F439ZI"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/6",
+      "source_id": "st-nucleo-f446ze",
+      "normalized_id": "st-nucleo-f446ze",
+      "name": "NUCLEO-F446ZE"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/7",
+      "source_id": "st-nucleo-f722ze",
+      "normalized_id": "st-nucleo-f722ze",
+      "name": "NUCLEO-F722ZE"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/8",
+      "source_id": "st-nucleo-f746zg",
+      "normalized_id": "st-nucleo-f746zg",
+      "name": "NUCLEO-F746ZG"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/9",
+      "source_id": "st-nucleo-f756zg",
+      "normalized_id": "st-nucleo-f756zg",
+      "name": "NUCLEO-F756ZG"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/10",
+      "source_id": "st-nucleo-f767zi",
+      "normalized_id": "st-nucleo-f767zi",
+      "name": "NUCLEO-F767ZI"
+    },
+    {
+      "batch": "stm_nucleo144",
+      "source_file": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "json_pointer": "/boards/11",
+      "source_id": "st-nucleo-h743zi",
+      "normalized_id": "st-nucleo-h743zi",
+      "name": "NUCLEO-H743ZI"
+    }
+  ],
+  "files": [
+    {
+      "path": "board_batch7/stm_nucleo144/EVIDENCE.md",
+      "bytes": 5145,
+      "sha256": "6db82d08de91a7b40b8a23c7c37736ded6ec2c7c7f765b2ccba669eb1f172f62"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974.txt",
+      "bytes": 248775,
+      "sha256": "8d12ec3b5f663591b141676bac20dd8288dbb14bbd9ed6b84e9d309c950c480b"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p1.png",
+      "bytes": 429296,
+      "sha256": "e36ea6e9f5618efd1f9a1752675406d3d5690609fd6a53b5a57ced410bb1f888"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p14.png",
+      "bytes": 371816,
+      "sha256": "fa5b4020c1b81680461b01cf9cd2fc9c102e932e8085f325350da9fc4f1b59c8"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p15.png",
+      "bytes": 314965,
+      "sha256": "32f0ed89adb536216587a69d9fe01f26f9497194073ceeafe506715bb827e1de"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p16.png",
+      "bytes": 371213,
+      "sha256": "9e7e33d74a70349453a5642bb3f1f4b95083daabf7faa24d784d970029841b4b"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p37.png",
+      "bytes": 101996,
+      "sha256": "ec58d0cdff291fc6ff0d3cff41f26a2029b16a5ef7ca00810c2c39c1b40f676f"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p69.png",
+      "bytes": 148980,
+      "sha256": "879aab17da599693a6e4d71105ba5189560162840c14b11a578618445a13521a"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/UM1974_p80.png",
+      "bytes": 103378,
+      "sha256": "021079538521668cb4f9dc0e419ec2e82a23b5c907b9d72a6e78fc64a196e0c2"
+    },
+    {
+      "path": "board_batch7/stm_nucleo144/nucleo144_headers.json",
+      "bytes": 298235,
+      "sha256": "488088985e533c58c4c85ed3c9a1c18b4c30636966b4aef1702457f8fd361d68"
+    },
+    {
+      "path": "headerBoards.proposed.json",
+      "bytes": 656932,
+      "sha256": "09462e88268b948bfb2d0a2acdd8bf9cf664a37bf10101f34d434229468b8c85"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 748,
+      "sha256": "e4bdff7e42cb2864d035a8dc744d0334f7d2468119e596ddfaba9f96b5e8921b"
+    },
+    {
+      "path": "full-evidence-manifest.json",
+      "bytes": 6808,
+      "sha256": "afe6cdde30d08b10794296587cabd1ea3979d3045c5c28f3ce0dd72f4b68a64f"
+    }
+  ],
+  "identity_adjustments": [],
+  "omitted_support_directories": [
+    ".git repository machinery",
+    "__pycache__ caches"
+  ],
+  "omitted_redundant_archives": [],
+  "total_record_count": 12,
+  "normalized_proposal": {
+    "path": "headerBoards.proposed.json",
+    "record_count": 12,
+    "status": "proposal_only_not_repository_ready_without_safety_review"
+  },
+  "previous_record_count_checked": 279,
+  "edition": "compact_incremental_nucleo144_only"
+}

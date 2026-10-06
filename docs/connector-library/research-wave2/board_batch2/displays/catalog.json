@@ -1,0 +1,3723 @@
+{
+  "records": [
+    {
+      "id": "adafruit-661",
+      "name": "Monochrome 128x32 SPI OLED graphic display",
+      "aliases": [
+        "Adafruit 661"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "661",
+      "source": "https://www.adafruit.com/product/661",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 8,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X08_ROUND_76",
+          "origin_mm": [
+            16.0,
+            2.794
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "CS_5V"
+            },
+            {
+              "name": "2",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "RES_5V"
+            },
+            {
+              "name": "3",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "DC_5V"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SCLK_5V"
+            },
+            {
+              "name": "5",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SDIN_5V"
+            },
+            {
+              "name": "6",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "7",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "8",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [],
+      "revision_scope": "Adafruit OLED 128x32 Mono.brd; exact CAD blob a90d7aa3af1560349f9a87dbaeaf552dd7d9d924",
+      "populated_variant": null,
+      "total_header_positions": 8,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/661",
+          "https://github.com/adafruit/Adafruit-128x32-SPI-OLED-breakout-board-PCB/blob/master/Adafruit%20OLED%20128x32%20Mono.brd"
+        ],
+        "cad_blob_sha": "a90d7aa3af1560349f9a87dbaeaf552dd7d9d924",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-128x32-SPI-OLED-breakout-board-PCB--Adafruit OLED 128x32 Mono.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-931",
+      "name": "Monochrome 128x32 I2C OLED graphic display, original",
+      "aliases": [
+        "Adafruit 931"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "931",
+      "source": "https://www.adafruit.com/product/931",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X06_ROUND_70",
+          "origin_mm": [
+            17.0,
+            2.254
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "RES_5.0V"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL_5.0V"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA_5.0V"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [],
+      "revision_scope": "Adafruit OLED 128x32 Mono I2C.brd; exact CAD blob ec96de00c19f9861621e857c8150305f5e046b77",
+      "populated_variant": null,
+      "total_header_positions": 6,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/931",
+          "https://github.com/adafruit/Adafruit-128x32-I2C-OLED-Breakout-PCB/blob/master/Adafruit%20OLED%20128x32%20Mono%20I2C.brd"
+        ],
+        "cad_blob_sha": "ec96de00c19f9861621e857c8150305f5e046b77",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-128x32-I2C-OLED-Breakout-PCB--Adafruit OLED 128x32 Mono I2C.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim.",
+        "Original discontinued SKU, distinct from STEMMA QT replacement 4440."
+      ]
+    },
+    {
+      "id": "adafruit-4440",
+      "name": "Monochrome 0.91 inch 128x32 I2C OLED STEMMA QT",
+      "aliases": [
+        "Adafruit 4440"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "4440",
+      "source": "https://www.adafruit.com/product/4440",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X06_ROUND_70",
+          "origin_mm": [
+            16.51,
+            2.54
+          ],
+          "rotation": "MR180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "RESET"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "CONN4",
+          "footprint": "JST_SH4",
+          "pin_count": 4,
+          "direct_comb_fit": false,
+          "pitch_mm": 1,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        }
+      ],
+      "revision_scope": "Adafruit OLED 128x32 Mono I2C STEMMA QT rev B.brd; exact CAD blob 453652943ab5d250099bccc4c991b3d493b6d588",
+      "populated_variant": null,
+      "total_header_positions": 6,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/4440",
+          "https://github.com/adafruit/Adafruit-128x32-I2C-OLED-Breakout-PCB/blob/master/Adafruit%20OLED%20128x32%20Mono%20I2C%20STEMMA%20QT%20rev%20B.brd"
+        ],
+        "cad_blob_sha": "453652943ab5d250099bccc4c991b3d493b6d588",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-128x32-I2C-OLED-Breakout-PCB--Adafruit OLED 128x32 Mono I2C STEMMA QT rev B.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-938",
+      "name": "Monochrome 1.3 inch 128x64 OLED STEMMA QT",
+      "aliases": [
+        "Adafruit 938"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "938",
+      "source": "https://www.adafruit.com/product/938",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 8,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X08_ROUND_70",
+          "origin_mm": [
+            17.78,
+            30.48
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "2",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "3",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "DC/SA0_5.0V"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "RST_5.0V"
+            },
+            {
+              "name": "5",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "CS_5.0V"
+            },
+            {
+              "name": "6",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "7",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "8",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "CONN4",
+          "footprint": "JST_SH4",
+          "pin_count": 4,
+          "direct_comb_fit": false,
+          "pitch_mm": 1,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        },
+        {
+          "id": "CONN1",
+          "footprint": "JST_SH4",
+          "pin_count": 4,
+          "direct_comb_fit": false,
+          "pitch_mm": 1,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        }
+      ],
+      "revision_scope": "Adafruit 1.3in 128x64 OLED STEMMA QT.brd; exact CAD blob b6343c2e8e5dea58047db4fa3b22c4952db4678b",
+      "populated_variant": null,
+      "total_header_positions": 8,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/938",
+          "https://github.com/adafruit/Adafruit-1.3inch-128x64-Mono-OLED-PCB/blob/master/Adafruit%201.3in%20128x64%20OLED%20STEMMA%20QT.brd"
+        ],
+        "cad_blob_sha": "b6343c2e8e5dea58047db4fa3b22c4952db4678b",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-1.3inch-128x64-Mono-OLED-PCB--Adafruit 1.3in 128x64 OLED STEMMA QT.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1374",
+      "name": "Standalone Momentary Capacitive Touch Sensor AT42QT1010",
+      "aliases": [
+        "Adafruit 1374"
+      ],
+      "kind": "touch_breakout",
+      "manufacturer": "Adafruit",
+      "sku": "1374",
+      "source": "https://www.adafruit.com/product/1374",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 4,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X04_ROUND_76",
+          "origin_mm": [
+            10.23,
+            1.905
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "LEDA"
+            },
+            {
+              "name": "2",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "VDD"
+            },
+            {
+              "name": "3",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "OUT"
+            },
+            {
+              "name": "4",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [],
+      "revision_scope": "Adafruit AT42QT1010 Breakout.brd; exact CAD blob 6f0feec6c0d6c8e273fb0cabb2c43f05c8fb2342",
+      "populated_variant": null,
+      "total_header_positions": 4,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1374",
+          "https://github.com/adafruit/Adafruit-Standalone-Capacitive-Sensor-PCB/blob/master/Adafruit%20AT42QT1010%20Breakout.brd"
+        ],
+        "cad_blob_sha": "6f0feec6c0d6c8e273fb0cabb2c43f05c8fb2342",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-Standalone-Capacitive-Sensor-PCB--Adafruit AT42QT1010 Breakout.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1375",
+      "name": "Standalone Toggle Capacitive Touch Sensor AT42QT1012",
+      "aliases": [
+        "Adafruit 1375"
+      ],
+      "kind": "touch_breakout",
+      "manufacturer": "Adafruit",
+      "sku": "1375",
+      "source": "https://www.adafruit.com/product/1375",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 5,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X05_ROUND_70",
+          "origin_mm": [
+            10.22,
+            1.905
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "LEDA"
+            },
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VDD"
+            },
+            {
+              "name": "3",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "TIME"
+            },
+            {
+              "name": "4",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "OUT"
+            },
+            {
+              "name": "5",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [],
+      "revision_scope": "Adafruit AT42QT1012 Breakout.brd; exact CAD blob 87052f588aeeb4bf7f9232a16f87258822719d15",
+      "populated_variant": null,
+      "total_header_positions": 5,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1375",
+          "https://github.com/adafruit/Adafruit-Standalone-Capacitive-Sensor-PCB/blob/master/Adafruit%20AT42QT1012%20Breakout.brd"
+        ],
+        "cad_blob_sha": "87052f588aeeb4bf7f9232a16f87258822719d15",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-Standalone-Capacitive-Sensor-PCB--Adafruit AT42QT1012 Breakout.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1362",
+      "name": "Standalone 5-Pad Capacitive Touch Sensor AT42QT1070",
+      "aliases": [
+        "Adafruit 1362"
+      ],
+      "kind": "touch_breakout",
+      "manufacturer": "Adafruit",
+      "sku": "1362",
+      "source": "https://www.adafruit.com/product/1362",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 6,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X06-CLEANBIG",
+          "origin_mm": [
+            -9.779,
+            8.509
+          ],
+          "rotation": "R270",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "N$10"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "N$9"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "N$8"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "N$7"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "N$6"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X06-CLEANBIG",
+          "origin_mm": [
+            10.541,
+            8.509
+          ],
+          "rotation": "R90",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "VDD"
+            },
+            {
+              "name": "2",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "GO"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "OUT1"
+            },
+            {
+              "name": "4",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "OUT2"
+            },
+            {
+              "name": "5",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "OUT3"
+            },
+            {
+              "name": "6",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.778",
+              "shape": "octagon",
+              "rot": "R90",
+              "net": "OUT4"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [],
+      "revision_scope": "Adafruit AT42QT1070 Breakout.brd; exact CAD blob 1db47173f78782ba4dbf26e28bb82b2d938fcf51",
+      "populated_variant": null,
+      "total_header_positions": 12,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1362",
+          "https://github.com/adafruit/Adafruit-Standalone-Capacitive-Sensor-PCB/blob/master/Adafruit%20AT42QT1070%20Breakout.brd"
+        ],
+        "cad_blob_sha": "1db47173f78782ba4dbf26e28bb82b2d938fcf51",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-Standalone-Capacitive-Sensor-PCB--Adafruit AT42QT1070 Breakout.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1602",
+      "name": "CAP1188 8-Key Capacitive Touch Sensor Breakout",
+      "aliases": [
+        "Adafruit 1602"
+      ],
+      "kind": "touch_breakout",
+      "manufacturer": "Adafruit",
+      "sku": "1602",
+      "source": "https://www.adafruit.com/product/1602",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 13,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X13_ROUND_70",
+          "origin_mm": [
+            16.51,
+            20.955
+          ],
+          "rotation": "R270",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-15.24",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "shape": "square",
+              "rot": "R90",
+              "net": "WAKE/MOSI"
+            },
+            {
+              "name": "2",
+              "x": "-12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS"
+            },
+            {
+              "name": "3",
+              "x": "-10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "RESET"
+            },
+            {
+              "name": "4",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "5",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS1"
+            },
+            {
+              "name": "6",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS2"
+            },
+            {
+              "name": "7",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS3"
+            },
+            {
+              "name": "8",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS4"
+            },
+            {
+              "name": "9",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS5"
+            },
+            {
+              "name": "10",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS6"
+            },
+            {
+              "name": "11",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS7"
+            },
+            {
+              "name": "12",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS8"
+            },
+            {
+              "name": "13",
+              "x": "15.24",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ADDR"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP4",
+          "pin_count": 13,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X13_ROUND_70",
+          "origin_mm": [
+            1.27,
+            20.955
+          ],
+          "rotation": "R270",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-15.24",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "shape": "square",
+              "rot": "R90",
+              "net": "SDA/MISO"
+            },
+            {
+              "name": "2",
+              "x": "-12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SCK"
+            },
+            {
+              "name": "3",
+              "x": "-10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "4",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "5",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED1"
+            },
+            {
+              "name": "6",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED2"
+            },
+            {
+              "name": "7",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED3"
+            },
+            {
+              "name": "8",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED4"
+            },
+            {
+              "name": "9",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED5"
+            },
+            {
+              "name": "10",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED6"
+            },
+            {
+              "name": "11",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED7"
+            },
+            {
+              "name": "12",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LED8"
+            },
+            {
+              "name": "13",
+              "x": "15.24",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IRQ"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [],
+      "revision_scope": "Adafruit CAP1188.brd; exact CAD blob d7de52b383c9de5806b8b1a44b5bb2dd84575329",
+      "populated_variant": null,
+      "total_header_positions": 26,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1602",
+          "https://github.com/adafruit/Adafruit-CAP1188-PCB/blob/master/Adafruit%20CAP1188.brd"
+        ],
+        "cad_blob_sha": "d7de52b383c9de5806b8b1a44b5bb2dd84575329",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-CAP1188-PCB--Adafruit CAP1188.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1571",
+      "name": "Resistive Touch Screen Controller STMPE610",
+      "aliases": [
+        "Adafruit 1571"
+      ],
+      "kind": "touch_breakout",
+      "manufacturer": "Adafruit",
+      "sku": "1571",
+      "source": "https://www.adafruit.com/product/1571",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 11,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X11_ROUND",
+          "origin_mm": [
+            13.97,
+            2.159
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "shape": "square",
+              "rot": "R90",
+              "net": "+5V"
+            },
+            {
+              "name": "2",
+              "x": "-10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "3",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "+3V3"
+            },
+            {
+              "name": "4",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GPIO3"
+            },
+            {
+              "name": "5",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GPIO2"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "MODE"
+            },
+            {
+              "name": "7",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "MOSI_5V"
+            },
+            {
+              "name": "8",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "A0"
+            },
+            {
+              "name": "9",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "INT"
+            },
+            {
+              "name": "10",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SCL_5V"
+            },
+            {
+              "name": "11",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDA_5V"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP4",
+          "pin_count": 2,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X02_ROUND",
+          "origin_mm": [
+            20.574,
+            19.05
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "X+"
+            },
+            {
+              "name": "2",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "Y+"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP5",
+          "pin_count": 2,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X02_ROUND",
+          "origin_mm": [
+            7.62,
+            19.05
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "Y-"
+            },
+            {
+              "name": "2",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "X-"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "U$7",
+          "footprint": "FPC_CONN_1MM_DUAL_4P",
+          "pin_count": 4,
+          "direct_comb_fit": false,
+          "pitch_mm": 1,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        }
+      ],
+      "revision_scope": "Adafruit STMPE610.brd; exact CAD blob 1d044901d614ae8215f152977bce2c987dc9327d",
+      "populated_variant": null,
+      "total_header_positions": 15,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1571",
+          "https://github.com/adafruit/Adafruit-STMPE610-Breakout-PCB/blob/master/Adafruit%20STMPE610.brd"
+        ],
+        "cad_blob_sha": "1d044901d614ae8215f152977bce2c987dc9327d",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-STMPE610-Breakout-PCB--Adafruit STMPE610.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim.",
+        "Includes additional two separate 1x2 touchscreen X/Y header groups beyond the 11-pin host header. Supplied 11-pin strip alone does not populate all groups."
+      ]
+    },
+    {
+      "id": "adafruit-1982",
+      "name": "12-Key Capacitive Touch Sensor MPR121 STEMMA QT",
+      "aliases": [
+        "Adafruit 1982"
+      ],
+      "kind": "touch_breakout",
+      "manufacturer": "Adafruit",
+      "sku": "1982",
+      "source": "https://www.adafruit.com/product/1982",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 13,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X13_ROUND_70",
+          "origin_mm": [
+            16.51,
+            17.78
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-15.24",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC11"
+            },
+            {
+              "name": "2",
+              "x": "-12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC10"
+            },
+            {
+              "name": "3",
+              "x": "-10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC9"
+            },
+            {
+              "name": "4",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC8"
+            },
+            {
+              "name": "5",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC7"
+            },
+            {
+              "name": "6",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC6"
+            },
+            {
+              "name": "7",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC5"
+            },
+            {
+              "name": "8",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC4"
+            },
+            {
+              "name": "9",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC3"
+            },
+            {
+              "name": "10",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC2"
+            },
+            {
+              "name": "11",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC1"
+            },
+            {
+              "name": "12",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "ELEC0"
+            },
+            {
+              "name": "13",
+              "x": "15.24",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP2",
+          "pin_count": 7,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X07_ROUND_70",
+          "origin_mm": [
+            16.51,
+            2.54
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "2",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SCL"
+            },
+            {
+              "name": "5",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "6",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "INT"
+            },
+            {
+              "name": "7",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.778",
+              "rot": "R90",
+              "net": "ADDR"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "CONN3",
+          "footprint": "JST_SH4",
+          "pin_count": 4,
+          "direct_comb_fit": false,
+          "pitch_mm": 1,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        },
+        {
+          "id": "CONN4",
+          "footprint": "JST_SH4",
+          "pin_count": 4,
+          "direct_comb_fit": false,
+          "pitch_mm": 1,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        }
+      ],
+      "revision_scope": "Adafruit MPR121Q QT.brd; exact CAD blob 135e3503bc5dfc59caa33834d3436f0ed73c9189",
+      "populated_variant": null,
+      "total_header_positions": 20,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1982",
+          "https://github.com/adafruit/Adafruit-MPR121-PCB/blob/master/Adafruit%20MPR121Q%20QT.brd"
+        ],
+        "cad_blob_sha": "135e3503bc5dfc59caa33834d3436f0ed73c9189",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-MPR121-PCB--Adafruit MPR121Q QT.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-684",
+      "name": "0.96 inch 96x64 RGB OLED with microSD, v2.0",
+      "aliases": [
+        "Adafruit 684"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "684",
+      "source": "https://www.adafruit.com/product/684",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 10,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X10_ROUND_76",
+          "origin_mm": [
+            17.73,
+            26.749
+          ],
+          "rotation": "MR180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "shape": "square",
+              "rot": "R90",
+              "net": "SD_CD"
+            },
+            {
+              "name": "2",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SD_DOUT"
+            },
+            {
+              "name": "3",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "MOSI_5V"
+            },
+            {
+              "name": "4",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SCK_5V"
+            },
+            {
+              "name": "5",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "DC_5V"
+            },
+            {
+              "name": "6",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "RESET_5V"
+            },
+            {
+              "name": "7",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "LCD_CS_5V"
+            },
+            {
+              "name": "8",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SD_CS_5V"
+            },
+            {
+              "name": "9",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "V+"
+            },
+            {
+              "name": "10",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "CN1",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        }
+      ],
+      "revision_scope": "Adafruit 96x64 RGB OLED Breakout v2.0.brd; exact CAD blob 6a5fcbbf35c14a2f18e603e4a52fad8738934002",
+      "populated_variant": null,
+      "total_header_positions": 10,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/684",
+          "https://github.com/adafruit/Adafruit-96x64-RGB-OLED-Breakout-PCB/blob/master/Adafruit%2096x64%20RGB%20OLED%20Breakout%20v2.0.brd"
+        ],
+        "cad_blob_sha": "6a5fcbbf35c14a2f18e603e4a52fad8738934002",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-96x64-RGB-OLED-Breakout-PCB--Adafruit 96x64 RGB OLED Breakout v2.0.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1431",
+      "name": "1.5 inch 128x128 Color OLED with microSD, original pre-EYESPI CAD",
+      "aliases": [
+        "Adafruit 1431"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "1431",
+      "source": "https://www.adafruit.com/product/1431",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 11,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X11_ROUND_76",
+          "origin_mm": [
+            21.59,
+            40.386
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "shape": "square",
+              "rot": "R90",
+              "net": "N$12"
+            },
+            {
+              "name": "2",
+              "x": "-10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "N$13"
+            },
+            {
+              "name": "3",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "DC"
+            },
+            {
+              "name": "4",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "RESET"
+            },
+            {
+              "name": "5",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "OCS"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SCS"
+            },
+            {
+              "name": "7",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SD_DOUT"
+            },
+            {
+              "name": "8",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SD_CD"
+            },
+            {
+              "name": "9",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "10",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "11",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "CN1",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        },
+        {
+          "id": "U1",
+          "footprint": "FPC_XF2M-3015-1A",
+          "pin_count": 30,
+          "direct_comb_fit": false,
+          "pitch_mm": 0.5,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping",
+          "shrouded": true
+        }
+      ],
+      "revision_scope": "Adafruit_1.5_128x128_RGB_OLED.brd; exact CAD blob 796a729d838626d217ecd7bb7141abc4cf193ce1",
+      "populated_variant": null,
+      "total_header_positions": 11,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1431",
+          "https://github.com/adafruit/Adafruit-1.5inch-Color-OLED-PCB/blob/master/Adafruit_1.5_128x128_RGB_OLED.brd"
+        ],
+        "cad_blob_sha": "796a729d838626d217ecd7bb7141abc4cf193ce1",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-1.5inch-Color-OLED-PCB--Adafruit_1.5_128x128_RGB_OLED.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim.",
+        "Official repository CAD retrieved is original pre-EYESPI design. Current product was updated December 28, 2022 with EYESPI; manufacturer states same size and pinout. This record is scoped to stored original CAD; do not assume its connector inventory represents current EYESPI board."
+      ]
+    },
+    {
+      "id": "adafruit-3787",
+      "name": "1.54 inch 240x240 ST7789 TFT with microSD EYESPI",
+      "aliases": [
+        "Adafruit 3787"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "3787",
+      "source": "https://www.adafruit.com/product/3787",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 12,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X12_ROUND_76MIL",
+          "origin_mm": [
+            36.83,
+            15.621
+          ],
+          "rotation": "R270",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "2",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "+3V3"
+            },
+            {
+              "name": "3",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SCK"
+            },
+            {
+              "name": "5",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "MISO"
+            },
+            {
+              "name": "6",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "MOSI"
+            },
+            {
+              "name": "7",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "TFTCS"
+            },
+            {
+              "name": "8",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "TFTRST"
+            },
+            {
+              "name": "9",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "TFTDC"
+            },
+            {
+              "name": "10",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "CARDCS"
+            },
+            {
+              "name": "11",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "LITE"
+            },
+            {
+              "name": "12",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "TE"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "X1",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        },
+        {
+          "id": "EYESPI",
+          "footprint": "EYE_SPI_DISPLAY_BOTCONTACT",
+          "pin_count": 18,
+          "pitch_mm": 0.5,
+          "rows": 1,
+          "gender": null,
+          "population": "factory installed",
+          "shrouded": true,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Adafruit 1.54in 240x240 TFT EYESPI.brd; exact CAD blob a08499b4db5bb22e8ceec2c69e1c0710c86a93e1",
+      "populated_variant": null,
+      "total_header_positions": 12,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/3787",
+          "https://github.com/adafruit/Adafruit-1.54-inch-240x240-TFT-PCB/blob/master/Adafruit%201.54in%20240x240%20TFT%20EYESPI.brd"
+        ],
+        "cad_blob_sha": "a08499b4db5bb22e8ceec2c69e1c0710c86a93e1",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-1.54-inch-240x240-TFT-PCB--Adafruit 1.54in 240x240 TFT EYESPI.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim.",
+        "Product specification text says 1x16 but exact current EYESPI PCB header footprint has 12 plated positions. Catalog follows CAD physical count, not product prose or length of supplied loose strip."
+      ]
+    },
+    {
+      "id": "adafruit-4313",
+      "name": "1.3 inch 240x240 ST7789 TFT with microSD EYESPI",
+      "aliases": [
+        "Adafruit 4313"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "4313",
+      "source": "https://www.adafruit.com/product/4313",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 11,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X11_ROUND_76",
+          "origin_mm": [
+            33.02,
+            13.97
+          ],
+          "rotation": "R270",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "2",
+              "x": "-10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "+3V3"
+            },
+            {
+              "name": "3",
+              "x": "-7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "4",
+              "x": "-5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "SCK"
+            },
+            {
+              "name": "5",
+              "x": "-2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "MISO"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "MOSI"
+            },
+            {
+              "name": "7",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "TFTCS"
+            },
+            {
+              "name": "8",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "RESET"
+            },
+            {
+              "name": "9",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "TFTDC"
+            },
+            {
+              "name": "10",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "CARDCS"
+            },
+            {
+              "name": "11",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.9304",
+              "rot": "R90",
+              "net": "BACKLIGHT"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "X2",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        },
+        {
+          "id": "EYESPI",
+          "footprint": "EYE_SPI_DISPLAY_BOTCONTACT",
+          "pin_count": 18,
+          "pitch_mm": 0.5,
+          "rows": 1,
+          "gender": null,
+          "population": "factory installed",
+          "shrouded": true,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Adafruit 1.3in 240x240 IPS TFT EYESPI.brd; exact CAD blob 917de720fb9dfc661b510ed910b7787fae2f04c0",
+      "populated_variant": null,
+      "total_header_positions": 11,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/4313",
+          "https://github.com/adafruit/Adafruit-1.3-inch-240x240-TFT-PCB/blob/master/Adafruit%201.3in%20240x240%20IPS%20TFT%20EYESPI.brd"
+        ],
+        "cad_blob_sha": "917de720fb9dfc661b510ed910b7787fae2f04c0",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-1.3-inch-240x240-TFT-PCB--Adafruit 1.3in 240x240 IPS TFT EYESPI.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim.",
+        "Product specification text says 1x16 but exact current EYESPI PCB header footprint has 11 plated positions. Catalog follows CAD physical count, not product prose or length of supplied loose strip."
+      ]
+    },
+    {
+      "id": "adafruit-2090",
+      "name": "2.8 inch TFT with Capacitive Touch microSD EYESPI rev D",
+      "aliases": [
+        "Adafruit 2090"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "2090",
+      "source": "https://www.adafruit.com/product/2090",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 20,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X20_ROUND",
+          "origin_mm": [
+            0.0,
+            -38.1
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "+5V"
+            },
+            {
+              "name": "3",
+              "x": "-19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "4",
+              "x": "-16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RS_5V"
+            },
+            {
+              "name": "5",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDO"
+            },
+            {
+              "name": "6",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDI_5V"
+            },
+            {
+              "name": "7",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_CS_5V"
+            },
+            {
+              "name": "8",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_WR_5V"
+            },
+            {
+              "name": "9",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RST_5V"
+            },
+            {
+              "name": "10",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_LITE"
+            },
+            {
+              "name": "11",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "12",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CTP_IRQ"
+            },
+            {
+              "name": "13",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDA_5V"
+            },
+            {
+              "name": "14",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SCL_5V"
+            },
+            {
+              "name": "15",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM3"
+            },
+            {
+              "name": "16",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM2"
+            },
+            {
+              "name": "17",
+              "x": "16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM1"
+            },
+            {
+              "name": "18",
+              "x": "19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM0"
+            },
+            {
+              "name": "19",
+              "x": "21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SD_CS_5V"
+            },
+            {
+              "name": "20",
+              "x": "24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CARDDET"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP1",
+          "pin_count": 20,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X20_ROUND",
+          "origin_mm": [
+            0.0,
+            38.1
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "+5V"
+            },
+            {
+              "name": "3",
+              "x": "-19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_CS_5V"
+            },
+            {
+              "name": "4",
+              "x": "-16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RS_5V"
+            },
+            {
+              "name": "5",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_WR_5V"
+            },
+            {
+              "name": "6",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RD_5V"
+            },
+            {
+              "name": "7",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RST_5V"
+            },
+            {
+              "name": "8",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_LITE"
+            },
+            {
+              "name": "9",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CTP_IRQ"
+            },
+            {
+              "name": "10",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SCL_5V"
+            },
+            {
+              "name": "11",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDA_5V"
+            },
+            {
+              "name": "12",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "13",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA0_5V"
+            },
+            {
+              "name": "14",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA1_5V"
+            },
+            {
+              "name": "15",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA2_5V"
+            },
+            {
+              "name": "16",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA3_5V"
+            },
+            {
+              "name": "17",
+              "x": "16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA4_5V"
+            },
+            {
+              "name": "18",
+              "x": "19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA5_5V"
+            },
+            {
+              "name": "19",
+              "x": "21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA6_5V"
+            },
+            {
+              "name": "20",
+              "x": "24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA7_5V"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "X2",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        },
+        {
+          "id": "EYESPI",
+          "footprint": "EYE_SPI_DISPLAY_BOTCONTACT",
+          "pin_count": 18,
+          "pitch_mm": 0.5,
+          "rows": 1,
+          "gender": null,
+          "population": "factory installed",
+          "shrouded": true,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Adafruit 2.8 inch TFT w Capacitive Touch rev D.brd; exact CAD blob d95d16ca72d928ba13f72b6bb88dac62f459b4b3",
+      "populated_variant": null,
+      "total_header_positions": 40,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/2090",
+          "https://github.com/adafruit/Adafruit-2.8-TFT-with-Capacitive-Touch-PCB/blob/master/Adafruit%202.8%20inch%20TFT%20w%20Capacitive%20Touch%20rev%20D.brd"
+        ],
+        "cad_blob_sha": "d95d16ca72d928ba13f72b6bb88dac62f459b4b3",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-2.8-TFT-with-Capacitive-Touch-PCB--Adafruit 2.8 inch TFT w Capacitive Touch rev D.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-1770",
+      "name": "2.8 inch ILI9341 Resistive Touch TFT microSD Breakout v2",
+      "aliases": [
+        "Adafruit 1770"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "1770",
+      "source": "https://www.adafruit.com/product/1770",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 20,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X20_ROUND",
+          "origin_mm": [
+            0.0,
+            -38.1
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "shape": "square",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "+5V"
+            },
+            {
+              "name": "3",
+              "x": "-19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "VCC"
+            },
+            {
+              "name": "4",
+              "x": "-16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RS_5V"
+            },
+            {
+              "name": "5",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDO"
+            },
+            {
+              "name": "6",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SDI_5V"
+            },
+            {
+              "name": "7",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_CS_5V"
+            },
+            {
+              "name": "8",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_WR_5V"
+            },
+            {
+              "name": "9",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RST_5V"
+            },
+            {
+              "name": "10",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_LITE"
+            },
+            {
+              "name": "11",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_Y+"
+            },
+            {
+              "name": "12",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_X+"
+            },
+            {
+              "name": "13",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_Y-"
+            },
+            {
+              "name": "14",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_X-"
+            },
+            {
+              "name": "15",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM3"
+            },
+            {
+              "name": "16",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM2"
+            },
+            {
+              "name": "17",
+              "x": "16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM1"
+            },
+            {
+              "name": "18",
+              "x": "19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM0"
+            },
+            {
+              "name": "19",
+              "x": "21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SD_CS_5V"
+            },
+            {
+              "name": "20",
+              "x": "24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CARDDET"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP1",
+          "pin_count": 20,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X20_ROUND",
+          "origin_mm": [
+            0.0,
+            38.1
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "shape": "square",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "+5V"
+            },
+            {
+              "name": "3",
+              "x": "-19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_CS_5V"
+            },
+            {
+              "name": "4",
+              "x": "-16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RS_5V"
+            },
+            {
+              "name": "5",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_WR_5V"
+            },
+            {
+              "name": "6",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RD_5V"
+            },
+            {
+              "name": "7",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_RST_5V"
+            },
+            {
+              "name": "8",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_LITE"
+            },
+            {
+              "name": "9",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_X+"
+            },
+            {
+              "name": "10",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_Y+"
+            },
+            {
+              "name": "11",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_X-"
+            },
+            {
+              "name": "12",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_Y-"
+            },
+            {
+              "name": "13",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA0_5V"
+            },
+            {
+              "name": "14",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA1_5V"
+            },
+            {
+              "name": "15",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA2_5V"
+            },
+            {
+              "name": "16",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA3_5V"
+            },
+            {
+              "name": "17",
+              "x": "16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA4_5V"
+            },
+            {
+              "name": "18",
+              "x": "19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA5_5V"
+            },
+            {
+              "name": "19",
+              "x": "21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA6_5V"
+            },
+            {
+              "name": "20",
+              "x": "24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LCD_DATA7_5V"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "X1",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        }
+      ],
+      "revision_scope": "Adafruit 2.8 TFT Breakout v2.brd; exact CAD blob e23b9c15f550b0cb911233410e39c241f1710906",
+      "populated_variant": null,
+      "total_header_positions": 40,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/1770",
+          "https://github.com/adafruit/2.8-TFT-Breakout-PCB/blob/master/Adafruit%202.8%20TFT%20Breakout%20v2.brd"
+        ],
+        "cad_blob_sha": "e23b9c15f550b0cb911233410e39c241f1710906",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/2.8-TFT-Breakout-PCB--Adafruit 2.8 TFT Breakout v2.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    },
+    {
+      "id": "adafruit-2478",
+      "name": "2.4 inch ILI9341 Resistive Touch TFT microSD Breakout",
+      "aliases": [
+        "Adafruit 2478"
+      ],
+      "kind": "display",
+      "manufacturer": "Adafruit",
+      "sku": "2478",
+      "source": "https://www.adafruit.com/product/2478",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 20,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X20_ROUND",
+          "origin_mm": [
+            30.988,
+            2.159
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "3",
+              "x": "-19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "+3V"
+            },
+            {
+              "name": "4",
+              "x": "-16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "RS_CLK"
+            },
+            {
+              "name": "5",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "MISO"
+            },
+            {
+              "name": "6",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "MOSI"
+            },
+            {
+              "name": "7",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS"
+            },
+            {
+              "name": "8",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "WR_DC"
+            },
+            {
+              "name": "9",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "RST"
+            },
+            {
+              "name": "10",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LITE"
+            },
+            {
+              "name": "11",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "Y+"
+            },
+            {
+              "name": "12",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "X+"
+            },
+            {
+              "name": "13",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "Y-"
+            },
+            {
+              "name": "14",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "X-"
+            },
+            {
+              "name": "15",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM0"
+            },
+            {
+              "name": "16",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM1"
+            },
+            {
+              "name": "17",
+              "x": "16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM2"
+            },
+            {
+              "name": "18",
+              "x": "19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "IM3"
+            },
+            {
+              "name": "19",
+              "x": "21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "SD_CS"
+            },
+            {
+              "name": "20",
+              "x": "24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CARDDET"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        },
+        {
+          "id": "JP1",
+          "pin_count": 20,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": "none",
+          "population": "unpopulated through-hole footprint; loose header supplied for user soldering",
+          "shrouded": false,
+          "footprint": "1X20_ROUND",
+          "origin_mm": [
+            30.988,
+            50.419
+          ],
+          "rotation": "R180",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "-24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "-21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "3",
+              "x": "-19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "CS"
+            },
+            {
+              "name": "4",
+              "x": "-16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "RS_CLK"
+            },
+            {
+              "name": "5",
+              "x": "-13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "WR_DC"
+            },
+            {
+              "name": "6",
+              "x": "-11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "RD"
+            },
+            {
+              "name": "7",
+              "x": "-8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "RST"
+            },
+            {
+              "name": "8",
+              "x": "-6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "LITE"
+            },
+            {
+              "name": "9",
+              "x": "-3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "X+"
+            },
+            {
+              "name": "10",
+              "x": "-1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "Y+"
+            },
+            {
+              "name": "11",
+              "x": "1.27",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "X-"
+            },
+            {
+              "name": "12",
+              "x": "3.81",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "Y-"
+            },
+            {
+              "name": "13",
+              "x": "6.35",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D0"
+            },
+            {
+              "name": "14",
+              "x": "8.89",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D1"
+            },
+            {
+              "name": "15",
+              "x": "11.43",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D2"
+            },
+            {
+              "name": "16",
+              "x": "13.97",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D3"
+            },
+            {
+              "name": "17",
+              "x": "16.51",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D4"
+            },
+            {
+              "name": "18",
+              "x": "19.05",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D5"
+            },
+            {
+              "name": "19",
+              "x": "21.59",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D6"
+            },
+            {
+              "name": "20",
+              "x": "24.13",
+              "y": "0",
+              "drill": "1",
+              "diameter": "1.6764",
+              "rot": "R90",
+              "net": "D7"
+            }
+          ],
+          "direct_comb_fit": false,
+          "fit_status": "count mapping only; installed male header and physical fit require verification",
+          "installed_gender_if_supplied_header_fitted": "male",
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "X1",
+          "footprint": "MICROSD",
+          "pin_count": null,
+          "direct_comb_fit": false,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": null,
+          "population": "factory-installed connector; excluded from header-comb mapping"
+        }
+      ],
+      "revision_scope": "Adafruit 2.4in TFT Breakout.brd; exact CAD blob 9ced651e70452a2c3a991cc9d00a25894ba9e8c4",
+      "populated_variant": null,
+      "total_header_positions": 40,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.adafruit.com/product/2478",
+          "https://github.com/adafruit/Adafruit-2.4-TFT-Breakout-PCB/blob/master/Adafruit%202.4in%20TFT%20Breakout.brd"
+        ],
+        "cad_blob_sha": "9ced651e70452a2c3a991cc9d00a25894ba9e8c4",
+        "method": "Physical header footprint pads counted from official manufacturer Eagle CAD; not signal count. CAD revision scoped explicitly; product header population uses product kit description.",
+        "cad_local": "/workspace/shared/board_batch2/displays/Adafruit-2.4-TFT-Breakout-PCB--Adafruit 2.4in TFT Breakout.brd"
+      },
+      "notes": [
+        "All physical header pads, including repeated power/ground and inactive pins, are counted. No electrical, retention, or measured physical fit claim."
+      ]
+    }
+  ],
+  "checked_date": "2026-10-06",
+  "scope": "17 distinct exact Adafruit SKUs, full physical through-hole header groups from stored official CAD. Not a physical-fit validation.",
+  "source_handling": "GitHub branch URLs identify sources; exact CAD content is pinned by Git blob SHA in each record and saved locally. Revision-specific product/CAD discrepancies are noted."
+}

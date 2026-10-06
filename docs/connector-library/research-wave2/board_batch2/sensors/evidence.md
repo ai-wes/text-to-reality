@@ -1,0 +1,52 @@
+# Sensor and I/O breakout research evidence
+
+## Charter
+Goal: validate 20 additional exact manufacturer SKUs for full physical connector geometry. Scope: sensor/I/O breakouts; object: manufacturer PCB variants; subject: individual header groups and auxiliary connectors. Descriptive research with working knowledge of Eagle CAD. Questions: exact contact count and pitch; assembly population; revision and auxiliary connectors; limits of JIG applicability.
+
+## Canonical sources
+1. Manufacturer-hosted GitHub PCB files, pinned to commit: contact geometry and names.
+2. Official Adafruit product pages: exact SKU, assembly population, revision history.
+3. Direct inspection of supplied manufacturer product photos where population prose is absent.
+
+## Findings ledger
+
+- F1: Adafruit ADS1015 12-bit ADC (SKU 1083): JP2: 1 row(s), 6 total contacts at 2.54 mm, JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1015%20ADC%20STEMMA%20QT.brd; SKU/population https://www.adafruit.com/product/1083
+- F2: Adafruit ADS1115 16-bit ADC (SKU 1085): JP2: 1 row(s), 6 total contacts at 2.54 mm, JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd; SKU/population https://www.adafruit.com/product/1085
+- F3: Adafruit TCA9548A I2C Multiplexer (SKU 2717): JP3: 1 row(s), 12 total contacts at 2.54 mm, JP1: 1 row(s), 12 total contacts at 2.54 mm. Auxiliary connectors: 0. CAD https://github.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/blob/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd; SKU/population https://www.adafruit.com/product/2717
+- F4: Adafruit PCA9685 16-Channel PWM/Servo Driver (SKU 815): JP3: 1 row(s), 6 total contacts at 2.54 mm, JP4: 1 row(s), 6 total contacts at 2.54 mm, JP1: 3 row(s), 12 total contacts at 2.54 mm, JP2: 3 row(s), 12 total contacts at 2.54 mm, JP5: 3 row(s), 12 total contacts at 2.54 mm, JP6: 3 row(s), 12 total contacts at 2.54 mm. Auxiliary connectors: 1. CAD https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd; SKU/population https://www.adafruit.com/product/815
+- F5: Adafruit HTU21D-F Temperature Humidity Sensor STEMMA QT (SKU 1899): JP1: 1 row(s), 5 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-HTU21D-Breakout-PCB/blob/9a352b1841ff45b684a7263721490af9cc6a455f/Adafruit%20HTU21D-F%20STEMMA%20QT.brd; SKU/population https://www.adafruit.com/product/1899
+- F6: Adafruit BMP280 Pressure Temperature Sensor STEMMA QT (SKU 2651): JP1: 1 row(s), 7 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB/blob/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.brd; SKU/population https://www.adafruit.com/product/2651
+- F7: Adafruit MCP4725 12-bit DAC STEMMA QT (SKU 935): JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 3. CAD https://github.com/adafruit/Adafruit-MCP4725-PCB/blob/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd; SKU/population https://www.adafruit.com/product/935
+- F8: Adafruit BSS138 Four-channel Bidirectional Logic Level Converter (SKU 757): JP3: 1 row(s), 6 total contacts at 2.54 mm, JP4: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 0. CAD https://github.com/adafruit/4-Channel-Level-Shifter-PCB/blob/865a9f0c1221f477e8491f59ca49b9fd74711140/Adafruit%20FET%204-Channel%20Shifter.brd; SKU/population https://www.adafruit.com/product/757
+- F9: Adafruit INA219 Current Sensor STEMMA QT (SKU 904): JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 3. CAD https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/blob/f7ef6a540648572549d64ff2b9b1932f17173e40/Adafruit%20INA219%20STEMMA%20QT.brd; SKU/population https://www.adafruit.com/product/904
+- F10: Adafruit HTU31 Temperature Humidity Sensor (SKU 4832): JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-HTU31-PCB/blob/9ac7a4470edb8555ba33d1aba62f260fa4cc63da/Adafruit%20HTU31D.brd; SKU/population https://www.adafruit.com/product/4832
+- F11: Adafruit AW9523 GPIO Expander LED Driver (SKU 4886): JP1: 1 row(s), 11 total contacts at 2.54 mm, JP7: 1 row(s), 11 total contacts at 2.54 mm, JP2: 1 row(s), 11 total contacts at 2.54 mm, JP3: 1 row(s), 5 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd; SKU/population https://www.adafruit.com/product/4886
+- F12: Adafruit BH1750 Light Sensor (SKU 4681): JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-BH1750-PCB/blob/0b61eb2c8c54254a5685adc044fbf7c5ab968e56/Adafruit%20BH1750.brd; SKU/population https://www.adafruit.com/product/4681
+- F13: Adafruit BMP388 Pressure Altimeter STEMMA QT (SKU 3966): JP1: 1 row(s), 8 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-BMP3xx-PCB/blob/e99a964dda0d6deb42314f8d9a376e4dd714fe59/Adafruit%20BMP388%20QT.brd; SKU/population https://www.adafruit.com/product/3966
+- F14: Adafruit BNO055 9-DOF Orientation IMU STEMMA QT (SKU 4646): JP2: 1 row(s), 4 total contacts at 2.54 mm, JP3: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-BNO055-Breakout-PCB/blob/64c5a387aa807edb01eff440d1cd07ce4b608642/Adafruit%20BNO055%20STEMMA%20QT.brd; SKU/population https://www.adafruit.com/product/4646
+- F15: Adafruit TMP117 Temperature Sensor (SKU 4821): JP1: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-TMP117-PCB/blob/874b3a5b27792d4d166547bab075cb963e1bdb32/Adafruit_TMP117.brd; SKU/population https://www.adafruit.com/product/4821
+- F16: Adafruit SHT40 Temperature Humidity Sensor (SKU 4885): JP2: 1 row(s), 5 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-SHT40-PCB/blob/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/Adafruit%20SHT40.brd; SKU/population https://www.adafruit.com/product/4885
+- F17: Adafruit LIS3DH Triple-axis Accelerometer STEMMA QT (SKU 2809): JP3: 1 row(s), 6 total contacts at 2.54 mm, JP2: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/blob/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd; SKU/population https://www.adafruit.com/product/2809
+- F18: Adafruit LSM6DSOX 6-DoF Accelerometer Gyroscope (SKU 4438): JP1: 1 row(s), 9 total contacts at 2.54 mm, JP2: 1 row(s), 5 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-LSM6DSOX-PCB/blob/c05abef4675b0380fbf3d23171615a2f1ac0b130/Adafruit_LSM6DSOX.brd; SKU/population https://www.adafruit.com/product/4438
+- F19: Adafruit VL53L1X Time of Flight Distance Sensor (SKU 3967): JP2: 1 row(s), 6 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-VL53L1X-PCB/blob/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd; SKU/population https://www.adafruit.com/product/3967
+- F20: Adafruit MCP23017 I2C GPIO Expander (SKU 5346): JP7: 1 row(s), 8 total contacts at 2.54 mm, JP8: 1 row(s), 8 total contacts at 2.54 mm, edge_row_lower: 1 row(s), 13 total contacts at 2.54 mm, edge_row_upper: 1 row(s), 13 total contacts at 2.54 mm. Auxiliary connectors: 2. CAD https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd; SKU/population https://www.adafruit.com/product/5346
+
+## Scope filter
+No electrical or mechanical-fit qualification is inferred from header geometry. Mounting holes, capacitor footprints, SMT component pads and connector solder anchors are not header contacts. Loose supplied male header-strip lengths are not board counts. Four initial candidate SKU guesses were rejected after official pages identified unrelated products (4092, 4639, 4695, 4814). All final records are distinct from the prior 16-SKU catalog.
+
+## Object filter
+Current STEMMA QT files selected instead of historical non-QT CAD when both exist. MCP23017 CAD 5+8 segments merged into each physically contiguous 1x13 outer row; inner 1x8 rows retained separately. AW9523 four physical single rows retained including auxiliary VIN contacts. PCA9685 four 3x4 groups preserved, not flattened into a fictitious continuous 3x16 bank. INA219 current product revision has a factory-soldered 3.5 mm terminal block since 2024-05-31; corrected from older loose-terminal assembly assumption.
+
+## Conclusions
+- F1–F20 support the exact geometry encoded in sensor_catalog.json: 20 additional SKUs, all based on manufacturer PCB files pinned to commit.
+- F1/F2: ADS1015 and ADS1115 QT each have 12 2.54 mm contacts in two six-position rows.
+- F11/F20: AW9523 has 38 2.54 mm contacts; MCP23017 has 42. Advertised 16 GPIO is not a physical-contact total.
+- F18: LSM6DSOX has 9+5 contacts; photo captions describing supplied strips do not alter the CAD count.
+- F9: INA219 auxiliary terminal population is revision-sensitive.
+
+## Next steps / Risks
+Actual JIG fit remains unknown for every record. Test row spacing, connector clearance, retained contact length, force and contact resistance on exact purchased revisions before fit claims. Driver/load contacts require independent current and temperature qualification. Product photos are representative, not inspection of a delivered unit.
+Next disjoint research set: SparkFun Qwiic sensor boards and Pololu motor/distance carriers, exact SKUs to be resolved from manufacturer pages; do not merge unverified candidates into this batch.
+
+## Validation
+All 20 records have populated required schema fields and source URLs; all 2.54 mm header counts come from actual plated PCB contacts. Auxiliary JST-SH uses four electrical contacts rather than six SMT pads (two are mechanical anchors). CAD source files, raw extracted pad evidence and deterministic extraction/build scripts are preserved alongside this report.

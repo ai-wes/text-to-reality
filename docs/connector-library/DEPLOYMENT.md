@@ -22,10 +22,15 @@ AUTO_IOT attempt was preserved separately and removed from that working tree.
 - Existing `connectors_for_boards`: strict counts, full rows, per-row fit issues,
   excluded incompatible headers, functional BOM draft and row-diagram inputs.
   Packing is a separate procurement calculation. It never approves physical fit.
+- Maintainer `enrich-boards` CLI: separate exact-record/field/source guards for
+  descriptive gender/population updates; originals and all qualification gates
+  preserved. See BATCH-IMPORT.md.
 - Existing `check_package`: exact row coverage, topology/envelope/orientation,
   current limits, dependency exceptions, BOM quantity checks and unresolved
   model approval gates. Old counts-only JIG packages now fail deliberately.
-- Existing `boards.json`: 75 entries. All 20 legacy IDs remain; 56 research
+- Existing `boards.json`: 320 entries. Wave eight adds 10 exact factory-populated SKUs, wave seven adds 12 exclusions, wave six adds eight exclusions, wave five adds 36, wave four adds 46, wave three adds 57, and wave two adds 76 research-only identities;
+  see BATCH-IMPORT.md and pending-batches.json for the validated importer workflow.
+  The first wave contained 75 entries. All 20 legacy IDs remain; 56 research
   records add 55 identities and enrich the existing Pico identity. Original
   records, source URLs, provisional data and excluded auxiliary groups remain.
 
@@ -85,3 +90,49 @@ record to exact approved model/source hashes, base/retainer pairs, acceptance
 envelopes, mount/clearance files and illustrated retention protocol. Physical
 fit, engagement, insulation, retention, release, fatigue and electrical ratings
 remain protocol/evidence requirements. No latch motion or approval was invented.
+
+## Consolidated acceptance
+
+Eight research waves supply 301 exact source records. The runtime has 320
+identities: those records plus 19 original broad family references. Three
+source-bound photo enrichments change only six normalized descriptive fields;
+all prior originals remain intact. All supplied accepted records are integrated; none
+are quarantined. Wave-eight held SKU 102010634 is not imported because its CAD
+model mapping remains unresolved. Factory population is an assembly fact, never
+connector-fit approval. The final regression suite and installed-wheel probe are
+recorded in verification.json in the content-addressed release candidate.
+
+Software is integrated and tested locally. Actual source activation uses the
+editable interpreter command above; published uvx pins remain unchanged. A
+public release still needs destination/version/scope, and physical deployment
+still needs exact approved connector-model/hash binding and fit/electrical
+evidence. No latch sequence, connector approval, R29 qualification, Git push,
+agent-settings update or hosted endpoint is implied by catalog completeness.
+
+## Compact runtime alongside full evidence
+
+Build with `.venv/bin/python scripts/build_connector_candidate.py --output /tmp/new-candidate --compact-runtime`.
+The full package retains its source distribution and research evidence; the
+separate compact archive contains the identical tested wheel, complete skill,
+deployment guidance, verification and source-snapshot identity. It omits full
+research assets and editable source/tests. Each archive has its own SHA-256
+manifest; the compact manifest binds the full release manifest and archive hash.
+Use the compact package for local installation and the full package for source
+review and evidence. Neither activates agent settings or publishes the runtime.
+
+## Authorized source closeout — 2026-10-06
+
+The owner subsequently authorized committing and pushing completed source work.
+The existing `origin` is `https://github.com/ai-wes/text-to-reality.git`; its main
+head matches local baseline `ca8e665ab44b4c479098104d43638b7d982fb479`.
+The source closeout stays on `main` and retains all existing owner commits.
+Fresh regression validation passes all 127 tests with 320 catalog identities.
+The previously verified installed-wheel receipt is preserved in
+`verification-2026-10-06.json`. This source push does not publish a package,
+change agent settings, or activate a hosted service.
+
+The saved installed-wheel receipt is historical. Its board catalog matches this
+source checkout, but its connector rules precede the owner's current committed
+rules. The fresh 127-test source run exercises the current rules. Rebuild an
+installation candidate from the committed source before choosing local runtime
+activation; existing candidate archives are retained unchanged.

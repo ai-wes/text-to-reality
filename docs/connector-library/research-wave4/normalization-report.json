@@ -1,0 +1,366 @@
+{
+  "accepted": 46,
+  "quarantined": [],
+  "adjustments": [
+    {
+      "id": "st-nucleo-g031k8",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g431kb",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g070rb",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g071rb",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g0b1re",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g431rb",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g474re",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-g491re",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-stm32f3discovery",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-32l0538discovery",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "P2: preserve source confidence",
+        "P3: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-32l152cdiscovery",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "P1: preserve source confidence",
+        "P2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-stm32vldiscovery",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "P1: preserve source confidence",
+        "P2: preserve source confidence",
+        "P3: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-5000",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5300",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5345",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5323",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5483",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5691",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5400",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3405",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2821",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5933",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3505",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3382",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "sparkfun-lcd-23453",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "J3: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-lcd-15143",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "J2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-lcd-24606",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL"
+      ]
+    },
+    {
+      "id": "sparkfun-lcd-15173",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "J3: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-lcd-15079",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "J2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-lcd-29530",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "J5: preserve source confidence"
+      ]
+    },
+    {
+      "id": "waveshare-14657",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL"
+      ]
+    },
+    {
+      "id": "waveshare-15868",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL"
+      ]
+    },
+    {
+      "id": "waveshare-18231",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL"
+      ]
+    },
+    {
+      "id": "waveshare-18079",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15335",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "J3: preserve source confidence",
+        "J4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15805",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "physical_row_1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-18642",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "physical_row_1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-16467",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "J1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15242",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "physical_row_1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15177",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "physical_row_1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-bob-16784",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url"
+      ]
+    },
+    {
+      "id": "sparkfun-dev-15334",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-14722",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "physical_row_1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-dev-17047",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "J9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-16466",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "J2: preserve source confidence",
+        "J1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "sparkfun-sen-16476",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "physical_row_1: preserve source confidence"
+      ]
+    }
+  ]
+}

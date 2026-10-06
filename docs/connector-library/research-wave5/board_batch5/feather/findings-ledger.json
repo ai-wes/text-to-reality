@@ -1,0 +1,80 @@
+[
+  {
+    "id": "adafruit-4000",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-AirLift-PCB/blob/502637b33ce97a9a3048938506316001ef6dcd72/Metro%20M4%20Express%20AirLift.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5600",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Metro-M7-with-microSD-PCB/blob/d7e0bc2ff4d5b9304a915f01442e9cbdc6535e0e/Adafruit%20Metro%20M7%20with%20microSD.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4950",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Metro-M7-with-AirLift-PCB/blob/a3c861b5d9f21f124cc4e0cc4034f511857c55a1/Adafruit%20Metro%20M7%20iMX%20RT1011%20with%20AirLift.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4064",
+    "claim": "Full physical rows 10+8+8+8+8+8+36 with measured CAD pitches 2.54,2.54,2.54,2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Grand-Central-PCB/blob/9e59fe3cd1ea37aa6caaf5780fa80956e6ccd74b/Adafruit%20Grand%20Central%20M4%20Express%20rev%20B.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2466",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-METRO-328-PCB/blob/1d635d70533c446c925ec77240370cfee4fba7ad/Metro%20THM%2BLDO%20Rev%20C%20-%20CP2104.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2488",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-METRO-328-PCB/blob/1d635d70533c446c925ec77240370cfee4fba7ad/Metro%20THM%2BLDO%20Rev%20C%20-%20CP2104.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2590",
+    "claim": "Full physical rows 14+14 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-METRO-328-PCB/blob/1d635d70533c446c925ec77240370cfee4fba7ad/Metro%20Mini%20328%20V2%20-%20STEMMA%20QT.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4759",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M4-CAN-PCB/blob/d82af0d26250cb47e0685715276474798bb79470/Adafruit%20Feather%20M4%20Express%20CAN.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3027",
+    "claim": "Full physical rows 16+12+2+2 with measured CAD pitches 2.54,2.54,2.0,2.0",
+    "source": "https://github.com/adafruit/Adafruit-Feather-32u4-FONA-PCB/blob/db45e3e1a5e53590cac33a1f3adc783d1e70ea01/Adafruit%20Feather%2032u4%20FONA.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3056",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-WICED-WiFi-Feather-PCB/blob/f2c70ce49ef3df7f60be3a6a30fa39ff34a9dde3/Adafruit%20WICED%20WiFi%20Feather.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5889",
+    "claim": "Full physical rows 14+14 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ItsyBitsy-ESP32-PCB/blob/552bf913248863c3a8e1e96671081113e4072478/Adafruit%20ItsyBitsy%20ESP32.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5996",
+    "claim": "Full physical rows 7+7 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-QT-Py-CH32V203-PCB/blob/c5c1580d9823d2f8923778530339179531d024f6/Adafruit%20QT%20Py%20CH32V203.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5960",
+    "claim": "Full physical rows 7+7 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-CH552-QT-Py-PCB/blob/475a3a83213fda98c1a530a84eb6e167cd187b4b/Adafruit%20CH552%20QT%20Py.brd",
+    "rank": 1
+  }
+]

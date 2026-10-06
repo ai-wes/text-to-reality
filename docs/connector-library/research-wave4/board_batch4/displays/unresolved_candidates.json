@@ -1,0 +1,36 @@
+[
+  {
+    "manufacturer": "SparkFun",
+    "sku": "LCD-16396",
+    "name": "16x2 SerLCD RGB Backlight Qwiic",
+    "blocker": "Product schematic available, but physical header layout/pitch and complete auxiliary/interboard geometry not validated; OpenLCD repository contains firmware rather than PCB CAD."
+  },
+  {
+    "manufacturer": "SparkFun",
+    "sku": "LCD-16397",
+    "name": "16x2 SerLCD RGB Text Qwiic",
+    "blocker": "Product schematic available, but physical header layout/pitch and complete auxiliary/interboard geometry not validated; OpenLCD repository contains firmware rather than PCB CAD."
+  },
+  {
+    "manufacturer": "SparkFun",
+    "sku": "LCD-16398",
+    "name": "20x4 SerLCD RGB Backlight Qwiic",
+    "blocker": "Product schematic available, but physical header layout/pitch and complete auxiliary/interboard geometry not validated; OpenLCD repository contains firmware rather than PCB CAD."
+  },
+  {
+    "manufacturer": "Waveshare",
+    "sku": "10451",
+    "name": "1.3inch OLED B",
+    "known_pin_count": 8,
+    "pitch_mm": null,
+    "blocker": "Manufacturer documents full eight-pin header including NC and vertical orientation, but pin pitch not validated from readable dimension/CAD source."
+  },
+  {
+    "manufacturer": "Waveshare",
+    "sku": "10514",
+    "name": "0.95inch RGB OLED B",
+    "known_pin_count": 8,
+    "pitch_mm": null,
+    "blocker": "Manufacturer documents full eight-pin header including NC and vertical orientation, but pin pitch not validated from readable dimension/CAD source."
+  }
+]

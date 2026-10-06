@@ -1,0 +1,2402 @@
+{
+  "schemaVersion": 1,
+  "note": "PROPOSED RESEARCH IMPORT ONLY. Original records and revision qualifications remain authoritative. All fit unverified. Apply matcher safety gating for gender, pitch confidence, population, shrouds, auxiliary groups and row count.",
+  "boards": [
+    {
+      "id": "seeed-102010388",
+      "name": "Seeed Studio XIAO SAMD21 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010388"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010388",
+      "source": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+      "headers": [
+        {
+          "id": "J2",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "J2",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "J4",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "J4",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+          "local_file": "102010388.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+          "local_file": "102010388-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "parent_geometry_manufacturer CAD",
+          "url": "https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/Seeeduino-XIAO-v1.0.zip",
+          "local_file": "xiao-samd21/Seeeduino XIAO_v1.0_191112.brd",
+          "sha256": "7a21925c831d3c00e8b9d1004f02f19c81d13796fc83ec4e9099266fa440262c"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/0"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010388",
+        "name": "Seeed Studio XIAO SAMD21 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010388"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010388",
+        "source": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+        "parent_board_id": "seeed-xiao-samd21",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "J2",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "J4",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+            "local_file": "102010388.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+            "local_file": "102010388-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "parent_geometry_manufacturer CAD",
+            "url": "https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/Seeeduino-XIAO-v1.0.zip",
+            "local_file": "xiao-samd21/Seeeduino XIAO_v1.0_191112.brd",
+            "sha256": "7a21925c831d3c00e8b9d1004f02f19c81d13796fc83ec4e9099266fa440262c"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_wave2_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-xiao-samd21"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010630",
+      "name": "Seeed Studio XIAO RP2040 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010630"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010630",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+      "headers": [
+        {
+          "id": "edge-row-1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "edge-row-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "edge-row-2",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "edge-row-2",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+          "local_file": "102010630.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+          "local_file": "102010630-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "manufacturer_header_specification",
+          "url": "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/",
+          "claim": "Official XIAO design guide explicitly specifies two 7-pin 2.54 mm male headers; RP2040 and ESP32C3 named in guide"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/1"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010630",
+        "name": "Seeed Studio XIAO RP2040 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010630"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010630",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+        "parent_board_id": "seeed-studio-xiao-rp2040-standard-unsoldered",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "edge-row-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "edge-row-2",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+            "local_file": "102010630.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+            "local_file": "102010630-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "manufacturer_header_specification",
+            "url": "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/",
+            "claim": "Official XIAO design guide explicitly specifies two 7-pin 2.54 mm male headers; RP2040 and ESP32C3 named in guide"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_research_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-studio-xiao-rp2040-standard-unsoldered"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010631",
+      "name": "Seeed Studio XIAO nRF52840 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010631"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010631",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+      "headers": [
+        {
+          "id": "U4-side--1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "U4-side--1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "U4-side-1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "U4-side-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+          "local_file": "102010631.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+          "local_file": "102010631-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "parent_geometry_manufacturer CAD",
+          "url": "https://files.seeedstudio.com/wiki/XIAO-BLE/Res/260828_Seeed_Studio_XIAO_nRF52840_v1.2.zip",
+          "local_file": "xiao-nrf52840/Seeed Studio XIAO nRF52840 v1.2.kicad_pcb",
+          "sha256": "4d0a45f2427ba6750d1017441a266375ef59ea2088825e4dc96eeb507a75e167"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/2"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010631",
+        "name": "Seeed Studio XIAO nRF52840 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010631"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010631",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+        "parent_board_id": "seeed-xiao-nrf52840",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "U4-side--1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "U4-side-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+            "local_file": "102010631.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+            "local_file": "102010631-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "parent_geometry_manufacturer CAD",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-BLE/Res/260828_Seeed_Studio_XIAO_nRF52840_v1.2.zip",
+            "local_file": "xiao-nrf52840/Seeed Studio XIAO nRF52840 v1.2.kicad_pcb",
+            "sha256": "4d0a45f2427ba6750d1017441a266375ef59ea2088825e4dc96eeb507a75e167"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_wave2_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-xiao-nrf52840"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010632",
+      "name": "Seeed Studio XIAO nRF52840 Sense (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010632"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010632",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+      "headers": [
+        {
+          "id": "U4-side--1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "U4-side--1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "U4-side-1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "U4-side-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+          "local_file": "102010632.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+          "local_file": "102010632-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "parent_geometry_manufacturer CAD",
+          "url": "https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed-Studio-XIAO-nRF52840V1.1-KiCad-Project-260105.zip",
+          "local_file": "xiao-nrf52840-sense/Seeed Studio XIAO nRF52840 v1.1.kicad_pcb",
+          "sha256": "0add0614db7506e50f48c62e4368c60eb725638caceec57fd023c7dab3622bff"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/3"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010632",
+        "name": "Seeed Studio XIAO nRF52840 Sense (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010632"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010632",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+        "parent_board_id": "seeed-xiao-nrf52840-sense",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "U4-side--1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "U4-side-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+            "local_file": "102010632.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+            "local_file": "102010632-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "parent_geometry_manufacturer CAD",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed-Studio-XIAO-nRF52840V1.1-KiCad-Project-260105.zip",
+            "local_file": "xiao-nrf52840-sense/Seeed Studio XIAO nRF52840 v1.1.kicad_pcb",
+            "sha256": "0add0614db7506e50f48c62e4368c60eb725638caceec57fd023c7dab3622bff"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_wave2_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-xiao-nrf52840-sense"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010633",
+      "name": "XIAO ESP32C3 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010633"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010633",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+      "headers": [
+        {
+          "id": "left",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "left",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "right",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "right",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+          "local_file": "102010633.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+          "local_file": "102010633-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "manufacturer_header_specification",
+          "url": "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/",
+          "claim": "Official XIAO design guide explicitly specifies two 7-pin 2.54 mm male headers; RP2040 and ESP32C3 named in guide"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/4"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010633",
+        "name": "XIAO ESP32C3 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010633"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010633",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+        "parent_board_id": "seeed-xiao-esp32c3",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "left",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "right",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Manufacturer XIAO design guide explicitly specifies 7-pin 2.54 mm male headers",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+            "local_file": "102010633.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+            "local_file": "102010633-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "manufacturer_header_specification",
+            "url": "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/",
+            "claim": "Official XIAO design guide explicitly specifies two 7-pin 2.54 mm male headers; RP2040 and ESP32C3 named in guide"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_research_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-xiao-esp32c3"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010635",
+      "name": "XIAO ESP32S3 Sense (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010635"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010635",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+      "headers": [
+        {
+          "id": "left",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "left",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "right",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "right",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+          "local_file": "102010635.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+          "local_file": "102010635-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "manufacturer_CAD_pad_extraction",
+          "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH%26PCB_260226.zip",
+          "local_file": "s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/extracted-pads.json",
+          "claim": "14 unique edge positions, 1\u20137 and 8\u201314, x offsets -7.62,-5.08,-2.54,0,2.54,5.08,7.62 mm; duplicate castellated pads excluded"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/5"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010635",
+        "name": "XIAO ESP32S3 Sense (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010635"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010635",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+        "parent_board_id": "seeed-xiao-esp32s3-sense",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "left",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "right",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+            "local_file": "102010635.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+            "local_file": "102010635-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "manufacturer_CAD_pad_extraction",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH%26PCB_260226.zip",
+            "local_file": "s3sense-cad/202003753_XIAO ESP32S3 Sense_v1.5_SCH&PCB_260226/extracted-pads.json",
+            "claim": "14 unique edge positions, 1\u20137 and 8\u201314, x offsets -7.62,-5.08,-2.54,0,2.54,5.08,7.62 mm; duplicate castellated pads excluded"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_research_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-xiao-esp32s3-sense"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010636",
+      "name": "XIAO ESP32C6 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010636"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010636",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+      "headers": [
+        {
+          "id": "left",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "left",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "right",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "right",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+          "local_file": "102010636.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+          "local_file": "102010636-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "manufacturer_CAD_pad_extraction",
+          "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+          "local_file": "c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/extracted-pads.json",
+          "claim": "14 unique edge positions, 1\u20137 and 8\u201314, x offsets -7.62,-5.08,-2.54,0,2.54,5.08,7.62 mm; duplicate castellated pads excluded"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/6"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010636",
+        "name": "XIAO ESP32C6 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010636"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010636",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+        "parent_board_id": "seeed-xiao-esp32c6",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "left",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "right",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+            "local_file": "102010636.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+            "local_file": "102010636-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "manufacturer_CAD_pad_extraction",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+            "local_file": "c6-cad/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/extracted-pads.json",
+            "claim": "14 unique edge positions, 1\u20137 and 8\u201314, x offsets -7.62,-5.08,-2.54,0,2.54,5.08,7.62 mm; duplicate castellated pads excluded"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_research_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-xiao-esp32c6"
+        }
+      }
+    },
+    {
+      "id": "seeed-102010637",
+      "name": "Seeed Studio XIAO RP2350 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Seeed Studio SKU 102010637"
+      ],
+      "kind": "board",
+      "manufacturer": "Seeed Studio",
+      "sku": "102010637",
+      "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+      "headers": [
+        {
+          "id": "edge-row-1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "edge-row-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "edge-row-2",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "edge-row-2",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+          "local_file": "102010637.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+          "local_file": "102010637-0.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "manufacturer_CAD_pad_extraction",
+          "url": "https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH%26PCB_240626.zip",
+          "local_file": "rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/extracted-pads.json",
+          "claim": "14 unique edge positions, 1\u20137 and 8\u201314, x offsets -7.62,-5.08,-2.54,0,2.54,5.08,7.62 mm; duplicate castellated pads excluded"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/7"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "seeed-102010637",
+        "name": "Seeed Studio XIAO RP2350 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Seeed Studio SKU 102010637"
+        ],
+        "kind": "board",
+        "manufacturer": "Seeed Studio",
+        "sku": "102010637",
+        "source": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+        "parent_board_id": "seeed-studio-xiao-rp2350-unsoldered",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "edge-row-1",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "edge-row-2",
+            "pin_count": 7,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Exact parent manufacturer CAD: adjacent longitudinal pad offsets differ by 2.54 mm",
+            "population_evidence": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+            "gender_evidence": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+            "local_file": "102010637.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+            "local_file": "102010637-0.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "manufacturer_CAD_pad_extraction",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH%26PCB_240626.zip",
+            "local_file": "rp2350-cad/XIAO RP2350 v1.0_SCH&PCB_240626/extracted-pads.json",
+            "claim": "14 unique edge positions, 1\u20137 and 8\u201314, x offsets -7.62,-5.08,-2.54,0,2.54,5.08,7.62 mm; duplicate castellated pads excluded"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_research_bundle/headerBoards.proposed.json",
+          "board_id": "seeed-studio-xiao-rp2350-unsoldered"
+        }
+      }
+    },
+    {
+      "id": "adafruit-3046",
+      "name": "Adafruit Feather HUZZAH ESP8266 (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Adafruit product 3046"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "sku": "3046",
+      "source": "https://www.adafruit.com/product/3046",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "JP1",
+            "pin_count": 16,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.adafruit.com/product/3046",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "JP3",
+            "pin_count": 12,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.adafruit.com/product/3046",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.adafruit.com/product/3046",
+          "local_file": "3046.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+          "local_file": "3046.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "parent_geometry_manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+          "local_file": "Adafruit-Feather-ESP8266-HUZZAH-PCB/Adafruit ESP8266 Feather rev G.brd",
+          "sha256": "c7f249dfa2b899d480b497107b002c45218093275dbc5b5e70952b957d8ad9f3"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/8"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "adafruit-3046",
+        "name": "Adafruit Feather HUZZAH ESP8266 (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Adafruit product 3046"
+        ],
+        "kind": "board",
+        "manufacturer": "Adafruit",
+        "sku": "3046",
+        "source": "https://www.adafruit.com/product/3046",
+        "parent_board_id": "adafruit-2821",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "JP1",
+            "pin_count": 16,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.adafruit.com/product/3046",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "JP3",
+            "pin_count": 12,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent",
+            "population_evidence": "https://www.adafruit.com/product/3046",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.adafruit.com/product/3046",
+            "local_file": "3046.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+            "local_file": "3046.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "parent_geometry_manufacturer PCB",
+            "url": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+            "local_file": "Adafruit-Feather-ESP8266-HUZZAH-PCB/Adafruit ESP8266 Feather rev G.brd",
+            "sha256": "c7f249dfa2b899d480b497107b002c45218093275dbc5b5e70952b957d8ad9f3"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_wave4_bundle/headerBoards.proposed.json",
+          "board_id": "adafruit-2821"
+        }
+      }
+    },
+    {
+      "id": "adafruit-3591",
+      "name": "Adafruit HUZZAH32 ESP32 Feather (Factory Pre-Soldered Male Headers)",
+      "aliases": [
+        "Adafruit product 3591"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "sku": "3591",
+      "source": "https://www.adafruit.com/product/3591",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent; assembled product explicitly states plain 0.1 inch headers",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "JP1",
+            "pin_count": 16,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent; assembled product explicitly states plain 0.1 inch headers",
+            "population_evidence": "https://www.adafruit.com/product/3591",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "male",
+          "shrouded": false,
+          "shroud_evidence": null,
+          "population": "factory_soldered",
+          "confidence": {
+            "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+            "pitch": "manufacturer documented",
+            "population": "exact official SKU verified",
+            "gender": "exact official SKU photo verified"
+          },
+          "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent; assembled product explicitly states plain 0.1 inch headers",
+          "fit_status": "unverified",
+          "physical_fit_verified": false,
+          "comb_qualified": false,
+          "original_header": {
+            "id": "JP3",
+            "pin_count": 12,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent; assembled product explicitly states plain 0.1 inch headers",
+            "population_evidence": "https://www.adafruit.com/product/3591",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "type": "official_exact_SKU",
+          "url": "https://www.adafruit.com/product/3591",
+          "local_file": "3591.html",
+          "claim": "Exact pre-soldered variant and named parent board"
+        },
+        {
+          "type": "official_SKU_photo",
+          "url": "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+          "local_file": "3591.jpg",
+          "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+        },
+        {
+          "type": "parent_geometry_manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+          "local_file": "Adafruit-HUZZAH32-ESP32-Feather-PCB/Adafruit HUZZAH32 ESP32 Feather.brd",
+          "sha256": "992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200"
+        }
+      ],
+      "source_record": {
+        "file": "board_batch8/presoldered/headerBoards.presoldered.proposed.json",
+        "json_pointer": "/boards/9"
+      },
+      "revision": null,
+      "assembly_variants": [],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "candidate_status": null,
+      "presoldered_variant": true,
+      "unresolved": [
+        "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+        "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+        "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+      ],
+      "excluded_headers": [],
+      "original_record": {
+        "id": "adafruit-3591",
+        "name": "Adafruit HUZZAH32 ESP32 Feather (Factory Pre-Soldered Male Headers)",
+        "aliases": [
+          "Adafruit product 3591"
+        ],
+        "kind": "board",
+        "manufacturer": "Adafruit",
+        "sku": "3591",
+        "source": "https://www.adafruit.com/product/3591",
+        "parent_board_id": "adafruit-3405",
+        "parent_compatibility": "Official SKU listing explicitly names the same base board; geometry transfer is limited to the two main edge rows, not revision-specific components or electrical capability",
+        "presoldered_variant": true,
+        "headers": [
+          {
+            "id": "JP1",
+            "pin_count": 16,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent; assembled product explicitly states plain 0.1 inch headers",
+            "population_evidence": "https://www.adafruit.com/product/3591",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          },
+          {
+            "id": "JP3",
+            "pin_count": 12,
+            "pitch_mm": 2.54,
+            "rows": 1,
+            "gender": "male",
+            "shrouded": false,
+            "population": "factory_soldered",
+            "role": "main_edge_row",
+            "full_connector": true,
+            "geometry": "single_row",
+            "pitch_evidence": "Previously extracted exact parent CAD 2.54 mm; SKU listing identifies this as assembled version of that parent; assembled product explicitly states plain 0.1 inch headers",
+            "population_evidence": "https://www.adafruit.com/product/3591",
+            "gender_evidence": "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+            "confidence": {
+              "physical_count": "manufacturer CAD/header specification + exact SKU photo",
+              "pitch": "manufacturer documented",
+              "population": "exact official SKU verified",
+              "gender": "exact official SKU photo verified"
+            },
+            "fit_status": "unverified",
+            "physical_fit_verified": false,
+            "automatic_fit_eligible": false,
+            "comb_qualified": false
+          }
+        ],
+        "evidence": [
+          {
+            "type": "official_exact_SKU",
+            "url": "https://www.adafruit.com/product/3591",
+            "local_file": "3591.html",
+            "claim": "Exact pre-soldered variant and named parent board"
+          },
+          {
+            "type": "official_SKU_photo",
+            "url": "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+            "local_file": "3591.jpg",
+            "claim": "Viewed image: two factory-populated unshrouded straight male edge rows; no female stacking sockets"
+          },
+          {
+            "type": "parent_geometry_manufacturer PCB",
+            "url": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+            "local_file": "Adafruit-HUZZAH32-ESP32-Feather-PCB/Adafruit HUZZAH32 ESP32 Feather.brd",
+            "sha256": "992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200"
+          }
+        ],
+        "fit_status": "unverified",
+        "physical_fit_verified": false,
+        "automatic_fit_eligible": false,
+        "comb_qualified": false,
+        "unresolved": [
+          "Mating height, pin cross-section tolerances, housing width and overhang clearance are not validated",
+          "Retail PCB revision is not pinned to the CAD revision; no whole-board fit certification",
+          "Additional USB, battery, debug, camera, underside pads and expansion connectors are excluded from main row counts"
+        ],
+        "excluded_headers": [],
+        "checked_utc": "2026-10-06",
+        "parent_geometry_record": {
+          "file": "/workspace/shared/board_header_wave4_bundle/headerBoards.proposed.json",
+          "board_id": "adafruit-3405"
+        }
+      }
+    }
+  ]
+}

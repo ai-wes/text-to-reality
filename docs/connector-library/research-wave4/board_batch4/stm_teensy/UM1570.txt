@@ -1,0 +1,2414 @@
+                                                                              UM1570
+                                                                          User manual
+                                         Discovery kit with STM32F303VC MCU
+
+
+           Introduction
+           The STM32F3DISCOVERY Discovery kit is a complete demonstration and development
+           platform for the STMicroelectronics Arm® Cortex®-M4 core-based STM32F303VCT6
+           microcontroller. It includes an ST-LINK/V2 (or V2-B) embedded debug tool interface, an ST
+           MEMS gyroscope, an ST MEMS E-compass, LEDs, push-buttons, and a USB Mini-B
+           connector.
+
+                                         Figure 1. STM32F3DISCOVERY
+
+
+
+
+           Picture is not contractual.
+
+
+
+September 2023                             UM1570 Rev 7                                          1/41
+                                                                                            www.st.com   1
+Contents                                                                                                                         UM1570
+
+
+Contents
+
+1          Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2          Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.1      Codification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3          Development environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.1      System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.2      Development toolchains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.3      Demonstration software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+4          Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+5          Quick start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           5.1      Getting started . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+6          Hardware layout and configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+           6.1      The STM32F3DISCOVERY Discovery board mechanical drawing . . . . . 14
+           6.2      Embedded ST-LINK/V2 (or V2-B) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+                    6.2.1       Drivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+                    6.2.2       ST-LINK/V2 (or V2-B) firmware upgrade . . . . . . . . . . . . . . . . . . . . . . . . 16
+                    6.2.3       VCP configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                    6.2.4       Using ST-LINK/V2 (or V2-B) to program/debug the on-board
+                                STM32F303VCT6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                    6.2.5       Using ST-LINK/V2 (or V2-B) to program/debug an external STM32
+                                application . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+           6.3      Power supply and power selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.4      LEDs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.5      Push-buttons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.6      USB device supported . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+           6.7      ST MEMS E-compass (ST MEMS LSM303DLHC or LSM303AGR) . . . . 20
+           6.8      ST MEMS gyroscope (ST MEMS L3GD20 or I3G4250D) . . . . . . . . . . . . 20
+           6.9      Idd (JP3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+           6.10     OSC clock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+                    6.10.1      OSC clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+2/41                                                  UM1570 Rev 7
+UM1570                                                                                                                 Contents
+
+
+                        6.10.2      OSC 32 kHz clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+               6.11     Solder bridges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+               6.12     Extension connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+7              STM32F3DISCOVERY information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+               7.1      Product marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+               7.2      STM32F3DISCOVERY product history . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+               7.3      Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+8              Federal Communications Commission (FCC)
+               and ISED Canada (IC) Compliance Statements . . . . . . . . . . . . . . . . . . 38
+               8.1      FCC Compliance Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+               8.2      ISED Compliance Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+
+Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+
+
+
+                                                       UM1570 Rev 7                                                           3/41
+                                                                                                                                       3
+List of tables                                                                                                                       UM1570
+
+
+List of tables
+
+Table 1.    Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 2.    Codification explanation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 3.    ON/OFF conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Table 4.    Jumper states . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Table 5.    SWD debug connector (CN3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Table 6.    Solder bridges. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Table 7.    STM32F303VCT6 MCU pin description versus board function . . . . . . . . . . . . . . . . . . . . . 23
+Table 8.    Product history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Table 9.    Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Table 10.   Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+
+
+
+4/41                                                       UM1570 Rev 7
+UM1570                                                                                                                  List of figures
+
+
+List of figures
+
+Figure 1.   STM32F3DISCOVERY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 2.   Hardware block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 3.   Board layout (top view) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 4.   Board layout (bottom view) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 5.   STM32F3DISCOVERY mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Figure 6.   USB composite device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Figure 7.   STM32F3DISCOVERY connections. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Figure 8.   ST-LINK/V2 (or V2-B) connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+
+
+
+                                                          UM1570 Rev 7                                                                  5/41
+                                                                                                                                                 5
+Features                                                                                                       UM1570
+
+
+1          Features
+
+           The STM32F3DISCOVERY board offers the following features.
+           •     STM32F303VCT6 Arm®(a)-based microcontroller featuring 256 Kbytes of flash
+                 memory, 48 Kbytes of RAM in an LQFP100 package
+           •     On-board ST-LINK/V2 for PCB version A or B or ST-LINK/V2-B for PCB version C and
+                 newer
+           •     USB ST-LINK functions:
+                 –     Debug port
+                 –     Virtual COM port with ST-LINK/V2-B only
+                 –     Mass storage with ST-LINK/V2-B only
+           •     Board power supply: through the USB bus or from an external 3 V or 5 V supply
+                 voltage
+           •     External application power supply: 3 V and 5 V
+           •     ST MEMS motion sensor, 3-axis digital output gyroscope
+           •     ST MEMS system-in-package featuring a 3D digital linear acceleration sensor and a
+                 3D digital magnetic sensor
+           •     Ten LEDs:
+                 –     LD1 (red) for 3.3 V power-on.
+                 –     LD2 (red/green) for USB communication.
+                 –     Eight user LEDs, LD3/10 (red), LD4/9 (blue), LD5/8 (orange), and LD6/7 (green).
+           •     Two push-buttons (user and reset)
+           •     USB USER with Mini-B connector
+           •     Extension header for LQFP100 I/Os for quick connection to prototyping board and easy
+                 probing
+           •     Comprehensive free software including a variety of examples, part of STM32CubeF3
+                 package or STSW-STM32118 for legacy standard library usage
+           A large number of free ready-to-run application firmware examples is available at
+           www.st.com/stm32f3discovery to support quick evaluation and development.
+
+
+
+
+           a. Arm is a registered trademark of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+
+
+
+6/41                                               UM1570 Rev 7
+UM1570                                                                                   Ordering information
+
+
+2        Ordering information
+
+         To order the STM32F3DISCOVERY Discovery kit with the STM32F303VCT6
+         microcontroller, refer to Table 1. Additional information is available from the datasheet and
+         reference manual of the target microcontroller.
+
+                                           Table 1. Ordering information
+                       Order code                         Board reference                      Target STM32
+
+                STM32F3DISCOVERY(1)                          MB1035      (2)
+                                                                                          STM32F303VCT6
+         1. STM32F3DISCOVERY with ST-LINK/V2 for PCB version B, with ST-LINK/V2-B for PCB version C and
+            newer.
+         2. Subsequently named main board in the rest of the document.
+
+
+
+2.1      Codification
+         The meaning of the codification is explained in Table 2.
+
+                                         Table 2. Codification explanation
+           STM32XXDISCOVERY                        Description                 Example: STM32F3DISCOVERY
+
+                                       MCU series in STM32 32-bit Arm
+                      XX                                                       STM32F3 series
+                                       Cortex MCUs
+                DISCOVERY              Discovery kit                           Discovery kit
+
+
+
+
+                                               UM1570 Rev 7                                                   7/41
+                                                                                                                     40
+Development environment                                                                                    UM1570
+
+
+3         Development environment
+
+3.1       System requirements
+          •     Multi-OS support: Windows® 10, Linux® 64-bit, or macOS®(a)(b)(c)
+          •     USB Type-A or USB Type-C® to Mini-B cable
+
+
+3.2       Development toolchains
+          •     IAR Systems® - IAR Embedded Workbench®(d)
+          •     Keil® - MDK-ARM(d)
+          •     STMicroelectronics - STM32CubeIDE
+
+
+3.3       Demonstration software
+          The demonstration software, included in the STM32Cube MCU Package corresponding to
+          the on-board microcontroller, is preloaded in the STM32 flash memory for easy
+          demonstration of the device peripherals in standalone mode. The latest versions of the
+          demonstration source code and associated documentation can be downloaded from
+          www.st.com.
+
+
+
+
+          a. macOS is a trademark of Apple Inc., registered in the U.S. and other countries and regions.
+          b. Linux is a registered trademark of Linus Torvalds.
+          c.   Windows is a trademark of the Microsoft group of companies.
+          d. On Windows® only.
+
+
+
+8/41                                              UM1570 Rev 7
+UM1570                                                                                     Conventions
+
+
+4        Conventions
+
+         Table 3 defines some conventions used in the present document.
+
+                                      Table 3. ON/OFF conventions
+                 Convention                                     Definition
+
+               Jumper JPx ON                                   Jumper fitted
+               Jumper JPx OFF                                Jumper not fitted
+               Jumper JPx [1-2]                    Jumper fitted between pin 1 and pin 2
+            Solder bridge SBx ON                  SBx connections closed by 0 Ω resistor
+            Solder bridge SBx OFF                       SBx connections left open
+               Resistor Rx ON                               Resistor soldered
+               Resistor Rx OFF                             Resistor not soldered
+               Capacitor Cx ON                              Capacitor soldered
+              Capacitor Cx OFF                            Capacitor not soldered
+
+
+Note:    Board figures and photos in this document are based on version B. Versions C, D, and E are
+         similar.
+
+
+
+
+                                         UM1570 Rev 7                                             9/41
+                                                                                                         40
+Quick start                                                                                           UM1570
+
+
+5             Quick start
+
+              The STM32F3DISCOVERY board is a low-cost and easy-to-use development kit to
+              evaluate quickly and start development with an STM32F3 series microcontroller. Before
+              installing and using the product, accept the Evaluation Product License Agreement from the
+              www.st.com/stm32f3discovery web page. For more information on the
+              STM32F3DISCOVERY board and demonstration software, visit the
+              www.st.com/stm32f3discovery web page.
+
+
+5.1           Getting started
+              Follow the sequence below to configure the STM32F3DISCOVERY board and launch the
+              DISCOVER application:
+              1.   Check the jumper positions on the board, JP3 ON, CN4 ON (DISCOVERY selected).
+              2.   Connect the STM32F3DISCOVERY board to a PC with a USB cable Type-A or USB
+                   Type-C® to Mini-B through the USB ST-LINK or USB USER connector to power the
+                   board. The red LEDs LD1 (PWR) and LD2 (COM) light up.
+              3.   The eight LED indicators blink sequentially.
+              4.   Press the USER button to enable the ST MEMS gyroscope. Hold the board horizontally
+                   then tilt it. Observe how the blinking of the LEDs indicates the gyroscope movement.
+                   Press the USER button again and the LEDs restart blinking sequentially.
+              5.   Press the USER button to enable the MEMS acceleration sensor. Hold the board
+                   horizontally then tilt it. Observe how the blinking of the LEDs indicates the tilt of the
+                   board relative to the horizontal plane. Press the USER button again and the LEDs
+                   restart blinking sequentially.
+              6.   Press the USER button. LD3, LD6, LD7, and LD10 are ON. The board is recognized as
+                   a standard mouse (the board must be connected through the USB USER connector).
+                   Move the board to control the cursor on the screen. Press the USER button again and
+                   the LEDs restart blinking sequentially.
+              7.   The demo application software as well as other software examples for exploring
+                   STM32F3 features are available at www.st.com/stm32f3discovery.
+
+
+
+
+10/41                                           UM1570 Rev 7
+UM1570                                                            Hardware layout and configuration
+
+
+6        Hardware layout and configuration
+
+         The STM32F3DISCOVERY board is designed around the STM32F303VCT6
+         microcontroller in a 100-pin LQFP package.
+         Figure 2 illustrates the connections between the STM32F303VCT6 and its peripherals
+         (ST-LINK/V2, push-buttons, LEDs, USB, ST MEMS gyroscope, ST MEMS E-compass, and
+         connectors).
+         Figure 2 and Figure 3 help the user to locate these features on the STM32F3DISCOVERY
+         board.
+
+                                   Figure 2. Hardware block diagram
+
+
+                                                    Mini USB
+
+
+
+
+                                              Embedded
+                                         ST-LINK/V2 (or V2-B)
+                          SWD
+
+
+
+
+                                             STM32F303VCT6
+
+                                        IO                           IO
+                                                                                 Header
+                          Header
+
+
+
+
+                                                       IO       RESET
+
+
+
+                                         LEDs                     B2
+                                       LD3...LD10               RESET
+
+                                      L3GD20 or                   B1
+                                      I3G4250D                   USER
+
+
+                                                            LSM303DLHC or
+                                                            LSM303AGR
+
+
+
+                                                    Mini-USB
+
+
+                                                                                          MSv41785V3
+
+
+
+
+                                       UM1570 Rev 7                                                11/41
+                                                                                                           40
+Hardware layout and configuration                                                                       UM1570
+
+
+                                       Figure 3. Board layout (top view)
+
+                                   Red/green COM LED
+                                       (LD2)
+
+                      ST-LINK/V2
+
+
+     Red PWR LED                                                                             USB USER
+           (LD1)
+
+
+   SWD connector
+           (CN3)
+
+
+                                                                                             ST-LINK/
+                                                                                             STM32F3DISCOVERY
+                                                                                             Selector
+                                                                                             (CN4)
+  IDD measurement
+             (JP3)                                                                           LSM303DLHC
+
+
+
+        3 V Power                                                                            5 V Power
+            supply                                                                           supply
+     input/output                                                                            input/output
+
+
+
+
+                                                                                            STM32F303VCT6
+
+
+
+
+                                                                                             L3GD20
+        User button
+               (B1)                                                                          Reset button
+                                                                                             (B2)
+
+           Red LED
+             (LD3)
+                                                                                             Orange LED
+          Blue LED
+                                                                                             (LD5)
+             (LD4)
+
+         Green LED                                                                           Green LED
+             (LD6)                                                                           (LD7)
+
+                                                                                             Blue LED
+        Orange LED
+                                                                                             (LD9)
+             (LD8)
+                                                                                             Red LED
+                                                                                             (LD10)
+
+
+
+
+Note:             A square identifies pin 1 of CN3, CN4, JP3, JP4, P1, and P2 connectors.
+
+
+
+
+12/41                                                  UM1570 Rev 7
+UM1570                                                                Hardware layout and configuration
+
+
+                                    Figure 4. Board layout (bottom view)
+                                                              SWO (SB10)
+
+
+
+
+                     RESERVED
+        (SB2, SB4, SB6, and SB9)
+                       DEFAULT                                                            NRST (SB7)
+        (SB1, SB3, SB5, and SB8)
+                                                                                          STM_RST (SB11)
+                    MCO (SB12)                                                            RX, TX (SB13)
+                                                                                          RX, TX (SB15)
+                X3 crystal (SB14)
+                X3 crystal (SB16)
+                X1 crystal (SB17)
+                X1 crystal (SB18)
+
+
+
+
+                  BOOT0 (SB19)
+
+
+
+
+                                                                                          B1-USER (SB20)
+              USB USER (SB21)
+                                                                                          B2-RESET (SB23)
+              USB USER (SB22)
+
+
+
+
+                                                 RoHS                SN
+
+
+                                                                                              MSv41787V3
+
+
+Note:          If SB12 is ON, SB17 and R33 must be OFF to provide the clock source from MCO correctly.
+
+
+
+
+                                               UM1570 Rev 7                                          13/41
+                                                                                                             40
+Hardware layout and configuration                                                                  UM1570
+
+
+6.1        The STM32F3DISCOVERY Discovery board mechanical
+           drawing
+                                         Figure 5. STM32F3DISCOVERY mechanical drawing
+
+                                                         66.00mm
+
+                                                         53.34mm
+                6.33mm                                                                   6.33mm
+
+
+
+
+                                                                                         16.04mm
+                     3.34mm
+                                5.08mm
+           33.82mm
+
+
+
+
+                                                                                                   33.82mm
+                                                                                         15.24mm
+
+
+
+                                                                                                             97.00mm
+                              2.22mm
+
+
+
+
+                                              2.54mm                   2.54mm
+                6.33mm                                                                   6.33mm
+                                                         53.34mm
+
+
+
+
+14/41                                               UM1570 Rev 7
+UM1570                                                           Hardware layout and configuration
+
+
+6.2      Embedded ST-LINK/V2 (or V2-B)
+         The ST-LINK/V2 on PCB version A or B or the ST-LINK/V2-B on PCB version C is
+         embedded as a programming and debugging tool. Virtual COM port and USB mass storage
+         features are supported by the ST-LINK/V2-B only.
+         The embedded ST-LINK/V2 (or V2-B) supports only SWD for STM32 devices. For
+         information about debugging and programming features, refer to the user manual ST-
+         LINK/V2 in-circuit debugger/programmer for STM8 and STM32 (UM1075), which describes
+         in detail all the ST-LINK/V2 features.
+         The changes in ST-LINK/V2-B versus ST-LINK/V2 version are listed below. New features
+         supported on ST-LINK/V2-B are:
+         •   Virtual COM port interface on USB
+         •   Mass storage interface on USB
+         The embedded-on-board features not supported either on ST-LINK/V2 or ST-STLINK/V2-B
+         are:
+         •   SWIM interface
+         •   Minimum supported application voltage limited to 3 V
+         •   USB power management request for more than 100 mA current on USB
+         Known limitation:
+         Activating the readout protection on the STM32 target prevents the target application from
+         running afterward. The readout protection must be kept disabled on the STM32 target.
+         There are two different ways to use the embedded ST-LINK/V2 (or V2-B), depending on the
+         jumper states (refer to Table 4):
+         •   Programming/debugging the STM32 on board (refer to Section 6.2.4: Using ST-
+             LINK/V2 (or V2-B) to program/debug the on-board STM32F303VCT6)
+         •   Programming/debugging the STM32 in an external application board, using a cable
+             connected to the SWD connector (CN2) (refer to Section 6.2.5: Using ST-LINK/V2 (or
+             V2-B) to program/debug an external STM32 application)
+
+                                           Table 4. Jumper states
+              Jumper state                                    Description
+
+                                ST-LINK/V2 (or V2-B) functions are enabled for on-board programming
+         Both CN4 jumpers ON
+                                (default).
+                                ST-LINK/V2 (or V2-B) functions are enabled for application through an
+         Both CN4 jumpers OFF
+                                SWD-compatible external connector (CN3).
+
+
+6.2.1    Drivers
+         The ST-LINK/V2 (or V2-B) requires a dedicated USB driver, which, for an older than
+         Windows® 10 version can be found at the www.st.com website. In case the STM32
+         Discovery is connected to the PC before the driver is installed, some Discovery interfaces
+         might be declared as Unknown in the PC device manager. In this case, the user must install
+         the driver files, and update the driver of the connected device (refer to Figure 6) from the
+         device manager.
+Note:    Prefer using the ‘USB Composite Device’ handle for a full recovery.
+
+
+
+                                         UM1570 Rev 7                                               15/41
+                                                                                                            40
+Hardware layout and configuration                                                               UM1570
+
+
+                                        Figure 6. USB composite device
+
+
+
+
+6.2.2      ST-LINK/V2 (or V2-B) firmware upgrade
+           The ST-LINK/V2 (or V2-B) embeds a firmware upgrade mechanism for an in-place upgrade
+           through the USB port. The firmware might evolve during the lifetime of the ST-LINK/V2 (or
+           V2-B) product (such as new functionalities, bug fixes, and support for new microcontroller
+           families). Therefore, it is recommended to visit the www.st.com website, before starting to
+           use the Discovery board and periodically, to stay up-to-date with the latest firmware version.
+
+6.2.3      VCP configuration
+           The ST-LINK/V2-B on STM32F3DISCOVERY supports the Virtual COM port (VCP) on U2
+           pin 12 (ST-LINK_TX) and U2 pin 13 (ST-LINK_RX), which are connected to the STM32F303
+           MCU target STM32 USART1 (PC4, PC5), thanks to SB13 and SB15 solder bridges.
+           The SB13 (PC4) and SB15 (PC5) default configurations for STM32F3DISCOVERY are
+           given in Table 6: Solder bridges.
+
+6.2.4      Using ST-LINK/V2 (or V2-B) to program/debug the on-board
+           STM32F303VCT6
+           To program the STM32F303VCT6 MCU on the board, plug in the two jumpers marked in red
+           on CN4, as shown in Figure 7: STM32F3DISCOVERY connections, but do not use the CN3
+           connector as that might disturb the communication with the STM32F303VCT6 of the
+           STM32F3DISCOVERY.
+
+
+
+
+16/41                                       UM1570 Rev 7
+UM1570                                                        Hardware layout and configuration
+
+
+                               Figure 7. STM32F3DISCOVERY connections
+
+
+
+
+6.2.5    Using ST-LINK/V2 (or V2-B) to program/debug an external STM32
+         application
+         It is very easy to use the ST-LINK/V2 (or V2-B) to program the STM32 on an external
+         application. Remove the two jumpers from CN4 as shown in Figure 8: ST-LINK/V2 (or V2-B)
+         connections, and connect the application to the debug connector (CN3) according to
+         Table 5.
+Note:    SB7 must be OFF if the CN3 pin 5 is used in an external application.
+
+                                  Table 5. SWD debug connector (CN3)
+                      Pin                           CN3                         Designation
+
+                       1                       VDD_TARGET             VDD from application
+                       2                          SWCLK               SWD clock
+                       3                            GND               Ground
+                       4                           SWDIO              SWD data input/output
+                       5                           NRST               RESET of target MCU
+                       6                            SWO               Reserved
+
+
+
+
+                                         UM1570 Rev 7                                         17/41
+                                                                                                      40
+Hardware layout and configuration                                           UM1570
+
+
+                               Figure 8. ST-LINK/V2 (or V2-B) connections
+
+
+
+
+18/41                                   UM1570 Rev 7
+UM1570                                                        Hardware layout and configuration
+
+
+6.3      Power supply and power selection
+         The power supply is provided either by the host PC through the USB cable, or by an
+         external 5 V power supply.
+         The D1 and D2 diodes protect the 5 V and 3 V pins from external power supplies.
+         •   5 V and 3 V can be used as output power supplies when another application board is
+             connected to P1 and P2 pins. In this case, the 5 V and 3 V pins deliver a 5 V or 3 V
+             power supply and power consumption must be lower than 100 mA.
+         •   5 V and 3 V can also be used as input power supplies, for example when the USB
+             connectors are not connected to the PC. In this case, the STM32F3DISCOVERY board
+             must be powered by a power supply unit or by auxiliary equipment complying with the
+             standard EN 62368-1:2014+A11:2017 and must be Safety Extra Low Voltage (SELV)
+             with limited power capability.
+Note:    The board can be also powered through the USB USER connector. It is protected by D4 and
+         D5 diodes when both USBs are connected (in which case, the 5 V power is around 4.4
+         volts).
+
+
+6.4      LEDs
+         •   LD1 PWR: Red LED indicates that the board is powered.
+         •   LD2 COM: LD2 default status is red. LD2 turns to green to indicate that
+             communications are in progress between the PC and the ST-LINK/V2.
+         •   User LD3: Red LED is a user LED connected to the I/O PE9 of the STM32F303VCT6.
+         •   User LD4: Blue LED is a user LED connected to the I/O PE8 of the STM32F303VCT6.
+         •   User LD5: Orange LED is a user LED connected to the I/O PE10 of the
+             STM32F303VCT6.
+         •   User LD6: Green LED is a user LED connected to the I/O PE15 of the
+             STM32F303VCT6.
+         •   User LD7: Green LED is a user LED connected to the I/O PE11 of the
+             STM32F303VCT6.
+         •   User LD8: Orange LED is a user LED connected to the I/O PE14 of the
+             STM32F303VCT6.
+         •   User LD9: Blue LED is a user LED connected to the I/O PE12 of the STM32F303VCT6.
+         •   User LD10: Red LED is a user LED connected to the I/O PE13 of the
+             STM32F303VCT6.
+
+
+6.5      Push-buttons
+         •   B1 USER: user and wake-up button connected to the I/O PA0 of the STM32F303VCT6.
+         •   B2 RESET: push-button connected to NRST is used to RESET the STM32F303VCT6.
+
+
+
+
+                                        UM1570 Rev 7                                          19/41
+                                                                                                      40
+Hardware layout and configuration                                                             UM1570
+
+
+6.6        USB device supported
+           The STM32F303VCT6 MCU is also used to drive the second USB Mini-B connector (USB
+           USER), which allows the board to be used as a USB Device. The STM32F3DISCOVERY
+           can then act as a USB joystick, mouse, or another similar device. If both USBs are
+           connected, diodes D4 and D5 protect the board and use the power from the USB ST-LINK.
+           The board can be powered through this USB USER connector, then LED1 PWR lights and
+           LED2 COM blinks and it can run an application in standalone mode.
+
+
+6.7        ST MEMS E-compass (ST MEMS LSM303DLHC or
+           LSM303AGR)
+           The LSM303DLHC is an ultracompact low-power system-in-package featuring a 3D digital
+           linear acceleration sensor and a 3D digital magnetic sensor. It includes a sensing element
+           and an IC interface able to provide the measured acceleration to the external world through
+           an I2C serial interface.
+           The LSM303DLHC has dynamically user-selectable full scales of ±2g/±8g and can measure
+           acceleration, and a magnetic field full scale from ±1.3g to 8.1g with an output data rate of
+           100 Hz or 400 Hz.
+           The LSM303AGR has linear acceleration full scales of ±2g/±4g/±8g/±16g and a magnetic
+           field dynamic range of ±50 gauss with an output data rate of 100 kHz, 400 kHz, 1 MHz, and
+           3.4 MHz.
+           The STM32F303VCT6 MCU controls this motion sensor through the I2C interface.
+
+
+6.8        ST MEMS gyroscope (ST MEMS L3GD20 or I3G4250D)
+           The L3GD20 is an ultracompact, low-power, three-axis-angular-rate sensor. It includes a
+           sensing element and an IC interface able to provide the measured angular rate to the
+           external world through the I2C/SPI serial interface.
+           The L3GD20 has dynamically user-selectable full scales of ±250 dps/±500 dps/±2000 dps
+           and can measure rates.
+           The I3G4250D has a selectable full scale of ±245/±500/±2000 dps and can measure rates
+           with a user-selectable bandwidth.
+           The STM32F303VCT6 MCU controls this motion sensor through the SPI interface.
+
+
+6.9        Idd (JP3)
+           The JP3 jumper, labeled Idd, allows the measurement of the consumption of the
+           STM32F303VCT6 by removing the jumper and connecting an ammeter.
+           •   Jumper ON: STM32F303VCT6 is powered (default).
+           •   Jumper OFF: An ammeter must be connected to measure the STM32F303VCT6
+               current. If there is no ammeter, the STM32F303VCT6 is not powered.
+
+
+
+
+20/41                                      UM1570 Rev 7
+UM1570                                                           Hardware layout and configuration
+
+
+6.10     OSC clock
+
+6.10.1   OSC clock supply
+         The following information indicates all configurations for clock supply selection:
+         •    MCO from ST-LINK. From MCO of the STM32F103C8T6. This frequency cannot be
+              changed. It is fixed at 8 MHz and connected to the PF0-OSC_IN pin of the
+              STM32F303VCT6. Configuration needed:
+              –    SB12 ON, SB17 and R33 OFF
+              –    SB18, R32, C22, C23, and X2 = do not care
+         •    Oscillator on board. From X2 crystal (not provided). For typical frequencies,
+              capacitors, and resistors, refer to the STM32F303VCT6 datasheet. Configuration
+              needed:
+              –    SB12, SB17, and SB18 OFF
+              –    R32, R33, C22, C23, and X2 ON
+         •    Oscillator from external PF0. From the external oscillator through pin 5 of the P2
+              connector. Configuration needed:
+              –    SB12 OFF, SB17 ON, and R33 OFF
+              –    SB18, R32, C22, C23, and X2 = do not care
+         •    No external oscillator. From the internal oscillator HSI only. PF0 and PF1 can be used
+              as GPIO. Configuration needed:
+              –    SB12 OFF, SB17 and SB18 ON, R32 and R33 OFF
+              –    C22, C23, and X2 = do not care
+
+6.10.2   OSC 32 kHz clock supply
+         The following information indicates all the configurations for the 32 kHz clock supply
+         selection:
+         •    Oscillator on board. From X3 Crystal (not provided). Configuration needed:
+              –    SB14 and SB16 OFF
+              –    R29, R30, C14, C26, and X3 ON
+         •    Oscillator from external PC14. From the external oscillator through pin 7 of the P2
+              connector. Configuration needed:
+              –    SB14 ON, R29 OFF
+              –    SB16, R30, C14, C26, and X3 = do not care
+         •    No external oscillator. PC14 and PC15 can be used as GPIO. Configuration needed:
+              –    SB14 and SB16 ON, R29 and R30 OFF
+              –    C14, C26, and X3 = do not care.
+
+
+
+
+                                          UM1570 Rev 7                                            21/41
+                                                                                                          40
+Hardware layout and configuration                                                                          UM1570
+
+
+6.11            Solder bridges
+                                               Table 6. Solder bridges
+         Bridge            State(1)                                     Description
+
+                                      X1, C22, C23, R32, and R33 provide a clock. PF0 and PF1 are disconnected from
+SB17,18                      OFF
+                                      P2.
+(X1 crystal) (2)
+                             ON       PF0 and PF1 are connected to P2 (R32 and R33 must be OFF).
+SB1,3,5,8 (default)          ON       Reserved, do not modify
+SB2,4,6,9 (reserved)         OFF      Reserved, do not modify
+                                      X3, C14, C26, R29, and R30 deliver a 32 KHz clock. PC14 and PC15 are not
+SB14,16                      OFF
+                                      connected to P2.
+(X3 crystal)
+                             ON       PC14 and PC15 are only connected to P2. R29 and R30 are OFF.
+
+SB23                         ON       B2 push-button is connected to NRST of STM32F303VCT6
+(B2-RESET)                   OFF      B2 push-button is not connected to NRST of STM32F303VCT6
+
+SB20                         ON       B1 push-button is connected to PA0
+(B1-USER)                    OFF      B1 push-button is not connected to PA0
+                                      STM32F303VCT6 USART1 is not connected to ST-LINK, so VCP is disabled
+                             OFF
+SB13,15                               (Default configuration on PCB version A or B).
+(RX, TX)                              STM32F303VCT6 USART1 is connected to ST-LINK, so VCP is enabled (default
+                             ON
+                                      configuration on PCB version C and newer).
+
+SB7                          ON       NRST signal of CN3 is connected to NRST of STM32F303VCT6
+(NRST)                       OFF      NRST signal is not connected
+
+SB10                         ON       SWO signal of CN3 is connected to PB3
+(SWO)                        OFF      SWO signal is not connected
+
+SB11                         OFF      No incidence on NRST signal of STM32F103C8T6
+(STM_RST)                    ON       NRST signal of STM32F103C8T6 is connected to GND
+                             ON       BOOT0 signal of STM32F303VCT6 is at level LOW through 510 Ω pull-down
+SB19
+(BOOT0)                               BOOT0 signal of STM32F303VCT6 is at level HIGH through 10 KΩ pull-up (not
+                             OFF
+                                      provided).
+                                      PA11 and PA12 are only used for USB USER and not connected to P2 to avoid
+SB21,22                      OFF
+                                      noise.
+(USB USER)
+                             ON       PA11 and PA12 are connected to P2.
+                             OFF      The MCO signal of STM32F103C8T6 is not used.
+SB12
+(MCO)(2)                              MCO clock signal from STM32F103C8T6 is connected to OSC_IN of
+                             ON
+                                      STM32F303VCT6.
+1. The default state is shown in bold.
+2. If SB12 is ON, SB17 and R33 must be OFF to provide the clock source from the MCO correctly.
+
+
+
+
+22/41                                                UM1570 Rev 7
+UM1570                                                                                                                               Hardware layout and configuration
+
+
+6.12        Extension connectors
+            The male headers P1 and P2 can connect the STM32F3DISCOVERY to a standard
+            prototyping/wrapping board. STM32F303VCT6 GPIOs are available on these connectors.
+            An oscilloscope, logical analyzer, or voltmeter can also probe P1 and P2.
+
+            Table 7. STM32F303VCT6 MCU pin description versus board function (1)
+              MCU pin                                                                                                           Board function
+
+
+
+
+                                                             LSM303DLHC or LSM303AGR
+                                  LQFP100 pin number
+
+
+
+
+                                                                                       L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                              Power supply
+                                                                                                            Push-button
+
+
+
+
+                                                                                                                                                   Free I/O
+   Main
+
+
+
+
+                                                                                                                                SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                       VCP
+
+
+
+
+                                                                                                                                                                             CN3
+                                                                                                                          LED
+             Alternate function
+
+
+
+
+                                                                                                                                                                                   P1
+
+                                                                                                                                                                                         P2
+ function
+
+
+
+
+BOOT0                -             94                   -             -                       -                 -          -     -      -     -       -           -           -    -     19
+                                                                                                            RESET
+
+
+
+                                                                                                                                NRST
+
+
+
+
+NRST                 -             14                   -             -                       -                                         -     -       -            -         5     4      -
+                                                                                                                          -
+
+
+
+
+            TIM2_CH1_ETR,
+            G1_IO1,
+                                                                                                            USER
+
+
+
+
+            USART2_CTS,
+PA0                                23                   -             -                       -                            -     -      -     -       -            -          -    12     -
+            COMP1_OUT,
+            TIM8_BKIN,
+            TM8_ETR
+            TIM2_CH2, G1_IO2,
+PA1         USART2_RTS,            24                   -             -                       -                 -          -     -      -     -       -           -           -    9      -
+            TIM15_CH1N
+            TIM2_CH3, G1_IO3,
+            USART2_TX,
+PA2         COMP2_OUT,             25                   -             -                       -                 -          -     -      -     -       -           -           -    14     -
+            TIM15_CH1,
+            AOP1_OUT
+            TIM2_CH4, G1_IO4,
+PA3         USART2_RX,             26                   -             -                       -                 -          -     -      -     -       -           -           -    11     -
+            TIM15_CH2
+            TIM3_CH2, G2_IO1,
+            SPI1_NSS,
+PA4                                29                   -             -                       -                 -          -     -      -     -       -           -           -    16     -
+            SPI3_NSS/I2S3_WS,
+            USART2_CK
+
+
+
+
+                                                                UM1570 Rev 7                                                                                                            23/41
+                                                                                                                                                                                                40
+Hardware layout and configuration                                                                                                                                                  UM1570
+
+
+        Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+              MCU pin                                                                                                            Board function
+
+
+
+
+                                                              LSM303DLHC or LSM303AGR
+                                   LQFP100 pin number
+
+
+
+
+                                                                                        L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                              Power supply
+                                                                                                             Push-button
+
+
+
+
+                                                                                                                                                   Free I/O
+    Main
+
+
+
+
+                                                                                                                                 SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                        VCP
+
+
+
+
+                                                                                                                           LED
+
+
+
+
+                                                                                                                                                                             CN3
+              Alternate function
+
+
+
+
+                                                                                                                                                                                   P1
+
+                                                                                                                                                                                        P2
+  function
+
+
+
+
+                                                                                        SCL/SPC
+
+
+
+             TIM2_CH1_ETR,
+PA5                                 30                   -             -                                         -          -     -     -     -       -            -          -    15   -
+             G2_IO2, SPI1_SCK
+
+             TIM16_CH1,
+             TIM3_CH1, G2_IO3,
+                                                                                        SAO/SDO
+
+
+
+
+             TIM8_BKIN,
+PA6          SPI1_MISO,             31                   -             -                                         -          -     -     -     -       -            -          -    18   -
+             TIM1_BKIN,
+             AOP2_OUT,
+             COMP1_OUT
+             TIM17_CH1,
+                                                                                        SDA/SDI/SDO
+
+
+
+
+             TIM3_CH2, G2_IO4,
+             TIM8_CH1N,
+PA7                                 32                   -             -                                         -          -     -     -     -       -            -          -    17   -
+             SPI1_MOSI,
+             TIM1_CH1N,
+             COMP2_OUT
+             MCO, I2C2_SMBAL,
+             I2S2_MCK,
+             TIM1_CH1,
+PA8                                 67                   -             -                       -                 -          -     -     -     -       -            -          -    -    45
+             USART1_CK,
+             COMP3_OUT,
+             TIM4_ETR
+             G4_IO1, I2C2_SCL,
+             I2S3_MCK,
+             TIM1_CH2,
+PA9          USART1_TX,             68                   -             -                       -                 -          -     -     -     -       -            -          -    -    44
+             COMP5_OUT,
+             TIM15_BKIN,
+             TIM2_CH3
+
+
+
+
+24/41                                                            UM1570 Rev 7
+UM1570                                                                                                                                Hardware layout and configuration
+
+
+       Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+             MCU pin                                                                                                            Board function
+
+
+
+
+                                                             LSM303DLHC or LSM303AGR
+                                  LQFP100 pin number
+
+
+
+
+                                                                                       L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                               Power supply
+                                                                                                            Push-button
+
+
+
+
+                                                                                                                                                    Free I/O
+   Main
+
+
+
+
+                                                                                                                                SWD
+
+
+
+                                                                                                                                              OSC
+                                                                                                                                        USB
+                                                       VCP
+
+
+
+
+                                                                                                                          LED
+
+
+
+
+                                                                                                                                                                              CN3
+             Alternate function
+
+
+
+
+                                                                                                                                                                                    P1
+
+                                                                                                                                                                                          P2
+ function
+
+
+
+
+            TIM17_BKIN,
+            G4_IO2, I2C2_SDA,
+            TIM1_CH3,
+PA10        USART1_RX,             69                   -             -                       -                 -          -      -      -     -       -            -          -    -     43
+            COMP6_OUT,
+            TIM2_CH4,
+            TIM8_BKIN
+            TIM1_CH1N,
+            USART1_CTS,
+            COMP1_OUT,
+PA11        CAN_RX,                70                   -             -                       -                 -          -      -     DM     -       -            -          -    -     42
+            TIM4_CH1,
+            TIM1_CH4_BKIN2,
+            USBDM
+            TIM16_CH1,
+            TIM1_CH2N,
+            USART1_RTS,
+PA12                               71                   -             -                       -                 -          -      -     DP     -       -            -          -    -     41
+            COMP2_OUT,
+            CAN_TX, TIM4_CH2,
+            TIM1_ETR, USBDP
+            JTMS-SWDAT,
+            TIM16_CH1N,
+                                                                                                                                SWDIO
+
+
+
+
+PA13        G4_IO3, IR-Out,        72                   -             -                       -                 -          -             -     -       -            -         4     -     40
+            USART3_CTS,
+            TIM4_CH3
+            JTCK-SWCLK,
+            G4_IO4, I2C1_SDA,
+                                                                                                                                SWCLK
+
+
+
+
+PA14        TIM8_CH2,              76                   -             -                       -                 -          -             -     -       -            -         2     -     37
+            TIM1_BKIN,
+            USART2_TX
+
+
+
+
+                                                                UM1570 Rev 7                                                                                                             25/41
+                                                                                                                                                                                                 40
+Hardware layout and configuration                                                                                                                                                  UM1570
+
+
+        Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+              MCU pin                                                                                                            Board function
+
+
+
+
+                                                              LSM303DLHC or LSM303AGR
+                                   LQFP100 pin number
+
+
+
+
+                                                                                        L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                              Power supply
+                                                                                                             Push-button
+
+
+
+
+                                                                                                                                                   Free I/O
+    Main
+
+
+
+
+                                                                                                                                 SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                        VCP
+
+
+
+
+                                                                                                                           LED
+
+
+
+
+                                                                                                                                                                             CN3
+              Alternate function
+
+
+
+
+                                                                                                                                                                                   P1
+
+                                                                                                                                                                                        P2
+  function
+
+
+
+
+             JTDI,
+             TIM2_CH1_ETR,
+             TIM8_CH1,
+             I2C1_SCL,
+PA15                                77                   -             -                       -                 -          -     -     -     -       -           -           -    -    38
+             SPI1_NSS,
+             SPI3_NSS/I2S3_WS,
+             USART2_RX,
+             TIM1_BKIN
+             TIM3_CH3, G3_IO2,
+PB0          TIM8_CH2N,             35                   -             -                       -                 -          -     -     -     -       -           -           -    22   -
+             TIM1_CH2N
+             TIM3_CH4, G3_IO3,
+             TIM8_CH3N,
+PB1          TIM1_CH3N,             36                   -             -                       -                 -          -     -     -     -       -           -           -    21   -
+             COMP4_OUT,
+             AOP3_OUT
+PB2          G3_IO4                 37                   -             -                       -                 -          -     -     -     -       -            -          -    24   -
+             JTDO/TRACESWO,
+             TIM2_CH2,
+             TIM4_ETR, G5_IO1,
+                                                                                                                                 SWO
+
+
+
+
+             TIM8_CH1N,
+PB3                                 89                   -             -                       -                 -          -           -     -       -            -         6     -    26
+             SPI1_SCK,
+             SPI3_SCK/I2S3_CK,
+             USART2_TX,
+             TIM3_ETR
+             NJTRST,
+             TIM16_CH1,
+             TIM3_CH1, G5_IO2,
+             TIM8_CH2N,
+PB4                                 90                   -             -                       -                 -          -     -     -     -       -           -           -    -    23
+             SPI1_MISO,
+             SPI3_MISO/I2S3_DI
+             N, USART2_RX,
+             TIM17_BKIN
+
+
+
+26/41                                                            UM1570 Rev 7
+UM1570                                                                                                                               Hardware layout and configuration
+
+
+       Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+             MCU pin                                                                                                            Board function
+
+
+
+
+                                                             LSM303DLHC or LSM303AGR
+                                  LQFP100 pin number
+
+
+
+
+                                                                                       L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                              Power supply
+                                                                                                            Push-button
+
+
+
+
+                                                                                                                                                   Free I/O
+   Main
+
+
+
+
+                                                                                                                                SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                       VCP
+
+
+
+
+                                                                                                                          LED
+
+
+
+
+                                                                                                                                                                             CN3
+             Alternate function
+
+
+
+
+                                                                                                                                                                                   P1
+
+                                                                                                                                                                                         P2
+ function
+
+
+
+
+            TIM16_BKIN,
+            TIM3_CH2,
+            TIM8_CH3N,
+            I2C1_SMBAL,
+PB5                                91                   -             -                       -                 -          -     -      -     -       -           -           -    -     24
+            SPI1_MOSI,
+            SPI3_MOSI/I2S3_D
+            OUT, USART2_CK,
+            TIM17_CH1
+            TIM16_CH1N,
+            TIM4_CH1, G5_IO3,
+            I2C1_SCL,
+                                                             SCL
+
+
+
+
+PB6                                92                   -                                     -                 -          -     -      -     -       -            -          -    -     21
+            TIM8_CH1,
+            TIM8_ETR_BKIN2,
+            USART1_TX
+            TIM17_CH1N,
+            TIM4_CH2, G5_IO4,
+            I2C1_SDA,
+                                                             SDA
+
+
+
+
+PB7                                93                   -                                     -                 -          -     -      -     -       -            -          -    -     22
+            TIM8_BKIN,
+            USART1_RX,
+            TIM3_CH4
+            TIM16_CH1,
+            TIM4_CH3, SYNCH,
+            I2C1_SCL,
+PB8         COMP1_OUT,             95                   -             -                       -                 -          -     -      -     -       -           -           -    -     17
+            CAN_RX,
+            TIM8_CH2,
+            TIM1_BKIN
+            TIM17_CH1,
+            TIM4_CH4,
+PB9                                96                   -             -                       -                 -          -     -      -     -       -           -           -    -     18
+            I2C1_SDA, IR-OUT,
+            CAN_TX, TIM8_CH3
+            TIM2_CH3, SYNCH,
+PB10                               47                   -             -                       -                 -          -     -      -     -       -           -           -    34     -
+            USART3_TX
+
+
+
+                                                                UM1570 Rev 7                                                                                                            27/41
+                                                                                                                                                                                                40
+Hardware layout and configuration                                                                                                                                                  UM1570
+
+
+        Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+              MCU pin                                                                                                            Board function
+
+
+
+
+                                                              LSM303DLHC or LSM303AGR
+                                   LQFP100 pin number
+
+
+
+
+                                                                                        L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                              Power supply
+                                                                                                             Push-button
+
+
+
+
+                                                                                                                                                   Free I/O
+    Main
+
+
+
+
+                                                                                                                                 SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                        VCP
+
+
+
+
+                                                                                                                           LED
+
+
+
+
+                                                                                                                                                                             CN3
+              Alternate function
+
+
+
+
+                                                                                                                                                                                   P1
+
+                                                                                                                                                                                        P2
+  function
+
+
+
+
+             TIM2_CH4, G6_IO1,
+PB11         USART3_RX,             48                   -             -                       -                 -          -     -     -     -       -           -           -    33   -
+             COMP2_OUT
+             G6_IO2,
+             I2C2_SMBAL,
+             SPI2_NSS/I2S2_WS,
+PB12                                51                   -             -                       -                 -          -     -     -     -       -           -           -    36   -
+             TIM1_BKIN,
+             USART3_CK,
+             AOP4_OUT
+             G6_IO3,
+             SPI2_SCK/I2S2_CK,
+PB13                                52                   -             -                       -                 -          -     -     -     -       -           -           -    35   -
+             TIM1_CH1N,
+             USART3_CTS
+             TIM15_CH1,
+             G6_IO4,
+PB14         SPI2_MISO/I2S2_DI      53                   -             -                       -                 -          -     -     -     -       -           -           -    38   -
+             N, TIM1_CH2N,
+             USART3_RTS
+             TIM15_CH2,
+             TIM15_CH1N,
+PB15         TIM1_CH3N,             54                   -             -                       -                 -          -     -     -     -       -           -           -    37   -
+             SPI2_MOSI/
+             I2S2_DOUT
+PC0                   -             15                   -             -                       -                 -          -     -     -     -       -           -           -    6    -
+PC1                   -             16                   -             -                       -                 -          -     -     -     -       -           -           -    5    -
+PC2          COMP7_OUT              17                   -             -                       -                 -          -     -     -     -       -           -           -    8    -
+PC3          TIM1_BKIN2             18                   -             -                       -                 -          -     -     -     -       -           -           -    7    -
+
+
+
+
+28/41                                                            UM1570 Rev 7
+UM1570                                                                                                                                     Hardware layout and configuration
+
+
+       Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+             MCU pin                                                                                                                  Board function
+
+
+
+
+                                                                   LSM303DLHC or LSM303AGR
+                                  LQFP100 pin number
+
+
+
+
+                                                                                             L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                                    Power supply
+                                                                                                                  Push-button
+
+
+
+
+                                                                                                                                                         Free I/O
+   Main
+
+
+
+
+                                                                                                                                      SWD
+
+
+
+                                                                                                                                                   OSC
+                                                                                                                                             USB
+                                                       VCP
+
+
+
+
+                                                                                                                                LED
+
+
+
+
+                                                                                                                                                                                   CN3
+             Alternate function
+
+
+
+
+                                                                                                                                                                                         P1
+
+                                                                                                                                                                                               P2
+ function
+
+                                                       USART1_TX
+
+
+
+
+PC4         USART1_TX              33                                       -                       -                 -          -     -      -     -       -            -          -    20     -
+                                                       USART1_RX
+
+
+
+
+            G3_IO1,
+PC5                                34                                       -                       -                 -          -     -      -     -       -            -          -    19     -
+            USART1_RX
+
+
+            TIM3_CH1,
+            TIM8_CH1,
+PC6                                63                     -                 -                       -                 -          -     -      -     -       -           -           -    47     -
+            I2S2_MCK,
+            COMP6_OUT
+            TIM3_CH2,
+            TIM8_CH2,
+PC7                                64                     -                 -                       -                 -          -     -      -     -       -           -           -    48     -
+            I2S3_MCK,
+            COMP5_OUT
+            TIM3_CH3,
+PC8         TIM8_CH3,              65                     -                 -                       -                 -          -     -      -     -       -           -           -    -     47
+            COMP3_OUT
+            TIM3_CH4,
+PC9         TIM8_CH4_BKIN2,        66                     -                 -                       -                 -          -     -      -     -       -           -           -    -     46
+            COMP3_OUT
+            TIM8_CH1N,
+            UART4_TX,
+PC10                               78                     -                 -                       -                 -          -     -      -     -       -           -           -    -     35
+            SPI3_SCK/I2S3_CK,
+            USART3_TX
+            TIM8_CH2N,
+            UART4_RX,
+PC11                               79                     -                 -                       -                 -          -     -      -     -       -           -           -    -     36
+            SPI3_MISO/I2S3_DI
+            N, USART3_RX
+
+
+
+                                                                      UM1570 Rev 7                                                                                                            29/41
+                                                                                                                                                                                                      40
+Hardware layout and configuration                                                                                                                                                                 UM1570
+
+
+        Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+              MCU pin                                                                                                            Board function
+
+
+
+
+                                                              LSM303DLHC or LSM303AGR
+                                   LQFP100 pin number
+
+
+
+
+                                                                                        L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                                             Power supply
+                                                                                                             Push-button
+
+
+
+
+                                                                                                                                                                  Free I/O
+    Main
+
+
+
+
+                                                                                                                                 SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                        VCP
+
+
+
+
+                                                                                                                           LED
+
+
+
+
+                                                                                                                                                                                            CN3
+              Alternate function
+
+
+
+
+                                                                                                                                                                                                  P1
+
+                                                                                                                                                                                                       P2
+  function
+
+
+
+
+             TIM8_CH3N,
+             UART5_TX,
+PC12         SPI3_MOSI/             80                   -             -                       -                 -          -     -     -           -                -           -           -    -    33
+             I2S3_DOUT,
+             USART3_CK
+PC13         TIM1_CH1N                  7                -             -                       -                 -          -     -     -           -                -           -           -    -    10
+
+                                                                                                                                             OSC32_OUT OSC32_IN
+PC14         OSC32_IN                   8                -             -                       -                 -          -     -     -                            -            -          -    -    7
+
+
+
+
+PC15         OSC32_OUT                  9                -             -                       -                 -          -     -     -                            -            -          -    -    8
+
+
+
+PD0          CAN_RX                 81                   -             -                       -                 -          -     -     -           -                -           -           -    -    34
+             TIM8_CH4_BKIN2,
+PD1                                 82                   -             -                       -                 -          -     -     -           -                -           -           -    -    31
+             CAN_TX
+             TIM3_ETR,
+PD2          TIM8_BKIN,             83                   -             -                       -                 -          -     -     -           -                -           -           -    -    32
+             UART5__RX
+             TIM2_CH1_ETR,
+PD3                                 84                   -             -                       -                 -          -     -     -           -                -           -           -    -    29
+             USART2_CTS
+             TIM2_CH2,
+PD4                                 85                   -             -                       -                 -          -     -     -           -                -           -           -    -    30
+             USART2_RTS
+PD5          USRT2_TX               86                   -             -                       -                 -          -     -     -           -                -           -           -    -    27
+             TIM2_CH4,
+PD6                                 87                   -             -                       -                 -          -     -     -           -                -           -           -    -    28
+             USART2_RX
+             TIM2_CH3,
+PD7                                 88                   -             -                       -                 -          -     -     -           -                -           -           -    -    25
+             USART2_CK
+
+
+
+30/41                                                            UM1570 Rev 7
+UM1570                                                                                                                               Hardware layout and configuration
+
+
+       Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+             MCU pin                                                                                                            Board function
+
+
+
+
+                                                             LSM303DLHC or LSM303AGR
+                                  LQFP100 pin number
+
+
+
+
+                                                                                       L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                              Power supply
+                                                                                                            Push-button
+
+
+
+
+                                                                                                                                                   Free I/O
+   Main
+
+
+
+
+                                                                                                                                SWD
+
+
+
+                                                                                                                                             OSC
+                                                                                                                                       USB
+                                                       VCP
+
+
+
+
+                                                                                                                          LED
+
+
+
+
+                                                                                                                                                                             CN3
+             Alternate function
+
+
+
+
+                                                                                                                                                                                   P1
+
+                                                                                                                                                                                         P2
+ function
+
+
+
+
+PD8         USART3_TX              55                   -             -                       -                 -          -     -      -     -       -           -           -    40     -
+PD9         USART3_RX              56                   -             -                       -                 -          -     -      -     -       -           -           -    39     -
+PD10        USART3_CK              57                   -             -                       -                 -          -     -      -     -       -           -           -    42     -
+PD11        USART3_CTS             58                   -             -                       -                 -          -     -      -     -       -           -           -    41     -
+            TIM4_CH1, G8_IO1,
+PD12                               59                   -             -                       -                 -          -     -      -     -       -           -           -    44     -
+            USART3_RTS
+PD13        TIM4_CH2, G8_IO2       60                   -             -                       -                 -          -     -      -     -       -           -           -    43     -
+PD14        TIM4_CH3, G8_IO3       61                   -             -                       -                 -          -     -      -     -       -           -           -    46     -
+            TIM4_CH4, G8_IO4,
+PD15                               62                   -             -                       -                 -          -     -      -     -       -           -           -    45     -
+            SPI2_NSS
+            TIM4_ETR,
+                                                                                       INT1
+
+
+
+
+PE0         TIM16_CH1,             97                   -             -                                         -          -     -      -     -       -            -          -    -     15
+            USART1_TX
+                                                                                       DRDY/INT2
+
+
+
+
+            TIM17_CH1,
+PE1                                98                   -             -                                         -          -     -      -     -       -            -          -    -     16
+            USART1_RX
+                                                             DRDY
+
+
+
+
+            TRACECK,
+PE2                                    1                -                                                       -          -     -      -     -       -            -          -    -     13
+                                                                                       -
+
+
+
+
+            TIM3_CH1, G7_IO1
+                                                                                       CS_I2C/SPI
+
+
+
+
+            TRACED0,
+PE3                                    2                -                                                       -          -     -      -     -       -            -          -    -     14
+                                                             -
+
+
+
+
+            TIM3_CH2, G7_IO2
+
+
+            TRACED1,
+                                                             INT2 INT1
+
+
+
+
+PE4                                    3                -                                                       -          -     -      -     -       -            -          -    -     11
+                                                                                       -
+
+
+
+
+            TIM3_CH3, G7_IO3
+            TRACED2,
+PE5                                    4                -                                                       -          -     -      -     -       -            -          -    -     12
+                                                                                       -
+
+
+
+
+            TIM3_CH4, G7_IO4
+
+
+
+
+                                                                UM1570 Rev 7                                                                                                            31/41
+                                                                                                                                                                                                40
+Hardware layout and configuration                                                                                                                                                                                                      UM1570
+
+
+        Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+              MCU pin                                                                                                                                                 Board function
+
+
+
+
+                                                              LSM303DLHC or LSM303AGR
+                                   LQFP100 pin number
+
+
+
+
+                                                                                        L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                                                                                  Power supply
+                                                                                                             Push-button
+
+
+
+
+                                                                                                                                                                                                       Free I/O
+    Main
+
+
+
+
+                                                                                                                                                                          SWD
+
+
+
+                                                                                                                                                                                      OSC
+                                                                                                                                                                                USB
+                                                        VCP
+
+
+
+
+                                                                                                                                LED
+
+
+
+
+                                                                                                                                                                                                                                 CN3
+              Alternate function
+
+
+
+
+                                                                                                                                                                                                                                       P1
+
+                                                                                                                                                                                                                                            P2
+  function
+
+
+
+
+PE6          TRACED3                    5                -             -                       -                 -                       -                                 -     -         -              -           -           -    -    9
+PE7          TIM1_ETR               38                   -             -                       -                 -                       -                                 -     -         -              -           -           -    23   -
+                                                                                                                           GREEN ORANGE RED BLUE GREEN ORANGE RED BLUE
+                                                                                                                                                              LD3/ LD4/
+
+
+PE8          TIM1_CH1N              39                   -             -                       -                 -                                                         -     -         -              -            -          -    26   -
+
+
+PE9          TIM1_CH1               40                   -             -                       -                 -                                                         -     -         -              -            -          -    25   -
+                                                                                                                                                        LD5/
+
+
+
+
+PE10         TIM1_CH2N              41                   -             -                       -                 -                                                         -     -         -              -            -          -    28   -
+                                                                                                                                                   LD7/
+
+
+
+
+PE11         TIM1_CH2               42                   -             -                       -                 -                                                         -     -         -              -            -          -    27   -
+                                                                                                                                        LD10/ LD9/
+
+
+
+
+PE12         TIM1_CH3N              43                   -             -                       -                 -                                                         -     -         -              -            -          -    30   -
+
+
+PE13         TIM1_CH3               44                   -             -                       -                 -                                                         -     -         -              -            -          -    29   -
+                                                                                                                                  LD8/
+
+
+
+
+PE14         TIM1_CH4_BKIN2         45                   -             -                       -                 -                                                         -     -         -              -            -          -    32   -
+
+
+
+             TIM1_BKIN,
+                                                                                                                            LD6/
+
+
+
+
+PE15                                46                   -             -                       -                 -                                                         -     -         -              -            -          -    31   -
+             USART3_RX
+                                                                                                                                                                                      OSC_OUT OSC_IN
+
+
+
+
+             OSC_IN, I2C2_SDA,
+PF0                                 12                   -             -                       -                 -                       -                                 -     -                        -            -          -    -    5
+             TIM1_CH3N
+
+
+             OSC_OUT,
+PF1                                 13                   -             -                       -                 -                       -                                 -     -                        -            -          -    -    6
+             I2C2_SCL
+
+
+
+
+32/41                                                            UM1570 Rev 7
+UM1570                                                                                                                                       Hardware layout and configuration
+
+
+           Table 7. STM32F303VCT6 MCU pin description versus board function (continued)(1)
+                  MCU pin                                                                                                               Board function
+
+
+
+
+                                                                     LSM303DLHC or LSM303AGR
+                                          LQFP100 pin number
+
+
+
+
+                                                                                               L3GD20 or I3G4250D
+
+
+
+
+                                                                                                                                                                      Power supply
+                                                                                                                    Push-button
+
+
+
+
+                                                                                                                                                           Free I/O
+    Main
+
+
+
+
+                                                                                                                                        SWD
+
+
+
+                                                                                                                                                     OSC
+                                                                                                                                               USB
+                                                               VCP
+
+
+
+
+                                                                                                                                  LED
+
+
+
+
+                                                                                                                                                                                        CN3
+                 Alternate function
+
+
+
+
+                                                                                                                                                                                              P1
+
+                                                                                                                                                                                                    P2
+  function
+
+
+
+
+PF2                        -               19                   -             -                       -                 -          -     -      -     -       -             -            -    10     -
+PF4             COMP1_OUT                  27                   -             -                       -                 -          -     -      -     -       -             -            -    13     -
+                TIM4_CH4,
+PF6             I2C2_SCL,                  73                   -             -                       -                 -          -     -      -     -       -             -            -    -     39
+                USART3_RTS
+                TIM15_CH1,
+PF9                                        10                   -             -                       -                 -          -     -      -     -       -             -            -    -     3
+                SPI2_SCK
+                TIM15_CH2,
+PF10                                       11                   -             -                       -                 -          -     -      -     -       -             -            -    -     4
+                SPI2_SCK
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -       5V                 -    -     1
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -       5V                 -    -     2
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -       3V                 -    1      -
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -       3V                 -    2      -
+                                                                                                                                                                      GND GND GND VDD
+
+
+
+
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -                          -    -     20
+
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -                         3     -      -
+
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -                          -    49    49
+
+       -                   -                     -              -             -                       -                 -          -     -      -     -       -                          -    50    50
+
+1. The cells marked in gray identify connections between the MCU pin function and the board function.
+
+
+
+
+                                                                        UM1570 Rev 7                                                                                                               33/41
+                                                                                                                                                                                                           40
+STM32F3DISCOVERY information                                                                    UM1570
+
+
+7        STM32F3DISCOVERY information
+
+7.1      Product marking
+         The stickers located on the top or bottom side of all PCBs provide product information:
+         •    First sticker: product order code and product identification, generally placed on the
+              main board featuring the target device.
+              Example:
+                Product order code
+                Product identification
+
+         •    Second sticker: board reference with revision and serial number, available on each
+              PCB.
+              Example:
+                MBxxxx-Variant-yzz
+                syywwxxxxx
+
+
+         On the first sticker, the first line provides the product order code, and the second line the
+         product identification.
+         On the second sticker, the first line has the following format: “MBxxxx-Variant-yzz”, where
+         “MBxxxx” is the board reference, “Variant” (optional) identifies the mounting variant when
+         several exist, "y" is the PCB revision and "zz" is the assembly revision, for example B01.
+         The second line shows the board serial number used for traceability.
+         Parts marked as "ES" or "E" are not yet qualified and therefore not approved for use in
+         production. ST is not responsible for any consequences resulting from such use. In no event
+         will ST be liable for the customer using any of these engineering samples in production.
+         ST’s Quality department must be contacted prior to any decision to use these engineering
+         samples to run a qualification activity.
+         "E" or "ES" marking examples of location:
+         •    On the targeted STM32 that is soldered on the board (for an illustration of STM32
+              marking, refer to the STM32 datasheet Package information paragraph at the
+              www.st.com website).
+         •    Next to the evaluation tool ordering part number that is stuck or silk-screen printed on
+              the board.
+         Some boards feature a specific STM32 device version, which allows the operation of any
+         bundled commercial stack/library available. This STM32 device shows a "U" marking option
+         at the end of the standard part number and is not available for sales.
+         To use the same commercial stack in their applications, the developers might need to
+         purchase a part number specific to this stack/library. The price of those part numbers
+         includes the stack/library royalties.
+
+
+
+
+34/41                                      UM1570 Rev 7
+UM1570                                                                             STM32F3DISCOVERY information
+
+
+7.2                  STM32F3DISCOVERY product history
+
+                                                   Table 8. Product history
+Order                                                                       Product change
+                 Product identification        Product details                                    Product limitations
+code                                                                          description
+
+                                          MCU:
+                                          – STM32F303VCT6
+                                            silicon revision “Y”
+                                          MCU errata sheet:
+                 STM32F3DISCOVER/                                    Initial revision             No limitation
+                                          – STM32F303xB/C
+                                            device errata (ES0204)
+ 32F303C-DISC1
+
+
+
+
+                                          Board:
+                                          – MB1035-Default-B01
+                                          MCU:
+                                          – STM32F303VCT6
+                                            silicon revision “Y”
+
+                 32F303CDISC1/            MCU errata sheet:
+                                                                     Main board revision changed No limitation
+                 (Version 01-0)           – STM32F303xB/C
+                                            device errata (ES0204)
+                                          Board:
+                                          – MB1035-Default-C01
+
+
+
+
+                                                          UM1570 Rev 7                                            35/41
+                                                                                                                          40
+STM32F3DISCOVERY information                                                                                          UM1570
+
+
+                                               Table 8. Product history (continued)
+ Order                                                                        Product change
+                     Product identification        Product details                                     Product limitations
+ code                                                                           description
+
+                                              MCU:
+                                              – STM32F303VCT6
+                                                silicon revision “Y”
+                                                                         – Main board revision
+                                              MCU errata sheet:            changed
+                     32F303CDISC1/
+                     (Version 02-0)           – STM32F303xB/C            – Order code STM32F303C- No limitation
+                                                device errata (ES0204)     DISC1 replaced by
+                                                                           STM32F3DISCOVERY
+                                              Board:
+                                              – MB1035-Default-D01
+                                                (main board)
+                                              MCU:
+  STM32F3DISCOVERY
+
+
+
+
+                                              – STM32F303VCT6
+                                                silicon revision “Y”
+                                              MCU errata sheet:
+                     DK32F303C$AX1            – STM32F303xB/C            Main board revision changed No limitation
+                                                device errata (ES0204)
+                                              Board:
+                                              – MB1035-F303C-E02
+                                                (main board)
+                                              MCU:
+                                              – STM32F303VCT6
+                                                silicon revision “Y”
+                                              MCU errata sheet:          Plastic blister packaging
+                     DK32F303C$AX2            – STM32F303xB/C            replaced by a carton box and No limitation
+                                                device errata (ES0204)   welcome letter
+                                              Board:
+                                              – MB1035-F303C-E02
+                                                (main board)
+
+
+
+
+36/41                                                         UM1570 Rev 7
+UM1570                                                             STM32F3DISCOVERY information
+
+
+7.3            Board revision history
+                               Table 9. Board revision history
+                           Board variant and           Board change
+      Board reference                                                         Board limitations
+                               revision                 description
+
+                        Default-B01             Initial revision
+                                                – PCB label MB1035-C01,
+                                                  SB13 and SB15 ON
+                                                – STM32F103C8T6
+                        Default-C01
+                                                  replaced by
+                                                  STM32F103CBT6, ST- When the board is used as
+                                                  LINK/V2-B             a USB application, like a
+MB1035                                          PCB label MB1035-D01,   mouse or another similar
+                        Default-D01             only silkscreen         device, it needs to be
+(main board)
+                                                modification            powered up through the
+                                                                        ST-LINK USB connector
+                                                – C7 and C9 changed     first.
+                                                  from 20 pF to 33 pF
+                                                – U3 changed from
+                        F303C-E02                 LSM303DLHC to
+                                                  LSM303AGR
+                                                – U5 changed from
+                                                  L3GD20 to I3G4250D
+
+
+
+
+                                        UM1570 Rev 7                                          37/41
+                                                                                                      40
+Federal Communications Commission (FCC) and ISED Canada (IC) Compliance Statements
+
+
+8         Federal Communications Commission (FCC)
+          and ISED Canada (IC) Compliance Statements
+
+8.1       FCC Compliance Statement
+          Part 15.19
+          This device complies with part 15 of the FCC Rules. Operation is subject to the following two
+          conditions: (1) this device may not cause harmful interference, and (2) this device must
+          accept any interference received, including interference that may cause undesired
+          operation.
+
+          Part 15.21
+          Any changes or modifications to this equipment not expressly approved by
+          STMicroelectronics may cause harmful interference and void the user's authority to operate
+          this equipment.
+
+          Part 15.105
+          This equipment has been tested and found to comply with the limits for a Class B digital
+          device, pursuant to part 15 of the FCC Rules. These limits are designed to provide
+          reasonable protection against harmful interference in a residential installation. This
+          equipment generates uses and can radiate radio frequency energy and, if not installed and
+          used in accordance with the instructions, may cause harmful interference to radio
+          communications. However, there is no guarantee that interference will not occur in a
+          particular installation. If this equipment does cause harmful interference to radio or television
+          reception, which can be determined by turning the equipment off and on, the user is
+          encouraged to try to correct the interference by one or more of the following measures:
+          •    Reorient or relocate the receiving antenna.
+          •    Increase the separation between the equipment and the receiver.
+          •    Connect the equipment into an outlet on a circuit different from that to which the receiver
+               is connected.
+          •    Consult the dealer or an experienced radio/TV technician for help.
+Note:     Use only shielded cables.
+
+          Responsible party (in the USA)
+          Terry Blanchard
+          Americas Region Legal | Group Vice President and Regional Legal Counsel, The Americas
+          STMicroelectronics, Inc.
+          750 Canyon Drive | Suite 300 | Coppell, Texas 75019
+          USA
+          Telephone: +1 972-466-7845
+
+
+
+
+38/41                                       UM1570 Rev 7
+UM1570   Federal Communications Commission (FCC) and ISED Canada (IC) Compliance State-
+
+
+8.2       ISED Compliance Statement
+          Compliance Statement
+          ISED Canada ICES-003 Compliance Label: CAN ICES-3 (B) / NMB-3 (B).
+
+          Déclaration de conformité
+          Étiquette de conformité à la NMB-003 d'ISDE Canada: CAN ICES-3 (B) / NMB-3 (B).
+
+
+
+
+                                        UM1570 Rev 7                                        39/41
+                                                                                                    40
+Revision history                                                                                 UM1570
+
+
+Revision history
+
+                                    Table 10. Document revision history
+                   Date      Revision                               Changes
+
+              10-Sep-2012       1        Initial release.
+              20-Sep-2012       2        Added Figure 7 on page 11 and updated Figure 12 on page 35
+                                         Updated Section 6.2: Embedded ST-LINK/V2 (or V2-B): removed
+              07-Feb-2013       3        WLCSP package, sigma-delta ADC, CEC, updated timers and
+                                         SPI/I²Ss.
+                                         Updated to introduce the information that boards come with ST-
+                                         LINK/V2 or ST-LINK/V2-B.
+                                         Updated Section 1: Features, Section 3: Ordering information,
+                                         Section 6.2.4: Using ST-LINK/V2 (or V2-B) to program/debug the
+                                         STM32F303VCT6 on board, Section 6.2.5: Using ST-LINK/V2 (or
+               21-Jul-2016      4        V2-B) to program/debug an external STM32 application, Table 5:
+                                         Solder bridges, Table 6: STM32F303VCT6 MCU pin description
+                                         versus board function.
+                                         Added Section 2: Product marking, Section 6.2.1: Drivers,
+                                         Section 6.2.2: ST-LINK/V2 (or V2-B) firmware upgrade,
+                                         Section 6.2.3: VCP configuration.
+                                         Corrected the VCP pin connection of the MCU from incorrect
+                                         PA9&PA10 to PC4&PC5 in Section 6.2.3: VCP configuration and
+              13-Apr-2018       5
+                                         Table 7: STM32F303VCT6 MCU pin description versus board
+                                         function.
+                                         Reshuffle the document to align with the latest standards:
+                                         – Introduction to Quick start reordering
+                                         – Electrical schematics removed
+              27-Aug-2020       6        – New Table 2: Codification explanation and Section 7:
+                                           STM32F3DISCOVERY information
+                                         Updated:
+                                         – Features, Figure 2, Section 6.7, Section 6.8, and Table 7
+                                           header adding LSM303AGR and I3G4250D sensors
+                                         Updated STM32F3DISCOVERY information chapter with
+              15-Sep-2023       7        refreshed Product marking section and new Product history and
+                                         Board revision history tables
+
+
+
+
+40/41                                    UM1570 Rev 7
+UM1570
+
+
+
+
+                                                IMPORTANT NOTICE – READ CAREFULLY
+
+
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and
+improvements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on
+ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order
+acknowledgment.
+
+
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or
+the design of purchasers’ products.
+
+
+No license, express or implied, to any intellectual property right is granted by ST herein.
+
+
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+
+
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, refer to www.st.com/trademarks. All other product
+or service names are the property of their respective owners.
+
+
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+
+
+                                               © 2023 STMicroelectronics – All rights reserved
+
+
+
+
+                                                              UM1570 Rev 7                                                            41/41
+                                                                                                                                                41
+

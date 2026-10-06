@@ -1,0 +1,2330 @@
+                                                                                                                 UM2505
+
+                                                                                                               User manual
+
+                                                                               STM32G4 Nucleo-64 boards (MB1367)
+
+
+Introduction
+The STM32G4 Nucleo-64 boards based on the MB1367 reference board (NUCLEO-G431RB, NUCLEO-G474RE, NUCLEO-
+G491RE) provide an affordable and flexible way for users to try out new concepts and build prototypes with the STM32G4
+series microcontrollers, choosing from the various combinations of performance, power consumption, and features. The
+ARDUINO® Uno V3 connectivity and the ST morpho headers provide an easy means of expanding the functionality of the
+Nucleo open development platform with a wide choice of specialized shields. The STM32G4 Nucleo-64 boards do not require
+any separate probe as they integrate the STLINK-V3E debugger/programmer. The STM32G4 Nucleo-64 boards come with the
+comprehensive free software libraries and examples available with the STM32CubeG4 MCU Package.
+
+
+               Figure 1. NUCLEO-G474RE top view                                    Figure 2. NUCLEO-G474RE bottom view
+
+
+
+
+Pictures are not contractual.
+
+
+
+
+UM2505 - Rev 7 - May 2026                                                                                                www.st.com
+For further information, contact your local STMicroelectronics sales office.
+                                                                                                                       UM2505
+                                                                                                                          Features
+
+
+
+1                Features
+
+                 •     STM32G4 microcontroller (Arm® Cortex®‑M4 at 170 MHz) in an LQFP64 package featuring:
+                       –     128 Kbytes of flash memory and 32 Kbytes of SRAM for STM32G431RBT6
+                       –     512 Kbytes of flash memory and 96 Kbytes of SRAM for STM32G491RET6
+                       –     512 Kbytes of flash memory and 128 Kbytes of SRAM for STM32G474RET6
+                 •     Fully compatible with STM32G473RET6 (512 Kbytes of flash memory and 128 Kbytes of SRAM)
+                 •     1 user LED
+                 •     1 user and 1 reset push-buttons
+                 •     32.768 kHz LSE crystal oscillator
+                 •     24 MHz HSE on-board oscillator
+                 •     Board connectors:
+                       –     USB Micro-AB
+                       –     MIPI® debug connector
+                       –     ARDUINO® Uno V3 expansion connector
+                       –     ST morpho extension pin headers for full access to all STM32G4 I/Os
+                 •     Flexible power-supply options: ST-LINK USB VBUS, USB connector, or external sources
+                 •     On-board STLINK-V3E debugger/programmer with USB re-enumeration capability: mass storage, Virtual
+                       COM port, and debug port
+                 •     Comprehensive free software libraries and examples available with the STM32CubeG4 MCU Package
+                 •     Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded
+                       Workbench®, MDK-ARM, and STM32CubeIDE
+
+
+
+Note:            Arm and Cortex are registered trademarks of Arm Limited (or its subsidiaries or affiliates) in the US and/or
+                 elsewhere.
+                 The Arm word and logo are trademarks of Arm Limited (or its subsidiaries) in the US and/or elsewhere. All rights
+                 reserved.
+
+
+
+
+UM2505 - Rev 7                                                                                                            page 2/48
+                                                                                                                             UM2505
+                                                                                                                    Ordering information
+
+
+
+2                Ordering information
+
+                 To order an STM32G4 Nucleo-64 board, refer to Table 1. Additional information is available from the datasheet
+                 and reference manual of the target STM32.
+
+
+                                                            Table 1. List of available products
+
+                                    Order code                         Board reference                      Target STM32
+
+                                NUCLEO-G431RB                                                             STM32G431RBT6
+                                NUCLEO-G474RE                             MB1367(1)                       STM32G474RET6
+                                NUCLEO-G491RE                                                             STM32G491RET6
+
+                 1. Subsequently called main board in the rest of the documentation.
+
+
+2.1              Codification
+                 The meaning of the codification is explained in Table 2.
+
+
+                                                            Table 2. Codification explanation
+
+                 NUCLEO-G4XXRY                         Description                                  Example: NUCLEO-G474RE
+
+                         G4           MCU series in STM32 32-bit Arm Cortex MCUs STM32G4 series
+                                                                                       STM32G474xx MCUs belong to the STM32G4x4
+                         XX           MCU product line in the series
+                                                                                       product line
+                                      STM32 package pin or ball count:
+                          R                                                            64 pins
+                                      •     R for 64 pins
+                                      STM32 flash memory size:
+                          Y           •     B for 128 Kbytes                           512 Kbytes
+                                      •     E for 512 Kbytes
+
+
+
+
+UM2505 - Rev 7                                                                                                                  page 3/48
+                                                                                                                        UM2505
+                                                                                                          Development environment
+
+
+
+3                Development environment
+
+3.1              System requirements
+                 •     Multi‑OS support: Windows® 10 or 11, Linux® 64-bit, or macOS®
+                 •     USB Type-A or USB Type-C® to Micro-B cable
+Note:            macOS® is a trademark of Apple Inc., registered in the U.S. and other countries and regions.
+                 Linux® is a registered trademark of Linus Torvalds.
+                 Windows is a trademark of the Microsoft group of companies.
+
+
+3.2              Development toolchains
+                 •     IAR Systems® - IAR Embedded Workbench®(1)
+                 •     Keil® - MDK-ARM(1)
+                 •     STMicroelectronics - STM32CubeIDE
+                 1. On Windows® only.
+
+
+3.3              Demonstration software
+                 The demonstration software, included in the STM32Cube MCU Package corresponding to the on-board
+                 microcontroller, is preloaded in the STM32 flash memory for easy demonstration of the device peripherals in
+                 standalone mode. The latest versions of the demonstration source code and associated documentation can be
+                 downloaded from www.st.com.
+
+
+3.4              EDA resources
+                 All board design resources, including schematics, EDA databases, manufacturing files, and the bill of materials,
+                 are available from the NUCLEO-G431RB, NUCLEO-G474RE, and NUCLEO-G491RE product pages at
+                 www.st.com.
+
+
+
+
+UM2505 - Rev 7                                                                                                             page 4/48
+                                                                                                                     UM2505
+                                                                                                                     Conventions
+
+
+
+4                Conventions
+
+                 Table 3 provides the conventions used for the ON and OFF settings in the present document.
+
+
+                                                         Table 3. ON/OFF convention
+
+                                Convention                                               Definition
+
+                               Jumper JPx ON                                            Jumper fitted
+                              Jumper JPx OFF                                          Jumper not fitted
+                              Jumper JPx [1-2]                              Jumper fitted between pin 1 and pin 2
+                            Solder bridge SBx ON                            SBx connections closed by 0 Ω resistor
+                           Solder bridge SBx OFF                                  SBx connections left open
+                               Resistor Rx ON                                         Resistor soldered
+                              Resistor Rx OFF                                       Resistor not soldered
+                              Capacitor Cx ON                                        Capacitor soldered
+                              Capacitor Cx OFF                                     Capacitor not soldered
+
+
+
+
+UM2505 - Rev 7                                                                                                          page 5/48
+                                                                                                                           UM2505
+                                                                                                              Safety recommendations
+
+
+
+5                Safety recommendations
+
+5.1              Targeted audience
+                 This product targets users with at least basic electronics or embedded software development knowledge like
+                 engineers, technicians, or students.
+                 This board is not a toy and is not suited for use by children.
+
+
+5.2              Handling the board
+                 This product contains a bare printed circuit board and like all products of this type, the user must be careful about
+                 the following points:
+                 •     The connection pins on the board might be sharp. Be careful when handling the board to avoid injury.
+                 •     This board contains static sensitive devices. To avoid damaging it, handle the board in an ESD‑proof
+                       environment.
+                 •     While powered, do not touch the electric connections on the board with your fingers or anything conductive.
+                       The board operates at a voltage level that is not dangerous, but components might be damaged when
+                       shorted.
+                 •     Do not put any liquid on the board and avoid operating it close to water or at a high humidity level.
+                 •     Do not operate the board if it is dirty or dusty.
+                 •     The pins of the board are exposed and must not come into contact with a metal surface, as this can
+                       produce a short circuit and damage the board.
+
+
+5.3              Delivery recommendations
+                 Before the first use, inspect the board for any damage that may have occurred during shipment. Ensure that all
+                 socketed components are securely fixed in their sockets and that nothing is loose in the plastic bag.
+
+
+5.4              Power supply
+                 A power supply unit or auxiliary equipment complying with the EN 62368-1:2014+A11:2017 standard (or the one
+                 replacing it) and safety extralow voltage (SELV/ES1) with limited power capability (LPS/PS2) must power this
+                 equipment.
+
+
+
+
+UM2505 - Rev 7                                                                                                                page 6/48
+                                                                                                                         UM2505
+                                                                                                                          Quick start
+
+
+
+6                Quick start
+
+                 The STM32G4 Nucleo-64 board is a low-cost and easy-to-use development kit, used to evaluate and start a
+                 development quickly with an STM32G4 series microcontroller in an LQFP64 package. Before installing and using
+                 the product, accept the Evaluation Product License Agreement from the www.st.com/epla webpage. For more
+                 information on the STM32G4 Nucleo-64 and for demonstration software, visit the www.st.com/stm32nucleo
+                 webpage.
+
+
+6.1              Getting started
+                 Follow the sequence below to configure the STM32G4 Nucleo-64 board and launch the demonstration application
+                 (refer to Figure 4 for component location):
+                 1. Check the jumper position on the board (refer to Table 4)
+                 2. For the correct identification of the device interfaces from the host PC and before connecting the board, install
+                     the Nucleo USB driver available on the www.st.com/stm32nucleo website
+                 3. To power the board, connect the STM32G4 Nucleo-64 board to a PC with a USB cable (USB Type-A or USB
+                     Type-C® to Micro-B) through the USB connector CN1 of the board
+                 4. Then, green LED LD3 (5V_PWR) and red LED LD1 (COM) light up, green LED LD2 (USER) blinks
+                 5. Press user button B1 (left blue USER button)
+                 6. Observe how the blinking of the green LED LD2 changes according to the clicks on button B1
+                 7. The software demonstration and the several software examples that allow users to exercise Nucleo features,
+                     are available on the www.st.com/stm32nucleo webpage
+                 8. Develop your own application using the available examples
+
+
+                                                                Table 4. Jumper configuration
+
+                      Jumper                       Definition                         Position(1)              Comment(1)
+
+                        JP1          NRST                                   OFF                      STLINK-V3E reset
+                        JP3          T_RST                                  ON                       -
+                                                                            ON [1-2] (Default)       5V_USB_STLK (from ST-LINK)
+                                                                            ON [3-4] (optional)      5V_VIN
+                        JP5          5 V power-source selection
+                                                                            ON [5-6] (optional)      E5V
+                                                                            ON [7-8] (optional)      5V_USB_CHGR
+                        JP6          IDD                                    ON                       -
+                        JP7          BOOT0                                  OFF                      -
+
+                                     VREF+ selection (VREF or VDD           ON [1-2] (Default)       VREF+ supplied with VREF
+                        JP8
+                                     voltage supply selection)              ON [2-3] (optional)      VREF+ supplied with VDD
+
+                 1. Default jumper state is shown in bold.
+
+
+
+
+UM2505 - Rev 7                                                                                                               page 7/48
+                                                                                                                                                                           UM2505
+                                                                                                                                        Hardware layout and configuration
+
+
+
+7                Hardware layout and configuration
+
+                 The STM32G4 Nucleo-64 board is designed around the STM32 microcontrollers in a 64-pin LQFP package.
+                 Figure 3 shows the connections between the STM32 and its peripherals (STLINK-V3E, push-buttons, LEDs, USB,
+                 ARDUINO® Uno and ST morpho headers). Figure 4 and Figure 5 show the location of these features on the
+                 STM32G4 Nucleo-64 board. The mechanical dimensions of the board are shown in Figure 6.
+
+                                                                                 Figure 3. Hardware block diagram
+
+                        STLINK-V3E part                               STLK_RST                  USB                         Red LED
+                                                                                              Micro-B                       LD4 (OC)
+
+
+
+
+                                                                                                                                                                          GND
+                                                                                             connector
+                        GND
+
+
+
+
+                                                                                               (CN1)
+
+                                                                                                                                          Green/Orange LED LD1
+                                                                             Embedded                                                            (COM)
+                                                                            STLINK-V3E
+                                           DEBUG
+
+
+
+
+                                                                                                                                       PWR SEL
+                                                                                     VCP
+                                                                         SWD
+                                                                                     UART
+
+
+
+
+                                                                                                                                         5V
+                                                                                                                                                      Green LED LD3
+                                                                                                                                                        (5V_PWR)
+
+
+
+
+                                                                                  B1                                        B2
+                                                                                 button                                    button
+                                                                                 USER                                      RESET
+                                                                                               Green LED
+                                                                                              LD2 (USER)
+
+
+                                                                                                         IDD              VREF
+
+
+
+
+                                                                                                               VCP
+                                                                                              SWD
+                                                                                                               UART
+
+
+                                                                                  GPIO                                   GPIO
+                               ST morpho
+
+
+
+
+                                                                                                                                                              ST morpho
+                                                                                                                                                  Arduino™
+                                                   Arduino™
+
+
+
+
+                                                                                          STM32G4XXRY
+                                                              BOOT0
+
+
+
+
+                                                                                  GPIO                                   GPIO
+
+
+
+                                                                                            OSC_32              OSC
+
+
+
+                                                                                            32 kHz             24 MHz
+                                                                                            crystal            crystal
+
+
+
+
+                                    Connectors
+                         xxx
+
+
+
+
+                                    or jumpers
+
+
+
+
+UM2505 - Rev 7                                                                                                                                                                  page 8/48
+                                                                                                                           UM2505
+                                                                                                  Hardware layout and configuration
+
+
+
+7.1              PCB layout
+                                                           Figure 4. Top layout
+
+
+                                              CN2              CN1 STLINK-V3E         LD1 bicolor LED
+                                          DFU connector      Micro-B USB connector         (COM)
+                                                       JP1                   LD4 red LED         LD3 green LED
+                                                 STLINK-V3E reset           (Over current)         (5V_PWR)
+
+
+
+
+                   U5 STM32F723IEK6
+                   (STLINK-V3E MCU)
+
+                                 CN4                                                                             JP5 5V power
+                      MIPI10 connector                                                                           source selection
+
+                           X1 (25 MHz)
+
+                       B1 USER button                                                                            B2 RESET button
+
+
+                       JP3 Target reset                                                                          U12 3V3 regulator
+                                                                                                                 LD39050PU33R
+                   U11 5V_Vin regulator
+                        LD1117S50TR
+                                                                                                                 JP8
+                                                                                                                 VREF selection
+                                  JP6
+                      IDD measurement
+
+                               CN6                                                                               CN5
+                  ARDUINO® connector                                                                             ARDUINO® connector
+
+                                  JP7
+                                BOOT0                                                                            U14 voltage ref. IC
+                                                                                                                 TL1431CL5T
+                               CN8
+                  ARDUINO® connector                                                                             CN9
+                                                                                                                 ARDUINO® connector
+                                  CN7                                                                            CN10
+                  ST morpho pin header                                                                           ST morpho pin header
+
+
+
+
+                                                               X2                 HW102
+                                                             32 kHz            product sticker
+                                                                        X3                                                             DT60940V1
+                                                                      24 MHz
+
+
+
+
+UM2505 - Rev 7                                                                                                                 page 9/48
+                                                                                                     UM2505
+                                                                              Hardware layout and configuration
+
+
+
+                                         Figure 5. Bottom layout
+
+                                              CN1 STLINK-V3E             CN2
+                                            Micro-B USB connector  DFU connector
+                                                               JP1
+                                                        STLINK-V3E reset
+
+
+
+
+                                                                                            HW101
+                                                                                            board sticker
+                        JP5 5V power
+                                                                                            CN4
+                      source selection
+                                                                                            MIPI10 connector
+
+
+
+
+                                                                                            JP3 Target reset
+
+                                 JP8
+                       VREF selection
+
+
+                                JP6
+                    IDD measurement
+
+                              CN5                                                           CN6
+                 ARDUINO® connector                                                         ARDUINO® connector
+
+
+                                                                                            JP7 BOOT0
+
+
+                              CN9
+                 ARDUINO® connector                                                         CN8
+                                                                                            ARDUINO® connector
+                                CN10
+                 ST morpho pin header                                                       CN7
+                                                                                            ST morpho pin header
+
+
+
+
+                                                                                                               DT60941V1
+
+
+
+
+UM2505 - Rev 7                                                                                          page 10/48
+                                                                                                                  UM2505
+                                                                                             Hardware layout and configuration
+
+
+
+7.2              Mechanical drawing
+                                  Figure 6. STM32G4 Nucleo 64 board mechanical drawing (in millimeter)
+
+
+
+
+7.3              Embedded STLINK-V3E
+                 There are two different ways to program and debug the onboard STM32 MCU:
+                 •     Using the embedded STLINK-V3E
+                 •     Using an external debug tool connected to the CN4 MIPI10 connector.
+                 The STLINK-V3E programming and debugging tool is integrated in the STM32G4 Nucleo-64 board.
+
+
+
+
+UM2505 - Rev 7                                                                                                       page 11/48
+                                                                                                                        UM2505
+                                                                                                  Hardware layout and configuration
+
+
+
+                 The embedded STLINK-V3E supports only SWD and VCP for STM32 devices. For information about debugging
+                 and programming features of STLINK-V3, refer to the STLINK-V3SET debugger/programmer for STM8 and
+                 STM32 user manual (UM2448), which describes in details all the STLINK-V3 features.
+                 Features supported on STLINK-V3E:
+                 •       5V power supplied by USB connector (CN1)
+                 •       USB 2.0 high-speed-compatible interface
+                 •       JTAG/serial wire debugging (SWD) specific features:
+                         –     3 V to 3.6 V application voltage on the JTAG/SWD interface and 5 V tolerant inputs
+                         –     JTAG
+                         –     SWD and serial viewer (SWV) communication
+                 •       MIPI10 connector (CN4)
+                 •       Status LED LD1 (COM) that blinks during communication with the PC
+                 •       Fault red LED LD4 (OC) alerting on USB overcurrent request
+                 •       5 V / 300 mA output power supply capability (U4) with current limitation and LED
+                 •       5 V power green LED LD3 (5V_PWR)
+
+7.3.1            Drivers
+                 Before connecting the STM32G4 Nucleo-64 board to a Windows® 7, Windows® 8, or Windows® 10 PC via USB,
+                 a driver for the STLINK-V3E must be installed (not required for Windows® 10). It is available at the www.st.com
+                 website.
+                 If the STM32G4 Nucleo-64 board is connected to the PC before the driver is installed, some STM32G4 Nucleo-64
+                 interfaces may be declared as “Unknown” in the PC device manager. In this case, the user must install the
+                 dedicated driver files, and update the driver of the connected device from the device manager a shown in
+                 Figure 7.
+Note:            Prefer using the USB Composite Device handle for a full recovery.
+
+                                                         Figure 7. USB composite device
+
+
+
+
+Note:            37xx:
+                 •       374E for STLINK-V3E without bridge functions
+                 •       374F for STLINK-V3E with bridge functions
+
+7.3.2            STLINK-V3E firmware upgrade
+                 The STLINK-V3E embeds a firmware upgrade mechanism for in-situ upgrade through the USB port. As the
+                 firmware may evolve during the lifetime of the STLINK-V3E product (for example new functionalities, bug fixes,
+                 support for new microcontroller families), it is recommended to visit the www.st.com website before starting to use
+                 the STM32G4 Nucleo-64 board and periodically, to stay up-to-date with the latest firmware version.
+
+
+
+
+UM2505 - Rev 7                                                                                                             page 12/48
+                                                                                                                    UM2505
+                                                                                              Hardware layout and configuration
+
+
+
+7.3.3            Using an external debug tool to program and debug the on-board STM32
+                 There are two basic ways to support an external debug tool:
+                 1. Keep the embedded STLINK-V3E running. Power on the STLINK-V3E at first until the COM LED turns red.
+                    Then connect the external debug tool through the CN4 STDC14/MIPI10 debug connector
+                 2. Set the embedded STLINK-V3E in high-impedance state: when jumper JP1 (STLK_RST) is ON, the
+                    embedded STLINK-V3E is in RESET state and all GPIOs are in high-impedance; then, connect the external
+                    debug tool to debug connector CN4.
+
+                                Figure 8. Connecting an external debug tool to program the on-board STM32G4
+
+
+
+
+                                                Table 5. MIPI10/STDC14 debug connector (CN4)
+
+                   MIPI10 pin      STDC14 pin         CN4                                 Function
+
+                        -               1             NC       Reserved
+                        -               2             NC       Reserved
+                        1               3             3V3      Target VCC
+                                                               Target SWDIO using SWD protocol or Target JTMS (T_JTMS) using
+                        2               4          T_SWDIO
+                                                               JTAG protocol
+                        3               5             GND      Ground
+                                                               Target SWCLK using SWD protocol or Target JCLK (T_JCLK) using
+                        4               6          T_SWCLK
+                                                               JTAG protocol
+                        5               7             GND      Ground
+                                                               Target SWO using SWD protocol or Target JTDO (T_JTMS) using
+                        6               8           T_SWO
+                                                               JTAG protocol
+                        7               9             NC       Not connected
+
+
+
+
+UM2505 - Rev 7                                                                                                         page 13/48
+                                                                                                                          UM2505
+                                                                                                   Hardware layout and configuration
+
+
+
+                     MIPI10 pin    STDC14 pin          CN4                                     Function
+
+                                                                  Not used by SWD protocol, Target JTDI (T_JTDI) using JTAG protocol,
+                         8              10           T_JTDI
+                                                                  only for external tools
+                         9              11          GNDDetect     GND detect for plug indicator, used on SWD and JTAG neither
+                                                                  Target NRST using SWD protocol or Target JTMS (T_JTMS) using
+                        10              12           T_NRST
+                                                                  JTAG protocol
+                         -              13          T_VCP_RX      Target RX used for VCP (must be UART dedicated to bootloader)
+                         -              14          T_VCP_TX      Target TX used for VCP (must be UART dedicated to bootloader)
+
+
+7.4              Power supply
+                 The power supply can be provided by five different sources:
+                 •      A host PC connected to CN1 through a USB cable (default setting)
+                 •      An external 7 V - 12 V (VIN) power supply connected to CN7 pin 24
+                 •      An external 5 V (E5V) power supply connected to CN7 pin 6
+                 •      An external 5 V USB charger (5V_USB_CHGR) connected to CN1
+                 •      An external 3.3 V power supply (3V3) connected to CN7 pin 16
+
+
+
+
+UM2505 - Rev 7                                                                                                              page 14/48
+                                                                                                                   UM2505
+                                                                                              Hardware layout and configuration
+
+
+
+                                               Figure 9. STM32G4 Nucleo-64 board power tree
+
+
+
+
+                 If 5V_VIN, E5V, 5V_USB_CHGR, or 3V3 is used to power the STM32G4 Nucleo-64 board, this power source
+                 must comply with the EN 62368-1:2014+A11:2017 standard, or the standard/amendment that has replaced it
+                 since if the norm was changed. It must be Safety Extra Low Voltage (SELV) with limited power capability.
+                 If the power supply is 3V3, the ST-LINK is not powered and cannot be used.
+
+
+
+
+UM2505 - Rev 7                                                                                                        page 15/48
+                                                                                                                     UM2505
+                                                                                                Hardware layout and configuration
+
+
+
+
+                 Power supply input from STLINK-V3E USB connector (default setting)
+                 The STM32G4 Nucleo-64 board and shield can be powered from STLINK-V3E connector CN1 (5 V) by placing a
+                 jumper between pins 1-2 of JP5, “5V_SEL”, as illustrated in Figure 10. This is the default setting.
+
+                         Figure 10. Power supply input from STLINK-V3E USB connector with PC (5 V, 500 mA max)
+
+
+                                                                     PC
+                                                                            < 500 mA
+
+
+                                                                      CN1
+                                                                   STLINK-V3E
+                                                                      USB
+                                                                                        Power switch
+                                                                                            5V
+
+                                                                                      U4
+                                                                U5
+                                                            STM32F723
+                                                            STLINK-V3E
+
+
+
+
+                                                                                            5V
+
+
+                                                                   U12
+                                                                   LDO
+                                                                   3V3
+
+                                                          3V3
+
+
+
+
+                             Legend:        5V                   3.3 V
+
+
+                 If the USB enumeration succeeds, the 5V_USB_STLK power is enabled, by asserting the T_PWR_EN signal from
+                 STM32F723IEK6 “STLINK V3” (U5). This pin is connected to a power switch STMPS2151STR (U4), which
+                 powers the board. The power switch STMPS2151STR (U4) also features a current limitation to protect the PC in
+                 case of short-circuit on board. If an overcurrent (more than 500 mA) happens on board, the red LED LD4 is lit.
+
+
+
+
+UM2505 - Rev 7                                                                                                          page 16/48
+                                                                                                                            UM2505
+                                                                                                   Hardware layout and configuration
+
+
+
+                 The Nucleo board and its shield can be powered from ST-LINK USB connector CN1, but only ST-LINK circuit gets
+                 power before USB enumeration, because the host PC only provides 100 mA to the board at that time.
+                 During the USB enumeration, the Nucleo board requires 500 mA power from the host PC:
+                 •       If the host is able to provide the required power, the enumeration finishes by a “SetConfiguration”
+                         command and then, the power switch STMPS2151STR is switched ON, the green LED LD3 (5V_PWR) is
+                         turned ON, thus the Nucleo board and its shield on it can consume 500 mA at the maximum.
+                 •       If the host is not able to provide the requested current, the enumeration fails. Therefore, the
+                         STMPS2151STR power switch (U4) remains OFF and the MCU part including the extension board is not
+                         powered. As a consequence, the green LED LD5 remains turned OFF. In this case, it is mandatory to use
+                         an external power supply.
+Caution:         If the maximum current consumption of the STM32G4 Nucleo-64 board and its shield boards exceeds 300 mA, it
+                 is mandatory to power the STM32G4 Nucleo-64 board with an external power supply connected to E5V, VIN, or
+                 3.3 V.
+
+                 External power supply input from VIN (7 V - 12 V, 800 mA max)
+                 When the STM32G4 Nucleo-64 board is power-supplied by VIN (refer to Table 6 and Figure 11), the jumper
+                 configuration must be the following: jumper JP2 on pins 3-4 “5V_VIN”.
+                 The STM32G4 Nucleo-64 board and its shield boards can be powered in three different ways from an external
+                 power supply, depending on the voltage used. The three cases are summarized in Table 6.
+
+
+                                                  Table 6. External power sources: VIN (7 V - 12 V)
+
+                     Input power     Connector                        Maximum
+                                                    Voltage range                                      Limitation
+                        name           pins                            current
+
+                                                                                  From 7 V to 12 V only and input current capability is
+                                                                                  linked to input voltage:
+                                     CN6 pin 8
+                        VIN                           7 V to 12 V      800 mA     •     800 mA input current when VIN = 7 V
+                                     CN7 pin 24
+                                                                                  •     450 mA input current when 7 V < VIN < 9 V
+                                                                                  •     250 mA input current when 9 V < VIN < 12 V
+
+
+
+
+UM2505 - Rev 7                                                                                                                page 17/48
+                                                                                                                     UM2505
+                                                                                                Hardware layout and configuration
+
+
+
+                                       Figure 11. Power supply input from VIN (7 V - 12 V, 800 mA max)
+
+
+
+
+                                                                                   5V
+
+
+
+
+                                                                    U12
+                                                                    LDO
+                                                       U11          3V3      3V3
+                                                      LD1117
+                                                      S50TR
+
+
+
+
+                                                  VIN < 12 V
+
+
+
+
+                             Legend:     VIN < 12 V               5V                    3.3 V
+
+
+
+                 Refer to Section 7.4.1 for debugging when using an external power supply.
+
+
+
+
+UM2505 - Rev 7                                                                                                          page 18/48
+                                                                                                                       UM2505
+                                                                                                  Hardware layout and configuration
+
+
+
+
+                 External power supply input from E5V (5 V, 500 mA max)
+                 When the STM32G4 Nucleo-64 board is power-supplied by E5V (refer to Table 7 and Figure 12), the jumper
+                 configuration must be the following: jumper JP5 on pins 5-6 “E5V”.
+
+
+                                                  Table 7. External power sources: E5V (5 V)
+
+                      Input power name             Connector pins               Voltage range               Maximum current
+
+                             E5V                      CN7 pin 6                4.75 V to 5.25 V                  500 mA
+
+
+                                         Figure 12. Power supply input from 5V_EXT (5 V, 500 mA max)
+
+
+
+
+                                                   5V
+                                                                     U12
+                                                                     LDO
+                                                                     3V3     3V3
+
+
+
+
+                             Legend:         5V                     3.3 V
+
+
+
+                 Refer to Section 7.4.1 for debugging when using an external power supply.
+
+
+
+
+UM2505 - Rev 7                                                                                                            page 19/48
+                                                                                                                      UM2505
+                                                                                                Hardware layout and configuration
+
+
+
+
+                 External power supply input from USB charger (5 V)
+                 When the STM32G4 Nucleo-64 board is power-supplied by a USB charger on CN1 (refer to Table 8 and
+                 Figure 13), the jumper configuration must be the following: jumper JP2 on pins 7-8 “5V_CHGR”.
+
+
+                                             Table 8. External power sources: 5V_CHGR (5 V)
+
+                      Input power name           Connector pins                 Voltage range             Maximum current
+
+                         5V_CHGR                      CN1                            5V                           -
+
+
+                            Figure 13. Power supply input from ST-LINK USB connector with USB charger (5 V)
+
+
+                                                              USB charger
+
+
+
+                                                                      CN1
+                                                                   STLINK-V3E
+                                                                      USB
+
+
+
+
+                                                            No debug
+
+
+
+
+                                                                                          5V
+
+
+
+
+                                                                   U12
+                                                                   LDO
+                                                                   3V3
+
+                                                         3V3
+
+
+
+
+                            Legend:        5V                     3.3 V
+
+
+
+
+UM2505 - Rev 7                                                                                                          page 20/48
+                                                                                                                             UM2505
+                                                                                                    Hardware layout and configuration
+
+
+
+
+                 External power supply input from external 3.3 V
+                 When the 3.3 V is provided by a shield board, it is interesting to use the 3.3 V (CN6 pin 4 or CN7 pin 16) directly
+                 as power input (refer to Table 9 and Figure 14). In this case, the programming and debugging features are not
+                 available, since the ST-LINK is not powered.
+
+
+                                                       Table 9. External power sources: 3V3
+
+                      Input power name               Connector pins                Voltage range               Maximum current
+
+                                                        CN6 pin 4
+                             3V3                                                    3 V to 3.6 V                     1.3 A
+                                                       CN7 pin 16
+
+
+                                                 Figure 14. Power supply input from external 3V3
+
+
+
+
+                                                               No debug
+                                                                                                       No
+                                                                                                     jumper
+                                                                                         X
+
+
+
+
+                                                     3V3
+
+
+
+
+                              Legend:        3.3 V
+
+
+
+
+UM2505 - Rev 7                                                                                                                page 21/48
+                                                                                                                      UM2505
+                                                                                                Hardware layout and configuration
+
+
+
+7.4.1            Debugging while using VIN or EXT as an external power supply
+                 When powered by VIN or E5V, it is still possible to use the ST-LINK for programming or debugging only, but it is
+                 mandatory to power the board first using VIN or EXT, then to connect the USB cable to the PC. In this way the
+                 enumeration succeeds, thanks to the external power source.
+                 The following power-sequence procedure must be respected:
+                 1. Connect jumper JP5 between pins 5 & 6 for E5V or between pins 3 & 4 for VIN
+                 2. Connect the external power source to VIN or E5V
+                 3. Power on the external power supply 7V < VIN < 12 V for VIN, or 5V for E5V
+                 4. Check that the green LED LD3 is turned ON
+                 5. Connect the PC to the USB connector CN1
+                 If this order is not respected, the board may be powered by USB first, then by VIN or E5V as the following risks
+                 may be encountered:
+                 1. If more than 300 mA current is needed by the board, the PC may be damaged or the current supplied can be
+                      limited by the PC. As a consequence, the board is not powered correctly.
+                 2. 300 mA is requested at enumeration so there is risk that the request is rejected and the enumeration does not
+                      succeed if the PC cannot provide such current. Consequently, the board is not power supplied (LED LD3
+                      remains OFF).
+
+
+7.5              Clock sources
+
+7.5.1            HSE clock (high-speed external clock)
+                 There are four ways to configure the pins corresponding to the high-speed external clock (HSE):
+                 •     MCO from ST-LINK: MCO output of ST-LINK is used as input clock. This frequency cannot be changed, it
+                       is fixed at 8 MHz and connected to the PF0-OSC_IN of the STM32 microcontroller. The configuration must
+                       be:
+                       –     SB27 ON
+                       –     SB25 and SB26 OFF
+                       –     SB24 and SB28 OFF
+                 •     HSE on-board oscillator from X3 crystal (default): For typical frequencies and its capacitors and
+                       resistors, refer to the STM32 microcontroller datasheet and to the Guidelines for oscillator design on
+                       STM8AF/AL/S and STM32 MCUs/MPUs application note (AN2867) for the oscillator design guide. The X3
+                       crystal has the following characteristics: 24 MHz, 6 pF load capacitance, 20 ppm. It is recommended to use
+                       NX2016SA-24MHz-EXS00A-CS10820 manufactured by NDK. The configuration must be:
+                       –     SB25 and SB26 ON
+                       –     SB24 and SB28 OFF
+                       –     SB27 OFF
+                       –     C56 and C59 ON with 6.8 pF capacitors
+                 •     Oscillator from external PF0: from an external oscillator through the pin 29 of the CN7 connector. The
+                       configuration must be:
+                       –   SB28 ON
+                       –   SB24 OFF
+                       –   SB25 and SB26 OFF
+                       –   SB27 OFF
+                 •     HSE not used: PF0 and PF1 are used as GPIOs instead of as clock. The configuration must be:
+                       –     SB24 and SB28 ON
+                       –     SB27 OFF
+                       –     SB25 and SB26 OFF
+
+
+
+
+UM2505 - Rev 7                                                                                                          page 22/48
+                                                                                                                      UM2505
+                                                                                                Hardware layout and configuration
+
+
+
+7.5.2            LSE clock (low-speed external clock) – 32.768 kHz
+                 There are three ways to configure the pins corresponding to the low-speed clock (LSE):
+                 •      On-board oscillator (default): X2 crystal. Refer to the Oscillator design guide for STM8S, STM8A and
+                        STM32 microcontrollers application note (AN2867). It is recommended to use NX3215SA-32.768kHz-
+                        EXS00A-MU00525 (32.768 kHz, 6 pF load capacitance, 20 ppm) from NDK.
+                        –     SB30 and SB31 ON
+                        –     SB29 and SB32 OFF
+                 •      Oscillator from external PC14: from external oscillator through the pin 25 of CN7 connector. The
+                        configuration must be:
+                        –    SB29 and SB32 ON
+                        –    SB30 and SB31 OFF
+                 •      LSE not used: PC14 and PC15 are used as GPIOs instead of low-speed clock. The configuration must be:
+                        –    SB29 and SB32 ON
+                        –    SB30 and SB31 OFF
+
+
+7.6              Board functions
+
+7.6.1            LEDs
+
+                 LD1 STLINK-V3E COM LED
+                 The bicolor LED LD1 (green, red) provides information about STLINK-V3E communication status. LD1 default
+                 color is red. LD1 turns to green to indicate that communication is in progress between the PC and the STLINK-
+                 V3E, with the following setup:
+                 •      Blinking red: the first USB enumeration with the PC is taking place
+                 •      Red on: when the initialization between the PC and STLINK-V3E is complete
+                 •      Blinking red/green: during communication with target
+                 •      Green on: communication finished and successful
+                 •      Orange on: communication failure
+
+                 LD2 USER
+
+                 This green LED is a user LED connected to STM32G4 I/O PA5 (SB6 ON) corresponding to the ARDUINO® D13.
+                 To light LED LD2, a high logic state “1” must be written in the corresponding GPIO PA5. A transistor is used to
+                 drive the LED LD2. LD2 consumption does not impact the VDD STM32G4 power measurement, since LD2 is
+                 isolated from it.
+
+                 LD3 PWR
+                 The green LED indicates that the STM32G4 part is powered and +5 V power is available on CN6 pin 5 and CN7
+                 pin 18.
+
+                 LD4 USB power fault (OC, overcurrent)
+                 LD4 indicates that the board power consumption on USB ST-LINK exceeds 500 mA. Consequently, the user must
+                 power the board using an external power supply.
+
+7.6.2            Push-buttons
+
+                 B1 USER (blue button)
+                 The user button is connected to the STM32G4 I/O PC13 by default (Tamper support, SB16 ON and SB21 OFF) or
+                 PA0 (Wakeup support, SB21 ON and SB16 OFF) of the STM32G4 microcontroller.
+
+                 B2 RESET (black button)
+                 This push-button is connected to NRST (PG10-NRST) and is used to RESET the STM32G4 microcontroller.
+
+
+
+
+UM2505 - Rev 7                                                                                                             page 23/48
+                                                                                                                          UM2505
+                                                                                                     Hardware layout and configuration
+
+
+
+7.6.3            MCU voltage selection on VREF+
+                 The STM32G4 Nucleo-64 board offers the possibility to supply the STM32G4 microcontroller with either VREF or
+                 VDD on its VREF+ input voltage pin.
+                 VREF+ is targeted to offer high-end analog device, especially for precise analog applications (ADC converters
+                 usage) with the STM32G4 microcontroller.
+                 In the STM32G4 Nucleo-64 board, the VREF+ can be supplied with a very stable output voltage provided by the
+                 TL1431CL5T. The TL1431CL5T is an adjustable shunt voltage reference with guaranteed temperature stability
+                 over the entire operating temperature range. The output voltage may be set to any value between 2.5 V and up to
+                 36 V with two external resistors. The TL1431CL5T operates with a wide current range from 1 mA to 100 mA with
+                 a typical dynamic impedance of 0.2 Ω.
+                 JP8 jumper is used to select either the VREF or VDD voltage for VREF+.
+                 •      Place the JP8 jumper on [1-2] to supply the MCU VREF+ with VREF
+                        –    To have VREF at 2.5 V, then SB14 is fitted and R34 is not fitted
+                        –    To have VREF at 3.25 V, then SB14 is not fitted. VREF = 2,5 × (1 + (R33 / R34)) =
+                             2,5 × (1 + (10k / 33k)).
+                 •      Place the JP8 jumper on [2-3] to supply the MCU VREF+ with VDD
+
+7.6.4            Current consumption measurement (IDD)
+                 Jumper JP6, labeled IDD, is used to measure the STM32G4 microcontroller consumption by removing the jumper
+                 and by connecting an ammeter:
+                 •      JP6 ON: STM32 is powered with 3V3 voltage (default)
+                 •      JP6 OFF: an ammeter must be connected to measure the STM32G4 current. If there is no ammeter, the
+                        STM32 is not powered.
+                 To get a correct and complete current consumption of the STM32G4, jumper JP8 must be set to [2-3] to supply
+                 the MCU VREF+ with VDD, otherwise, the current consumption at pin VREF+ is not taken into account in the IDD
+                 (through jumper JP6).
+
+7.6.5            Virtual COM port (VCP): LPUART and USART
+                 The STM32G4 Nucleo-64 board offers the possibility to connect an LPUART or a USART interface to the
+                 STLINK-V3E, ARDUINO® Uno V3 connector (CN9 pins 2 and 1), or ST morpho connector (CN10 pins 35 and 37).
+                 The selection is done by setting the related solder bridges as detailed in Table 10 and Table 11.
+
+
+                                                                 Table 10. USART1 connection
+
+                                 Solder bridge configuration(1)                                      Feature(1)
+
+                                        SB13, SB19: ON                         USART1 (PC4/PC5) connected to ARDUINO® (D1 & D0)
+                                SB12, SB20, SB18, SB22: OFF                    and ST morpho connector (CN10 pin 35 & 37).
+
+                                        SB12, SB20: ON                         USART1 (PC4/PC5) connected to STLINK-V3E Virtual COM
+                                SB13, SB19, SB17, SB23: OFF                    port.
+
+                 1. The default configuration is shown in bold
+
+
+
+                                                             Table 11. LPUART1 connection
+
+                                 Solder bridge configuration(1)                                      Feature(1)
+
+                                        SB17, SB23: ON                         LPUART1 (PA2/PA3) connected to STLINK-V3E Virtual
+                                SB18, SB22, SB12, SB20: OFF                    COM port.
+
+                                        SB18, SB22: ON                         LPUART1 (PA2/PA3) connected to ARDUINO® (D1 & D0) and
+                                SB17, SB23, SB13, SB19: OFF                    ST morpho connector (CN10 pin 35 & 37).
+
+                 1. The default configuration is shown in bold
+
+
+
+
+UM2505 - Rev 7                                                                                                               page 24/48
+                                                                                                                        UM2505
+                                                                                                 Hardware layout and configuration
+
+
+
+                 By default:
+                 •     Communication between the target STM32G4 and the STLINK-V3E MCU is enabled on LPUART1 to
+                       support the Virtual COM port
+                 •     Communication between the target STM32G4 and ARDUINO® (and ST morpho) connectors is enabled on
+                       USART1
+
+
+7.7              Solder bridges
+                 All 41 solder bridges are located on the bottom layer of the STM32G4 Nucleo-64 board.
+
+
+                                                     Table 12. Solder bridge configuration
+
+                                                 Solder
+                     Solder bridge control                    State(1)                         Description(1)
+                                              bridge (SB)
+
+                                                                         100 nF capacitor grounded to PG10-NRST of the
+                                                                ON
+                           100 nF on                                     STM32G4
+                                                 SB1
+                         PG10-NRST                                       100 nF capacitor disconnected from PG10-NRST of the
+                                                               OFF
+                                                                         STM32G4
+
+                                                                ON       PB8 connected to ARDUINO® D14
+                       PB8 on ARD_D14            SB2
+                                                               OFF       PB8 not connected to ARDUINO® D14
+                                                                ON       PC5 connected to ST morpho CN10 pin 6
+                      PC5 on ST morpho           SB3
+                                                               OFF       PC5 not connected to ST morpho CN10 pin 6
+                                                                ON       PB8 connected to ST morpho CN7 pin 7
+                        PB8 on Morpho            SB4
+                                                               OFF       PB8 not connected to ST morpho CN7 pin 7
+                                                                ON       U12 LDO output provides 3.3 V
+                          3.3 V LDO
+                                                 SB5                     U12 LDO output does NOT provide 3.3 V, user must connect
+                               output                          OFF
+                                                                         an external 3.3 V source.
+                                                                ON       User LED driven by PA5 (ARD_D13)
+                        User LED LD2             SB6
+                                                               OFF       User LED not driven
+                                                                ON       PA15 connected to ST morpho CN7 pin 17
+                       PA15 on Morpho            SB7
+                                                               OFF       PA15 not connected to ST morpho CN7 pin 17
+                                                                         SMD ferrite bead L1 shunted. VDDA connected on VDD
+                                                                ON
+                      SMD ferrite bead L1        SB8                     voltage supply
+                                                               OFF       SMD ferrite bead L1 on STM32G4 VDDA voltage supply
+                                                                ON       JTDI connected to MIPI10 connector (CN4 pin 10)
+                        JTDI on MIPI10           SB9
+                                                               OFF       JTDI not connected to MIPI10 connector (CN4 pin 10)
+                                                                         SMD ferrite bead L2 shunted. VREF+ connected to either
+                                                                ON
+                                                                         VREF or VDD depending on the jumper position on JP8
+                      SMD ferrite bead L2        SB10                    SMD ferrite bead L2 on VREF+ (either VREF or VDD
+                                                               OFF       voltage supply (depending on the jumper position on
+                                                                         JP8)).
+                                                                ON       AGND connected to GND. Reserved, do not modify.
+                               AGND              SB11
+                                                               OFF       AGND not connected to GND.
+                                                                ON       STLINK_TX (T_VCP_TX) connected to USART1 TX PC4
+                                                 SB12                    STLINK_TX (T_VCP_TX) not connected to USART1 TX
+                               PC4                             OFF
+                                                                         PC4
+                         USART1 TX
+                                                                ON       ARD_D1_TX connected to USART1 TX PC4
+                                                 SB13
+                                                               OFF       ARD_D1_TX not connected to USART1 TX PC4
+
+
+
+
+UM2505 - Rev 7                                                                                                             page 25/48
+                                                                                                                  UM2505
+                                                                                          Hardware layout and configuration
+
+
+
+                                            Solder
+                 Solder bridge control                 State(1)                          Description(1)
+                                         bridge (SB)
+
+                                                                  R33 = 10 kΩ is shunted. Then VREF = 2.5 V. Do not forget to
+                                                         ON
+                     VREF voltage                                 remove in that case R34 = 33 kΩ.
+                                            SB14
+                   (3.25 V or 2.5 V)                              R33 = 10 kΩ is not shunted. Then VREF = 3.25 V. In that
+                                                        OFF
+                                                                  case, R34 = 33 kΩ must be fitted.
+                                                         ON       T_SWO connected to PB3.
+                    T_SWO on PB3            SB15
+                                                        OFF       T_SWO not connected to PB3 and isolated from ARD_D3.
+                                                         ON       STLINK_TX (T_VCP_TX) connected to LPUART1 TX PA2.
+                                            SB17                  STLINK_TX (T_VCP_TX) not connected to LPUART1 TX
+                         PA2                            OFF
+                                                                  PA2.
+                     LPUART1 TX
+                                                         ON       ARD_D1_TX connected to LPUART1 TX PA2.
+                                            SB18
+                                                        OFF       ARD_D1_TX not connected to LPUART1 TX PA2.
+                                                         ON       STLINK_RX (T_VCP_RX) connected to LPUART1 RX PA3.
+                                            SB23                  STLINK_RX (T_VCP_RX) not connected to LPUART1 RX
+                         PA3                            OFF
+                                                                  PA3.
+                     LPUART1 RX
+                                                         ON       ARD_D0_RX connected to LPUART1 RX PA3.
+                                            SB22
+                                                        OFF       ARD_D0_RX not connected to LPUART1 RX PA3.
+                                                         ON       STLINK_RX (T_VCP_RX) connected to USART1 RX PC5.
+                                            SB20                  STLINK_RX (T_VCP_RX) not connected to USART1 RX
+                         PC5                            OFF
+                                                                  PC5.
+                     USART1 RX
+                                                         ON       ARD_D0_RX connected to USART1 RX PC5.
+                                            SB19
+                                                        OFF       ARD_D0_RX not connected to USART1 RX PC5.
+                                                         ON       USER button connected to PC13.
+                                            SB16
+                                                        OFF       USER button not connected to PC13.
+                     USER button
+                                                         ON       USER button connected to PA0.
+                                            SB21
+                                                        OFF       USER button not connected to PA0.
+                                            SB25         ON       HSE provided by external HSE 24 MHz CLK X3.
+                                             &
+                                                        OFF       HSE not provided by external HSE 24 MHz CLK X3.
+                                            SB26
+                                                                  PF1-OSC_IN connected to ST morpho connector I/O usage
+                                                         ON
+                                            SB24                  (CN7 pin 31).
+                       HSE CLK
+                                                        OFF       PF1-OSC_IN not connected to ST morpho connector.
+                       selection
+                                                                  PF0-OSC_OUT connected to ST morpho connector I/O usage
+                                                         ON
+                                            SB28                  (CN7 pin 29).
+                                                        OFF       PF0-OSC_OUT not connected to ST morpho connector.
+                                                         ON       ST-LINK MCO used for HSE CLK.
+                                            SB27
+                                                        OFF       ST-LINK MCO not used for HSE CLK.
+                                                         ON       PC4 connected to Morpho CN10 pin 34.
+                  PC4 on ST morpho          SB33
+                                                        OFF       PC4 not connected to Morpho CN10 pin 34.
+                                                         ON       VBAT (pin1 of STM32G4) powered by VDD.
+                        VBAT                SB38                  VBAT (pin1 of STM32G4) supplied separately (through
+                                                        OFF
+                                                                  morpho connector CN7 pin 33).
+                                            SB31         ON       LSE provided by external LSE 32.768 kHz CLK X2.
+                       LSE CLK
+                                             &
+                       selection                        OFF       LSE not provided by external LSE 32.768 kHz CLK X2.
+                                            SB30
+
+
+
+
+UM2505 - Rev 7                                                                                                       page 26/48
+                                                                                                                         UM2505
+                                                                                                   Hardware layout and configuration
+
+
+
+                                                      Solder
+                     Solder bridge control                       State(1)                         Description(1)
+                                                   bridge (SB)
+
+                                                                            PC14-OSC32_IN connected to ST morpho connector I/O
+                                                                   ON
+                                                       SB32                 usage (CN7 pin 25).
+                                                                  OFF       PC14-OSC32_IN not connected to ST morpho connector.
+                            LSE CLK
+                            selection                                       PC15-OSC32_OUT connected to ST morpho connector I/O
+                                                                   ON
+                                                                            usage (CN7 pin 27).
+                                                       SB29
+                                                                            PC15-OSC32_OUT not connected to ST morpho
+                                                                  OFF
+                                                                            connector.
+                                                                   ON       PB9 connected to ARD_A4 and connected to CN7 pin 36.
+                        PB9 on ARD_A4                  SB34                 PB9 not connected to ARD_A4 and connected to CN7 pin
+                                                                  OFF
+                                                                            36.
+                                                                   ON       PC1 connected to ARD_A4 and connected to CN7 pin 36.
+                        PC1 on ARD_A4                  SB35
+                                                                  OFF       PC1 not connected to ARD_A4 and connected to CN7 pin 36.
+                                                                   ON       PC0 connected to ARD_A5 and connected to CN7 pin 38.
+                        PC0 on ARD_A5                  SB36
+                                                                  OFF       PC0 not connected to ARD_A5 and connected to CN7 pin 38.
+                                                                   ON       PA15 connected to ARD_A5 and connected to CN7 pin 38.
+                        PA15 on ARD_A5                 SB37                 PA15 not connected to ARD_A5 and not connected to
+                                                                  OFF
+                                                                            CN7 pin 38.
+                                                                   ON       IOREF connected to 3V3 power supply.
+                   IOREF and 3V3 connection            SB39
+                                                                  OFF       IOREF not connected to 3V3 power supply.
+
+                           T_SWDIO                                 ON       T_SWDIO connected to PA13.
+                                                       SB40
+                            on PA13                               OFF       T_SWO not connected to PA13.
+
+                           T_SWCLK                                 ON       T_SWCLK connected to PA14.
+                                                       SB41
+                            on PA14                               OFF       T_SWCLK not connected to PA14.
+
+                 1. The default SB state is in bold.
+
+
+                 All the other solder bridges present on the STM32G4 Nucleo-64 board are used to configure several I/Os and
+                 power-supply pins for compatibility of features and pinout with the target STM32G4 supported.
+
+
+
+
+UM2505 - Rev 7                                                                                                              page 27/48
+                                                                                                                      UM2505
+                                                                                                                Board connectors
+
+
+
+8                Board connectors
+
+                 Several connectors are implemented on the STM32G4 Nucleo-64 board.
+
+
+8.1              STLINK-V3E USB Micro-B connector CN1
+                 The USB connector CN1 is used to connect the embedded STLINK-V3E to the PC for the programming and
+                 debugging purposes.
+
+                                              Figure 15. USB Micro-B connector CN1 (front view)
+
+
+
+
+                                                   Table 13. USB Micro-B connector CN1 pinout
+
+                                  Pin
+                  Connector               Pin name               Signal name         STLINK-V3E MCU pin          Function
+                                number
+
+                                   1        VBUS                5V_USB_CHGR                      -               5 V power
+                                   2         DM            USB_DEV_HS_CN_N                   R14               USB diff pair N
+                     CN1           3         DP            USB_DEV_HS_CN_P                   R15               USB diff pair P
+                                   4          ID                        -                        -                    -
+                                   5         GND                        -                        -                 GND
+
+
+8.2              MIPI10 connector CN4
+                                                         Figure 16. MIPI10 connector CN4
+
+
+
+
+                                                    13     11      9        7   5     3      1
+
+
+
+
+                                                    14     12      10       8   6     4      2
+
+
+
+
+                 The MIPI10 connector is implemented with a footprint compatible with the STDC14 footprint. The related pinout
+                 for the MIPI10 connector is listed in Table 14.
+
+
+
+
+UM2505 - Rev 7                                                                                                            page 28/48
+                                                                                                                            UM2505
+                                                                                                                      Board connectors
+
+
+
+                                           Table 14. MIPI10 connector CN4 pinout (STDC14 pinout compatible)
+
+                  Connector     Pin number                  Description               Pin number             Description
+
+                                      1                          -                        2                       -
+                                      3                     VDD (3V3)                     4                T_SWDIO (PA13)
+                                      5                        GND                        6               T_SWCLK (PA14)
+                                      7               KEY (connected to GND)              8                 T_SWO (PB3)
+                    CN4
+                                      9                          -                       10                 T_JTDI (PA15)
+                                                GNDDetect (connected to GND through
+                                     11                                                  12                    T_NRST
+                                                         a 100 Ω resistor)
+                                     13          T_VCP_RX (PA3 by default or PC5)        14        T_VCP_TX (PA2 by default or PC4)
+
+
+
+
+8.3              ARDUINO® Uno V3 connectors CN5, CN6, CN8 and CN9
+                 The ARDUINO® connectors CN5, CN6, CN8 and CN9 are female connectors compatible with the ARDUINO®
+                 standard. Most shields designed for ARDUINO® can fit with the STM32G4 Nucleo-64 board.
+                 The ARDUINO® connectors on the STM32G4 Nucleo-64 board support the ARDUINO® Uno V3.
+
+                                                            Figure 17. ARDUINO® connectors
+
+
+
+
+                                   CN6                                                                          CN5
+                          Arduino_PWR                                                                           Arduino_D[8:15]
+
+
+
+
+                                   CN8                                                                          CN9
+                          Arduino_A[0:5]                                                                        Arduino_D[0:7]
+                                                                                                                                 DT60951V1
+
+
+
+
+UM2505 - Rev 7                                                                                                                    page 29/48
+                                                                                                                         UM2505
+                                                                                                                   Board connectors
+
+
+
+                                          Figure 18. ARDUINO® and ST morpho connectors pinout
+
+
+
+
+Note:            ARDUINO® Uno V3 D0 and D1 signals are connected by default on USART1 (MCU I/O PC4 and PC5). For
+                 details about how to modify the UART interface, refer to Section 7.6.5: Virtual COM port (VCP): LPUART and
+                 USART.
+
+
+                                                   Table 15. ARDUINO® connectors pinout
+
+                   Connector    Pin number         Pin name        Signal name     STM32 pin(1)                Function(1)
+
+                                     1                NC                -               -         Reserved for test
+                                     2              IOREF               -               -         I/O reference
+                                     3              NRST              NRST         PG10-NRST      RESET
+                                     4               3V3                -               -         3V3 input / output
+                     CN6
+                                     5                5V                -               -         5 V output
+                                     6               GND                -               -         GND
+                                     7               GND                -               -         GND
+                                     8               VIN                -               -         7 V - 12 V input power
+                                     1                A0               ADC             PA0        ADC12_IN1
+                                     2                A1               ADC             PA1        ADC12_IN2
+                                     3                A2               ADC             PA4        ADC2_IN17
+
+                     CN8             4                A3               ADC             PB0        ADC3_IN12 or ADC1_IN15
+                                                                                      PC1 /       ADC12_IN7 /
+                                     5                A4               ADC
+                                                                                      PB9         I2C1_SDA
+                                                                                      PC0 /       ADC12_IN6 /
+                                     6                A5               ADC
+                                                                                      PA15        I2C1_SCL
+
+                     CN5             10            SCL/D15          ARD_D15            PB8        I2C1_SCL
+
+
+
+
+UM2505 - Rev 7                                                                                                               page 30/48
+                                                                                                                         UM2505
+                                                                                                                   Board connectors
+
+
+
+                   Connector        Pin number            Pin name     Signal name   STM32 pin(1)              Function(1)
+
+                                         9                SDA/D14       ARD_D14          PB9        I2C1_SDA
+                                         8                 VREFP         VREFP         VREF+        Voltage reference
+                                         7                  GND             -             -         GND
+                                         6                SCK/D13       ARD_D13          PA5        SPI1_SCK
+                      CN5                5                MISO/D12      ARD_D12          PA6        SPI1_MISO
+                                         4              PWM/MOSI/D11    ARD_D11          PA7        TIM3_CH2 / SPI1_MOSI
+                                         3              PWM/CS/D10      ARD_D10          PB6        TIM4_CH1 / SPIx_CS
+                                         2                PWM/D9        ARD_D9           PC7        TIM3_CH2 or TIM8_CH2
+                                         1                  D8          ARD_D8           PA9        I/O
+                                         8                  D7          ARD_D7           PA8        I/O
+                                         7                PWM/D6        ARD_D6          PB10        TIM2_CH3
+                                         6                PWM/D5        ARD_D5           PB4        TIM3_CH1
+                                         5                  D4          ARD_D4           PB5        I/O
+
+                      CN9                4                PWM/D3        ARD_D3           PB3        TIM2_CH2
+                                         3                  D2          ARD_D2          PA10        I/O
+                                                                                        PA2 /       LPUSART1_TX /
+                                         2                 TX/D1        ARD_D1
+                                                                                        PC4         USART1_TX
+                                                                                        PA3 /       LPUSART1_RX /
+                                         1                 RX/D0        ARD_D0
+                                                                                        PC5         USART1_RX
+
+                 1. Default configuration is in bold.
+
+
+8.4              ST morpho connectors CN7 and CN10
+                 ST morpho connectors CN7 and CN10 are male pin headers accessible on both sides of the board. All signals
+                 and power pins of the STM32G4 MCU are available on the ST morpho connectors. These connectors can also be
+                 probed by an oscilloscope, logical analyzer, or voltmeter.
+
+
+
+
+UM2505 - Rev 7                                                                                                               page 31/48
+                                                                                                                    UM2505
+                                                                                                               Board connectors
+
+
+
+                                                         Figure 19. ST morpho connectors
+
+
+
+
+                                   CN7                                                                     CN10
+                            MORPHO[1:38]                                                                   MORPHO[1:38]
+
+
+
+
+                                                                                                                      DT60952V1
+                 The pinout of ST morpho connectors CN7 and CN10 is shown in Figure 18. ARDUINO® and ST morpho
+                 connectors pinout.
+
+Note:            The D0 and D1 signals are connected by default to USART1 (MCU I/O PC4 and PC5). For details about how to
+                 modify the UART interface, refer to Section 7.6.5: Virtual COM port (VCP): LPUART and USART.
+                 Table 16 shows the pin assignment of each STM32G4 I/O on the ST morpho connector.
+
+
+                                             Table 16. Pin assignment of the ST morpho connectors
+
+                         CN7 odd pins                 CN7 even pins             CN10 odd pins              CN10 even pins
+
+                  Pin nbr         Pin name     Pin nbr     Pin name(1)   Pin nbr     Pin name(1)    Pin nbr       Pin name
+
+                    1               PC10         2            PC11          1            PC9          2             PC8
+                    3               PC12         4             PD2          3            PB8          4             PC6
+                    5               VDD          6             E5V          5            PB9          6             PC5
+
+                    7             BOOT0(2)       8            GND           7         VREFP(3)        8       5V_USB_CHGR(4)
+                    9                NC          10            NC           9           GND           10             NC
+                    11               NC          12           IOREF        11            PA5          12            PA12
+
+                    13             PA13(5)       14           NRST         13            PA6          14            PA11
+
+                    15             PA14(5)       16            3V3         15            PA7          16            PB12
+
+                    17              PA15         18            5V          17            PB6          18            PB11
+                    19              GND          20           GND          19            PC7          20            GND
+
+
+
+
+UM2505 - Rev 7                                                                                                         page 32/48
+                                                                                                                                UM2505
+                                                                                                                          Board connectors
+
+
+
+                          CN7 odd pins                      CN7 even pins              CN10 odd pins                  CN10 even pins
+
+                  Pin nbr        Pin name            Pin nbr     Pin name(1)    Pin nbr      Pin name(1)       Pin nbr       Pin name
+
+                     21             PB7                22           GND           21             PA9             22             PB2
+                     23            PC13                24            VIN          23             PA8             24             PB1
+                     25            PC14                26            NC           25            PB10             26            PB15
+                     27            PC15                28            PA0          27             PB4             28            PB14
+                     29             PF0                30            PA1          29             PB5             30            PB13
+                     31             PF1                32            PA4          31             PB3             32            AGND
+                     33            VBAT                34            PB0          33            PA10             34             PC4
+                     35             PC2                36          PC1/PB9        35          PA2 / PC4          36             NC
+                     37             PC3                38         PC0/PA15        37          PA3 / PC5          38             NC
+
+                 1. Default configuration in bold.
+                 2. BOOT0 is not connected by default. The BOOT0 function is done by SW:
+                     •      Option byte nSWBOOT0 must be set to 0 (in that case, BOOT0 is taken from the Option byte nBOOT0)
+                     •      Option byte nBOOT0 must be set to 1 (in that case BOOT0 is active low).
+                     If nSWBOOT0 is set to 0, the BOOT0 is taken from pin PB8 / BOOT0.
+                 3. AVDD connected to VREF+
+                 4. 5V_USB_CHGR is the 5 V power from the STLINK-V3E USB connector that rises first. It rises before the 5 V rising on the
+                    board.
+                 5. PA13 and PA14 are shared with SWD signals connected to STLINK-V3E. It is not recommended to use them as I/O pins.
+
+
+
+
+UM2505 - Rev 7                                                                                                                    page 33/48
+                                                                                                             UM2505
+                                                                                  STM32G4 Nucleo-64 I/O assignment
+
+
+
+9                STM32G4 Nucleo-64 I/O assignment
+
+                                          Table 17. Nucleo-64 I/O assignment
+
+                   Pin      Pin name           Signal or label   Main feature / optional feature / (SB)(1)
+
+                    1         VBAT                 VBAT          VBAT voltage supply
+                    2         PC13                 PC13          USER button / I/O
+                    3     PC14-OSC32_IN      OSC32_IN / PC14     LSE CLK / I/O
+                    4    PC15-OSC32_OUT     OSC32_OUT / PC15     LSE CLK / I/O
+                    5      PF0-OSC_IN          OSC_IN / PF0      HSE CLK / I
+                    6     PF1-OSC_OUT         OSC_OUT / PF1      HSE CLK / O
+                    7      PG10-NRST              T_NRST         STM32G4 RESET
+                    8         PC0                   PC0          ARD_A5 - ADC12_IN6
+                    9         PC1                   PC1          ARD_A4 - ADC12_IN7
+                   10         PC2                   PC2          I/O
+                   11         PC3                   PC3          I/O
+                   12         PA0                   PA0          ARD_A0 - ADC12_IN1 / User Button
+                   13         PA1                   PA1          ARD_A1 - ADC12_IN2
+                   14         PA2              LPUART1_TX        ARD_D1 / STLINK_TX (T_VCP_TX)
+                   15         VSS                   GND          PWR GND
+                   16         VDD                   VDD          PWR VDD supply
+                   17         PA3              LPUART1_RX        ARD_D0 / STLINK_RX (T_VCP_RX)
+                   18         PA4                   PA4          ARD_A2 - ADC2_IN17
+                   19         PA5                   PA5          ARD_D13 - SPI1_CLK
+                   20         PA6                   PA6          ARD_D12 - SPI1_MISO
+                   21         PA7                   PA7          ARD_D11 - TIM3_CH2 / SPI1_MOSI
+                   22         PC4                   PC4          I/O
+                   23         PC5                   PC5          I/O
+                   24         PB0                   PB0          ARD_A3 - ADC3_IN12
+                   25         PB1                   PB1          I/O
+                   26         PB2                   PB2          I/O
+                   27         VSSA                 AGND          AGND
+                   28        VREF+                VREFP          Reference voltage supply
+                   29         VDDA                 AVDD          Analog voltage supply
+                   30         PB10                 PB10          ARD_D6 / TIM2_CH3
+                   31         VSS                   GND          GND
+                   32         VDD                   VDD          VDD voltage supply
+                   33         PB11                 PB11          I/O
+                   34         PB12                 PB12          I/O
+                   35         PB13                 PB13          I/O
+                   36         PB14                 PB14          I/O
+                   37         PB15                 PB15          I/O
+                   38         PC6                   PC6          I/O
+
+
+
+
+UM2505 - Rev 7                                                                                                page 34/48
+                                                                                                                                UM2505
+                                                                                                     STM32G4 Nucleo-64 I/O assignment
+
+
+
+                      Pin               Pin name                  Signal or label   Main feature / optional feature / (SB)(1)
+
+                      39                   PC7                         PC7          ARD_D9-TIM3_CH2 (or TIM8_CH2) / I/O
+                      40                   PC8                         PC8          I/O
+                      41                   PC9                         PC9          I/O
+                      42                   PA8                         PA8          ARD_D7 - I/O
+                      43                   PA9                         PA9          ARD_D8 - I/O
+                      44                  PA10                        PA10          ARD_D2 - I/O
+                      45                  PA11                        PA11          I/O
+                      46                  PA12                        PA12          I/O
+                      47                   VSS                         GND          GND
+                      48                  VDD                          VDD          VDD voltage supply
+                      49                  PA13                      T_SWDIO         T_SWDIO
+                      50                  PA14                      T_SWCLK         T_SWCLK
+                      51                  PA15                       T_JTDI         T_JTDI / I2C1_SCL
+                      52                  PC10                        PC10          I/O
+                      53                  PC11                        PC11          I/O
+                      54                  PC12                        PC12          I/O
+                      55                   PD2                          D2          I/O
+                      56                   PB3                         PB3          ARD_D3 - TIM2_CH2 / T_SWO
+                      57                   PB4                         PB4          ARD_D5 - TIM3_CH1 / I/O
+                      58                   PB5                         PB5          ARD_D4 - I/O
+                      59                   PB6                         PB6          ARD_D10 - SPIx_CS / TIM4_CH1
+                      60                   PB7                         PB7          I/O
+                      61               PB8-BOOT0                     BOOT0          BOOT0
+                      62                   PB9                         PB9          ARD_D14 - I2C1_SDA
+                      63                   VSS                         GND          GND
+                      64                  VDD                          VDD          VDD voltage supply
+
+                 1. The default configuration is shown in bold.
+
+
+
+
+UM2505 - Rev 7                                                                                                                   page 35/48
+                                                                                                                                          UM2505
+                                                                                                    STM32G4 Nucleo-64 product information
+
+
+
+10               STM32G4 Nucleo-64 product information
+
+10.1             Product marking
+                 The product and each board composing the product are identified with one or several stickers. The stickers,
+                 located on the top or bottom side of each PCB, provide product information:
+
+                 •     Main board featuring the target device: product order code, product identification, serial number, and board reference
+                       with revision.
+                       Single-sticker example:
+
+                         Product order code
+                         Product identification
+                         syywwxxxxx                         DT73589V1
+                         MBxxxx-Variant-yzz
+
+                       Dual-sticker example:
+
+                         Product order code              MBxxxx-Variant-yzz
+                                                  and
+                         Product identification          syywwxxxxx
+
+                 •     Other boards if any: board reference with revision and serial number.
+                       Examples:
+
+
+                                                                             MBxxxx-Variant-yzz
+                                                            DT76507V1
+
+
+
+
+                                                                                                                              DT76508V1
+                                                                        or                                         or                     or
+                         syywwxxxxx                                          syywwxxxxx
+                         MBxxxx-Variant-yzz
+
+
+
+                 On the main board sticker, the first line provides the product order code, and the second line the product
+                 identification.
+                 On all board stickers, the line formatted as “MBxxxx-Variant-yzz” shows the board reference “MBxxxx”, the
+                 mounting variant “Variant” when several exist (optional), the PCB revision “y”, and the assembly revision “zz”, for
+                 example B01. The other line shows the board serial number used for traceability.
+                 Products and parts labeled as “ES” or “E” are not yet qualified or feature devices that are not yet qualified.
+                 STMicroelectronics disclaims any responsibility for consequences arising from their use. Under no circumstances
+                 will STMicroelectronics be liable for the customer's use of these engineering samples. Before deciding to use
+                 these engineering samples for qualification activities, contact STMicroelectronics' quality department.
+                 “ES” or “E” marking examples of location:
+                 •     On the targeted STM32 that is soldered on the board (for an illustration of STM32 marking, refer to the
+                       STM32 datasheet Package information paragraph at the www.st.com website).
+                 •     Next to the ordering part number of the evaluation tool that is stuck, or silk-screen printed on the board.
+                 Some boards feature a specific STM32 device version, which allows the operation of any bundled commercial
+                 stack/library available. This STM32 device shows a “U” marking option at the end of the standard part number
+                 and is not available for sales.
+                 To use the same commercial stack in their applications, the developers might need to purchase a part number
+                 specific to this stack/library. The price of those part numbers includes the stack/library royalties.
+
+
+
+
+UM2505 - Rev 7                                                                                                                                 page 36/48
+                                                                                                                                      UM2505
+                                                                                                       STM32G4 Nucleo-64 product information
+
+
+
+10.2                  STM32G4 Nucleo-64 product history
+
+                                                             Table 18. Product history
+
+  Order                 Product
+                                               Product details            Product change description                 Product limitations
+  code               identification
+
+                                      MCU:
+                                      •      STM32G431RBT6 silicon
+                                             revision "Z"
+                                      MCU errata sheet:
+                    NUG431RB$AT1      •      STM32G431xx/441xx          Initial revision                    No limitation
+                                             device errata (ES0431)
+                                      Board:
+                                      •      MB1367-G431RB-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G431RBT6 silicon
+                                             revision "Y"
+                                      MCU errata sheet:
+                    NUG431RB$AT2      •      STM32G431xx/441xx          MCU silicon revision changed        No limitation
+                                             device errata (ES0431)
+                                      Board:
+    NUCLEO-G431RB
+
+
+
+
+                                      •      MB1367-G431RB-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G431RBT6 silicon
+                                             revision "X"
+                                      MCU errata sheet:
+                    NUG431RB$AT3      •      STM32G431xx/441xx          MCU silicon revision changed        No limitation
+                                             device errata (ES0431)
+                                      Board:
+                                      •      MB1367-G431RB-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G431RBT6 silicon
+                                             revision "X"
+                                      MCU errata sheet:
+                                                                        Packaging: plastic blister replaced
+                    NUG431RB$AT4      •      STM32G431xx/441xx                                              No limitation
+                                                                        by a carton box
+                                             device errata (ES0431)
+                                      Board:
+                                      •      MB1367-G431RB-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G474RET6 silicon
+                                             revision "Z"
+    NUCLEO-G474RE
+
+
+
+
+                                      MCU errata sheet:                                                     Boards within the following range of
+                                                                                                            serial numbers A191300001-
+                    NUG474RE$AT1      •      STM32G471xx/473xx/         Initial revision                    A191304602 are impacted by the
+                                             474xx/483xx/484xx device                                       limitations described in
+                                             errata (ES0430)                                                Section 10.2.1.
+                                      Board:
+                                      •      MB1367-G474RE-C04
+                                             (main board)
+
+
+
+
+UM2505 - Rev 7                                                                                                                           page 37/48
+                                                                                                                                     UM2505
+                                                                                                       STM32G4 Nucleo-64 product information
+
+
+
+  Order                 Product
+                                               Product details              Product change description               Product limitations
+  code               identification
+
+                                      MCU:
+                                      •      STM32G474RET6 silicon
+                                             revision "Y"
+                                      MCU errata sheet:
+
+                    NUG474RE$AT2      •      STM32G471xx/473xx/         MCU silicon revision changed        No limitation
+                                             474xx/483xx/484xx device
+                                             errata (ES0430)
+                                      Board:
+                                      •      MB1367-G474RE-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G474RET6 silicon
+                                             revision "X"
+                                      MCU errata sheet:
+
+                    NUG474RE$AT3      •      STM32G471xx/473xx/         MCU silicon revision changed        No limitation
+                                             474xx/483xx/484xx device
+                                             errata (ES0430)
+                                      Board:
+    NUCLEO-G474RE
+
+
+
+
+                                      •      MB1367-G474RE-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G474RET6 silicon
+                                             revision "X"
+                                      MCU errata sheet:
+                                      •      STM32G471xx/473xx/         Packaging: plastic blister replaced
+                    NUG474RE$AT4                                                                            No limitation
+                                             474xx/483xx/484xx device   by a carton box
+                                             errata (ES0430)
+                                      Board:
+                                      •      MB1367-G474RE-C04
+                                             (main board)
+                                      MCU:
+                                      •      STM32G474RET6 silicon
+                                             revision "X" or "2"
+                                      MCU errata sheet:                 •      Main board revision
+                                      •      STM32G471xx/473xx/                changed
+                    NUG474RE$CT1                                                                            No limitation
+                                             474xx/483xx/484xx device   •      Board sticker format
+                                             errata (ES0430)                   changed
+
+                                      Board:
+                                      •      MB1367-G474RE-D01
+                                             (main board)
+                                      MCU:
+                                      •      STM32G491RET6 silicon
+                                             revision "Z"
+    NUCLEO-G491RE
+
+
+
+
+                                      MCU errata sheet:
+                    NUG491RE$AT1      •      STM32G491xx/4A1xx          Initial revision                    No limitation
+                                             device errata (ES0523)
+                                      Board:
+                                      •      MB1367-G491RE-C04
+                                             (main board)
+
+
+
+
+UM2505 - Rev 7                                                                                                                         page 38/48
+                                                                                                                                           UM2505
+                                                                                                           STM32G4 Nucleo-64 product information
+
+
+
+  Order                 Product
+                                                 Product details              Product change description                 Product limitations
+  code               identification
+
+                                        MCU:
+                                        •      STM32G491RET6 silicon
+    NUCLEO-G491RE
+
+
+
+
+                                               revision "Z"
+                                        MCU errata sheet:
+                                                                            Packaging: plastic blister replaced
+                    NUG491RE$AT2        •      STM32G491xx/4A1xx                                                No limitation
+                                                                            by a carton box
+                                               device errata (ES0523)
+                                        Board:
+                                        •      MB1367-G491RE-C04
+                                               (main board)
+
+
+10.2.1                NUG474RE$AT1 known limitations
+
+                      Issue observed
+                      The OPAMP offset value is minimized using a trimming circuitry. At startup, the trimming values are initialized with
+                      the preset factory trimming values. The trimming values of OPAMP1, OPAMP2, and OPAMP4 are not
+                      programmed correctly, resulting in a large offset compared to the one specified.
+
+                      Proposed workaround
+                      The offset values of OPAMP1, OPAMP2, and OPAMP4 must be calibrated by software, applying the calibration
+                      procedure described in the STM32G4 series advanced Arm®-based 32-bit MCUs reference manual (RM0440), in
+                      the Calibration section of the Operational amplifiers (OPAMP) chapter. Such a procedure is already implemented
+                      in the STM32CubeG4 MCU Package.
+
+
+10.3                  Board revision history
+
+                                                            Table 19. Board revision history
+
+       Board reference                Board variant and revision                Board change description                        Board limitations
+
+                                  G431RB-C04                       Initial revision                                     No limitation
+                                  G474RE-C04                       Initial revision                                     No limitation
+                                                                   Several part references updated due to
+                                                                   obsolescence, such us the
+MB1367 (main board)                                                STMICROELECTRONICS ESDALC6V1-1U2
+                                  G474RE-D01                                                                            No limitation
+                                                                   diode, replaced by STMICROELECTRONICS
+                                                                   ESDZL5-1F4, with impact on the PCB. Refer to
+                                                                   the bill of materials for further details.
+                                  G491RE-C04                       Initial revision                                     No limitation
+
+
+
+
+UM2505 - Rev 7                                                                                                                               page 39/48
+                                                                                                                          UM2505
+                                                                                  Compliance statements and conformity declarations
+
+
+
+11               Compliance statements and conformity declarations
+
+11.1             Federal Communications Commission (FCC) compliance statement
+                 Part 15.19
+                 These devices comply with part 15 of the FCC rules. Operation is subject to the following two conditions: (1)
+                 these devices may not cause harmful interference, and (2) these devices must accept any interference received,
+                 including interference that may cause undesired operation.
+
+                 Part 15.21
+                 Any changes or modifications to this equipment not expressly approved by STMicroelectronics may cause
+                 harmful interference and void the user's authority to operate this equipment.
+
+                 Part 15.105
+                 This equipment has been tested and found to comply with the limits for Class B digital devices, pursuant to part
+                 15 of the FCC rules. These limits are designed to provide reasonable protection against harmful interference in a
+                 residential installation. This equipment generates, uses, and can radiate radio frequency energy and, if not
+                 installed and used in accordance with the instructions, may cause harmful interference to radio communications.
+                 However, there is no guarantee that interference will not occur in a particular installation. If this equipment does
+                 cause harmful interference to radio or television reception, which can be determined by turning the equipment off
+                 and on, the user is encouraged to try to correct interference by one or more of the following measures:
+                 •     Reorient or relocate the receiving antenna.
+                 •     Increase the separation between the equipment and receiver.
+                 •     Connect the equipment into an outlet on a circuit different from that to which the receiver is connected.
+                 •     Consult the dealer or an experienced radio/TV technician for help.
+Note:            Use only shielded cables.
+
+                 Responsible Party - U.S. Contact Information:
+
+                 Francesco Doddo
+                 STMicroelectronics, Inc.
+                 200 Summit Drive | Suite 405 | Burlington, MA 01803
+                 USA
+                 Telephone: +1 781-472-9634
+
+
+11.2             Innovation, Science and Economic Development Canada (ISED) compliance
+                 statement
+                 These products comply with the ICES-003 standard class B of the ISED regulation.
+                 ISED Canada ICES-003 Compliance Label: CAN ICES (B)/NMB (B).
+Note:            Use only shielded cables.
+                 Ces produits sont conformes à la norme NMB-003 classe B de la ISDE.
+                 Étiquette de conformité à la NMB-003 d'ISDE Canada : CAN ICES (B) / NMB (B).
+Note:            Utiliser uniquement des câbles blindés.
+
+
+11.3             UKCA conformity
+                 Simplified UK declaration of conformity
+                 Hereby, the manufacturer STMicroelectronics, declares that the equipment types "NUCLEO-G431RB", "NUCLEO-
+                 G474RE", and "NUCLEO-G491RE" are in compliance with the UK Electromagnetic Compatibility Regulations
+                 2016 (UK SI 2016 No. 1091) and with the Restriction of the Use of Certain Hazardous Substances in Electrical
+                 and Electronic Equipment Regulations 2012 (UK SI 2012 No. 3032).
+Note:            Use only shielded cables.
+
+
+
+
+UM2505 - Rev 7                                                                                                               page 40/48
+                                                                                                                      UM2505
+                                                                                 Compliance statements and conformity declarations
+
+
+
+11.4             CE conformity
+
+11.4.1           Simplified EU declaration of conformity
+                 Hereby, STMicroelectronics declares that the equipment types "NUCLEO-G431RB", "NUCLEO-G474RE", and
+                 "NUCLEO-G491RE" are in compliance with directives 2011/53/EU and 2015/863/EU (RoHS), and 2014/30/EU
+                 (EMC).
+Note:            •     RoHS: Restriction of hazardous substances
+                 •     EMC: Electromagnetic compatibility
+Note:            Use only shielded cables.
+
+11.4.2           Déclaration de conformité UE simplifiée
+                 STMicroelectronics déclare que les équipements électriques des types "NUCLEO-G431RB", "NUCLEO-G474RE"
+                 et "NUCLEO-G491RE" sont conformes aux directives 2011/53/UE et 2015/863/UE (LdSD), et à la directive
+                 2014/30/UE (CEM).
+Note:            •     LdSD : directive sur la limitation de l'utilisation des substances dangereuses
+                 •     CEM : compatibilité électromagnétique
+Note:            Utiliser uniquement des câbles blindés.
+
+
+
+
+UM2505 - Rev 7                                                                                                           page 41/48
+                                                                                                                         UM2505
+                                                                                                                    Product disposal
+
+
+
+12               Product disposal
+
+                                    Disposal of this product: WEEE (Waste Electrical and Electronic Equipment)
+                                                                  (Applicable in Europe)
+
+
+                                    This symbol on the product, accessories, or accompanying documents indicates that the
+                                    product and its electronic accessories must not be disposed of with household waste at the
+                                    end of their working life.
+                                    To prevent possible harm to the environment and human health from uncontrolled waste
+                                    disposal, separate these items from other types of waste and recycle them responsibly at a
+                                    designated collection point to promote the sustainable reuse of material resources.
+                                    Household users:
+                                    Contact the retailer that you purchased the product from or your local authority for details of
+                                    your nearest designated collection point.
+
+                                    Business users:
+                                    Contact your dealer or supplier for further information.
+
+
+
+
+UM2505 - Rev 7                                                                                                              page 42/48
+                                                                                                           UM2505
+
+
+Revision history
+                                      Table 20. Document revision history
+
+                    Date       Revision                                       Changes
+
+                 28-Mar-2019      1        Initial release.
+                 17-Apr-2019      2        Added the Limitation section.
+                                           Extended the document scope to the NUCLEO-G491RE board: updated
+                                           sections Introduction, Features, Ordering information, and Development
+                 26-Nov-2020      3        environment.
+                                           Added the STM32G4 Nucleo-64 board information section.
+                                           Updated the Embedded STLINK-V3E section. Updated the STM32G4
+                 11-Feb-2021      4
+                                           Nucleo-64 product information chapter.
+                                           Updated System requirements, STM32G4 Nucleo-64 product information, and
+                                           Federal Communications Commission (FCC) and ISED Canada Compliance
+                                           Statements.
+                 22-Sep-2025      5
+                                           Added Safety recommendations, UKCA conformity, CE conformity, and
+                                           Product disposal.
+                                           Minor text edits across the document.
+                                           Updated:
+                                           •      Section 5: Safety recommendations
+                 08-Dec-2025      6        •      Table 18. Product history
+                                           •      Table 19. Board revision history
+                                           •      Section 11: Compliance statements and conformity declarations
+                                           Updated:
+                 21-May-2026      7        •      Features
+                                           •      Table 12. Solder bridge configuration
+
+
+
+
+UM2505 - Rev 7                                                                                                page 43/48
+                                                                                                                                                         UM2505
+                                                                                                                                                             Contents
+
+
+
+Contents
+1      Features. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .2
+2      Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+       2.1        Codification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+3      Development environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+       3.1        System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+       3.2        Development toolchains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+       3.3        Demonstration software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+       3.4        EDA resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+4      Conventions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .5
+5      Safety recommendations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+       5.1        Targeted audience. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+       5.2        Handling the board . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+       5.3        Delivery recommendations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+       5.4        Power supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+6      Quick start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .7
+       6.1        Getting started . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+7      Hardware layout and configuration. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+       7.1        PCB layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+       7.2        Mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+       7.3        Embedded STLINK-V3E . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+                  7.3.1         Drivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+                  7.3.2         STLINK-V3E firmware upgrade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+                  7.3.3         Using an external debug tool to program and debug the on-board STM32 . . . . . . . . . . . . 13
+       7.4        Power supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+                  7.4.1         Debugging while using VIN or EXT as an external power supply . . . . . . . . . . . . . . . . . . . 22
+       7.5        Clock sources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+                  7.5.1         HSE clock (high-speed external clock) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+                  7.5.2         LSE clock (low-speed external clock) – 32.768 kHz . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+       7.6        Board functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+                  7.6.1         LEDs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+                  7.6.2         Push-buttons. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+                  7.6.3         MCU voltage selection on VREF+ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+                  7.6.4         Current consumption measurement (IDD). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+                  7.6.5         Virtual COM port (VCP): LPUART and USART . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+
+
+
+UM2505 - Rev 7                                                                                                                                              page 44/48
+                                                                                                                                                      UM2505
+                                                                                                                                                         Contents
+
+
+
+        7.7         Solder bridges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+8        Board connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .28
+        8.1         STLINK-V3E USB Micro-B connector CN1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+        8.2         MIPI10 connector CN4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+        8.3         ARDUINO® Uno V3 connectors CN5, CN6, CN8 and CN9 . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+        8.4         ST morpho connectors CN7 and CN10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+9        STM32G4 Nucleo-64 I/O assignment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .34
+10       STM32G4 Nucleo-64 product information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .36
+        10.1        Product marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+        10.2        STM32G4 Nucleo-64 product history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+                    10.2.1       NUG474RE$AT1 known limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+        10.3        Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+11       Compliance statements and conformity declarations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .40
+        11.1        Federal Communications Commission (FCC) compliance statement . . . . . . . . . . . . . . . . . . 40
+        11.2        Innovation, Science and Economic Development Canada (ISED) compliance statement. . 40
+        11.3        UKCA conformity. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+        11.4        CE conformity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+                    11.4.1       Simplified EU declaration of conformity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+                    11.4.2       Déclaration de conformité UE simplifiée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+12       Product disposal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .42
+Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .43
+List of tables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .46
+List of figures. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .47
+
+
+
+
+UM2505 - Rev 7                                                                                                                                           page 45/48
+                                                                                                                                                       UM2505
+                                                                                                                                                      List of tables
+
+
+
+List of tables
+Table 1.     List of available products. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Table 2.     Codification explanation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Table 3.     ON/OFF convention . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Table 4.     Jumper configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 5.     MIPI10/STDC14 debug connector (CN4). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Table 6.     External power sources: VIN (7 V - 12 V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Table 7.     External power sources: E5V (5 V). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Table 8.     External power sources: 5V_CHGR (5 V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 9.     External power sources: 3V3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 10.    USART1 connection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Table 11.    LPUART1 connection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Table 12.    Solder bridge configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Table 13.    USB Micro-B connector CN1 pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Table 14.    MIPI10 connector CN4 pinout (STDC14 pinout compatible) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 15.    ARDUINO® connectors pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Table 16.    Pin assignment of the ST morpho connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 17.    Nucleo-64 I/O assignment. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 18.    Product history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Table 19.    Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+Table 20.    Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+
+
+
+
+UM2505 - Rev 7                                                                                                                                             page 46/48
+                                                                                                                                                           UM2505
+                                                                                                                                                         List of figures
+
+
+
+List of figures
+Figure 1.        NUCLEO-G474RE top view . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 2.        NUCLEO-G474RE bottom view . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 3.        Hardware block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Figure 4.        Top layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Figure 5.        Bottom layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Figure 6.        STM32G4 Nucleo 64 board mechanical drawing (in millimeter) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 7.        USB composite device. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 8.        Connecting an external debug tool to program the on-board STM32G4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 9.        STM32G4 Nucleo-64 board power tree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Figure 10.       Power supply input from STLINK-V3E USB connector with PC (5 V, 500 mA max) . . . . . . . . . . . . . . . . . . . . 16
+Figure 11.       Power supply input from VIN (7 V - 12 V, 800 mA max) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Figure 12.       Power supply input from 5V_EXT (5 V, 500 mA max). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Figure 13.       Power supply input from ST-LINK USB connector with USB charger (5 V) . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Figure 14.       Power supply input from external 3V3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Figure 15.       USB Micro-B connector CN1 (front view) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Figure 16.       MIPI10 connector CN4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Figure 17.       ARDUINO® connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Figure 18.       ARDUINO® and ST morpho connectors pinout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Figure 19.       ST morpho connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+
+
+
+
+UM2505 - Rev 7                                                                                                                                                page 47/48
+                                                                                                                                                  UM2505
+
+
+
+
+                                                          IMPORTANT NOTICE – READ CAREFULLY
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and improvements to ST
+products and/or to this document at any time without notice.
+In the event of any conflict between the provisions of this document and the provisions of any contractual arrangement in force between the purchasers and
+ST, the provisions of such contractual arrangement shall prevail.
+The purchasers should obtain the latest relevant information on ST products before placing orders. ST products are sold pursuant to ST’s terms and
+conditions of sale in place at the time of order acknowledgment.
+The purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or the design of
+the purchasers’ products.
+No license, express or implied, to any intellectual property right is granted by ST herein.
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+If the purchasers identify an ST product that meets their functional and performance requirements but that is not designated for the purchasers' market
+segment, the purchasers shall contact ST for more information.
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, refer to www.st.com/trademarks. All other product or service names
+are the property of their respective owners.
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+                                                         © 2026 STMicroelectronics – All rights reserved
+
+
+
+
+UM2505 - Rev 7                                                                                                                                       page 48/48
+

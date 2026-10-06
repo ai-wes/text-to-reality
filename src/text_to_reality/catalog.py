@@ -12,6 +12,13 @@ from . import connector_usage
 
 STANDARD_PIN_COUNTS = (1, 2, 3, 4, 5, 6, 7, 8, 22)
 MAX_PIN_COUNT = 22
+# Original broad family references: retained for explicit-ID compatibility.
+LEGACY_FAMILY_IDS = frozenset({
+    "seeed-xiao", "esp32-devkitc-v4", "esp32-devkit-v1-30", "esp32-s3-devkitc-1",
+    "arduino-nano", "pro-micro", "wemos-d1-mini", "nodemcu-esp8266", "st7735s-128",
+    "gmt020-02-8p", "ssd1306-i2c", "hc-sr04", "hc-sr501", "gy-521", "rc522",
+    "max7219-matrix", "tm1637", "microsd-spi", "relay-1ch",
+})
 CONNECTOR_URL = "https://jig-robotics.com/support/dupont-housings"
 
 
@@ -54,16 +61,16 @@ def board(name_or_id: str) -> dict[str, Any] | None:
     for entry in boards():
         if needle == entry["id"].lower():
             return entry
-    exact = [entry for entry in boards() if needle == entry["name"].lower()]
-    if exact:
-        return exact[0] if len(exact) == 1 else None
-    aliases = [entry for entry in boards() if needle in {a.lower() for a in entry["aliases"]}]
-    if aliases:
-        researched = [entry for entry in aliases if entry.get("source_record")
-                      and needle not in {a.lower() for a in entry.get("legacy_aliases", [])}]
-        if researched:
-            return researched[0] if len(researched) == 1 else None
-        return aliases[0] if len(aliases) == 1 else None
+    labels = [entry for entry in boards() if needle == entry["name"].strip().lower()
+              or needle in {a.strip().lower() for a in entry["aliases"]}]
+    researched = [entry for entry in labels if entry.get("source_record")
+                  and needle not in {a.strip().lower() for a in entry.get("legacy_aliases", [])}]
+    if researched:
+        nonlegacy = [entry for entry in labels if entry["id"] not in LEGACY_FAMILY_IDS
+                     and needle not in {a.strip().lower() for a in entry.get("legacy_aliases", [])}]
+        return researched[0] if len(researched) == 1 and len(nonlegacy) == 1 else None
+    if labels:
+        return labels[0] if len(labels) == 1 else None
     matches = find_boards(name_or_id)
     return matches[0] if len(matches) == 1 else None
 
@@ -114,7 +121,7 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
                 continue
             headers = entry["headers"]
             label = entry["name"]
-            revision = revision or entry.get("revision")
+            revision = revision or (entry.get("revision") if entry.get("revision_verified") is True else None)
         if not isinstance(headers, list) or any(not isinstance(h, dict) for h in headers):
             raise ValueError("headers must be a list of header objects")
         if any(not isinstance(h.get("id"), str) or not h["id"].strip() for h in headers):

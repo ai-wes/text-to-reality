@@ -1,0 +1,3682 @@
+[
+  {
+    "sku": "SEN-15335",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "",
+      "x": "20.32",
+      "y": "12.7",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-15335",
+    "ref": "J1",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "",
+      "x": "5.08",
+      "y": "12.7",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-15335",
+    "ref": "J3",
+    "package": "1X06_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "VIN"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA/SDI_VIN"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL/SCLK_VIN"
+      },
+      {
+        "name": "5",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "AD0/SDO_VIN"
+      },
+      {
+        "name": "6",
+        "x": "12.7",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!CS!_VIN"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkFun-Connectors",
+      "package": "1X06_NO_SILK",
+      "value": "",
+      "x": "6.35",
+      "y": "1.27"
+    }
+  },
+  {
+    "sku": "SEN-15335",
+    "ref": "J4",
+    "package": "1X06_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "INT_VIN"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "FSYNC_VIN"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "AUX_DA_VIN"
+      },
+      {
+        "name": "5",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "AUX_CL_VIN"
+      },
+      {
+        "name": "6",
+        "x": "12.7",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "VIN"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "1X06_NO_SILK",
+      "value": "",
+      "x": "6.35",
+      "y": "24.13"
+    }
+  },
+  {
+    "sku": "SEN-15805",
+    "ref": "J1",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_NO_SILK",
+      "value": "PTH",
+      "x": "7.62",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15805",
+    "ref": "J3",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J3",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RA",
+      "x": "5.08",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-15805",
+    "ref": "J4",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!INT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "17.78",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15805",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RA",
+      "x": "20.32",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "",
+      "x": "5.08",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J3",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkX",
+      "package": "1X04_NO_SILK",
+      "value": "PTH",
+      "x": "6.35",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J4",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "",
+      "x": "20.32",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J5",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "INT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J5",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "16.51",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J1",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!LP"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "15.24",
+      "y": "24.13",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J6",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "RST"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J6",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "19.05",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J7",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "VDDIO"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J7",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "12.7",
+      "y": "24.13",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-18642",
+    "ref": "J8",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "VDDA"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J8",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "10.16",
+      "y": "24.13",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-16467",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "5.08",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-16467",
+    "ref": "J4",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "20.32",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-16467",
+    "ref": "J1",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_NO_SILK",
+      "value": "",
+      "x": "8.89",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "Qwiic",
+      "x": "20.32",
+      "y": "13.97",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "J3",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_NO_SILK",
+      "value": "PTH",
+      "x": "6.35",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "J4",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "Qwiic",
+      "x": "5.08",
+      "y": "13.97",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "JP2",
+    "package": "1X02_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "B+"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "B-"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "JP2",
+      "library": "SparkFun-Connectors",
+      "package": "1X02_NO_SILK",
+      "value": "",
+      "x": "5.08",
+      "y": "19.05",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "JP1",
+    "package": "1X05_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "A+"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "A-"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "5",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "VDDA"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "JP1",
+      "library": "SparkFun-Connectors",
+      "package": "1X05_NO_SILK",
+      "value": "",
+      "x": "10.16",
+      "y": "19.05",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "J5",
+    "package": "1X02_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "VDDA"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "INT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J5",
+      "library": "SparkFun-Connectors",
+      "package": "1X02_NO_SILK",
+      "value": "",
+      "x": "19.05",
+      "y": "1.27",
+      "smashed": "yes",
+      "rot": "R180"
+    }
+  },
+  {
+    "sku": "SEN-15242",
+    "ref": "J7",
+    "package": "1X04_SPRING_TERMINAL",
+    "pads": [
+      {
+        "name": "1",
+        "x": "7.62",
+        "y": "2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "VDDA"
+      },
+      {
+        "name": "5",
+        "x": "7.62",
+        "y": "-2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "VDDA"
+      },
+      {
+        "name": "2",
+        "x": "5.08",
+        "y": "2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "2.54",
+        "y": "2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "A-"
+      },
+      {
+        "name": "4",
+        "x": "0",
+        "y": "2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "A+"
+      },
+      {
+        "name": "6",
+        "x": "5.08",
+        "y": "-2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "GND"
+      },
+      {
+        "name": "7",
+        "x": "2.54",
+        "y": "-2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "A-"
+      },
+      {
+        "name": "8",
+        "x": "0",
+        "y": "-2.54",
+        "drill": "1.1",
+        "diameter": "1.8",
+        "rot": "R270",
+        "net": "A+"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J7",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_SPRING_TERMINAL",
+      "value": "Spring Terminal",
+      "x": "7.366",
+      "y": "25.781",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-15177",
+    "ref": "J2",
+    "package": "1X04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_1MM_RA",
+      "value": "",
+      "x": "5.08",
+      "y": "12.7",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-15177",
+    "ref": "J3",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkX",
+      "package": "1X04_NO_SILK",
+      "value": "PTH",
+      "x": "7.62",
+      "y": "1.27"
+    }
+  },
+  {
+    "sku": "SEN-15177",
+    "ref": "J4",
+    "package": "1X04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_1MM_RA",
+      "value": "",
+      "x": "20.32",
+      "y": "12.7",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-15177",
+    "ref": "J5",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!INT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J5",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "17.78",
+      "y": "1.27"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J1",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "5.08011875",
+      "y": "40.63921875",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J8",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J8",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "5.08011875",
+      "y": "30.47921875",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J9",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J9",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "5.08011875",
+      "y": "20.31921875",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J10",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J10",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "5.08011875",
+      "y": "10.15921875",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J23",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J23",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "30.47921875",
+      "y": "10.15988125",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J24",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J24",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "30.47921875",
+      "y": "20.31988125",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J25",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J25",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "30.47921875",
+      "y": "30.47988125",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J26",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J26",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC_RIGHT_ANGLE",
+      "x": "30.47921875",
+      "y": "40.63988125",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J21",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!RST"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J21",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "11.43011875",
+      "y": "46.98921875",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J2",
+    "package": "1X04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkX",
+      "package": "1X04_1MM_RA",
+      "value": "SMD",
+      "x": "17.78",
+      "y": "49.53",
+      "smashed": "yes",
+      "rot": "R180"
+    }
+  },
+  {
+    "sku": "BOB-16784",
+    "ref": "J3",
+    "package": "1X04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J3",
+      "library": "SparkX",
+      "package": "1X04_1MM_RA",
+      "value": "SMD",
+      "x": "17.78",
+      "y": "5.08",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "DEV-15334",
+    "ref": "J1",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "",
+      "x": "20.32",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "DEV-15334",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "",
+      "x": "5.08",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "DEV-15334",
+    "ref": "J4",
+    "package": "SCREWTERMINAL-3.5MM-6",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.2",
+        "diameter": "2.032",
+        "shape": "square",
+        "net": "A3"
+      },
+      {
+        "name": "2",
+        "x": "3.5",
+        "y": "0",
+        "drill": "1.2",
+        "diameter": "2.032",
+        "net": "A2"
+      },
+      {
+        "name": "3",
+        "x": "7",
+        "y": "0",
+        "drill": "1.2",
+        "diameter": "2.032",
+        "net": "A1"
+      },
+      {
+        "name": "4",
+        "x": "10.5",
+        "y": "0",
+        "drill": "1.2",
+        "diameter": "2.032",
+        "net": "A0"
+      },
+      {
+        "name": "5",
+        "x": "14",
+        "y": "0",
+        "drill": "1.2",
+        "diameter": "2.032",
+        "net": "VCC"
+      },
+      {
+        "name": "6",
+        "x": "17.5",
+        "y": "0",
+        "drill": "1.2",
+        "diameter": "2.032",
+        "net": "GND"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "SCREWTERMINAL-3.5MM-6",
+      "value": "Screw Pin",
+      "x": "21.4376",
+      "y": "21.59",
+      "smashed": "yes",
+      "rot": "R180"
+    }
+  },
+  {
+    "sku": "DEV-15334",
+    "ref": "J3",
+    "package": "2X5_NOSILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "A3"
+      },
+      {
+        "name": "2",
+        "x": "0",
+        "y": "2.54",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "ALRT"
+      },
+      {
+        "name": "3",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "A2"
+      },
+      {
+        "name": "4",
+        "x": "2.54",
+        "y": "2.54",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "SCL"
+      },
+      {
+        "name": "5",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "A1"
+      },
+      {
+        "name": "6",
+        "x": "5.08",
+        "y": "2.54",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "SDA"
+      },
+      {
+        "name": "7",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "A0"
+      },
+      {
+        "name": "8",
+        "x": "7.62",
+        "y": "2.54",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "VCC"
+      },
+      {
+        "name": "9",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "GND"
+      },
+      {
+        "name": "10",
+        "x": "10.16",
+        "y": "2.54",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "net": "GND"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkFun-Connectors",
+      "package": "2X5_NOSILK",
+      "value": "",
+      "x": "17.78",
+      "y": "3.81",
+      "smashed": "yes",
+      "rot": "R180"
+    }
+  },
+  {
+    "sku": "SEN-14722",
+    "ref": "J2",
+    "package": "1X04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_1MM_RA",
+      "value": "",
+      "x": "5.08",
+      "y": "12.7",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-14722",
+    "ref": "J3",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkX",
+      "package": "1X04_NO_SILK",
+      "value": "PTH",
+      "x": "6.35",
+      "y": "1.27"
+    }
+  },
+  {
+    "sku": "SEN-14722",
+    "ref": "J4",
+    "package": "1X04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_1MM_RA",
+      "value": "",
+      "x": "20.32",
+      "y": "12.7",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-14722",
+    "ref": "J5",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!INT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J5",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "16.51",
+      "y": "1.27"
+    }
+  },
+  {
+    "sku": "SEN-14722",
+    "ref": "J1",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!SHUT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "19.05",
+      "y": "1.27"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC",
+      "x": "5.08",
+      "y": "19.05",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J4",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC",
+      "x": "55.88",
+      "y": "19.05",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J5",
+    "package": "LATCHTERMINAL-5MM-4",
+    "pads": [
+      {
+        "name": "1",
+        "x": "-7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "!INT"
+      },
+      {
+        "name": "2",
+        "x": "-2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P0"
+      },
+      {
+        "name": "3",
+        "x": "2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P1"
+      },
+      {
+        "name": "4",
+        "x": "7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "GND"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J5",
+      "library": "SparkFun-Connectors",
+      "package": "LATCHTERMINAL-5MM-4",
+      "value": "",
+      "x": "41.91",
+      "y": "6.35",
+      "smashed": "yes",
+      "rot": "R180"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J6",
+    "package": "LATCHTERMINAL-5MM-4",
+    "pads": [
+      {
+        "name": "1",
+        "x": "-7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "-2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P6"
+      },
+      {
+        "name": "3",
+        "x": "2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P7"
+      },
+      {
+        "name": "4",
+        "x": "7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "3.3V"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J6",
+      "library": "SparkFun-Connectors",
+      "package": "LATCHTERMINAL-5MM-4",
+      "value": "",
+      "x": "41.91",
+      "y": "31.75",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J1",
+    "package": "LATCHTERMINAL-5MM-4",
+    "pads": [
+      {
+        "name": "1",
+        "x": "-7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "3.3V"
+      },
+      {
+        "name": "2",
+        "x": "-2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P4"
+      },
+      {
+        "name": "3",
+        "x": "2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P5"
+      },
+      {
+        "name": "4",
+        "x": "7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "GND"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "LATCHTERMINAL-5MM-4",
+      "value": "",
+      "x": "19.05",
+      "y": "31.75",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J8",
+    "package": "LATCHTERMINAL-5MM-4",
+    "pads": [
+      {
+        "name": "1",
+        "x": "-7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "-2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P2"
+      },
+      {
+        "name": "3",
+        "x": "2.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "P3"
+      },
+      {
+        "name": "4",
+        "x": "7.5",
+        "y": "0",
+        "drill": "1.5",
+        "net": "3.3V"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J8",
+      "library": "SparkFun-Connectors",
+      "package": "LATCHTERMINAL-5MM-4",
+      "value": "",
+      "x": "19.05",
+      "y": "6.35",
+      "smashed": "yes",
+      "rot": "R180"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J7",
+    "package": "1X01_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!INT"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J7",
+      "library": "SparkFun-Connectors",
+      "package": "1X01_NO_SILK",
+      "value": "",
+      "x": "59.69",
+      "y": "13.97",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "DEV-17047",
+    "ref": "J9",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J9",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_NO_SILK",
+      "value": "",
+      "x": "59.69",
+      "y": "24.13",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-16466",
+    "ref": "J2",
+    "package": "1X06_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!CS"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDI/SDA"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDO/ADR"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCK/SCL"
+      },
+      {
+        "name": "5",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "6",
+        "x": "12.7",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "1X06_NO_SILK",
+      "value": "SPI",
+      "x": "6.35",
+      "y": "24.13",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-16466",
+    "ref": "J5",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J5",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC",
+      "x": "5.08",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-16466",
+    "ref": "J7",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J7",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "QWIIC",
+      "x": "20.32",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-16466",
+    "ref": "J1",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDI/SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCK/SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_NO_SILK",
+      "value": "I2C",
+      "x": "8.89",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-16476",
+    "ref": "J1",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J1",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "Qwiic",
+      "x": "20.32",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R90"
+    }
+  },
+  {
+    "sku": "SEN-16476",
+    "ref": "J2",
+    "package": "JST04_1MM_RA",
+    "pads": [],
+    "smd": [
+      {
+        "name": "NC2",
+        "x": "-2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "NC1",
+        "x": "2.8",
+        "y": "-3.675",
+        "dx": "1.2",
+        "dy": "2",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "0",
+        "dx": "0.6",
+        "dy": "1.35",
+        "layer": "1"
+      }
+    ],
+    "position": {
+      "name": "J2",
+      "library": "SparkFun-Connectors",
+      "package": "JST04_1MM_RA",
+      "value": "Qwiic",
+      "x": "5.08",
+      "y": "12.7",
+      "smashed": "yes",
+      "rot": "R270"
+    }
+  },
+  {
+    "sku": "SEN-16476",
+    "ref": "J3",
+    "package": "1X04_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "3",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "SCL"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J3",
+      "library": "SparkFun-Connectors",
+      "package": "1X04_NO_SILK",
+      "value": "",
+      "x": "6.35",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  },
+  {
+    "sku": "SEN-16476",
+    "ref": "J4",
+    "package": "1X02_NO_SILK",
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "!RESET"
+      },
+      {
+        "name": "2",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.8796",
+        "rot": "R90",
+        "net": "EOC"
+      }
+    ],
+    "smd": [],
+    "position": {
+      "name": "J4",
+      "library": "SparkFun-Connectors",
+      "package": "1X02_NO_SILK",
+      "value": "",
+      "x": "16.51",
+      "y": "1.27",
+      "smashed": "yes"
+    }
+  }
+]

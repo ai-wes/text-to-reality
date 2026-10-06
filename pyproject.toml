@@ -35,7 +35,7 @@ packages = ["src/text_to_reality"]
 "skills/text-to-reality/references/connector-usage.md" = "text_to_reality/data/connector_usage.md"
 
 [tool.hatch.build.targets.sdist]
-include = ["/src", "/skills", "/tests", "/docs", "/README.md", "/LICENSE", "/pyproject.toml"]
+include = ["/src", "/skills", "/tests", "/docs", "/scripts", "/README.md", "/LICENSE", "/pyproject.toml"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -86,14 +86,14 @@ def test_custom_counts_and_catalog_references_never_bypass_fit_gates():
 
 
 def test_catalog_keeps_legacy_ids_and_exact_variants_evidence_and_auxiliary_groups():
-    assert len(catalog.boards()) == 75
-    assert len({b["id"] for b in catalog.boards()}) == 75
+    assert len(catalog.boards()) >= 75
+    assert len({b["id"] for b in catalog.boards()}) == len(catalog.boards())
     for id in ("seeed-xiao", "arduino-nano", "ssd1306-i2c", "esp32-devkitc-v4"):
         assert catalog.board(id)
     assert catalog.board("Raspberry Pi Pico H")["id"] == "raspberry-pi-pico-h"
     assert catalog.board("Pico H")["id"] == "raspberry-pi-pico-h"
     assert catalog.board("XIAO ESP32S3")["id"] == "seeed-xiao-esp32s3"
-    assert catalog.board("ESP32-S3-DevKitC-1")["id"] == "esp32-s3-devkitc-1"  # legacy family, unqualified
+    assert catalog.board("esp32-s3-devkitc-1")["id"] == "esp32-s3-devkitc-1"  # explicit legacy ID
     assert catalog.board("espressif-esp32-devkitc-v4-wroom32e-female")["headers"][0]["gender"] == "female"
     feather = catalog.board("adafruit-feather-rp2040")
     assert [h["pin_count"] for h in feather["headers"]] == [16, 12]
@@ -191,3 +191,9 @@ def test_fresh_stdio_agent_retrieves_guidance_and_gated_catalog_mapping(tmp_path
                 assert plan.structured_content["connectors"][0]["connectors"] == 2
                 assert plan.structured_content["row_checks"][0]["issues"]
     asyncio.run(check())
+
+
+def test_source_revision_descriptions_do_not_approve_actual_board_revision():
+    plan = catalog.connectors_for([{"board": "st-nucleo-f031k6"}])
+    assert "exact_board_revision_missing" in plan["row_checks"][0]["issues"]
+    assert plan["model_choice"]["approved_model_revision"] is None

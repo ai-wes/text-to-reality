@@ -1,0 +1,251 @@
+{
+  "accepted": 36,
+  "quarantined": [],
+  "adjustments": [
+    {
+      "id": "raspberry-pi-zero",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-zero-w",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-zero-2-w",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-3b",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-3b-plus",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-4b",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-5",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-2b",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "raspberry-pi-1b-plus",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "beagleboard-beaglebone-black",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "seeed-beaglebone-green",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "adafruit-4000",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5600",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-4950",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-4064",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2466",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2488",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2590",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-4759",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3027",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3056",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5889",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5996",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5960",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-746",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-254",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3013",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3295",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3296",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-5188",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-5708",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4471",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-2264",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-364",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "CN1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3072",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3070",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    }
+  ]
+}

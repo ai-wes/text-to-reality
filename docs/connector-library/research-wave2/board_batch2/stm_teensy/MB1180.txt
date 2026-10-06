@@ -1,0 +1,653 @@
+U_MCU_32                 U_ST_LINK_V2-1
+MCU_32.SchDoc            ST_LINK_V2-1.SCHDOC
+                VCP_TX      STLK_RX
+                VCP_RX      STLK_TX
+
+                SWCLK       TCK                SWO
+                SWDIO       TMS
+                  MCO       MCO
+
+                  NRST      NRST
+
+
+
+
+                                                     REV B: SB14 changed to JP1 Jumper for easy IDD measurement, and enlarge
+                                                     board length; CN1 USB PN changed to Micro-B for Device.
+                                                     REV C: Add SB18/SB16 for connecting D4/D5 to A4/A5
+
+                                                     Title: TOP
+                                                     Project: NUCLEO32
+                                                     Size: A4     Reference: MB1180      Revision: C.1
+                                                     Date: 6/5/2015                      Sheet: 1 of 3
+                                                           COSB17
+                                                           SB17
+                                                              PISB1701            PISB1702
+                                                                                                                                    COU2
+                                                                                                                                    U2
+                                                           POVCP0TX                                         A0           PA0 PIU206
+                                                                                                                                  6                                         14 PB0                          D3                                                                                                               VDD                                                        AVDD
+                                                             VCP_TX                                                                    PA0                            PB0 PIU2014
+                                                                                                            A1           PA1 PIU207
+                                                                                                                                  7                                         15 PB1                          D6
+                                                                                                                                       PA1                      PB1/NPOR PIU2015
+                                                                A7                 PA2                                            8
+                                                                                                                              PIU208 PA2                         PB2/VSS2
+                                                                                                                                                                            16
+                                                                                                                                                                          PIU2016
+                                                                                                                                                                                                                           COSB11
+                                                                                                                                                                                                                           SB11
+                                                                                                                                                                                                                             PISB1101          PISB1102
+                                                                                                                                                                                                                                                                                                                                  PIC701       PIC2301                                       PIC2401
+                                                                A2                 PA3                                            9                                         26 PB3                          D13                                                                                                                          COC7
+                                                                                                                                                                                                                                                                                                                                         C7            COC23
+                                                                                                                                                                                                                                                                                                                                                       C23                                           COC24
+                                                                                                                                                                                                                                                                                                                                                                                                     C24
+                                                                                                                              PIU209   PA3                            PB3 PIU2026
+                                                                                                           A3            PA4 PIU2010
+                                                                                                                                 10
+                                                                                                                                       PA4
+                                                                                                                                                                            27 PB4
+                                                                                                                                                                      PB4 PIU2027
+                                                                                                                                                                                                            D12                                                                                                                   PIC702 100nF PIC2302 100nF                                 PIC2402 100nF
+                                                                                                           A4            PA5 PIU2011
+                                                                                                                                 11                                         28 PB5                          D11
+                                                                                                                                       PA5                            PB5 PIU2028
+                                                                                                           A5            PA6 PIU2012
+                                                                                                                                 12                                         29 PB6                          D5
+                                                                                                                                       PA6                            PB6 PIU2029
+                                                                                                           A6            PA7 PIU2013
+                                                                                                                                 13                                         30 PB7                          D4
+                                                                                                                                       PA7                            PB7 PIU2030
+                                                                                                                                                                                                                           COSB13
+                                                                                                           D9            PA8 PIU2018
+                                                                                                                                 18                                         32                                             SB13
+                                                                                                                                       PA8                       PB8/VSS3 PIU2032                                            PISB1301          PISB1302
+                                                                                                           D1            PA9 PIU2019
+                                                                                                                                 19
+                                                                                                                                       PA9
+                                                                                                           D0            PA10PIU2020
+                                                                                                                                 20
+                                                                                                                                       PA10
+                                                                                                           D10           PA11PIU2021
+                                                                                                                                 21                                     1
+                                                                                                                                       PA11                      VDD3 PIU201
+                                                                                                           D2            PA12PIU2022
+                                                                                                                                 22                                     17
+                                                                                                                         NLPA13        PA12              VDD2/VDD_USB PIU2017                                                                                                       VDD
+                                                                                             POSWDIO                     PA13PIU2023
+                                                                                                                                 23                                         AVDD
+                                                                                              SWDIO                      NLPA14        PA13                                     COL1                                       COSB10PISB1001
+                                                                                             POSWCLK                     PA14PIU2024
+                                                                                                                                 24                                     5       L1                                         SB10
+                                                                                              SWCLK                      NLPA15        PA14                VDDA/VREF+ PIU205   PIL101                                 PIL102                        PISB1002
+                                                                                                                                                                                                                                                                         COB1
+                                                                                                                                                                                                                                                                         B1
+                                                                                             POVCP0RX                    PA15PIU2025
+                                                                                                                                 25                                                                         BEAD
+                                                                                               VCP_RX                                  PA15
+                                                                                                                                                                                4   NRST
+                                                                                                                                                                         NRST PIU204                                                                                PIB101             PIB102
+     POMCO                                            COSB4
+                                                      SB4                                                                        2                                                                                                                                       KSS221G
+       MCO                                               PISB401          PISB402                                            PIU202 PF0/PC14
+                                                                                                                                 3
+                                                                                                                             PIU203 PF1/PC15
+                                                                                                                                                                                        31
+                                                                                                                                                            BOOT0/PB8/PH3         PIU2031
+                                                                                                                                                                                             COSB12
+                                                                                                                                                                                             SB12
+                                                                                                                                                                                                PISB1201
+                                                                                                                                                                                                                 NLBOOT0
+                                                                                                                                                                                                                 BOOT0
+                                                                                                                                                                                                           PISB1202
+                                                                                                                                     MCU_LQFP32/QFN32                                                                          PIR2101COR21                                  COC11
+                                                                                                                                                                                                                                                                             C11
+          D8    PF0 /PC14                             COSB6
+                                                      SB6PISB601          PISB602
+                                                                                                                                                                                                                                         R21
+                                                                                                                                                                                                                                                                         PIC1102   PIC1101
+                  COC12
+                  C12                                                                                                                                                                                                                    10K
+               PIC1202   PIC1201
+                                                      COSB5
+                                                      SB5PISB501          PISB502
+                                                                                                                                                                                                                               PIR2102                                       100nF
+
+                    4.3pF                    PIX101 COX1                                               closed for L021, L031,L433
+                                                                                                                                                                                                                                                                         PONRST
+                                                                                                                                                                                                                                                                          NRST
+                                                      X1                   open for F042,F031,F303
+                                                      NX3215SA-32.768K-EXS00A-MU00525
+                    COC13
+                    C13
+               PIC1302   PIC1301
+                                             PIX102        COSB7
+                                                           SB7PISB701             PISB702
+
+                    4.3pF
+                                                                                                                                                                                                                                                                       Extension connectors
+          D7    PF1 /PC15                                  COSB8
+                                                           SB8PISB801             PISB802
+                                                                                                                                                                                                                                                                                                                                          VIN +5V +3V3
+
+                                                                                                                                                                                                                                                                              COCN3
+                                                                                                                                                                                                                                                                              CN3                            COCN4
+                                                                                                                                                                                                                                                                                                             CN4
+                                                                                                                                                                                                                                               D1          NLPA9
+                                                                                                                                                                                                                                                           PA9        PICN301 1                                1 PICN401
+                                                           COU6
+                                                           U6                                                                                                                                                                                  D0          NLPA10
+                                                                                                                                                                                                                                                           PA10       PICN302 2                                2 PICN402
+
+
+
+
+                                                                                                                                                                                                                                                                                         Arduino Connector
+                   VIN                                     LD1117S50TR                                                        E5V                                                                                                                          NRST       PICN303 3
+                                                                                                                                                                                                                                                                                                                         NLNRST
+                                                                                                                                                                                                                                                                                                                        NRST
+                                                                                                                                                                                                                                                                                                               3 PICN403
+                                                      3                                   2
+                         PIC2 01 PIU603 Vin                                       Vout PIU602
+                                                                                          4
+                                                                                   Tab PIU604
+                                                                                                                                                                                                                                                D2         NLPA12
+                                                                                                                                                                                                                                                           PA12
+                                                                                                                                                                                                                                                                      PICN304 4
+                                                                                                                                                                                                                                                                      PICN305 5
+                                                                                                                                                                                                                                                                                                               4 PICN404NLPA2
+                                                                                                                                                                                                                                                                                                               5 PICN405
+                                                                                                                                                                                                                                                                                                                        PA2                  A7
+                COC22
+                C22                                                                               PIC2501 C25
+                                                                                                          COC25
+                                                                                                                                                                                                                                                D3         NLPB0
+                                                                                                                                                                                                                                                           PB0        PICN306 6
+                                                                                                                                                                                                                                                                                                                         NLPA7
+                                                                                                                                                                                                                                                                                                                        PA7
+                                                                                                                                                                                                                                                                                                               6 PICN406NLPA6
+                                                                                                                                                                                                                                                                                                                                             A6
+                10uF(25V)PIC2 02
+                                                                         PIU601                   PIC2502 10uF
+                                                                                                                                                                                                                                                D4         PB7        PICN307 7                                7 PICN407
+                                                                                                                                                                                                                                                                                                                        PA6                  A5                                 COSB16
+                                                                                                                                                                                                                                                                                                                                                                                SB16
+                                                                                                                                                                                                                                                                                                                                                                                  PISB1601         PISB1602
+                                                                                                                                                                                                                                                                                                                                                                                                               NLPB6
+                                                                                                                                                                                                                                                                                                                                                                                                               PB6
+                                                                     1
+
+
+
+
+                                                                                                                                                                                                                                                D5         PB6        PICN308 8
+                                                                                                                                                                                                                                                                                                                         NLPA5
+                                                                                                                                                                                                                                                                                                                        PA5                  A4                                 COSB18
+                                                                                                                                                                                                                                                                                                                                                                                SB18                           NLPB7
+                                                                                                                                                                                                                                                                                                                                                                                                               PB7
+                                                                                                                                                                                                                                                           NLPB1                                               8 PICN408NLPA4                                                     PISB1801         PISB1802
+                                                                                                                                                                                                                                                D6         PB1                                                          PA4                  A3
+                                                                                                                                                                                                                                                                      PICN309 9                                9 PICN409
+                                                                                                                                                                                                                                                D7         NLPF0
+                                                                                                                                                                                                                                                           PF0        PICN3010 10
+                                                                                                                                                                                                                                                                                                                         NLPA3
+                                                                                                                                                                                                                                                                                                                        PA3                  A2                AVDD
+                                                                                                                                                                                                                                                                                                              10 PICN4010
+                                                                                                                                                                                                                                                D8         NLPF1
+                                                                                                                                                                                                                                                           PF1
+                                                                                                                                                                                                                                                                      PICN3011 11
+                                                                                                                                                                                                                                                                                                                         NLPA1
+                                                                                                                                                                                                                                                                                                                        PA1
+                                                                                                                                                                                                                                                                                                              11 PICN4011
+                                                                                                                                                                                                                                                                                                                                             A1
+                                                                                                                                                                                                                                                D9         PA8
+                                                                                                                                                                                                                                                           NLPA8      PICN3012 12
+                                                                                                                                                                                                                                                                                                                        PA0
+                                                                                                                                                                                                                                                                                                                         NLPA0               A0
+                                                                                                                                                                                                                                                                                                              12 PICN4012
+                                                                                                                                                                                                                                               D10         NLPA11
+                                                                                                                                                                                                                                                           PA11
+                                                                                                                                                                                                                                                                      PICN3013 13                             13 PICN4013
+                                                                                                                                                                                                                                                                                                                                             AREF
+   E5V         COD3
+               D3                                                                                                                                                                                                                              D11         PB5
+                                                                                                                                                                                                                                                           NLPB5      PICN3014 14                             14 PICN4014
+          PID301   PID302
+                                                                                                                                                                                                                                               D12         NLPB4
+                                                                                                                                                                                                                                                           PB4
+                                                                                                                                                                                                                                                                      PICN3015 15
+                                                                                                                                                                                                                                                                                                                         NLPB3
+                                                                                                                                                                                                                                                                                                                        PB3
+                                                                                                                                                                                                                                                                                                              15 PICN4015
+                                                                                                                                                                                                                                                                                                                                           D13
+
+                STPS2L30A                                                                                                                                                                                                                                                       Header 15X1_male             Header 15X1_male
+                                                                                                 U3
+                                                                                                 COU3                                                                                                                                                                                                                                                           PISB1502
+U5V_ST_LINK    D4
+               COD4                                       +5V                                    LD39050PU33R                                          VO                          +3V3
+                                                                                                                                                                                                                                                                                                                                                                                                  PILD302
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                              2
+                                                                                             6                                   3                                                                                                                                                                                                                                    COSB15
+                                                                                                                                                                                                                                                                                                                                                                      SB15                                    LD3
+                                                                                                                                                                                                                                                                                                                                                                                                              COLD3
+          PID401   PID402                                                         PIU306          VI                       PG   PIU303
+                                   PIR2 02                                                                                                                                                                                        VDD                                                                                                                           PISB1501                                      Green
+                                           R22 PIC1401
+         BAT60JFILM                        COR22                   1
+                                                               PIU301 EN                                                   VO
+                                                                                                                                  4
+                                                                                                                                PIU304
+                                                                                                                                                                COSB14
+                                                                                                                                                                SB14
+                                                                                                                                                                  PISB1401   PISB1402
+                                                                                                                                                                                             COJP1
+                                                                                                                                                                                             JP1PIJP101PIJP102
+                                                                                                                                                                                                                                                                                                                                                                                COR23             PILD301
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                              1
+                                           1K            C14
+                                                         COC14                                                                                PIC901                                                                                                                                                                                                                            R23
+                                                                                                          GND
+
+                                                                                                                  GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                           PIR2302      PIR2301
+                                   PIR2 01       PIC1402
+                                                      1uF_X5R_0603                                                              5
+                                                                                                                           NC PIU305                        PIC10 2                          PH127H10102JNG-2/3/1.5                                                                                                                                                             510
+                                   PILD201                                        PIC802                                                      PICOC9
+                                                                                                                                                C9C9
+                                                                                                                                                  02                C10
+                                                                                                                                                                    COC10
+                                                COLD2
+                                                LD2                                      COC8
+                                                                                         C8                                                    1uF_X5R_0603 PIC10 1 100nF
+                                                                                                          PIU302 PIU30
+                                                                                                        2
+
+                                                                                                                  0
+
+
+
+
+                                                RED                               PIC801 100nF
+                                   PILD202
+                                                                                                                                                                                                                                                                                                                              Title: MCU
+                                                                                                                                                                                                                                                                                                                              Project: NUCLEO32
+                                                                                                                                                                                                                                                                                                                              Size: A4            Reference: MB1180                                 Revision: C.1
+                                                                                                                                                                                                                                                                                                                              Date: 6/5/2015                                                        Sheet: 2 of 3
+                                                                                                                                                                                  COR11
+                                                                                                                                                                                  R11                             COR10
+                                                                                                                                                                                                                  R10
+                                                                                                                                    E5V                                  PIR1101                    PIR1102
+                                                                                                                                                                                                         PIR1001                  PIR1002
+                                                                                                                                                                                   2K7                             4K7                                                           +3V3_ST_LINK                                                  NLT0JTCK
+                                                                                                                                                                                                                                                                                                                                               T_JTCK               TCK/SWCLK                                                                  POTCK
+                                                                                                                                                                                                                                                                                                                                               NLT0JTMS                                                                                         TCK
+                                                                                                                                                                                                                                                                                                                                               T_JTMS               TMS/SWDIO                                                                  POTMS
+                                                                                                                                                                                                                                                                                                                                                                                                                                                TMS
+                                                                                                                                                                                                                                                                                                                                               NLT0NRST
+                                                                                                                                                                                                                                                                                                                                               T_NRST                                                                                          PONRST
+                                                                                                                     +3V3_ST_LINK                                        PISB101
+                                                                                                                                                                                     COSB1
+                                                                                                                                                                                                    PISB102
+                                                                                                                                                                                                                                                                                       PIC202          PIC502                                  NLT0SWO
+                                                                                                                                                                                                                                                                                                                                                                   PISB901
+                                                                                                                                                                                                                                                                                                                                                                        COSB9
+                                                                                                                                                                                                                                                                                                                                                                                PISB902                                                         NRST
+                                                                                                                                                                                     SB1                                                                                                                                                       T_SWO                    SB9                                                                    POSWO
+                                                        COR16                                                                   COR6
+                                                                                                                                R6                                                                                                                                                              COC2
+                                                                                                                                                                                                                                                                                                C2               COC5
+                                                                                                                                                                                                                                                                                                                 C5                                                                                                                             SWO
+                                                        R16
+                                                   PIR1601
+                                                                       10K
+                                                                      PIR1602                                                     PIR601                  PIR602
+                                                                                                                                          100K                                                                                                                                         PIC201 100nF PIC501 100nF
+
+
+
+
+                                                                                                                                                                                                               USB_RENUMn
+Board Ident: PC13=0
+
+
+
+
+                                                                                                                                                                                                     PWR_EXT
+
+                                                                                                                                                                                                               STM_JTCK
+                                                    R13 COR13 10K[N/A]
+                                                   PIR1301      PIR1302
+                                                                                                                                                                                                                                                                                                                                                                                                        SWD                        +3V3_ST_LINK
+                                                                                                                                                                                                                                                                                                                                                                                                        COCN2
+                                                                                                                                                                                                                                                                                                                                                                                                        CN2
+                                                                                                                                                                                                                                                                                                                                                  SWDIO             NLSTM0JTMS
+                                                                                                                                                                                                                                                                                                                                                                    STM_JTMS                PICN201 1               2 PICN202
+                                                                                                                                                                                                                                                                                                                                                  SWCLK             NLSTM0JTCK
+                                                                                                                                                                                                                                                                                                                                                                    STM_JTCK                PICN203 3               4 PICN204
+                                                                                                              +3V3_ST_LINK
+                                                                                                                                 PIU5048 PIU5047 PIU5046 PIU5045 PIU504 PIU5043 PIU5042 PIU5041 PIU5040 PIU5039 PIU5038 PIU5037                                                                                                                                                             PICN205 5
+
+
+
+
+                                                                                                                                48
+                                                                                                                                47
+                                                                                                                                46
+                                                                                                                                45
+                                                                                                                                44
+                                                                                                                                43
+                                                                                                                                42
+                                                                                                                                41
+                                                                                                                                40
+                                                                                                                                39
+                                                                                                                                38
+                                                                                                                                37
+                                                                                                                                                                                                                                                                                                                                                                                                        [N/A]
+                                                                                                                                                                                                                                            COU5
+                                                                                                                                                                                                                                            U5
+
+
+
+
+                                                                                                                                    PA15/JTDI
+                                                                                                                                  PB4/JNTRST
+                                                                                                                                       BOOT0
+                                                                                                                                       VDD_3
+                                                                                                                                        VSS_3
+                                                                                                                                          PB9
+                                                                                                                                          PB8
+
+                                                                                                                                          PB7
+                                                                                                                                          PB6
+                                                                                                                                          PB5
+
+                                                                                                                                    PB3/JTDO
+
+                                                                                                                                 JTCK/SWCLK
+                                                                                                                                                                                                                                            STM32F103CBT6
+         COC20
+         C20     PIC20 2                                     PIC2102 COC21
+                                                                     C21                                                                                                                                                                                                                                                                                                                               COLD1
+                                                                                                                                                                                                                                                                                                                                                                                                       LD1
+         10pF                                                        10pF                                                                                                                                                                                                                                                                                                                                    Red
+                 PIC20 1                              1      PIC2101                                                                                                                                                              36                                                                                                                          COM                   COR18
+                                                                                                                                                                                                                                                                                                                                                                                    R18          2                        1
+                             COX2
+                             X2                                                                       PIU501         VBAT                                                                                                VDD_2 PIU5036         +3V3_ST_LINK                                                                                                                     PIR1801     PIR1802PILD102            PILD101
+  +3V3_ST_LINKPIX2011      2                          2                                                                                                                                                                           35                                                                                                                                                100
+                        PIX202                    PIU502                                                             PC13                                                                                                 VSS_2 PIU5035
+                                                      3                                                                                                                                                                           34 STM_JTMS
+                                                  PIU503                                                             PC14                                                                                           JTMS/SWDIO PIU5034
+    R9 PIR902
+    COR9           NX3225GD 8MHz EXS00A-CG04874       4                                                                                                                                                                           33 USB_DP
+                                                                                                                                                                                                                                       NLUSB0DP
+                                                  PIU504                                                             PC15                                                                                                  PA12 PIU5033NLUSB0DM                                                                                                                                     COR19                                   COR17
+    100K                                NLOSC0IN
+                                        OSC_IN PIU505 5
+                                                                                                                     OSCIN
+                                                                                                                                                                                                                                  32 USB_DM
+                                                                                                                                                                                                                           PA11 PIU5032
+                                                                                                                                                                                                                                                                     PIC302                                                                              NLLED0STLINK
+                                                                                                                                                                                                                                                                                                                                                         LED_STLINK                 R19
+                                                                                                                                                                                                                                                                                                                                                                                PIR1901
+                                                                                                                                                                                                                                                                                                                                                                                                 3
+                                                                                                                                                                                                                                                                                                                                                                                            PIR1902PILD103
+                                                                                                                                                                                                                                                                                                                                                                                                                          4 R17
+                                                                                                                                                                                                                                                                                                                                                                                                                      PILD104
+                                                                                                                                                                                                                                                                                                                                                                                                                           PIR1701PIR1702      +3V3_ST_LINK
+                                        OSC_OUT       6
+                                        NLOSC0OUTPIU506                                                                                                                                                                           31   T_SWO                               COC3
+                                                                                                                                                                                                                                                                           C3                                                                                                                                                     0
+                                                                                                                     OSCOUT                                                                                                PA10 PIU5031                                                                                                                                             100
+         PIR901                         NLSTM0RSTPIU507
+                                        STM_RST       7
+                                                                                                                     NRST
+                                                                                                                                                                                                                                  30 LED_STLINK
+                                                                                                                                                                                                                            PA9 PIU5030                             PIC301 20pF[N/A]                                                                                                                         _Green
+         PIC402                                       8
+                                                  PIU508                                                             VSSA
+                                                                                                                                                                                                                                  29               COR5
+                                                                                                                                                                                                                                                   R5
+                                                                                                                                                                                                                            PA8 PIU5029NLPWR0ENn PIR501
+                                                                                                                                                                                                                                                           100  PIR502
+                                                                                                                                                                                                                                                                                                NLMCO POMCO
+                                                                                                                                                                                                                                                                                                MCO
+                                                                                                                                                                                                                                                                                                                MCO
+                                                                                                                                                                                                                                                                                                                                                                                                       LD_BICOLOR_CMS
+                                                      9                                                                                                                                                                           28 PWR_ENn
+          +3V3_ST_LINK                            PIU509                                                             VDDA                                                                                                  PB15 PIU5028
+         PI 4C4
+             01
+            COC4           COR14
+                           R14
+                      VO PIR1401
+                                   4K7
+                                  PIR1402
+                                             NLAIN01
+                                             AIN_1   10
+                                                  PIU5010                                                            PA0
+                                                                                                                                                                                                                                  27 T_JTMS
+                                                                                                                                                                                                                           PB14 PIU5027
+             100nF                                   11
+                                                  PIU5011                                                            PA1
+                                                                                                                                                                                                                                  26 T_JTCK
+                                                                                                                                                                                                                           PB13 PIU5026                 PIR20 2
+                           COR12
+                           R12     4K7               12                                                                                                                                                                           25                             COR20
+                                                                                                                                                                                                                                                                 R20
+                                                                                                                                 PB2/BOOT1
+
+
+                          PIR1201 PIR1202         PIU5012                                                            PA2                                                                                                   PB12 PIU5025
+                                                                                                                                                                                                                                                                 100
+                                                                                                                                                                                                                                         T_SWDIO_IN PIR20 1
+                                                                                          STLINK_TX
+
+
+
+
+                                                                                                                                                                                                                                         NLT0SWDIO0IN
+
+
+                                                                                        NLSTLINK0TX
+                                                                                                                                 VDD_1
+                                                                                                                                 VSS_1
+
+
+                                                                                                                                                                                                                                                                                                           U5V
+                                                                                                                                 PB10
+                                                                                                                                 PB11
+                                                                                                                                 PA3
+                                                                                                                                 PA4
+                                                                                                                                 PA5
+                                                                                                                                 PA6
+                                                                                                                                 PA7
+                                                                                                                                 PB0
+                                                                                                                                 PB1
+
+
+
+
+                                                                                                                                 PIU5013 PIU5014 PIU5015 PIU5016 PIU5017 PIU5018 PIU5019 PIU5020 PIU5021 PIU502 PIU5023 PIU5024                                                                                                                       COU1
+                                                                                                                                                                                                                                                                                                                                                      U1
+                                                                                                                                13
+                                                                                                                                14
+                                                                                                                                15
+                                                                                                                                16
+                                                                                                                                17
+                                                                                                                                18
+                                                                                                                                19
+                                                                                                                                20
+                                                                                                                                21
+                                                                                                                                22
+                                                                                                                                23
+                                                                                                                                24
+
+
+
+
+POSTLK0TX                                                                                                                                                                                                                                                                                                                                             ST890CDR                                                              U5V_ST_LINK
+  STLK_TX                                                        PISB301           PISB302
+                                                                           COSB3
+                                                                           SB3                                                                                                                                                                                                                                  PIR1501                             1
+                                                                                                                                                                                                                                                                                                                                                 PIU101 IN                                OUT
+                                                                                                                                                                                                                                                                                                                                                                                                    6
+                                                                                                                                                                                                                                                                                                                                                                                                  PIU106
+                                                                                                                                             T_NRST
+
+
+
+
+                                                                                                                                                                                                                                                                                                                             PIC602                                                                                                    PIC102
+                                                                                                                                             T_JTDO
+
+
+                                                                                                                                                                            T_JRST
+                                                                                                                                             T_JTCK
+
+
+
+
+                                                                                                                                                                                                                                                                                                                     COR15
+                                                                                                                                                                                                                                                                                                                     R15                            2                                               7
+                                                                                                                                                    NLT0JTDO NLT0JTDI
+                                                                                                                                             T_JTDI
+
+
+
+
+                                                                                                                                                                                                                                   +3V3_ST_LINK                                                                                     COC6
+                                                                                                                                                                                                                                                                                                                                    C6
+                                                                                                                                                                                                                                                                                                                                                 PIU102 IN                                OUT     PIU107
+                                                                                                                                                                                                                                                                                                                                                                                                                                              COC1
+                                                                                                                                                                                                                                                                                                                                                                                                                                              C1
+                                                                                                                                                                                                                                                                                                                     10K
+  STLK_RX
+POSTLK0RX                                                        PISB201           PISB202
+                                                                                                             NLSTLINK0RX
+                                                                                                             STLINK_RX                                                                                                                                                                                          PIR1502      PIC601 4.7uF                8
+                                                                                                                                                                                                                                                                                                                                                 PIU108 FAULT                             SET
+                                                                                                                                                                                                                                                                                                                                                                                                       5
+                                                                                                                                                                                                                                                                                                                                                                                                  PIU105
+                                                                                                                                                                                                                                                                                                                                                                                                                                       PIC101 100nF
+                                                                           COSB2
+                                                                           SB2                                                                                                                                                                                                                                                                                                                                            PIR701
+                                                                                                                                                                                                                                                                                                                                                                                                                             COR7
+                                                                                                                                                                                                                                                                                                                                                                                                                             R7            Ilim = 510mA
+                                                                                                                                                                                                                                                                                                                                                         3
+                                                                                                                                                                                                                                                                                                                                                 PIU103 ON
+                                                                                                                                                                                                                                                                                                                                                                                                       4                     2.7K          Isc= 1.2Ilim to 1.5Ilim = 612mA
+                                                                                                                                                                                                                                                                                                                                                                                          GND     PIU104
+                                                                                                                                                                                                                                                                                                                                                                                                                          PIR702           to 765mA
+
+
+
+
+                                                                                                                                                                                     U5V
+                                                                                                                                +3V3_ST_LINK                                                                                                                                                                                                      COD2
+                                                                                                                                                                                                                                                                                                                                                  D2
+                                                                                                                                                                                         PIR402                                                                                                                               E5V            PID201   PID202
+
+                                                                                                                                                 PIT103                                           COR4
+                                                                                                                                                                                                  R4
+                                                                                                                                            3
+
+
+
+
+                     USB ST-LINK                                                                                                                                                                  10K                                                                                                                                       BAT60JFILM                               PWR
+                                                                                                      U5V                       T1
+                                                                                                                                COT1                      PIT102
+                                                                                                                                                                   2                     PIR401                R8
+                                                                                                                                                                                                               COR8
+                                                                                                                                                                                                          PIR801
+                                                                                                                                                                                                                            100    USB_RENUMn
+                                                                                                                                                                                                                                   NLUSB0RENUMn
+                                                                                                                                                                                                                              PIR802
+                                                                                                                                                                                                                                                                                                                                                  COD1
+                                                                                                                                                                                                                                                                                                                                                  D1                                 COU4 LD3985M33R
+                                                                                                                                                                                                                                                                                                                                                                                     U4                                              +3V3_ST_LINK
+                                                                                                                                9013                                                     PIR302                                                                                                                               U5V            PID101   PID102
+                                                                                                                                                                                                                                                                                                                                                                                1
+                                                                                                                                                                                                                                                                                                                                                                             PIU401Vin                         Vout PIU405
+                                                                                                                                                                                                                                                                                                                                                                                                                          5
+                                                                                                                                                                                                  COR3
+                                                                                                                                                                                                  R3
+                           COCN1
+                           CN1
+                                                                                                                                                 PIT101
+                                                                                                                                            1
+
+
+
+
+                                                                          1
+                                                                  VBUS PICN101
+                                                                                                             COR1
+                                                                                                             R1        1K5                                                                        36K                                                                                                                                       BAT60JFILM     PIC1802               3                                           PIC1601
+                                                                          2
+                                                                                                            PIR101     PIR102
+                                                                                                                                   USB_DM                                                PIR301                                                                                                                                                                    COC18 PIU403 INHGND
+                                                                                                                                                                                                                                                                                                                                                                   C18                                  BYPASS                       COC16
+                                                                                                                                                                                                                                                                                                                                                                                                                                     C16
+                                                                    DM PICN102
+                                    USB_Micro-B receptacle
+
+
+
+
+                                                                          3
+                                                                    DP PICN103
+                                                                                                                                   USB_DP                                                                                                                                                                                                                  PIC1801
+                                                                                                                                                                                                                                                                                                                                                         1uF_X5R_0603                  PIU402                PIU404          PIC1602 1uF_X5R_0603
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                           2
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                        4
+                                                                          4
+                                                                     ID PICN104                              COR2
+                                                                                                             R2
+                                                                                                            PIR201
+                                                                                                                       100K
+                                                                                                                       PIR202
+                                                                                                                                                                                                                                                                                                                                                                         PIC1502                             PIC1702                       PIC1902
+                                                                          5                                                                                                                                                                                                                                                                                                      C15
+                                                                                                                                                                                                                                                                                                                                                                                 COC15                               C17
+                                                                                                                                                                                                                                                                                                                                                                                                                     COC17                         C19
+                                                                                                                                                                                                                                                                                                                                                                                                                                                   COC19
+                                                                   GND PICN105
+                                                                                                                                                                                                                                                                                                                                                                         PIC1501 100nF                       PIC1701 10nF_X7R_0603 PIC1901 100nF
+                                                                            6
+                                                                   Shield PICN106
+                                                                            7
+                                                                   Shield PICN107
+                                                                            8
+                                                                   Shield PICN108
+                                                                            9                                                                                                                                                                                                                                                                                Title: STLINK/V2-1
+                                                                   Shield PICN109
+                                                                            10
+                                                                    EXP   PICN1010                                                                                                                                                                                                                                                                           Project: NUCLEO32
+                                                                            11
+                                                                    EXP PICN1011
+                           1050170001                                                                                                                                                                                                                                                                                                                        Size: A4         Reference: MB1180                                    Revision: C.1
+                                                                                                                                                                                                                                                                                                                                                             Date: 6/5/2015                                                        Sheet: 3 of 3
+

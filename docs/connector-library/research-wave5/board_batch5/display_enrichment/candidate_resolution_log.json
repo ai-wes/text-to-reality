@@ -1,0 +1,182 @@
+{
+  "candidates": [
+    {
+      "manufacturer": "SparkFun",
+      "sku": "LCD-16396",
+      "status": "unresolved_do_not_add_as_complete_record",
+      "resolved_observation": {
+        "population": "official back-side product photograph shows unpopulated exposed host connection holes",
+        "gender": "none on observed host footprint",
+        "evidence": {
+          "sku": "16396",
+          "url": "https://www.sparkfun.com/media/catalog/product/1/6/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+          "path": "/workspace/shared/board_batch5/display_enrichment/16396-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+          "sha256": "3b6ac609f13f375c8cb3454da1067d842dabc34661ce403c63a0d6848d1a2c90"
+        }
+      },
+      "unresolved_fields": [
+        "full_physical_header_group_geometry",
+        "pitch_mapping_for_each_group",
+        "auxiliary_group_pitch_and_population"
+      ],
+      "tested_sources": [
+        {
+          "url": "https://www.sparkfun.com/sparkfun-16x2-serlcd-rgb-backlight-qwiic.html",
+          "result": "Read product HTML and downloaded/inspected official rear photograph; confirms bare exposed host holes."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/7/8/9/SerLCD_Qwiic_16x2_Dimensions_Top_Down.pdf",
+          "result": "16x2 PDF text extracted spacing annotations, but diagram rendering/download failed; 20x4 retrieval inaccessible. Cannot safely associate every dimension with its physical header group."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/7/8/9/SerLCD_Qwiic_16x2_Dimensions_Top_Down.png",
+          "result": "Image retrieval failed with HTTP 403 for 16x2; 20x4 link identified but readable dimension evidence unavailable."
+        },
+        {
+          "url": "https://learn.sparkfun.com/tutorials/avr-based-serial-enabled-lcds-hookup-guide/all",
+          "result": "Read route returned HTTP 403 in this pass."
+        },
+        {
+          "url": "https://github.com/sparkfun/OpenLCD",
+          "result": "Downloaded repository; firmware, not hardware CAD."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/9/4/e/7/2/PN_15122_-_Schematic_March_2022.pdf",
+          "result": "Linked product schematic returned HTTP 403; schematic alone would still not establish physical pitch."
+        }
+      ],
+      "stopping_reason": "Primary photographs establish bare population but not sufficient complete pitch/auxiliary geometry. No generic 0.1-inch assumption applied."
+    },
+    {
+      "manufacturer": "SparkFun",
+      "sku": "LCD-16397",
+      "status": "unresolved_do_not_add_as_complete_record",
+      "resolved_observation": {
+        "population": "official back-side product photograph shows unpopulated exposed host connection holes",
+        "gender": "none on observed host footprint",
+        "evidence": {
+          "sku": "16397",
+          "url": "https://www.sparkfun.com/media/catalog/product/1/6/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+          "path": "/workspace/shared/board_batch5/display_enrichment/16397-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+          "sha256": "826babe42c3b1b19987df76d34548722a2e48cb0bb5393b50f20a1ac2b6ffa2d"
+        }
+      },
+      "unresolved_fields": [
+        "full_physical_header_group_geometry",
+        "pitch_mapping_for_each_group",
+        "auxiliary_group_pitch_and_population"
+      ],
+      "tested_sources": [
+        {
+          "url": "https://www.sparkfun.com/sparkfun-16x2-serlcd-rgb-text-qwiic.html",
+          "result": "Read product HTML and downloaded/inspected official rear photograph; confirms bare exposed host holes."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/7/8/9/SerLCD_Qwiic_16x2_Dimensions_Top_Down.pdf",
+          "result": "16x2 PDF text extracted spacing annotations, but diagram rendering/download failed; 20x4 retrieval inaccessible. Cannot safely associate every dimension with its physical header group."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/7/8/9/SerLCD_Qwiic_16x2_Dimensions_Top_Down.png",
+          "result": "Image retrieval failed with HTTP 403 for 16x2; 20x4 link identified but readable dimension evidence unavailable."
+        },
+        {
+          "url": "https://learn.sparkfun.com/tutorials/avr-based-serial-enabled-lcds-hookup-guide/all",
+          "result": "Read route returned HTTP 403 in this pass."
+        },
+        {
+          "url": "https://github.com/sparkfun/OpenLCD",
+          "result": "Downloaded repository; firmware, not hardware CAD."
+        }
+      ],
+      "stopping_reason": "Primary photographs establish bare population but not sufficient complete pitch/auxiliary geometry. No generic 0.1-inch assumption applied."
+    },
+    {
+      "manufacturer": "SparkFun",
+      "sku": "LCD-16398",
+      "status": "unresolved_do_not_add_as_complete_record",
+      "resolved_observation": {
+        "population": "official back-side product photograph shows unpopulated exposed host connection holes",
+        "gender": "none on observed host footprint",
+        "evidence": {
+          "sku": "16398",
+          "url": "https://www.sparkfun.com/media/catalog/product/1/6/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+          "path": "/workspace/shared/board_batch5/display_enrichment/16398-SparkFun_16x2_SerLCD_-_RGB_Backlight__Qwiic_-03.jpg",
+          "sha256": "323a48b741b167808b0883dec17659deb91db88174333b56c25cc7b1cf44f025"
+        }
+      },
+      "unresolved_fields": [
+        "full_physical_header_group_geometry",
+        "pitch_mapping_for_each_group",
+        "auxiliary_group_pitch_and_population"
+      ],
+      "tested_sources": [
+        {
+          "url": "https://www.sparkfun.com/sparkfun-20x4-serlcd-rgb-backlight-qwiic.html",
+          "result": "Read product HTML and downloaded/inspected official rear photograph; confirms bare exposed host holes."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/7/8/9/SerLCD_Qwiic_20x4_Dimensions_Top_Down.pdf",
+          "result": "16x2 PDF text extracted spacing annotations, but diagram rendering/download failed; 20x4 retrieval inaccessible. Cannot safely associate every dimension with its physical header group."
+        },
+        {
+          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/7/8/9/SerLCD_Qwiic_20x4_Dimensions_Top_Down.png",
+          "result": "Image retrieval failed with HTTP 403 for 16x2; 20x4 link identified but readable dimension evidence unavailable."
+        },
+        {
+          "url": "https://learn.sparkfun.com/tutorials/avr-based-serial-enabled-lcds-hookup-guide/all",
+          "result": "Read route returned HTTP 403 in this pass."
+        },
+        {
+          "url": "https://github.com/sparkfun/OpenLCD",
+          "result": "Downloaded repository; firmware, not hardware CAD."
+        }
+      ],
+      "stopping_reason": "Primary photographs establish bare population but not sufficient complete pitch/auxiliary geometry. No generic 0.1-inch assumption applied."
+    },
+    {
+      "manufacturer": "Waveshare",
+      "sku": "10451",
+      "name": "1.3inch OLED B",
+      "status": "unresolved_do_not_add_as_complete_record",
+      "known_pin_count": 8,
+      "pitch_mm": null,
+      "resolved_observation": "Manufacturer interface includes the physical NC position and describes straight/vertical pinheader.",
+      "tested_sources": [
+        {
+          "url": "https://www.waveshare.com/product/ai/displays/oled/1.3inch-oled-b.htm",
+          "result": "Manufacturer product identity, eight numbered positions, and B vertical-header option verified; dimension is image-only without readable pitch."
+        },
+        {
+          "url": "https://www.waveshare.com/wiki/1.3inch_OLED_%28B%29",
+          "result": "Repeated official wiki retrieval returned HTTP 403; search snippets expose resources but no usable pitch."
+        }
+      ],
+      "stopping_reason": "No reliable primary header-pitch evidence; do not infer 2.54 mm from typical OLED modules or similar A/C variants."
+    },
+    {
+      "manufacturer": "Waveshare",
+      "sku": "10514",
+      "name": "0.95inch RGB OLED B",
+      "status": "unresolved_do_not_add_as_complete_record",
+      "known_pin_count": 8,
+      "pitch_mm": null,
+      "resolved_observation": "Manufacturer interface includes the physical NC position and describes straight/vertical pinheader.",
+      "tested_sources": [
+        {
+          "url": "https://www.waveshare.com/product/displays/oled/0.95inch-rgb-oled-b.htm",
+          "result": "Manufacturer product identity, eight numbered positions, and B vertical-header option verified; dimension is image-only without readable pitch."
+        },
+        {
+          "url": "https://www.waveshare.com/wiki/0.95inch_RGB_OLED_%28B%29",
+          "result": "Repeated official wiki retrieval returned HTTP 403; search snippets expose resources but no usable pitch."
+        },
+        {
+          "url": "https://files.waveshare.com/upload/0/0e/0.95inch-RGB-OLED-UserManual.pdf",
+          "result": "Official Rev 2.4.2 October 22, 2015 manual read. It confirms eight numbered pins including NC but no header pitch."
+        }
+      ],
+      "stopping_reason": "No reliable primary header-pitch evidence; do not infer 2.54 mm from typical OLED modules or similar A/C variants."
+    }
+  ],
+  "new_fully_resolved_records": 0
+}

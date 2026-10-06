@@ -1,0 +1,2421 @@
+                                                                           UM1525
+                                                                       User manual
+                                                      STM32F0DISCOVERY
+                                 Discovery kit for STM32 F0 microcontrollers
+
+           Introduction
+           The STM32F0DISCOVERY helps you to discover the STM32 F0 Cortex™-M0 features and
+           to develop your applications easily. It is based on STM32F051R8T6, an STM32 F0 series
+           32-bit ARM® Cortex™ microcontroller, and includes an ST-LINK/V2 embedded debug tool,
+           LEDs, push buttons and a prototyping board.
+
+           Figure 1.   STM32F0DISCOVERY
+
+
+
+
+           Table 1.    Applicable tools
+                              Type                                   Part number
+
+                         Evaluation tools                        STM32F0DISCOVERY
+
+
+
+
+May 2012                                Doc ID 022910 Rev 2                                  1/41
+                                                                                        www.st.com
+Contents                                                                                                                 UM1525
+
+
+Contents
+
+1          Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2          Quick start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.1      Getting started . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.2      System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.3      Development toolchain supporting the STM32F0DISCOVERY . . . . . . . . . 7
+           2.4      Order code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3          Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+4          Hardware and layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+           4.1      STM32F051R8T6 microcontroller . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+           4.2      Embedded ST-LINK/V2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+                    4.2.1       Using ST-LINK/V2 to program/debug the STM32 F0 on board . . . . . . . 15
+                    4.2.2       Using ST-LINK/V2 to program/debug an external STM32 application . . 16
+           4.3      Power supply and power selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+           4.4      LEDs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+           4.5      Push buttons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+           4.6      JP2 (Idd) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+           4.7      OSC clock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+                    4.7.1       OSC clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+                    4.7.2       OSC 32 KHz clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+           4.8      Solder bridges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           4.9      Extension connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+
+5          Connecting modules on the prototyping board . . . . . . . . . . . . . . . . . . 27
+           5.1      Mikroelektronica accessory boards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+           5.2      ST MEMS “adapter boards”, standard DIL24 socket . . . . . . . . . . . . . . . . 30
+           5.3      Arduino shield boards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+
+6          Mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+
+7          Electrical schematics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+
+2/41                                            Doc ID 022910 Rev 2
+UM1525                                                                                                Contents
+
+
+8        Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+
+
+
+                                           Doc ID 022910 Rev 2                                               3/41
+List of tables                                                                                                                        UM1525
+
+
+List of tables
+
+Table 1.    Applicable tools. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Table 2.    ON/OFF conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Table 3.    Jumper states . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Table 4.    Debug connector CN3 (SWD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Table 5.    Solder bridge settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Table 6.    MCU pin description versus board function . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 7.    Connecting using mikroBUS™ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+Table 8.    Connecting using IDC10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Table 9.    Connecting with a DIL24 board . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Table 10.   Supported MEMS adapter boards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 11.   Connecting with Arduino shields. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Table 12.   Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+
+
+
+4/41                                                   Doc ID 022910 Rev 2
+UM1525                                                                                                                          List of figures
+
+
+List of figures
+
+Figure 1.    STM32F0DISCOVERY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 2.    Hardware block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Figure 3.    Top layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Figure 4.    Bottom layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 5.    STM32F051R8T6 package. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 6.    STM32F051R8T6 block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 7.    Typical configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Figure 8.    STM32F0DISCOVERY connections image . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Figure 9.    ST-LINK connections image . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Figure 10.   Using IDC10 and mikroBUS™ connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Figure 11.   DIL24 socket connections. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Figure 12.   Arduino shield board connections. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Figure 13.   STM32F0DISCOVERY mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Figure 14.   STM32F0DISCOVERY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Figure 15.   ST-LINK/V2 (SWD only) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Figure 16.   MCU . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+
+
+
+
+                                                         Doc ID 022910 Rev 2                                                                     5/41
+Conventions                                                                                   UM1525
+
+
+1         Conventions
+
+          Table 2 provides the definition of some conventions used in the present document.
+
+          Table 2.    ON/OFF conventions
+               Convention                                      Definition
+
+          Jumper JP1 ON          Jumper fitted
+          Jumper JP1 OFF         Jumper not fitted
+          Solder bridge SBx ON   SBx connections closed by solder
+          Solder bridge SBx OFF SBx connections left open
+
+
+
+
+6/41                                   Doc ID 022910 Rev 2
+UM1525                                                                                   Quick start
+
+
+2        Quick start
+
+         The STM32F0DISCOVERY is a low-cost and easy-to-use development kit to quickly
+         evaluate and start development with an STM32 F0 series microcontroller.
+         Before installing and using the product, please accept the Evaluation Product License
+         Agreement from www.st.com/stm32f0discovery.
+         For more information on the STM32F0DISCOVERY and for demonstration software, visit
+         www.st.com/stm32f0discovery.
+
+
+2.1      Getting started
+         Follow the sequence below to configure the STM32F0DISCOVERY board and launch the
+         DISCOVER application:
+         1.   Check jumper position on the board, JP2 on, CN2 on (Discovery selected).
+         2.   Connect the STM32F0DISCOVERY board to a PC with a USB cable ‘type A to mini-B’
+              through USB connector CN1 to power the board. Red LED LD1 (PWR) and LD2 (COM)
+              light up and green LED LD3 blinks.
+         3.   Press user button B1 (bottom left corner of the board).
+         4.   Observe how the green LED LD3 blinking changes according to USER button B1
+              clicks.
+         5.   Each click on USER button B1 is confirmed by the blue LED LD4.
+         6.   To study or modify the DISCOVER project related to this demo, visit
+              www.st.com/stm32f0discovery and follow the tutorial.
+         7.   Discover the STM32F0 features, download and execute programs proposed in the list
+              of projects.
+         8.   Develop your own application using available examples.
+
+
+2.2      System requirements
+         ●    Windows PC (XP, Vista, 7)
+         ●    USB type A to Mini-B USB cable
+
+
+2.3      Development toolchain supporting the STM32F0DISCOVERY
+         ●    Altium®, TASKING™ VX-toolset
+         ●    ARM®, Atollic TrueSTUDIO®
+         ●    IAR™, EWARM (IAR Embedded Workbench®)
+         ●    Keil™, MDK-ARM™
+
+
+2.4      Order code
+         To order the STM32F0 Discovery kit, use the order code STM32F0DISCOVERY.
+
+
+
+
+                                       Doc ID 022910 Rev 2                                       7/41
+Features                                                                                     UM1525
+
+
+3          Features
+
+           The STM32F0DISCOVERY kit offers the following features:
+           ●   STM32F051R8T6 microcontroller featuring 64 KB Flash, 8 KB RAM in an LQFP64
+               package
+           ●   On-board ST-LINK/V2 with selection mode switch to use the kit as a standalone
+               ST-LINK/V2 (with SWD connector for programming and debugging)
+           ●   Board power supply: through USB bus or from an external 5 V supply voltage
+           ●   External application power supply: 3 V and 5 V
+           ●   Four LEDs:
+               –   LD1 (red) for 3.3 V power on
+               –   LD2 (red/green) for USB communication
+               –   LD3 (green) for PC9 output
+               –   LD4 (blue) for PC8 output
+           ●   Two push buttons (user and reset)
+           ●   Extension header for LQFP64 I/Os for quick connection to prototyping board and easy
+               probing.
+           ●   An additional board is provided with the kit which can be connected to the extension
+               connector for even easier prototyping and probing.
+           ●   A large number of free ready-to-run application firmware examples are available on
+               www.st.com/stm32f0discovery to support quick evaluation and development.
+
+
+
+
+8/41                                   Doc ID 022910 Rev 2
+UM1525                                                                       Hardware and layout
+
+
+4        Hardware and layout
+
+         The STM32F0DISCOVERY is designed around the STM32F051R8T6 microcontroller in a
+         64-pin LQFP package.
+         Figure 2 illustrates the connections between the STM32F051R8T6 and its peripherals (ST-
+         LINK/V2, push button, LEDs and connectors).
+         Figure 3 and Figure 4 help you to locate these features on the STM32F0DISCOVERY.
+
+         Figure 2.   Hardware block diagram
+
+                                                 -INI
+                                                 53"
+
+
+                                              %MBEDDED
+                                              34 ,).+6
+                          37$
+
+
+
+
+                                             34-&24
+
+                                       )/                   )/
+                                                                         (EADER
+                          (EADER
+
+
+
+
+                                                  )/   2%3%4
+
+
+                                         ,%$               "
+                                       ,$ 0#             234
+                                         ,%$             "
+                                       ,$ 0#          53%2
+
+                                                                                       -36
+
+
+
+
+                                     Doc ID 022910 Rev 2                                      9/41
+Hardware and layout                                                                                 UM1525
+
+
+Figure 3.      Top layout
+
+
+
+        (red/green LED) LD2    ST-LINK/V2                                       LD1 (red LED)
+                      COM                                                       PWR
+                                                                                5V power supply
+            3V power supply
+                                                                                input output
+                input output
+                     CN3                                                        CN2
+             SWD connector                                                      ST-LINK/DISCOVERY
+                                                                                selector
+
+
+
+
+                                                                                JP2
+                                                                                IDD measurement
+
+                                                                                SB1 (VBAT)
+
+
+
+
+                                                                                SB3 (B1-USER)
+
+                                                                                B2 reset button
+          STM32F051R8T6
+                                                                                SB4 (B2-RESET)
+              B1 user button
+
+            (green LED) LD3
+                                                                                LD4 (blue LED)
+
+
+
+
+                                                                                             MS30024V1
+
+
+
+
+Note:          Pin 1 of CN2, CN3, P1 and P2 connectors are identified by a square.
+
+
+
+
+10/41                                       Doc ID 022910 Rev 2
+UM1525                                                  Hardware and layout
+
+
+Figure 4.      Bottom layout
+
+
+
+
+     SB5, SB7, SB9, SB11
+            (RESERVED)
+
+
+
+
+    SB6, SB8, SB10, SB12
+               (DEFAULT)
+
+            SB13 (STM_RST)
+
+
+      SB14, SB15 (RX, TX)
+
+                                                     SB16, SB17 (X2 crystal)
+                                                     SB18 (MCO)
+                                                     SB19 (NRST)
+                                                     SB20, SB21 (X3 crystal)
+
+
+                                                     SB22 (T_SWO)
+
+
+
+
+                                                              MS30025V1
+
+
+
+
+                               Doc ID 022910 Rev 2                             11/41
+Hardware and layout                                                                              UM1525
+
+
+4.1       STM32F051R8T6 microcontroller
+          This 32-bit low- and medium-density advanced ARM™ MCU with a high-performance ARM
+          Cortex™-M0 32-bit RISC core has 64 Kbytes Flash, 8 Kbytes RAM, RTC, timers, ADC,
+          DAC, comparators and communication interfaces.
+
+          Figure 5.      STM32F051R8T6 package
+
+                           34-&24
+
+                                                        +BYTE OF &LASH MEMORY
+                                                        +BYTES OF 2!-
+
+
+
+
+                            ,1&0  X  MM                                                 -36
+
+
+          The STM32 F0 delivers 32-bit performance and STM32 DNA essentials into applications
+          typically addressed by 8- or 16-bit microcontrollers. It benefits from the combination of real-
+          time performance, low-power operation, advanced architecture and peripherals associated
+          to the STM32 ecosystem, which has made the STM32 a reference in the market. Now all
+          this is accessible for cost-sensitive applications. The STM32 F0 offers unparalleled flexibility
+          and scalability for home entertainment products, appliances, and industrial equipment.
+          This device provides the following benefits.
+          ●    Superior code execution for better performance and excellent code efficiency for
+               reduced embedded memory usage
+          ●    High-performance connectivity and advanced analog peripherals to support a wide
+               range of applications
+          ●    Flexible clock options and low power modes with fast wake-up for low power
+               consumption
+          It has the following key features:
+          ●    Core and operating conditions
+               –      ARM® Cortex™-M0 0.9 DMIPS/MHz up to 48 MHz
+               –      1.8/2.0 to 3.6 V supply range
+          ●    High-performance connectivity
+               –      6 Mbit/s USART
+               –      18 Mbit/s SPI with 4- to 16-bit data frame
+               –      1 Mbit/s I²C fast-mode plus
+               –      HDMI CEC
+          ●    Enhanced control
+               –      1x 16-bit 3-phase PWM motor control timer
+               –      5x 16-bit PWM timers
+               –      1x 16-bit basic timer
+               –      1x 32-bit PWM timer
+               –      12 MHz I/O toggling
+
+
+
+
+12/41                                     Doc ID 022910 Rev 2
+UM1525                                                                                                                                                 Hardware and layout
+
+
+Figure 6.          STM32F051R8T6 block diagram
+
+
+
+
+      37#,+         3ERIAL 7IRE                                                                                                 6$$       0/7%2
+      37$!4           $EBUG                                                                                                                                 6$$  TO 6
+                                                                                                                                           6/,4 2%'
+       AS !&
+                                                                                                                                          6 4/  6
+
+
+
+
+                                                                              FLASH OBL
+                                                                                                   &,!3(                                                    633
+
+
+
+
+                                                                             )NTERFACE
+                                                                                                    +"                                  6$$
+                     #/24%8 - #05                                                                   BITS
+                     F(#,+   -(Z                                                                                            0/2         3500,9
+                                                                                                                                         350%26)3)/.         .234
+                                                                                                                               2ESET
+
+
+
+
+                                                                                    CONTROLLER
+                                                                                                    32!-                                                     6$$!
+                           .6)#                                                                                    6$$!          )NT      0/2  0$2
+
+
+
+
+                                                                             32!-
+                                                                                                      +"                                                   6
+
+                                                  "US-ATRIX
+                                                                                                                                                             $$
+                            .6)#
+                                                                                                                2# (3  -(Z                    06$
+                                                                                                                2# (3  -(Z             6$$!
+                               '0 $-!                                                                                                                 6$$
+                                                                                                                  2# ,3
+                               CHANNELS                                                                                                                    /3#). 0&
+                                                                                                                                                84!, /3#
+                                                                                                                 0,,                              -(Z    /3#/54 0&
+
+                                                                                                                                          )77$'
+                                                                                                              !("0#,+                      0OWER
+                                                                                                              !0"0#,+                     #ONTROLLER        6"!4  6 TO  6
+                                                                                                  2%3%4       !$##,+
+                                                                                                  #,/#+      #%##,+                                  637
+                                                                                                 #/.42/,      53!24#,+                                      /3#?).
+                                                                                                              (#,+                          84!, K(Z
+      0!;=             '0)/ PORT !                                                                                                                      /3#?/54
+                                                                                                              &#,+
+                                                                                                                                                 "ACKUP
+                                                              !(" DECODER
+
+
+
+
+      0";=             '0)/ PORT "                                                                                                   24#                    4!-0%2 24#
+                                                                                                                                                   REG
+                                                                                                                                                                !,!2- /54
+      0#;=             '0)/ PORT #                                                                                                   24# INTERFACE
+                                                                                                      #2#
+                                                                                                                                                              CHANNELS
+          0$              '0)/ PORT $                                                                                                     4)-%2             COMPL CHANNELS
+                                                                                                                                                             "2+ %42 INPUT AS !&
+       0&;=             '0)/ PORT &
+                                                                                                                                           4)-%2                CH %42 AS !&
+
+      GROUPS OF      !NALOG                                                                                                              4)-%2                 CH %42 AS !&
+       CHANNELS
+                      SWITCHES 4OUCH 3ENSING
+                                     #ONTROLLER
+                                                                                                                                          4)-%2                CHANNEL AS !&
+        39.#                                                                !("
+                                                                                                                                          4)-%2                CHANNELS
+                                                                            !0"                                                                                  COMPL "2+ AS !&
+
+                                                                                                                                          4)-%2                CHANNEL
+                                                                                                                                                                 COMPL "2+ AS !&
+                           %84)4
+        !&                                                                                                                                                     CHANNEL
+                           7+50                                                                        77$'                               4)-%2 
+                                                                                                                                                                 COMPL "2+ AS !&
+   -/3)3$                                                                                                                                                      )2?/54 AS !&
+  -)3/-#+
+                         30))3
+     3#+#+
+.3373 AS !&                                                                                         $"'-#5                                                     28 48 #43 243
+                                                                                                                                           53!24               #+ AS !&
+ -/3) -)3/
+  3#+ .33                  30)                                                                                                            53!24               28 48 #43 243
+      AS !&                                                                                                                                                     #+ AS !&
+
+                       393#&' )&                                                                                                                             3#, 3$! 3-"AL
+                                                                                                                                             )#             M! FOR &-
+                                                                                                                                                             AS !&
+                                                                                                                                             )#            3#, 3$!
+     ).054             '0 #OMPARATOR                                                                                                                        AS !&
+      ).054
+    /54054             '0 #OMPARATOR 
+        AS !&
+                         6$$!                                                                                                             ($-) #%#              #%# AS !&
+                     4EMP SENSOR
+       
+    !$ INPUTS          BIT !$# )&
+
+                                                                                                                                        )&  BIT $!#
+                                                                                                     4)-%2                             )&                   $!#?/54 AS !&
+
+        6$$!
+        633!             6$$!                                                                                                                       6$$!
+
+                                                                                                                                                                      -36
+
+
+
+
+                                                                            Doc ID 022910 Rev 2                                                                                  13/41
+Hardware and layout                                                                                 UM1525
+
+
+4.2       Embedded ST-LINK/V2
+          The ST-LINK/V2 programming and debugging tool is integrated on the
+          STM32F0DISCOVERY. The embedded ST-LINK/V2 can be used in 2 different ways
+          according to the jumper states (see Table 3):
+          ●    Program/debug the MCU on board,
+          ●    Program/debug an MCU in an external application board using a cable connected to
+               SWD connector CN3.
+          The embedded ST-LINK/V2 supports only SWD for STM32 devices. For information about
+          debugging and programming features refer to user manual UM1075 (ST-LINK/V2 in-circuit
+          debugger/programmer for STM8 and STM32) which describes in detail all the ST-LINK/V2
+          features.
+
+          Figure 7.   Typical configuration
+
+
+
+                                                           (ARDWARE REQUIREMENTS
+                                                            53" CABLE TYPE ! TO MINI "
+                                                            COMPUTER WITH 7INDOWS 80 6ISTA OR 
+
+                                                           $EVELOPMENT TOOLCHAIN
+                                                           !LTIUM 4!3+).' 68 4OOLSET
+                                                           !TOLLIC 4RUE345$)/
+                                                           )!2 %7!2-
+                                                           +EIL -$+ !2-
+
+
+
+                                                                                            -36
+
+
+
+
+          Table 3.    Jumper states
+               Jumper state                                     Description
+
+           Both CN2 jumpers ON    ST-LINK/V2 functions enabled for on board programming (default)
+                                  ST-LINK/V2 functions enabled for application through external CN3
+           Both CN2 jumpers OFF
+                                  connector (SWD supported)
+
+
+
+
+14/41                                   Doc ID 022910 Rev 2
+UM1525                                                                       Hardware and layout
+
+
+4.2.1    Using ST-LINK/V2 to program/debug the STM32 F0 on board
+         To program the STM32 F0 on board, simply plug in the two jumpers on CN2, as shown in
+         Figure 8 in red, but do not use the CN3 connector as that could disturb communication with
+         the STM32F051R8T6 of the STM32F0DISCOVERY.
+
+         Figure 8.   STM32F0DISCOVERY connections image
+
+
+
+
+                                      Doc ID 022910 Rev 2                                     15/41
+Hardware and layout                                                                        UM1525
+
+
+4.2.2     Using ST-LINK/V2 to program/debug an external STM32 application
+          It is very easy to use the ST-LINK/V2 to program the STM32 on an external application.
+          Simply remove the 2 jumpers from CN2 as shown in Figure 9, and connect your application
+          to the CN3 debug connector according to Table 4.
+Note:     SB19 and SB22 must be OFF if you use CN3 pin 5 in your external application.
+
+          Table 4.    Debug connector CN3 (SWD)
+                       Pin                         CN3                       Designation
+
+                        1                      VDD_TARGET                VDD from application
+                        2                         SWCLK                       SWD clock
+                        3                          GND                          Ground
+                        4                         SWDIO                  SWD data input/output
+                        5                          NRST                  RESET of target MCU
+                        6                          SWO                         Reserved
+
+
+          Figure 9.   ST-LINK connections image
+
+
+
+
+16/41                                 Doc ID 022910 Rev 2
+UM1525                                                                        Hardware and layout
+
+
+4.3      Power supply and power selection
+         The power supply is provided either by the host PC through the USB cable, or by an external
+         5V power supply.
+         The D1 and D2 diodes protect the 5V and 3V pins from external power supplies:
+         ●   5V and 3V can be used as output power supplies when another application board is
+             connected to pins P1 and P2.
+             In this case, the 5V and 3V pins deliver a 5V or 3V power supply and power
+             consumption must be lower than 100 mA.
+         ●   5V can also be used as input power supplies e.g. when the USB connector is not
+             connected to the PC.
+             In this case, the STM32F0DISCOVERY board must be powered by a power supply unit
+             or by auxiliary equipment complying with standard EN-60950-1: 2006+A11/2009, and
+             must be Safety Extra Low Voltage (SELV) with limited power capability.
+
+
+4.4      LEDs
+         ●   LD1 PWR: Red LED indicates that the board is powered.
+         ●   LD2 COM: Tricolor LED (COM) advises on the communication status as follows:
+             –    Slow blinking Red LED/Off: At power on before USB initialization
+             –    Fast blinking Red LED/Off: After the first correct communication between PC and
+                  STLINK/V2 (enumeration)
+             –    Red LED On: When initialization between PC and ST-LINK/V2 is successfully
+                  finished
+             –    Green LED On: After successful target communication initialization
+             –    Blinking Red/Green LED: During communication with target
+             –    Red LED On: Communication finished and OK
+             –    Orange LED On: Communication failure
+         ●   User LD3: Green user LED connected to the I/O PC9 of the STM32F051R8T6.
+         ●   User LD4: Blue user LED connected to the I/O PC8 of the STM32F051R8T6.
+
+
+4.5      Push buttons
+         ●   B1 USER: User push button connected to the I/O PA0 of the STM32F051R8T6.
+         ●   B2 RESET: Push button used to RESET the STM32F051R8T6.
+
+
+4.6      JP2 (Idd)
+         Jumper JP2, labeled Idd, allows the consumption of STM32F051R8T6 to be measured by
+         removing the jumper and connecting an ammeter.
+         ●   Jumper on: STM32F051R8T6 is powered (default).
+         ●   Jumper off: an ammeter must be connected to measure the STM32F051R8T6 current,
+             (if there is no ammeter, the STM32F051R8T6 is not powered).
+
+
+
+
+                                      Doc ID 022910 Rev 2                                      17/41
+Hardware and layout                                                                          UM1525
+
+
+4.7       OSC clock
+
+4.7.1     OSC clock supply
+          PF0 and PF1 can be used as GPIO or as HSE oscillator. By default these I/Os are
+          configured as GPIO, so SB16 and SB17 are closed, SB18 is open and R22, R23, C13 and
+          C14 are not populated.
+          An external HSE clock can be provided to the MCU in three ways:
+          ●    MCO from ST-LINK. From MCO of the STM32F103. This frequency cannot be
+               changed, it is fixed at 8 MHz and connected to PF0-OSC_IN of the STM32F051R8T6.
+               Configuration needed:
+               –      SB16, SB18 CLOSED
+               –      R22, R23 removed
+               –      SB17 OPEN
+          ●    Oscillator onboard. From X2 crystal (not provided). For typical frequencies and its
+               capacitors and resistors, please refer to the STM32F051R8T6 Datasheet.
+               Configuration needed:
+               –      SB16, SB17 SB18 OPEN
+               –      R22, R23, C13, C14 soldered
+          ●    Oscillator from external PF0. From external oscillator through pin 7 of the P1
+               connector. Configuration needed:
+               –      SB16, SB17 CLOSED
+               –      SB18 OPEN
+               –      R22 and R23 removed
+
+4.7.2     OSC 32 KHz clock supply
+          PC14 and PC15 can be used as GPIO or as LSE oscillator. By default these I/Os are
+          configured as GPIO, so SB20 & SB21 are closed and X3, R24, R25 are not populated.
+          An external LSE clock can be provided to the MCU in two ways:
+          ●    Oscillator onboard. From X3 crystal (not provided). Configuration needed:
+               –      SB20, SB21 OPEN
+               –      C15, C16, R24 and R25 soldered.
+          ●    Oscillator from external PC14. From external oscillator trough the pin 5 of P1
+               connector. Configuration needed:
+               –      SB20, SB21 CLOSED
+               –      R24 and R25 removed
+
+
+
+
+18/41                                    Doc ID 022910 Rev 2
+UM1525                                                                                       Hardware and layout
+
+
+4.8            Solder bridges
+Table 5.       Solder bridge settings
+            Bridge               State(1)                                  Description
+
+                                            X2, C13, C14, R22 and R23 provide a clock. PF0, PF1 are disconnected
+SB16,17                         OFF
+                                            from P1.
+(X2 crystal)(2)
+                                ON          PF0, PF1 are connected to P1 (R22, R23 and SB18 must not be fitted).
+SB6,8,10,12 (Default)           ON          Reserved, do not modify.
+SB5,7,9,11 (Reserved)           OFF         Reserved, do not modify.
+                                            X3, C15, C16, R24 and R25 deliver a 32 KHz clock. PC14, PC15 are not
+SB20,21                         OFF
+                                            connected to P1.
+(X3 crystal)
+                                ON          PC14, PC15 are only connected to P1 (R24, R25 must not be fitted).
+                                            B2 push button is connected to the NRST pin of the STM32F051R8T6
+                                ON
+SB4                                         MCU.
+(B2-RESET)                                  B2 push button is not connected the NRST pin of the STM32F051R8T6
+                                OFF
+                                            MCU.
+
+SB3                             ON          B1 push button is connected to PA0.
+(B1-USER)                       OFF         B1 push button is not connected to PA0.
+
+SB1                             ON          VBAT is permanently powered from VDD.
+(VBAT powered from VDD)         OFF         VBAT is not powered from VDD but pin3 of P1.
+
+SB14,15                         OFF         Reserved, do not modify.
+(RX,TX)                         ON          Reserved, do not modify.
+                                            NRST signal of the CN3 connector is connected to the NRST pin of the
+                                ON
+SB19                                        STM32F051R8T6 MCU.
+(NRST)                                      NRST signal of the CN3 connector is not connected to the NRST pin of the
+                                OFF
+                                            STM32F051R8T6 MCU.
+
+SB22                            ON          SWO signal of the CN3 connector is connected to PB3.
+(T_SWO)                         OFF         SWO signal is not connected.
+
+SB13                            OFF         No incidence on STM32F103C8T6 (ST-LINK/V2) NRST signal.
+(STM_RST)                       ON          STM32F103C8T6 (ST-LINK/V2) NRST signal is connected to GND.
+                                            BOOT0 signal of the STM32F051R8T6 MCU is held low through a
+                                ON
+SB2                                         510 Ohm pull-down resistor.
+(BOOT0)                                     BOOT0 signal of the STM32F051R8T6 MCU can be set high through a
+                                OFF
+                                            10 KOhm pull-up resistor R27 to solder.
+
+SB18                            ON          Provides the 8 MHz for OSC_IN from MCO of STM32F103C8T6.
+(MCO)(2)                        OFF         See SB16, SB17 description.
+1. Default SBx state is shown in bold.
+2. OSC_IN clock comes from MCO if SB18 is ON and SB16,17 are OFF
+   and comes from X2 if SB18 is OFF and SB16,17 are ON.
+
+
+
+
+                                                  Doc ID 022910 Rev 2                                            19/41
+Hardware and layout                                                                                                         UM1525
+
+
+4.9       Extension connectors
+          The male headers P1 and P2 can connect the STM32F0DISCOVERY to a standard
+          prototyping/wrapping board. STM32F051R8T6 GPI/Os are available on these connectors.
+          P1 and P2 can also be probed by an oscilloscope, logical analyzer or voltmeter.
+
+          Table 6.      MCU pin description versus board function (page 1 of 7)
+                             MCU pin                                                  Board function
+
+
+
+
+                                                                                                       Power supply
+                                                           Push button
+                                                  LQFP64
+
+
+
+
+                                                                                            Free I/O
+                                                                               SWD
+
+                                                                                      OSC
+             Main             Alternate
+
+
+
+
+                                                                         LED
+
+
+
+
+                                                                                                                      CN3
+
+                                                                                                                            P1
+
+                                                                                                                                 P2
+           function           functions
+
+
+
+           BOOT0      BOOT0                       60                                                                             6
+
+
+
+
+                                                           RESET
+
+
+
+
+                                                                               NRST
+           NRST       NRST                         7                                                                  5     10
+
+                      2_CTS,
+                      IN0,
+                      2_CH1_ETR,
+                                                           USER
+
+
+
+                      1_INM6,
+           PA0                                    14                                                                        15
+                      1_OUT,
+                      TSC_G1_IO1,
+                      RTC_TAMP2,
+                      WKUP1
+                      2_RTS,
+                      IN1,
+                      2_CH2,
+           PA1                                    15                                                                        16
+                      1_INP,
+                      TSC_G1_IO2,
+                      EVENTOUT
+                      2_TX,
+                      IN2,
+                      2_CH3,
+           PA2        15_CH1,                     16                                                                        17
+                      2_INM6,
+                      2_OUT,
+                      TSC_G1_IO3
+                      2_RX,
+                      IN3,
+                      2_CH4,
+           PA3                                    17                                                                        18
+                      15_CH2,
+                      2_INP,
+                      TSC_G1_IO4,
+
+
+
+
+20/41                                     Doc ID 022910 Rev 2
+UM1525                                                                                             Hardware and layout
+
+
+         Table 6.     MCU pin description versus board function (page 2 of 7)
+                          MCU pin                                                 Board function
+
+
+
+
+                                                                                                    Power supply
+                                                        Push button
+                                               LQFP64
+
+
+
+
+                                                                                        Free I/O
+                                                                            SWD
+
+                                                                                  OSC
+           Main            Alternate
+
+
+
+
+                                                                      LED
+
+
+
+
+                                                                                                                   CN3
+
+                                                                                                                         P1
+
+                                                                                                                               P2
+         function          functions
+
+
+
+                    1_NSS / 1_WS,
+                    2_CK,
+                    IN4,
+                    14_CH1,
+         PA4                                   20                                                                        21
+                    DAC1_OUT,
+                    1_INM4,
+                    2_INM4,
+                    TSC_G2_IO1
+                    1_SCK / 1_CK,
+                    CEC,
+                    IN5,
+                    2_CH1_ETR,
+         PA5                                   21                                                                        22
+                    (DAC2_OUT),
+                    1_INM5,
+                    2_INM5,
+                    TSC_G2_IO2
+                    1_MISO / 1_MCK,
+                    IN6,
+                    3_CH1,
+                    1_BKIN,
+         PA6                                   22                                                                        23
+                    16_CH1,
+                    1_OUT,
+                    TSC_G2_IO3,
+                    EVENTOUT
+                    1_MOSI / 1_SD,
+                    IN7,
+                    3_CH2,
+                    14_CH1,
+         PA7        1_CH1N,                    23                                                                        24
+                    17_CH1,
+                    2_OUT,
+                    TSC_G2_IO4,
+                    EVENTOUT
+                    1_CK,
+                    1_CH1,
+         PA8                                   41                                                                             25
+                    EVENTOUT,
+                    MCO
+                    1_TX,
+                    1_CH2,
+         PA9                                   42                                                                             24
+                    15_BKIN,
+                    TSC_G4_IO1
+
+
+
+
+                                       Doc ID 022910 Rev 2                                                                    21/41
+Hardware and layout                                                                                                                  UM1525
+
+
+          Table 6.      MCU pin description versus board function (page 3 of 7)
+                            MCU pin                                                            Board function
+
+
+
+
+                                                                                                                Power supply
+                                                             Push button
+                                                    LQFP64
+
+
+
+
+                                                                                                     Free I/O
+                                                                                 SWD
+
+                                                                                               OSC
+             Main               Alternate
+
+
+
+
+                                                                           LED
+
+
+
+
+                                                                                                                               CN3
+
+                                                                                                                                     P1
+
+                                                                                                                                          P2
+           function             functions
+
+
+
+                      1_RX,
+                      1_CH3,
+           PA10                                     43                                                                                    23
+                      17_BKIN,
+                      TSC_G4_IO2
+                      1_CTS,
+                      1_CH4,
+           PA11       1_OUT,                        44                                                                                    22
+                      TSC_G4_IO3,
+                      EVENTOUT
+                      1_RTS,
+                      1_ETR,
+           PA12       2_OUT,                        45                                                                                    21
+                      TSC_G4_IO4,
+                      EVENTOUT
+                                                                                 SWDIO SWCLK
+                      IR_OUT,
+           PA13                                     46                                                                         4          20
+                      SWDAT
+
+                      2_TX,
+           PA14                                     49                                                                         2          17
+                      SWCLK
+
+                      1_NSS / 1_WS,
+                      2_RX,
+           PA15                                     50                                                                                    16
+                      2_CH1_ETR,
+                      EVENTOUT
+                      IN8,
+                      3_CH3,
+           PB0        1_CH2N,                       26                                                                               27
+                      TSC_G3_IO2,
+                      EVENTOUT
+                      IN9,
+                      3_CH4,
+           PB1        14_CH1,                       27                                                                               28
+                      1_CH3N,
+                      TSC_G3_IO3
+           PB2 or
+           NPOR
+                      TSC_G3_IO4                    28                                                                               29
+           (1.8V
+           mode)
+                      1_SCK / 1_CK,
+                                                                                 SWO
+
+
+
+
+                      2_CH2,
+           PB3                                      55                                                                         6          11
+                      TSC_G5_IO1,
+                      EVENTOUT
+
+
+
+
+22/41                                       Doc ID 022910 Rev 2
+UM1525                                                                                               Hardware and layout
+
+
+         Table 6.     MCU pin description versus board function (page 4 of 7)
+                          MCU pin                                                   Board function
+
+
+
+
+                                                                                                      Power supply
+                                                          Push button
+                                                 LQFP64
+
+
+
+
+                                                                                          Free I/O
+                                                                              SWD
+
+                                                                                    OSC
+           Main              Alternate
+
+
+
+
+                                                                        LED
+
+
+
+
+                                                                                                                     CN3
+
+                                                                                                                           P1
+
+                                                                                                                                 P2
+         function            functions
+
+
+
+                    1_MISO / 1_MCK,
+                    3_CH1,
+         PB4                                     56                                                                             10
+                    TSC_G5_IO2,
+                    EVENTOUT
+                    1_MOSI / 1_SD,
+                    1_SMBA,
+         PB5                                     57                                                                              9
+                    16_BKIN,
+                    3_CH2
+                    1_SCL,
+                    1_TX,
+         PB6                                     58                                                                              8
+                    16_CH1N,
+                    TSC_G5_IO3
+                    1_SDA,
+                    1_RX,
+         PB7                                     59                                                                              7
+                    17_CH1N,
+                    TSC_G5_IO4
+                    1_SCL,
+                    CEC,
+         PB8                                     61                                                                              4
+                    16_CH1,
+                    TSC_SYNC
+                    1_SDA,
+                    IR_EVENTOUT,
+         PB9                                     62                                                                              3
+                    17_CH1,
+                    EVENTOUT
+                    2_SCL,
+                    CEC,
+         PB10                                    29                                                                        30
+                    2_CH3,
+                    SYNC
+                    2_SDA,
+                    2_CH4,
+         PB11                                    30                                                                        31
+                    G6_IO1,
+                    EVENTOUT
+                    2_NSS,
+                    1_BKIN,
+         PB12                                    33                                                                        32
+                    G6_IO2,
+                    EVENTOUT
+                    2_SCK,
+         PB13       1_CH1N,                      34                                                                             32
+                    G6_IO3
+
+
+
+
+                                         Doc ID 022910 Rev 2                                                                    23/41
+Hardware and layout                                                                                                                UM1525
+
+
+          Table 6.     MCU pin description versus board function (page 5 of 7)
+                              MCU pin                                                        Board function
+
+
+
+
+                                                                                                              Power supply
+                                                            Push button
+                                                   LQFP64
+
+
+
+
+                                                                                                   Free I/O
+                                                                                       SWD
+
+                                                                                             OSC
+             Main              Alternate
+
+
+
+
+                                                                          LED
+
+
+
+
+                                                                                                                             CN3
+
+                                                                                                                                   P1
+
+                                                                                                                                        P2
+           function            functions
+
+
+
+                      2_MISO,
+                      1_CH2N,
+           PB14                                    35                                                                                   31
+                      15_CH1,
+                      G6_IO4
+                      2_MOSI,
+                      1_CH3N,
+           PB15       15_CH1N,                     36                                                                                   30
+                      15_CH2,
+                      RTC_REFIN
+                      IN10,
+           PC0                                      8                                                                              11
+                      EVENTOUT
+                      IN11,
+           PC1                                      9                                                                              12
+                      EVENTOUT
+                      IN12,
+           PC2                                     10                                                                              13
+                      EVENTOUT
+                      IN13,
+           PC3                                     11                                                                              14
+                      EVENTOUT
+                      IN14,
+           PC4                                     24                                                                              25
+                      EVENTOUT
+                      IN15,
+           PC5                                     25                                                                              26
+                      TSC_G3_IO1
+           PC6        3_CH1                        37                                                                                   29
+           PC7        3_CH2                        38                                                                                   28
+                                                                          BLUE GREEN
+
+
+
+
+           PC8        3_CH3                        39                                                                                   27
+
+
+           PC9        3_CH4                        40                                                                                   26
+
+
+           PC10                                    51                                                                                   15
+           PC11                                    52                                                                                   14
+           PC12                                    53                                                                                   13
+                      RTC_TAMP1,
+                      RTC_TS,
+           PC13                                     2                                                                              4
+                      RTC_OUT,
+                      WKUP2
+
+
+
+
+24/41                                      Doc ID 022910 Rev 2
+UM1525                                                                                                              Hardware and layout
+
+
+         Table 6.    MCU pin description versus board function (page 6 of 7)
+                            MCU pin                                                 Board function
+
+
+
+
+                                                                                                                     Power supply
+                                                          Push button
+                                                 LQFP64
+
+
+
+
+                                                                                                         Free I/O
+                                                                              SWD
+
+                                                                                    OSC
+           Main              Alternate
+
+
+
+
+                                                                        LED
+
+
+
+
+                                                                                                                                    CN3
+
+                                                                                                                                          P1
+
+                                                                                                                                                P2
+         function            functions
+
+
+
+
+                                                                                    OSC32_IN OSC32_OUT
+         PC14-
+         OSC32_ OSC32_IN                          3                                                                                       5
+         IN
+
+
+         PC15-
+         OSC32_ OSC32_OUT                         4                                                                                       6
+         OUT
+
+
+         PD2        3_ETR                        54                                                                                            12
+
+
+
+
+                                                                                    OSC_IN OSC_OUT
+         PF0-
+                    OSC_IN                        5                                                                                       7
+         OSC_IN
+
+
+         PF1-
+         OSC_       OSC_OUT                       6                                                                                       8
+         OUT
+
+         PF4        EVENTOUT                     18                                                                                       19
+         PF5        EVENTOUT                     19                                                                                       20
+         PF6        2_SCL                        47                                                                                            19
+         PF7        2_SDA                        48                                                                                            18
+         VBAT       VBAT                          1                                                                                       3
+         VDD_1                                   64
+         VDD_2                                   32
+         VDDA                                    13
+         VSS_1                                   63
+         VSS_2                                   31
+         VSSA                                    12
+                                                                                                                     5V                         1
+                                                                                                                     3V                   1
+                                                                                                                     VDD GND GND
+
+
+
+
+                                                                                                                                                5
+
+                                                                                                                                          2     2
+                                                                              GND
+
+
+
+
+                                                                                                                                    3
+
+
+
+
+                                         Doc ID 022910 Rev 2                                                                                   25/41
+Hardware and layout                                                                                                             UM1525
+
+
+          Table 6.    MCU pin description versus board function (page 7 of 7)
+                         MCU pin                                                  Board function
+
+
+
+
+                                                                                                   Power supply GND GND
+                                                        Push button
+                                               LQFP64
+
+
+
+
+                                                                                        Free I/O
+                                                                            SWD
+
+                                                                                  OSC
+             Main          Alternate
+
+
+
+
+                                                                      LED
+
+
+
+
+                                                                                                                          CN3
+
+                                                                                                                                P1
+
+                                                                                                                                     P2
+           function        functions
+
+
+
+                                                                                                                                9
+
+                                                                                                                                33   33
+
+
+
+
+26/41                                  Doc ID 022910 Rev 2
+UM1525                                                Connecting modules on the prototyping board
+
+
+5        Connecting modules on the prototyping board
+
+         This section gives some examples of how to connect ready-to-use modules available from
+         different manufacturers to the STM32F0DISCOVERY kit via the prototyping board included
+         in the kit.
+         Software examples, based on the connections described below, are available at
+         www.st.com/stm32f0discovery.
+
+
+5.1      Mikroelektronica accessory boards
+         Mikroelektronika, http://www.mikroe.com, has specified two standard connectors for their
+         accessory boards, named mikroBUS™ (http://www.mikroe.com/mikrobus_specs.pdf) and
+         IDC10.
+         MikroBUS™ is a 16-pin connector to connect accessory boards very quickly and easily to a
+         microcontroller board through SPI, USART or I2C communications, along with additional
+         pins such as Analog Input, PWM and Interrupt.
+         The set of mikroElektronika boards compatible with mikroBUS™ is called “Click boards”.
+         IDC10 is a 10-pin connector to connect the general purpose I/O of an MCU to other
+         accessory boards.
+         The tables below are one solution for connecting mikroBUS™ and IDC boards to the
+         STM32F0DISCOVERY; this solution used in the different examples is available at
+         www.st.com/stm32f0discovery.
+
+         Table 7.      Connecting using mikroBUS™
+                    Mikroelektronica mikroBUS™                          STM32F0DISCOVERY
+
+               Pin        Description                            Pin      Description
+               AN         Analog pin                             PA4      DAC1_OUT
+              RST         Reset pin                              PB13     GPIO OUTPUT (5V tolerant)
+               CS         SPI Chip Select line                   PA11     GPIO OUTPUT (5V tolerant)
+              SCK         SPI Clock line                         PB3      SPI1_SCK
+              MISO        SPI Slave Output line                  PB4      SPI1_MISO
+              MOSI        SPI Slave Input line                   PB5      SPI1_MOSI
+              PWM         PWM output line                        PA8      TIM1_CH1
+               INT        Hardware Interrupt line                PB12     GPIO INPUT EXTI (5V tolerant)
+               RX         UART Receive line                      PA3      USART2_RX
+               TX         UART Transmit line                     PA2      USART2_TX
+              SCL         I2C Clock line                         PF6      I2C2_SCL
+              SDA         I2C Data line                          PF7      I2C2_SDA
+               5V         VCC 5V power line                       5V      Power line
+
+
+
+
+                                           Doc ID 022910 Rev 2                                    27/41
+Connecting modules on the prototyping board                                              UM1525
+
+
+           Table 8.    Connecting using IDC10
+                 Mikroelektronica IDC10 connector                  STM32F0DISCOVERY
+
+                 P0       GPIO                               PC0     GPIO OUTPUT (3.3V tolerant)
+                 P1       GPIO                               PC1     GPIO OUTPUT (3.3V tolerant)
+                 P2       GPIO                               PC2     GPIO OUTPUT (3.3V tolerant)
+                 P3       GPIO                               PC3     GPIO OUTPUT (3.3V tolerant)
+                 P4       GPIO                               PC4     GPIO OUTPUT (3.3V tolerant)
+                 P5       GPIO                               PC5     GPIO OUTPUT (3.3V tolerant)
+                 P6       GPIO                               PC6     GPIO OUTPUT (5V tolerant)
+                 P7       GPIO                               PC7     GPIO OUTPUT (5V tolerant)
+                VCC       VCC 5V power line                  3V      VDD
+                GND       Reference Ground                   GND     VSS
+                 P0       GPIO                               PC0     GPIO OUTPUT (3.3V tolerant)
+                 P1       GPIO                               PC1     GPIO OUTPUT (3.3V tolerant)
+                 P2       GPIO                               PC2     GPIO OUTPUT (3.3V tolerant)
+                 P3       GPIO                               PC3     GPIO OUTPUT (3.3V tolerant)
+
+
+
+
+28/41                                  Doc ID 022910 Rev 2
+UM1525                                          Connecting modules on the prototyping board
+
+
+         The Figure 10 illustrates the connections between the STM32F0 Discovery and the 2
+         connectors, IDC10 and mikroBUS™.
+
+         Figure 10. Using IDC10 and mikroBUS™ connectors
+
+
+
+
+                                     Doc ID 022910 Rev 2                                     29/41
+Connecting modules on the prototyping board                                                       UM1525
+
+
+5.2        ST MEMS “adapter boards”, standard DIL24 socket
+           STMicroelectronics has defined a standard DIL24 connector to easily evaluate its MEMS
+           sensors connected to a microcontroller through SPI or I2C communications.
+           Table 9 is one solution for connecting the DIL24 boards to the STM32F0DISCOVERY, this
+           solution is used in different examples and available at www.st.com/stm32f0discovery.
+
+           Table 9.     Connecting with a DIL24 board
+                      ST MEMS DIL24 Eval board                            STM32F0DISCOVERY
+            P01 VDD Power supply                                   3V     VDD
+            P02 Vdd_IO Power supply for I/O pins                   3V     VDD
+            P03 NC
+            P04 NC
+            P05 NC
+            P06 NC
+            P07 NC
+            P08 NC
+            P09 NC
+            P10 NC
+            P11 NC
+            P12 NC
+            P13 GND 0V supply                                      GND    GND
+            P14 INT1 Inertial interrupt 1                          PB12   GPIO INPUT EXTI (5V tolerant)
+            P15 INT2 inertial interrupt 2                          PB11   GPIO INPUT EXTI (5V tolerant)
+            P16 NC
+            P17 NC
+            P18 NC
+            P19 CS - 0:SPI enabled 1:I2C mode                      PA11   GPIO OUTPUT (5V tolerant)
+
+                  SCL (I2C serial clock)                           PB6    I2C1_SCL
+            P20
+                  SPC (SPI serial clock)                           PB3    SPI1_SCK
+
+                  SDA I2C Serial Data                              PB7    I2C1_SDA
+            P21
+                  SDI SPI Serial Data Input                        PB5    SPI1_MOSI
+
+                  SDO SPI Serial Data Output
+            P22                                                    PB4    SPI1_MISO
+                  I2C less significant bit of the device address
+            P23 NC
+            P24 NC
+
+
+
+
+30/41                                       Doc ID 022910 Rev 2
+UM1525                                          Connecting modules on the prototyping board
+
+
+         Figure 11 illustrates the connections between the STM32F0 Discovery and the DIL24
+         socket.
+
+         Figure 11. DIL24 socket connections
+
+
+
+
+                                     Doc ID 022910 Rev 2                                     31/41
+Connecting modules on the prototyping board                                                     UM1525
+
+
+           Supported MEMS adapter boards
+           Table 10 is a list of supported MEMS adapter boards as of April, 2012.
+
+           Table 10.     Supported MEMS adapter boards
+                       ST MEMS DIL24 Eval Board                           Core product
+           STEVAL-MKI009V1                                LIS3LV02DL
+           STEVAL-MKI013V1                                LIS302DL
+           STEVAL-MKI015V1                                LIS344ALH
+           STEVAL-MKI082V1                                LPY4150AL
+           STEVAL-MKI083V1                                LPY450AL
+           STEVAL-MKI084V1                                LPY430AL
+           STEVAL-MKI085V1                                LPY410AL
+           STEVAL-MKI086V1                                LPY403AL
+           STEVAL-MKI087V1                                LIS331DL
+           STEVAL-MKI088V1                                LIS33DE
+           STEVAL-MKI089V1                                LIS331DLH
+           STEVAL-MKI090V1                                LIS331DLF
+           STEVAL-MKI091V1                                LIS331DLM
+           STEVAL-MKI092V1                                LIS331HH
+           STEVAL-MKI095V1                                LPR4150AL
+           STEVAL-MKI096V1                                LPR450AL
+           STEVAL-MKI097V1                                LPR430AL
+           STEVAL-MKI098V1                                LPR410AL
+           STEVAL-MKI099V1                                LPR403AL
+           STEVAL-MKI105V1                                LIS3DH
+           STEVAL-MKI106V1                                LSM303DLHC
+           STEVAL-MKI107V1                                L3G4200D
+           STEVAL-MKI107V2                                L3GD20
+           STEVAL-MKI108V1                                9AXISMODULE v1 [LSM303DLHC + L3G4200D]
+           STEVAL-MKI108V2                                9AXISMODULE v2 [LSM303DLHC + L3GD20]
+           STEVAL-MKI110V1                                AIS328DQ
+           STEVAL-MKI113V1                                LSM303DLM
+           STEVAL-MKI114V1                                MAG PROBE (based on LSM303DLHC)
+           STEVAL-MKI120V1                                LPS331AP
+           STEVAL-MKI122V1                                LSM330DLC
+           STEVAL-MKI123V1                                LSM330D
+                                                          10AXISMODULE [LSM303DLHC + L3GD20+
+           STEVAL-MKI124V1
+                                                          LPS331AP]
+           STEVAL-MKI125V1                                A3G4250D
+
+Note:      For an up-to-date list, visit http://www.st.com/internet/evalboard/subclass/1116.jsp. The
+           DIL24 boards are described as “adapter boards” in the field “General Description”.
+
+
+
+
+32/41                                    Doc ID 022910 Rev 2
+UM1525                                                    Connecting modules on the prototyping board
+
+
+5.3      Arduino shield boards
+         Arduino™ is an open-source electronics prototyping platform based on flexible, easy-to-use
+         hardware and software. See http://www.arduino.cc for more information.
+         Arduino accessory boards are called “Shields” and can be easily connected to the
+         STM32F0 Discovery according to the following table.
+
+         Table 11.      Connecting with Arduino shields
+                                           Connecting with Arduino shields
+                      Arduino power connector                            STM32F0DISCOVERY
+              Reset        Reset from Shield board                NRST       Reset discovery
+              3V3          VCC 3.3V power line                     3V        VDD
+               5V          VCC 5V power line                       5V        VDD
+              GND          Reference Ground                       GND        Reference Ground
+              GND          Reference Ground                       GND        Reference Ground
+               Vin         External alimentation                  VBAT       Jumper to fit
+                    Arduino analog in connector                          STM32F0DISCOVERY
+               A0          Analog input or Digital pin 14          PC0       ADC_IN10
+               A1          Analog input or Digital pin 15          PC1       ADC_IN11
+               A2          Analog input or Digital pin 16          PC2       ADC_IN12
+               A3          Analog input or Digital pin 17          PC3       ADC_IN13
+                           Analog input or SDA or Digital
+               A4                                               PC4 or PF7   ADC_IN14 or I2C2_SDA
+                           pin 18
+                           Analog input or SCL or Digital
+               A5                                               PC5 or PF6   ADC_IN15 or I2C2_SCL
+                           pin 19
+                      Arduino digital connector                          STM32F0DISCOVERY
+               D0          Digital pin 0 or RX                     PA3       USART2_RX
+               D1          Digital pin 1 or TX                     PA2       USART2_TX
+               D2          Digital pin 2 / External interrupt     PB12       EXTI (5V tolerant)
+               D3          Digital pin 3 / Ext int or PWM         PB11       EXTI (5V tolerant) or TIM2_CH4
+               D4          Digital pin 4                           PA7       GPIO (3V tolerant)
+               D5          Digital pin 5 or PWM                    PB9       TIM17_CH1
+               D6          Digital pin 6 or PWM                    PB8       TIM16_CH1
+               D7          Digital pin 7                           PA6       GPIO (3V tolerant)
+               D8          Digital pin 8                           PA5       GPIO (3V tolerant)
+               D9          Digital pin 9 or PWM                    PA4       TIM14_CH1
+              D10          Digital pin 10 or CS or PWM            PA11       TIM1_CH4
+              D11          Digital pin 11 or MOSI or PWM           PB5       SPI1_MOSI or TIM3_CH2
+              D12          Digital pin 12 or MISO                  PB4       SPI1_MISO
+              D13          Digital pin 13 or SCK                   PB3       SPI1_SCK
+              GND          Reference Ground                       GND        Reference Ground
+             AREF          ADC voltage reference                   NC        Not connected
+
+
+
+
+                                            Doc ID 022910 Rev 2                                       33/41
+Connecting modules on the prototyping board                                              UM1525
+
+
+
+                                Connecting with Arduino shields (continued)
+                     Arduino ICSP connector                         STM32F0DISCOVERY
+                 1       MISO                                PB4      SPI1_MISO
+                 2       VCC 3.3V                             3V      VDD
+                 3       SCK                                 PB3      SPI1_SCK
+                 4       MOSI                                PB5      SPI1_MOSI
+                 5       RST                                 NRST     Reset discovery
+                 6       GND                                 GND      Reference Ground
+
+
+
+
+34/41                                  Doc ID 022910 Rev 2
+UM1525                                          Connecting modules on the prototyping board
+
+
+         Figure 12 illustrates the connections between the STM32F0 Discovery and the Arduino
+         shield boards.
+
+         Figure 12. Arduino shield board connections
+
+
+
+
+                                     Doc ID 022910 Rev 2                                   35/41
+Mechanical drawing                                         UM1525
+
+
+6         Mechanical drawing
+
+          Figure 13. STM32F0DISCOVERY mechanical drawing
+
+
+
+
+36/41                            Doc ID 022910 Rev 2
+                                                                                                                                                                                                                                  7
+                                                                                                                                                                                                                                                          UM1525
+
+
+
+
+                           1                    2                                               3                                                                     4
+
+
+
+
+                                                           ST_LINK_V2.SCHDOC
+                                                           U_ST_LINK
+
+                                                                                       MCO
+                                                                                MCO
+                                                    PA10                               PA14    TCK/SWCLK
+                                                               PA10             PA14
+                                                    PA9                                PA13    TMS/SWDIO
+                                                               PA9              PA13
+
+                                                                                       NRST    T_NRST
+                                                                                NRST
+                                                                                       PB3     T_SWO
+                                                                                 PB3
+
+
+
+
+                      P1
+                            1            3V
+                                                           U_STM32Fx
+                            2
+                                                           STM32Fx.SchDoc                                                                                                 P2
+                            3            VBAT
+                                  PC13              PA0                                PB0
+                            4                                  PA0               PB0                                                                5V                      1
+                                  PC14              PA1                                PB1
+                            5                                  PA1               PB1                                                                                        2
+                                  PC15              PA2                                PB2                                                                    PB9
+                            6                                  PA2               PB2                                                                                        3
+                                  PF0               PA3                                PB3                                                                    PB8
+                            7                                  PA3               PB3                                                                                        4
+                                  PF1               PA4                                PB4
+                            8                                  PA4               PB4                                                              VDD                       5
+                                                                                                                                                                                                    Figure 14. STM32F0DISCOVERY
+
+
+
+
+                                                    PA5                                PB5                                                                    BOOT0
+                            9                                  PA5               PB5                                                                                        6
+                                                                                                                                                                                                                                  Electrical schematics
+
+
+
+
+                                  NRST              PA6                                PB6                                                                    PB7
+                           10                                  PA6               PB6                                                                                        7
+                                  PC0               PA7                                PB7                                                                    PB6
+                           11                                  PA7               PB7                                                                                        8
+                                  PC1               PA8                                PB8                                                                    PB5
+                           12                                  PA8               PB8                                                                                        9
+                                  PC2               PA9                                PB9                                                                    PB4
+                           13                                  PA9               PB9                                                                                        10
+                                  PC3               PA10                               PB10                                                                   PB3
+                           14                                  PA10             PB10                                                                                        11
+                                  PA0               PA11                               PB11                                                                   PD2
+                           15                                  PA11             PB11                                                                                        12
+                                  PA1               PA12                               PB12                                                                   PC12
+                           16                                  PA12             PB12                                                                                        13
+                                  PA2               PA13                               PB13                                                                   PC11
+                           17                                  PA13             PB13                                                                                        14
+                                  PA3               PA14                               PB14                                                                   PC10
+                           18                                  PA14             PB14                                                                                        15
+                                  PF4               PA15                               PB15                                                                   PA15
+                           19                                  PA15             PB15                                                                                        16
+
+
+
+
+Doc ID 022910 Rev 2
+                                  PF5                                                                                                                         PA14
+                           20                                                                                                                                               17
+                                  PA4               PC0                                PD2                                                                    PF7
+                           21                                  PC0               PD2                                                                                        18
+                                  PA5               PC1                                                                                                       PF6
+                           22                                  PC1                                                                                                          19
+                                  PA6               PC2                                PF0                                                                    PA13
+                           23                                  PC2               PF0                                                                                        20
+                                  PA7               PC3                                PF1                                                                    PA12
+                           24                                  PC3               PF1                                                                                        21
+                                  PC4               PC4                                PF4                                                                    PA11
+                           25                                  PC4               PF4                                                                                        22
+                                  PC5               PC5                                PF5                                                                    PA10
+                           26                                  PC5               PF5                                                                                        23
+                                  PB0               PC6                                PF6                                                                    PA9
+                           27                                  PC6               PF6                                                                                        24
+                                  PB1               PC7                                PF7                                                                    PA8
+                           28                                  PC7               PF7                                                                                        25
+                                  PB2               PC8                                                                                                       PC9
+                           29                                  PC8                                                                                                          26
+                                  PB10              PC9                                MCO                                                                    PC8
+                           30                                  PC9              MCO                                                                                         27
+                                  PB11              PC10                                                                                                      PC7
+                           31                                  PC10                                                                                                         28
+                                  PB12              PC11                               VBAT                                                                   PC6
+                           32                                  PC11            VBAT                                                                                         29
+                                                    PC12                                                                                                      PB15
+                           33                                  PC12                                                                                                         30
+                                                    PC13                               BOOT0                                                                  PB14
+                                                               PC13            BOOT0                                                                                        31
+                      Header 33                     PC14                                                                                                      PB13
+                                                               PC14                                                                                                         32
+                                                    PC15                               NRST
+                                                               PC15             NRST                                                                                        33
+                                                                                                                                                                          Header 33
+
+
+
+                                                                                                           RevB.0 --> PCB label MB1034 B-00
+                                                                                                                     PA6, PA7, PC4, PC5, PB0, PB1 are available and P1, P2 are Header 33 pts
+                                                                                                           RevA.0 --> PCB label MB1034 A-00
+
+
+
+                                                                                                             STMicroelectronics
+                                                                                                             Title:
+                                                                                                                      STM32F0DISCOVERY
+                                                                                                             Number:MB1034 Rev: B.0(PCB.SCH)             Date: 2/3/2012          Sheet 1   of   3
+                           1                    2                                               3                                                                     4
+
+
+
+
+37/41
+                                                                                                                                                                                                                                                          Electrical schematics
+38/41
+                                                                                                                                                                                                                                                                     TCK/SWCLK
+                                                                                                                                                                                                                                                                                                                              PA14
+                                                                                                                                                                                                                                                                         TMS/SWDIO
+                                                                                                                                                                                                                                                                                                                              PA13
+                                                                                                                                                                                                                                                                                               T_NRST                                    SWD
+                                                                                                                                                                                                                                                                                                                              NRST
+                                                                                                                                                                                                                                                                                   T_SWO                       SB19
+                                                                                                        R13                                                                                                                                                                                                                   PB3
+                                                       R18     10K                                                                                                                                                                 Not Fitted                                                  SB22
+                                                                                                                                                                                                                                                                                                                                                                                    Electrical schematics
+
+
+
+
+                                                                                                        100K
+                      Board Ident: PC13=0                                                                                                                                                              R9
+                                                       R19     10K                                                                                                                                     10K          D3
+                                                                                                                                                                                           SWD                            R10             AIN_1
+                                                                                                                                                                                                                                   100
+
+
+
+
+                                                                                                        SWIM_IN
+                                                                                                        SWIM
+                                                                                                                  SWIM_IN
+                                                                                                                  SWIM_RST
+                                                                                                                  SWIM_RST_IN
+                                                                                                                                    STM_JTCK
+                                                                                                                                                                                                                    BAT60JFILM
+                                                                                                                                                                                           CN3
+
+
+
+
+                                                                                                                                                                                                                                                                         DEFAULT
+                                                                                                                                                                                                                                                                                                    RESERVED
+                                 Not Fitted                                              3V
+                                                                                                                                                                                                                    R12          T_JTCK
+
+
+
+
+                                                                                                      48
+                                                                                                      47
+                                                                                                      46
+                                                                                                      45
+                                                                                                      44
+                                                                                                      43
+                                                                                                      42
+                                                                                                      41
+                                                                                                      40
+                                                                                                      39
+                                                                                                      38
+                                                                                                      37
+                                                                                                                                                                                                  1                                                                                                                         3V
+                                                                                                                                                             U2                                                           22                                           SB6                       SB5
+                                                                                                                                                                                                  2
+                                                                                                                                                             STM32F103C8T6                                                                                                                                     STM_JTCK       SWCLK
+                                                                                                                                                                                                  3
+                                                                                                                                                                                                                                                                       SB8                       SB7
+
+
+
+
+                                                                                                                PB9
+                                                                                                                PB8
+                                                                                                                PB7
+                                                                                                                PB6
+                                                                                                                PB5
+                                                                                                                                                                                                  4
+                                                                                                                                                                                                                    R14          T_JTMS
+
+
+
+
+                                                                                                              VSS_3
+                                                                                                                                                                                                  5
+
+
+
+
+                                                                                                             VDD_3
+                                                                                                             BOOT0
+                                    C11                      C10                                                                                                                                                          22                                           SB10                      SB9
+                                                                                                                                                                                                  6
+
+
+
+
+                                                                                                          PB3/JTDO
+                                                             20pF
+
+
+
+
+                                                                                                          PA15/JTDI
+                                    20pF         X1                                      1                                                              36                                                          R15          T_NRST                                                                        STM_JTMS       SWDIO
+                                                                                              VBAT                                       VDD_2                        3V
+
+
+
+
+                                                                                                        PB4/JNTRST
+                                   3V       1          2                                 2                                                              35                                 Header 6                       22                                           SB12                      SB11
+
+
+
+
+                                                                                                       JTCK/SWCLK
+                                                                                              PC13                                        VSS_2
+                                                                                         3                                                              34   STM_JTMS                                               R17          T_SWO
+                                                 8MHz                                         PC14                                  JTMS/SWDIO
+                                                                                         4                                                              33   USB_DP                                                       22
+                                                                                              PC15                                         PA12
+                          R16                                       OSC_IN               5                                                              32   USB_DM
+                                                                                              OSCIN                                        PA11
+                          100K                                      OSC_OUT              6                                                              31   T_SWO
+                                                                                                                                                                                                                                                                                    1
+                                                                                                                                                                                                                                                                                    2
+                                                                                                                                                                                                                                                                                    3
+                                                                                                                                                                                                                                                                                    4
+
+
+
+
+                                                                                              OSCOUT                                       PA10
+                                                                    STM_RST              7                                                              30   LED_STLINK                RC Must be very close to STM32F103 pin 29
+                                                                                              NRST                                          PA9                                  R34
+                                                                                         8                                                              29                                            MCO
+                                                                                              VSSA                                          PA8                                                               MCO
+                              C8                                                         9                                                              28                                                                                                                         CN2
+                                                                                                                                                                                                                                                                                                                                                 Figure 15. ST-LINK/V2 (SWD only)
+
+
+
+
+                                            3V                                                VDDA                                         PB15                                  100
+                                    100nF              R20     4K7     AIN_1            10                                                              27   T_JTMS                        C24
+                                                                                              PA0                                          PB14
+                          SB13                                                          11                                                              26   T_JTCK                        20pF
+                                                                                              PA1                                          PB13                              R11
+                                                                                                                                                                                                                                                                           Jumpers ON --> DISCOVERY Selected
+                                                       R21     4K7                      12                                                              25
+                                                                                              PA2                                          PB12                              100                                                                                           Jumpers OFF --> ST-LINK Selected
+                                                                                                                                                                                                             Not Fitted
+                                                                                                                                                               T_SWDIO_IN
+
+
+
+
+                                                                                                       PA3
+                                                                                                       PA4
+                                                                                                       PA5
+                                                                                                       PA6
+                                                                                                       PA7
+                                                                                                       PB0
+                                                                                                       PB1
+                                                                                                       PB2/BOOT1
+                                                                                                       PB10
+                                                                                                       PB11
+                                                                                                       VSS_1
+                                                                                                       VDD_1
+                          STM32F0_USART1_RX
+
+
+
+
+                                                                       STLINK_TX
+
+
+
+
+Doc ID 022910 Rev 2
+                                                                                                              13
+                                                                                                              14
+                                                                                                              15
+                                                                                                              16
+                                                                                                              17
+                                                                                                              18
+                                                                                                              20
+                                                                                                              22
+                                                                                                              23
+                                                                                                              24
+                                                                                                                                                                                                                                                                                                    LD2
+                              PA10
+                                                               SB14                                                                                                                      Idd                                                                                                             Red
+                                                                                   TX                                                                                                                                                                                COM                 R4     2                   1
+                                                                                                                                               3V
+                                                                     JP1           RX                                                                                       3V          JP2           VDD                                                                                100
+                                                                                         STLINK_RX
+
+
+
+
+                                                                                                      T_JTCK
+                                                                                                      T_JTDO
+                                                                                                      T_JTDI
+                                                                                                      T_NRST
+                                                                                                      T_JRST 19
+                                                                                                      SWIM_IN 21
+                                                                                                      SWIM
+                              PA9
+                                                               SB15                                                                                                                                                                                                                      R3
+                          STM32F0_USART1_TX                                                                                                                                  R2                                                                                    LED_STLINK                   3                   4   R1
+                                                                                                                                                                             1K                                                                                                                                                  3V
+                                                                                                                                                                                                                                                                                         100                              0
+                                                                                                                                                                                                                                                                                                        _Green
+                                                                                         Not Fitted                                                                                                                                                                                                 LD_BICOLOR_CMS
+                                                 Close to JP                                                                                                                     LD1
+                                                 Not Fitted                                                                                                                      RED
+                                                                                                                                                                                                                                                                   PWR
+                          USB                                                                                                                                                                                                       5V                    U1                                                   D2           OUT_3V
+                                                                                                                                                                                                                                                      1   Vin               Vout    5
+                                                       D1                                                                                                                                                                                                                                                                     3V
+                                                                       EXT_5V
+                                                                                                                                                                                                                                                      3   INH                                                  BAT60JFILM
+                                   U5V                                             5V                                                                                                                                                    C1                              C4
+                                                                                                                                                                                                                                                            GND
+                                                                                                                                                                                                                                                           BYPASS
+                        CN1                             BAT60JFILM                                                                                                                                                                       1μF_X5R_0603                    1μF_X5R_0603
+                                                                                                                                                                                                                                                               2
+                                                                                                                                                                                                                                                                       4
+
+
+
+
+                                                                                                                  3V
+                                     1                R6    1K5                                                                                                                                                                                    LD3985M33R
+                           VCC                                          3V                                                                                                                                                                                     C3              C5
+                                     2                R8    0    USB_DM                                                                                                                                                                          C2
+                            D-                                                                                              C6            C7        C12      C9                                                                                  100nF         10nF_X7R_0603   100nF
+                                     3                R7    0    USB_DP
+                            D+                                                                                              100nF         100nF     100nF    100nF
+                                     4                R5    100K
+                            ID
+                                     5
+                          GND
+                                     0
+                         SHELL
+                        5075BMR-05-SM
+                                                                                                                                                                                                                                            STMicroelectronics
+                                                                                                                                                                                                                                            Title:
+                                                                                                                                                                                                                                                     STM32F0DISCOVERY ST-LINK/V2 (SWD only)
+                                                                                                                                                                                                                                                                                                                                                                                    UM1525
+
+
+
+
+                                                                                                                                                                                                                                            Number:MB1034 Rev: B 0(PCB SCH)                      Date: 2/3/2012               Sheet 2   of   3
+                                                                                                                                                                                                                                                                                                                   UM1525
+
+
+
+
+                                                                                                                                                                                                                    LD3
+                                                                                                                                                                                            PC9        R30
+
+
+
+
+                                                                                                  PF7
+                                                                                                  PF6
+                                                                                                  PA13
+                                                                                                  PA12
+                                                                                                  PA11
+                                                                                                  PA10
+                                                                                                  PA9
+                                                                                                  PA8
+                                                                                                  PC9
+                                                                                                  PC8
+                                                                                                  PC7
+                                                                                                  PC6
+                                                                                                  PB15
+                                                                                                  PB14
+                                                                                                  PB13
+                                                                                                  PB12
+                                                                                                                                                                                                       330
+                                                                                                                                                                                                                    green
+
+                                                                                                                                                                                                                    LD4
+                                                                                                                                                                                                       R31
+
+
+
+
+                                                                                               PF7
+                                                                                               PF6
+                                                                                               PA13
+                                                                                               PA12
+                                                                                               PA11
+                                                                                               PA10
+                                                                                               PA9
+                                                                                               PA8
+                                                                                               PC9
+                                                                                               PC8
+                                                                                               PC7
+                                                                                               PC6
+                                                                                               PB15
+                                                                                               PB14
+                                                                                               PB13
+                                                                                               PB12
+                                                                                                                                                                                            PC8
+                                                                                                                                                                                                       660
+                                                                                                                                                                                                                    blue
+
+
+
+
+                                                                                               48
+                                                                                               47
+                                                                                               46
+                                                                                               45
+                                                                                               44
+                                                                                               43
+                                                                                               42
+                                                                                               41
+                                                                                               40
+                                                                                               39
+                                                                                               38
+                                                                                               37
+                                                                                               36
+                                                                                               35
+                                                                                               34
+                                                                                               33
+                                                                                                                                                   U3
+                                                                                                                                                                                                                                                                                                  Figure 16. MCU
+
+
+
+
+                                                                                                                                                   STM32F051R8T6
+
+
+
+
+                                                                                                   PF7
+                                                                                                   PF6
+                                                                                                   PC9
+                                                                                                   PC8
+                                                                                                   PC7
+                                                                                                   PC6
+
+
+
+
+                                                                                                   PA9
+                                                                                                   PA8
+                                                                                                  PB15
+                                                                                                  PB14
+                                                                                                  PB13
+                                                                                                  PB12
+
+
+
+
+                                                                                                  PA13
+                                                                                                  PA12
+                                                                                                  PA11
+                                                                                                  PA10
+                                                                    PA14 49                                                                   32
+                                                         PA14                             PA14                                     VDD_2               VDD
+                                                                    PA15 50                                                                   31
+                                                         PA15                             PA15                                      VSS_2
+                                                                    PC10  51                                                                  30   PB11
+                                                         PC10                             PC10                                       PB11                      PB11
+                                                                    PC11  52                                                                  29   PB10                                                                               VDD
+                                                         PC11                             PC11                                       PB10                      PB10
+                                                                    PC12  53                                                                  28   PB2                                                          Not Fitted
+                                                         PC12                             PC12                     PB2 or NPOR (1.8V mode)                     PB2
+                                                                    PD2   54                                                                  27   PB1
+                                                           PD2                            PD2                                         PB1                      PB1                                                                        R33
+                      Not Fitted                                    PB3   55                                                                  26   PB0
+                                                           PB3                            PB3                                         PB0                      PB0                                                                        100K
+                                                                    PB4   56                                                                  25   PC5
+                              BOOT0                        PB4                            PB4                                         PC5                      PC5
+                                                                    PB5   57                                                                  24   PC4
+                                                           PB5                            PB5                                         PC4                      PC4
+                                                                    PB6   58                                                                  23   PA7                                                          NRST
+                                   R27                     PB6                            PB6                                         PA7                      PA7
+                                                                    PB7   59                                                                  22   PA6                                                                      SB4
+                                                                                                                                                                                                                                      2
+                                                                                                                                                                                                                                      1
+
+
+
+
+                       VDD                                 PB7                            PB7                                         PA6                      PA6
+                                         10K                        BOOT0 60                                                                  21   PA5
+                                   R26                                                    BOOT0                                       PA5                      PA5
+                                                                    PB8   61                                                                  20   PA4                                                                                                      B2
+                                                          PB8                             PB8                                         PA4                      PA4
+                                         510                        PB9   62                                                                  19   PF5                                                                        C23
+                                                          PB9                             PB9                                         PF5                      PF5
+                                                                          63                                                                  18   PF4
+                                                                                          VSS_1                                       PF4                      PF4
+                                   SB2                                    64                                                                  17   PA3                                                                      100nF
+                                                                  VDD                     VDD_1                                       PA3                      PA3
+                                                                                                                                                                                                                                      3
+                                                                                                                                                                                                                                      4
+                                                                                                                                                                                                                                                  SW-PUSH-CMS
+
+
+
+
+                        Not Fitted
+
+
+
+
+                                                                                                  VBAT
+                                                                                                  PC13 - TAMPER1 - WKUP2
+                                                                                                  PC14 - OSC32_IN
+                                                                                                  PC15 - OSC32_OUT
+                                                                                                  PF0 - OSC_IN
+                                                                                                  PF1 - OSC_OUT
+                                                                                                  NRST
+                                                                                                  PC0
+                                                                                                  PC1
+                                                                                                  PC2
+                                                                                                  PC3
+                                                                                                  VSSA / VREF-
+                                                                                                  VDDA / VREF+
+                                                                                                  PA0 - TAMPER2 - WKUP1
+                                                                                                  PA1
+                                                                                                  PA2
+                                                            C17
+                                                            1uF              SB1
+
+
+
+
+                                                                                                1
+                                                                                                2
+                                                                                                3
+                                                                                                4
+                                                                                                5
+                                                                                                6
+                                                                                                7
+                                                                                                8
+                                                                                                9
+                                                                                               10
+                                                                                               11
+                                                                                               12
+                                                                                               13
+                                                                                               14
+                                                                                               15
+                                                                                               16
+                                     Close to STM32
+                                                                                                                                      PA2
+                           VBAT                                                                                                                  PA2
+
+
+
+
+Doc ID 022910 Rev 2
+                                         PC13                                                                                       PA1                                                                                             RESET Button
+                           PC13                                                                                                                PA1
+                                         PC14     SB21                                                                            PA0
+                           PC14                                                                                                              PA0
+                                         PC15                                    SB20
+                           PC15                                                                                                                VDD
+                                                                                                                           PC3                                                                                                            VDD
+                                                                                                                                   PC3
+                             Close to XTAL & MCU                           R25       X3           R24                    PC2
+                                                                                                                                 PC2                                                                                                R32
+                                                                           0                      0                    PC1
+                                                                                                                               PC1
+                                                                                 1         4                         PC0                                                                               Not Fitted
+                                                                                                                                                                                                                                          2
+                                                                                                                                                                                                                                          1
+
+
+
+
+                                                                                                                             PC0                                                                                                    100
+                                                                   C16                                             NRST
+                                                                                                   C15                     NRST
+                                                                                 2         3                                                                                                                                                                              B1
+                                     Not Fitted                    6.8pF                           6.8pF                                                                                                                    C22
+
+                                                                                                                                                                                                                       100nF
+                                                                     MC306-G-06Q-32.768 (JFVNY)
+                                                                                                                                                                                                                                          3
+                                                                                                                                                                                                                                          4
+                                                                                                                                                                                                                                                                SW-PUSH-CMS
+
+
+
+
+                                                                                                                                                                                                      PA0              R28
+                                                                                                                                                                                                              SB3      330
+                                           MCO                                                                             PF1                         VDD                VDD
+                              MCO                                                                                                   PF1                                                                                                      R29
+                                                            SB18                                                   SB16
+                                                                                                                                                                                                                                             220K
+                                                                                                  R23       R22                                              C18      C20     C21   C19
+                                                PF0                                               0 X2      390                                              1uF      100nF   100nF 100nF
+                                   PF0
+                                                            SB17                                   1   2
+
+                                                                                                     8MHz                                                                                                    USER & WAKE-UP Button
+                                                                                                   C14      C13
+                                                            Not Fitted                             20pF     20pF
+
+
+                                                                                                                                                                                             STMicroelectronics
+                                                                                                                                                                                             Title:
+                                                                                                                                                                                                       STM32F0DISCOVERY MCU
+
+
+
+
+39/41
+                                                                                                                                                                                                                                                                                                                   Electrical schematics
+
+
+
+
+                                                                                                                                                                                             Number:MB1034 Rev: B.0(PCB.SCH)              Date: 3/1/2012                       Sheet 3   of   3
+Revision history                                                                                  UM1525
+
+
+8          Revision history
+
+           Table 12.      Document revision history
+                   Date       Revision                               Changes
+
+             20-Mar-2012         1       Initial release.
+                                         Added Section 5: Connecting modules on the prototyping board on
+             30-May-2012         2
+                                         page 27.
+
+
+
+
+40/41                                     Doc ID 022910 Rev 2
+UM1525
+
+
+
+
+                                                           Please Read Carefully:
+
+
+Information in this document is provided solely in connection with ST products. STMicroelectronics NV and its subsidiaries (“ST”) reserve the
+right to make changes, corrections, modifications or improvements, to this document, and the products and services described herein at any
+time, without notice.
+All ST products are sold pursuant to ST’s terms and conditions of sale.
+Purchasers are solely responsible for the choice, selection and use of the ST products and services described herein, and ST assumes no
+liability whatsoever relating to the choice, selection or use of the ST products and services described herein.
+No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted under this document. If any part of this
+document refers to any third party products or services it shall not be deemed a license grant by ST for the use of such third party products
+or services, or any intellectual property contained therein or considered as a warranty covering the use in any manner whatsoever of such
+third party products or services or any intellectual property contained therein.
+
+
+UNLESS OTHERWISE SET FORTH IN ST’S TERMS AND CONDITIONS OF SALE ST DISCLAIMS ANY EXPRESS OR IMPLIED
+WARRANTY WITH RESPECT TO THE USE AND/OR SALE OF ST PRODUCTS INCLUDING WITHOUT LIMITATION IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE (AND THEIR EQUIVALENTS UNDER THE LAWS
+OF ANY JURISDICTION), OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT.
+UNLESS EXPRESSLY APPROVED IN WRITING BY TWO AUTHORIZED ST REPRESENTATIVES, ST PRODUCTS ARE NOT
+RECOMMENDED, AUTHORIZED OR WARRANTED FOR USE IN MILITARY, AIR CRAFT, SPACE, LIFE SAVING, OR LIFE SUSTAINING
+APPLICATIONS, NOR IN PRODUCTS OR SYSTEMS WHERE FAILURE OR MALFUNCTION MAY RESULT IN PERSONAL INJURY,
+DEATH, OR SEVERE PROPERTY OR ENVIRONMENTAL DAMAGE. ST PRODUCTS WHICH ARE NOT SPECIFIED AS "AUTOMOTIVE
+GRADE" MAY ONLY BE USED IN AUTOMOTIVE APPLICATIONS AT USER’S OWN RISK.
+
+
+Resale of ST products with provisions different from the statements and/or technical features set forth in this document shall immediately void
+any warranty granted by ST for the ST product or service described herein and shall not create or extend in any manner whatsoever, any
+liability of ST.
+
+
+                          ST and the ST logo are trademarks or registered trademarks of ST in various countries.
+
+                         Information in this document supersedes and replaces all information previously supplied.
+
+         The ST logo is a registered trademark of STMicroelectronics. All other names are the property of their respective owners.
+
+
+                                               © 2012 STMicroelectronics - All rights reserved
+
+
+                                                   STMicroelectronics group of companies
+ Australia - Belgium - Brazil - Canada - China - Czech Republic - Finland - France - Germany - Hong Kong - India - Israel - Italy - Japan -
+   Malaysia - Malta - Morocco - Philippines - Singapore - Spain - Sweden - Switzerland - United Kingdom - United States of America
+                                                                 www.st.com
+
+
+
+
+                                                           Doc ID 022910 Rev 2                                                           41/41
+

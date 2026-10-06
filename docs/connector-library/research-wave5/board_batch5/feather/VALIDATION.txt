@@ -1,0 +1,1 @@
+PASS: 13 unique exact SKUs; no prior-56 or previous Adafruit-wave duplicate. 43 groups: 40 single rows at 2.54 mm, two FONA audio pairs at 2.0 mm, one Grand Central 2x18 at 2.54 mm. Exact commits/hashes and gender/population gates retained; all fit unverified. Prior waves immutable.

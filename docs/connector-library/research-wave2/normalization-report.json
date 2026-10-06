@@ -1,0 +1,613 @@
+{
+  "accepted": 76,
+  "quarantined": [],
+  "adjustments": [
+    {
+      "id": "st-nucleo-f031k6",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-f042k6",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-f301k8",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-f303k8",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-l011k4",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-l031k6",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-l412kb",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-l432kc",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN3: preserve source confidence",
+        "CN4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-f401re",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-f411re",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-f446re",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-nucleo-l476rg",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "CN5: preserve source confidence",
+        "CN6: preserve source confidence",
+        "CN8: preserve source confidence",
+        "CN9: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-stm32f0discovery-mb1034-b00",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "P1: preserve source confidence",
+        "P2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "st-stm32f407g-disc1",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "pjrc-teensy-lc-bare",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "edge-row-A: preserve source confidence",
+        "edge-row-B: preserve source confidence"
+      ]
+    },
+    {
+      "id": "pjrc-teensy-32-bare",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "edge-row-A: preserve source confidence",
+        "edge-row-B: preserve source confidence"
+      ]
+    },
+    {
+      "id": "pjrc-teensy-35-bare",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "edge-row-A: preserve source confidence",
+        "edge-row-B: preserve source confidence"
+      ]
+    },
+    {
+      "id": "pjrc-teensy-36-bare",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "edge-row-A: preserve source confidence",
+        "edge-row-B: preserve source confidence"
+      ]
+    },
+    {
+      "id": "pjrc-teensy-40-bare",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "edge-row-A: preserve source confidence",
+        "edge-row-B: preserve source confidence"
+      ]
+    },
+    {
+      "id": "pjrc-teensy-41-bare",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "edge-row-A: preserve source confidence",
+        "edge-row-B: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3458",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2795",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2771",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2796",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-2772",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3403",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3857",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3675",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3677",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3727",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3800",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-4481",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5325",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-5426",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-4600",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-3500",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "seeed-xiao-nrf52840",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "seeed-xiao-nrf52840-sense",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "seeed-xiao-samd21",
+      "changes": [
+        "Preserve CAD revision object as evidence; actual board revision null"
+      ]
+    },
+    {
+      "id": "adafruit-661",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-931",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4440",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-938",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1374",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1375",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1362",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1602",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP3: preserve source confidence",
+        "JP4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1571",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1982",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-684",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1431",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3787",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4313",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-2090",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1770",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-2478",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Wrap exact source URL",
+        "Wrap exact source URL",
+        "JP2: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1083",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1085",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-2717",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-815",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "JP4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-1899",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-2651",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-935",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-757",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "JP4: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-904",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4832",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4886",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence",
+        "JP7: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4681",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3966",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4646",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence",
+        "JP3: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4821",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4885",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-2809",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP3: preserve source confidence",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-4438",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP1: preserve source confidence",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-3967",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "JP2: preserve source confidence"
+      ]
+    },
+    {
+      "id": "adafruit-5346",
+      "changes": [
+        "Map research category to board/module; raw kind preserved",
+        "Map exact cad_url evidence to url",
+        "edge_row_lower: preserve source confidence",
+        "edge_row_upper: preserve source confidence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "updates": [
+    {
+      "board_id": "sparkfun-lcd-23453",
+      "scope": {
+        "id": "sparkfun-lcd-23453",
+        "manufacturer": "SparkFun",
+        "sku": "LCD-23453",
+        "revision": "Hardware/Qwiic_OLED_1.3in.brd; exact CAD blob 185a8528db3b661cb7e23044f02f1d95928824a5",
+        "assembly_variants": []
+      },
+      "expected_record_sha256": "6d0aaecc76c18f4600230433f2858f4867827d1256836ad4cd8b7446ee5946ae",
+      "changes": [
+        {
+          "header_id": "J3",
+          "field": "population",
+          "before_present": true,
+          "before": null,
+          "after": "unpopulated plated through-hole footprint in official product assembly photograph",
+          "source_record": {
+            "file": "headerBoards.enrichment.proposed.json",
+            "json_pointer": "/patches/0"
+          },
+          "source_field_pointer": "/changes/0/fields/population",
+          "evidence_urls": [
+            "https://www.sparkfun.com/sparkfun-qwiic-oled-1-3in-128x64.html",
+            "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Back-NoDisplay.jpg"
+          ]
+        },
+        {
+          "header_id": "J3",
+          "field": "gender",
+          "before_present": true,
+          "before": null,
+          "after": "none",
+          "source_record": {
+            "file": "headerBoards.enrichment.proposed.json",
+            "json_pointer": "/patches/0"
+          },
+          "source_field_pointer": "/changes/0/fields/gender",
+          "evidence_urls": [
+            "https://www.sparkfun.com/sparkfun-qwiic-oled-1-3in-128x64.html",
+            "https://www.sparkfun.com/media/catalog/product/2/3/23453-Qwiic-OLED-Back-NoDisplay.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "board_id": "sparkfun-lcd-15143",
+      "scope": {
+        "id": "sparkfun-lcd-15143",
+        "manufacturer": "SparkFun",
+        "sku": "LCD-15143",
+        "revision": "Hardware/LCD_TFT_Breakout_1in8_128x160.brd; exact CAD blob e72b89997179a14624d2dace03ec84e35da6c106",
+        "assembly_variants": []
+      },
+      "expected_record_sha256": "6bcc250d522c1d492d39a513027342d7405db9f56f67fbd2eef1c2d04da66620",
+      "changes": [
+        {
+          "header_id": "J2",
+          "field": "population",
+          "before_present": true,
+          "before": null,
+          "after": "unpopulated plated through-hole footprint in official product assembly photograph",
+          "source_record": {
+            "file": "headerBoards.enrichment.proposed.json",
+            "json_pointer": "/patches/1"
+          },
+          "source_field_pointer": "/changes/0/fields/population",
+          "evidence_urls": [
+            "https://www.sparkfun.com/sparkfun-tft-lcd-breakout-1-8-128x160.html",
+            "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a02.jpg"
+          ]
+        },
+        {
+          "header_id": "J2",
+          "field": "gender",
+          "before_present": true,
+          "before": null,
+          "after": "none",
+          "source_record": {
+            "file": "headerBoards.enrichment.proposed.json",
+            "json_pointer": "/patches/1"
+          },
+          "source_field_pointer": "/changes/0/fields/gender",
+          "evidence_urls": [
+            "https://www.sparkfun.com/sparkfun-tft-lcd-breakout-1-8-128x160.html",
+            "https://www.sparkfun.com/media/catalog/product/1/5/15143-SparkFun_TFT_LCD_Breakout_-_1.8in.__128x160_-a02.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "board_id": "sparkfun-lcd-29530",
+      "scope": {
+        "id": "sparkfun-lcd-29530",
+        "manufacturer": "SparkFun",
+        "sku": "LCD-29530",
+        "revision": "Hardware/SparkFun_Qwiic_OLED_1.5in.kicad_pcb; exact CAD blob 3e61d38e026e760805e8388cc739c7b24d8a2806",
+        "assembly_variants": []
+      },
+      "expected_record_sha256": "cd1f2fecc55ecb9294fa8491a920d5d6a473d680c1859325c65cda12ef638b31",
+      "changes": [
+        {
+          "header_id": "J5",
+          "field": "population",
+          "before_present": true,
+          "before": null,
+          "after": "unpopulated plated through-hole footprint in official product assembly photograph",
+          "source_record": {
+            "file": "headerBoards.enrichment.proposed.json",
+            "json_pointer": "/patches/2"
+          },
+          "source_field_pointer": "/changes/0/fields/population",
+          "evidence_urls": [
+            "https://www.sparkfun.com/sparkfun-qwiic-oled-display-1-5-in-128x128.html",
+            "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-OLED-Back.jpg"
+          ]
+        },
+        {
+          "header_id": "J5",
+          "field": "gender",
+          "before_present": true,
+          "before": null,
+          "after": "none",
+          "source_record": {
+            "file": "headerBoards.enrichment.proposed.json",
+            "json_pointer": "/patches/2"
+          },
+          "source_field_pointer": "/changes/0/fields/gender",
+          "evidence_urls": [
+            "https://www.sparkfun.com/sparkfun-qwiic-oled-display-1-5-in-128x128.html",
+            "https://www.sparkfun.com/media/catalog/product/2/9/29530-1p5in-OLED-Back.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

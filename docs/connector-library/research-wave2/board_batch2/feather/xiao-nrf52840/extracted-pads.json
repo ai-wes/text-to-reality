@@ -1,0 +1,1506 @@
+[
+  {
+    "reference": [
+      "U4"
+    ],
+    "footprint": "Seeed_Studio_XIAO_Series:XIAO-Add-On",
+    "at": [
+      [
+        "at",
+        "148.5011",
+        "105.0036"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.02_AIN0_LOW_A0_D0"
+          ]
+        ]
+      },
+      {
+        "name": "1",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.02_AIN0_LOW_A0_D0"
+          ]
+        ]
+      },
+      {
+        "name": "1",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.02_AIN0_LOW_A0_D0"
+          ]
+        ]
+      },
+      {
+        "name": "1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.02_AIN0_LOW_A0_D0"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.03_AIN1_LOW_A1_D1"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-8.337"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.03_AIN1_LOW_A1_D1"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-8.337"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.03_AIN1_LOW_A1_D1"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.03_AIN1_LOW_A1_D1"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.28_AIN4_LOW_A2_D2"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.28_AIN4_LOW_A2_D2"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.28_AIN4_LOW_A2_D2"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.28_AIN4_LOW_A2_D2"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.29_AIN5_LOW_A3_D3"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.29_AIN5_LOW_A3_D3"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.29_AIN5_LOW_A3_D3"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.29_AIN5_LOW_A3_D3"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.04_AIN2_A4_D4"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.04_AIN2_A4_D4"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.04_AIN2_A4_D4"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.04_AIN2_A4_D4"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.05_AIN3_A5_D5"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-8.337"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.05_AIN3_A5_D5"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-8.337"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.05_AIN3_A5_D5"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P0.05_AIN3_A5_D5"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.11_TX_D6"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.11_TX_D6"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-8.278"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.11_TX_D6"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.11_TX_D6"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.12_RX_D7"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.12_RX_D7"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.12_RX_D7"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.12_RX_D7"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.13_SCK_D8"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "8.337",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.13_SCK_D8"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "8.337",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.13_SCK_D8"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.13_SCK_D8"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.14_MISO_D9"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.14_MISO_D9"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.14_MISO_D9"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.14_MISO_D9"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.15_MOSI_D10"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.15_MOSI_D10"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.15_MOSI_D10"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/P1.15_MOSI_D10"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/3V3"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/3V3"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/3V3"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/3V3"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "8.337",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "8.337",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "8.278",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/VBUS"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "reference": [
+      "USB1"
+    ],
+    "footprint": "Seeed Studio XIAO nRF52840 v1.1:USB2.0-TYPE-C",
+    "at": [
+      [
+        "at",
+        "153.1366",
+        "105.0036",
+        "180"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "",
+        "type": "np_thru_hole",
+        "at": [
+          [
+            "at",
+            "-1.1",
+            "-2.89",
+            "180"
+          ]
+        ],
+        "net": []
+      },
+      {
+        "name": "",
+        "type": "np_thru_hole",
+        "at": [
+          [
+            "at",
+            "-1.1",
+            "2.89",
+            "180"
+          ]
+        ],
+        "net": []
+      },
+      {
+        "name": "A1_B12",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "-3.2",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "A4_B9",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "-2.4",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "A5",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "-1.25",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "Net-(USB1-A5{slash}CC1)"
+          ]
+        ]
+      },
+      {
+        "name": "A6",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "-0.25",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/USB_D+"
+          ]
+        ]
+      },
+      {
+        "name": "A7",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "0.25",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/USB_D-"
+          ]
+        ]
+      },
+      {
+        "name": "A8",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "1.25",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "unconnected-(USB1-A8{slash}SBU1-PadA8)"
+          ]
+        ]
+      },
+      {
+        "name": "B1_A12",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "3.2",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "B4_A9",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "2.4",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "B5",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "1.75",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "Net-(USB1-B5{slash}CC2)"
+          ]
+        ]
+      },
+      {
+        "name": "B6",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "0.75",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/USB_D+"
+          ]
+        ]
+      },
+      {
+        "name": "B7",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "-0.75",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/USB_D-"
+          ]
+        ]
+      },
+      {
+        "name": "B8",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0.05",
+            "-1.75",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "unconnected-(USB1-B8{slash}SBU2-PadB8)"
+          ]
+        ]
+      },
+      {
+        "name": "S1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-4.75",
+            "-4.3",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "S2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-4.75",
+            "4.3",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "S3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-0.55",
+            "-4.3",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "S4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-0.55",
+            "4.3",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "S5",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-4.5",
+            "-1.5",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "S6",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "-4.5",
+            "1.5",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "reference": [
+      "TP5"
+    ],
+    "footprint": "Seeed Studio XIAO nRF52840 v1.1:TP-D45MIL",
+    "at": [
+      [
+        "at",
+        "157.0736",
+        "103.7336",
+        "180"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "T",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "0",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/SWDIO"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "reference": [
+      "TP1"
+    ],
+    "footprint": "Seeed Studio XIAO nRF52840 v1.1:TP-D45MIL",
+    "at": [
+      [
+        "at",
+        "154.5336",
+        "106.2736",
+        "180"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "T",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "0",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "GND"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "reference": [
+      "TP2"
+    ],
+    "footprint": "Seeed Studio XIAO nRF52840 v1.1:TP-D45MIL",
+    "at": [
+      [
+        "at",
+        "154.5336",
+        "103.7336",
+        "180"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "T",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "0",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/RESET"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "reference": [
+      "TP3"
+    ],
+    "footprint": "Seeed Studio XIAO nRF52840 v1.1:TP-D45MIL",
+    "at": [
+      [
+        "at",
+        "157.0736",
+        "106.2736",
+        "180"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "T",
+        "type": "smd",
+        "at": [
+          [
+            "at",
+            "0",
+            "0",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "/02 XIAO Header & nRF52840/SWDCLK"
+          ]
+        ]
+      }
+    ]
+  }
+]

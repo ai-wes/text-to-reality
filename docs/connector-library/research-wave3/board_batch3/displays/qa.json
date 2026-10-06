@@ -1,0 +1,21 @@
+{
+  "checked_date": "2026-10-06",
+  "records": 14,
+  "disjoint_from_previous_catalogs": true,
+  "all_cad_blob_sha_verified": true,
+  "all_headers": {
+    "rows": 1,
+    "pitch_mm": 2.54,
+    "population": "unpopulated"
+  },
+  "epaper_fpc_contacts": {
+    "pin_count": 24,
+    "pitch_mm": 0.5,
+    "verified_from_numbered_cad_smd_pads_excluding_anchors": true
+  },
+  "pre_eyespi_only_skus": [
+    "1673",
+    "1028"
+  ],
+  "physical_fit_verified": false
+}

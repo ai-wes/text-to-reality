@@ -1,0 +1,32 @@
+{
+  "checked_files": [
+    "/workspace/shared/board_header_wave2_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board_header_wave3_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board_header_research_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board_header_wave6_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board_header_wave5_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board_header_wave5_bundle/headerBoards.enrichment.proposed.json",
+    "/workspace/shared/board_header_wave4_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board_header_wave7_bundle/headerBoards.proposed.json",
+    "/workspace/shared/board-header-integration-wave3-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-integration-wave2-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-integration-wave6-sbc-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-research-wave5-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-research-wave3-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-research-wave2-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-research-wave4-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-integration-wave7-nucleo144-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-integration-wave5-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-research-2026-10-06.zip!headerBoards.proposed.json",
+    "/workspace/shared/board-header-integration-wave4-2026-10-06.zip!headerBoards.proposed.json"
+  ],
+  "new_record_count": 10,
+  "unique_new_ids": 10,
+  "duplicate_ids": [],
+  "excluded_existing_pico_ids": [
+    "raspberry-pi-pico-h",
+    "raspberry-pi-pico-wh",
+    "raspberry-pi-pico-2-with-headers",
+    "raspberry-pi-pico-2-w-with-headers"
+  ]
+}

@@ -1,0 +1,752 @@
+    1                                                                                         2                                           3                   4                                      5                                6
+
+
+
+
+A                                                                                                                                                                                                                                                  A   A
+
+
+
+
+B                                                                                                                                                                                                                                                  B   B
+              3.3V                                                             3.3V    3.3V
+                                                                                                                                                            U1D
+        GND
+
+
+                 GND
+                       GND
+
+
+                                 GND
+                                       GND
+                                             GND
+                                                   GND
+
+
+                                                             GND
+                                                                   GND
+                                                                         GND
+
+
+
+
+                                                                                           GND
+                                                                                                 GND
+                                                                                                       GND
+
+
+
+                                                                                                                                                      H16                                                G3   (U1.G3)LCD.D0.B3
+                                                                                                                                                             MII1_TX_CLK                 LCD_DATA0
+                                                                                                                                                      H15                                                G2   (U1.G2)LCD.D1.B4
+                                                                                                                                                             MII1_TXD0                   LCD_DATA1
+                                                                                                                                                      H14                                                G1   (U1.G1)LCD.D2.B5
+                                                                                                                                                             MII1_TXD1                   LCD_DATA2
+                                                                                                                                                      G16                                                H3   (U1.H3)LCD.D3.B6
+                                                                                                                                                             MII1_TXD2                   LCD_DATA3
+                                                                                                                                                      G15                                                H2   (U1.H2)LCD.D4.B7
+                                                                                                                                                             MII1_TXD3                   LCD_DATA4
+                                                                                                                                                      G14                                                H1   (U1.H1)LCD.D5.G2
+    R6                       R7                          R8                        R9                                                                        MII1_TX_EN                  LCD_DATA5
+    100k                     100k                        100k                      100k                      0   (U1.G3)LCD.D0.B3    <-- SYS_BOOT0    F14                                                J3   (U1.J3)LCD.D6.G3
+                                                                                                                                                             MII1_CRS                    LCD_DATA6
+                                                                                                       0         (U1.G2)LCD.D1.B4    <-- SYS_BOOT1    F15                                                J2   (U1.J2)LCD.D7.G4
+                                                                                                                                                             MII1_COL                    LCD_DATA7
+                                                                                                 0               (U1.G1)LCD.D2.B5    <-- SYS_BOOT2                                                       J1   (U1.J1)LCD.D8.G5
+                                                                                                                                                                                         LCD_DATA8
+                                                                                           1                     (U1.H3)LCD.D3.B6    <-- SYS_BOOT3    E16                                                K3   (U1.K3)LCD.D9.G6
+                                                                                                                                                             MII1_RX_CLK                 LCD_DATA9
+                                                                                       1                         (U1.H2)LCD.D4.B7    <-- SYS_BOOT4    E14                                                K2   (U1.K2)LCD.D10.G7
+                                                                                                                                                             MII1_RXD0                  LCD_DATA10
+                                                                                   0                             (U1.H1)LCD.D5.G2    <-- SYS_BOOT5    D16                                                K1   (U1.K1)LCD.D11.R3
+C                                                                              0                                 (U1.J3)LCD.D6.G3    <-- SYS_BOOT6    D15
+                                                                                                                                                             MII1_RXD1
+                                                                                                                                                             MII1_RXD2
+                                                                                                                                                                                        LCD_DATA11
+                                                                                                                                                                                        LCD_DATA12
+                                                                                                                                                                                                         L3   (U1.L3)LCD.D12.R4                    C   C
+                                                                         0                                       (U1.J2)LCD.D7.G4    <-- SYS_BOOT7    D14                                                L2   (U1.L2)LCD.D13.R5
+                                                                                                                                                             MII1_RXD3                  LCD_DATA13
+                                                                   0                                             (U1.J1)LCD.D8.G5    <-- SYS_BOOT8    E15                                                L1   (U1.L1)LCD.D14.R6
+                                                                                                                                                             MII1_RX_ER                 LCD_DATA14
+                                                             0                                                   (U1.K3)LCD.D9.G6    <-- SYS_BOOT9    F16                                                M3   (U1.M3)LCD.D15.R7
+                                                                                                                                                             MII1_RX_DV                 LCD_DATA15
+                                                         0                                                       (U1.K2)LCD.D10.G7   <-- SYS_BOOT10
+                                                   0                                                             (U1.K1)LCD.D11.R3   <-- SYS_BOOT11   J14                                                F1   PRU1.10
+                                                                                                                                                             RMII1_REF_CLK               LCD_PCLK
+                                             0                                                                   (U1.L3)LCD.D12.R4   <-- SYS_BOOT12   D13                                                F3   AIN5(3.3V)
+                                                                                                                                                             MDC                        LCD_VSYNC
+                                       0                                                                         (U1.L2)LCD.D13.R5                    E13                                                F2   AIN6/GPIO87
+                                                                                                                                     <-- SYS_BOOT13          MDIO                       LCD_HSYNC
+                                 1                                                                               (U1.L1)LCD.D14.R6                                                                       E1   GPIO89
+                                                                                                                                     <-- SYS_BOOT14                                 LCD_AC_BIAS_EN
+                             0                                                                                   (U1.M3)LCD.D15.R7   <-- SYS_BOOT15
+                                                                                                                                                                  SIP D
+
+                                                                                                                                                            OSD3358-512M-BSM
+
+D                                                                                                                                                                                                                                                  D   D
+
+
+
+
+                                                                                                                                                                                                                                  OSD3358 SiP
+                                                                                                                                                                                                                                  System Boot
+                                                                                                                                                                                                                                  Conﬁguration
+E                                                                                                                                                                          TITLE:     PocketBeagle                                                 E   E
+
+                                                                                                                                                                           Document Number:                                                 REV:
+
+                                                                                                                                                                           Date: 9/19/17 8:57 PM                                  Sheet:   1/1
+        1                                            2                                                3               4                           5                            6
+
+
+
+
+A   A                            uSD Connector
+                                  3.3V                                     3.3V
+                                                                                                                                                                                            A   A
+
+
+
+
+                                                                     C6                     C5
+                                                                                                                                   USER LEDs
+
+                                               R11
+                                               10k
+                                                                     10uF, 10V              0.1uF, 6.3V
+                                                                                                                                          LTST-C191TBKT
+                         R10
+
+
+
+
+                                                                                                                                                   USR0
+                         10k
+
+
+
+
+                                                                                                                                   (U1.P13)USR0
+
+                                                                                                                                          LTST-C191TBKT         R4
+
+
+
+
+                                                                                                          G4
+                                                                                                          G3
+                                                                           GND                                                                     USR1
+                                                                                                                                                                1k
+
+                                                                                                                                   (U1.T14)USR1
+                                                 (U1.C16)MMC0.D2                   1
+                                                                                       DAT2
+
+
+
+
+                                                                                                          G4
+                                                                                                          G3
+B   B                                            (U1.C15)MMC0.D3                   2
+                                                                                       DAT3/CS                                            LTST-C191TBKT                                     B   B
+                                                 (U1.B16)MMC0.CMD                  3
+                                                                                       CMD/DI                                                      USR2
+            3.3V
+
+
+
+
+                                                                                   4                                               (U1.R14)USR2
+                                                                                       VDD    X2
+                                                 (U1.B15)MMC0.CLK                  5
+                                                                                       SCLK MICROSD
+                   GND
+
+
+
+
+                                                                                   6                                                                                 GND
+                                                                                       VSS                                               LTST-C191TBKT
+                                                 (U1.A16)MMC0.D0                   7
+                                                                                       DAT0/DO                                                    USR3
+                                                 (U1.A15)MMC0.D1                   8                                               (U1.P14)USR3
+                                                                                       DAT1
+
+
+
+
+                                                                                                          G1
+                                                                                                          G2
+                                                 (U1.C14)MMC0.CD                   9
+                                                                                       CDN
+
+
+
+
+                                                                                                          G1
+                                                                                                          G2
+                                                                                                               CGND
+
+
+
+
+C   C                                                                                                                                                                                       C   C
+
+                                                                                                                              JTAG Pads
+                                                                                                                                   TMS      JTAG_TMS
+
+
+                         USB Device                                                                                                TDI
+
+                                                                                                                                   TDO
+                                                                                                                                            JTAG_TDI
+
+                                                                                                                                            JTAG_TDO
+                                                                                  VIN.USB                                          TCK      JTAG_TCK
+                                                                                                                                   EMU0     JTAG_EMU0
+                                         FB1
+D   D                    VBUS                                                                                                                                                               D   D
+
+
+
+
+                                                                                                                                                                     GND
+                                                 (U1.K16)USBC.D-                                                                   TRST     JTAG_TRST#    10k
+                            D-                                                                                                                            R12
+                           D+                    (U1.K15)USBC.D+
+                                                 (U1.K14)USBC.ID                                                                   EMU1     JTAG_EMU1
+                            ID
+                          GND                                U3
+
+                                                         1                   6
+                                                                  D+ VBUS
+                                                         2
+                                                                  D-   NC
+                                                                             5         C4
+                                                         3                   4         .1uF, 6.3V
+                                                                  ID  GND
+                           FB2
+                                                             TPD4S012DRY           GND
+
+
+                                    GND                                                                                                                                    PocketBeagle
+        CGND                                                                                                                                                                Peripheral
+                                                                                                                                                                            Connectors
+E   E                                                                                                                     TITLE:    PocketBeagle                                            E   E
+
+                                                                                                                          Document Number:                                           REV:
+
+                                                                                                                          Date: 9/19/17 8:57 PM                            Sheet:   1/1
+        1                                2                          3                                       4                                5                6
+
+
+
+
+A   A                                                                                                                                                                      A
+
+
+
+
+B   B                                                                                                                                                                      B
+
+
+                                                  P1                                                                               P2
+                    VIN
+
+
+
+
+                                              1        2    AIN6/GPIO87                                     PWM1A              1        2    GPIO59
+                            USB1.DRVVBUS      3        4    GPIO89                                          GPIO23             3        4    GPIO58
+            USB1.VIN
+
+
+
+
+                            USB1.VBUS         5        6    SPI0.CS                                         UART4.RX           5        6    GPIO57
+                                              7        8    SPI0.CLK                                        UART4.TX           7        8    GPIO60
+                            USB1.D-           9        10   SPI0.MISO                                       I2C1.SCL           9        10   GPIO52
+                            USB1.D+          11        12   SPI0.MOSI                                       I2C1.SDA          11        12   PWR.BTN
+
+
+
+
+                                                                                           VOUT
+                                                                                    3.3V
+                            USB1.ID          13        14                                                                     13        14   BAT.VIN
+
+
+
+
+                                                                          GND GND
+                      GND
+
+
+
+
+                                                                                                  GND GND
+                                             15        16                                                                     15        16   BAT.TEMP
+                            AIN.VREF-        17        18   AIN.VREF+                                       GPIO65            17        18   GPIO47
+                            AIN0(1.8V)       19        20   GPIO20                                          GPIO27            19        20   GPIO64
+C   C                       AIN1(1.8V)       21        22                                                                     21        22   GPIO46                        C
+
+
+
+
+                                                                                    VOUT
+
+
+
+                                                                                           3.3V
+                            AIN2(1.8V)       23        24                                                                     23        24   GPIO48
+                            AIN3(1.8V)       25        26   I2C2.SDA                                        SPI1.MOSI         25        26   RESET#
+                            AIN4(1.8V)       27        28   I2C2.SCL                                        SPI1.MISO         27        28   PRU0.6
+                            PRU0.7           29        30   UART0.TX                                        SPI1.CLK          29        30   PRU0.3
+                            PRU0.4           31        32   UART0.RX                                        SPI1.CS           31        32   PRU0.2
+                            PRU0.1           33        34   GPIO26                                          GPIO45            33        34   PRU0.5
+                            PRU1.10          35        36   PWM0A                                           AIN5(3.3V)        35        36   AIN7(1.8V)
+
+
+
+
+D   D                                                                                                                                                                      D
+
+
+
+
+                                                                                                                                                          PocketBeagle
+                                                                                                                                                            Header
+                                                                                                                                                            Signals
+E   E                                                                                                                TITLE:    PocketBeagle                                E
+
+                                                                                                                     Document Number:                               REV:
+
+                                                                                                                     Date: 9/19/17 8:57 PM                Sheet:   1/1
+                 1                                            2                                                               3                                                4                                             5                                           6
+
+
+
+
+                                      VIN        U1A                                                                               VOUT
+A                                                                                                                                                                                                               U1E                                                                   A   A
+                                        P10                                                                                       K6
+                                                  VIN_AC                                                              SYS_VOUT
+                                        R10                                                                                       K7                                                                      D8                                                       J4
+                                                  VIN_AC                                                              SYS_VOUT                                                                                    DGND                                      DGND
+                                        T10                                                                                       L6                                                                      D9                                                       J5
+                                                  VIN_AC                                                              SYS_VOUT                                                                                    DGND                                      DGND
+                                                                                                                      SYS_VOUT
+                                                                                                                                  L7                                                                                                  SIP E                 DGND
+                                                                                                                                                                                                                                                                   J12
+                                 VIN.USB                                                                                                                                                                   E5                                                      J13
+                                                                                                                                                                                                                  DGND                                      DGND
+                                                                                                                                       3.3V                                                                E6
+                                                                                                                                                                                                                  DGND
+                                            P9                                                                                                                                                             E7                                                      K5
+                                                  VIN_USB                                                                                                                                                         DGND                                      DGND
+                                            R9                                                                                    F6                                                                       E8                                                      K12
+                                                  VIN_USB                                                         SYS_VDD1_3P3V                                                                                   DGND                                      DGND
+                                            T9                                                                                    F7                                                                       E9
+                                                  VIN_USB                                                         SYS_VDD1_3P3V                                                                                   DGND
+                                                                                                                                  G6                                                                      E10                                                      L5
+                                                                                                                  SYS_VDD1_3P3V                                                                                   DGND                                      DGND
+                                                                                                                                  G7                                                                      E11                                                      L12
+                                                                                                                  SYS_VDD1_3P3V                                                                                   DGND                                      DGND
+                                                                                                                                          VDD_3V3AUX                                                      E12
+                                                                                                                                                                                                                  DGND
+                                            P8                                                                                                                                                                                                                     M5
+                                                  VIN_BAT                                                                                                                                                                                                   DGND
+                            BAT.VIN         R8                                                                                                                                                             F5                                                      M6
+                                                  VIN_BAT                                                                                                                                                         DGND                                      DGND
+                                            T8                                                                                    F11                                                                     F12                                                      M7
+                                                  VIN_BAT                                                         SYS_VDD2_3P3V                                                                                   DGND                                      DGND
+B                                                                                                                 SYS_VDD2_3P3V
+                                                                                                                                  G11
+                                                                                                                                                         PWR                                                                                                DGND
+                                                                                                                                                                                                                                                                   M8                 B   B
+                                            N7                                                                                                           LTST-C191TBKT                                     G5                                                      M9
+                                                  PMIC_BAT_SENSE                                                                                                                                                  DGND                                      DGND
+                            BAT.TEMP        N6                                                                                    VDD_RTC                                                                 G12                                                      M10
+                                                  PMIC_TS                                                                                                                                                         DGND                                      DGND
+                                                                                                                                                                                                                                                                   M11
+                                                                                                                                                                                                                                                            DGND
+                                                                                                                                  K11                                                                      H4                                                      M12
+                                                                                                                  SYS_RTC_1P8V                                                                                    DGND                                      DGND
+                                                                                                                                  L11                R1                                                    H5                NOTE: Can use pours
+                                                                                                                  SYS_RTC_1P8V                       1k
+                                                                                                                                                                                                                  DGND       to connect VSS pads
+                                                                                                                                                                                                          H12                                                      N8
+                                                                                                                                                                                                                  DGND       instead of a via per           DGND
+                                                                                                                                                                                                          H13                pad.                                  N9
+                                                                                                                                                                                                                  DGND                                      DGND
+                                                                                                                                  VDD_3V3A
+                                                            SIP A                                                                             GND
+                                                                                                                                                                                                                OSD3358-512M-BSM
+                                                                                                                                  F8
+                                                                                     Connect together with pour
+                                                                                                                  SYS_VDD3_3P3V
+                                                                                                                                  G8                                                                 GND                                                                GND
+                                                                                                                  SYS_VDD3_3P3V
+                                                                                                                                  H7
+                                                                                                                  SYS_VDD3_3P3V
+                                        M13                                                                                       H8
+                                                  PMIC_NRESET                                                     SYS_VDD3_3P3V
+                                                                                                                                  J7
+          POWER                                                                                                   SYS_VDD3_3P3V
+                                                                                                                                  J8
+C   MINI_PUSHBUTTON                                                                                               SYS_VDD3_3P3V
+                                                                                                                  SYS_VDD3_3P3V
+                                                                                                                                  K8                                                                                  U1F                                                             C   C
+      1      3       PWR.BTN            T11                                                                                       L8
+                                                  PMIC_PB_IN                                                      SYS_VDD3_3P3V                                                                    TP1
+      2      4                                                                                                                                                                                                   F4
+                                                                                                                                                                                                                       VDDS_DDR                         SIP F
+                                                                                                                                                                                                   TP2          G4
+                                                                                                                                                                                                                       VDD_CORE
+    GND                                 N11                                                                                       J9                                                                                                       Do Not Use
+                                                  PMIC_PWR_EN                                                          VDDSHV1
+                                                                                  SYS_VDD3_3P3V
+
+
+
+
+                                        N10                                                                                       K9                                                               TP3          F13
+                                                                                  SYS_VDD_1P8V
+                                                                                 Connect to either:
+
+
+
+
+                                                  PMIC_POWER_EN                                                        VDDSHV2                                                                                         VDD_MPU
+                                                                                                                       VDDSHV3
+                                                                                                                                  L9                                                                                                       Test Point per
+                                            N4                                                                                    F9                                                               TP4          G13                        power rail
+                                                  PMIC_LDO_PGOOD                                                       VDDSHV4                                                                                         VDDS_PLL
+                                            N5                                                                                    G9                                                                                                       recommended
+                                                  RTC_PWRONRSTN                                                        VDDSHV5
+                                                                                                                                  H9
+                                                                                                                       VDDSHV6
+                                            L4
+                                                  PMIC_NWAKEUP
+                                            M4                                                                                                                                                                  D5                                                 D12
+                                                  EXT_WAKEUP                                                                                                                                                           CAP_VDD_RTC                            NC
+                                                                                                                                               VDD_1V8
+                                                                                                                                                                                                                                                                   J6
+                                                                                                                                                                                                                                                              NC
+                                            E4                                                                                    F10                                                                           H6                                                 K4
+                                                  PMIC_NINT                                                       SYS_VDD_1P8V                                                                                         VPP                                    NC
+                                            D4                                                                                    G10
+                                                  EXTINTN                                                         SYS_VDD_1P8V
+                                                                                                                                  H10
+D                                                                                                                                                                                                                                                                                     D   D
+                                                                                     Connect together with pour
+
+
+
+
+                                                                                                                  SYS_VDD_1P8V                                                                                                    Do Not Connect
+                                                                                                                                  H11
+                                                                                                                  SYS_VDD_1P8V
+                                                                                                                                  J10
+                                                                                                                  SYS_VDD_1P8V
+
+
+                                                                                                                                                                             0.1uF, 6.3V
+                                        D10                                                                                       J11
+                                                  PMIC_SCL                                                        SYS_VDD_1P8V
+                                        C10                                                                                       K10                                                                                 OSD3358-512M-BSM
+                                                  I2C0_SCL                                                        SYS_VDD_1P8V
+                                                                                                                                                             VDD_RTC
+                                                                          I2C0
+
+
+
+
+                                                                                                                                  L10
+                                                                                                                  SYS_VDD_1P8V
+                                                                                                                                                                             C1
+
+                                        D11
+                                                  PMIC_SDA                                                                                                                                 GND
+                                        C11
+                                                  I2C0_SDA
+                                                                                                                                                                  Vcc
+
+                                                       GND to program EEPROM                                                      N12     PMIC_PGOOD          A          Y
+                                                                                                                    PMIC_PGOOD
+                 (U1.M2)EEPROM.WP           M2                                                                                    P11
+                                                                                 Reset
+
+
+
+
+                                                  EEPROM_WP                                                         PWRONRSTN                                  GND
+                                                                                                                                                                        U2
+                                                                                                                                                                                                                                                                 OSD3358 SiP
+                                                                                                                                                                        SN74LVC1G07DCK
+                                                                                                                                                                                                                                                               System and Power
+                                                                                                                                                                  GND                                                                                               Signals
+                      GND
+
+
+
+
+                                 R3     M16                                                                                       R11     RESET#
+                                                  RTC_KALDO_ENN                                                      WARMRSTN
+E                                10k
+                                                                                                                                                                                                 TITLE:     PocketBeagle                                                              E   E
+                                                 OSD3358-512M-BSM
+                                                                                                                                                                                                 Document Number:                                                              REV:
+
+                                                                                                                                                                                                 Date: 9/19/17 8:57 PM                                             Sheet:     1/1
+        1          2                                            3                                               4                                          5                                       6
+
+
+
+
+A   A                                                                                                                                                                                                            A   A
+
+
+
+                                                    U1B
+
+                                                                       SIP B
+
+              C2                                                                               SYS_ADC_1P8V
+                                                                                                               A7
+                           OSC.IN             P16
+
+
+
+
+                                     1M, 1%
+                                                     OSC0_IN
+
+
+
+
+                                     R2
+            18pF, 50V
+
+
+
+
+                           24 MHz
+
+
+
+
+                                                                    XTAL
+                                                                                                               B7    AIN.VREF+
+                                                                                                      VREFP
+B   B                                                                                                                                                                                                            B   B
+
+                      Y1
+              C3
+                           OSC.OUT            N16
+                                                     OSC0_OUT                  Analog
+            18pF, 50V      OSC.GND            N15
+                                                     OSC0_GND                  Pwr & Gnd
+                                                                                                                                            C7
+                                                                                                                                            0.1uF, 6.3V
+                                                                                                               A9
+                                                                                                  AGND_ADC
+                                               A6
+                                                     OSC1_IN
+
+
+
+
+                                                                    RTC
+                                                                                                               B9    AIN.VREF-
+                                                                                                      VREFN
+
+
+                                               A5
+                                                     OSC1_OUT
+                                                                                                               A8    AIN0(1.8V)
+                                                                                                        AIN0
+                                               B5                                                              B8    AIN1(1.8V)
+C   C                                                OSC1_GND                                           AIN1
+                                                                                                               B6    AIN2(1.8V)                                      GND                                         C   C
+
+
+
+
+                                                                               Analog Inputs
+                                                                                                        AIN2                                                   R5
+                                                                                                               C6    AIN3(1.8V)                                10k
+                                                                                                        AIN3                                                               Full Input Voltage
+                                                                                                               C7    AIN4(1.8V)                                            <---------------
+                                                                                                        AIN4
+                        JTAG_TDI              C1                                                               C8    (U1.C8)AIN5~1.8V                                 AIN5(3.3V)
+
+
+                                                                    JTAG
+                                                     TDI                                                AIN5
+                        JTAG_TDO              C2                                                               C9    (U1.C9)AIN6~1.8V                                 AIN6/GPIO87
+                                                     TDO                                                AIN6
+                        JTAG_TCK              D1                                                               D7                 <-------------------
+                                                     TCK                                                AIN7                      Divided Output Voltage
+                        JTAG_TMS              D2
+                                                     TMS                                                                          (Input to Analog IN)
+                        JTAG_TRST#            D3                                                               D6
+                                                     TRSTN                                     PMIC_MUX_OUT
+                        JTAG_EMU0             E2                                                                                                                     GND
+                                                     EMU0
+                        JTAG_EMU1             E3                                                               N13   AIN7(1.8V)
+                                                     EMU1                                       PMIC_MUX_IN
+            VIN.USB
+
+                                              J16                                                              M15   USB1.VBUS
+                                                     USB0_VBUS                                    USB1_VBUS
+                      (U1.K16)USBC.D-         K16                                                              L16   USB1.D-
+                                                                    USB0
+
+
+                                                                               USB1
+
+                                                     USB0_DM                                        USB1_DM
+                      (U1.K15)USBC.D+         K15                                                              L15   USB1.D+
+                                                     USB0_DP                                        USB1_DP
+                      (U1.K14)USBC.ID         K14                                                              L14   USB1.ID
+D   D                                         K13
+                                                     USB0_ID                                         USB1_ID
+                                                                                                               L13                                                                                               D   D
+                                                     USB0_CE                                        USB1_CE
+                                              J15                                                              M14   USB1.DRVVBUS
+                                                     USB0_DRVVBUS                              USB1_DRVVBUS
+
+
+                                                    OSD3358-512M-BSM
+
+
+
+
+                                                                                                                                                                                              OSD3358 SiP
+                                                                                                                                                                                           JTAG, USB, & Analog
+                                                                                                                                                                                                 Signals
+E   E                                                                                                                     TITLE:            PocketBeagle                                                         E   E
+
+                                                                                                                          Document Number:                                                                REV:
+
+                                                                                                                          Date: 9/19/17 8:57 PM                                                 Sheet:   1/1
+        1   2                              3                                4                                5             6
+
+
+
+
+A   A                                                                                                                                   A
+
+                                         U1C
+
+                UART0.TX           B12                                              T7       GPIO65
+                                          UART0_TXD                     GPMC_CLK
+                UART0.RX           A12
+                                          UART0_RXD         SIP C
+                SPI1.MISO          C12                                              T12
+                                          UART0_CTSN                      GPMC_A0
+                SPI1.MOSI          C13                                              R12
+                                          UART0_RTSN                      GPMC_A1
+                                                                                    P12    PWM1A
+                                                                          GPMC_A2
+                                                                                    T13
+                                                                          GPMC_A3
+                I2C1.SCL           B11                                              R13    GPIO52
+                                          UART1_TXD                       GPMC_A4
+                I2C1.SDA           A11                                              P13    (U1.P13)USR0
+                                          UART1_RXD                       GPMC_A5
+                I2C2.SDA           B10                                              T14    (U1.T14)USR1
+                                          UART1_CTSN                      GPMC_A6
+                I2C2.SCL           A10                                              R14    (U1.R14)USR2
+                                          UART1_RTSN                      GPMC_A7
+B   B                                                                     GPMC_A8
+                                                                                    P14    (U1.P14)USR3                                 B
+                                                                                    T15    GPIO57
+                                                                          GPMC_A9
+                SPI0.CLK           A13                                              R15      GPIO58
+                                          SPI0_SCLK                      GPMC_A10
+                SPI0.MISO          B13                                              T16      GPIO59
+                                          SPI0_D0                        GPMC_A11
+                SPI0.MOSI          B14
+                                          SPI0_D1
+                SPI0.CS            A14                                              N14     GPIO60
+                                          SPI0_CS0                      GPMC_BEN1
+                (U1.C14)MMC0.CD    C14                                              P15    UART4.RX
+                                          SPI0_CS1                     GPMC_WAIT0
+                                                                                    R16    UART4.TX
+                                                                        GPMC_WPN
+
+                (U1.B15)MMC0.CLK   B15                                              P3
+                                          MMC0_CLK                     GPMC_CSN0
+                (U1.B16)MMC0.CMD   B16                                              P2
+                                          MMC0_CMD                     GPMC_CSN1
+                (U1.A16)MMC0.D0    A16                                              P1
+                                          MMC0_DAT0                    GPMC_CSN2
+                (U1.A15)MMC0.D1    A15                                              R7       GPIO64
+                                          MMC0_DAT1                    GPMC_CSN3
+                (U1.C16)MMC0.D2    C16
+                                          MMC0_DAT2
+                (U1.C15)MMC0.D3    C15                                              R3
+                                          MMC0_DAT3                     GPMC_AD0
+                                                                                    R2
+                                                                        GPMC_AD1
+                                                                                    R1
+C   C           PWM0A              A1
+                                          MCASP0_ACLKX
+                                                                        GPMC_AD2
+                                                                        GPMC_AD3
+                                                                                    T3                                                  C
+                PRU0.1             A2                                               T2
+                                          MCASP0_FSX                    GPMC_AD4
+                PRU0.2             B2                                               T1
+                                          MCASP0_AXR0                   GPMC_AD5
+                PRU0.3             B1                                               P4
+                                          MCASP0_AHCLKR                 GPMC_AD6
+                PRU0.4             A3                                               R4
+                                          MCASP0_ACLKR                  GPMC_AD7
+                PRU0.5             B3
+                                          MCASP0_FSR
+                PRU0.6             C3                                               T4
+                                          MCASP0_AXR1                    GPMC_AD8
+                PRU0.7             C4                                               P5     GPIO23
+                                          MCASP0_AHCLKX                  GPMC_AD9
+                                                                                    R5     GPIO26
+                                                                        GPMC_AD10
+                                                                                    T5      GPIO27
+                                                                        GPMC_AD11
+                SPI1.CS            A4                                               P6      GPIO48
+                                          XDMA_EVENT_INTR0              GPMC_AD12
+                GPIO20             B4                                               R6     GPIO45
+                                          XDMA_EVENT_INTR1              GPMC_AD13
+                SPI1.CLK           C5                                               T6      GPIO46
+                                          ECAP0_IN_PWM0_OUT             GPMC_AD14
+                                                                                    P7      GPIO47
+                                                                        GPMC_AD15
+                                                                                    M1
+                                                                    GPMC_ADVN_ALE                                 WP
+                                                                                    N3    (U1.M2)EEPROM.WP
+D   D                                                               GPMC_BEN0_CLE
+                                                                                    N2                                                  D
+                                                                        GPMC_WEN
+                                                                                    N1
+                                                                     GPMC_OEN_REN
+
+
+                                         OSD3358-512M-BSM
+
+
+
+
+                                                                                                                       OSD3358 SiP
+                                                                                                                        Peripheral
+                                                                                                                         Signals
+E   E                                                                                TITLE:        PocketBeagle                         E
+
+                                                                                     Document Number:                            REV:
+
+                                                                                     Date: 9/19/17 8:57 PM             Sheet:   1/1
+

@@ -1,0 +1,1872 @@
+{
+  "title": "JIG wave five communication storage RTC breakouts",
+  "checked_date": "2026-10-06",
+  "records": [
+    {
+      "id": "adafruit-746",
+      "manufacturer": "Adafruit",
+      "sku": "746",
+      "name": "Adafruit Ultimate GPS Breakout PA1616S",
+      "aliases": [
+        "746",
+        "Ultimate GPS Breakout PA1616S"
+      ],
+      "kind": "gps",
+      "source": "https://www.adafruit.com/product/746",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 9,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X09_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 22.86,
+              "y_mm": 2.032,
+              "net": "1PPS"
+            },
+            {
+              "pad": "2",
+              "x_mm": 20.32,
+              "y_mm": 2.032,
+              "net": "VIN"
+            },
+            {
+              "pad": "3",
+              "x_mm": 17.78,
+              "y_mm": 2.032,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 2.032,
+              "net": "RX"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 2.032,
+              "net": "TX"
+            },
+            {
+              "pad": "6",
+              "x_mm": 10.16,
+              "y_mm": 2.032,
+              "net": "FIX"
+            },
+            {
+              "pad": "7",
+              "x_mm": 7.62,
+              "y_mm": 2.032,
+              "net": "VBACKUP"
+            },
+            {
+              "pad": "8",
+              "x_mm": 5.08,
+              "y_mm": 2.032,
+              "net": "ENABLE"
+            },
+            {
+              "pad": "9",
+              "x_mm": 2.54,
+              "y_mm": 2.032,
+              "net": "3.3V"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-Ultimate-GPS/blob/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "B1",
+          "kind": "CR1220_coin_cell_holder",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "battery_holder",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Battery holder; coin cell not included. Pitch not a pin-header pitch.",
+          "evidence": "https://github.com/adafruit/Adafruit-Ultimate-GPS/blob/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd"
+        },
+        {
+          "id": "U$20",
+          "kind": "U_FL_RF_connector",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": "coax_board_connector",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "RF mating connector; not a 2.54 mm header. Exact contact geometry not qualified.",
+          "evidence": "https://github.com/adafruit/Adafruit-Ultimate-GPS/blob/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd"
+        }
+      ],
+      "total_header_contacts": 9,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-Ultimate-GPS/blob/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd",
+        "cad_commit": "70430c1240b49c1e054f1edee84ad0b5ec8ebe56",
+        "cad_file": "Adafruit-Ultimate-GPS/Adafruit Ultimate GPS.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/746-17.jpg",
+        "product_image_file": "746-17.jpg",
+        "product_image_sha256": "88e09e0a8f9a3cee799abd12d00797a55978ec9d84cac0eb8a2e34a10fefcc96",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts.",
+        "Current product uses PA1616S; CAD sensor package label retains older FGPMMOPA6H name. Nine-contact edge geometry agrees with current product photo. Coin-cell holder pre-soldered from 2023-11-22."
+      ]
+    },
+    {
+      "id": "adafruit-254",
+      "manufacturer": "Adafruit",
+      "sku": "254",
+      "name": "Adafruit MicroSD Card Breakout Board+",
+      "aliases": [
+        "254",
+        "MicroSD Card Breakout Board+"
+      ],
+      "kind": "storage",
+      "source": "https://www.adafruit.com/product/254",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X08-BIG",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 30.48,
+              "y_mm": 3.683,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 30.48,
+              "y_mm": 6.223,
+              "net": "+3V3"
+            },
+            {
+              "pad": "3",
+              "x_mm": 30.48,
+              "y_mm": 8.763,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 30.48,
+              "y_mm": 11.303,
+              "net": "CLK"
+            },
+            {
+              "pad": "5",
+              "x_mm": 30.48,
+              "y_mm": 13.843,
+              "net": "DO"
+            },
+            {
+              "pad": "6",
+              "x_mm": 30.48,
+              "y_mm": 16.383,
+              "net": "DI"
+            },
+            {
+              "pad": "7",
+              "x_mm": 30.48,
+              "y_mm": 18.923,
+              "net": "CS"
+            },
+            {
+              "pad": "8",
+              "x_mm": 30.48,
+              "y_mm": 21.463,
+              "net": "CD"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/MicroSD-breakout-board/blob/ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c/microsd.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "kind": "microSD_card_socket",
+          "pin_count": 8,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "card_socket",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Eight card contacts; detect/shell mounting pads excluded. Connector pitch not qualified here.",
+          "evidence": "https://github.com/adafruit/MicroSD-breakout-board/blob/ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c/microsd.brd"
+        }
+      ],
+      "total_header_contacts": 8,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/MicroSD-breakout-board/blob/ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c/microsd.brd",
+        "cad_commit": "ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c",
+        "cad_file": "MicroSD-breakout-board/microsd.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/254-06.jpg",
+        "product_image_file": "254-06.jpg",
+        "product_image_sha256": "dacba43287be9f08031928da65887ca4cb884fcfe19c7d71c08c22a97e37a593",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-3013",
+      "manufacturer": "Adafruit",
+      "sku": "3013",
+      "name": "Adafruit DS3231 Precision RTC Breakout",
+      "aliases": [
+        "3013",
+        "DS3231 Precision RTC Breakout"
+      ],
+      "kind": "rtc",
+      "source": "https://www.adafruit.com/product/3013",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X08_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "2",
+              "x_mm": 5.08,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "VBAT"
+            },
+            {
+              "pad": "6",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "32KHZ"
+            },
+            {
+              "pad": "7",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "SQW"
+            },
+            {
+              "pad": "8",
+              "x_mm": 20.32,
+              "y_mm": 2.54,
+              "net": "!RTC_RST"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20RTC%20Breakout.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "B1",
+          "kind": "CR1220_coin_cell_holder",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "battery_holder",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Battery holder; coin cell not included. Pitch not a pin-header pitch.",
+          "evidence": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20RTC%20Breakout.brd"
+        }
+      ],
+      "total_header_contacts": 8,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20RTC%20Breakout.brd",
+        "cad_commit": "1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1",
+        "cad_file": "Adafruit-DS3231-Precision-RTC-Breakout-PCB/Adafruit DS3231 RTC Breakout.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/3013-06.jpg",
+        "product_image_file": "3013-06.jpg",
+        "product_image_sha256": "1bae585a32785ec2866fcb9c9a566f6744d8f41c0814863b0541dbe3f284bee2",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-3295",
+      "manufacturer": "Adafruit",
+      "sku": "3295",
+      "name": "Adafruit PCF8523 Real Time Clock Assembled Breakout",
+      "aliases": [
+        "3295",
+        "PCF8523 Real Time Clock Assembled Breakout"
+      ],
+      "kind": "rtc",
+      "source": "https://www.adafruit.com/product/3295",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X05_ROUND_76",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SQW"
+            },
+            {
+              "pad": "2",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "3",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "5",
+              "x_mm": 3.81,
+              "y_mm": 2.54,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-PCF8523-RTC-Breakout-PCB/blob/4ec7e14d667a2d075430da0980c35c4f049e860b/Adafruit%20PCF8523%20RTC%20HVSON.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "B1",
+          "kind": "CR1220_coin_cell_holder",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "battery_holder",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Battery holder; coin cell not included. Pitch not a pin-header pitch.",
+          "evidence": "https://github.com/adafruit/Adafruit-PCF8523-RTC-Breakout-PCB/blob/4ec7e14d667a2d075430da0980c35c4f049e860b/Adafruit%20PCF8523%20RTC%20HVSON.brd"
+        }
+      ],
+      "total_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-PCF8523-RTC-Breakout-PCB/blob/4ec7e14d667a2d075430da0980c35c4f049e860b/Adafruit%20PCF8523%20RTC%20HVSON.brd",
+        "cad_commit": "4ec7e14d667a2d075430da0980c35c4f049e860b",
+        "cad_file": "Adafruit-PCF8523-RTC-Breakout-PCB/Adafruit PCF8523 RTC HVSON.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/3295-10.jpg",
+        "product_image_file": "3295-10.jpg",
+        "product_image_sha256": "4f2b41913f79ab0c650b879e297d97309d3baeda79e0a981592ce6d4e33710f4",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts.",
+        "HVSON file selected to match photograph. Manufacturer also supplies SOIC-8 variant under this SKU; both CAD files have five-contact JP2 at 2.54 mm. No assumption of component clearance equivalence."
+      ]
+    },
+    {
+      "id": "adafruit-3296",
+      "manufacturer": "Adafruit",
+      "sku": "3296",
+      "name": "Adafruit DS1307 Real Time Clock Assembled Breakout",
+      "aliases": [
+        "3296",
+        "DS1307 Real Time Clock Assembled Breakout"
+      ],
+      "kind": "rtc",
+      "source": "https://www.adafruit.com/product/3296",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X05_ROUND_76",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SQW"
+            },
+            {
+              "pad": "2",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "3",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "5",
+              "x_mm": 3.81,
+              "y_mm": 2.54,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/DS1307-breakout-board/blob/22f84c8b77cacd22bf1296fa9f996f89bf646ae6/DS1307%20Rev%20B.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "B1",
+          "kind": "CR1220_coin_cell_holder",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "battery_holder",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Battery holder; coin cell not included. Pitch not a pin-header pitch.",
+          "evidence": "https://github.com/adafruit/DS1307-breakout-board/blob/22f84c8b77cacd22bf1296fa9f996f89bf646ae6/DS1307%20Rev%20B.brd"
+        }
+      ],
+      "total_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/DS1307-breakout-board/blob/22f84c8b77cacd22bf1296fa9f996f89bf646ae6/DS1307%20Rev%20B.brd",
+        "cad_commit": "22f84c8b77cacd22bf1296fa9f996f89bf646ae6",
+        "cad_file": "DS1307-breakout-board/DS1307 Rev B.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/3296-07.jpg",
+        "product_image_file": "3296-07.jpg",
+        "product_image_sha256": "35d6b1f1c97793938927cd83251efbf1cb238d89b24ae1e83a0c977b967f3076",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-5188",
+      "manufacturer": "Adafruit",
+      "sku": "5188",
+      "name": "Adafruit DS3231 Precision RTC STEMMA QT",
+      "aliases": [
+        "5188",
+        "DS3231 Precision RTC STEMMA QT"
+      ],
+      "kind": "rtc",
+      "source": "https://www.adafruit.com/product/5188",
+      "revision": "STEMMA QT exact SKU",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X08_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 3.81,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "VBAT"
+            },
+            {
+              "pad": "6",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "32KHZ"
+            },
+            {
+              "pad": "7",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "SQW"
+            },
+            {
+              "pad": "8",
+              "x_mm": 21.59,
+              "y_mm": 2.54,
+              "net": "!RTC_RST"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "B1",
+          "kind": "CR1220_coin_cell_holder",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "battery_holder",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Battery holder; coin cell not included. Pitch not a pin-header pitch.",
+          "evidence": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Four mating electrical contacts; mechanical solder anchors excluded.",
+          "evidence": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Four mating electrical contacts; mechanical solder anchors excluded.",
+          "evidence": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_header_contacts": 8,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/blob/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd",
+        "cad_commit": "1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1",
+        "cad_file": "Adafruit-DS3231-Precision-RTC-Breakout-PCB/Adafruit DS3231 STEMMA QT.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/5188-10.jpg",
+        "product_image_file": "5188-10.jpg",
+        "product_image_sha256": "e28d46be464da3d214108768d094d230bc79bcdbce3b8c73a5646bad52aedbe6",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-5708",
+      "manufacturer": "Adafruit",
+      "sku": "5708",
+      "name": "Adafruit CAN Pal TJA1051T/3 CAN Bus Transceiver",
+      "aliases": [
+        "5708",
+        "CAN Pal TJA1051T/3 CAN Bus Transceiver"
+      ],
+      "kind": "can_transceiver",
+      "source": "https://www.adafruit.com/product/5708",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X07_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "CAN_L"
+            },
+            {
+              "pad": "2",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "CAN_H"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "CAN1_S"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "CAN1_TX"
+            },
+            {
+              "pad": "5",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "CAN1_RX"
+            },
+            {
+              "pad": "6",
+              "x_mm": 5.08,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "7",
+              "x_mm": 2.54,
+              "y_mm": 2.54,
+              "net": "VCC"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-CAN-Pal-PCB/blob/56618b3a53162ce48872514be044eab033ed33ef/Adafruit%20CAN%20Pal%20Breakout.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X4",
+          "kind": "screw_terminal_block",
+          "pin_count": 3,
+          "pitch_mm": 3.5,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "CAN-H/CAN-L/GND terminal pre-soldered from 2024-03-20. Older stock may differ.",
+          "evidence": "https://github.com/adafruit/Adafruit-CAN-Pal-PCB/blob/56618b3a53162ce48872514be044eab033ed33ef/Adafruit%20CAN%20Pal%20Breakout.brd"
+        }
+      ],
+      "total_header_contacts": 7,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-CAN-Pal-PCB/blob/56618b3a53162ce48872514be044eab033ed33ef/Adafruit%20CAN%20Pal%20Breakout.brd",
+        "cad_commit": "56618b3a53162ce48872514be044eab033ed33ef",
+        "cad_file": "Adafruit-CAN-Pal-PCB/Adafruit CAN Pal Breakout.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/5708-06.jpg",
+        "product_image_file": "5708-06.jpg",
+        "product_image_sha256": "55741dd16c2feafb4291e78e629eeacf68b9b8e79ca8d3cd1545775cd3821a97",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-4471",
+      "manufacturer": "Adafruit",
+      "sku": "4471",
+      "name": "Adafruit MCP2221A USB to GPIO ADC I2C Breakout",
+      "aliases": [
+        "4471",
+        "MCP2221A USB to GPIO ADC I2C Breakout"
+      ],
+      "kind": "usb_io",
+      "source": "https://www.adafruit.com/product/4471",
+      "revision": "USB-C/STEMMA QT revision",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 15.24,
+              "net": "RX"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 15.24,
+              "net": "TX"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 15.24,
+              "net": "GP3"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 15.24,
+              "net": "GP2"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 15.24,
+              "net": "GP1"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 15.24,
+              "net": "GP0"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP2221-PCB/blob/53e780f92007ff5cd0de8680872af6d316c64847/Adafruit%20MCP2221.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "+5V"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "+3V3"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "!RST"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "SDA"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP2221-PCB/blob/53e780f92007ff5cd0de8680872af6d316c64847/Adafruit%20MCP2221.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X6",
+          "kind": "USB_C_receptacle",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": "female",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "USB-C port; exact mating-contact count/pitch not verified here. PCB solder-pad count is not connector contact count.",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP2221-PCB/blob/53e780f92007ff5cd0de8680872af6d316c64847/Adafruit%20MCP2221.brd"
+        },
+        {
+          "id": "CONN1",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Four mating electrical contacts; mechanical solder anchors excluded.",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP2221-PCB/blob/53e780f92007ff5cd0de8680872af6d316c64847/Adafruit%20MCP2221.brd"
+        }
+      ],
+      "total_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-MCP2221-PCB/blob/53e780f92007ff5cd0de8680872af6d316c64847/Adafruit%20MCP2221.brd",
+        "cad_commit": "53e780f92007ff5cd0de8680872af6d316c64847",
+        "cad_file": "Adafruit-MCP2221-PCB/Adafruit MCP2221.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/4471-02.jpg",
+        "product_image_file": "4471-02.jpg",
+        "product_image_sha256": "1d3f00330d23d0fc78528a0ce0bf991a7d2d00b0c846dc78f8de0f08dfa185f9",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-2264",
+      "manufacturer": "Adafruit",
+      "sku": "2264",
+      "name": "Adafruit FT232H USB-C GPIO SPI I2C Breakout",
+      "aliases": [
+        "2264",
+        "FT232H USB-C GPIO SPI I2C Breakout"
+      ],
+      "kind": "usb_io",
+      "source": "https://www.adafruit.com/product/2264",
+      "revision": "USB-C/STEMMA QT revision",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 11,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X11_ROUND",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 1.27,
+              "net": "+3V3"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "+5V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "D0/SCL/SCK"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "D1/SDA/MOSI"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 1.27,
+              "net": "D2/SDA/MISO"
+            },
+            {
+              "pad": "7",
+              "x_mm": 21.59,
+              "y_mm": 1.27,
+              "net": "D3"
+            },
+            {
+              "pad": "8",
+              "x_mm": 24.13,
+              "y_mm": 1.27,
+              "net": "D4"
+            },
+            {
+              "pad": "9",
+              "x_mm": 26.67,
+              "y_mm": 1.27,
+              "net": "D5"
+            },
+            {
+              "pad": "10",
+              "x_mm": 29.21,
+              "y_mm": 1.27,
+              "net": "D6"
+            },
+            {
+              "pad": "11",
+              "x_mm": 31.75,
+              "y_mm": 1.27,
+              "net": "D7"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-FT232H-Breakout-PCB/blob/78919715d58046e883cc4fe47f90c6634582adf7/Adafruit%20FT232H.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 11,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X11_ROUND",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 31.75,
+              "y_mm": 21.59,
+              "net": "C0"
+            },
+            {
+              "pad": "2",
+              "x_mm": 29.21,
+              "y_mm": 21.59,
+              "net": "C1"
+            },
+            {
+              "pad": "3",
+              "x_mm": 26.67,
+              "y_mm": 21.59,
+              "net": "C2"
+            },
+            {
+              "pad": "4",
+              "x_mm": 24.13,
+              "y_mm": 21.59,
+              "net": "C3"
+            },
+            {
+              "pad": "5",
+              "x_mm": 21.59,
+              "y_mm": 21.59,
+              "net": "C4"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 21.59,
+              "net": "C5"
+            },
+            {
+              "pad": "7",
+              "x_mm": 16.51,
+              "y_mm": 21.59,
+              "net": "C6"
+            },
+            {
+              "pad": "8",
+              "x_mm": 13.97,
+              "y_mm": 21.59,
+              "net": "C7"
+            },
+            {
+              "pad": "9",
+              "x_mm": 11.43,
+              "y_mm": 21.59,
+              "net": "C8"
+            },
+            {
+              "pad": "10",
+              "x_mm": 8.89,
+              "y_mm": 21.59,
+              "net": "C9"
+            },
+            {
+              "pad": "11",
+              "x_mm": 6.35,
+              "y_mm": 21.59,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-FT232H-Breakout-PCB/blob/78919715d58046e883cc4fe47f90c6634582adf7/Adafruit%20FT232H.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X6",
+          "kind": "USB_C_receptacle",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": "female",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "USB-C port; exact mating-contact count/pitch not verified here. PCB solder-pad count is not connector contact count.",
+          "evidence": "https://github.com/adafruit/Adafruit-FT232H-Breakout-PCB/blob/78919715d58046e883cc4fe47f90c6634582adf7/Adafruit%20FT232H.brd"
+        },
+        {
+          "id": "CONN1",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "auxiliary_connector",
+          "notes": "Four mating electrical contacts; mechanical solder anchors excluded.",
+          "evidence": "https://github.com/adafruit/Adafruit-FT232H-Breakout-PCB/blob/78919715d58046e883cc4fe47f90c6634582adf7/Adafruit%20FT232H.brd"
+        }
+      ],
+      "total_header_contacts": 22,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-FT232H-Breakout-PCB/blob/78919715d58046e883cc4fe47f90c6634582adf7/Adafruit%20FT232H.brd",
+        "cad_commit": "78919715d58046e883cc4fe47f90c6634582adf7",
+        "cad_file": "Adafruit-FT232H-Breakout-PCB/Adafruit FT232H.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/2264-16.jpg",
+        "product_image_file": "2264-16.jpg",
+        "product_image_sha256": "a305125b981cf6834977cf9b137e74544f814080ca98c2b495aa3350a0908294",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts."
+      ]
+    },
+    {
+      "id": "adafruit-364",
+      "manufacturer": "Adafruit",
+      "sku": "364",
+      "name": "Adafruit PN532 NFC RFID Controller Breakout v1.6",
+      "aliases": [
+        "364",
+        "PN532 NFC RFID Controller Breakout v1.6"
+      ],
+      "kind": "nfc",
+      "source": "https://www.adafruit.com/product/364",
+      "revision": "v1.6",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "configuration_jumper",
+          "package": "JUMPER3",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 88.684,
+              "y_mm": 8.51,
+              "net": "VDD"
+            },
+            {
+              "pad": "2",
+              "x_mm": 91.224,
+              "y_mm": 8.51,
+              "net": "SEL0"
+            },
+            {
+              "pad": "3",
+              "x_mm": 93.764,
+              "y_mm": 8.51,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/d614276a3168bd402d0729daa7bd94c406de7beb/Adafruit%20PN532_Breakout_v1.6.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "configuration_jumper",
+          "package": "JUMPER3",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 97.794,
+              "y_mm": 8.51,
+              "net": "VDD"
+            },
+            {
+              "pad": "2",
+              "x_mm": 100.334,
+              "y_mm": 8.51,
+              "net": "SEL1"
+            },
+            {
+              "pad": "3",
+              "x_mm": 102.874,
+              "y_mm": 8.51,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/d614276a3168bd402d0729daa7bd94c406de7beb/Adafruit%20PN532_Breakout_v1.6.brd"
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X12_ROUND",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 109.614,
+              "y_mm": 46.866,
+              "net": "AUX1"
+            },
+            {
+              "pad": "2",
+              "x_mm": 107.074,
+              "y_mm": 46.866,
+              "net": "AUX2"
+            },
+            {
+              "pad": "3",
+              "x_mm": 104.534,
+              "y_mm": 46.866,
+              "net": "P30/UART_RX"
+            },
+            {
+              "pad": "4",
+              "x_mm": 101.994,
+              "y_mm": 46.866,
+              "net": "P31"
+            },
+            {
+              "pad": "5",
+              "x_mm": 99.454,
+              "y_mm": 46.866,
+              "net": "P32"
+            },
+            {
+              "pad": "6",
+              "x_mm": 96.914,
+              "y_mm": 46.866,
+              "net": "P33"
+            },
+            {
+              "pad": "7",
+              "x_mm": 94.374,
+              "y_mm": 46.866,
+              "net": "P34/SIC_CLK"
+            },
+            {
+              "pad": "8",
+              "x_mm": 91.834,
+              "y_mm": 46.866,
+              "net": "P35"
+            },
+            {
+              "pad": "9",
+              "x_mm": 89.294,
+              "y_mm": 46.866,
+              "net": "SIGOUT"
+            },
+            {
+              "pad": "10",
+              "x_mm": 86.754,
+              "y_mm": 46.866,
+              "net": "SIGIN"
+            },
+            {
+              "pad": "11",
+              "x_mm": 84.214,
+              "y_mm": 46.866,
+              "net": "RSTPD_N"
+            },
+            {
+              "pad": "12",
+              "x_mm": 81.674,
+              "y_mm": 46.866,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/d614276a3168bd402d0729daa7bd94c406de7beb/Adafruit%20PN532_Breakout_v1.6.brd"
+        },
+        {
+          "id": "CN1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X06_ROUND",
+          "cad_refs": [
+            "CN1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 71.844,
+              "y_mm": 4.0,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 74.384,
+              "y_mm": 4.0,
+              "net": null
+            },
+            {
+              "pad": "3",
+              "x_mm": 76.924,
+              "y_mm": 4.0,
+              "net": "+5.0V"
+            },
+            {
+              "pad": "4",
+              "x_mm": 79.464,
+              "y_mm": 4.0,
+              "net": "NSS/SCL/RX"
+            },
+            {
+              "pad": "5",
+              "x_mm": 82.004,
+              "y_mm": 4.0,
+              "net": "MOSI/SDA/TX"
+            },
+            {
+              "pad": "6",
+              "x_mm": 84.544,
+              "y_mm": 4.0,
+              "net": null
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/d614276a3168bd402d0729daa7bd94c406de7beb/Adafruit%20PN532_Breakout_v1.6.brd"
+        },
+        {
+          "id": "side_row_JP4_JP5",
+          "pin_count": 9,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "nonuniform_edge_row_requires_review",
+          "package": "8-position row plus adjacent singleton",
+          "cad_refs": [
+            "JP4",
+            "JP5"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 116.534,
+              "y_mm": 13.208,
+              "net": "+5.0V"
+            },
+            {
+              "pad": "8",
+              "x_mm": 116.534,
+              "y_mm": 15.78,
+              "net": "GND"
+            },
+            {
+              "pad": "7",
+              "x_mm": 116.534,
+              "y_mm": 18.32,
+              "net": "IRQ"
+            },
+            {
+              "pad": "6",
+              "x_mm": 116.534,
+              "y_mm": 20.86,
+              "net": "RSTOUT_N"
+            },
+            {
+              "pad": "5",
+              "x_mm": 116.534,
+              "y_mm": 23.4,
+              "net": "NSS/SCL/RX"
+            },
+            {
+              "pad": "4",
+              "x_mm": 116.534,
+              "y_mm": 25.94,
+              "net": "MOSI/SDA/TX"
+            },
+            {
+              "pad": "3",
+              "x_mm": 116.534,
+              "y_mm": 28.48,
+              "net": "MISO"
+            },
+            {
+              "pad": "2",
+              "x_mm": 116.534,
+              "y_mm": 31.02,
+              "net": "SCK"
+            },
+            {
+              "pad": "1",
+              "x_mm": 116.534,
+              "y_mm": 33.56,
+              "net": "VDD"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/d614276a3168bd402d0729daa7bd94c406de7beb/Adafruit%20PN532_Breakout_v1.6.brd",
+          "nominal_pitch_mm": 2.54,
+          "adjacent_spacing_mm": [
+            2.572,
+            2.54,
+            2.54,
+            2.54,
+            2.54,
+            2.54,
+            2.54,
+            2.54
+          ],
+          "proposal_exclude": true,
+          "notes": "Published CAD spacing to added +5V pad is 2.572 mm; remaining seven intervals 2.54 mm. Preserve nine-contact physical row; do not propose verified uniform comb."
+        }
+      ],
+      "auxiliary_connectors": [],
+      "total_header_contacts": 33,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/d614276a3168bd402d0729daa7bd94c406de7beb/Adafruit%20PN532_Breakout_v1.6.brd",
+        "cad_commit": "d614276a3168bd402d0729daa7bd94c406de7beb",
+        "cad_file": "Adafruit-PN532-RFID-NFC-Breakout/Adafruit PN532_Breakout_v1.6.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/364-08.jpg",
+        "product_image_file": "364-08.jpg",
+        "product_image_sha256": "5bc79062a04a5f0adfc21615f269f8c06bb608c0f336580b3299bce350f4e388",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts.",
+        "SEL0/SEL1 are separate three-position configuration jumper groups; side 9-contact row has one non-nominal CAD interval and is excluded from uniform-comb proposals."
+      ]
+    },
+    {
+      "id": "adafruit-3072",
+      "manufacturer": "Adafruit",
+      "sku": "3072",
+      "name": "Adafruit RFM95W LoRa Radio Breakout 868/915 MHz",
+      "aliases": [
+        "3072",
+        "RFM95W LoRa Radio Breakout 868/915 MHz"
+      ],
+      "kind": "radio",
+      "source": "https://www.adafruit.com/product/3072",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 9,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X09_ROUND_70",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 2.54,
+              "net": "VIN"
+            },
+            {
+              "pad": "2",
+              "x_mm": 5.08,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "EN"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "DIO0"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "SCK_5V"
+            },
+            {
+              "pad": "6",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "MISO_3V"
+            },
+            {
+              "pad": "7",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "MOSI_5V"
+            },
+            {
+              "pad": "8",
+              "x_mm": 20.32,
+              "y_mm": 2.54,
+              "net": "CS_5V"
+            },
+            {
+              "pad": "9",
+              "x_mm": 22.86,
+              "y_mm": 2.54,
+              "net": "RST_5V"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X05_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 27.94,
+              "net": "DIO1"
+            },
+            {
+              "pad": "2",
+              "x_mm": 5.08,
+              "y_mm": 27.94,
+              "net": "DIO2"
+            },
+            {
+              "pad": "3",
+              "x_mm": 7.62,
+              "y_mm": 27.94,
+              "net": "DIO3"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 27.94,
+              "net": "DIO4"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 27.94,
+              "net": "DIO5"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "kind": "combined_SMA_U_FL_footprint",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": "none_bare_footprint",
+          "population": "unpopulated",
+          "role": "auxiliary_connector",
+          "notes": "Optional SMA edge-launch or u.FL connector sold separately; do not count multiple alternate footprints as fitted connectors.",
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "rf_antenna_pad",
+          "package": "1X01_ROUND",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 21.59,
+              "y_mm": 24.511,
+              "net": "N$1"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd",
+          "kind": "antenna_wire_pad"
+        }
+      ],
+      "total_header_contacts": 14,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd",
+        "cad_commit": "3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1",
+        "cad_file": "Adafruit-RFM-LoRa-Radio-Breakout-PCB/Adafruit RFM+LoRa Breakout.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/3072-08.jpg",
+        "product_image_file": "3072-08.jpg",
+        "product_image_sha256": "0a989d6cc116c401ed9e57385206dbe8a7df9a75f70acf87f985467425540c5b",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts.",
+        "Manufacturer explicitly shares this carrier PCB across RFM69/RFM9x variants. Radio module differences do not add exposed breakout header positions. Antenna wire pad and alternate RF connector footprint remain auxiliary; no RF/antenna or transmit-current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-3070",
+      "manufacturer": "Adafruit",
+      "sku": "3070",
+      "name": "Adafruit RFM69HCW Radio Breakout 868/915 MHz",
+      "aliases": [
+        "3070",
+        "RFM69HCW Radio Breakout 868/915 MHz"
+      ],
+      "kind": "radio",
+      "source": "https://www.adafruit.com/product/3070",
+      "revision": "Exact manufacturer CAD commit and product photograph below",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 9,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X09_ROUND_70",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 2.54,
+              "net": "VIN"
+            },
+            {
+              "pad": "2",
+              "x_mm": 5.08,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "EN"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "DIO0"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "SCK_5V"
+            },
+            {
+              "pad": "6",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "MISO_3V"
+            },
+            {
+              "pad": "7",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "MOSI_5V"
+            },
+            {
+              "pad": "8",
+              "x_mm": 20.32,
+              "y_mm": 2.54,
+              "net": "CS_5V"
+            },
+            {
+              "pad": "9",
+              "x_mm": 22.86,
+              "y_mm": 2.54,
+              "net": "RST_5V"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X05_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 27.94,
+              "net": "DIO1"
+            },
+            {
+              "pad": "2",
+              "x_mm": 5.08,
+              "y_mm": 27.94,
+              "net": "DIO2"
+            },
+            {
+              "pad": "3",
+              "x_mm": 7.62,
+              "y_mm": 27.94,
+              "net": "DIO3"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 27.94,
+              "net": "DIO4"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 27.94,
+              "net": "DIO5"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "kind": "combined_SMA_U_FL_footprint",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "gender": "none_bare_footprint",
+          "population": "unpopulated",
+          "role": "auxiliary_connector",
+          "notes": "Optional SMA edge-launch or u.FL connector sold separately; do not count multiple alternate footprints as fitted connectors.",
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "rf_antenna_pad",
+          "package": "1X01_ROUND",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 21.59,
+              "y_mm": 24.511,
+              "net": "N$1"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd",
+          "kind": "antenna_wire_pad"
+        }
+      ],
+      "total_header_contacts": 14,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/adafruit/Adafruit-RFM-LoRa-Radio-Breakout-PCB/blob/3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1/Adafruit%20RFM%2BLoRa%20Breakout.brd",
+        "cad_commit": "3ad6bed6e1b407afa7119ae548b5c2f1b107c6b1",
+        "cad_file": "Adafruit-RFM-LoRa-Radio-Breakout-PCB/Adafruit RFM+LoRa Breakout.brd",
+        "product_image_url": "https://cdn-shop.adafruit.com/970x728/3070-08.jpg",
+        "product_image_file": "3070-08.jpg",
+        "product_image_sha256": "33a88f3291da435999cb0137fcf90a13d560ac3a7fe15578a1a8c04ee2f0eb8f",
+        "method": "Manufacturer Eagle PTH contact count/positions plus exact product photo inspection for assembly. Auxiliary USB/RF/card/battery interfaces separated.",
+        "population_source": "Official current product description and direct inspection of the saved manufacturer photograph."
+      },
+      "caveats": [
+        "Geometry only: signal integrity, current capacity, electrical compatibility, retention and actual JIG fit are unqualified.",
+        "Exact manufacturer SKU and stated/pinned revision only; older boards and clones may differ.",
+        "Component solder pads, ground anchors, mounting holes and radio-module castellations are not board-edge header contacts.",
+        "Manufacturer explicitly shares this carrier PCB across RFM69/RFM9x variants. Radio module differences do not add exposed breakout header positions. Antenna wire pad and alternate RF connector footprint remain auxiliary; no RF/antenna or transmit-current qualification."
+      ]
+    }
+  ]
+}

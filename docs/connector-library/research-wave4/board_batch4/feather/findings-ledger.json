@@ -1,0 +1,74 @@
+[
+  {
+    "id": "adafruit-5000",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5300",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5345",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5323",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5483",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5691",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5400",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3405",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2821",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5933",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3505",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3382",
+    "claim": "Full physical rows 6+10+8+8 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+    "rank": 1
+  }
+]

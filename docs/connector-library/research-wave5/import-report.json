@@ -1,0 +1,108 @@
+{
+  "batch_id": "wave5-2026-10-06",
+  "added_ids": [
+    "raspberry-pi-zero",
+    "raspberry-pi-zero-w",
+    "raspberry-pi-zero-2-w",
+    "raspberry-pi-3b",
+    "raspberry-pi-3b-plus",
+    "raspberry-pi-4b",
+    "raspberry-pi-5",
+    "raspberry-pi-2b",
+    "raspberry-pi-1b-plus",
+    "beagleboard-beaglebone-black",
+    "seeed-beaglebone-green",
+    "adafruit-4000",
+    "adafruit-5600",
+    "adafruit-4950",
+    "adafruit-4064",
+    "adafruit-2466",
+    "adafruit-2488",
+    "adafruit-2590",
+    "adafruit-4759",
+    "adafruit-3027",
+    "adafruit-3056",
+    "adafruit-5889",
+    "adafruit-5996",
+    "adafruit-5960",
+    "adafruit-746",
+    "adafruit-254",
+    "adafruit-3013",
+    "adafruit-3295",
+    "adafruit-3296",
+    "adafruit-5188",
+    "adafruit-5708",
+    "adafruit-4471",
+    "adafruit-2264",
+    "adafruit-364",
+    "adafruit-3072",
+    "adafruit-3070"
+  ],
+  "identical_replay_ids": [],
+  "existing_ids_preserved": 254,
+  "catalog_records": 290,
+  "verified_source_files": 68,
+  "ambiguous_labels": {
+    "esp32-c6-devkitc-1": [
+      "espressif-esp32-c6-devkitc-1-v1-1",
+      "espressif-esp32-c6-devkitc-1-v1-2"
+    ],
+    "esp32-s3-devkitc-1": [
+      "esp32-s3-devkitc-1",
+      "espressif-esp32-s3-devkitc-1-v1-0",
+      "espressif-esp32-s3-devkitc-1-v1-1"
+    ],
+    "nano 33 iot": [
+      "arduino-nano",
+      "nano-33-iot"
+    ],
+    "nano esp32": [
+      "arduino-nano",
+      "nano-esp32"
+    ],
+    "nano every": [
+      "arduino-nano",
+      "nano-every"
+    ],
+    "pico 2": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-2"
+    ],
+    "pico h": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-h"
+    ],
+    "pico w": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-w"
+    ],
+    "pico wh": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-wh"
+    ],
+    "vl53l1x": [
+      "adafruit-3967",
+      "pololu-3415"
+    ],
+    "xiao esp32c3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c3"
+    ],
+    "xiao esp32c6": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c6"
+    ],
+    "xiao esp32s3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3"
+    ],
+    "xiao esp32s3 sense": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3-sense"
+    ]
+  },
+  "catalog_sha256": "0cacf5666b094183f2437c0d8e1792289efb95f39e83dacc78526a7e4fa88bd5",
+  "physical_validation": false,
+  "model_approval_modified": false,
+  "status": "validated_research_only"
+}

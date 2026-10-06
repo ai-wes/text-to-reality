@@ -1,0 +1,1021 @@
+{
+  "title": "JIG wave three Pololu sensor and driver carriers",
+  "checked_date": "2026-10-06",
+  "records": [
+    {
+      "id": "pololu-1182",
+      "manufacturer": "Pololu",
+      "sku": "1182",
+      "name": "A4988 Stepper Motor Driver Carrier",
+      "aliases": [
+        "A4988",
+        "1182"
+      ],
+      "kind": "stepper_driver",
+      "source": "https://www.pololu.com/product/1182",
+      "revision": "md09b (pictured)",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VMOT",
+            "GND",
+            "2B",
+            "2A",
+            "1A",
+            "1B",
+            "VDD",
+            "GND"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/1182",
+            "https://a.pololu-files.com/picture/0J10061.1200.jpg?28dcebcb0b7b778f9af83cdb52c0ef8a"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "EN",
+            "MS1",
+            "MS2",
+            "MS3",
+            "RST",
+            "SLP",
+            "STEP",
+            "DIR"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/1182",
+            "https://a.pololu-files.com/picture/0J10061.1200.jpg?28dcebcb0b7b778f9af83cdb52c0ef8a"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [
+        {
+          "id": "VREF_access",
+          "kind": "test_via",
+          "role": "test_point_not_header",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "population": "bare_test_via",
+          "notes": "Current-limit reference access via is separate from the two edge headers; not counted as a header row.",
+          "source": "https://www.pololu.com/product/1182"
+        }
+      ],
+      "total_254mm_header_contacts": 16,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J10061.1200.jpg?28dcebcb0b7b778f9af83cdb52c0ef8a",
+            "caption": "A4983/A4988 stepper motor driver carrier with dimensions.",
+            "local_file": "1182_0J10061.jpg",
+            "sha256": "c682b5f532bdd307d07deddfcf685480722bcac58893a2e8ca7e6baaeca33e1c"
+          }
+        ],
+        "product_snapshot": "pololu_1182.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-2133",
+      "manufacturer": "Pololu",
+      "sku": "2133",
+      "name": "DRV8825 Stepper Motor Driver Carrier, High Current",
+      "aliases": [
+        "DRV8825",
+        "2133"
+      ],
+      "kind": "stepper_driver",
+      "source": "https://www.pololu.com/product/2133",
+      "revision": "md20b (pictured)",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VMOT",
+            "GND",
+            "B2",
+            "B1",
+            "A1",
+            "A2",
+            "FLT",
+            "GND"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2133",
+            "https://a.pololu-files.com/picture/0J4231.1200.jpg?a77bba8d3abd5c978e377eb505a9dfba"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "EN",
+            "M0",
+            "M1",
+            "M2",
+            "RST",
+            "SLP",
+            "STEP",
+            "DIR"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2133",
+            "https://a.pololu-files.com/picture/0J4231.1200.jpg?a77bba8d3abd5c978e377eb505a9dfba"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [
+        {
+          "id": "VREF_access",
+          "kind": "test_via",
+          "role": "test_point_not_header",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "population": "bare_test_via",
+          "notes": "Current-limit reference access via is separate from the two edge headers; not counted as a header row.",
+          "source": "https://www.pololu.com/product/2133"
+        }
+      ],
+      "total_254mm_header_contacts": 16,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J4231.1200.jpg?a77bba8d3abd5c978e377eb505a9dfba",
+            "caption": "DRV8825 stepper motor driver carrier with dimensions.",
+            "local_file": "2133_0J4231.jpg",
+            "sha256": "77e5d47b97d550821af4839822f1abfddc045f1774ef6fc4fbbc178e987de753"
+          }
+        ],
+        "product_snapshot": "pololu_2133.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-2134",
+      "manufacturer": "Pololu",
+      "sku": "2134",
+      "name": "DRV8834 Low-Voltage Stepper Motor Driver Carrier",
+      "aliases": [
+        "DRV8834",
+        "2134"
+      ],
+      "kind": "stepper_driver",
+      "source": "https://www.pololu.com/product/2134",
+      "revision": "md22a (pictured)",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VMOT",
+            "GND",
+            "B2",
+            "B1",
+            "A1",
+            "A2",
+            "FLT",
+            "GND"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2134",
+            "https://a.pololu-files.com/picture/0J4347.1200.jpg?4d587f0a773969cc5c1d5316a4f91508"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "EN",
+            "M0",
+            "M1",
+            "CFG1",
+            "CFG2",
+            "SLP",
+            "STEP",
+            "DIR"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2134",
+            "https://a.pololu-files.com/picture/0J4347.1200.jpg?4d587f0a773969cc5c1d5316a4f91508"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [
+        {
+          "id": "VREF_access",
+          "kind": "test_via",
+          "role": "test_point_not_header",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "population": "bare_test_via",
+          "notes": "Current-limit reference access via is separate from the two edge headers; not counted as a header row.",
+          "source": "https://www.pololu.com/product/2134"
+        }
+      ],
+      "total_254mm_header_contacts": 16,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J4347.1200.jpg?4d587f0a773969cc5c1d5316a4f91508",
+            "caption": "DRV8834 low-voltage stepper motor driver carrier with dimensions.",
+            "local_file": "2134_0J4347.jpg",
+            "sha256": "3b8fc96ae01e552751620400726558320fa22f18f69ddce266aacfcb583d30e7"
+          }
+        ],
+        "product_snapshot": "pololu_2134.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-2135",
+      "manufacturer": "Pololu",
+      "sku": "2135",
+      "name": "DRV8835 Dual Motor Driver Carrier",
+      "aliases": [
+        "DRV8835",
+        "2135"
+      ],
+      "kind": "dual_dc_motor_driver",
+      "source": "https://www.pololu.com/product/2135",
+      "revision": "md18a (pictured)",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "GND",
+            "VIN",
+            "BOUT2",
+            "BOUT1",
+            "AOUT2",
+            "AOUT1",
+            "VM"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2135",
+            "https://a.pololu-files.com/picture/0J4055.1200.jpg?329b27f39fe705ef5e321d233ea3e7dc"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "GND",
+            "VCC",
+            "BIN2/BEN",
+            "BIN1/BPH",
+            "AIN2/AEN",
+            "AIN1/APH",
+            "MODE"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2135",
+            "https://a.pololu-files.com/picture/0J4055.1200.jpg?329b27f39fe705ef5e321d233ea3e7dc"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 14,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J4055.1200.jpg?329b27f39fe705ef5e321d233ea3e7dc",
+            "caption": "DRV8835 dual motor driver carrier, bottom view with dimensions.",
+            "local_file": "2135_0J4055.jpg",
+            "sha256": "2270d18c9dc1dd3140a58d4b0436799a6204d1d6128ae9b877bb84fd289fb9e4"
+          }
+        ],
+        "product_snapshot": "pololu_2135.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-2990",
+      "manufacturer": "Pololu",
+      "sku": "2990",
+      "name": "DRV8838 Single Brushed DC Motor Driver Carrier",
+      "aliases": [
+        "DRV8838",
+        "2990"
+      ],
+      "kind": "dc_motor_driver",
+      "source": "https://www.pololu.com/product/2990",
+      "revision": "md26a (pictured)",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "GND",
+            "VIN",
+            "OUT2",
+            "OUT1",
+            "VM"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2990",
+            "https://a.pololu-files.com/picture/0J5751.1200.jpg?99af3fba112cbef297645d73c7b3d8b4"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "GND",
+            "VCC",
+            "EN",
+            "PH",
+            "SLP"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2990",
+            "https://a.pololu-files.com/picture/0J5751.1200.jpg?99af3fba112cbef297645d73c7b3d8b4"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 10,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J5751.1200.jpg?99af3fba112cbef297645d73c7b3d8b4",
+            "caption": "DRV8838 Single Brushed DC Motor Driver Carrier, bottom view with dimensions.",
+            "local_file": "2990_0J5751.jpg",
+            "sha256": "f9a2681c0c87aa21baf50c074d3650350c85d66c31397f1e89c3d6e4de3d3865"
+          }
+        ],
+        "product_snapshot": "pololu_2990.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-4036",
+      "manufacturer": "Pololu",
+      "sku": "4036",
+      "name": "DRV8876 Single Brushed DC Motor Driver Carrier",
+      "aliases": [
+        "DRV8876",
+        "4036"
+      ],
+      "kind": "dc_motor_driver",
+      "source": "https://www.pololu.com/product/4036",
+      "revision": "md41a (pictured); DRV8876PWP SKU 4036, excludes QFN SKU",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VIN",
+            "GND",
+            "OUT1",
+            "OUT2",
+            "IMODE",
+            "FAULT",
+            "CS"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/4036",
+            "https://a.pololu-files.com/picture/0J11571.1200.jpg?61eab4d98030e2b46c79053588e773a2",
+            "https://a.pololu-files.com/picture/0J11574.1200.jpg?4590eb11b6cf255a83c6087d53c0aaf7"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VM",
+            "GND",
+            "EN/IN1",
+            "PH/IN2",
+            "PMODE",
+            "SLEEP",
+            "VREF"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/4036",
+            "https://a.pololu-files.com/picture/0J11571.1200.jpg?61eab4d98030e2b46c79053588e773a2",
+            "https://a.pololu-files.com/picture/0J11574.1200.jpg?4590eb11b6cf255a83c6087d53c0aaf7"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 14,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J11571.1200.jpg?61eab4d98030e2b46c79053588e773a2",
+            "caption": "DRV8874/DRV8876 Single Brushed DC Motor Driver Carrier, bottom view with dimensions.",
+            "local_file": "4036_0J11571.jpg",
+            "sha256": "db08df9aae254e34fe3a36c104febe7deaf35343d24316f26342539885bdb909"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J11574.1200.jpg?4590eb11b6cf255a83c6087d53c0aaf7",
+            "caption": "DRV8876 Single Brushed DC Motor Driver Carrier, top view with labeled pinout.",
+            "local_file": "4036_0J11574.jpg",
+            "sha256": "2e7602acf4e05530c252919abc5fdf776819e89c49203cb1b8a627ef1de9e85c"
+          }
+        ],
+        "product_snapshot": "pololu_4036.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-4038",
+      "manufacturer": "Pololu",
+      "sku": "4038",
+      "name": "DRV8256E Single Brushed DC Motor Driver Carrier",
+      "aliases": [
+        "DRV8256E",
+        "4038"
+      ],
+      "kind": "dc_motor_driver",
+      "source": "https://www.pololu.com/product/4038",
+      "revision": "md43a (pictured); E variant",
+      "headers": [
+        {
+          "id": "power_motor",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VIN",
+            "GND",
+            "OUT1",
+            "OUT2",
+            "VREF",
+            "GND"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/4038",
+            "https://a.pololu-files.com/picture/0J11305.1200.jpg?398f0ed99ce2a61b4bed16d49b011efa",
+            "https://a.pololu-files.com/picture/0J11387.1200.jpg?f6d636536852d28c5c2f1a8b71a1e60f"
+          ]
+        },
+        {
+          "id": "control",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VM",
+            "GND",
+            "EN",
+            "PH",
+            "FAULT",
+            "SLEEP"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/4038",
+            "https://a.pololu-files.com/picture/0J11305.1200.jpg?398f0ed99ce2a61b4bed16d49b011efa",
+            "https://a.pololu-files.com/picture/0J11387.1200.jpg?f6d636536852d28c5c2f1a8b71a1e60f"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [
+        {
+          "id": "T_pad",
+          "kind": "small_auxiliary_pad",
+          "role": "test_or_configuration_pad_not_main_header",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "population": "bare_pad",
+          "notes": "Small separately marked T pad visible on manufacturer bottom image. Function and mating geometry not qualified; do not model as another 2.54 mm row.",
+          "source": "https://a.pololu-files.com/picture/0J11305.1200.jpg?398f0ed99ce2a61b4bed16d49b011efa"
+        }
+      ],
+      "total_254mm_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J11305.1200.jpg?398f0ed99ce2a61b4bed16d49b011efa",
+            "caption": "DRV8256E/P Single Brushed DC Motor Driver Carrier, bottom view with dimensions.",
+            "local_file": "4038_0J11305.jpg",
+            "sha256": "013322ca85d310ac75b18dad2e48e490cd02e4d8ffda0405f2803b5e0bd33a5b"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J11387.1200.jpg?f6d636536852d28c5c2f1a8b71a1e60f",
+            "caption": "DRV8256E Single Brushed DC Motor Driver Carrier, top view with labeled pinout.",
+            "local_file": "4038_0J11387.jpg",
+            "sha256": "5fb17d794de7e79ffb16ea6c46e7230e8bfaf4edc823bdf6f3a73c789a5a653e"
+          }
+        ],
+        "product_snapshot": "pololu_4038.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "Motor/power pins are geometry records only. Driver current ratings do not qualify JIG contacts or permit motor-load current through an untested connection."
+      ]
+    },
+    {
+      "id": "pololu-3415",
+      "manufacturer": "Pololu",
+      "sku": "3415",
+      "name": "VL53L1X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 400cm Max",
+      "aliases": [
+        "VL53L1X",
+        "3415"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.pololu.com/product/3415",
+      "revision": "Exact SKU 3415; shared manufacturer dimension image names VL53L1X",
+      "headers": [
+        {
+          "id": "main",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VDD",
+            "VIN",
+            "GND",
+            "SDA",
+            "SCL",
+            "XSHUT",
+            "GPIO1"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/3415",
+            "https://a.pololu-files.com/picture/0J7225.1200.jpg?4cd3973ce1cd37dbec8077396a14f803",
+            "https://a.pololu-files.com/picture/0J8679.1200.jpg?6de17a8834c6292052b284d216fae2bf"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 7,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J7225.1200.jpg?4cd3973ce1cd37dbec8077396a14f803",
+            "caption": "VL53L0X/VL53L1X/VL53L3CX/VL53L4CD Time-of-Flight Distance Sensor Carrier, bottom view with dimensions.",
+            "local_file": "3415_0J7225.jpg",
+            "sha256": "49fe2ed748020d4e42d83b086fda17161f803916f72d77597eac46a85e402529"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J8679.1200.jpg?6de17a8834c6292052b284d216fae2bf",
+            "caption": "Pinout diagram of the VL53L1X Time-of-Flight Distance Sensor Carrier.",
+            "local_file": "3415_0J8679.jpg",
+            "sha256": "849004dbeff00b4f2d7dc86d3cba53fec88e00f58acd5729809d4cdc6ecc02e2"
+          }
+        ],
+        "product_snapshot": "pololu_3415.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts."
+      ]
+    },
+    {
+      "id": "pololu-2489",
+      "manufacturer": "Pololu",
+      "sku": "2489",
+      "name": "VL6180X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 60cm max",
+      "aliases": [
+        "VL6180X",
+        "2489"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.pololu.com/product/2489",
+      "revision": "irs09a (pictured)",
+      "headers": [
+        {
+          "id": "main",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VDD",
+            "VIN",
+            "GND",
+            "SDA",
+            "SCL",
+            "GPIO0/CE",
+            "GPIO1"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2489",
+            "https://a.pololu-files.com/picture/0J6785.1200.jpg?14550b59917a0ef70537b1d2d43c816e",
+            "https://a.pololu-files.com/picture/0J6786.1200.jpg?b64023d6f8b4b16894f49e99debbf8c9"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 7,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J6785.1200.jpg?14550b59917a0ef70537b1d2d43c816e",
+            "caption": "VL6180X Time-of-Flight Distance Sensor Carrier, bottom view with dimensions.",
+            "local_file": "2489_0J6785.jpg",
+            "sha256": "8cf22a3878774f464a776779357544b182c8c180eacb570df3bff96dd390e3f8"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J6786.1200.jpg?b64023d6f8b4b16894f49e99debbf8c9",
+            "caption": "Pinout diagram of the VL6180X Time-of-Flight Distance Sensor Carrier.",
+            "local_file": "2489_0J6786.jpg",
+            "sha256": "078f8447095f66e119791ae408e8ec58c2c6e3776640516d103d816b12424c86"
+          }
+        ],
+        "product_snapshot": "pololu_2489.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts."
+      ]
+    },
+    {
+      "id": "pololu-3418",
+      "manufacturer": "Pololu",
+      "sku": "3418",
+      "name": "VL53L7CX Time-of-Flight 8\u00d78-Zone Wide FOV Distance Sensor Carrier with Voltage Regulator, 350cm Max",
+      "aliases": [
+        "VL53L7CX",
+        "3418"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.pololu.com/product/3418",
+      "revision": "Exact SKU 3418; shared manufacturer dimension image names VL53L7CX",
+      "headers": [
+        {
+          "id": "main",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VDD",
+            "VIN",
+            "GND",
+            "SDA",
+            "SCL",
+            "LPn",
+            "INT"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/3418",
+            "https://a.pololu-files.com/picture/0J11642.1200.jpg?6446cfa63e805229cbdb458a175a953a",
+            "https://a.pololu-files.com/picture/0J12241.1200.jpg?1e7474b4f01ad23fd85d6350bbc3bd15"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "I2C_RST",
+          "kind": "single_auxiliary_plated_pad",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "auxiliary_control",
+          "notes": "A separate interior/offset pad, not another contact in the continuous edge row. One position has no within-group pitch.",
+          "evidence": [
+            "https://a.pololu-files.com/picture/0J11642.1200.jpg?6446cfa63e805229cbdb458a175a953a",
+            "https://a.pololu-files.com/picture/0J12241.1200.jpg?1e7474b4f01ad23fd85d6350bbc3bd15"
+          ]
+        }
+      ],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 7,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J11642.1200.jpg?6446cfa63e805229cbdb458a175a953a",
+            "caption": "VL53L5CX/VL53L7CX Time-of-Flight 8\u00d78-Zone Distance Sensor Carrier, bottom view with dimensions.",
+            "local_file": "3418_0J11642.jpg",
+            "sha256": "d7965f599acf518d01c049804fb840caae769ea7330e1248d9cac7e39fff1665"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J12241.1200.jpg?1e7474b4f01ad23fd85d6350bbc3bd15",
+            "caption": "Pinout diagram of the VL53L7CX Time-of-Flight 8\u00d78-Zone Wide FOV Distance Sensor Carrier.",
+            "local_file": "3418_0J12241.jpg",
+            "sha256": "213a217b2306e593282421d80ace97d30f17ea5de7fc59e19b8c159a5d2043d6"
+          }
+        ],
+        "product_snapshot": "pololu_3418.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "7-contact main edge row plus separate reset pad; not 1x8 despite supplied 1x8 straight strip."
+      ]
+    },
+    {
+      "id": "pololu-2739",
+      "manufacturer": "Pololu",
+      "sku": "2739",
+      "name": "AltIMU-10 v5 Gyro, Accelerometer, Compass, and Altimeter (LSM6DS33, LIS3MDL, and LPS25H Carrier)",
+      "aliases": [
+        "AltIMU-10",
+        "2739"
+      ],
+      "kind": "imu_pressure_sensor",
+      "source": "https://www.pololu.com/product/2739",
+      "revision": "AltIMU-10 v5; older generations excluded",
+      "headers": [
+        {
+          "id": "main",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "SCL",
+            "SDA",
+            "GND",
+            "VIN",
+            "VDD"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2739",
+            "https://a.pololu-files.com/picture/0J7061.1200.jpg?1a10de37745494f6aa3c28f2dd90d3d1",
+            "https://a.pololu-files.com/picture/0J7069.1200.jpg?503f83fc79faeb0b92c0c71b8157c480"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "SA0",
+          "kind": "single_auxiliary_plated_pad",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "auxiliary_control",
+          "notes": "A separate interior/offset pad, not another contact in the continuous edge row. One position has no within-group pitch.",
+          "evidence": [
+            "https://a.pololu-files.com/picture/0J7061.1200.jpg?1a10de37745494f6aa3c28f2dd90d3d1",
+            "https://a.pololu-files.com/picture/0J7069.1200.jpg?503f83fc79faeb0b92c0c71b8157c480"
+          ]
+        }
+      ],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J7061.1200.jpg?1a10de37745494f6aa3c28f2dd90d3d1",
+            "caption": "Pololu AltIMU-10 v5 gyro, accelerometer, compass, and altimeter, bottom view with dimensions.",
+            "local_file": "2739_0J7061.jpg",
+            "sha256": "fa9f1915a207556412f3af49830391507aaedec76910af55c3f5d582a7036b1f"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J7069.1200.jpg?503f83fc79faeb0b92c0c71b8157c480",
+            "caption": "Pololu AltIMU-10 v5 gyro, accelerometer, compass, and altimeter pinout.",
+            "local_file": "2739_0J7069.jpg",
+            "sha256": "f33b9914ec31ae6c46bb2da8d8413c83ac77af6f5fd5d7eb69c0250823c63085"
+          }
+        ],
+        "product_snapshot": "pololu_2739.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts.",
+        "5-contact main edge row plus separate SA0 pad; not 1x6 despite supplied 1x6 straight strip."
+      ]
+    },
+    {
+      "id": "pololu-2490",
+      "manufacturer": "Pololu",
+      "sku": "2490",
+      "name": "VL53L0X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 200cm Max",
+      "aliases": [
+        "VL53L0X",
+        "2490"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.pololu.com/product/2490",
+      "revision": "irs11a (pictured)",
+      "headers": [
+        {
+          "id": "main",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "signals": [
+            "VDD",
+            "VIN",
+            "GND",
+            "SDA",
+            "SCL",
+            "XSHUT",
+            "GPIO1"
+          ],
+          "population_notes": "Male header strips supplied loose; installation requires soldering.",
+          "evidence": [
+            "https://www.pololu.com/product/2490",
+            "https://a.pololu-files.com/picture/0J7225.1200.jpg?4cd3973ce1cd37dbec8077396a14f803",
+            "https://a.pololu-files.com/picture/0J7226.1200.jpg?3489fa335a7cb10a1b78c158c1543192"
+          ]
+        }
+      ],
+      "auxiliary_connectors": [],
+      "other_exposed_pads": [],
+      "total_254mm_header_contacts": 7,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "geometry_method": "Direct count of physical header holes in official manufacturer dimension/pinout images, combined with 0.1 inch interface and assembly documentation. Not a count of loose supplied strip length.",
+        "image_sources": [
+          {
+            "url": "https://a.pololu-files.com/picture/0J7225.1200.jpg?4cd3973ce1cd37dbec8077396a14f803",
+            "caption": "VL53L0X/VL53L1X/VL53L3CX/VL53L4CD Time-of-Flight Distance Sensor Carrier, bottom view with dimensions.",
+            "local_file": "2490_0J7225.jpg",
+            "sha256": "49fe2ed748020d4e42d83b086fda17161f803916f72d77597eac46a85e402529"
+          },
+          {
+            "url": "https://a.pololu-files.com/picture/0J7226.1200.jpg?3489fa335a7cb10a1b78c158c1543192",
+            "caption": "Pinout diagram of the VL53L0X Time-of-Flight Distance Sensor Carrier.",
+            "local_file": "2490_0J7226.jpg",
+            "sha256": "3b342bfbf9651e982417df82456cb785f76e06dbe0928d8b8770c1cca46b0efa"
+          }
+        ],
+        "product_snapshot": "pololu_2490.html"
+      },
+      "caveats": [
+        "Exact manufacturer SKU only; soldered-header variants and clones are not equivalent.",
+        "Actual JIG fit, retention, contact resistance, clearance and current qualification remain unknown.",
+        "Mechanical mounting holes, stitching vias and thermal vias are not connector contacts."
+      ]
+    }
+  ]
+}

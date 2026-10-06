@@ -1,0 +1,144 @@
+{
+  "batch_id": "wave2-2026-10-06",
+  "added_ids": [
+    "st-nucleo-f031k6",
+    "st-nucleo-f042k6",
+    "st-nucleo-f301k8",
+    "st-nucleo-f303k8",
+    "st-nucleo-l011k4",
+    "st-nucleo-l031k6",
+    "st-nucleo-l412kb",
+    "st-nucleo-l432kc",
+    "st-nucleo-f401re",
+    "st-nucleo-f411re",
+    "st-nucleo-f446re",
+    "st-nucleo-l476rg",
+    "st-stm32f0discovery-mb1034-b00",
+    "st-stm32f407g-disc1",
+    "pjrc-teensy-lc-bare",
+    "pjrc-teensy-32-bare",
+    "pjrc-teensy-35-bare",
+    "pjrc-teensy-36-bare",
+    "pjrc-teensy-40-bare",
+    "pjrc-teensy-41-bare",
+    "adafruit-3458",
+    "adafruit-2795",
+    "adafruit-2771",
+    "adafruit-2796",
+    "adafruit-2772",
+    "adafruit-3403",
+    "adafruit-3857",
+    "adafruit-3675",
+    "adafruit-3677",
+    "adafruit-3727",
+    "adafruit-3800",
+    "adafruit-4481",
+    "adafruit-5325",
+    "adafruit-5426",
+    "adafruit-4600",
+    "adafruit-3500",
+    "seeed-xiao-nrf52840",
+    "seeed-xiao-nrf52840-sense",
+    "seeed-xiao-samd21",
+    "adafruit-661",
+    "adafruit-931",
+    "adafruit-4440",
+    "adafruit-938",
+    "adafruit-1374",
+    "adafruit-1375",
+    "adafruit-1362",
+    "adafruit-1602",
+    "adafruit-1571",
+    "adafruit-1982",
+    "adafruit-684",
+    "adafruit-1431",
+    "adafruit-3787",
+    "adafruit-4313",
+    "adafruit-2090",
+    "adafruit-1770",
+    "adafruit-2478",
+    "adafruit-1083",
+    "adafruit-1085",
+    "adafruit-2717",
+    "adafruit-815",
+    "adafruit-1899",
+    "adafruit-2651",
+    "adafruit-935",
+    "adafruit-757",
+    "adafruit-904",
+    "adafruit-4832",
+    "adafruit-4886",
+    "adafruit-4681",
+    "adafruit-3966",
+    "adafruit-4646",
+    "adafruit-4821",
+    "adafruit-4885",
+    "adafruit-2809",
+    "adafruit-4438",
+    "adafruit-3967",
+    "adafruit-5346"
+  ],
+  "identical_replay_ids": [],
+  "existing_ids_preserved": 75,
+  "catalog_records": 151,
+  "verified_source_files": 101,
+  "ambiguous_labels": {
+    "esp32-c6-devkitc-1": [
+      "espressif-esp32-c6-devkitc-1-v1-1",
+      "espressif-esp32-c6-devkitc-1-v1-2"
+    ],
+    "esp32-s3-devkitc-1": [
+      "esp32-s3-devkitc-1",
+      "espressif-esp32-s3-devkitc-1-v1-0",
+      "espressif-esp32-s3-devkitc-1-v1-1"
+    ],
+    "nano 33 iot": [
+      "arduino-nano",
+      "nano-33-iot"
+    ],
+    "nano esp32": [
+      "arduino-nano",
+      "nano-esp32"
+    ],
+    "nano every": [
+      "arduino-nano",
+      "nano-every"
+    ],
+    "pico 2": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-2"
+    ],
+    "pico h": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-h"
+    ],
+    "pico w": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-w"
+    ],
+    "pico wh": [
+      "raspberry-pi-pico",
+      "raspberry-pi-pico-wh"
+    ],
+    "xiao esp32c3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c3"
+    ],
+    "xiao esp32c6": [
+      "seeed-xiao",
+      "seeed-xiao-esp32c6"
+    ],
+    "xiao esp32s3": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3"
+    ],
+    "xiao esp32s3 sense": [
+      "seeed-xiao",
+      "seeed-xiao-esp32s3-sense"
+    ]
+  },
+  "catalog_sha256": "02ec6c4df0cbde61cc003e63131603c8d77517f74a77c7e2ec6f36c57c0bbb1d",
+  "physical_validation": false,
+  "model_approval_modified": false,
+  "status": "validated_research_only"
+}

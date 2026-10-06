@@ -1,0 +1,5249 @@
+{
+  "schema_version": "neutral-header-catalog-1",
+  "batch": "stm_teensy_wave2",
+  "boards": [
+    {
+      "id": "st-nucleo-f031k6",
+      "name": "NUCLEO-F031K6",
+      "aliases": [
+        "STM32 Nucleo-32 F031K6"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-F031K6",
+      "board_revision": "B01",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                22,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                22,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                22,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            22,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-f042k6",
+      "name": "NUCLEO-F042K6",
+      "aliases": [
+        "STM32 Nucleo-32 F042K6"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-F042K6",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                24,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                24,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                24,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            24,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-f301k8",
+      "name": "NUCLEO-F301K8",
+      "aliases": [
+        "STM32 Nucleo-32 F301K8"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-F301K8",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                25,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                25,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                25,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            25,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-f303k8",
+      "name": "NUCLEO-F303K8",
+      "aliases": [
+        "STM32 Nucleo-32 F303K8"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-F303K8",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                26,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                26,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                26,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            26,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-l011k4",
+      "name": "NUCLEO-L011K4",
+      "aliases": [
+        "STM32 Nucleo-32 L011K4"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-L011K4",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                27,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                27,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                27,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            27,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-l031k6",
+      "name": "NUCLEO-L031K6",
+      "aliases": [
+        "STM32 Nucleo-32 L031K6"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-L031K6",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                28,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                28,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                28,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            28,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-l412kb",
+      "name": "NUCLEO-L412KB",
+      "aliases": [
+        "STM32 Nucleo-32 L412KB"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-L412KB",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                29,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                29,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                29,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            29,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-l432kc",
+      "name": "NUCLEO-L432KC",
+      "aliases": [
+        "STM32 Nucleo-32 L432KC"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1180-L432KC",
+      "board_revision": "C02",
+      "headers": [
+        {
+          "id": "CN3",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                30,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 15,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            15
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                30,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "mounting_side": "bottom",
+          "population_evidence": "Manufacturer overview photo and male connector schematic; inspect actual assembly"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 5,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reserved_debug",
+          "geometry": "keyed_incomplete_2x3",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+              "document": "UM1956 Rev 6, March 2025",
+              "pages": [
+                1,
+                12,
+                13,
+                14,
+                30,
+                38
+              ],
+              "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+            },
+            {
+              "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+              "document": "MB1180 schematic C.1, sheet 2",
+              "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Reserved ST-LINK SWD footprint has five actual contacts, not six; keep separate from two 15-pin rows"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/dm00231744.pdf",
+          "document": "UM1956 Rev 6, March 2025",
+          "pages": [
+            1,
+            12,
+            13,
+            14,
+            30,
+            38
+          ],
+          "claim": "Model list, exact pin tables, mechanical pitch and documented board revision"
+        },
+        {
+          "url": "https://www.st.com/resource/en/schematic_pack/nucleo-32pins_sch.zip",
+          "document": "MB1180 schematic C.1, sheet 2",
+          "claim": "CN3/CN4 are 15X1 male; older drawing corroborates connector type, not exact current assembly revision"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-f401re",
+      "name": "NUCLEO-F401RE",
+      "aliases": [
+        "STM32 Nucleo-64 F401RE"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1136-F401RE",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "CN5",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            10
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN6",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN8",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN9",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN7",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN10",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "external_swd_debug",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_isolation_jumpers",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "One 1x4 strip with two removable shunts; not a 2x2 connector"
+        },
+        {
+          "id": "CN3",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "uart_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "power_configuration",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP4",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "debug_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP5",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "power_selection",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP6",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "current_measurement",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN11",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN12",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+          "document": "UM1724 Rev 17, September 2025",
+          "pages": [
+            1,
+            14,
+            15,
+            16,
+            19,
+            20,
+            38,
+            44,
+            54,
+            83,
+            84
+          ],
+          "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-f411re",
+      "name": "NUCLEO-F411RE",
+      "aliases": [
+        "STM32 Nucleo-64 F411RE"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1136-F411RE",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "CN5",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            10
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN6",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN8",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN9",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN7",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN10",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "external_swd_debug",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_isolation_jumpers",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "One 1x4 strip with two removable shunts; not a 2x2 connector"
+        },
+        {
+          "id": "CN3",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "uart_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "power_configuration",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP4",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "debug_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP5",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "power_selection",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP6",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "current_measurement",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN11",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN12",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                44,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+          "document": "UM1724 Rev 17, September 2025",
+          "pages": [
+            1,
+            14,
+            15,
+            16,
+            19,
+            20,
+            38,
+            44,
+            54,
+            83,
+            84
+          ],
+          "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-f446re",
+      "name": "NUCLEO-F446RE",
+      "aliases": [
+        "STM32 Nucleo-64 F446RE"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1136-F446RE",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "CN5",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            10
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN6",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN8",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN9",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN7",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN10",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "external_swd_debug",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_isolation_jumpers",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "One 1x4 strip with two removable shunts; not a 2x2 connector"
+        },
+        {
+          "id": "CN3",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "uart_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "power_configuration",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP4",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "debug_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP5",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "power_selection",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP6",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "current_measurement",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN11",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN12",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                48,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+          "document": "UM1724 Rev 17, September 2025",
+          "pages": [
+            1,
+            14,
+            15,
+            16,
+            19,
+            20,
+            38,
+            48,
+            54,
+            83,
+            84
+          ],
+          "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-nucleo-l476rg",
+      "name": "NUCLEO-L476RG",
+      "aliases": [
+        "STM32 Nucleo-64 L476RG"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1136-L476RG",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "CN5",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            10
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN6",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN8",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN9",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            8
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN7",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN10",
+          "pin_count": 38,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            19,
+            19
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x19 connector. Do not split into comb-qualified 19-pin records"
+        },
+        {
+          "id": "CN4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "external_swd_debug",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_isolation_jumpers",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "One 1x4 strip with two removable shunts; not a 2x2 connector"
+        },
+        {
+          "id": "CN3",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "uart_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "power_configuration",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP4",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "debug_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP5",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "power_selection",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP6",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "current_measurement",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN11",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN12",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "stlink_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+              "document": "UM1724 Rev 17, September 2025",
+              "pages": [
+                1,
+                14,
+                15,
+                16,
+                19,
+                20,
+                38,
+                53,
+                54,
+                83,
+                84
+              ],
+              "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/DM00105823-.pdf",
+          "document": "UM1724 Rev 17, September 2025",
+          "pages": [
+            1,
+            14,
+            15,
+            16,
+            19,
+            20,
+            38,
+            53,
+            54,
+            83,
+            84
+          ],
+          "claim": "Exact order codes; connector maps, male morpho/female Arduino, 2.54 mm mechanical grid"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-stm32f0discovery-mb1034-b00",
+      "name": "STM32F0DISCOVERY",
+      "aliases": [
+        "STM32F051R8 Discovery"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB1034",
+      "board_revision": "B-00",
+      "headers": [
+        {
+          "id": "P1",
+          "pin_count": 33,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            33
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+              "document": "UM1525 Rev 2",
+              "pages": [
+                20,
+                36,
+                37,
+                38
+              ],
+              "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "pitch_basis": "81.28 mm / 32 intervals in manufacturer mechanical drawing"
+        },
+        {
+          "id": "P2",
+          "pin_count": 33,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            33
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+              "document": "UM1525 Rev 2",
+              "pages": [
+                20,
+                36,
+                37,
+                38
+              ],
+              "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "pitch_basis": "81.28 mm / 32 intervals in manufacturer mechanical drawing"
+        },
+        {
+          "id": "CN3",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "external_swd_debug",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+              "document": "UM1525 Rev 2",
+              "pages": [
+                20,
+                36,
+                37,
+                38
+              ],
+              "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_isolation_jumpers",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+              "document": "UM1525 Rev 2",
+              "pages": [
+                20,
+                36,
+                37,
+                38
+              ],
+              "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "uart_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+              "document": "UM1525 Rev 2",
+              "pages": [
+                20,
+                36,
+                37,
+                38
+              ],
+              "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "current_measurement",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+              "document": "UM1525 Rev 2",
+              "pages": [
+                20,
+                36,
+                37,
+                38
+              ],
+              "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/DM00050135-stm32f3discovery-board-stmicroelectronics.pdf",
+          "document": "UM1525 Rev 2",
+          "pages": [
+            20,
+            36,
+            37,
+            38
+          ],
+          "claim": "P1/P2 male 33-position single rows on MB1034 B-00; 81.28 mm over 32 intervals gives 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "st-stm32f407g-disc1",
+      "name": "STM32F407G-DISC1",
+      "aliases": [
+        "STM32F4 Discovery",
+        "STM32F4DISCOVERY successor"
+      ],
+      "kind": "development_board",
+      "source": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+      "manufacturer": "STMicroelectronics",
+      "board_variant": "MB997-F407VGT6",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P1",
+          "pin_count": 50,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            25,
+            25
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+              "document": "UM1472 Rev 9",
+              "pages": [
+                7,
+                13,
+                15,
+                19,
+                25,
+                26,
+                31,
+                33,
+                34,
+                35
+              ],
+              "claim": "STM32F407G-DISC1 order code; two complete 2x25 male connectors and separate SWD connector"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "pitch_basis": "60.96 mm / 24 intervals in mechanical drawing",
+          "notes": "Complete 2x25 connector, never two independently qualified 25-position rows"
+        },
+        {
+          "id": "P2",
+          "pin_count": 50,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            25,
+            25
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+              "document": "UM1472 Rev 9",
+              "pages": [
+                7,
+                13,
+                15,
+                19,
+                25,
+                26,
+                31,
+                33,
+                34,
+                35
+              ],
+              "claim": "STM32F407G-DISC1 order code; two complete 2x25 male connectors and separate SWD connector"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "row_pitch_mm": 2.54,
+          "pitch_basis": "60.96 mm / 24 intervals in mechanical drawing",
+          "notes": "Complete 2x25 connector, never two independently qualified 25-position rows"
+        },
+        {
+          "id": "CN2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "external_swd_debug",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+              "document": "UM1472 Rev 9",
+              "pages": [
+                7,
+                13,
+                15,
+                19,
+                25,
+                26,
+                31,
+                33,
+                34,
+                35
+              ],
+              "claim": "STM32F407G-DISC1 order code; two complete 2x25 male connectors and separate SWD connector"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "CN3",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_isolation_jumpers",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+              "document": "UM1472 Rev 9",
+              "pages": [
+                7,
+                13,
+                15,
+                19,
+                25,
+                26,
+                31,
+                33,
+                34,
+                35
+              ],
+              "claim": "STM32F407G-DISC1 order code; two complete 2x25 male connectors and separate SWD connector"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 2,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "current_measurement",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+              "document": "UM1472 Rev 9",
+              "pages": [
+                7,
+                13,
+                15,
+                19,
+                25,
+                26,
+                31,
+                33,
+                34,
+                35
+              ],
+              "claim": "STM32F407G-DISC1 order code; two complete 2x25 male connectors and separate SWD connector"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.st.com/resource/en/user_manual/um1472-stm32f4-discovery-stmicroelectronics.pdf",
+          "document": "UM1472 Rev 9",
+          "pages": [
+            7,
+            13,
+            15,
+            19,
+            25,
+            26,
+            31,
+            33,
+            34,
+            35
+          ],
+          "claim": "STM32F407G-DISC1 order code; two complete 2x25 male connectors and separate SWD connector"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06"
+    },
+    {
+      "id": "pjrc-teensy-lc-bare",
+      "name": "Teensy LC (bare board)",
+      "aliases": [
+        "Teensy LC"
+      ],
+      "kind": "development_board",
+      "source": "https://www.pjrc.com/store/teensylc.html",
+      "manufacturer": "PJRC",
+      "board_variant": "TEENSYLC bare board",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "edge-row-A",
+          "pin_count": 14,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            14
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensylc.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensylc.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "edge-row-B",
+          "pin_count": 14,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            14
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensylc.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensylc.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "transverse-aux-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_control_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensylc.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensylc.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "VUSB",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            1
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensylc.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensylc.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "inner-aux-row",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensylc.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensylc.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.pjrc.com/store/teensylc.html",
+          "document": "PJRC product page, Dimensions section",
+          "claim": "Exact generation, bare-board product and source-linked drawing"
+        },
+        {
+          "url": "https://www.pjrc.com/teensy/dimensions_teensylc.png",
+          "document": "PJRC dimension drawing",
+          "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Underside SMT pads/test points are not through-hole headers and are excluded from the header counts",
+        "USB receptacle and any microSD socket are not pin headers"
+      ],
+      "revision_notes": "Generation label does not establish PCB manufacturing revision; inspect supplied board. PJRC 4.x product pages list component changes over time.",
+      "population_variants": "With-pins products are distinct assemblies; this record describes the bare-board product only"
+    },
+    {
+      "id": "pjrc-teensy-32-bare",
+      "name": "Teensy 3.2 (bare board)",
+      "aliases": [
+        "Teensy 3.2"
+      ],
+      "kind": "development_board",
+      "source": "https://www.pjrc.com/store/teensy32.html",
+      "manufacturer": "PJRC",
+      "board_variant": "TEENSY32 bare board",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "edge-row-A",
+          "pin_count": 14,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            14
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy32.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy32.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "edge-row-B",
+          "pin_count": 14,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            14
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy32.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy32.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "transverse-aux-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_control_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy32.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy32.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "VUSB",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            1
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy32.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy32.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "inner-aux-row",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy32.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy32.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.pjrc.com/store/teensy32.html",
+          "document": "PJRC product page, Dimensions section",
+          "claim": "Exact generation, bare-board product and source-linked drawing"
+        },
+        {
+          "url": "https://www.pjrc.com/teensy/dimensions_teensy32.png",
+          "document": "PJRC dimension drawing",
+          "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Underside SMT pads/test points are not through-hole headers and are excluded from the header counts",
+        "USB receptacle and any microSD socket are not pin headers"
+      ],
+      "revision_notes": "Generation label does not establish PCB manufacturing revision; inspect supplied board. PJRC 4.x product pages list component changes over time.",
+      "population_variants": "With-pins products are distinct assemblies; this record describes the bare-board product only"
+    },
+    {
+      "id": "pjrc-teensy-35-bare",
+      "name": "Teensy 3.5 (bare board)",
+      "aliases": [
+        "Teensy 3.5"
+      ],
+      "kind": "development_board",
+      "source": "https://www.pjrc.com/store/teensy35.html",
+      "manufacturer": "PJRC",
+      "board_variant": "TEENSY35 bare board",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "edge-row-A",
+          "pin_count": 24,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            24
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy35.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "edge-row-B",
+          "pin_count": 24,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            24
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy35.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "transverse-aux-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_control_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy35.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "VUSB",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            1
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy35.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "inner-aux-row",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy35.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "usb-host-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "usb_host_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy35.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. For Teensy 3.5 this location differs electrically from Teensy 3.6; no signal-equivalence claim"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.pjrc.com/store/teensy35.html",
+          "document": "PJRC product page, Dimensions section",
+          "claim": "Exact generation, bare-board product and source-linked drawing"
+        },
+        {
+          "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+          "document": "PJRC dimension drawing",
+          "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Underside SMT pads/test points are not through-hole headers and are excluded from the header counts",
+        "USB receptacle and any microSD socket are not pin headers"
+      ],
+      "revision_notes": "Generation label does not establish PCB manufacturing revision; inspect supplied board. PJRC 4.x product pages list component changes over time.",
+      "population_variants": "With-pins products are distinct assemblies; this record describes the bare-board product only"
+    },
+    {
+      "id": "pjrc-teensy-36-bare",
+      "name": "Teensy 3.6 (bare board)",
+      "aliases": [
+        "Teensy 3.6"
+      ],
+      "kind": "development_board",
+      "source": "https://www.pjrc.com/store/teensy36.html",
+      "manufacturer": "PJRC",
+      "board_variant": "TEENSY36 bare board",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "edge-row-A",
+          "pin_count": 24,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            24
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy36.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "edge-row-B",
+          "pin_count": 24,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            24
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy36.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "transverse-aux-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_control_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy36.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "VUSB",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            1
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy36.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "inner-aux-row",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy36.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "usb-host-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "usb_host_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy36.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. For Teensy 3.5 this location differs electrically from Teensy 3.6; no signal-equivalence claim"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.pjrc.com/store/teensy36.html",
+          "document": "PJRC product page, Dimensions section",
+          "claim": "Exact generation, bare-board product and source-linked drawing"
+        },
+        {
+          "url": "https://www.pjrc.com/teensy/dimensions_teensy36.png",
+          "document": "PJRC dimension drawing",
+          "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Underside SMT pads/test points are not through-hole headers and are excluded from the header counts",
+        "USB receptacle and any microSD socket are not pin headers"
+      ],
+      "revision_notes": "Generation label does not establish PCB manufacturing revision; inspect supplied board. PJRC 4.x product pages list component changes over time.",
+      "population_variants": "With-pins products are distinct assemblies; this record describes the bare-board product only"
+    },
+    {
+      "id": "pjrc-teensy-40-bare",
+      "name": "Teensy 4.0 (bare board)",
+      "aliases": [
+        "Teensy 4.0"
+      ],
+      "kind": "development_board",
+      "source": "https://www.pjrc.com/store/teensy40.html",
+      "manufacturer": "PJRC",
+      "board_variant": "TEENSY40 bare board",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "edge-row-A",
+          "pin_count": 14,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            14
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy40.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy40.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "edge-row-B",
+          "pin_count": 14,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            14
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy40.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy40.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "transverse-aux-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_control_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy40.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy40.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "VUSB",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            1
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy40.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy40.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.pjrc.com/store/teensy40.html",
+          "document": "PJRC product page, Dimensions section",
+          "claim": "Exact generation, bare-board product and source-linked drawing"
+        },
+        {
+          "url": "https://www.pjrc.com/teensy/dimensions_teensy40.png",
+          "document": "PJRC dimension drawing",
+          "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Underside SMT pads/test points are not through-hole headers and are excluded from the header counts",
+        "USB receptacle and any microSD socket are not pin headers"
+      ],
+      "revision_notes": "Generation label does not establish PCB manufacturing revision; inspect supplied board. PJRC 4.x product pages list component changes over time.",
+      "population_variants": "With-pins products are distinct assemblies; this record describes the bare-board product only"
+    },
+    {
+      "id": "pjrc-teensy-41-bare",
+      "name": "Teensy 4.1 (bare board)",
+      "aliases": [
+        "Teensy 4.1"
+      ],
+      "kind": "development_board",
+      "source": "https://www.pjrc.com/store/teensy41.html",
+      "manufacturer": "PJRC",
+      "board_variant": "TEENSY41 bare board",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "edge-row-A",
+          "pin_count": 24,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            24
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy41.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "edge-row-B",
+          "pin_count": 24,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            24
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy41.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "transverse-aux-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_control_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy41.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "VUSB",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            1
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy41.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. "
+        },
+        {
+          "id": "usb-host-row",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            5
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "usb_host_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy41.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. For Teensy 3.5 this location differs electrically from Teensy 3.6; no signal-equivalence claim"
+        },
+        {
+          "id": "ethernet",
+          "pin_count": 6,
+          "pitch_mm": 2.0,
+          "rows": 2,
+          "pins_per_row": [
+            3,
+            3
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "ethernet_auxiliary",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.pjrc.com/store/teensy41.html",
+              "document": "PJRC product page, Dimensions section",
+              "claim": "Exact generation, bare-board product and source-linked drawing"
+            },
+            {
+              "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+              "document": "PJRC dimension drawing",
+              "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+            }
+          ],
+          "qualification_note": "Discovery only; no physical jig-fit test or clearance verification performed",
+          "notes": "Bare-board variant; plated holes are not installed male pins. Male headers may be user fitted. 2x3, 2.0 mm; never treated as 2.54 mm comb",
+          "row_pitch_mm": 2.0
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.pjrc.com/store/teensy41.html",
+          "document": "PJRC product page, Dimensions section",
+          "claim": "Exact generation, bare-board product and source-linked drawing"
+        },
+        {
+          "url": "https://www.pjrc.com/teensy/dimensions_teensy41.png",
+          "document": "PJRC dimension drawing",
+          "claim": "All physical through-hole locations counted visually; primary rows at 2.54 mm pitch"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Underside SMT pads/test points are not through-hole headers and are excluded from the header counts",
+        "USB receptacle and any microSD socket are not pin headers"
+      ],
+      "revision_notes": "Generation label does not establish PCB manufacturing revision; inspect supplied board. PJRC 4.x product pages list component changes over time.",
+      "population_variants": "With-pins products are distinct assemblies; this record describes the bare-board product only"
+    }
+  ],
+  "rules": [
+    "pin_count is whole connector contact count, not a single row from a multi-row connector",
+    "Unknown attributes are null",
+    "comb_qualified=false for every record until separately assessed; fit_status stays unverified",
+    "GPIO totals never substitute for physical header counts"
+  ]
+}

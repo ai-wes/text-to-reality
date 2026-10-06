@@ -1,0 +1,3356 @@
+[
+  {
+    "sku": 746,
+    "ref": "U$8",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$8",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "2.54",
+      "y": "31.75",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 746,
+    "ref": "U$9",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$9",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "22.86",
+      "y": "31.75",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 746,
+    "ref": "B1",
+    "package": "CR1220",
+    "element": {
+      "name": "B1",
+      "library": "microbuilder",
+      "package": "CR1220",
+      "value": "CR1220",
+      "x": "12.7",
+      "y": "27.051",
+      "rot": "MR0"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "-",
+        "x": "0",
+        "y": "0",
+        "dx": "6.35",
+        "dy": "6.35",
+        "layer": "1",
+        "roundness": "100",
+        "cream": "no"
+      },
+      {
+        "name": "+$1",
+        "x": "-8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      },
+      {
+        "name": "+$2",
+        "x": "8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 746,
+    "ref": "U$20",
+    "package": "U.FL",
+    "element": {
+      "name": "U$20",
+      "library": "microbuilder",
+      "package": "U.FL",
+      "value": "U.FL",
+      "x": "18.923",
+      "y": "28.956",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "1.375",
+        "dx": "2.2",
+        "dy": "0.85",
+        "layer": "1"
+      },
+      {
+        "name": "P$2",
+        "x": "0",
+        "y": "-1.375",
+        "dx": "2.2",
+        "dy": "0.85",
+        "layer": "1"
+      },
+      {
+        "name": "P$3",
+        "x": "1.525",
+        "y": "0",
+        "dx": "1.05",
+        "dy": "1",
+        "layer": "1"
+      },
+      {
+        "name": "P$4",
+        "x": "-1.525",
+        "y": "0",
+        "dx": "1.05",
+        "dy": "1",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 746,
+    "ref": "JP1",
+    "package": "1X09_ROUND_70",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X09_ROUND_70",
+      "value": "",
+      "x": "12.7",
+      "y": "2.032",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "1PPS"
+      },
+      {
+        "name": "2",
+        "x": "-7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VIN"
+      },
+      {
+        "name": "3",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "4",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "RX"
+      },
+      {
+        "name": "5",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "TX"
+      },
+      {
+        "name": "6",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "FIX"
+      },
+      {
+        "name": "7",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VBACKUP"
+      },
+      {
+        "name": "8",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "ENABLE"
+      },
+      {
+        "name": "9",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "3.3V"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 254,
+    "ref": "X1",
+    "package": "MICROSD",
+    "element": {
+      "name": "X1",
+      "library": "adafruit",
+      "package": "MICROSD",
+      "value": "MICROSD",
+      "x": "15.748",
+      "y": "19.558",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "MT1",
+        "x": "0.4",
+        "y": "-13.54",
+        "dx": "1.4",
+        "dy": "1.9",
+        "layer": "1"
+      },
+      {
+        "name": "MT2",
+        "x": "13.6",
+        "y": "-14.44",
+        "dx": "1.4",
+        "dy": "1.9",
+        "layer": "1"
+      },
+      {
+        "name": "CD1",
+        "x": "2",
+        "y": "-0.44",
+        "dx": "1.4",
+        "dy": "1.8",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "CD2",
+        "x": "8",
+        "y": "-0.44",
+        "dx": "1.4",
+        "dy": "1.8",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "8",
+        "x": "1.3",
+        "y": "-10.64",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "7",
+        "x": "2.4",
+        "y": "-10.64",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "6",
+        "x": "3.5",
+        "y": "-11.04",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "5",
+        "x": "4.6",
+        "y": "-10.64",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "4",
+        "x": "5.7",
+        "y": "-11.04",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "3",
+        "x": "6.8",
+        "y": "-10.64",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "2",
+        "x": "7.9",
+        "y": "-10.24",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      },
+      {
+        "name": "1",
+        "x": "9",
+        "y": "-10.64",
+        "dx": "0.7",
+        "dy": "1.5",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 254,
+    "ref": "JP1",
+    "package": "1X08-BIG",
+    "element": {
+      "name": "JP1",
+      "library": "adafruit",
+      "package": "1X08-BIG",
+      "value": "",
+      "x": "30.48",
+      "y": "12.573",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-8.89",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "VCC"
+      },
+      {
+        "name": "2",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "+3V3"
+      },
+      {
+        "name": "3",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "4",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "CLK"
+      },
+      {
+        "name": "5",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "DO"
+      },
+      {
+        "name": "6",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "DI"
+      },
+      {
+        "name": "7",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "CS"
+      },
+      {
+        "name": "8",
+        "x": "8.89",
+        "y": "0",
+        "drill": "1.016",
+        "diameter": "1.778",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "CD"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3013,
+    "ref": "B1",
+    "package": "CR1220",
+    "element": {
+      "name": "B1",
+      "library": "microbuilder",
+      "package": "CR1220",
+      "value": "CR1220",
+      "x": "11.43",
+      "y": "10.668",
+      "smashed": "yes",
+      "rot": "MR0"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "-",
+        "x": "0",
+        "y": "0",
+        "dx": "6.35",
+        "dy": "6.35",
+        "layer": "1",
+        "roundness": "100",
+        "cream": "no"
+      },
+      {
+        "name": "+$1",
+        "x": "-8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      },
+      {
+        "name": "+$2",
+        "x": "8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 3013,
+    "ref": "JP1",
+    "package": "1X08_ROUND_70",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X08_ROUND_70",
+      "value": "",
+      "x": "11.43",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "3.3V"
+      },
+      {
+        "name": "2",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SCL"
+      },
+      {
+        "name": "4",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "5",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VBAT"
+      },
+      {
+        "name": "6",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "32KHZ"
+      },
+      {
+        "name": "7",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SQW"
+      },
+      {
+        "name": "8",
+        "x": "8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "!RTC_RST"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3013,
+    "ref": "U$6",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$6",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "20.32",
+      "y": "15.24",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3013,
+    "ref": "U$7",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$7",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "2.54",
+      "y": "15.24",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3295,
+    "ref": "JP2",
+    "package": "1X05_ROUND_76",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X05_ROUND_76",
+      "value": "",
+      "x": "8.89",
+      "y": "2.54",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "SQW"
+      },
+      {
+        "name": "2",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "SCL"
+      },
+      {
+        "name": "3",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "VCC"
+      },
+      {
+        "name": "5",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3295,
+    "ref": "B1",
+    "package": "CR1220",
+    "element": {
+      "name": "B1",
+      "library": "microbuilder",
+      "package": "CR1220",
+      "value": "CR1220",
+      "x": "11.303",
+      "y": "18.542",
+      "smashed": "yes"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "-",
+        "x": "0",
+        "y": "0",
+        "dx": "6.35",
+        "dy": "6.35",
+        "layer": "1",
+        "roundness": "100",
+        "cream": "no"
+      },
+      {
+        "name": "+$1",
+        "x": "-8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      },
+      {
+        "name": "+$2",
+        "x": "8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 3295,
+    "ref": "U$1",
+    "package": "MOUNTINGHOLE_2.0_PLATED",
+    "element": {
+      "name": "U$1",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.0_PLATED",
+      "value": "MOUNTINGHOLE2.0",
+      "x": "2.54",
+      "y": "22.86",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.2",
+        "diameter": "3",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3295,
+    "ref": "U$4",
+    "package": "MOUNTINGHOLE_2.0_PLATED",
+    "element": {
+      "name": "U$4",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.0_PLATED",
+      "value": "MOUNTINGHOLE2.0",
+      "x": "19.05",
+      "y": "2.54",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.2",
+        "diameter": "3",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3296,
+    "ref": "JP2",
+    "package": "1X05_ROUND_76",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X05_ROUND_76",
+      "value": "",
+      "x": "8.89",
+      "y": "2.54",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "SQW"
+      },
+      {
+        "name": "2",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "SCL"
+      },
+      {
+        "name": "3",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "4",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "VCC"
+      },
+      {
+        "name": "5",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3296,
+    "ref": "B1",
+    "package": "CR1220",
+    "element": {
+      "name": "B1",
+      "library": "microbuilder",
+      "package": "CR1220",
+      "value": "CR1220",
+      "x": "11.303",
+      "y": "18.542",
+      "smashed": "yes"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "-",
+        "x": "0",
+        "y": "0",
+        "dx": "6.35",
+        "dy": "6.35",
+        "layer": "1",
+        "roundness": "100",
+        "cream": "no"
+      },
+      {
+        "name": "+$1",
+        "x": "-8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      },
+      {
+        "name": "+$2",
+        "x": "8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 3296,
+    "ref": "U$1",
+    "package": "MOUNTINGHOLE_2.0_PLATED",
+    "element": {
+      "name": "U$1",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.0_PLATED",
+      "value": "MOUNTINGHOLE2.0",
+      "x": "2.54",
+      "y": "22.86",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.2",
+        "diameter": "3",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3296,
+    "ref": "U$4",
+    "package": "MOUNTINGHOLE_2.0_PLATED",
+    "element": {
+      "name": "U$4",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.0_PLATED",
+      "value": "MOUNTINGHOLE2.0",
+      "x": "19.05",
+      "y": "2.54",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.2",
+        "diameter": "3",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5188,
+    "ref": "B1",
+    "package": "CR1220",
+    "element": {
+      "name": "B1",
+      "library": "microbuilder",
+      "package": "CR1220",
+      "value": "CR1220",
+      "x": "12.7",
+      "y": "10.795",
+      "smashed": "yes",
+      "rot": "MR0"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "-",
+        "x": "0",
+        "y": "0",
+        "dx": "6.35",
+        "dy": "6.35",
+        "layer": "1",
+        "roundness": "100",
+        "cream": "no"
+      },
+      {
+        "name": "+$1",
+        "x": "-8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      },
+      {
+        "name": "+$2",
+        "x": "8.2254",
+        "y": "0",
+        "dx": "3.2",
+        "dy": "3.2",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 5188,
+    "ref": "U$9",
+    "package": "MOUNTINGHOLE_3.0_PLATEDTHIN",
+    "element": {
+      "name": "U$9",
+      "library": "adafruit_electromech",
+      "package": "MOUNTINGHOLE_3.0_PLATEDTHIN",
+      "value": "MOUNTINGHOLE3.0THIN",
+      "x": "2.54",
+      "y": "15.24",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "3",
+        "diameter": "3.6",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5188,
+    "ref": "U$17",
+    "package": "MOUNTINGHOLE_3.0_PLATEDTHIN",
+    "element": {
+      "name": "U$17",
+      "library": "adafruit_electromech",
+      "package": "MOUNTINGHOLE_3.0_PLATEDTHIN",
+      "value": "MOUNTINGHOLE3.0THIN",
+      "x": "22.86",
+      "y": "15.24",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "3",
+        "diameter": "3.6",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5188,
+    "ref": "CONN3",
+    "package": "JST_SH4",
+    "element": {
+      "name": "CONN3",
+      "library": "microbuilder",
+      "package": "JST_SH4",
+      "value": "STEMMA_I2C_QT",
+      "x": "22.86",
+      "y": "8.89",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT1",
+        "x": "-2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT2",
+        "x": "2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      }
+    ]
+  },
+  {
+    "sku": 5188,
+    "ref": "CONN4",
+    "package": "JST_SH4",
+    "element": {
+      "name": "CONN4",
+      "library": "microbuilder",
+      "package": "JST_SH4",
+      "value": "STEMMA_I2C_QT",
+      "x": "2.54",
+      "y": "8.89",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT1",
+        "x": "-2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT2",
+        "x": "2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      }
+    ]
+  },
+  {
+    "sku": 5188,
+    "ref": "JP1",
+    "package": "1X08_ROUND_70",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X08_ROUND_70",
+      "value": "",
+      "x": "12.7",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VCC"
+      },
+      {
+        "name": "2",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SCL"
+      },
+      {
+        "name": "4",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SDA"
+      },
+      {
+        "name": "5",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VBAT"
+      },
+      {
+        "name": "6",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "32KHZ"
+      },
+      {
+        "name": "7",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SQW"
+      },
+      {
+        "name": "8",
+        "x": "8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "!RTC_RST"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5708,
+    "ref": "X4",
+    "package": "TERMBLOCK_1X3-3.5MM",
+    "element": {
+      "name": "X4",
+      "library": "adafruit_electromech",
+      "package": "TERMBLOCK_1X3-3.5MM",
+      "value": "3.5mm Terminal",
+      "x": "10.16",
+      "y": "16.51",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "3.5",
+        "y": "0",
+        "drill": "1",
+        "diameter": "2.1844",
+        "net": "CAN_L"
+      },
+      {
+        "name": "2",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "2.1844",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "-3.5",
+        "y": "0",
+        "drill": "1",
+        "diameter": "2.1844",
+        "net": "CAN_H"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5708,
+    "ref": "U$2",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$2",
+      "library": "adafruit_electromech",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "2.54",
+      "y": "17.78",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5708,
+    "ref": "U$3",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$3",
+      "library": "adafruit_electromech",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "17.78",
+      "y": "17.78",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 5708,
+    "ref": "JP2",
+    "package": "1X07_ROUND_70",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X07_ROUND_70",
+      "value": "",
+      "x": "10.16",
+      "y": "2.54",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CAN_L"
+      },
+      {
+        "name": "2",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CAN_H"
+      },
+      {
+        "name": "3",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CAN1_S"
+      },
+      {
+        "name": "4",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CAN1_TX"
+      },
+      {
+        "name": "5",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CAN1_RX"
+      },
+      {
+        "name": "6",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "7",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VCC"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 4471,
+    "ref": "U$7",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$7",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "22.86",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 4471,
+    "ref": "U$6",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$6",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "22.86",
+      "y": "15.24",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 4471,
+    "ref": "X6",
+    "package": "USB_C_CUSB31-CFM2AX-01-X",
+    "element": {
+      "name": "X6",
+      "library": "microbuilder",
+      "package": "USB_C_CUSB31-CFM2AX-01-X",
+      "value": "USBC",
+      "x": "2.667",
+      "y": "8.89",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [
+      {
+        "name": "M3",
+        "x": "-4.32",
+        "y": "-1.21",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "M4",
+        "x": "4.32",
+        "y": "-1.21",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "M2",
+        "x": "4.32",
+        "y": "2.97",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "M1",
+        "x": "-4.32",
+        "y": "2.97",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      }
+    ],
+    "smd": [
+      {
+        "name": "A1B12",
+        "x": "-3.2",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A4B9",
+        "x": "-2.4",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B8",
+        "x": "-1.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A5",
+        "x": "-1.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B7",
+        "x": "-0.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A6",
+        "x": "-0.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A7",
+        "x": "0.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B6",
+        "x": "0.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A8",
+        "x": "1.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B5",
+        "x": "1.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B4A9",
+        "x": "2.4",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B1A12",
+        "x": "3.2",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 4471,
+    "ref": "CONN1",
+    "package": "JST_SH4",
+    "element": {
+      "name": "CONN1",
+      "library": "microbuilder",
+      "package": "JST_SH4",
+      "value": "STEMMA_I2C_QT",
+      "x": "22.86",
+      "y": "8.89",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT1",
+        "x": "-2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT2",
+        "x": "2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      }
+    ]
+  },
+  {
+    "sku": 4471,
+    "ref": "JP1",
+    "package": "1X06_ROUND_70",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X06_ROUND_70",
+      "value": "",
+      "x": "12.7",
+      "y": "15.24",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "RX"
+      },
+      {
+        "name": "2",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "TX"
+      },
+      {
+        "name": "3",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GP3"
+      },
+      {
+        "name": "4",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GP2"
+      },
+      {
+        "name": "5",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GP1"
+      },
+      {
+        "name": "6",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GP0"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 4471,
+    "ref": "JP2",
+    "package": "1X06_ROUND_70",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X06_ROUND_70",
+      "value": "",
+      "x": "12.7",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "+5V"
+      },
+      {
+        "name": "2",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "+3V3"
+      },
+      {
+        "name": "4",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "!RST"
+      },
+      {
+        "name": "5",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SCL"
+      },
+      {
+        "name": "6",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SDA"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 2264,
+    "ref": "U$4",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$4",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "2.54",
+      "y": "20.32",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 2264,
+    "ref": "U$5",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$5",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "2.54",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 2264,
+    "ref": "U$7",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$7",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "35.56",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 2264,
+    "ref": "U$6",
+    "package": "MOUNTINGHOLE_2.5_PLATED",
+    "element": {
+      "name": "U$6",
+      "library": "microbuilder",
+      "package": "MOUNTINGHOLE_2.5_PLATED",
+      "value": "MOUNTINGHOLE2.5",
+      "x": "35.56",
+      "y": "20.32",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "P$1",
+        "x": "0",
+        "y": "0",
+        "drill": "2.5",
+        "diameter": "3.2",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 2264,
+    "ref": "X6",
+    "package": "USB_C_CUSB31-CFM2AX-01-X",
+    "element": {
+      "name": "X6",
+      "library": "microbuilder",
+      "package": "USB_C_CUSB31-CFM2AX-01-X",
+      "value": "USBC",
+      "x": "3.175",
+      "y": "11.43",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [
+      {
+        "name": "M3",
+        "x": "-4.32",
+        "y": "-1.21",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "M4",
+        "x": "4.32",
+        "y": "-1.21",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "M2",
+        "x": "4.32",
+        "y": "2.97",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "M1",
+        "x": "-4.32",
+        "y": "2.97",
+        "drill": "0.6",
+        "diameter": "1",
+        "shape": "long",
+        "rot": "R90",
+        "net": null
+      }
+    ],
+    "smd": [
+      {
+        "name": "A1B12",
+        "x": "-3.2",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A4B9",
+        "x": "-2.4",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B8",
+        "x": "-1.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A5",
+        "x": "-1.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B7",
+        "x": "-0.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A6",
+        "x": "-0.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A7",
+        "x": "0.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B6",
+        "x": "0.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "A8",
+        "x": "1.25",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B5",
+        "x": "1.75",
+        "y": "3.545",
+        "dx": "0.275",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B4A9",
+        "x": "2.4",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      },
+      {
+        "name": "B1A12",
+        "x": "3.2",
+        "y": "3.545",
+        "dx": "0.575",
+        "dy": "1.15",
+        "layer": "1"
+      }
+    ]
+  },
+  {
+    "sku": 2264,
+    "ref": "CONN1",
+    "package": "JST_SH4",
+    "element": {
+      "name": "CONN1",
+      "library": "microbuilder",
+      "package": "JST_SH4",
+      "value": "STEMMA_I2C_QT",
+      "x": "35.56",
+      "y": "11.43",
+      "smashed": "yes",
+      "rot": "R90"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "2",
+        "x": "-0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "3",
+        "x": "0.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "1",
+        "x": "-1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "4",
+        "x": "1.5",
+        "y": "2.514",
+        "dx": "1.55",
+        "dy": "0.6",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT1",
+        "x": "-2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      },
+      {
+        "name": "MT2",
+        "x": "2.8",
+        "y": "-1.386",
+        "dx": "1.8",
+        "dy": "1.2",
+        "layer": "1",
+        "rot": "R90"
+      }
+    ]
+  },
+  {
+    "sku": 2264,
+    "ref": "JP1",
+    "package": "1X11_ROUND",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X11_ROUND",
+      "value": "",
+      "x": "19.05",
+      "y": "1.27",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-12.7",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "+3V3"
+      },
+      {
+        "name": "2",
+        "x": "-10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "+5V"
+      },
+      {
+        "name": "3",
+        "x": "-7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "4",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D0/SCL/SCK"
+      },
+      {
+        "name": "5",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D1/SDA/MOSI"
+      },
+      {
+        "name": "6",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D2/SDA/MISO"
+      },
+      {
+        "name": "7",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D3"
+      },
+      {
+        "name": "8",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D4"
+      },
+      {
+        "name": "9",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D5"
+      },
+      {
+        "name": "10",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D6"
+      },
+      {
+        "name": "11",
+        "x": "12.7",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "D7"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 2264,
+    "ref": "JP2",
+    "package": "1X11_ROUND",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X11_ROUND",
+      "value": "",
+      "x": "19.05",
+      "y": "21.59",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-12.7",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C0"
+      },
+      {
+        "name": "2",
+        "x": "-10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C1"
+      },
+      {
+        "name": "3",
+        "x": "-7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C2"
+      },
+      {
+        "name": "4",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C3"
+      },
+      {
+        "name": "5",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C4"
+      },
+      {
+        "name": "6",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C5"
+      },
+      {
+        "name": "7",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C6"
+      },
+      {
+        "name": "8",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C7"
+      },
+      {
+        "name": "9",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C8"
+      },
+      {
+        "name": "10",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "C9"
+      },
+      {
+        "name": "11",
+        "x": "12.7",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 364,
+    "ref": "JP1",
+    "package": "JUMPER3",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "JUMPER3",
+      "value": "SEL0",
+      "x": "91.224",
+      "y": "8.51",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "shape": "square",
+        "rot": "R90",
+        "net": "VDD"
+      },
+      {
+        "name": "2",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "SEL0"
+      },
+      {
+        "name": "3",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 364,
+    "ref": "JP2",
+    "package": "JUMPER3",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "JUMPER3",
+      "value": "SEL1",
+      "x": "100.334",
+      "y": "8.51",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "shape": "square",
+        "rot": "R90",
+        "net": "VDD"
+      },
+      {
+        "name": "2",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "SEL1"
+      },
+      {
+        "name": "3",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.9304",
+        "shape": "octagon",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 364,
+    "ref": "JP4",
+    "package": "1X08_ROUND",
+    "element": {
+      "name": "JP4",
+      "library": "microbuilder",
+      "package": "1X08_ROUND",
+      "value": "",
+      "x": "116.534",
+      "y": "24.67",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "shape": "square",
+        "rot": "R90",
+        "net": "VDD"
+      },
+      {
+        "name": "2",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "SCK"
+      },
+      {
+        "name": "3",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "MISO"
+      },
+      {
+        "name": "4",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "MOSI/SDA/TX"
+      },
+      {
+        "name": "5",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "NSS/SCL/RX"
+      },
+      {
+        "name": "6",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "RSTOUT_N"
+      },
+      {
+        "name": "7",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "IRQ"
+      },
+      {
+        "name": "8",
+        "x": "8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 364,
+    "ref": "JP3",
+    "package": "1X12_ROUND",
+    "element": {
+      "name": "JP3",
+      "library": "microbuilder",
+      "package": "1X12_ROUND",
+      "value": "",
+      "x": "95.644",
+      "y": "46.866",
+      "smashed": "yes",
+      "rot": "R180"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-13.97",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "shape": "square",
+        "rot": "R90",
+        "net": "AUX1"
+      },
+      {
+        "name": "2",
+        "x": "-11.43",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "AUX2"
+      },
+      {
+        "name": "3",
+        "x": "-8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "P30/UART_RX"
+      },
+      {
+        "name": "4",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "P31"
+      },
+      {
+        "name": "5",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "P32"
+      },
+      {
+        "name": "6",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "P33"
+      },
+      {
+        "name": "7",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "P34/SIC_CLK"
+      },
+      {
+        "name": "8",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "P35"
+      },
+      {
+        "name": "9",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "SIGOUT"
+      },
+      {
+        "name": "10",
+        "x": "8.89",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "SIGIN"
+      },
+      {
+        "name": "11",
+        "x": "11.43",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "RSTPD_N"
+      },
+      {
+        "name": "12",
+        "x": "13.97",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "GND"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 364,
+    "ref": "CN1",
+    "package": "1X06_ROUND",
+    "element": {
+      "name": "CN1",
+      "library": "microbuilder",
+      "package": "1X06_ROUND",
+      "value": "FTDI",
+      "x": "78.194",
+      "y": "4",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "shape": "square",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "2",
+        "x": "-3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": null
+      },
+      {
+        "name": "3",
+        "x": "-1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "+5.0V"
+      },
+      {
+        "name": "4",
+        "x": "1.27",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "NSS/SCL/RX"
+      },
+      {
+        "name": "5",
+        "x": "3.81",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "MOSI/SDA/TX"
+      },
+      {
+        "name": "6",
+        "x": "6.35",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": null
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 364,
+    "ref": "JP5",
+    "package": "1X01_ROUND",
+    "element": {
+      "name": "JP5",
+      "library": "microbuilder",
+      "package": "1X01_ROUND",
+      "value": "",
+      "x": "116.534",
+      "y": "13.208",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "+5.0V"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3072,
+    "ref": "X1",
+    "package": "SMA_EDGELAUNCH_UFL",
+    "element": {
+      "name": "X1",
+      "library": "microbuilder",
+      "package": "SMA_EDGELAUNCH_UFL",
+      "value": "uFL/SMA",
+      "x": "21.59",
+      "y": "29.083",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "GND@2",
+        "x": "2.032",
+        "y": "2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "1",
+        "rot": "R90",
+        "cream": "no"
+      },
+      {
+        "name": "GND@1",
+        "x": "2.032",
+        "y": "-2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "1",
+        "rot": "R90",
+        "cream": "no"
+      },
+      {
+        "name": "P",
+        "x": "3.048",
+        "y": "0",
+        "dx": "1.016",
+        "dy": "2.032",
+        "layer": "1",
+        "rot": "R90",
+        "thermals": "no",
+        "cream": "no"
+      },
+      {
+        "name": "GND@3",
+        "x": "2.032",
+        "y": "2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "16",
+        "rot": "R90",
+        "cream": "no"
+      },
+      {
+        "name": "GND@4",
+        "x": "2.032",
+        "y": "-2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "16",
+        "rot": "R90",
+        "cream": "no"
+      }
+    ]
+  },
+  {
+    "sku": 3072,
+    "ref": "JP3",
+    "package": "1X09_ROUND_70",
+    "element": {
+      "name": "JP3",
+      "library": "microbuilder",
+      "package": "1X09_ROUND_70",
+      "value": "",
+      "x": "12.7",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VIN"
+      },
+      {
+        "name": "2",
+        "x": "-7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "EN"
+      },
+      {
+        "name": "4",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO0"
+      },
+      {
+        "name": "5",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SCK_5V"
+      },
+      {
+        "name": "6",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "MISO_3V"
+      },
+      {
+        "name": "7",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "MOSI_5V"
+      },
+      {
+        "name": "8",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CS_5V"
+      },
+      {
+        "name": "9",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "RST_5V"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3072,
+    "ref": "JP1",
+    "package": "1X05_ROUND_70",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X05_ROUND_70",
+      "value": "",
+      "x": "7.62",
+      "y": "27.94",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO1"
+      },
+      {
+        "name": "2",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO2"
+      },
+      {
+        "name": "3",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO3"
+      },
+      {
+        "name": "4",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO4"
+      },
+      {
+        "name": "5",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO5"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3072,
+    "ref": "JP2",
+    "package": "1X01_ROUND",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X01_ROUND",
+      "value": "",
+      "x": "21.59",
+      "y": "24.511",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "N$1"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3070,
+    "ref": "X1",
+    "package": "SMA_EDGELAUNCH_UFL",
+    "element": {
+      "name": "X1",
+      "library": "microbuilder",
+      "package": "SMA_EDGELAUNCH_UFL",
+      "value": "uFL/SMA",
+      "x": "21.59",
+      "y": "29.083",
+      "smashed": "yes",
+      "rot": "R270"
+    },
+    "pads": [],
+    "smd": [
+      {
+        "name": "GND@2",
+        "x": "2.032",
+        "y": "2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "1",
+        "rot": "R90",
+        "cream": "no"
+      },
+      {
+        "name": "GND@1",
+        "x": "2.032",
+        "y": "-2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "1",
+        "rot": "R90",
+        "cream": "no"
+      },
+      {
+        "name": "P",
+        "x": "3.048",
+        "y": "0",
+        "dx": "1.016",
+        "dy": "2.032",
+        "layer": "1",
+        "rot": "R90",
+        "thermals": "no",
+        "cream": "no"
+      },
+      {
+        "name": "GND@3",
+        "x": "2.032",
+        "y": "2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "16",
+        "rot": "R90",
+        "cream": "no"
+      },
+      {
+        "name": "GND@4",
+        "x": "2.032",
+        "y": "-2.54",
+        "dx": "1.524",
+        "dy": "4.064",
+        "layer": "16",
+        "rot": "R90",
+        "cream": "no"
+      }
+    ]
+  },
+  {
+    "sku": 3070,
+    "ref": "JP3",
+    "package": "1X09_ROUND_70",
+    "element": {
+      "name": "JP3",
+      "library": "microbuilder",
+      "package": "1X09_ROUND_70",
+      "value": "",
+      "x": "12.7",
+      "y": "2.54",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "VIN"
+      },
+      {
+        "name": "2",
+        "x": "-7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "GND"
+      },
+      {
+        "name": "3",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "EN"
+      },
+      {
+        "name": "4",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO0"
+      },
+      {
+        "name": "5",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "SCK_5V"
+      },
+      {
+        "name": "6",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "MISO_3V"
+      },
+      {
+        "name": "7",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "MOSI_5V"
+      },
+      {
+        "name": "8",
+        "x": "7.62",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "CS_5V"
+      },
+      {
+        "name": "9",
+        "x": "10.16",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "RST_5V"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3070,
+    "ref": "JP1",
+    "package": "1X05_ROUND_70",
+    "element": {
+      "name": "JP1",
+      "library": "microbuilder",
+      "package": "1X05_ROUND_70",
+      "value": "",
+      "x": "7.62",
+      "y": "27.94",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "-5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO1"
+      },
+      {
+        "name": "2",
+        "x": "-2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO2"
+      },
+      {
+        "name": "3",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO3"
+      },
+      {
+        "name": "4",
+        "x": "2.54",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO4"
+      },
+      {
+        "name": "5",
+        "x": "5.08",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.778",
+        "rot": "R90",
+        "net": "DIO5"
+      }
+    ],
+    "smd": []
+  },
+  {
+    "sku": 3070,
+    "ref": "JP2",
+    "package": "1X01_ROUND",
+    "element": {
+      "name": "JP2",
+      "library": "microbuilder",
+      "package": "1X01_ROUND",
+      "value": "",
+      "x": "21.59",
+      "y": "24.511",
+      "smashed": "yes"
+    },
+    "pads": [
+      {
+        "name": "1",
+        "x": "0",
+        "y": "0",
+        "drill": "1",
+        "diameter": "1.6764",
+        "rot": "R90",
+        "net": "N$1"
+      }
+    ],
+    "smd": []
+  }
+]

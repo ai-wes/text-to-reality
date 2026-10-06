@@ -1,0 +1,112 @@
+[
+  {
+    "id": "F1",
+    "board_id": "seeed-102010388",
+    "claim": "Exact SKU 102010388: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-xiao-samd21",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010388-seeed-studio-xiao-samd21-_pre-soldered_.jpg",
+      "https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/Seeeduino-XIAO-v1.0.zip"
+    ]
+  },
+  {
+    "id": "F2",
+    "board_id": "seeed-102010630",
+    "claim": "Exact SKU 102010630: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-studio-xiao-rp2040-standard-unsoldered",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2040-Pre-Soldered-p-6333.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010630-seeed-studio-xiao-rp2040-_pre-soldered_.jpg",
+      "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/"
+    ]
+  },
+  {
+    "id": "F3",
+    "board_id": "seeed-102010631",
+    "claim": "Exact SKU 102010631: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-xiao-nrf52840",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Pre-Soldered-p-6332.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010631-seeed-studio-xiao-nrf52840-_pre-soldered_.jpg",
+      "https://files.seeedstudio.com/wiki/XIAO-BLE/Res/260828_Seeed_Studio_XIAO_nRF52840_v1.2.zip"
+    ]
+  },
+  {
+    "id": "F4",
+    "board_id": "seeed-102010632",
+    "claim": "Exact SKU 102010632: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-xiao-nrf52840-sense",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Sense-Pre-Soldered-p-6330.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010632-seeed-studio-xiao-nrf52840-sense-_pre-soldered_.jpg",
+      "https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed-Studio-XIAO-nRF52840V1.1-KiCad-Project-260105.zip"
+    ]
+  },
+  {
+    "id": "F5",
+    "board_id": "seeed-102010633",
+    "claim": "Exact SKU 102010633: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-xiao-esp32c3",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010633-seeed-studio-xiao-esp32c3-_pre-soldered_.jpg",
+      "https://www.seeedstudio.com/blog/2022/08/19/how-to-use-seeed-studio-xiao-in-your-pcb-design/"
+    ]
+  },
+  {
+    "id": "F6",
+    "board_id": "seeed-102010635",
+    "claim": "Exact SKU 102010635: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-xiao-esp32s3-sense",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Sense-Pre-Soldered-p-6335.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010635-xiao-esp32-s3-sense_pre-soldered_.jpg",
+      "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH%26PCB_260226.zip"
+    ]
+  },
+  {
+    "id": "F7",
+    "board_id": "seeed-102010636",
+    "claim": "Exact SKU 102010636: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-xiao-esp32c6",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010636-seeed-studio-xiao-esp32c6-_pre-soldered_.jpg",
+      "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip"
+    ]
+  },
+  {
+    "id": "F8",
+    "board_id": "seeed-102010637",
+    "claim": "Exact SKU 102010637: factory male edge headers 7+7 at 2.54 mm; distinct from bare parent seeed-studio-xiao-rp2350-unsoldered",
+    "rank": 1,
+    "sources": [
+      "https://www.seeedstudio.com/Seeed-Studio-XIAO-RP2350-Pre-Soldered-p-6336.html",
+      "https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-102010637-seeed-studio-xiao-rp2350-_pre-soldered_.jpg",
+      "https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH%26PCB_240626.zip"
+    ]
+  },
+  {
+    "id": "F9",
+    "board_id": "adafruit-3046",
+    "claim": "Exact SKU 3046: factory male edge headers 16+12 at 2.54 mm; distinct from bare parent adafruit-2821",
+    "rank": 1,
+    "sources": [
+      "https://www.adafruit.com/product/3046",
+      "https://cdn-shop.adafruit.com/480x360/3046-07.jpg",
+      "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd"
+    ]
+  },
+  {
+    "id": "F10",
+    "board_id": "adafruit-3591",
+    "claim": "Exact SKU 3591: factory male edge headers 16+12 at 2.54 mm; distinct from bare parent adafruit-3405",
+    "rank": 1,
+    "sources": [
+      "https://www.adafruit.com/product/3591",
+      "https://cdn-shop.adafruit.com/480x360/3591-05.jpg",
+      "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd"
+    ]
+  }
+]

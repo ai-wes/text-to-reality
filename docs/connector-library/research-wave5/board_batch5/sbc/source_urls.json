@@ -1,0 +1,21 @@
+{
+  "pi5_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008347-DS",
+  "pi4b_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008343-DS",
+  "pi3bp_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008337-DS",
+  "pi3b_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008335-DS",
+  "pi1bp_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008351-DS",
+  "zero2w_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008358-DS",
+  "zerow_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008367-DS",
+  "zero_mechanical.pdf": "https://pip.raspberrypi.com/documents/RP-008365-DS",
+  "pi4b_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008345-DS",
+  "pi3bp_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008339-DS",
+  "pi3b_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008340-DS",
+  "pi2b_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008327-DS",
+  "pi1bp_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008353-DS",
+  "zero2w_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008360-DS",
+  "zerow_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008368-DS",
+  "zero_schematic.pdf": "https://pip.raspberrypi.com/documents/RP-008366-DS",
+  "debug_connector_spec.pdf": "https://pip.raspberrypi.com/documents/RP-008189-DS",
+  "beaglebone_black.pdf": "https://docs.beagleboard.org/beaglebone-black.pdf",
+  "beaglebone_green.html": "https://wiki.seeedstudio.com/BeagleBone_Green/"
+}

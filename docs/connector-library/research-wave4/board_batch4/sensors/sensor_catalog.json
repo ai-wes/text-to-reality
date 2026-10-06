@@ -1,0 +1,1748 @@
+{
+  "title": "JIG wave four SparkFun Qwiic sensor and I/O boards",
+  "checked_date": "2026-10-06",
+  "records": [
+    {
+      "id": "sparkfun-sen-15335",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-15335",
+      "name": "SparkFun 9DoF IMU Breakout - ICM-20948 (Qwiic)",
+      "aliases": [
+        "SEN-15335",
+        "15335"
+      ],
+      "kind": "imu",
+      "source": "https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "J3",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X06_NO_SILK",
+          "cad_refs": [
+            "J3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "VIN"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "SDA/SDI_VIN"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SCL/SCLK_VIN"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "AD0/SDO_VIN"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 1.27,
+              "net": "!CS!_VIN"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_9DoF_IMU_Breakout/blob/215f5227694c089130660f485c3af065fbbc1ef9/Hardware/SparkFun_IMU_Breakout_ICM-20948.brd"
+        },
+        {
+          "id": "J4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X06_NO_SILK",
+          "cad_refs": [
+            "J4"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 24.13,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 24.13,
+              "net": "INT_VIN"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 24.13,
+              "net": "FSYNC_VIN"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 24.13,
+              "net": "AUX_DA_VIN"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 24.13,
+              "net": "AUX_CL_VIN"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 24.13,
+              "net": "VIN"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_9DoF_IMU_Breakout/blob/215f5227694c089130660f485c3af065fbbc1ef9/Hardware/SparkFun_IMU_Breakout_ICM-20948.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_9DoF_IMU_Breakout/blob/215f5227694c089130660f485c3af065fbbc1ef9/Hardware/SparkFun_IMU_Breakout_ICM-20948.brd"
+        },
+        {
+          "id": "J1",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_9DoF_IMU_Breakout/blob/215f5227694c089130660f485c3af065fbbc1ef9/Hardware/SparkFun_IMU_Breakout_ICM-20948.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/SparkFun_Qwiic_9DoF_IMU_Breakout/blob/215f5227694c089130660f485c3af065fbbc1ef9/Hardware/SparkFun_IMU_Breakout_ICM-20948.brd",
+        "cad_commit": "215f5227694c089130660f485c3af065fbbc1ef9",
+        "cad_file": "SparkFun_Qwiic_9DoF_IMU_Breakout/Hardware/SparkFun_IMU_Breakout_ICM-20948.brd",
+        "product_snapshot": "product_15335.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/5/15335-SparkFun_9DoF_IMU_Breakout_-_ICM-20948__Qwiic_-01b.jpg",
+        "product_image_file": "SEN-15335.jpg",
+        "product_image_sha256": "50c660ac702a268d932fef8fceef4c5f7da339ce8f8aab13f06b0ef98a2d42c6",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15805",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-15805",
+      "name": "SparkFun High Precision Temperature Sensor - TMP117 (Qwiic)",
+      "aliases": [
+        "SEN-15805",
+        "15805"
+      ],
+      "kind": "temperature_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-high-precision-temperature-sensor-tmp117-qwiic.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "physical_row_1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J1",
+            "J4"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 7.62,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 10.16,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "1",
+              "x_mm": 17.78,
+              "y_mm": 1.27,
+              "net": "!INT"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/blob/aa763eaee71d9245e5c31daa6883f6f5c6186f16/Hardware/Sparkfun_TMP117_Qwiic.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J3",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/blob/aa763eaee71d9245e5c31daa6883f6f5c6186f16/Hardware/Sparkfun_TMP117_Qwiic.brd"
+        },
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/blob/aa763eaee71d9245e5c31daa6883f6f5c6186f16/Hardware/Sparkfun_TMP117_Qwiic.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/blob/aa763eaee71d9245e5c31daa6883f6f5c6186f16/Hardware/Sparkfun_TMP117_Qwiic.brd",
+        "cad_commit": "aa763eaee71d9245e5c31daa6883f6f5c6186f16",
+        "cad_file": "SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/Hardware/Sparkfun_TMP117_Qwiic.brd",
+        "product_snapshot": "product_15805.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/5/15805-SparkFun_High_Precision_Temperature_Sensor_-_TMP117__Qwiic_-01.jpg",
+        "product_image_file": "SEN-15805.jpg",
+        "product_image_sha256": "4f8580d949f6b18dc1ca2ac5569cf95cbeb9f3641cc617769b7638824a1ffe45",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-18642",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-18642",
+      "name": "SparkFun Qwiic ToF Imager - VL53L5CX",
+      "aliases": [
+        "SEN-18642",
+        "18642"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-tof-imager-vl53l5cx.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "physical_row_1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J3",
+            "J5",
+            "J6"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "1",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "INT"
+            },
+            {
+              "pad": "1",
+              "x_mm": 19.05,
+              "y_mm": 1.27,
+              "net": "RST"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_ToF_Imager_VL53L5CX/blob/19e97f0da7e9000c6e4a611269aca6bcc13f093f/Hardware/SparkFun%20Qwiic%20ToF%20Imager%20-%20VL53L5CX.brd"
+        },
+        {
+          "id": "physical_row_2",
+          "pin_count": 3,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "auxiliary_control_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J1",
+            "J7",
+            "J8"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 10.16,
+              "y_mm": 24.13,
+              "net": "VDDA"
+            },
+            {
+              "pad": "1",
+              "x_mm": 12.7,
+              "y_mm": 24.13,
+              "net": "VDDIO"
+            },
+            {
+              "pad": "1",
+              "x_mm": 15.24,
+              "y_mm": 24.13,
+              "net": "!LP"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_ToF_Imager_VL53L5CX/blob/19e97f0da7e9000c6e4a611269aca6bcc13f093f/Hardware/SparkFun%20Qwiic%20ToF%20Imager%20-%20VL53L5CX.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_ToF_Imager_VL53L5CX/blob/19e97f0da7e9000c6e4a611269aca6bcc13f093f/Hardware/SparkFun%20Qwiic%20ToF%20Imager%20-%20VL53L5CX.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/SparkFun_Qwiic_ToF_Imager_VL53L5CX/blob/19e97f0da7e9000c6e4a611269aca6bcc13f093f/Hardware/SparkFun%20Qwiic%20ToF%20Imager%20-%20VL53L5CX.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 9,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/SparkFun_Qwiic_ToF_Imager_VL53L5CX/blob/19e97f0da7e9000c6e4a611269aca6bcc13f093f/Hardware/SparkFun%20Qwiic%20ToF%20Imager%20-%20VL53L5CX.brd",
+        "cad_commit": "19e97f0da7e9000c6e4a611269aca6bcc13f093f",
+        "cad_file": "SparkFun_Qwiic_ToF_Imager_VL53L5CX/Hardware/SparkFun Qwiic ToF Imager - VL53L5CX.brd",
+        "product_snapshot": "product_18642.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/8/18642-SparkFun_Qwiic_ToF_Imager_-_VL53L5CX-01.jpg",
+        "product_image_file": "SEN-18642.jpg",
+        "product_image_sha256": "0c06656013025b3079a9015443d694a486426e5db011eba1045df415e81cb916",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-16467",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-16467",
+      "name": "SparkFun Humidity Sensor Breakout - SHTC3 (Qwiic)",
+      "aliases": [
+        "SEN-16467",
+        "16467"
+      ],
+      "kind": "temperature_humidity_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-humidity-sensor-breakout-shtc3-qwiic.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "J1",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X04_NO_SILK",
+          "cad_refs": [
+            "J1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "SCL"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Humidity_SHTC3/blob/89ecc1a11c2d0c3bbd8bc6224095ddf24aff0d09/Hardware/SHTC3%20Breakout.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Humidity_SHTC3/blob/89ecc1a11c2d0c3bbd8bc6224095ddf24aff0d09/Hardware/SHTC3%20Breakout.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Humidity_SHTC3/blob/89ecc1a11c2d0c3bbd8bc6224095ddf24aff0d09/Hardware/SHTC3%20Breakout.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 4,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_Humidity_SHTC3/blob/89ecc1a11c2d0c3bbd8bc6224095ddf24aff0d09/Hardware/SHTC3%20Breakout.brd",
+        "cad_commit": "89ecc1a11c2d0c3bbd8bc6224095ddf24aff0d09",
+        "cad_file": "Qwiic_Humidity_SHTC3/Hardware/SHTC3 Breakout.brd",
+        "product_snapshot": "product_16467.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/6/16467-SparkFun_Humidity_Sensor_Breakout_-_SHTC3__Qwiic_-01.jpg",
+        "product_image_file": "SEN-16467.jpg",
+        "product_image_sha256": "c3fd19078f2eb0d0a5ff8a058f3021f87ad7fc15b7c142a6685bca59a4d51974",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15242",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-15242",
+      "name": "SparkFun Qwiic Scale - NAU7802",
+      "aliases": [
+        "SEN-15242",
+        "15242"
+      ],
+      "kind": "load_cell_adc",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html",
+      "revision": "v10 pictured; exact CAD commit below",
+      "headers": [
+        {
+          "id": "physical_row_1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J3",
+            "J5"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "2",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "INT"
+            },
+            {
+              "pad": "1",
+              "x_mm": 19.05,
+              "y_mm": 1.27,
+              "net": "VDDA"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Scale/blob/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd"
+        },
+        {
+          "id": "physical_row_2",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "auxiliary_load_cell_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "JP2",
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 5.08,
+              "y_mm": 19.05,
+              "net": "B+"
+            },
+            {
+              "pad": "2",
+              "x_mm": 7.62,
+              "y_mm": 19.05,
+              "net": "B-"
+            },
+            {
+              "pad": "1",
+              "x_mm": 10.16,
+              "y_mm": 19.05,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 12.7,
+              "y_mm": 19.05,
+              "net": "A+"
+            },
+            {
+              "pad": "3",
+              "x_mm": 15.24,
+              "y_mm": 19.05,
+              "net": "A-"
+            },
+            {
+              "pad": "4",
+              "x_mm": 17.78,
+              "y_mm": 19.05,
+              "net": "GND"
+            },
+            {
+              "pad": "5",
+              "x_mm": 20.32,
+              "y_mm": 19.05,
+              "net": "VDDA"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Scale/blob/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd",
+          "notes": "Interior 7-contact load-cell/second-channel row; do not treat as main board-edge row."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Scale/blob/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Scale/blob/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd"
+        },
+        {
+          "id": "J7",
+          "kind": "spring_terminal",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "wire_terminal",
+          "package": "1X04_SPRING_TERMINAL",
+          "mounting_pad_count": 8,
+          "notes": "Terminal mating wire positions are separate from PCB mounting legs; not a pin header.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Scale/blob/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 13,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_Scale/blob/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd",
+        "cad_commit": "ab136d756a781f9ff104c225318d1604af385aac",
+        "cad_file": "Qwiic_Scale/Hardware/Qwiic_Scale.brd",
+        "product_snapshot": "product_15242.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/5/15242-SparkFun_Qwiic_Scale_-_NAU7802-01.jpg",
+        "product_image_file": "SEN-15242.jpg",
+        "product_image_sha256": "54bea926795f037cf7089addedcc5ade667d44d8291ef8eb12b25807c52d6595",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD.",
+        "additional_population_images": [
+          "SEN-15242-02.jpg",
+          "SEN-15242-03.jpg",
+          "SEN-15242-04.jpg"
+        ]
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count.",
+        "Four-position spring terminal has eight solder legs; do not miscount as an 8-pin header. Interior 7-position PTH row is retained separately from 6-position edge row."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-15177",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-15177",
+      "name": "SparkFun Proximity Sensor Breakout - 20cm, VCNL4040 (Qwiic)",
+      "aliases": [
+        "SEN-15177",
+        "15177"
+      ],
+      "kind": "proximity_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-proximity-sensor-breakout-20cm-vcnl4040-qwiic.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "physical_row_1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J3",
+            "J5"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 7.62,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 10.16,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "1",
+              "x_mm": 17.78,
+              "y_mm": 1.27,
+              "net": "!INT"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Proximity_Sensor/blob/af01991774b84238a18030e7f02f67c530ec456c/Hardware/Qwiic%20Proximity%20Sensor%20-%20VCNL4040.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "1X04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Proximity_Sensor/blob/af01991774b84238a18030e7f02f67c530ec456c/Hardware/Qwiic%20Proximity%20Sensor%20-%20VCNL4040.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "1X04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Proximity_Sensor/blob/af01991774b84238a18030e7f02f67c530ec456c/Hardware/Qwiic%20Proximity%20Sensor%20-%20VCNL4040.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_Proximity_Sensor/blob/af01991774b84238a18030e7f02f67c530ec456c/Hardware/Qwiic%20Proximity%20Sensor%20-%20VCNL4040.brd",
+        "cad_commit": "af01991774b84238a18030e7f02f67c530ec456c",
+        "cad_file": "Qwiic_Proximity_Sensor/Hardware/Qwiic Proximity Sensor - VCNL4040.brd",
+        "product_snapshot": "product_15177.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/5/15177-SparkFun_Proximity_Sensor_Breakout_-_20cm__VCNL4040__Qwiic_-01.jpg",
+        "product_image_file": "SEN-15177.jpg",
+        "product_image_sha256": "9998e307a03e4bde2044bd1a061bfb5ba55fa852eac8c9adba53c749b68ccd86",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-bob-16784",
+      "manufacturer": "SparkFun",
+      "sku": "BOB-16784",
+      "name": "SparkFun Qwiic Mux Breakout - 8 Channel (TCA9548A)",
+      "aliases": [
+        "BOB-16784",
+        "16784"
+      ],
+      "kind": "i2c_multiplexer",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-mux-breakout-8-channel-tca9548a.html",
+      "revision": "v1.1",
+      "headers": [],
+      "auxiliary_connectors": [
+        {
+          "id": "J1",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J8",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J9",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J10",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J23",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J24",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J25",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J26",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "1X04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J3",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "1X04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd"
+        },
+        {
+          "id": "J21",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "auxiliary_control",
+          "package": "1X01_NO_SILK",
+          "cad_refs": [
+            "J21"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 11.43012,
+              "y_mm": 46.98922,
+              "net": "!RST"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd",
+          "kind": "single_auxiliary_plated_pad",
+          "notes": "Singleton control pad, no within-group pitch; exclude from primary edge-comb proposals."
+        }
+      ],
+      "total_254mm_header_contacts": 0,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_Mux_TCA9548A/blob/56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b/Hardware/Qwiic%20Mux.brd",
+        "cad_commit": "56dd001df74e9eb9a9dd2ba8cd68dbdd1274345b",
+        "cad_file": "Qwiic_Mux_TCA9548A/Hardware/Qwiic Mux.brd",
+        "product_snapshot": "product_16784.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/6/16784-SparkFun_Qwiic_Mux_Breakout_V2_-_8_Channel__TCA9548A_-01.jpg",
+        "product_image_file": "BOB-16784.jpg",
+        "product_image_sha256": "c9e1fde3e5fc6344548105e64ad406026a2d0436f0f1bd9f9ad8a2964e52051b",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count.",
+        "This SKU has 10 Qwiic connectors and one reset singleton; there is no conventional multi-position 2.54 mm header row."
+      ]
+    },
+    {
+      "id": "sparkfun-dev-15334",
+      "manufacturer": "SparkFun",
+      "sku": "DEV-15334",
+      "name": "SparkFun Qwiic 12 Bit ADC - 4 Channel (ADS1015)",
+      "aliases": [
+        "DEV-15334",
+        "15334"
+      ],
+      "kind": "adc",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-12-bit-adc-4-channel-ads1015.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "J3",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "dual_row_io_header",
+          "package": "2X5_NOSILK",
+          "cad_refs": [
+            "J3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 17.78,
+              "y_mm": 3.81,
+              "net": "A3"
+            },
+            {
+              "pad": "2",
+              "x_mm": 17.78,
+              "y_mm": 1.27,
+              "net": "ALRT"
+            },
+            {
+              "pad": "3",
+              "x_mm": 15.24,
+              "y_mm": 3.81,
+              "net": "A2"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 3.81,
+              "net": "A1"
+            },
+            {
+              "pad": "6",
+              "x_mm": 12.7,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "7",
+              "x_mm": 10.16,
+              "y_mm": 3.81,
+              "net": "A0"
+            },
+            {
+              "pad": "8",
+              "x_mm": 10.16,
+              "y_mm": 1.27,
+              "net": "VCC"
+            },
+            {
+              "pad": "9",
+              "x_mm": 7.62,
+              "y_mm": 3.81,
+              "net": "GND"
+            },
+            {
+              "pad": "10",
+              "x_mm": 7.62,
+              "y_mm": 1.27,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_ADC_ADS1015/blob/55cca07b538b2c613d5f3e2119e8593b06a65cd0/Hardware/SparkFun_Qwiic_12_Bit_ADC_-_4_Channel_ADS1015.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J1",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_ADC_ADS1015/blob/55cca07b538b2c613d5f3e2119e8593b06a65cd0/Hardware/SparkFun_Qwiic_12_Bit_ADC_-_4_Channel_ADS1015.brd"
+        },
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_ADC_ADS1015/blob/55cca07b538b2c613d5f3e2119e8593b06a65cd0/Hardware/SparkFun_Qwiic_12_Bit_ADC_-_4_Channel_ADS1015.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "screw_terminal",
+          "pin_count": 6,
+          "pitch_mm": 3.5,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "wire_terminal",
+          "package": "SCREWTERMINAL-3.5MM-6",
+          "mounting_pad_count": 6,
+          "notes": "Terminal mating wire positions are separate from PCB mounting legs; not a pin header.",
+          "evidence": "https://github.com/sparkfun/Qwiic_ADC_ADS1015/blob/55cca07b538b2c613d5f3e2119e8593b06a65cd0/Hardware/SparkFun_Qwiic_12_Bit_ADC_-_4_Channel_ADS1015.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 10,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_ADC_ADS1015/blob/55cca07b538b2c613d5f3e2119e8593b06a65cd0/Hardware/SparkFun_Qwiic_12_Bit_ADC_-_4_Channel_ADS1015.brd",
+        "cad_commit": "55cca07b538b2c613d5f3e2119e8593b06a65cd0",
+        "cad_file": "Qwiic_ADC_ADS1015/Hardware/SparkFun_Qwiic_12_Bit_ADC_-_4_Channel_ADS1015.brd",
+        "product_snapshot": "product_15334.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/5/15334-SparkFun_Qwiic_12_Bit_ADC_-_4_Channel__ADS1015_-01.jpg",
+        "product_image_file": "DEV-15334.jpg",
+        "product_image_sha256": "06f67bc60194587b1ac160b929b67531a05d3339ea2cf26878d32bd2c9ece23d",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-14722",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-14722",
+      "name": "SparkFun Distance Sensor Breakout - 4 Meter, VL53L1X (Qwiic)",
+      "aliases": [
+        "SEN-14722",
+        "14722"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-distance-sensor-breakout-4-meter-vl53l1x-qwiic.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "physical_row_1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J3",
+            "J5",
+            "J1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "1",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "!INT"
+            },
+            {
+              "pad": "1",
+              "x_mm": 19.05,
+              "y_mm": 1.27,
+              "net": "!SHUT"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Distance_VL53L1X/blob/543b1e2d80325a39c2585882808757361f86cc66/Hardware/Qwiic%20Distance%20Sensor%20-%20VL53L1X.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "1X04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Distance_VL53L1X/blob/543b1e2d80325a39c2585882808757361f86cc66/Hardware/Qwiic%20Distance%20Sensor%20-%20VL53L1X.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "1X04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Distance_VL53L1X/blob/543b1e2d80325a39c2585882808757361f86cc66/Hardware/Qwiic%20Distance%20Sensor%20-%20VL53L1X.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_Distance_VL53L1X/blob/543b1e2d80325a39c2585882808757361f86cc66/Hardware/Qwiic%20Distance%20Sensor%20-%20VL53L1X.brd",
+        "cad_commit": "543b1e2d80325a39c2585882808757361f86cc66",
+        "cad_file": "Qwiic_Distance_VL53L1X/Hardware/Qwiic Distance Sensor - VL53L1X.brd",
+        "product_snapshot": "product_14722.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/4/14722-SparkFun_Distance_Sensor_Breakout-_4_Meter__VL53L1X__Qwiic_-01.jpg",
+        "product_image_file": "SEN-14722.jpg",
+        "product_image_sha256": "48af3dd10ad5825bdf608da5420b61bd130083de99aeed47e81964906d4aaadb",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-dev-17047",
+      "manufacturer": "SparkFun",
+      "sku": "DEV-17047",
+      "name": "SparkFun Qwiic GPIO",
+      "aliases": [
+        "DEV-17047",
+        "17047"
+      ],
+      "kind": "gpio_expander",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-gpio.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "J9",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X04_NO_SILK",
+          "cad_refs": [
+            "J9"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 59.69,
+              "y_mm": 24.13,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 59.69,
+              "y_mm": 26.67,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 59.69,
+              "y_mm": 29.21,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 59.69,
+              "y_mm": 31.75,
+              "net": "SCL"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        },
+        {
+          "id": "J4",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        },
+        {
+          "id": "J5",
+          "kind": "latch_terminal",
+          "pin_count": 4,
+          "pitch_mm": 5.0,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "wire_terminal",
+          "package": "LATCHTERMINAL-5MM-4",
+          "mounting_pad_count": 4,
+          "notes": "Terminal mating wire positions are separate from PCB mounting legs; not a pin header.",
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        },
+        {
+          "id": "J6",
+          "kind": "latch_terminal",
+          "pin_count": 4,
+          "pitch_mm": 5.0,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "wire_terminal",
+          "package": "LATCHTERMINAL-5MM-4",
+          "mounting_pad_count": 4,
+          "notes": "Terminal mating wire positions are separate from PCB mounting legs; not a pin header.",
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        },
+        {
+          "id": "J1",
+          "kind": "latch_terminal",
+          "pin_count": 4,
+          "pitch_mm": 5.0,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "wire_terminal",
+          "package": "LATCHTERMINAL-5MM-4",
+          "mounting_pad_count": 4,
+          "notes": "Terminal mating wire positions are separate from PCB mounting legs; not a pin header.",
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        },
+        {
+          "id": "J8",
+          "kind": "latch_terminal",
+          "pin_count": 4,
+          "pitch_mm": 5.0,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "role": "wire_terminal",
+          "package": "LATCHTERMINAL-5MM-4",
+          "mounting_pad_count": 4,
+          "notes": "Terminal mating wire positions are separate from PCB mounting legs; not a pin header.",
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd"
+        },
+        {
+          "id": "J7",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "auxiliary_control",
+          "package": "1X01_NO_SILK",
+          "cad_refs": [
+            "J7"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 59.69,
+              "y_mm": 13.97,
+              "net": "!INT"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd",
+          "kind": "single_auxiliary_plated_pad",
+          "notes": "Singleton control pad, no within-group pitch; exclude from primary edge-comb proposals."
+        }
+      ],
+      "total_254mm_header_contacts": 4,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_GPIO/blob/d3fc4672ccd731266f01de194a290f7923f77d8a/Hardware/Qwiic_GPIO.brd",
+        "cad_commit": "d3fc4672ccd731266f01de194a290f7923f77d8a",
+        "cad_file": "Qwiic_GPIO/Hardware/Qwiic_GPIO.brd",
+        "product_snapshot": "product_17047.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/7/17047-SparkFun_Qwiic_GPIO-01.jpg",
+        "product_image_file": "DEV-17047.jpg",
+        "product_image_sha256": "93e4e2edb1310238f49eb19ae063baa3c740e32517bcb72f5e8b6dbb0d31c247",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-16466",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-16466",
+      "name": "SparkFun Environmental Sensor Breakout - BME680 (Qwiic)",
+      "aliases": [
+        "SEN-16466",
+        "16466"
+      ],
+      "kind": "environmental_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-environmental-sensor-breakout-bme680-qwiic.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "J2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X06_NO_SILK",
+          "cad_refs": [
+            "J2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 24.13,
+              "net": "!CS"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 24.13,
+              "net": "SDI/SDA"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 24.13,
+              "net": "SDO/ADR"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 24.13,
+              "net": "SCK/SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 24.13,
+              "net": "3.3V"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 24.13,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME680/blob/ff6f1f269c195a209b036d0325c8b94deaeae1ab/Hardware/Qwiic%20Environmental%20BME680.brd"
+        },
+        {
+          "id": "J1",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "1X04_NO_SILK",
+          "cad_refs": [
+            "J1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SDI/SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "SCK/SCL"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME680/blob/ff6f1f269c195a209b036d0325c8b94deaeae1ab/Hardware/Qwiic%20Environmental%20BME680.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J5",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME680/blob/ff6f1f269c195a209b036d0325c8b94deaeae1ab/Hardware/Qwiic%20Environmental%20BME680.brd"
+        },
+        {
+          "id": "J7",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME680/blob/ff6f1f269c195a209b036d0325c8b94deaeae1ab/Hardware/Qwiic%20Environmental%20BME680.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 10,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME680/blob/ff6f1f269c195a209b036d0325c8b94deaeae1ab/Hardware/Qwiic%20Environmental%20BME680.brd",
+        "cad_commit": "ff6f1f269c195a209b036d0325c8b94deaeae1ab",
+        "cad_file": "Qwiic_Environmental_Sensor_BME680/Hardware/Qwiic Environmental BME680.brd",
+        "product_snapshot": "product_16466.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/6/16466-SparkFun_Environmental_Sensor_Breakout_-_BME680__Qwiic_-01a.jpg",
+        "product_image_file": "SEN-16466.jpg",
+        "product_image_sha256": "e0e89186a37e3c3cc322cfe3f55c3a914e0fbcb6b0daf49288fe0d5893eda886",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    },
+    {
+      "id": "sparkfun-sen-16476",
+      "manufacturer": "SparkFun",
+      "sku": "SEN-16476",
+      "name": "SparkFun Qwiic MicroPressure Sensor",
+      "aliases": [
+        "SEN-16476",
+        "16476"
+      ],
+      "kind": "pressure_sensor",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-micropressure-sensor.html",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "physical_row_1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "role": "main_edge_row",
+          "package": "contiguous physical row spanning CAD elements",
+          "cad_refs": [
+            "J3",
+            "J4"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 1.27,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 1.27,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 1.27,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 1.27,
+              "net": "SCL"
+            },
+            {
+              "pad": "1",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "!RESET"
+            },
+            {
+              "pad": "2",
+              "x_mm": 19.05,
+              "y_mm": 1.27,
+              "net": "EOC"
+            }
+          ],
+          "evidence": "https://github.com/sparkfun/MicroPressure_Sensor/blob/8dbe741d6e9372edd12e93c4f34f845914d4b4b4/Hardware/SparkFun_MicroPressure_Sensor.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J1",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/MicroPressure_Sensor/blob/8dbe741d6e9372edd12e93c4f34f845914d4b4b4/Hardware/SparkFun_MicroPressure_Sensor.brd"
+        },
+        {
+          "id": "J2",
+          "kind": "Qwiic_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "role": "qwiic_cable_port",
+          "package": "JST04_1MM_RA",
+          "notes": "Four electrical contacts; two mounting anchors excluded. Not a 2.54 mm comb group.",
+          "evidence": "https://github.com/sparkfun/MicroPressure_Sensor/blob/8dbe741d6e9372edd12e93c4f34f845914d4b4b4/Hardware/SparkFun_MicroPressure_Sensor.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "checked_date": "2026-10-06",
+        "cad_url": "https://github.com/sparkfun/MicroPressure_Sensor/blob/8dbe741d6e9372edd12e93c4f34f845914d4b4b4/Hardware/SparkFun_MicroPressure_Sensor.brd",
+        "cad_commit": "8dbe741d6e9372edd12e93c4f34f845914d4b4b4",
+        "cad_file": "MicroPressure_Sensor/Hardware/SparkFun_MicroPressure_Sensor.brd",
+        "product_snapshot": "product_16476.html",
+        "product_image_url": "https://www.sparkfun.com/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/1/6/16476-SparkFun_Qwiic_MicroPressure_Sensor-01.jpg",
+        "product_image_file": "SEN-16476.jpg",
+        "product_image_sha256": "c9899a74b8c32e1a0394599bb3377bcde2ec78e2adec14fa7e5baad71a1e15dc",
+        "method": "Eagle package plated-pad counts and coordinate spacing; collinear segments merged only after geometric assertion. Factory population checked against exact product photos.",
+        "source_linkage": "Official product page links hardware repository; SKU metadata read from product JSON-LD."
+      },
+      "caveats": [
+        "Exact manufacturer SKU and pictured/pinned revision only; clones or other revisions may differ.",
+        "Actual JIG fit, electrical compatibility, retention, clearance and current qualification unknown.",
+        "Mounting holes, SMT component pads, solder jumpers and connector anchors excluded from header count."
+      ]
+    }
+  ]
+}

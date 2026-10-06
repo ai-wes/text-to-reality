@@ -1,0 +1,1610 @@
+{
+  "schema_version": "neutral-header-catalog-1",
+  "batch": "sbc_wave5",
+  "boards": [
+    {
+      "id": "raspberry-pi-zero",
+      "name": "Raspberry Pi Zero",
+      "aliases": [
+        "RPi Zero"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "without pre-soldered headers",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008366-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008365-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "TV",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "composite_video_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://magazine.raspberrypi.com/articles/rca-pi-zero",
+              "claim": "Official Raspberry Pi Press article describes two TV pads requiring soldered header pins"
+            },
+            {
+              "url": "https://magazine.raspberrypi.com/articles/pi-zero-w",
+              "claim": "Official product article identifies unpopulated RUN and composite interfaces"
+            }
+          ]
+        },
+        {
+          "id": "RUN",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reset_auxiliary",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Presence documented; exact physical pin count/geometry not established from retrieved primary text. Do not infer a count",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008366-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008365-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008366-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008365-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-zero-w",
+      "name": "Raspberry Pi Zero W",
+      "aliases": [
+        "RPi Zero W"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "without pre-soldered headers",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008368-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008367-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "TV",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "composite_video_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://magazine.raspberrypi.com/articles/rca-pi-zero",
+              "claim": "Official Raspberry Pi Press article describes two TV pads requiring soldered header pins"
+            },
+            {
+              "url": "https://magazine.raspberrypi.com/articles/pi-zero-w",
+              "claim": "Official product article identifies unpopulated RUN and composite interfaces"
+            }
+          ]
+        },
+        {
+          "id": "RUN",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "pins_per_row": null,
+          "gender": null,
+          "population": "unpopulated",
+          "role": "reset_auxiliary",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Presence documented; exact physical pin count/geometry not established from retrieved primary text. Do not infer a count",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008368-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008367-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008368-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008367-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-zero-2-w",
+      "name": "Raspberry Pi Zero 2 W",
+      "aliases": [
+        "RPi Zero 2 W"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "without pre-soldered headers",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008360-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008358-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008360-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008358-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [
+        "RUN and TV are manufacturer-listed underside test pads, not inferred two-pin header rows"
+      ],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-3b",
+      "name": "Raspberry Pi 3 Model B",
+      "aliases": [
+        "RPi 3 Model B"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "standard board; memory capacity not split into duplicate records",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008340-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008335-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "J2-RUN",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "reset_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Reduced schematic labels a two-way header; as-shipped population not established from source text",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008340-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008335-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008340-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008335-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-3b-plus",
+      "name": "Raspberry Pi 3 Model B+",
+      "aliases": [
+        "RPi 3 Model B+"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "standard board; memory capacity not split into duplicate records",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008339-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008337-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "J2-RUN",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "reset_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Reduced schematic labels a two-way header; as-shipped population not established from source text",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008339-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008337-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "J14-PoE",
+          "pin_count": 4,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            2,
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "poe_auxiliary",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Complete four-contact block, independent from GPIO; auxiliary pitch not assumed from main GPIO",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008339-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008337-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008339-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008337-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-4b",
+      "name": "Raspberry Pi 4 Model B",
+      "aliases": [
+        "RPi 4 Model B"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "standard board; memory capacity not split into duplicate records",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008345-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008343-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "J14-PoE",
+          "pin_count": 4,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            2,
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "poe_auxiliary",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Complete four-contact block, independent from GPIO; auxiliary pitch not assumed from main GPIO",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008345-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008343-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "J2-RUN-GLOBAL_EN",
+          "pin_count": 3,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": null,
+          "role": "reset_power_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Three positions in reduced schematic; RUN and GLOBAL_EN differ electrically",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008345-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008343-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008345-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008343-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-5",
+      "name": "Raspberry Pi 5",
+      "aliases": [
+        "RPi 5"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "standard board; memory capacity not split into duplicate records",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": null,
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008347-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "PoE",
+          "pin_count": 4,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            2,
+            2
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "poe_auxiliary",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/news/introducing-raspberry-pi-5/",
+              "claim": "Originating announcement explicitly names four-pin PoE header; relocated from previous models"
+            }
+          ]
+        },
+        {
+          "id": "UART",
+          "pin_count": 3,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "pins_per_row": [
+            3
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "shrouded_jst_sh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "claim": "Pi 5 UART connector linked to debug connector specification"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008189-DS",
+              "document": "RP-003139-SP Rev 4, p.3",
+              "claim": "Three-pin JST SH, 1 mm pitch"
+            }
+          ]
+        },
+        {
+          "id": "FAN",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "fan_auxiliary",
+          "geometry": "shrouded_jst_sh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Manufacturer calls it a socket; electrical contact gender not inferred",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008347-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        },
+        {
+          "id": "RTC-BAT",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "battery_auxiliary",
+          "geometry": "shrouded_jst_sh",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Two-pin battery interface documented; pitch not independently established here",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008347-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008347-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [
+        "Power-button/composite-video test pads and FFC sockets are not treated as straight pin headers"
+      ],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-2b",
+      "name": "Raspberry Pi 2 Model B",
+      "aliases": [
+        "RPi 2 Model B"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "standard board; memory capacity not split into duplicate records",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": "J8",
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008327-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            }
+          ]
+        },
+        {
+          "id": "J2-RUN",
+          "pin_count": 2,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            2
+          ],
+          "gender": null,
+          "population": null,
+          "role": "reset_auxiliary",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Reduced schematic labels a two-way header; as-shipped population not established from source text",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008327-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008327-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "raspberry-pi-1b-plus",
+      "name": "Raspberry Pi 1 Model B+",
+      "aliases": [
+        "RPi 1 Model B+"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Raspberry Pi",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "board_variant": "standard board; memory capacity not split into duplicate records",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "GPIO",
+          "pin_count": 40,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            20,
+            20
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "manufacturer_designator": null,
+          "row_pitch_mm": 2.54,
+          "notes": "Complete 2x20 interface; never split into two compatible 20-pin comb rows",
+          "evidence": [
+            {
+              "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+              "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+              "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008353-DS",
+              "document": "Manufacturer reduced schematic, single sheet",
+              "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+            },
+            {
+              "url": "https://pip.raspberrypi.com/documents/RP-008351-DS",
+              "document": "Manufacturer mechanical drawing",
+              "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+          "section": "Flagship/Zero model tables; GPIO and the 40-pin header",
+          "claim": "Exact model has a 40-contact GPIO interface; 2.54 mm pitch; Zero variants without headers are unpopulated"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008353-DS",
+          "document": "Manufacturer reduced schematic, single sheet",
+          "claim": "GPIO contact numbering and distinct auxiliary connector references; source revision does not identify a supplied unit"
+        },
+        {
+          "url": "https://pip.raspberrypi.com/documents/RP-008351-DS",
+          "document": "Manufacturer mechanical drawing",
+          "claim": "Primary drawing source; downloaded binary unavailable in this environment; no manufacturing tolerance or physical-fit assertion"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "auxiliary_review_notes": [
+        "Reduced schematic does not establish the RUN footprint details; auxiliary review remains incomplete"
+      ],
+      "excluded_nonheader_features": [
+        "USB/HDMI/Ethernet/audio/storage connectors",
+        "CSI/DSI/PCIe FFC connectors",
+        "SMT production test pads"
+      ],
+      "revision_notes": "One record per exact marketed model; no invented PCB revision variants. Match actual board marking before fixture design"
+    },
+    {
+      "id": "beagleboard-beaglebone-black",
+      "name": "BeagleBone Black",
+      "aliases": [
+        "BBB"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "BeagleBoard.org",
+      "source": "https://docs.beagleboard.org/beaglebone-black.pdf",
+      "board_variant": "standard BeagleBone Black",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-black.pdf",
+              "document": "BeagleBone Black manual, June 4 2026",
+              "pages": [
+                26,
+                27,
+                32,
+                34,
+                70,
+                71,
+                72,
+                73,
+                77,
+                81,
+                91,
+                92
+              ],
+              "claim": "Two full 46-contact cape interfaces, fitted 1x6 serial debug header, optional CTI JTAG; official photo confirms female cape sockets"
+            },
+            {
+              "url": "https://www.samtec.com/products/ftr-110-03-g-d-06",
+              "claim": "Specified optional JTAG connector has nominal 20 positions, 2 rows, pin 6 omitted; .050 by .100 inch geometry"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-black.pdf",
+              "document": "BeagleBone Black manual, June 4 2026",
+              "pages": [
+                26,
+                27,
+                32,
+                34,
+                70,
+                71,
+                72,
+                73,
+                77,
+                81,
+                91,
+                92
+              ],
+              "claim": "Two full 46-contact cape interfaces, fitted 1x6 serial debug header, optional CTI JTAG; official photo confirms female cape sockets"
+            },
+            {
+              "url": "https://www.samtec.com/products/ftr-110-03-g-d-06",
+              "claim": "Specified optional JTAG connector has nominal 20 positions, 2 rows, pin 6 omitted; .050 by .100 inch geometry"
+            }
+          ]
+        },
+        {
+          "id": "J1-UART0",
+          "pin_count": 6,
+          "pitch_mm": null,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "1x6 and fitted male verified; pitch left null rather than inferred from another connector",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-black.pdf",
+              "document": "BeagleBone Black manual, June 4 2026",
+              "pages": [
+                26,
+                27,
+                32,
+                34,
+                70,
+                71,
+                72,
+                73,
+                77,
+                81,
+                91,
+                92
+              ],
+              "claim": "Two full 46-contact cape interfaces, fitted 1x6 serial debug header, optional CTI JTAG; official photo confirms female cape sockets"
+            },
+            {
+              "url": "https://www.samtec.com/products/ftr-110-03-g-d-06",
+              "claim": "Specified optional JTAG connector has nominal 20 positions, 2 rows, pin 6 omitted; .050 by .100 inch geometry"
+            }
+          ]
+        },
+        {
+          "id": "P2-CTI-JTAG",
+          "pin_count": 19,
+          "pitch_mm": 1.27,
+          "rows": 2,
+          "pins_per_row": [
+            10,
+            9
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag",
+          "geometry": "keyed_2x10_pin6_omitted",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "nominal_positions": 20,
+          "missing_positions": [
+            6
+          ],
+          "row_pitch_mm": 2.54,
+          "notes": "19 contacts if manufacturer-specified FTR-110-03-G-D-06 connector is installed; nominal 20-position footprint. Board ships without connector; actual footprint pad count unverified",
+          "evidence": [
+            {
+              "url": "https://docs.beagleboard.org/beaglebone-black.pdf",
+              "document": "BeagleBone Black manual, June 4 2026",
+              "pages": [
+                26,
+                27,
+                32,
+                34,
+                70,
+                71,
+                72,
+                73,
+                77,
+                81,
+                91,
+                92
+              ],
+              "claim": "Two full 46-contact cape interfaces, fitted 1x6 serial debug header, optional CTI JTAG; official photo confirms female cape sockets"
+            },
+            {
+              "url": "https://www.samtec.com/products/ftr-110-03-g-d-06",
+              "claim": "Specified optional JTAG connector has nominal 20 positions, 2 rows, pin 6 omitted; .050 by .100 inch geometry"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.beagleboard.org/beaglebone-black.pdf",
+          "document": "BeagleBone Black manual, June 4 2026",
+          "pages": [
+            26,
+            27,
+            32,
+            34,
+            70,
+            71,
+            72,
+            73,
+            77,
+            81,
+            91,
+            92
+          ],
+          "claim": "Two full 46-contact cape interfaces, fitted 1x6 serial debug header, optional CTI JTAG; official photo confirms female cape sockets"
+        },
+        {
+          "url": "https://www.samtec.com/products/ftr-110-03-g-d-06",
+          "claim": "Specified optional JTAG connector has nominal 20 positions, 2 rows, pin 6 omitted; .050 by .100 inch geometry"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "excluded_nonheader_features": [
+        "Battery solder/test pads",
+        "USB/HDMI/Ethernet/DC barrel/microSD sockets"
+      ],
+      "revision_notes": "Manual covers several PCB revisions; no separate revision records manufactured"
+    },
+    {
+      "id": "seeed-beaglebone-green",
+      "name": "Seeed Studio BeagleBone Green",
+      "aliases": [
+        "BeagleBone Green",
+        "BBG"
+      ],
+      "kind": "single_board_computer",
+      "manufacturer": "Seeed Studio",
+      "source": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+      "board_variant": "Green, not Green Wireless/Gateway/Eco",
+      "board_revision": null,
+      "headers": [
+        {
+          "id": "P8",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+              "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+              "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+              "pages": [
+                3,
+                4,
+                10
+              ],
+              "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+              "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+            }
+          ]
+        },
+        {
+          "id": "P9",
+          "pin_count": 46,
+          "pitch_mm": 2.54,
+          "rows": 2,
+          "pins_per_row": [
+            23,
+            23
+          ],
+          "gender": "female",
+          "population": "fitted",
+          "role": "main_expansion",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "row_pitch_mm": 2.54,
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+              "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+              "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+              "pages": [
+                3,
+                4,
+                10
+              ],
+              "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+              "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+            }
+          ]
+        },
+        {
+          "id": "J1-UART0",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "pins_per_row": [
+            6
+          ],
+          "gender": "male",
+          "population": "fitted",
+          "role": "debug_uart",
+          "geometry": "straight",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+              "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+              "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+              "pages": [
+                3,
+                4,
+                10
+              ],
+              "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+              "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+            }
+          ]
+        },
+        {
+          "id": "P2-JTAG",
+          "pin_count": 20,
+          "pitch_mm": null,
+          "rows": 2,
+          "pins_per_row": [
+            10,
+            10
+          ],
+          "gender": null,
+          "population": "unpopulated",
+          "role": "debug_jtag",
+          "geometry": "multi_row",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Schematic explicitly marks Header 2x10P DNI. Do not transfer BeagleBone Black connector keying without exact BOM evidence",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+              "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+              "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+              "pages": [
+                3,
+                4,
+                10
+              ],
+              "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+              "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+            }
+          ]
+        },
+        {
+          "id": "Grove-UART",
+          "pin_count": 4,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "uart_auxiliary",
+          "geometry": "shrouded_right_angle",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Manufacturer schematic part 4P-2.0mm-90D",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+              "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+              "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+              "pages": [
+                3,
+                4,
+                10
+              ],
+              "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+              "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+            }
+          ]
+        },
+        {
+          "id": "Grove-I2C",
+          "pin_count": 4,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "pins_per_row": [
+            4
+          ],
+          "gender": null,
+          "population": "fitted",
+          "role": "i2c_auxiliary",
+          "geometry": "shrouded_right_angle",
+          "full_connector": true,
+          "comb_qualified": false,
+          "fit_status": "unverified",
+          "notes": "Manufacturer schematic part 4P-2.0mm-90D",
+          "evidence": [
+            {
+              "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+              "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+            },
+            {
+              "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+              "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+              "pages": [
+                3,
+                4,
+                10
+              ],
+              "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+            },
+            {
+              "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+              "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wiki.seeedstudio.com/BeagleBone_Green/",
+          "claim": "Exact BeagleBone Green model, two 46-pin cape interfaces and two Grove connectors"
+        },
+        {
+          "url": "https://files.seeedstudio.com/products/102010027/Res/BeagleBone_Green_REV1.2_SCH_240816.pdf",
+          "document": "Manufacturer schematic file REV1.2, August 16 2024; internal title includes legacy revision strings",
+          "pages": [
+            3,
+            4,
+            10
+          ],
+          "claim": "P8/P9 2x23 at 2.54 mm; J1 1x6 at 2.54 mm; P2 2x10 DNI; Grove connectors four contacts at 2 mm"
+        },
+        {
+          "url": "https://files.seeedstudio.com/wiki/BeagleBone_Green/images/cover.jpg",
+          "claim": "Official photo inspected: fitted female cape sockets, fitted male serial header, fitted Grove connectors"
+        }
+      ],
+      "fit_status": "unverified",
+      "physical_fit_verified": false,
+      "retrieved_date": "2026-10-06",
+      "revision_notes": "One exact marketed model. Source schematic revision retained in evidence, actual unit revision unknown"
+    }
+  ],
+  "global_notes": [
+    "All main SBC expansion connectors are multi-row and are not compatible with a single-row comb as a complete connector",
+    "Every physical fit remains unverified; unknown values are null",
+    "Some reduced schematics and primary text leave auxiliary attributes unresolved; no count inflation"
+  ]
+}

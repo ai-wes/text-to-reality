@@ -1,0 +1,2185 @@
+                                                                             UM1472
+                                                                         User manual
+                                          Discovery kit with STM32F407VG MCU
+
+
+            Introduction
+            The STM32F4DISCOVERY Discovery kit allows users to develop applications with the
+            STM32F407VG high-performance microcontroller with the Arm® Cortex®-M4 32-bit core. It
+            includes everything for beginners or experienced users to get started quickly.
+            Based on STM32F407VG, it includes an ST-LINK/V2-A embedded debug tool, one MEMS
+            digital accelerometer, one digital microphone, one audio DAC with integrated class D
+            speaker driver, LEDs, push-buttons, and a USB OTG Micro-AB connector. Specialized
+            expansion boards can be connected using the extension header connectors. The
+            STM32F4DISCOVERY Discovery kit comes with the STM32 comprehensive free software
+            libraries and examples available in the STM32CubeF4 MCU Package.
+
+                                          Figure 1. STM32F4DISCOVERY
+
+
+
+
+            Picture is not contractual.
+
+
+
+
+February 2026                               UM1472 Rev 9                                       1/41
+                                                                                          www.st.com   1
+Contents                                                                                                                         UM1472
+
+
+Contents
+
+1          Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2          Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.1      Codification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3          Development environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.1      System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.2      Development toolchains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.3      Demonstration software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.4      EDA resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+4          Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+5          Safety recommendations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           5.1      Targeted audience . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           5.2      Handling the board . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           5.3      Delivery recommendations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           5.4      Power supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+6          Quick start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+           6.1      Getting started . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .11
+
+7          Hardware and layout and configuration . . . . . . . . . . . . . . . . . . . . . . . . 12
+           7.1      Hardware layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+           7.2      Mechanical dimensions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+           7.3      Embedded ST-LINK/V2-A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                    7.3.1       Drivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                    7.3.2       ST-LINK/V2-A firmware upgrade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                    7.3.3       ST-LINK/V2-A VCP configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+                    7.3.4       Using ST-LINK/V2-A to program/debug the STM32F407VG on board . 19
+                    7.3.5       Using ST-LINK/V2-A to program/debug an external STM32 application 20
+           7.4      Power supply and power selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+           7.5      LEDs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+2/41                                                  UM1472 Rev 9
+UM1472                                                                                                               Contents
+
+
+         7.6      Push-buttons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+         7.7      On-board audio capability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+         7.8      USB OTG supported . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+         7.9      Motion sensor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+         7.10     JP1 (Idd) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+         7.11     Clock sources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+                  7.11.1      OSC clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+                  7.11.2      OSC 32 KHz clock supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+         7.12     Solder bridges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+         7.13     Extension connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+8        STM32F4DISCOVERY Discovery kit information . . . . . . . . . . . . . . . . . 32
+         8.1      Product marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+         8.2      STM32F4DISCOVERY product history . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+         8.3      Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+
+9        Compliance statements and conformity declarations . . . . . . . . . . . . . 36
+         9.1      Federal Communications Commission (FCC) compliance statement . . . 36
+         9.2      Innovation, Science and Economic Development Canada (ISED)
+                  compliance statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+         9.3      UKCA conformity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+         9.4      CE conformity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+                  9.4.1       Simplified EU declaration of conformity . . . . . . . . . . . . . . . . . . . . . . . . . 37
+                  9.4.2       Déclaration de conformité UE simplifiée . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+
+10       Product disposal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+11       Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+
+
+
+
+                                                  UM1472 Rev 9                                                               3/41
+                                                                                                                                      3
+List of tables                                                                                                                       UM1472
+
+
+List of tables
+
+Table 1.    Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 2.    Codification explanation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 3.    ON/OFF conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Table 4.    Jumper states . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Table 5.    Debug connector CN2 (SWD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 6.    Solder bridges. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Table 7.    STM32 pin description versus board functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Table 8.    Product history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Table 9.    Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Table 10.   Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+
+
+
+
+4/41                                                       UM1472 Rev 9
+UM1472                                                                                                                 List of figures
+
+
+List of figures
+
+Figure 1.   STM32F4DISCOVERY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 2.   Hardware block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 3.   STM32F4DISCOVERY top layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 4.   STM32F4DISCOVERY bottom layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Figure 5.   STM32F4DISCOVERY mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Figure 6.   USB Composite Device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Figure 7.   ST-LINK VCP connection to USART2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Figure 8.   STM32F4DISCOVERY connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Figure 9.   ST-LINK connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+
+
+
+
+                                                         UM1472 Rev 9                                                                 5/41
+                                                                                                                                               5
+Features                                                                                                           UM1472
+
+
+1          Features
+
+           The STM32F4DISCOVERY offers the following features:
+           • STM32F407VGT6 microcontroller featuring 32-bit Arm®(a) Cortex®-M4 with FPU core,
+             1-Mbyte flash memory, and 192-Kbyte RAM in an LQFP100 package
+           • USB OTG FS
+           • MEMS 3-axis accelerometer
+           • MEMS audio sensor omnidirectional digital microphone
+           • Audio DAC with integrated class D speaker driver
+           • User and reset push-buttons
+           • Eight LEDs:
+                 –     LD1 (red/green) for USB communication
+                 –     LD2 (red) for 3.3 V power on
+                 –     Four user LEDs, LD3 (orange), LD4 (green), LD5 (red) and LD6 (blue)
+              –    Two USB OTG LEDs, LD7 (green) VBUS and LD8 (red) over-current
+           • Board connectors:
+                 –     USB with Micro-AB
+                 –     Stereo headphone output jack
+                 –    2.54 mm pitch extension header for all LQFP100 I/Os for quick connection to
+                      prototyping board and easy probing
+           •   Flexible power-supply options: ST-LINK, USB VBUS, or external sources
+           •   External application power supply: 3 V and 5 V
+           •   Comprehensive free software including a variety of examples, part of STM32CubeF4
+               MCU Package, or STSW-STM32068 for using legacy standard libraries
+           •   On-board ST-LINK/V2-A debugger/programmer with USB re-enumeration capability:
+               mass storage, Virtual COM port, and debug port
+           •   Support of a wide choice of Integrated Development Environments (IDEs) including IAR
+               Embedded Workbench®, MDK-ARM, and STM32CubeIDE
+
+
+
+
+           a. Arm and Cortex are registered trademarks of Arm Limited (or its subsidiaries or affiliates) in the US and/or
+              elsewhere.
+              The Arm word and logo are trademarks of Arm Limited (or its subsidiaries) in the US and/or elsewhere. All
+              rights reserved.
+
+
+
+6/41                                                UM1472 Rev 9
+UM1472                                                                                   Ordering information
+
+
+2        Ordering information
+
+         To order the Discovery kit for the STM32F407 product line of microcontrollers, refer to
+         Table 1. Additional information is available from the datasheet and reference manual of the
+         target microcontroller.
+
+                                            Table 1. Ordering information
+                    Order code                        Board reference                     Target STM32
+
+              STM32F407G-DISC1(1)                          MB997   (2)
+                                                                                         STM32F407VGT6
+         1. STM32F407G-DISC1 with ST-LINK/V2-A replaces the obsolete STM32F4DISCOVERY order code with
+            ST-LINK/V2.
+         2. Subsequently called main board in the rest of the documentation.
+
+
+
+2.1      Codification
+         The meaning of the codification is explained in Table 2.
+
+                                          Table 2. Codification explanation
+          STM32F4XXY-DISCN                          Description                Example: STM32F407G-DISC1
+
+                                    MCU series in STM32 32-bit Arm Cortex
+                 STM32F4                                                  STM32F4 series
+                                    MCUs
+                    XX              MCU product line in the series             STM32F407 product line
+                                    STM32 flash memory size:
+                     Y                                                         1 Mbyte
+                                    – G for 1 Mbyte
+                   DISC             Discovery kit                              Discovery kit
+                     N              Sequential number                          First version
+
+
+
+
+                                                UM1472 Rev 9                                             7/41
+                                                                                                                40
+Development environment                                                                        UM1472
+
+
+3         Development environment
+
+3.1       System requirements
+          •    Windows® 10 or 11, Linux® 64-bit, or macOS® (a)
+          •    USB Type-A or USB Type-C® to Mini-B cable
+
+
+3.2       Development toolchains
+          •    IAR Systems® - IAR Embedded Workbench® (b)
+          •    Keil® - MDK-ARM(b)
+          •    STMicroelectronics - STM32CubeIDE
+
+
+3.3       Demonstration software
+          The demonstration software, included in the STM32Cube MCU Package corresponding to
+          the on-board microcontroller, is preloaded in the STM32 flash memory for easy
+          demonstration of the device peripherals in standalone mode. The latest versions of the
+          demonstration source code and associated documentation can be downloaded from
+          www.st.com.
+
+
+3.4       EDA resources
+          All board design resources, including schematics, EDA databases, manufacturing files, and
+          the bill of materials are available from the STM32F4DISCOVERY product page at
+          www.st.com.
+
+
+
+
+          a. macOS® is a trademark of Apple Inc. registered in the U.S. and other countries.
+             All other trademarks are the property of their respective owners.
+          b. On Windows® only.
+
+
+
+8/41                                             UM1472 Rev 9
+UM1472                                                                                     Conventions
+
+
+4        Conventions
+
+         Table 3 provides the conventions used for the ON and OFF settings in the present
+         document.
+
+                                     Table 3. ON/OFF conventions
+                 Convention                                    Definition
+
+         Jumper JPx ON                                        Jumper fitted
+         Jumper JPx OFF                                     Jumper not fitted
+         Jumper JPx [1-2]                         Jumper fitted between Pin 1 and Pin 2
+         Solder bridge SBx ON                     SBx connections closed by 0 Ω resistor
+         Solder bridge SBx OFF                          SBx connections left open
+         Resistor Rx ON                                     Resistor soldered
+         Resistor Rx OFF                                  Resistor not soldered
+
+
+
+
+                                        UM1472 Rev 9                                              9/41
+                                                                                                         40
+Safety recommendations                                                                          UM1472
+
+
+5         Safety recommendations
+
+5.1       Targeted audience
+          This product targets users with at least basic electronics or embedded software
+          development knowledge such as engineers, technicians, or students.
+          This board is not a toy and is not suited for use by children.
+
+
+5.2       Handling the board
+          This product contains a bare printed circuit board and like all products of this type, the user
+          must be careful about the following points:
+          •    The connection pins on the board might be sharp. Be careful when handling the board
+               to avoid injury.
+          •    This board contains static sensitive devices. To avoid damaging it, handle the board in
+               an ESD.proof environment.
+          •    While powered, do not touch the electric connections on the board with your fingers or
+               anything conductive.
+          •    The board operates at a voltage level that is not dangerous, but components might be
+               damaged when shorted.
+          •    Do not put any liquid on the board and avoid operating it close to water or at a high
+               humidity level.
+          •    Do not operate the board if it is dirty or dusty.
+          •    The pins of the board are exposed and must not come into contact with a metal
+               surface, as this can produce a short circuit and damage the board.
+
+
+5.3       Delivery recommendations
+          Before the first use, inspect the board for any damage that may have occurred during
+          shipment. Ensure that all socketed components are securely fixed in their sockets and that
+          nothing is loose in the plastic bag.
+
+
+5.4       Power supply
+          A power supply unit or auxiliary equipment complying with the EN 62368-1:2014+A11:2017
+          standard (or the one replacing it) and safety extralow voltage (SELV/ES1) with limited power
+          capability (LPS/PS2) must power this equipment.
+
+
+
+
+10/41                                        UM1472 Rev 9
+UM1472                                                                                  Quick start
+
+
+6        Quick start
+
+         The STM32F4DISCOVERY is a low-cost and easy-to-use development kit to quickly
+         evaluate and start development with an STM32F407VGT6 high-performance
+         microcontroller.
+         Before installing and using the product, accept the evaluation product license agreement
+         from the www.st.com/epla webpage.
+         For more information on the STM32F4DISCOVERY and demonstration software, visit the
+         www.st.com/en/product/stm32f4discovery webpage.
+
+
+6.1      Getting started
+         Follow the sequence below to configure the STM32F4DISCOVERY board and launch the
+         DISCOVER application:
+         1.   Check the jumper positions on the board: JP1 ON, CN3 ON (DISCOVERY selected).
+         2.   Connect the STM32F4DISCOVERY board to a PC with a USB Type-A or USB Type-C®
+              to Mini-B cable through USB connector CN1 to power the board. Red LED LD2 (PWR)
+              then lights up.
+         3.   Four LEDs between buttons B1 and B2 are blinking.
+         4.   Press user button B1 to enable the MEMS sensor, move the board, and observe the
+              four LEDs blinking according to the motion direction and speed. (If a second USB
+              Type-A or USB Type-C® to Mini-B cable is connected between the PC and CN5
+              connector, then the board is recognized as a standard mouse and its motion will also
+              control the PC cursor).
+         5.   To study or modify the DISCOVER project related to this demonstration, visit the
+              www.st.com/stm32f4-discovery webpage and follow the tutorial.
+         6.   Discover the STM32F407VG features, download and execute programs proposed in
+              the list of projects.
+         7.   Develop the application using available examples.
+
+
+
+
+                                         UM1472 Rev 9                                            11/41
+                                                                                                         40
+Hardware and layout and configuration                                                               UM1472
+
+
+7          Hardware and layout and configuration
+
+7.1        Hardware layout
+           The STM32F4DISCOVERY is designed around the STM32F407VGT6 microcontroller in a
+           100-pin LQFP package.
+           Figure 2 illustrates the connections between the STM32F407VGT6 and its peripherals (ST-
+           LINK/V2-A, push buttons, LEDs, audio DAC, USB, MEMS accelerometer and microphone,
+           and connectors).
+           Figure 3 and Figure 4 help users locate these features on the STM32F4DISCOVERY
+           board.
+
+                                       Figure 2. Hardware block diagram
+
+                                                            Mini
+                                                            USB
+
+
+
+                                                       Embedded
+
+                                                      ST-LINK/V2-A
+                              SWD
+
+
+
+
+                                                    STM32F407VGT6
+
+
+                                              I/O                          I/O
+                                                                                   Header
+                              Header
+
+
+
+
+                                                             I/O    RESET
+
+
+
+                                                 LEDs                 B2
+                                               LD3 to LD8            RST
+
+                                                                     B1
+                                             Audio sensor
+                                                                    USER
+
+
+                                               Audio DAC           Motion sensor
+
+
+
+                                       Mini-Jack       Micro-USB
+
+
+                                                                                            MSv30007V3
+
+
+
+
+12/41                                        UM1472 Rev 9
+UM1472                                                                                                                                                                                                                                                        Hardware and layout and configuration
+
+
+                                Figure 3. STM32F4DISCOVERY top layout
+
+
+                                ST-LINK/V2
+          LD1 (red/green LED)
+          COM                            STM32F407G-DISC1
+                                                                                                                                                                                                                                                                                                                          LD2 (red LED)
+                     CN2                                                                     R1
+
+                                                                                                                                                                                                                                 D1                                                                                       PWR
+                                                                LD1                                                                      CN1
+
+          SWD connector                                                                                                                                                                                                                                                                C3              C4
+
+
+
+
+                                                                                                                                                                                                                                                   C1
+                                                                                              COM
+
+
+
+
+                                                                                                                                                                                                                                                              C2
+                                                                                                                                                                                                                                                                          U1
+                                                          D2
+
+
+
+
+                                                                R2
+
+
+
+
+                                                                                                                                                     R8
+                                                                                                                             R5
+
+
+
+                                                                                                                                               R7
+                                                                                                                                        R6
+                                       CN2                                                                                                                                         R10     R11
+                                                                                                                                                                                                                     LD2
+                                                                                                                                                                                                                                                                                                                          CN3
+
+
+
+
+                                                                                                                                                                                                                    PWR
+                                                                                             R4
+                                                                                                        X1
+
+
+
+
+                                                                            R3
+                                                                                                                                                                                                                                                                   C5
+                                                                                                                                                                                                                                                                                                            MB997D        ST-LINK/DISCOVERY
+                                 SWD
+
+
+
+
+                                                                                                                                                                                                            C8
+
+
+
+
+                                                                                                                                                                                                                                                                                           DISCOVERY
+                                                                                                                                                                       R9
+                                                                                                                                  C7                                                                                                                                                   D3
+                                                                                                                                                                                                                                                                          CN3
+                                                                                                                                                                                                                                        R14
+                                                          R12
+                                                                                                                                                                                                                                                                                                                          selector
+
+
+
+                                                                     R13
+
+
+
+
+                                                                                        C6
+
+
+
+
+                                                                                                                                                                                                                                        ST-LINK
+                                                                                                                              U2
+
+
+                                                   R15
+                                                                       C9                                                         C10
+
+
+                                                   R16
+
+                                                                                                                       C11              R19         R20
+                                                   R17
+                                                                                                                                                                                                              C12
+                                                                                                   R18
+                                                         C13
+
+
+                                                                                   www.st.com/stm32f4-discovery
+                                             C17
+
+                                                   C18
+
+
+
+
+                                                                                                                                                                                                        C15                                         C16
+
+
+
+
+                                                                                                                       C20
+                                                                                                             C19
+                                                                                                                              C14                                                                                R21
+
+                                              P1
+                                                                           U3
+                                                                                                                                                                                                                 R22
+                                                                                                                                                                                                                                                                                                              P2
+                                                                                                                                                                                                                                                                                                                            5V power
+                                GND                            GND                                        C21
+                                                                                                                                                                                                                                                                                X3
+                                                                                                                                                                                                                                                                                                GND                GND
+                                                                                                                                                                                                                                                                                                                            supply input/output
+                     JP1        VDD                            VDD                                                                                              X2                                                                     C27                                                      5V                 5V
+                                                                            C25
+
+
+
+
+                                                                                                                                                                                                        R26
+        I
+                                                                                                                                                                                           C24
+
+
+
+
+                                                                                                                                                                                                                                                        R27
+                                                                                                                                             C26
+
+
+
+
+                                                                                                                                                                                                                                                                    R28
+          DD measurement
+                                GND                            NRST                                L1           R23
+                                                                                                                                                                                                                                                                                                3V                 3V
+                                                                                                                                  C23
+
+
+
+
+                                                                                                                                                                                                                                                                                                                            3V power
+                                                                                   C22                                                                               R24           R25                              C28
+
+
+
+
+                                                                                                                                                                                                                                C29
+                                PC1                            PC0                                                                                                                                                                                                                              PH0                PH1
+                                                                                                    C31
+
+                                                                                                                C32
+
+
+
+
+                                                                                                                              U4                                                                                                                                          R29
+
+                                                                                                                                                                                                                                                                                                                            supply output
+
+
+
+
+                                                                                                                                                                                                                                                  C30
+                                PC3                            PC2          JP1                                                                                                                                                                                                                 PC14               PC15
+                                PA1                            PA0                Idd                                                                                                                                                                                                           PE6                PC13
+
+
+
+
+                                                                                                                                                                                                                                                                          R31
+                                PA3                            PA2                                                                                                                                                                                                                              PE4                PE5
+
+
+
+
+                                                                                                                                                                                                                                                          R30
+                                                                                                                                                                                                                                                                                R33
+
+
+        STM32F407VGT6           PA5                            PA4                  R34           R32                                                                                                                                                                                           PE2                PE3      SB1 (B2-RESET)
+                                PA7                            PA6                                                                                                                                                                                                                              PE0                PE1
+                                                                                                  C33
+
+                                PC5                            PC4                                                                                                                                                                     C35                         SB1
+                                                                                                                                                                                                                                                                                                PB8                PB9       LD3
+                                                                                                                                                                                                                                             R37
+                                                                                                                                              C34
+
+
+
+
+                                                                                                                                                                                                                    C36
+                                PB1                            PB0                                                                                                                                                                                                                         BOOT0                   VDD
+                                                                                  R35                                                                                 R36
+                                                                                                                                                                                                                                                                          C37                                               (orange LED)
+                                                                                                                                                          R39
+
+
+
+
+                                                                                                                                                                                                  LD3
+                                                                                                                                             C38
+                                GND                            PB2          R38                                                                                  R40                                                                               B2
+                                                                                                                                                                                                                                                                                                PB6                PB7
+            B1 user button
+                                                                                                                                                                                                  U5
+
+                                PE7                            PE8                                                                                                                                     LD5
+                                                                                                                                                                                                                                                                                                PB4                PB5
+                                                                            B1                                                                 LD4                                                                        R41
+                                                                                                                                                                                                                                                                                                                            LD5 (red LED)
+                                PE9                            PE10                                                                                  C39                                                                                                                                        PD7                PB3
+                                PE11                           PE12                               User                                                                       LD6                        R42
+                                                                                                                                                                                                                                                                                                PD5                PD6
+                                                                                                                                                                                                                                                                                                                            B2 reset button
+                                                                                                                                                          C41
+
+
+
+
+                                                                                                                                                                                                                                R45
+                                                                                                                                                                                                                                                        Reset
+                                                                                                                                                                       C42
+
+
+
+
+                                                                                                                                                                                                                                                        R46
+
+          (green LED) LD4       PE13                           PE14                                                                                                        R43                    R44
+                                                                                                                                                                                                                                                                                                PD3                PD4
+                                                                                                                                         C40
+
+
+
+
+                                                                                                                                                                                                                          U6
+                                                                                                                                                                                          C44                    R48
+                                                                                                                         U7                                      R47
+                                                                                    C43
+                                PE15                           PB10                 C45
+                                                                                                                                                                                                                                                                                                PD1                PD2
+                                                                                                                                                                                                                                             R50
+
+
+
+
+                                                                                                                                                                                                                                                                        R51
+                                                                                                                                                                                            C46
+
+
+
+
+                                                                                                                                                                                                                    R49
+
+
+
+
+                                PB11                           PB12                                                                                                                                           R52
+                                                                                                                                                                                                                                  C49                                                           PC12               PD0
+                                                                                                                                                                                            C48
+
+
+
+
+           (blue LED) LD6
+                                                                                   C47
+                                                                                                                                                                                                              C52
+
+                                PB13                           PB14                C50                                                                                                                                                                    R56
+                                                                                                                                                                                                                                                                                                PC10               PC11
+                                                                                                                                    C54             C55          R53         C51
+                                                                                                                      C53
+                                PB15                           PD8          CN4                                                                                              R54
+
+                                                                                                                                                                                                R55
+                                                                                                                                                                                                                                                         U8
+
+                                                                                                                                                                                                                                                        R58        C58
+                                                                                                                                                                                                                                                                                                PA14               PA15
+                                                                                                                                                                                                R57
+                                PD9                            PD10                                                                                                                                                                                                                             PA10               PA13
+                                                                                                                                                                                                                                      R59
+                                                                                                                                                                                    C57
+
+
+
+
+                                                                                                                                                                                                                                            R60
+                                PD11                           PD12                                                                                                                                                                                                                             PA8                PA9
+                                                                                                                                                                             C56
+
+
+
+
+                                                                                                                                    R61                          C59                                   T1
+                                                                                                                                                    R62
+
+                                PD13                           PD14                                                                                                                                     CN5
+                                                                                                                                                                                                                                                                                     C60
+                                                                                                                                                                                                                                                                                                PC8                PC9
+                                                                                                                                                                                                                                                        R64
+                                                                                                                                                                                                                                            R63
+
+
+
+
+                                                                                                                                                                                                                                                                   U9
+                                PD15                           NC                                                                   R65
+                                                                                                                                                R66             LD7                                                                                                                             PC6                PC7
+          (green LED) LD7       GND                            GND
+                                                                                                                                                                                                                                      LD8
+
+                                                                                                                                                                                                                                                                          R67                   GND                GND      LD8 (red LED)
+
+
+
+                                                                                                                                                                                                                                                                                                                                    MS30005V2
+
+
+Note:        Pin 1 of CN2, CN3, JP1, P1, and P2 connectors are identified by a red square.
+
+
+
+
+                                                                                                                       UM1472 Rev 9                                                                                                                                                                                                               13/41
+                                                                                                                                                                                                                                                                                                                                                          40
+Hardware and layout and configuration                                                        UM1472
+
+
+                             Figure 4. STM32F4DISCOVERY bottom layout
+
+
+
+
+        SB2, SB4, SB6, SB8
+               (RESERVED)
+
+
+        SB3, SB5, SB7, SB9                                              SB11 (NRST)
+                 (DEFAULT)
+                                                                        SB10 (STM_RST)
+
+                                                                        SB13 (X2 crystal)
+                                                                        SB14 (X2 crystal)
+             SB12 (SWO)
+                                                                        SB15 (X3 crystal)
+                                                                        SB16 (X3 crystal)
+                                                                        SB17 (VDD from 3V)
+
+           SB18 (BOOT0)                                                 SB19 (BOOT1)
+
+
+
+                                                                        SB20 (B1-USER)
+
+
+
+
+                                                                                 MS30004V1
+
+
+
+
+14/41                                      UM1472 Rev 9
+UM1472                                       Hardware and layout and configuration
+
+
+7.2      Mechanical dimensions
+                   Figure 5. STM32F4DISCOVERY mechanical drawing
+
+
+
+
+                              UM1472 Rev 9                                   15/41
+                                                                                     40
+Hardware and layout and configuration                                                                      UM1472
+
+
+7.3        Embedded ST-LINK/V2-A
+           ST-LINK/V2-A(a) is an embedded tool for programming and debugging.
+           The embedded ST-LINK/V2-A supports only SWD for STM32 devices.
+           For information about the debugging and programming features refer to the user manual
+           ST-LINK/V2 in-circuit debugger/programmer for STM8 and STM32 (UM1075). To compare
+           the various ST-LINK solutions, refer to the technical note Overview of ST-LINK derivatives
+           (TN1235).
+           Features supported with ST-LINK/V2-A:
+           •    Virtual COM port interface on USB (see Section 7.3.3: ST-LINK/V2-A VCP
+                configuration)
+           •    Mass storage interface on USB
+           Features not supported with ST-LINK/V2-A:
+           •    SWIM interface
+           •    Minimum supported application voltage limited to 3 V
+           •    USB power management request for more than 100 mA power on USB
+           Known limitation:
+           •    Activating the readout protection on an ST-LINK/V2-A target prevents the target
+                application from running afterward. The target readout protection must be kept disabled
+                on ST-LINK/V2-A boards.
+           There are two different ways to use the embedded ST-LINK/V2-A depending on the jumper
+           states (see Table 4):
+           •    Program/debug the STM32 on board (refer to Section 7.3.4: Using ST-LINK/V2-A to
+                program/debug the STM32F407VG on board)
+           •    Program/debug the STM32 in an external application board, using a cable connected
+                to SWD connector CN2 (refer to Section 7.3.5: Using ST-LINK/V2-A to program/debug
+                an external STM32 application)
+
+                                                 Table 4. Jumper states
+                 Jumper state                                         Description
+
+           Both CN3 jumpers ON        ST-LINK/V2-A functions enabled for on-board programming (default)
+                                      ST-LINK/V2-A functions enabled for application through external CN2
+           Both CN3 jumpers OFF
+                                      connector (SWD supported)
+
+
+
+
+           a. The features described in this section apply also to ST-LINK/V2, which is the debugger/programmer
+              embedded in the obsolete Discovery kit with order code STM32F4DISCOVERY. Only Section 7.3.3: ST-
+              LINK/V2-A VCP configuration is specific to the Discovery kit with order code STM32F407G-DISC1.
+
+
+
+16/41                                           UM1472 Rev 9
+UM1472                                                      Hardware and layout and configuration
+
+
+7.3.1    Drivers
+         Before connecting the STM32F4DISCOVERY board to a Windows® PC (7, 8, and 10)
+         through the USB, a driver for the ST-LINK/V2-A must be installed. It is available at the
+         www.st.com website. In case the STM32 Discovery board is connected to the PC before the
+         driver is installed, some Discovery interfaces might be declared as Unknown in the PC
+         device manager. To recover from this situation, after installing the dedicated driver, the
+         association of “Unknown” USB devices found on the STM32F4DISCOVERY board to this
+         dedicated driver, must be updated in the device manager manually.
+Note:    It is recommended to proceed by using the USB Composite Device, as shown in Figure 6.
+
+                                      Figure 6. USB Composite Device
+
+
+
+
+7.3.2    ST-LINK/V2-A firmware upgrade
+         The ST-LINK/V2-A embeds a firmware upgrade mechanism for in-place upgrade through
+         the USB port. As the firmware might evolve during the lifetime of the ST-LINK/V2-A product
+         (for example new functionalities, bug fixes, and support for new microcontroller families), it
+         is recommended to visit the www.st.com website before starting to use the Discovery board
+         and periodically stay up-to-date with the latest firmware version.
+
+
+
+
+                                          UM1472 Rev 9                                            17/41
+                                                                                                          40
+Hardware and layout and configuration                                                     UM1472
+
+
+7.3.3      ST-LINK/V2-A VCP configuration
+           The ST-LINK/V2-A supports a Virtual COM port (VCP) on U2 pin 12 (ST-LINK_TX) and U2
+           pin 13 (ST-LINK_RX) but these pins are not connected to the USART of the STM32F407
+           microcontroller.
+           Two solutions are possible to connect an STM32F407 USART to the VCP on the PC:
+           •    Using a USART to USB dongle from the market connected for instance to STM32F407
+                USART2 available on connector P1 pin 14 (PA2: USART2_TX) and P1 pin 13 (PA3:
+                USART2_RX).
+           •    Using flying wires to connect ST-LINK/V2-A Virtual COM port (ST-LINK VCP on U2 pin
+                12 and 13) to STM32F407 USART2 (PA2 and PA3: P1 pin 14 and 13) as shown in
+                Figure 7.
+
+                                   Figure 7. ST-LINK VCP connection to USART2
+
+
+
+
+                                       U2 pin 12 (ST-LINK_TX)
+
+
+
+                                                                U2 pin 13 (ST-LINK_RX)
+
+
+
+
+               USART2_RX   USART2_TX
+
+
+
+
+                                                                                         MSv40700V2
+
+
+
+
+18/41                                                UM1472 Rev 9
+UM1472                                                   Hardware and layout and configuration
+
+
+7.3.4    Using ST-LINK/V2-A to program/debug the STM32F407VG on board
+         To program the STM32F407VG on board, plug in the two jumpers on CN3, as shown in
+         Figure 8 in yellow, but do not use the CN2 connector as that could disturb communication
+         with the STM32F407VG of the STM32F4DISCOVERY.
+
+                        Figure 8. STM32F4DISCOVERY connections
+
+
+
+                        SWD connector
+                           (CN2)
+
+
+
+
+              Jumpers ON
+                 (CN3)
+
+
+
+
+                                                                                         MSv33176V2
+
+
+
+
+                                         UM1472 Rev 9                                          19/41
+                                                                                                       40
+Hardware and layout and configuration                                                            UM1472
+
+
+7.3.5      Using ST-LINK/V2-A to program/debug an external STM32 application
+           It is very easy to use the ST-LINK/V2-A to program the STM32 on an external application.
+           Simply remove the two jumpers from CN3, as shown in Figure 9, and connect the
+           application to the CN2 debug connector according to Table 5.
+Note:      SB11 must be OFF if CN2 pin 5 is used in the external application.
+
+                                   Table 5. Debug connector CN2 (SWD)
+                        Pin                           CN2                          Designation
+
+                         1                       VDD_TARGET                     VDD from application
+                         2                          SWCLK                           SWD clock
+                         3                            GND                             Ground
+                         4                           SWDIO                  SWD data input/output
+                         5                           NRST                  RESET of target STM32
+                         6                            SWO                            Reserved
+
+
+                                 Figure 9. ST-LINK connections
+
+
+
+                        SWD connector
+                           (CN2)
+
+
+
+
+                Jumpers OFF
+                   (CN3)
+
+
+
+
+                                                                                                MSv33177V2
+
+
+
+
+20/41                                      UM1472 Rev 9
+UM1472                                                   Hardware and layout and configuration
+
+
+7.4      Power supply and power selection
+         The power supply is provided either by the host PC through the USB cable, or by an
+         external 5 V power supply.
+         The D1 and D2 diodes protect the 5V and 3V pins from external power supplies:
+         •   5V and 3V can be used as output power supplies when another application board is
+             connected to pins P1 and P2.
+             In this case, the 5V and 3V pins deliver a 5 V or 3 V power supply and power
+             consumption must be lower than 100 mA.
+         •   5V can also be used as input power supplies, for instance when the USB connector is
+             not connected to the PC.
+
+
+7.5      LEDs
+         •   LD1 COM: The LD1 default status is red. LD1 turns to green to indicate that
+             communications are in progress between the PC and the ST-LINK/V2-A.
+         •   LD2 PWR: The red LED indicates that the board is powered.
+         •   User LD3: The orange LED is a user LED connected to the I/O PD13 of the
+             STM32F407VGT6.
+         •   User LD4: The green LED is a user LED connected to the I/O PD12 of the
+             STM32F407VGT6.
+         •   User LD5: The red LED is a user LED connected to the I/O PD14 of the
+             STM32F407VGT6.
+         •   User LD6: The blue LED is a user LED connected to the I/O PD15 of the
+             STM32F407VGT6.
+         •   USB LD7: The green LED indicates when VBUS is present on CN5 and is connected to
+             PA9 of the STM32F407VGT6.
+         •   USB LD8: The red LED indicates an over-current from VBUS of CN5 and is connected
+             to the I/O PD5 of the STM32F407VGT6.
+
+
+7.6      Push-buttons
+         •   B1 USER: The user and wake-up buttons are connected to the I/O PA0 of the
+             STM32F407VG.
+         •   B2 RESET: The push-button connected to NRST is used to RESET the
+             STM32F407VG.
+
+
+
+
+                                        UM1472 Rev 9                                          21/41
+                                                                                                      40
+Hardware and layout and configuration                                                          UM1472
+
+
+7.7        On-board audio capability
+           The STM32F407VG microcontroller uses an audio DAC to output sounds through the audio
+           mini-jack connector.
+           The STM32F407VG microcontroller controls the audio DAC through the I2C interface and
+           processes digital signals through an I2S connection or an analog input signal.
+           •   The sound can come independently from different inputs:
+               –    MEMS microphone: digital using PDM protocol or analog when using the low pass
+                    filter
+               –    USB connector: from external mass storage such as a USB key, USB HDD and
+                    others
+               –    Internal memory of the STM32F407VG microcontroller
+           •   The sound can be output in different ways through the audio DAC:
+               –    Using I2S protocol
+               –    Using DAC to analog input IN1x of the audio DAC
+               –    Using the microphone output directly via a low-pass filter to analog input IN2x of
+                    the audio DAC
+
+
+7.8        USB OTG supported
+           The STM32F407VG microcontroller is used on this board to only drive the USB full-speed
+           OTG. The USB Micro-AB connector (CN5) allows the user to connect a host or device
+           component, such as a USB key, mouse, or others.
+           Two LEDs are dedicated to this module:
+           •   LD7 (green LED) indicates when VBUS is active.
+           •   LD8 (red LED) indicates an over-current from the connected device.
+
+
+7.9        Motion sensor
+           The MEMS motion sensor is an ultra-compact low-power three-axis linear accelerometer.
+           The motion sensor includes a sensing element and an IC interface able to provide the
+           measured acceleration to the external world through the I2C/SPI serial interfaces.
+           The STM32F407VG microcontroller controls this motion sensor through the SPI interface.
+
+
+7.10       JP1 (Idd)
+           Jumper JP1, labeled Idd, allows the consumption of STM32F407VG to be measured by
+           removing the jumper and connecting an ammeter.
+           •   Jumper on: STM32F407VGT6 is powered (default).
+           •   Jumper off: an ammeter must be connected to measure the STM32F407VG current, (if
+               there is no ammeter, the STM32F407VG is not powered).
+
+
+
+
+22/41                                      UM1472 Rev 9
+UM1472                                                           Hardware and layout and configuration
+
+
+7.11     Clock sources
+
+7.11.1   OSC clock supply
+         If PH0 and PH1 are used as GPIOs instead of being used as a clock, then SB13 and SB14
+         are ON and R24, R25 and R68 are OFF.
+         •    MCO from ST-LINK. From MCO of the STM32F103. This frequency cannot be
+              changed, it is fixed at 8 MHz and connected to PH0-OSC_IN of the STM32F407VG.
+              Configuration needed:
+              –     SB13, SB14, and R25(a) OFF
+              –     R68(a) ON
+         •    Oscillator on board. From X2 crystal. For typical frequencies, capacitors, and
+              resistors, refer to the STM32F407VG datasheet at www.st.com. Configuration needed:
+              –     SB13, SB14, and R68(a) OFF
+              –     R25(a) ON
+         •    Oscillator from external PH0. From the external oscillator through pin 7 of the P2
+              connector. Configuration needed:
+              –     SB13 and SB14 ON
+              –     R25 and R68 OFF
+
+7.11.2   OSC 32 KHz clock supply
+         If PC14 and PC15 are only used as GPIOs and not as a clock, then SB15 and SB16 are
+         ON, and R21 and R22 are OFF.
+         •    Oscillator on board. From X1 crystal (not provided). Configuration needed:
+              –     SB15 and SB16 OFF
+              –     C16, C27, R21, and R22 ON
+         •    Oscillator from external PC14. From the external oscillator through the pin 9 of P2
+              connector. Configuration needed:
+              –     SB15 and SB 16 ON
+              –     R21 and R22 OFF
+
+
+
+
+         a. As the frequency supplied by X2 is the same as MCO (8 MHz), R25 and R68 are ON.
+
+
+
+                                              UM1472 Rev 9                                       23/41
+                                                                                                         40
+Hardware and layout and configuration                                                                        UM1472
+
+
+7.12            Solder bridges
+                                                Table 6. Solder bridges
+          Bridge             State(1)                                     Description
+
+                                         X2, C14, C15, R24, and R25 provide a clock.
+                             OFF
+SB13,14 (X2 crystal)   (2)               PH0 and PH1 are disconnected from P2.
+                             ON          PH0 and PH1 are connected to P2. R24, R25, and R68 must be OFF.
+SB3, 5, 7, 9 (Default)       ON          Reserved, do not modify.
+SB2, 4, 6, 8 (Reserved) OFF              Reserved, do not modify.
+                             ON          PC14 and PC15 are only connected to P2. Remove only R21, R22
+SB15,16
+(X3 crystal)                             X3, C16, C27, R21, and R22 deliver a 32 KHz clock.
+                             OFF
+                                         PC14 and PC15 are not connected to P2.
+
+SB1                          ON          B2 pushbutton is connected to the NRST pin of the STM32F407VGT6.
+(B2-RESET)                   OFF         B2 pushbutton is not connected to the NRST pin of the STM32F407VGT6.
+
+SB20                         ON          B1 pushbutton is connected to PA0.
+(B1-USER)                    OFF         B1 pushbutton is not connected to PA0.
+
+SB17                  OFF                VDD is not powered from 3V, depends on the JP1 jumper.
+(VDD powered from 3V) ON                 VDD is permanently powered from 3V, JP1 jumper has no effect.
+                                         NRST signal of the CN2 connector is connected to the NRST pin of the
+                             ON
+                                         STM32F407VGT6.
+SB11 (NRST)
+                                         NRST signal of the CN2 connector is not connected to the NRST pin of the
+                             OFF
+                                         STM32F407VGT6.
+                             ON          SWO signal of the CN2 connector is connected to PB3.
+SB12 (SWO)
+                             OFF         SWO signal is not connected.
+                             OFF         No incidence on STM32F103C8T6 (ST-LINK/V2-A) NRST signal.
+SB10 (STM_RST)
+                             ON          STM32F103C8T6 (ST-LINK/V2-A) NRST signal is connected to GND.
+                                         BOOT0 signal of the STM32F407VGT6 is held low through a 510-ohm pull-
+                             ON
+                                         down resistor.
+SB18 (BOOT0)
+                                         BOOT0 signal of the STM32F407VGT6 is held high through a 10-kohm pull-up
+                             OFF
+                                         resistor(3).
+                                         The BOOT1 signal of the STM32F407VGT6 is held high through a 10-kohm pull-
+                             OFF
+                                         up resistor.
+SB19 (BOOT1)
+                                         The BOOT1 signal of the STM32F407VGT6 is held low through a 510-ohm pull-
+                             ON
+                                         down resistor.
+1. Default SBx state is shown in bold.
+2. SB13 and SB14 are OFF to allow the user to choose between MCO and X2 crystal for the clock source.
+3. For MB997 C-01 and D-01 revisions, R31 (10-kohm resistor) must be ON before to get such a behavior.
+
+
+
+
+24/41                                                  UM1472 Rev 9
+UM1472                                                Hardware and layout and configuration
+
+
+7.13     Extension connectors
+         The male headers P1 and P2 can connect the STM32F4DISCOVERY to a standard
+         prototyping/wrapping board. The STM32F407VG GPIOs are available on these connectors.
+         P1 and P2 can also be probed by an oscilloscope, a logical analyzer, or a voltmeter.
+
+
+
+
+                                       UM1472 Rev 9                                     25/41
+                                                                                                40
+                                                                Table 7. STM32 pin description versus board functions
+26/41
+
+
+
+
+                                                                                                                                                                          Hardware and layout and configuration
+                                   STM32 pin                                                                 Board function
+
+                 Main               Alternate            LQFP    Audio   Audio    Motion     Push                                   Free   Power
+                                                                                                      LED    SWD       USB    OSC                   CN5   CN2   P1   P2
+               function             functions             100    DAC     sensor   sensor    button                                   I/O   supply
+
+               BOOT0                  VPP                 94       -       -         -        -        -       -         -     -     -       -       -     -    -    21
+
+                NRST                    -                 14       -       -         -      RESET      -     NRST        -     -     -       -       -     5    6    -
+
+                            USART2_CTS/USART4_TX/
+               PA0-        ETH_MII_CRS/TIM2_CH1_ETR/
+                                                          23       -       -         -      USER       -       -         -     -    PA0      -       -     -    12   -
+               WKUP           TIM5_CH1/TIM8_ETR/
+                               ADC123_IN0/WKUP
+
+                             USART2_RTS/USART4_RX/
+                               ETH_RMII_REF_CLK/
+                 PA1                                      24       -       -         -        -        -       -         -     -    PA1      -       -     -    11   -
+                            ETH_MII_RX_CLK/TIM5_CH2/
+                              TIM2_CH2/ADC123_IN1
+
+                          USART2_TX/TIM5_CH3/TIM9_CH1/
+                 PA2          TIM2_CH3/ETH_MDIO/          25       -       -         -        -        -       -         -     -    PA2      -       -     -    14   -
+                                  ADC123_IN2
+UM1472 Rev 9
+
+
+
+
+                          USART2_RX/TIM5_CH4/TIM9_CH2/
+                 PA3        TIM2_CH4/OTG_HS_ULPI_D0/      26       -       -         -        -        -       -         -     -    PA3      -       -     -    13   -
+                             ETH_MII_COL/ADC123_IN3
+
+                          SPI1_NSS/SPI3_NSS/USART2_CK/
+                                                                 LRCK/
+                 PA4         DCMI_HSYNC/OTG_HS_SOF/       29               -         -        -        -       -         -     -     -       -       -     -    16   -
+                                                                 AIN1x
+                           I2S3_WS/ADC12_IN4/DAC1_OUT
+
+                           SPI1_SCK/OTG_HS_ULPI_CK/
+                                                                                   SCL/
+                 PA5        TIM2_CH1_ETR/TIM8_CHIN/       30       -       -                  -        -       -         -     -     -       -       -     -    15   -
+                                                                                   SPC
+                              ADC12_IN5/DAC2_OUT
+
+                               SPI1_MISO/TIM8_BKIN/
+                 PA6         TIM13_CH1/DCMI_PIXCLK/       31       -       -       SDO        -        -       -         -     -     -       -       -     -    18   -
+                          TIM3_CH1/TIM1_BKIN/ADC12_IN6
+
+                              SPI1_MOSI/TIM8_CH1N/
+                               TIM14_CH1TIM3_CH2/                                 SDA/SDI
+                 PA7                                      32       -       -                  -        -       -         -     -     -       -       -     -    17   -
+                            ETH_MII_RX_DV/TIM1_CH1N/                               /SDO
+                             RMII_CRS_DV/ADC12_IN7
+
+                           MCO1/USART1_CK/TIM1_CH1/
+                 PA8                                      67       -       -         -        -        -       -         -     -    PA8      -       -     -    -    43
+                             I2C3_SCL/OTG_FS_SOF
+
+                              USART1_TX/TIM1_CH2/
+                 PA9          I2C3_SMBA/DCMI_D0/          68       -       -         -        -      GREEN     -       VBUS    -     -       -       1     -    -    44
+                                 OTG_FS_VBUS
+
+                              USART1_RX/TIM1_CH3/
+                PA10                                      69       -       -         -        -        -       -        ID     -     -       -       4     -    -    41
+
+
+
+
+                                                                                                                                                                          UM1472
+                               OTG_FS_ID/DCMI_D1
+                                                          Table 7. STM32 pin description versus board functions (continued)
+
+
+
+
+                                                                                                                                                                       UM1472
+                                   STM32 pin                                                              Board function
+
+                 Main               Alternate             LQFP   Audio   Audio    Motion    Push                                 Free   Power
+                                                                                                    LED   SWD       USB    OSC                   CN5   CN2   P1   P2
+               function             functions              100   DAC     sensor   sensor   button                                 I/O   supply
+
+                              USART1_CTS/CAN1_RX/
+                PA11                                       70      -       -        -        -       -      -        DM     -     -       -       2     -    -    -
+                              TIM1_CH4/OTG_FS_DM
+
+                              USART1_RTS/CAN1_TX/
+                PA12                                       71      -       -        -        -       -      -        DP     -     -       -       3     -    -    -
+                              TIM1_ETR/OTG_FS_DP
+
+                PA13              JTMS-SWDIO               72      -       -        -        -       -    SWDIO       -     -     -       -       -     4    -    42
+
+                PA14              JTCK-SWCLK               76      -       -        -        -       -    SWCLK       -     -     -       -       -     2    -    39
+
+                             JTDI/SPI3_NSS/I2S3_WS/
+                PA15                                       77      -       -        -        -       -      -         -     -    PA15     -       -     -    -    40
+                             TIM2_CH1_ETR/SPI1_NSS
+
+                              TIM3_CH3/TIM8_CH2N/
+                 PB0      OTG_HS_ULPI_D1/ETH_MII_RXD2/     35      -       -        -        -       -      -         -     -    PB0      -       -     -    22   -
+                              TIM1_CH2N/ADC12_IN8
+
+                              TIM3_CH4/TIM8_CH3N/
+                          OTG_HS_ULPI_D2/ETH_MII_RXD3/
+UM1472 Rev 9
+
+
+
+
+                 PB1                                       36      -       -        -        -       -      -         -     -    PB1      -       -     -    21   -
+                            OTG_HS_INTN/TIM1_CH3N/
+                                   ADC12_IN9
+
+                 PB2                 BOOT1                 37      -       -        -        -       -      -         -     -     -       -       -     -    24   -
+
+                             JTDO/TRACESWO/SPI3_SCK/
+                 PB3                                       89      -       -        -        -       -    SWO         -     -    PB3      -       -     6         28
+                            I2S3_CK/TIM2_CH2/SPI1_SCK
+
+                           NJTRST/SPI3_MISO/TIM3_CH1/
+                 PB4                                       90      -       -        -        -       -      -         -     -    PB4      -       -     -    -    25
+
+
+
+
+                                                                                                                                                                       Hardware and layout and configuration
+                              SPI1_MISO/I2S3ext_SD
+
+                               I2C1_SMBA/CAN2_RX/
+                          OTG_HS_ULPI_D7/ETH_PPS_OUT/
+                 PB5                                       91      -       -        -        -       -      -         -     -    PB5      -       -     -    -    26
+                          TIM3_CH2/SPI1_MOSI/SPI3_MOSI/
+                                 DCMI_D10/I2S3_SD
+
+                           I2C1_SCL/TIM4_CH1/CAN2_TX/
+                 PB6          OTG_FS_INTN/DCMI_D5/         92    SCL       -        -        -       -      -         -     -     -       -       -     -    -    23
+                                   USART1_TX
+
+                               I2C1_SDA/FSMC_NL/
+                 PB7         DCMI_VSYNC/USART1_RX/         93      -       -        -        -       -      -         -     -    PB7      -       -     -         24
+                                    TIM4_CH2
+
+                           TIM4_CH3/SDIO_D4/TIM10_CH1/
+                               DCMI_D6/OTG_FS_SCL/
+                 PB8                                       95      -       -        -        -       -      -         -     -    PB8      -       -     -    -    19
+                              ETH_MII_TXD3/I2C1_SCL/
+                                    CAN1_RX
+27/41
+                                                          Table 7. STM32 pin description versus board functions (continued)
+28/41
+
+
+
+
+                                                                                                                                                                       Hardware and layout and configuration
+                                   STM32 pin                                                              Board function
+
+                 Main               Alternate             LQFP   Audio   Audio    Motion    Push                                 Free   Power
+                                                                                                    LED   SWD       USB    OSC                   CN5   CN2   P1   P2
+               function             functions              100   DAC     sensor   sensor   button                                 I/O   supply
+
+                           SPI2_NSS/I2S2_WS/TIM4_CH4/
+                             TIM11_CH1/OTG_FS_SDA/
+                 PB9                                       96    SDA       -        -        -       -      -         -     -     -       -       -     -    -    20
+                           SDIO_D5/DCMI_D7/I2C1_SDA/
+                                    CAN1_TX
+
+                            SPI2_SCK/I2S2_CK/I2C2_SCL/
+                           USART3_TX/OTG_HS_ULPI_D3/
+                PB10                                       47      -      CLK       -        -       -      -         -     -     -       -       -     -    34   -
+                           ETH_MII_RX_ER/OTG_HS_SCL/
+                                    TIM2_CH3
+
+                              I2C2_SDA/USART3_RX/
+                                OTG_HS_ULPI_D4/
+                PB11                                       48      -       -        -        -       -      -         -     -    PB11     -       -     -    35   -
+                          ETH_RMII_TX_EN/ETH_MII_TX_EN/
+                              OTG_HS_SDA/TIM2_CH4
+
+                           SPI2_NSS/I2S2_WS/I2C2_SMBA/
+                          USART3_CK/TIM1_BKIN/CAN2_RX/
+                PB12             OTG_HS_ULPI_D5/           51      -       -        -        -       -      -         -     -    PB12     -       -     -    36   -
+UM1472 Rev 9
+
+
+
+
+                           ETH_RMII_TXD0/ETH_MII_TXD0/
+                                   OTG_HS_ID
+
+                          SPI2_SCK/I2S2_CK/USART3_CTS/
+                               TIM1_CH1N/CAN2_TX/
+                PB13             OTG_HS_ULPI_D6/           52      -       -        -        -       -      -         -     -    PB13     -       -     -    37   -
+                          ETH_RMII_TXD1/ETH_MII_TXD1/
+                                  OTG_HS_VBUS
+
+                              SPI2_MISO/TIM1_CH2N/
+                              TIM12_CH1/OTG_HS_D/
+                PB14                                       53      -       -        -        -       -      -         -     -    PB14     -       -     -    38   -
+                             USART3_RTS/TIM8_CH2N/
+                                   I2S2ext_SD
+
+                          SPI2_MOSI/I2S2_SD/TIM1_CH3N/
+                PB15          TIM8_CH3N/TIM12_CH2/         54      -       -        -        -       -      -         -     -    PB15     -       -     -    39   -
+                                   OTG_HS_DP
+
+                                                                                                                   Power
+                PC0       OTG_HS_ULPI_STP/ADC123_IN10      15      -       -        -        -       -      -               -     -       -       -     -    8    -
+                                                                                                                    On
+
+                PC1           ETH_MDC/ADC123_IN11          16      -       -        -        -       -      -         -     -    PC1      -       -     -    7    -
+
+                           SPI2_MISO/OTG_HS_ULPI_DIR/
+                PC2          TH_MII_TXD2/I2S2ext_SD/       17      -       -        -        -       -      -         -     -    PC2      -       -     -    10   -
+                                   ADC123_IN12
+
+                               SPI2_MOSI/I2S2_SD/
+                                                                         DOUT/A
+                PC3            OTG_HS_ULPI_NXT/            18      -                -        -       -      -         -     -     -       -       -     -    9    -
+
+
+
+
+                                                                                                                                                                       UM1472
+                                                                          IN4x
+                           ETH_MII_TX_CLK/ADC123_IN13
+                                                        Table 7. STM32 pin description versus board functions (continued)
+
+
+
+
+                                                                                                                                                                         UM1472
+                                  STM32 pin                                                             Board function
+
+                 Main              Alternate            LQFP   Audio   Audio    Motion    Push                                     Free   Power
+                                                                                                  LED   SWD       USB      OSC                     CN5   CN2   P1   P2
+               function            functions             100   DAC     sensor   sensor   button                                     I/O   supply
+
+                               ETH_RMII_RX_D0/
+                PC4                                      33      -       -        -        -       -      -         -        -     PC4      -       -     -    20   -
+                           ETH_MII_RX_D0/ADC12_IN14
+
+                               ETH_RMII_RX_D1/
+                PC5                                      34      -       -        -        -       -      -         -        -     PC5      -       -     -    19   -
+                           ETH_MII_RX_D1/ADC12_IN15
+
+                          I2S2_MCK/TIM8_CH1/SDIO_D6/
+                PC6                                      63      -       -        -        -       -      -         -        -     PC6      -       -     -    -    47
+                          USART6_TX/DCMI_D0/TIM3_CH1
+
+                           I2S3_MCK/TIM8_CH2/SDIO_D7/
+                PC7                                      64    MCLK      -        -        -       -      -         -        -      -       -       -     -    -    48
+                          USART6_RX/DCMI_D1/TIM3_CH2
+
+                          TIM8_CH3/SDIO_D0/TIM3_CH3/
+                PC8                                      65      -       -        -        -       -      -         -        -     PC8      -       -     -    -    45
+                              USART6_CK/DCMI_D2
+
+                            I2S_CKIN/MCO2/TIM8_CH4/
+                PC9        SDIO_D1/I2C3_SDA/DCMI_D3/     66      -       -        -        -       -      -         -        -     PC9      -       -     -    -    46
+                                   TIM3_CH4
+UM1472 Rev 9
+
+
+
+
+                          SPI3_SCK/I2S3_CK/UART4_TX/
+                PC10                                     78    SCLK      -        -        -       -      -         -        -      -       -       -     -    -    37
+                          SDIO_D2/DCMI_D8/USART3_TX
+
+                          UART4_RX/SPI3_MISO/SDIO_D3/
+                PC11          DCMI_D4/USART3_RX/         79      -       -        -        -       -      -         -        -     PC11     -       -     -    -    38
+                                  I2S3ext_SD
+
+                           UART5_TX/SDIO_CK/DCMI_D9/
+                PC12                                     80    SDIN      -        -        -       -      -         -        -      -       -       -     -    -    35
+                          SPI3_MOSI/I2S3_SD/USART3_CK
+
+
+
+
+                                                                                                                                                                         Hardware and layout and configuration
+                PC13               RTC_AF1               7       -       -        -        -       -      -         -        -     PC13     -       -     -    -    12
+
+                                                                                                                           OSC32
+                PC14               OSC32_IN              8       -       -        -        -       -      -         -              PC14     -       -     -    -    9
+                                                                                                                            _IN
+
+                                                                                                                           OSC32
+                PC15              OSC32_OUT              9       -       -        -        -       -      -         -              PC15     -       -     -    -    10
+                                                                                                                           _OUT
+
+                PD0            FSMC_D2/CAN1_RX           81      -       -        -        -       -      -         -        -     PD0      -       -     -    -    36
+
+                PD1            FSMC_D3/CAN1_TX           82      -       -        -        -       -      -         -        -     PD1      -       -     -    -    33
+
+                          TIM3_ETR/UART5_RXSDIO_CMD
+                PD2                                      83      -       -        -        -       -      -         -        -     PD2      -       -     -    -    34
+                                   /DCMI_D11
+
+                PD3          FSMC_CLK/USART2_CTS         84      -       -        -        -       -      -         -        -     PD3      -       -     -    -    31
+
+                PD4         FSMC_NOE/USART2_RTS          85    RESET     -        -        -       -      -         -        -      -       -       -     -    -    32
+
+                                                                                                                  Over
+                PD5          FSMC_NWE/USART2_TX          86      -       -        -        -      RED     -                  -      -       -       -     -    -    29
+                                                                                                                 current
+29/41
+                                                       Table 7. STM32 pin description versus board functions (continued)
+30/41
+
+
+
+
+                                                                                                                                                                           Hardware and layout and configuration
+                                  STM32 pin                                                                   Board function
+
+                 Main              Alternate           LQFP   Audio   Audio     Motion       Push                                    Free   Power
+                                                                                                      LED     SWD       USB    OSC                   CN5   CN2   P1   P2
+               function            functions            100   DAC     sensor    sensor      button                                    I/O   supply
+
+                PD6         FSMC_NWAIT/USART2_RX        87      -       -          -          -        -        -         -     -    PD6      -       -     -    -    30
+
+                             USART2_CK/FSMC_NE1/
+                PD7                                     88      -       -          -          -        -        -         -     -    PD7      -       -     -    -    27
+                                 FSMC_NCE2
+
+                PD8          FSMC_D13/USART3_TX         55      -       -          -          -        -        -         -     -    PD8      -       -     -    40   -
+
+                PD9          FSMC_D14/USART3_RX         56      -       -          -          -        -        -         -     -    PD9      -       -     -    41   -
+
+                PD10         FSMC_D15/USART3_CK         57      -       -          -          -        -        -         -     -    PD10     -       -     -    42   -
+
+                PD11         FSMC_A16/USART3_CTS        58      -       -          -          -        -        -         -     -    PD11     -       -     -    43   -
+
+                              FSMC_A17/TIM4_CH1/
+                PD12                                    59      -       -          -          -      GREEN      -         -     -     -       -       -     -    44   -
+                                 USART3_RTS
+
+                PD13          FSMC_A18/TIM4_CH2         60      -       -          -          -      ORANGE     -         -     -     -       -       -     -    45   -
+
+                PD14          FSMC_D0/TIM4_CH3          61      -       -          -          -       RED       -         -     -     -       -       -     -    46   -
+UM1472 Rev 9
+
+
+
+
+                PD15          FSMC_D1/TIM4_CH4          62      -       -          -          -       BLUE      -         -     -     -       -       -     -    47   -
+
+                 PE0      TIM4_ETR/FSMC_NBL0/DCMI_D2    97      -       -        INT1         -        -        -         -     -     -       -       -     -    -    17
+
+                 PE1          FSMC_NBL1/DCMI_D3         98      -       -        INT2         -        -        -         -     -     -       -       -     -    -    18
+
+                             TRACECLK/FSMC_A23/
+                 PE2                                    1       -       -          -          -        -        -         -     -    PE2      -       -     -    -    15
+                                ETH_MII_TXD3
+
+                 PE3          TRACED0/FSMC_A19          2       -       -      CS_I2C/SPI     -        -        -         -     -     -       -       -     -    -    16
+
+                 PE4      TRACED1/FSMC_A20/DCMI_D4      3       -       -          -          -        -        -         -     -    PE4      -       -     -    -    13
+
+                          TRACED2/FSMC_A21/TIM9_CH1/
+                 PE5                                    4       -       -          -          -        -        -         -     -    PE5      -       -     -    -    14
+                                   DCMI_D6
+
+                          TRACED3/FSMC_A22/TIM9_CH2/
+                 PE6                                    5       -       -          -          -        -        -         -     -    PE6      -       -     -    -    11
+                                   DCMI_D7
+
+                 PE7          FSMC_D4/TIM1_ETR          38      -       -          -          -        -        -         -     -    PE7      -       -     -    25   -
+
+                 PE8          FSMC_D5/TIM1_CH1N         39      -       -          -          -        -        -         -     -    PE8      -       -     -    26   -
+
+                 PE9          FSMC_D6/TIM1_CH1          40      -       -          -          -        -        -         -     -    PE9      -       -     -    27   -
+
+                PE10          FSMC_D7/TIM1_CH2N         41      -       -          -          -        -        -         -     -    PE10     -       -     -    28   -
+
+                PE11          FSMC_D8/TIM1_CH2          42      -       -          -          -        -        -         -     -    PE11     -       -     -    29   -
+
+
+
+
+                                                                                                                                                                           UM1472
+                PE12          FSMC_D9/TIM1_CH3N         43      -       -          -          -        -        -         -     -    PE12     -       -     -    30   -
+
+                PE13          FSMC_D10/TIM1_CH3         44      -       -          -          -        -        -         -     -    PE13     -       -     -    31   -
+                                               Table 7. STM32 pin description versus board functions (continued)
+
+
+
+
+                                                                                                                                                             UM1472
+                              STM32 pin                                                        Board function
+
+                 Main          Alternate       LQFP   Audio   Audio    Motion    Push                                  Free   Power
+                                                                                         LED   SWD       USB    OSC                    CN5   CN2   P1   P2
+               function        functions        100   DAC     sensor   sensor   button                                  I/O   supply
+
+                PE14      FSMC_D11/TIM1_CH4     45      -       -        -        -       -      -         -     -     PE14     -       -     -    32   -
+
+                PE15      FSMC_D12/TIM1_BKIN    46      -       -        -        -       -      -         -     -     PE15     -       -     -    33   -
+
+                                                                                                                OSC_
+                PH0            OSC_IN           12      -       -        -        -       -      -         -           PH0      -       -     -    -    7
+                                                                                                                 IN
+
+                                                                                                                OSC_
+                PH1           OSC_OUT           13      -       -        -        -       -      -         -           PH1      -       -     -    -    8
+                                                                                                                OUT
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      5V       -     -    -    3
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      5V       -     -    -    4
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      3V       -     -    -    5
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      3V       -     -    -    6
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      VDD      -     -    3    -
+UM1472 Rev 9
+
+
+
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      VDD      -     -    4    -
+
+                  -                -            -       -       -        -        -       -      -         -     -      -      VDD      -     -    -    22
+
+                  -                -            -       -       -        -        -       -     GND      GND     -      -     GND       5     3    1    -
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    2    -
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    5    -
+
+
+
+
+                                                                                                                                                             Hardware and layout and configuration
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    23   -
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    49   -
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    50   -
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    -    1
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    -    2
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    -    49
+
+                  -                -            -       -       -        -        -       -      -         -     -      -     GND       -     -    -    50
+31/41
+STM32F4DISCOVERY Discovery kit information                                                      UM1472
+
+
+8         STM32F4DISCOVERY Discovery kit information
+
+8.1       Product marking
+          The product and each board composing the product are identified with one or several
+          stickers. The stickers, located on the top or bottom side of each PCB, provide product
+          information:
+          •    Main board featuring the target device: product order code, product identification, serial
+               number, and board reference with revision.
+               Single-sticker example:
+                Product order code
+
+
+
+
+                                                 DT73589V1
+                Product identification
+                syywwxxxxx
+                MBxxxx-Variant-yzz
+
+
+               Dual-sticker example:
+                Product order code              MBxxxx-Variant-yzz
+                                         and
+                Product identification          syywwxxxxx
+
+          •    Other boards if any: board reference with revision and serial number.
+               Examples:
+
+                                                             or   MBxxxx-Variant-yzz   or      or
+                syywwxxxxx                                        syywwxxxxx
+                MBxxxx-Variant-yzz
+
+          On the main board sticker, the first line provides the product order code, and the second line
+          the product identification.
+          On all board stickers, the line formatted as “MBxxxx-Variant-yzz” shows the board reference
+          “MBxxxx”, the mounting variant “Variant” when several exist (optional), the PCB revision “y”,
+          and the assembly revision “zz”, for example B01. The other line shows the board serial
+          number used for traceability.
+          Products and parts labeled as “ES” or “E” are not yet qualified or feature devices that are not
+          yet qualified. STMicroelectronics disclaims any responsibility for consequences arising from
+          their use. Under no circumstances will STMicroelectronics be liable for the customer's use
+          of these engineering samples. Before deciding to use these engineering samples for
+          qualification activities, contact STMicroelectronics' quality department.
+          “ES” or “E” marking examples of location:
+          •    On the targeted STM32 that is soldered on the board (for an illustration of STM32
+               marking, refer to the STM32 datasheet Package information paragraph at the
+               www.st.com website).
+          •    Next to the evaluation tool ordering part number that is stuck or silk-screen printed on
+               the board.
+          Some boards feature a specific STM32 device version, which allows the operation of any
+          bundled commercial stack/library available. This STM32 device shows a “U” marking option
+          at the end of the standard part number and is not available for sales.
+          To use the same commercial stack in their applications, the developers might need to
+          purchase a part number specific to this stack/library. The price of those part numbers
+          includes the stack/library royalties.
+
+
+
+32/41                                          UM1472 Rev 9
+UM1472                                                             STM32F4DISCOVERY Discovery kit information
+
+
+8.2                    STM32F4DISCOVERY product history
+                                                  Table 8. Product history
+Order                                                                          Product change            Product
+                      Product identification         Product details
+code                                                                             description           limitations
+
+                                               MCU:
+                                               – STM32F407VGT6
+                                                 silicon revision ‘A’
+                                               MCU errata sheet:
+                                               – STM32F405/407xx and
+                    STM32F4DISCOVER/01-0                                   Initial revision         No limitation
+                                                 STM32F415/417xx
+                                                 device errata (ES0182)
+                                               Board:
+                                               – MB997-F407VGT6-B01
+                                                 (main board)
+                                               MCU:
+                                               – STM32F407VGT6
+ STM32F4DISCOVERY
+
+
+
+
+                                                 silicon revision ‘Z’
+                                               MCU errata sheet:           – MCU silicon revision
+                                               – STM32F405/407xx and         changed
+                    STM32F4DISCOVER/02-0                                                            No limitation
+                                                 STM32F415/417xx           – Board revision
+                                                 device errata (ES0182)      changed
+                                               Board:
+                                               – MB997-F407VGT6-B02
+                                                 (main board)
+                                               MCU:
+                                               – STM32F407VGT6
+                                                 silicon revision ‘Z’ or
+                                                 silicon revision ‘Y’
+                    STM32F4DISCOVER/03-0       MCU errata sheet:
+                    STM32F4DISCOVER/04-0       – STM32F405/407xx and       Board revision changed   No limitation
+                    STM32F4DISC-FAR/04-0         STM32F415/417xx
+                                                 device errata (ES0182)
+                                               Board:
+                                               – MB997-F407VGT6-C01
+                                                 (main board)
+
+
+
+
+                                                          UM1472 Rev 9                                              33/41
+                                                                                                                            40
+STM32F4DISCOVERY Discovery kit information                                                                             UM1472
+
+
+                                                Table 8. Product history (continued)
+ Order                                                                                 Product change             Product
+                       Product identification            Product details
+ code                                                                                    description            limitations
+
+                                                   MCU:
+                                                   – STM32F407VGT6
+                                                     silicon revision ‘Y’
+                                                   MCU errata sheet:
+                     32F407GDISC1/01-0
+                                                   – STM32F405/407xx and
+                     32F407GDISC1-RS/01-0                                          Board revision changed    No limitation
+                                                     STM32F415/417xx
+                     32F407GDISC1-FA/01-0            device errata (ES0182)
+                                                   Board:
+                                                   – MB997-F407VGT6-D01
+                                                     (main board)
+                                                   MCU:
+                                                   – STM32F407VGT6
+                                                     silicon revision ‘Y’
+                                                                                   – Board revision
+                                                   MCU errata sheet:
+                                                                                     changed
+                     DK32F407G$CW1                 – STM32F405/407xx and
+                                                                                   – Packaging: plastic      No limitation
+                     DK32F407G$CW2                   STM32F415/417xx
+                                                                                     blister replaced by a
+                                                     device errata (ES0182)
+                                                                                     carton box
+  STM32F407G-DISC1
+
+
+
+
+                                                   Board:
+                                                   – MB997-F407VGT6-E01
+                                                     (main board)
+                                                   MCU:
+                                                   – STM32F407VGT6
+                                                     silicon revision ‘5’ or ‘6’
+                                                                                   – Board revision
+                                                   MCU errata sheet:                 changed
+                                                   – STM32F405/407xx and           – Board sticker format
+                     DK32F407G$RW1                                                                           No limitation
+                                                     STM32F415/417xx                 changed
+                                                     device errata (ES0182)        – MCU silicon revision
+                                                                                     changed
+                                                   Board:
+                                                   – MB997-F407VGT6-E01
+                                                     (main board)
+                                                   MCU:
+                                                   – STM32F407VGT6
+                                                     silicon revision ‘5’ or ‘6’
+                                                   MCU errata sheet:
+                                                   – STM32F405/407xx and
+                     DK32F407G$RW2                                                 Board revision changed    No limitation
+                                                     STM32F415/417xx
+                                                     device errata (ES0182)
+                                                   Board:
+                                                   – MB997-F407VGT6-G01
+                                                     (main board)
+
+
+
+
+34/41                                                         UM1472 Rev 9
+UM1472                                                  STM32F4DISCOVERY Discovery kit information
+
+
+8.3            Board revision history
+                                  Table 9. Board revision history
+ Board reference   Board variant and revision           Board change description               Board limitations
+
+                        F407VGT6-B01            Initial revision                               No limitation
+                                                – R27 OFF
+                        F407VGT6-B02                                                           No limitation
+                                                – R28 ON
+                                                – LIS302 replaced by 9177973
+                                                  LIS3DSHTR
+                        F407VGT6-C01                                                           No limitation
+                                                – R31 OFF
+                                                – STM32F4 VSS replaces PDR_ON
+                                                – PCB silkscreen changed to
+                                                  STM32F407G-DISC1
+                                                – Mbed-enabled removed on silkscreen
+                        F407VGT6-D01            – STM32F103C8T6 replaced by                    No limitation
+                                                  STM32F103CBT6
+                                                – ST-LINK/V2 is replaced by ST-LINK/V2-
+                                                  A
+                                                – Microphone MEMS MP45DT02-M
+                                                  replaced by IMP34DT05TR
+                        F407VGT6-E01                                                           No limitation
+                                                – Update Certification logos on PCB
+MB997                                           – Some LED references changed
+(main board)
+                                                – Several part references updated due to
+                                                  obsolescence:
+                                                  - U7 Stereo Codec CIRRUS LOGIC
+                                                  CS43L22-CNZ replaced by CIRRUS
+                                                  LOGIC WM8904CGEFL/RV with impact
+                                                  on the PCB and firmware
+                                                  - ESD protection
+                                                  STMICROELECTRONICS EMIF02-
+                                                  USB03F2 replaced by
+                                                  STMICROELECTRONICS ECMF2-
+                        F407VGT6-G01                                                           No limitation
+                                                  40A100N6, STMICROELECTRONICS
+                                                  ESDA7P120-1U1M, and
+                                                  STMICROELECTRONICS ESDZV5H-
+                                                  1BU2 with impact on the PCB.
+                                                  - U5 MEMS sensor
+                                                  STMICROELECTRONICS LIS3DSHTR
+                                                  replaced by STMICROELECTRONICS
+                                                  IIS2DLPC with impact on the firmware
+                                                – Refer to the bill of materials for further
+                                                  details
+
+
+
+
+                                            UM1472 Rev 9                                                       35/41
+                                                                                                                       40
+Compliance statements and conformity declarations                                              UM1472
+
+
+9          Compliance statements and conformity declarations
+
+9.1        Federal Communications Commission (FCC) compliance
+           statement
+           Part 15.19
+           This device complies with Part 15 of the FCC Rules. Operation is subject to the following
+           two conditions: (1) this device may not cause harmful interference, and (2) this device must
+           accept any interference received, including interference that may cause undesired
+           operation.
+
+           Part 15.21
+           Any changes or modifications to this equipment not expressly approved by
+           STMicroelectronics may cause harmful interference and void the user's authority to operate
+           this equipment.
+
+           Part 15.105
+           This equipment has been tested and found to comply with the limits for a Class B digital
+           device, pursuant to part 15 of the FCC Rules. These limits are designed to provide
+           reasonable protection against harmful interference in a residential installation. This
+           equipment generates uses and can radiate radio frequency energy and, if not installed and
+           used in accordance with the instructions, may cause harmful interference to radio
+           communications. However, there is no guarantee that interference will not occur in a
+           particular installation. If this equipment does cause harmful interference to radio or
+           television reception which can be determined by turning the equipment off and on, the user
+           is encouraged to try to correct interference by one or more of the following measures:
+           •   Reorient or relocate the receiving antenna.
+           •   Increase the separation between the equipment and receiver.
+           •   Connect the equipment into an outlet on a circuit different from that to which the
+               receiver is connected.
+           •   Consult the dealer or an experienced radio/TV technician for help.
+Note:      Use only shielded cables..
+
+           Responsible party (in the USA)
+           Francesco Doddo
+           STMicroelectronics, Inc.
+           200 Summit Drive | Suite 405 | Burlington, MA 01803
+           USA
+           Telephone: +1 781-472-9634
+
+
+
+
+36/41                                      UM1472 Rev 9
+UM1472                                       Compliance statements and conformity declarations
+
+
+9.2      Innovation, Science and Economic Development Canada
+         (ISED) compliance statement
+         Innovation, Science and Economic Development Canada
+         (ISED) compliance statement
+         This product complies with the ICES-003 standard class B of the ISED regulation.
+         ISED Canada ICES-003 Compliance Label: CAN ICES-3 (B)/NMB-3 (B).
+Note:    Use only shielded cables.
+         Ce produit est conforme à la norme NMB-003 classe B de la ISDE.
+         Étiquette de conformité à la NMB-003 d'ISDE Canada : CAN ICES-3 (B) / NMB-3 (B).
+Note:    Utiliser uniquement des câbles blindés.
+
+
+9.3      UKCA conformity
+         Simplified UK declaration of conformity
+         Hereby, the manufacturer STMicroelectronics, declares that the equipment type
+         STM32F4DISCOVERY is in compliance with the UK Electromagnetic Compatibility
+         Regulations 2016 (UK SI 2016 No. 1091) and with the Restriction of the Use of Certain
+         Hazardous Substances in Electrical and Electronic Equipment Regulations 2012 (UK SI
+         2012 No. 3032).
+Note:    Use only shielded cables.
+
+
+9.4      CE conformity
+
+9.4.1    Simplified EU declaration of conformity
+         Hereby, STMicroelectronics declares that the equipment type STM32F4DISCOVERY is in
+         compliance with directives 2011/53/EU and 2015/863/EU (RoHS), and 2014/30/EU (EMC).
+Note:    - RoHS: Restriction of hazardous substances
+         - EMC: Electromagnetic compatibility
+Note:    Use only shielded cables.
+
+9.4.2    Déclaration de conformité UE simplifiée
+         STMicroelectronics déclare que l'équipement électrique du type STM32F4DISCOVERY est
+         conforme aux directives 2011/53/UE et 2015/863/UE (LdSD), et à la directive 2014/30/UE
+         (CEM).
+Note:    - LdSD : directive sur la limitation de l'utilisation des substances dangereuses
+         - CEM : compatibilité électromagnétique
+Note:    Utiliser uniquement des câbles blindés.
+
+
+
+
+                                          UM1472 Rev 9                                      37/41
+                                                                                                    40
+Product disposal                                                                                    UM1472
+
+
+10         Product disposal
+
+
+                       Disposal of this product: WEEE (Waste Electrical and Electronic Equipment)
+                                                     (Applicable in Europe)
+
+
+                       This symbol on the product, accessories, or accompanying documents indicates that
+                       the product and its electronic accessories must not be disposed of with household
+                       waste at the end of their working life.
+                       To prevent possible harm to the environment and human health from uncontrolled
+                       waste disposal, separate these items from other types of waste and recycle them
+                       responsibly at a designated collection point to promote the sustainable reuse of
+                       material resources.
+                       Household users:
+                       Contact the retailer that you purchased the product from or your local authority for
+                       details of your nearest designated collection point.
+                       Business users:
+                       Contact your dealer or supplier for further information.
+
+
+
+
+38/41                              UM1472 Rev 9
+UM1472                                                                                Revision history
+
+
+11       Revision history
+
+                                Table 10. Document revision history
+             Date        Revision                                Changes
+
+          27-Sept-2011      1       Initial release.
+                                    Added Section 5.1: STM32F407VGT6 microcontroller corrected
+          30-Jan-2012       2       Figure 3 MCU name, modified Figure 2 and Section 7: Electrical
+                                    schematics. Modified Table 7 PE2 and PE3 entries.
+                                    Updated for board rev. C. Modified title.
+          28-Nov-2013       3       Modified Section 6.7: Motion sensor.
+                                    Updated Section 7: Electrical schematics.
+                                    Modified Section 6: Hardware and layout, Figure 2, Section 6.7:
+          29-Jan-2014       4
+                                    Motion sensor and Table 6 adding MEMS reference.
+                                    Updated revision to introduce STM32F407G-DISC1 additional order
+                                    code that corresponds to the mbed-enabled Discovery kit.
+                                    Updated Introduction, Features, Section 5: Quick start, Section 6:
+          04-Feb-2016       5
+                                    Hardware and layout, Section 6.1: Embedded ST-LINK/V2 (or V2-A),
+                                    Section 7: Electrical schematics.
+                                    Removed Section 4.1 STM32F407VG microcontroller.
+          31-May-2017       6       Updated Table 6: STM32 pin description versus board functions.
+                                    Removed all references to the obsolete STM32F4DISCOVERY order
+                                    code and focused the ST-LINK descriptions on ST-LINK/V2-A
+                                    accordingly across the document.
+                                    Removed all mentions of Arm® Mbed™.
+                                    Removed MEMS product references across the document.
+                                    Removed Electrical schematics.
+          12-Oct-2020       7       Updated SB15/SB16 in Table 6, and PA1 and PB14 in Table 7.
+                                    Reorganized the entire document:
+                                    – Updated Features, Ordering information, and Product marking
+                                    – Added Codification and Development environment
+                                    – Added STM32F4DISCOVERY Discovery kit information
+                                    – Added Federal Communications Commission (FCC) and ISED
+                                      Canada Compliance Statements
+
+
+
+
+                                         UM1472 Rev 9                                                 39/41
+                                                                                                              40
+Revision history                                                                                UM1472
+
+
+                             Table 10. Document revision history (continued)
+                   Date    Revision                               Changes
+
+                                      Added:
+                                      – Section 5: Safety recommendations
+                                      – Note to Table 6: Solder bridges regarding R31 setting on MB997
+                                        specific versions
+                                      – Section 10: Product disposal
+             26-May-2025      8       Updated:
+                                      – Section 3.4: EDA resources
+                                      – Section 8: STM32F4DISCOVERY Discovery kit information
+                                        including Product marking, Product history, and Board revision
+                                        history
+                                      – Section Note:: Utiliser uniquement des câbles blindés.
+                                      Updated:
+                                      – Section 5: Safety recommendations
+                                      – Section 7.4: Power supply and power selection
+                                      – Section 7.7: On-board audio capability
+             27-Feb-2026      9
+                                      – Section 8.2: STM32F4DISCOVERY product history
+                                      – Section 8.3: Board revision history
+                                      – Section 9: Compliance statements and conformity declarations
+                                      – Section 10: Product disposal
+
+
+
+
+40/41                                     UM1472 Rev 9
+UM1472
+
+
+
+
+                                                IMPORTANT NOTICE – READ CAREFULLY
+
+
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and
+improvements to ST products and/or to this document at any time without notice.
+
+
+In the event of any conflict between the provisions of this document and the provisions of any contractual arrangement in force between the
+purchasers and ST, the provisions of such contractual arrangement shall prevail.
+
+
+The purchasers should obtain the latest relevant information on ST products before placing orders. ST products are sold pursuant to ST’s
+terms and conditions of sale in place at the time of order acknowledgment.
+
+
+The purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application
+assistance or the design of the purchasers’ products.
+
+
+No license, express or implied, to any intellectual property right is granted by ST herein.
+
+
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+
+
+If the purchasers identify an ST product that meets their functional and performance requirements but that is not designated for the
+purchasers' market segment, the purchasers shall contact ST for more information.
+
+
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, refer to www.st.com/trademarks. All other
+product or service names are the property of their respective owners.
+
+
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+
+
+                                               © 2026 STMicroelectronics – All rights reserved
+
+
+
+
+                                                              UM1472 Rev 9                                                             41/41
+                                                                                                                                                41
+

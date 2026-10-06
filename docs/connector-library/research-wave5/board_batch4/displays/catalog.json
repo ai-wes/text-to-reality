@@ -1,0 +1,969 @@
+{
+  "records": [
+    {
+      "id": "sparkfun-lcd-23453",
+      "name": "SparkFun Qwiic OLED 1.3 inch 128x64",
+      "aliases": [
+        "LCD-23453"
+      ],
+      "kind": "display",
+      "manufacturer": "SparkFun",
+      "sku": "LCD-23453",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-oled-1-3in-128x64.html",
+      "headers": [
+        {
+          "id": "J3",
+          "pin_count": 4,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": null,
+          "population": null,
+          "role": "main_host_interface",
+          "shrouded": false,
+          "footprint": "1X04_NO_SILK",
+          "origin_mm": [
+            34.29,
+            16.51
+          ],
+          "rotation": "R90",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "0",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "VDD"
+            },
+            {
+              "name": "3",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "4",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SCL"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "J1",
+          "footprint": "JST04_1MM_RA",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J2",
+          "footprint": "JST04_1MM_RA",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Hardware/Qwiic_OLED_1.3in.brd; exact CAD blob 185a8528db3b661cb7e23044f02f1d95928824a5",
+      "populated_variant": null,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.sparkfun.com/sparkfun-qwiic-oled-1-3in-128x64.html",
+          "https://github.com/sparkfun/SparkFun_Qwiic_OLED_1.3in/blob/main/Hardware/Qwiic_OLED_1.3in.brd"
+        ],
+        "cad_blob_sha": "185a8528db3b661cb7e23044f02f1d95928824a5",
+        "cad_local": "/workspace/shared/board_batch4/displays/SparkFun_Qwiic_OLED_1.3in--Hardware_Qwiic_OLED_1.3in.brd",
+        "method": "Manufacturer PCB physical pads; not signal count"
+      },
+      "notes": [
+        "No physical-fit claim. As-shipped header population unresolved unless separately stated; CAD proves footprint geometry only."
+      ],
+      "total_header_positions": 4
+    },
+    {
+      "id": "sparkfun-lcd-15143",
+      "name": "SparkFun TFT LCD Breakout 1.8 inch 128x160",
+      "aliases": [
+        "LCD-15143"
+      ],
+      "kind": "display",
+      "manufacturer": "SparkFun",
+      "sku": "LCD-15143",
+      "source": "https://www.sparkfun.com/sparkfun-tft-lcd-breakout-1-8-128x160.html",
+      "headers": [
+        {
+          "id": "J2",
+          "pin_count": 10,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": null,
+          "population": null,
+          "role": "main_host_interface",
+          "shrouded": false,
+          "footprint": "1X10_NO_SILK",
+          "origin_mm": [
+            30.48,
+            1.27
+          ],
+          "rotation": "MR0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "0",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "VIN"
+            },
+            {
+              "name": "3",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "LED_PWM"
+            },
+            {
+              "name": "4",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SCLK_IN"
+            },
+            {
+              "name": "5",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "MOSI_IN"
+            },
+            {
+              "name": "6",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "MISO_IN"
+            },
+            {
+              "name": "7",
+              "x": "15.24",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "TE_IN"
+            },
+            {
+              "name": "8",
+              "x": "17.78",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "D/!C!_IN"
+            },
+            {
+              "name": "9",
+              "x": "20.32",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "!CS!_IN"
+            },
+            {
+              "name": "10",
+              "x": "22.86",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SD_!CS!_IN"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "J1",
+          "footprint": "MICROSD_TINY",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "shrouded": true,
+          "gender": null,
+          "population": null,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Hardware/LCD_TFT_Breakout_1in8_128x160.brd; exact CAD blob e72b89997179a14624d2dace03ec84e35da6c106",
+      "populated_variant": null,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.sparkfun.com/sparkfun-tft-lcd-breakout-1-8-128x160.html",
+          "https://github.com/sparkfun/LCD_TFT_Breakout_1in8_128x160/blob/master/Hardware/LCD_TFT_Breakout_1in8_128x160.brd"
+        ],
+        "cad_blob_sha": "e72b89997179a14624d2dace03ec84e35da6c106",
+        "cad_local": "/workspace/shared/board_batch4/displays/LCD_TFT_Breakout_1in8_128x160--Hardware_LCD_TFT_Breakout_1in8_128x160.brd",
+        "method": "Manufacturer PCB physical pads; not signal count"
+      },
+      "notes": [
+        "No physical-fit claim. As-shipped header population unresolved unless separately stated; CAD proves footprint geometry only."
+      ],
+      "total_header_positions": 10
+    },
+    {
+      "id": "sparkfun-lcd-24606",
+      "name": "SparkFun Qwiic OLED Display 0.91 inch 128x32",
+      "aliases": [
+        "LCD-24606"
+      ],
+      "kind": "display",
+      "manufacturer": "SparkFun",
+      "sku": "LCD-24606",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-oled-display-0-91-in-128x32-lcd-24606.html",
+      "headers": [],
+      "other_connectors": [
+        {
+          "id": "J3",
+          "footprint": "JST04_1MM_VERT",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J1",
+          "footprint": "JST04_1MM_VERT",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Hardware/OLED Display.brd; exact CAD blob f4f526aaee93a5795375a4df8d0d320e7dd74f5d",
+      "populated_variant": null,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.sparkfun.com/sparkfun-qwiic-oled-display-0-91-in-128x32-lcd-24606.html",
+          "https://github.com/sparkfun/SparkFun_Qwiic_OLED-0.91/blob/main/Hardware/OLED%20Display.brd"
+        ],
+        "cad_blob_sha": "f4f526aaee93a5795375a4df8d0d320e7dd74f5d",
+        "cad_local": "/workspace/shared/board_batch4/displays/SparkFun_Qwiic_OLED-0.91--Hardware_OLED Display.brd",
+        "method": "Manufacturer PCB physical pads; not signal count"
+      },
+      "notes": [
+        "No physical-fit claim. As-shipped header population unresolved unless separately stated; CAD proves footprint geometry only.",
+        "Current LCD-24606 repository PCB has two surface-mount Qwiic connectors and no through-hole header pads. Do not reuse the older LCD-17153 CAD or generic OLED four-pin assumptions."
+      ],
+      "total_header_positions": 0
+    },
+    {
+      "id": "sparkfun-lcd-15173",
+      "name": "SparkFun Transparent Graphical OLED Breakout Qwiic",
+      "aliases": [
+        "LCD-15173"
+      ],
+      "kind": "display",
+      "manufacturer": "SparkFun",
+      "sku": "LCD-15173",
+      "source": "https://github.com/sparkfun/Qwiic_Transparent_Graphical_OLED",
+      "headers": [
+        {
+          "id": "J3",
+          "pin_count": 6,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": null,
+          "population": null,
+          "role": "main_host_interface",
+          "shrouded": false,
+          "footprint": "1X06_NO_SILK",
+          "origin_mm": [
+            6.35,
+            1.27
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "0",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SDIN/SDA"
+            },
+            {
+              "name": "4",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SCLK/SCL"
+            },
+            {
+              "name": "5",
+              "x": "10.16",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "D!C!/SA0"
+            },
+            {
+              "name": "6",
+              "x": "12.7",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "!CS"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        },
+        {
+          "id": "J4",
+          "pin_count": 1,
+          "rows": 1,
+          "pitch_mm": null,
+          "gender": null,
+          "population": null,
+          "role": "auxiliary_reset",
+          "shrouded": false,
+          "footprint": "1X01_NO_SILK",
+          "origin_mm": [
+            24.13,
+            6.35
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "0",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "!RST"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "J1",
+          "footprint": "JST04_1MM_RA",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J2",
+          "footprint": "JST04_1MM_RA",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Hardware/SparkFun_Transparent_Graphical_OLED_Breakout.brd; exact CAD blob 9aefa3e06838c5c3b913831cb3ed5c7099b5a437",
+      "populated_variant": null,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://github.com/sparkfun/Qwiic_Transparent_Graphical_OLED",
+          "https://github.com/sparkfun/Qwiic_Transparent_Graphical_OLED/blob/master/Hardware/SparkFun_Transparent_Graphical_OLED_Breakout.brd"
+        ],
+        "cad_blob_sha": "9aefa3e06838c5c3b913831cb3ed5c7099b5a437",
+        "cad_local": "/workspace/shared/board_batch4/displays/Qwiic_Transparent_Graphical_OLED--Hardware_SparkFun_Transparent_Graphical_OLED_Breakout.brd",
+        "method": "Manufacturer PCB physical pads; not signal count"
+      },
+      "notes": [
+        "No physical-fit claim. As-shipped header population unresolved unless separately stated; CAD proves footprint geometry only.",
+        "Single separate reset pad is auxiliary, not part of the main 6-pin or 4-pin row. Historical product; current availability not assumed."
+      ],
+      "total_header_positions": 7
+    },
+    {
+      "id": "sparkfun-lcd-15079",
+      "name": "SparkFun Qwiic Transparent OLED HUD",
+      "aliases": [
+        "LCD-15079"
+      ],
+      "kind": "display",
+      "manufacturer": "SparkFun",
+      "sku": "LCD-15079",
+      "source": "https://github.com/sparkfun/Qwiic_Transparent_OLED_HUD",
+      "headers": [
+        {
+          "id": "J1",
+          "pin_count": 1,
+          "rows": 1,
+          "pitch_mm": null,
+          "gender": null,
+          "population": null,
+          "role": "auxiliary_reset",
+          "shrouded": false,
+          "footprint": "1X01_NO_SILK",
+          "origin_mm": [
+            7.62,
+            24.13
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "0",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "!RST"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        },
+        {
+          "id": "J2",
+          "pin_count": 4,
+          "rows": 1,
+          "pitch_mm": 2.54,
+          "gender": null,
+          "population": null,
+          "role": "main_host_interface",
+          "shrouded": false,
+          "footprint": "1X04_NO_SILK",
+          "origin_mm": [
+            10.16,
+            24.13
+          ],
+          "rotation": "R0",
+          "pad_evidence": [
+            {
+              "name": "1",
+              "x": "0",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "GND"
+            },
+            {
+              "name": "2",
+              "x": "2.54",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "3.3V"
+            },
+            {
+              "name": "3",
+              "x": "5.08",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SDA"
+            },
+            {
+              "name": "4",
+              "x": "7.62",
+              "y": "0",
+              "drill": "1.016",
+              "diameter": "1.8796",
+              "rot": "R90",
+              "net": "SCL"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "J3",
+          "footprint": "1X04_1MM_RA",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J5",
+          "footprint": "1X04_1MM_RA",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J4",
+          "footprint": "SERIES6288",
+          "pin_count": null,
+          "pitch_mm": null,
+          "rows": null,
+          "shrouded": true,
+          "gender": null,
+          "population": null,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Hardware/QwiicHUD.brd; exact CAD blob dc7437e2bd6ff8a168c28868a9ef1611f750cd9d",
+      "populated_variant": null,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://github.com/sparkfun/Qwiic_Transparent_OLED_HUD",
+          "https://github.com/sparkfun/Qwiic_Transparent_OLED_HUD/blob/master/Hardware/QwiicHUD.brd"
+        ],
+        "cad_blob_sha": "dc7437e2bd6ff8a168c28868a9ef1611f750cd9d",
+        "cad_local": "/workspace/shared/board_batch4/displays/Qwiic_Transparent_OLED_HUD--Hardware_QwiicHUD.brd",
+        "method": "Manufacturer PCB physical pads; not signal count"
+      },
+      "notes": [
+        "No physical-fit claim. As-shipped header population unresolved unless separately stated; CAD proves footprint geometry only.",
+        "Single separate reset pad is auxiliary, not part of the main 6-pin or 4-pin row. Historical product; current availability not assumed.",
+        "Repository README differentiates LCD-15079 SparkFun red version from SPX-14691 SparkX version; this record uses Hardware/QwiicHUD.brd, not production panel files."
+      ],
+      "total_header_positions": 5
+    },
+    {
+      "id": "sparkfun-lcd-29530",
+      "name": "SparkFun Qwiic OLED Display 1.5 inch 128x128 CH1120",
+      "aliases": [
+        "LCD-29530"
+      ],
+      "kind": "display",
+      "manufacturer": "SparkFun",
+      "sku": "LCD-29530",
+      "source": "https://www.sparkfun.com/sparkfun-qwiic-oled-display-1-5-in-128x128.html",
+      "headers": [
+        {
+          "id": "J5",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": null,
+          "population": null,
+          "role": "main_host_interface",
+          "shrouded": false,
+          "footprint": "SparkFun-Connector:1x07",
+          "pad_evidence": [
+            {
+              "number": "1",
+              "xy_mm": [
+                0.0,
+                0.0
+              ],
+              "net": "GND"
+            },
+            {
+              "number": "2",
+              "xy_mm": [
+                2.54,
+                0.0
+              ],
+              "net": "3.3V"
+            },
+            {
+              "number": "3",
+              "xy_mm": [
+                5.08,
+                0.0
+              ],
+              "net": "SDA{slash}SDI"
+            },
+            {
+              "number": "4",
+              "xy_mm": [
+                7.62,
+                0.0
+              ],
+              "net": "SCL{slash}SCK"
+            },
+            {
+              "number": "5",
+              "xy_mm": [
+                10.16,
+                0.0
+              ],
+              "net": "~{CS}"
+            },
+            {
+              "number": "6",
+              "xy_mm": [
+                12.7,
+                0.0
+              ],
+              "net": "~{RST}"
+            },
+            {
+              "number": "7",
+              "xy_mm": [
+                15.24,
+                0.0
+              ],
+              "net": "D{slash}C"
+            }
+          ],
+          "direct_comb_fit": false,
+          "physical_fit_verified": false
+        }
+      ],
+      "other_connectors": [
+        {
+          "id": "J4",
+          "footprint": "SparkFun-Connector:FPC_0.5mm-24",
+          "pin_count": 24,
+          "pitch_mm": 0.5,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed display FPC",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J1",
+          "footprint": "SparkFun-Connector:JST_SMD_1.0mm-4_Black",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        },
+        {
+          "id": "J2",
+          "footprint": "SparkFun-Connector:JST_SMD_1.0mm-4_Black",
+          "pin_count": 4,
+          "pitch_mm": 1,
+          "rows": 1,
+          "shrouded": true,
+          "population": "factory installed Qwiic connector",
+          "gender": null,
+          "direct_comb_fit": false
+        }
+      ],
+      "revision_scope": "Hardware/SparkFun_Qwiic_OLED_1.5in.kicad_pcb; exact CAD blob 3e61d38e026e760805e8388cc739c7b24d8a2806",
+      "populated_variant": null,
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.sparkfun.com/sparkfun-qwiic-oled-display-1-5-in-128x128.html",
+          "https://github.com/sparkfun/SparkFun_Qwiic_OLED_1.5in/blob/main/Hardware/SparkFun_Qwiic_OLED_1.5in.kicad_pcb"
+        ],
+        "cad_blob_sha": "3e61d38e026e760805e8388cc739c7b24d8a2806",
+        "cad_local": "/workspace/shared/board_batch4/displays/SparkFun_Qwiic_OLED_1.5in--Hardware_SparkFun_Qwiic_OLED_1.5in.kicad_pcb",
+        "method": "Manufacturer PCB physical pads; not signal count"
+      },
+      "notes": [
+        "No physical-fit claim. As-shipped header population unresolved unless separately stated; CAD proves footprint geometry only.",
+        "Exact current CH1120 / LCD-29530 design, not the older LCD-15890 Zio 1.5-inch OLED."
+      ],
+      "total_header_positions": 7
+    },
+    {
+      "id": "waveshare-14657",
+      "name": "Waveshare 0.91inch OLED Module (PH2.0 revision)",
+      "aliases": [
+        "Waveshare 14657"
+      ],
+      "manufacturer": "Waveshare",
+      "sku": "14657",
+      "kind": "display",
+      "source": "https://www.waveshare.com/product/ai/0.91inch-oled-module.htm",
+      "headers": [],
+      "other_connectors": [
+        {
+          "id": "host_PH2.0",
+          "pin_count": 4,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed shrouded PH2.0 board connector",
+          "shrouded": true,
+          "direct_comb_fit": false,
+          "role": "main_host_interface",
+          "pin_names": [
+            "VCC",
+            "GND",
+            "SDA",
+            "SCL"
+          ],
+          "pin_order_verified": false,
+          "pin_names_are_unordered_labels": true
+        }
+      ],
+      "total_header_positions": null,
+      "populated_variant": "PH2.0 connector revision; exposed header revision not established",
+      "revision_scope": "Current manufacturer PH2.0 connector documentation; exact PCB revision identifier not published/verified",
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.waveshare.com/product/ai/0.91inch-oled-module.htm",
+          "https://www.waveshare.com/product/ai/displays/oled.htm?dir=asc&order=price"
+        ],
+        "method": "Manufacturer product/interface documentation explicitly specifies PH2.0 and connector position count; no exposed 2.54 mm header inferred"
+      },
+      "notes": [
+        "Shrouded 2.0 mm connector is excluded from direct comb fitting. Cable wire count is not used as proof of an exposed PTH header.",
+        "Earlier images or documentation may show another connector revision; identify the actual board before mapping."
+      ]
+    },
+    {
+      "id": "waveshare-15868",
+      "name": "Waveshare 0.96inch LCD Module (PH2.0 revision)",
+      "aliases": [
+        "Waveshare 15868"
+      ],
+      "manufacturer": "Waveshare",
+      "sku": "15868",
+      "kind": "display",
+      "source": "https://www.waveshare.com/wiki/0.96inch_LCD_Module",
+      "headers": [],
+      "other_connectors": [
+        {
+          "id": "host_PH2.0",
+          "pin_count": 8,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed shrouded PH2.0 board connector",
+          "shrouded": true,
+          "direct_comb_fit": false,
+          "role": "main_host_interface",
+          "pin_names": [
+            "VCC",
+            "GND",
+            "DIN",
+            "CLK",
+            "CS",
+            "DC",
+            "RST",
+            "BL"
+          ],
+          "pin_order_verified": false,
+          "pin_names_are_unordered_labels": true
+        }
+      ],
+      "total_header_positions": null,
+      "populated_variant": "PH2.0 connector revision; exposed header revision not established",
+      "revision_scope": "Current manufacturer PH2.0 connector documentation; exact PCB revision identifier not published/verified",
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.waveshare.com/wiki/0.96inch_LCD_Module",
+          "https://www.waveshare.com/product/displays/lcd-oled.htm?dir=asc&mode=grid&order=price"
+        ],
+        "method": "Manufacturer product/interface documentation explicitly specifies PH2.0 and connector position count; no exposed 2.54 mm header inferred"
+      },
+      "notes": [
+        "Shrouded 2.0 mm connector is excluded from direct comb fitting. Cable wire count is not used as proof of an exposed PTH header.",
+        "Earlier images or documentation may show another connector revision; identify the actual board before mapping."
+      ]
+    },
+    {
+      "id": "waveshare-18231",
+      "name": "Waveshare 1.14inch LCD Module (PH2.0 revision)",
+      "aliases": [
+        "Waveshare 18231"
+      ],
+      "manufacturer": "Waveshare",
+      "sku": "18231",
+      "kind": "display",
+      "source": "https://www.waveshare.com/1.14inch-LCD-Module.htm",
+      "headers": [],
+      "other_connectors": [
+        {
+          "id": "host_PH2.0",
+          "pin_count": 8,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed shrouded PH2.0 board connector",
+          "shrouded": true,
+          "direct_comb_fit": false,
+          "role": "main_host_interface",
+          "pin_names": [
+            "VCC",
+            "GND",
+            "DIN",
+            "CLK",
+            "CS",
+            "DC",
+            "RST",
+            "BL"
+          ],
+          "pin_order_verified": false,
+          "pin_names_are_unordered_labels": true
+        }
+      ],
+      "total_header_positions": null,
+      "populated_variant": "PH2.0 connector revision; exposed header revision not established",
+      "revision_scope": "Current manufacturer PH2.0 connector documentation; exact PCB revision identifier not published/verified",
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.waveshare.com/1.14inch-LCD-Module.htm",
+          "https://www.waveshare.com/wiki/1.14inch_LCD_Module"
+        ],
+        "method": "Manufacturer product/interface documentation explicitly specifies PH2.0 and connector position count; no exposed 2.54 mm header inferred"
+      },
+      "notes": [
+        "Shrouded 2.0 mm connector is excluded from direct comb fitting. Cable wire count is not used as proof of an exposed PTH header.",
+        "Earlier images or documentation may show another connector revision; identify the actual board before mapping."
+      ]
+    },
+    {
+      "id": "waveshare-18079",
+      "name": "Waveshare 1.54inch LCD Module (PH2.0 revision)",
+      "aliases": [
+        "Waveshare 18079"
+      ],
+      "manufacturer": "Waveshare",
+      "sku": "18079",
+      "kind": "display",
+      "source": "https://www.waveshare.com/product/displays/lcd-oled/1.54inch-lcd-module.htm",
+      "headers": [],
+      "other_connectors": [
+        {
+          "id": "host_PH2.0",
+          "pin_count": 8,
+          "pitch_mm": 2.0,
+          "rows": 1,
+          "gender": null,
+          "population": "factory-installed shrouded PH2.0 board connector",
+          "shrouded": true,
+          "direct_comb_fit": false,
+          "role": "main_host_interface",
+          "pin_names": [
+            "VCC",
+            "GND",
+            "DIN",
+            "CLK",
+            "CS",
+            "DC",
+            "RST",
+            "BL"
+          ],
+          "pin_order_verified": false,
+          "pin_names_are_unordered_labels": true
+        }
+      ],
+      "total_header_positions": null,
+      "populated_variant": "PH2.0 connector revision; exposed header revision not established",
+      "revision_scope": "Current manufacturer PH2.0 connector documentation; exact PCB revision identifier not published/verified",
+      "provenance": {
+        "checked_date": "2026-10-06",
+        "source_urls": [
+          "https://www.waveshare.com/product/displays/lcd-oled/1.54inch-lcd-module.htm",
+          "https://docs.waveshare.net/1.54inch_LCD_Module/"
+        ],
+        "method": "Manufacturer product/interface documentation explicitly specifies PH2.0 and connector position count; no exposed 2.54 mm header inferred"
+      },
+      "notes": [
+        "Shrouded 2.0 mm connector is excluded from direct comb fitting. Cable wire count is not used as proof of an exposed PTH header.",
+        "Earlier images or documentation may show another connector revision; identify the actual board before mapping."
+      ]
+    }
+  ],
+  "checked_date": "2026-10-06",
+  "scope": "10 disjoint SparkFun/Waveshare display records; five include exposed PTH header footprints, five are explicit Qwiic/PH2.0 exclusions",
+  "source_handling": "CAD exact files pinned by Git blob SHA; unverified population/gender and legacy revision details left null or explicitly scoped."
+}

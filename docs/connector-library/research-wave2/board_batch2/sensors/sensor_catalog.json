@@ -1,0 +1,3399 @@
+{
+  "title": "JIG wave two sensor and I/O breakout geometry",
+  "checked_date": "2026-10-06",
+  "records": [
+    {
+      "id": "adafruit-1083",
+      "manufacturer": "Adafruit",
+      "sku": "1083",
+      "name": "Adafruit ADS1015 12-bit ADC",
+      "aliases": [
+        "ADS1015",
+        "1083"
+      ],
+      "kind": "adc",
+      "source": "https://www.adafruit.com/product/1083",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "ADDR"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "ALERT"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1015%20ADC%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 15.24,
+              "net": "AVDD"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 15.24,
+              "net": "AIN3"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 15.24,
+              "net": "AIN2"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 15.24,
+              "net": "AIN1"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 15.24,
+              "net": "AIN0"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 15.24,
+              "net": "AGND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1015%20ADC%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1015%20ADC%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1015%20ADC%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1015%20ADC%20STEMMA%20QT.brd",
+        "cad_commit": "5aa7dbfdd92692a7751740b0f622606c2ff9ca55",
+        "cad_file": "ads/Adafruit ADS1015 ADC STEMMA QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-1085",
+      "manufacturer": "Adafruit",
+      "sku": "1085",
+      "name": "Adafruit ADS1115 16-bit ADC",
+      "aliases": [
+        "ADS1115",
+        "1085"
+      ],
+      "kind": "adc",
+      "source": "https://www.adafruit.com/product/1085",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "ADDR"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "ALERT"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 15.24,
+              "net": "AVDD"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 15.24,
+              "net": "AIN3"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 15.24,
+              "net": "AIN2"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 15.24,
+              "net": "AIN1"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 15.24,
+              "net": "AIN0"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 15.24,
+              "net": "AGND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs/blob/5aa7dbfdd92692a7751740b0f622606c2ff9ca55/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd",
+        "cad_commit": "5aa7dbfdd92692a7751740b0f622606c2ff9ca55",
+        "cad_file": "ads/Adafruit ADS1115 ADC STEMMA QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-2717",
+      "manufacturer": "Adafruit",
+      "sku": "2717",
+      "name": "Adafruit TCA9548A I2C Multiplexer",
+      "aliases": [
+        "TCA9548A",
+        "2717"
+      ],
+      "kind": "i2c_multiplexer",
+      "source": "https://www.adafruit.com/product/2717",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X12_ROUND",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 1.27,
+              "y_mm": 29.21,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 1.27,
+              "y_mm": 26.67,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 1.27,
+              "y_mm": 24.13,
+              "net": "INPUTSDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 1.27,
+              "y_mm": 21.59,
+              "net": "INPUTSCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 1.27,
+              "y_mm": 19.05,
+              "net": "RESET"
+            },
+            {
+              "pad": "6",
+              "x_mm": 1.27,
+              "y_mm": 16.51,
+              "net": "A0"
+            },
+            {
+              "pad": "7",
+              "x_mm": 1.27,
+              "y_mm": 13.97,
+              "net": "A1"
+            },
+            {
+              "pad": "8",
+              "x_mm": 1.27,
+              "y_mm": 11.43,
+              "net": "A2"
+            },
+            {
+              "pad": "9",
+              "x_mm": 1.27,
+              "y_mm": 8.89,
+              "net": "0SDA"
+            },
+            {
+              "pad": "10",
+              "x_mm": 1.27,
+              "y_mm": 6.35,
+              "net": "0SCL"
+            },
+            {
+              "pad": "11",
+              "x_mm": 1.27,
+              "y_mm": 3.81,
+              "net": "1SDA"
+            },
+            {
+              "pad": "12",
+              "x_mm": 1.27,
+              "y_mm": 1.27,
+              "net": "1SCL"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/blob/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X12_ROUND",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 16.51,
+              "y_mm": 1.27,
+              "net": "2SDA"
+            },
+            {
+              "pad": "2",
+              "x_mm": 16.51,
+              "y_mm": 3.81,
+              "net": "2SCL"
+            },
+            {
+              "pad": "3",
+              "x_mm": 16.51,
+              "y_mm": 6.35,
+              "net": "3SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 16.51,
+              "y_mm": 8.89,
+              "net": "3SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 11.43,
+              "net": "4SDA"
+            },
+            {
+              "pad": "6",
+              "x_mm": 16.51,
+              "y_mm": 13.97,
+              "net": "4SCL"
+            },
+            {
+              "pad": "7",
+              "x_mm": 16.51,
+              "y_mm": 16.51,
+              "net": "5SDA"
+            },
+            {
+              "pad": "8",
+              "x_mm": 16.51,
+              "y_mm": 19.05,
+              "net": "5SCL"
+            },
+            {
+              "pad": "9",
+              "x_mm": 16.51,
+              "y_mm": 21.59,
+              "net": "6SDA"
+            },
+            {
+              "pad": "10",
+              "x_mm": 16.51,
+              "y_mm": 24.13,
+              "net": "6SCL"
+            },
+            {
+              "pad": "11",
+              "x_mm": 16.51,
+              "y_mm": 26.67,
+              "net": "7SDA"
+            },
+            {
+              "pad": "12",
+              "x_mm": 16.51,
+              "y_mm": 29.21,
+              "net": "7SCL"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/blob/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd"
+        }
+      ],
+      "auxiliary_connectors": [],
+      "total_254mm_header_contacts": 24,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/blob/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd",
+        "cad_commit": "c5bdfe4c8e860cee7400539d6e45a235da7afcd2",
+        "cad_file": "Adafruit-TCA9548A-I2C-Multiplexer-PCB/Adafruit TCA9548A.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-815",
+      "manufacturer": "Adafruit",
+      "sku": "815",
+      "name": "Adafruit PCA9685 16-Channel PWM/Servo Driver",
+      "aliases": [
+        "PCA9685",
+        "815"
+      ],
+      "kind": "pwm_driver",
+      "source": "https://www.adafruit.com/product/815",
+      "revision": "Rev C",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06-CLEANBIG",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": -0.0,
+              "y_mm": 0.0,
+              "net": "5.0V"
+            },
+            {
+              "pad": "2",
+              "x_mm": -0.0,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "3",
+              "x_mm": -0.0,
+              "y_mm": 5.08,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 0.0,
+              "y_mm": 7.62,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 0.0,
+              "y_mm": 10.16,
+              "net": "OE"
+            },
+            {
+              "pad": "6",
+              "x_mm": 0.0,
+              "y_mm": 12.7,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        },
+        {
+          "id": "JP4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06-CLEANBIG",
+          "cad_refs": [
+            "JP4"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 58.42,
+              "y_mm": 0.0,
+              "net": "5.0V"
+            },
+            {
+              "pad": "2",
+              "x_mm": 58.42,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "3",
+              "x_mm": 58.42,
+              "y_mm": 5.08,
+              "net": "SDA"
+            },
+            {
+              "pad": "4",
+              "x_mm": 58.42,
+              "y_mm": 7.62,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 58.42,
+              "y_mm": 10.16,
+              "net": "OE"
+            },
+            {
+              "pad": "6",
+              "x_mm": 58.42,
+              "y_mm": 12.7,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        },
+        {
+          "id": "JP1",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 3,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "3X04",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 25.4,
+              "y_mm": -0.0,
+              "net": "N$3"
+            },
+            {
+              "pad": "2",
+              "x_mm": 25.4,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "4",
+              "x_mm": 22.86,
+              "y_mm": 0.0,
+              "net": "N$2"
+            },
+            {
+              "pad": "5",
+              "x_mm": 22.86,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "7",
+              "x_mm": 20.32,
+              "y_mm": 0.0,
+              "net": "N$4"
+            },
+            {
+              "pad": "8",
+              "x_mm": 20.32,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "10",
+              "x_mm": 17.78,
+              "y_mm": 0.0,
+              "net": "N$5"
+            },
+            {
+              "pad": "11",
+              "x_mm": 17.78,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 25.4,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "6",
+              "x_mm": 22.86,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "9",
+              "x_mm": 20.32,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "12",
+              "x_mm": 17.78,
+              "y_mm": -5.08,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 3,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "3X04",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 12.7,
+              "y_mm": -0.0,
+              "net": "N$6"
+            },
+            {
+              "pad": "2",
+              "x_mm": 12.7,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 0.0,
+              "net": "N$7"
+            },
+            {
+              "pad": "5",
+              "x_mm": 10.16,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "7",
+              "x_mm": 7.62,
+              "y_mm": 0.0,
+              "net": "N$8"
+            },
+            {
+              "pad": "8",
+              "x_mm": 7.62,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "10",
+              "x_mm": 5.08,
+              "y_mm": 0.0,
+              "net": "N$9"
+            },
+            {
+              "pad": "11",
+              "x_mm": 5.08,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "6",
+              "x_mm": 10.16,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "9",
+              "x_mm": 7.62,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "12",
+              "x_mm": 5.08,
+              "y_mm": -5.08,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        },
+        {
+          "id": "JP5",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 3,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "3X04",
+          "cad_refs": [
+            "JP5"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 53.34,
+              "y_mm": -0.0,
+              "net": "N$17"
+            },
+            {
+              "pad": "2",
+              "x_mm": 53.34,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "4",
+              "x_mm": 50.8,
+              "y_mm": 0.0,
+              "net": "N$16"
+            },
+            {
+              "pad": "5",
+              "x_mm": 50.8,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "7",
+              "x_mm": 48.26,
+              "y_mm": 0.0,
+              "net": "N$15"
+            },
+            {
+              "pad": "8",
+              "x_mm": 48.26,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "10",
+              "x_mm": 45.72,
+              "y_mm": 0.0,
+              "net": "N$14"
+            },
+            {
+              "pad": "11",
+              "x_mm": 45.72,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 53.34,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "6",
+              "x_mm": 50.8,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "9",
+              "x_mm": 48.26,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "12",
+              "x_mm": 45.72,
+              "y_mm": -5.08,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        },
+        {
+          "id": "JP6",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 3,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "3X04",
+          "cad_refs": [
+            "JP6"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 40.64,
+              "y_mm": -0.0,
+              "net": "N$13"
+            },
+            {
+              "pad": "2",
+              "x_mm": 40.64,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "4",
+              "x_mm": 38.1,
+              "y_mm": 0.0,
+              "net": "N$12"
+            },
+            {
+              "pad": "5",
+              "x_mm": 38.1,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "7",
+              "x_mm": 35.56,
+              "y_mm": 0.0,
+              "net": "N$11"
+            },
+            {
+              "pad": "8",
+              "x_mm": 35.56,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "10",
+              "x_mm": 33.02,
+              "y_mm": 0.0,
+              "net": "N$10"
+            },
+            {
+              "pad": "11",
+              "x_mm": 33.02,
+              "y_mm": -2.54,
+              "net": "5.0V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 40.64,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "6",
+              "x_mm": 38.1,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "9",
+              "x_mm": 35.56,
+              "y_mm": -5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "12",
+              "x_mm": 33.02,
+              "y_mm": -5.08,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J1",
+          "kind": "terminal_block_footprint",
+          "pin_count": 2,
+          "pitch_mm": 3.5,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "notes": "Terminal block supplied loose; soldering required. No current qualification for JIG.",
+          "evidence": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 60,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/blob/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd",
+        "cad_commit": "32578c83a5ba2946249b80b1aa1fb18ae4e61e7d",
+        "cad_file": "Adafruit-16-Channel-PWM-Servo-Driver-PCB/Adafruit PCA9685 rev C.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification.",
+        "Power/load/LED-driver contacts are recorded only as geometry. Do not infer safe load current or route high-current loads through JIG from this catalog.",
+        "C2 is an optional capacitor footprint and mounting holes are mechanical; excluded from connector count. Four 3x4 servo groups are separate, not a continuous 3x16 bank."
+      ]
+    },
+    {
+      "id": "adafruit-1899",
+      "manufacturer": "Adafruit",
+      "sku": "1899",
+      "name": "Adafruit HTU21D-F Temperature Humidity Sensor STEMMA QT",
+      "aliases": [
+        "HTU21D-F",
+        "1899"
+      ],
+      "kind": "temperature_humidity_sensor",
+      "source": "https://www.adafruit.com/product/1899",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X05_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "SDA"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-HTU21D-Breakout-PCB/blob/9a352b1841ff45b684a7263721490af9cc6a455f/Adafruit%20HTU21D-F%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-HTU21D-Breakout-PCB/blob/9a352b1841ff45b684a7263721490af9cc6a455f/Adafruit%20HTU21D-F%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-HTU21D-Breakout-PCB/blob/9a352b1841ff45b684a7263721490af9cc6a455f/Adafruit%20HTU21D-F%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-HTU21D-Breakout-PCB/blob/9a352b1841ff45b684a7263721490af9cc6a455f/Adafruit%20HTU21D-F%20STEMMA%20QT.brd",
+        "cad_commit": "9a352b1841ff45b684a7263721490af9cc6a455f",
+        "cad_file": "Adafruit-HTU21D-Breakout-PCB/Adafruit HTU21D-F STEMMA QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-2651",
+      "manufacturer": "Adafruit",
+      "sku": "2651",
+      "name": "Adafruit BMP280 Pressure Temperature Sensor STEMMA QT",
+      "aliases": [
+        "BMP280",
+        "2651"
+      ],
+      "kind": "pressure_temperature_sensor",
+      "source": "https://www.adafruit.com/product/2651",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 7,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X07_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 5.08,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "SCK/SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "SDO/ADR"
+            },
+            {
+              "pad": "6",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "SDI/SDA"
+            },
+            {
+              "pad": "7",
+              "x_mm": 20.32,
+              "y_mm": 2.54,
+              "net": "CS"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB/blob/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB/blob/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB/blob/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 7,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB/blob/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.brd",
+        "cad_commit": "1ba329baf692f9e681e0deb891c98ce6579a5c26",
+        "cad_file": "Adafruit-BMP280-Breakout-PCB/Adafruit BMP280 STEMMA QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/2651-07.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-935",
+      "manufacturer": "Adafruit",
+      "sku": "935",
+      "name": "Adafruit MCP4725 12-bit DAC STEMMA QT",
+      "aliases": [
+        "MCP4725",
+        "935"
+      ],
+      "kind": "dac",
+      "source": "https://www.adafruit.com/product/935",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "A0"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "VOUT"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP4725-PCB/blob/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP4725-PCB/blob/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP4725-PCB/blob/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd"
+        },
+        {
+          "id": "X1",
+          "kind": "terminal_block_footprint",
+          "pin_count": 2,
+          "pitch_mm": 3.5,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "notes": "Optional terminal block not supplied",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP4725-PCB/blob/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-MCP4725-PCB/blob/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd",
+        "cad_commit": "0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd",
+        "cad_file": "Adafruit-MCP4725-PCB/Adafruit MCP4725 QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-757",
+      "manufacturer": "Adafruit",
+      "sku": "757",
+      "name": "Adafruit BSS138 Four-channel Bidirectional Logic Level Converter",
+      "aliases": [
+        "BSS138",
+        "757"
+      ],
+      "kind": "logic_level_shifter",
+      "source": "https://www.adafruit.com/product/757",
+      "revision": "Exact manufacturer CAD commit below",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06-CLEANBIG",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 3.81,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 2.54,
+              "y_mm": 6.35,
+              "net": "N$4"
+            },
+            {
+              "pad": "3",
+              "x_mm": 2.54,
+              "y_mm": 8.89,
+              "net": "N$3"
+            },
+            {
+              "pad": "4",
+              "x_mm": 2.54,
+              "y_mm": 11.43,
+              "net": "N$6"
+            },
+            {
+              "pad": "5",
+              "x_mm": 2.54,
+              "y_mm": 13.97,
+              "net": "N$9"
+            },
+            {
+              "pad": "6",
+              "x_mm": 2.54,
+              "y_mm": 16.51,
+              "net": "+3V3"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/4-Channel-Level-Shifter-PCB/blob/865a9f0c1221f477e8491f59ca49b9fd74711140/Adafruit%20FET%204-Channel%20Shifter.brd"
+        },
+        {
+          "id": "JP4",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06-CLEANBIG",
+          "cad_refs": [
+            "JP4"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 12.7,
+              "y_mm": 3.81,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 12.7,
+              "y_mm": 6.35,
+              "net": "N$5"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 8.89,
+              "net": "N$1"
+            },
+            {
+              "pad": "4",
+              "x_mm": 12.7,
+              "y_mm": 11.43,
+              "net": "N$8"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 13.97,
+              "net": "N$2"
+            },
+            {
+              "pad": "6",
+              "x_mm": 12.7,
+              "y_mm": 16.51,
+              "net": "+5V"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/4-Channel-Level-Shifter-PCB/blob/865a9f0c1221f477e8491f59ca49b9fd74711140/Adafruit%20FET%204-Channel%20Shifter.brd"
+        }
+      ],
+      "auxiliary_connectors": [],
+      "total_254mm_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/4-Channel-Level-Shifter-PCB/blob/865a9f0c1221f477e8491f59ca49b9fd74711140/Adafruit%20FET%204-Channel%20Shifter.brd",
+        "cad_commit": "865a9f0c1221f477e8491f59ca49b9fd74711140",
+        "cad_file": "4-Channel-Level-Shifter-PCB/Adafruit FET 4-Channel Shifter.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-904",
+      "manufacturer": "Adafruit",
+      "sku": "904",
+      "name": "Adafruit INA219 Current Sensor STEMMA QT",
+      "aliases": [
+        "INA219",
+        "904"
+      ],
+      "kind": "current_sensor",
+      "source": "https://www.adafruit.com/product/904",
+      "revision": "STEMMA QT; terminal block pre-soldered from 2024-05-31; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "VIN-"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "VIN+"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/blob/f7ef6a540648572549d64ff2b9b1932f17173e40/Adafruit%20INA219%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "J1",
+          "kind": "screw_terminal_block",
+          "pin_count": 2,
+          "pitch_mm": 3.5,
+          "rows": 1,
+          "gender": "wire_entry_terminal",
+          "population": "factory_populated",
+          "notes": "Official revision history: pre-soldered terminal block added May 31, 2024. Older stock may differ. No current qualification for JIG.",
+          "evidence": "https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/blob/f7ef6a540648572549d64ff2b9b1932f17173e40/Adafruit%20INA219%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/blob/f7ef6a540648572549d64ff2b9b1932f17173e40/Adafruit%20INA219%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/blob/f7ef6a540648572549d64ff2b9b1932f17173e40/Adafruit%20INA219%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/blob/f7ef6a540648572549d64ff2b9b1932f17173e40/Adafruit%20INA219%20STEMMA%20QT.brd",
+        "cad_commit": "f7ef6a540648572549d64ff2b9b1932f17173e40",
+        "cad_file": "Adafruit-INA219-Current-Sensor-PCB/Adafruit INA219 STEMMA QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/904-13.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification.",
+        "Power/load/LED-driver contacts are recorded only as geometry. Do not infer safe load current or route high-current loads through JIG from this catalog."
+      ]
+    },
+    {
+      "id": "adafruit-4832",
+      "manufacturer": "Adafruit",
+      "sku": "4832",
+      "name": "Adafruit HTU31 Temperature Humidity Sensor",
+      "aliases": [
+        "HTU31",
+        "4832"
+      ],
+      "kind": "temperature_humidity_sensor",
+      "source": "https://www.adafruit.com/product/4832",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "RESET"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "ADDR"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-HTU31-PCB/blob/9ac7a4470edb8555ba33d1aba62f260fa4cc63da/Adafruit%20HTU31D.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-HTU31-PCB/blob/9ac7a4470edb8555ba33d1aba62f260fa4cc63da/Adafruit%20HTU31D.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-HTU31-PCB/blob/9ac7a4470edb8555ba33d1aba62f260fa4cc63da/Adafruit%20HTU31D.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-HTU31-PCB/blob/9ac7a4470edb8555ba33d1aba62f260fa4cc63da/Adafruit%20HTU31D.brd",
+        "cad_commit": "9ac7a4470edb8555ba33d1aba62f260fa4cc63da",
+        "cad_file": "Adafruit-HTU31-PCB/Adafruit HTU31D.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-4886",
+      "manufacturer": "Adafruit",
+      "sku": "4886",
+      "name": "Adafruit AW9523 GPIO Expander LED Driver",
+      "aliases": [
+        "AW9523",
+        "4886"
+      ],
+      "kind": "gpio_led_driver",
+      "source": "https://www.adafruit.com/product/4886",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 11,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X11_ROUND",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "INT"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "RST"
+            },
+            {
+              "pad": "7",
+              "x_mm": 21.59,
+              "y_mm": 2.54,
+              "net": "P1_0"
+            },
+            {
+              "pad": "8",
+              "x_mm": 24.13,
+              "y_mm": 2.54,
+              "net": "P1_1"
+            },
+            {
+              "pad": "9",
+              "x_mm": 26.67,
+              "y_mm": 2.54,
+              "net": "P1_2"
+            },
+            {
+              "pad": "10",
+              "x_mm": 29.21,
+              "y_mm": 2.54,
+              "net": "P1_3"
+            },
+            {
+              "pad": "11",
+              "x_mm": 31.75,
+              "y_mm": 2.54,
+              "net": "P0_0"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd"
+        },
+        {
+          "id": "JP7",
+          "pin_count": 11,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X11_ROUND",
+          "cad_refs": [
+            "JP7"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 31.75,
+              "y_mm": 15.24,
+              "net": "P0_1"
+            },
+            {
+              "pad": "2",
+              "x_mm": 29.21,
+              "y_mm": 15.24,
+              "net": "P0_2"
+            },
+            {
+              "pad": "3",
+              "x_mm": 26.67,
+              "y_mm": 15.24,
+              "net": "P0_3"
+            },
+            {
+              "pad": "4",
+              "x_mm": 24.13,
+              "y_mm": 15.24,
+              "net": "P0_4"
+            },
+            {
+              "pad": "5",
+              "x_mm": 21.59,
+              "y_mm": 15.24,
+              "net": "P0_5"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 15.24,
+              "net": "P0_6"
+            },
+            {
+              "pad": "7",
+              "x_mm": 16.51,
+              "y_mm": 15.24,
+              "net": "P0_7"
+            },
+            {
+              "pad": "8",
+              "x_mm": 13.97,
+              "y_mm": 15.24,
+              "net": "P1_4"
+            },
+            {
+              "pad": "9",
+              "x_mm": 11.43,
+              "y_mm": 15.24,
+              "net": "P1_5"
+            },
+            {
+              "pad": "10",
+              "x_mm": 8.89,
+              "y_mm": 15.24,
+              "net": "P1_6"
+            },
+            {
+              "pad": "11",
+              "x_mm": 6.35,
+              "y_mm": 15.24,
+              "net": "P1_7"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 11,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X11_ROUND",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "7",
+              "x_mm": 21.59,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "8",
+              "x_mm": 24.13,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "9",
+              "x_mm": 26.67,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "10",
+              "x_mm": 29.21,
+              "y_mm": 12.7,
+              "net": "VCC"
+            },
+            {
+              "pad": "11",
+              "x_mm": 31.75,
+              "y_mm": 12.7,
+              "net": "VCC"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd"
+        },
+        {
+          "id": "JP3",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X05_ROUND",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 21.59,
+              "y_mm": 5.08,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 24.13,
+              "y_mm": 5.08,
+              "net": "VCC"
+            },
+            {
+              "pad": "3",
+              "x_mm": 26.67,
+              "y_mm": 5.08,
+              "net": "VCC"
+            },
+            {
+              "pad": "4",
+              "x_mm": 29.21,
+              "y_mm": 5.08,
+              "net": "VCC"
+            },
+            {
+              "pad": "5",
+              "x_mm": 31.75,
+              "y_mm": 5.08,
+              "net": "VCC"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 38,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-AW9523-PCB/blob/080a15c70db83a9091bdfd03ee7e85ae38b694a5/Adafruit%20AW9523.brd",
+        "cad_commit": "080a15c70db83a9091bdfd03ee7e85ae38b694a5",
+        "cad_file": "Adafruit-AW9523-PCB/Adafruit AW9523.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/4886-01.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification.",
+        "Power/load/LED-driver contacts are recorded only as geometry. Do not infer safe load current or route high-current loads through JIG from this catalog.",
+        "All four physical rows retained: 11+11+11+5 contacts, including auxiliary supply contacts; not merely 16 GPIO."
+      ]
+    },
+    {
+      "id": "adafruit-4681",
+      "manufacturer": "Adafruit",
+      "sku": "4681",
+      "name": "Adafruit BH1750 Light Sensor",
+      "aliases": [
+        "BH1750",
+        "4681"
+      ],
+      "kind": "light_sensor",
+      "source": "https://www.adafruit.com/product/4681",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "ADDR"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-BH1750-PCB/blob/0b61eb2c8c54254a5685adc044fbf7c5ab968e56/Adafruit%20BH1750.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BH1750-PCB/blob/0b61eb2c8c54254a5685adc044fbf7c5ab968e56/Adafruit%20BH1750.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BH1750-PCB/blob/0b61eb2c8c54254a5685adc044fbf7c5ab968e56/Adafruit%20BH1750.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-BH1750-PCB/blob/0b61eb2c8c54254a5685adc044fbf7c5ab968e56/Adafruit%20BH1750.brd",
+        "cad_commit": "0b61eb2c8c54254a5685adc044fbf7c5ab968e56",
+        "cad_file": "Adafruit-BH1750-PCB/Adafruit BH1750.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/4681-10.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-3966",
+      "manufacturer": "Adafruit",
+      "sku": "3966",
+      "name": "Adafruit BMP388 Pressure Altimeter STEMMA QT",
+      "aliases": [
+        "BMP388",
+        "3966"
+      ],
+      "kind": "pressure_temperature_sensor",
+      "source": "https://www.adafruit.com/product/3966",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X08_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 3.81,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCK/SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDO/ADR"
+            },
+            {
+              "pad": "6",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "SDI/SDA"
+            },
+            {
+              "pad": "7",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "CS"
+            },
+            {
+              "pad": "8",
+              "x_mm": 21.59,
+              "y_mm": 2.54,
+              "net": "INT"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-BMP3xx-PCB/blob/e99a964dda0d6deb42314f8d9a376e4dd714fe59/Adafruit%20BMP388%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BMP3xx-PCB/blob/e99a964dda0d6deb42314f8d9a376e4dd714fe59/Adafruit%20BMP388%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BMP3xx-PCB/blob/e99a964dda0d6deb42314f8d9a376e4dd714fe59/Adafruit%20BMP388%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 8,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-BMP3xx-PCB/blob/e99a964dda0d6deb42314f8d9a376e4dd714fe59/Adafruit%20BMP388%20QT.brd",
+        "cad_commit": "e99a964dda0d6deb42314f8d9a376e4dd714fe59",
+        "cad_file": "Adafruit-BMP3xx-PCB/Adafruit BMP388 QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/3966-14.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-4646",
+      "manufacturer": "Adafruit",
+      "sku": "4646",
+      "name": "Adafruit BNO055 9-DOF Orientation IMU STEMMA QT",
+      "aliases": [
+        "BNO055",
+        "4646"
+      ],
+      "kind": "imu",
+      "source": "https://www.adafruit.com/product/4646",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 4,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X04_ROUND_76",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 8.89,
+              "y_mm": 17.78,
+              "net": "INT_3V"
+            },
+            {
+              "pad": "2",
+              "x_mm": 11.43,
+              "y_mm": 17.78,
+              "net": "I2CADDR_3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 13.97,
+              "y_mm": 17.78,
+              "net": "PS0_3V"
+            },
+            {
+              "pad": "4",
+              "x_mm": 16.51,
+              "y_mm": 17.78,
+              "net": "PS1_3V"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-BNO055-Breakout-PCB/blob/64c5a387aa807edb01eff440d1cd07ce4b608642/Adafruit%20BNO055%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "JP3",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "RESET"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-BNO055-Breakout-PCB/blob/64c5a387aa807edb01eff440d1cd07ce4b608642/Adafruit%20BNO055%20STEMMA%20QT.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BNO055-Breakout-PCB/blob/64c5a387aa807edb01eff440d1cd07ce4b608642/Adafruit%20BNO055%20STEMMA%20QT.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-BNO055-Breakout-PCB/blob/64c5a387aa807edb01eff440d1cd07ce4b608642/Adafruit%20BNO055%20STEMMA%20QT.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 10,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-BNO055-Breakout-PCB/blob/64c5a387aa807edb01eff440d1cd07ce4b608642/Adafruit%20BNO055%20STEMMA%20QT.brd",
+        "cad_commit": "64c5a387aa807edb01eff440d1cd07ce4b608642",
+        "cad_file": "Adafruit-BNO055-Breakout-PCB/Adafruit BNO055 STEMMA QT.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-4821",
+      "manufacturer": "Adafruit",
+      "sku": "4821",
+      "name": "Adafruit TMP117 Temperature Sensor",
+      "aliases": [
+        "TMP117",
+        "4821"
+      ],
+      "kind": "temperature_sensor",
+      "source": "https://www.adafruit.com/product/4821",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "INT"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "ADDR"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-TMP117-PCB/blob/874b3a5b27792d4d166547bab075cb963e1bdb32/Adafruit_TMP117.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-TMP117-PCB/blob/874b3a5b27792d4d166547bab075cb963e1bdb32/Adafruit_TMP117.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-TMP117-PCB/blob/874b3a5b27792d4d166547bab075cb963e1bdb32/Adafruit_TMP117.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-TMP117-PCB/blob/874b3a5b27792d4d166547bab075cb963e1bdb32/Adafruit_TMP117.brd",
+        "cad_commit": "874b3a5b27792d4d166547bab075cb963e1bdb32",
+        "cad_file": "Adafruit-TMP117-PCB/Adafruit_TMP117.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/4821-10.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-4885",
+      "manufacturer": "Adafruit",
+      "sku": "4885",
+      "name": "Adafruit SHT40 Temperature Humidity Sensor",
+      "aliases": [
+        "SHT40",
+        "4885"
+      ],
+      "kind": "temperature_humidity_sensor",
+      "source": "https://www.adafruit.com/product/4885",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X05_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "SDA"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-SHT40-PCB/blob/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/Adafruit%20SHT40.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-SHT40-PCB/blob/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/Adafruit%20SHT40.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-SHT40-PCB/blob/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/Adafruit%20SHT40.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 5,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-SHT40-PCB/blob/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/Adafruit%20SHT40.brd",
+        "cad_commit": "40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1",
+        "cad_file": "Adafruit-SHT40-PCB/Adafruit SHT40.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-2809",
+      "manufacturer": "Adafruit",
+      "sku": "2809",
+      "name": "Adafruit LIS3DH Triple-axis Accelerometer STEMMA QT",
+      "aliases": [
+        "LIS3DH",
+        "2809"
+      ],
+      "kind": "accelerometer",
+      "source": "https://www.adafruit.com/product/2809",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP3",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP3"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 15.24,
+              "y_mm": 6.35,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 15.24,
+              "y_mm": 8.89,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 15.24,
+              "y_mm": 11.43,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 15.24,
+              "y_mm": 13.97,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 15.24,
+              "y_mm": 16.51,
+              "net": "SDA"
+            },
+            {
+              "pad": "6",
+              "x_mm": 15.24,
+              "y_mm": 19.05,
+              "net": "INT1"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/blob/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 19.05,
+              "net": "CS"
+            },
+            {
+              "pad": "2",
+              "x_mm": 2.54,
+              "y_mm": 16.51,
+              "net": "SDO"
+            },
+            {
+              "pad": "3",
+              "x_mm": 2.54,
+              "y_mm": 13.97,
+              "net": "ADC1"
+            },
+            {
+              "pad": "4",
+              "x_mm": 2.54,
+              "y_mm": 11.43,
+              "net": "ADC2"
+            },
+            {
+              "pad": "5",
+              "x_mm": 2.54,
+              "y_mm": 8.89,
+              "net": "ADC3"
+            },
+            {
+              "pad": "6",
+              "x_mm": 2.54,
+              "y_mm": 6.35,
+              "net": "INT2"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/blob/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/blob/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/blob/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 12,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/blob/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd",
+        "cad_commit": "f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861",
+        "cad_file": "Adafruit-LIS3DH-Breakout-PCB/Adafruit LIS3DH.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-4438",
+      "manufacturer": "Adafruit",
+      "sku": "4438",
+      "name": "Adafruit LSM6DSOX 6-DoF Accelerometer Gyroscope",
+      "aliases": [
+        "LSM6DSOX",
+        "4438"
+      ],
+      "kind": "imu",
+      "source": "https://www.adafruit.com/product/4438",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 9,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X09_ROUND_70",
+          "cad_refs": [
+            "JP1"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 2.54,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 5.08,
+              "y_mm": 2.54,
+              "net": "3.3V"
+            },
+            {
+              "pad": "3",
+              "x_mm": 7.62,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "5",
+              "x_mm": 12.7,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "6",
+              "x_mm": 15.24,
+              "y_mm": 2.54,
+              "net": "SDO"
+            },
+            {
+              "pad": "7",
+              "x_mm": 17.78,
+              "y_mm": 2.54,
+              "net": "CS_5V"
+            },
+            {
+              "pad": "8",
+              "x_mm": 20.32,
+              "y_mm": 2.54,
+              "net": "INT1"
+            },
+            {
+              "pad": "9",
+              "x_mm": 22.86,
+              "y_mm": 2.54,
+              "net": "INT2"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-LSM6DSOX-PCB/blob/c05abef4675b0380fbf3d23171615a2f1ac0b130/Adafruit_LSM6DSOX.brd"
+        },
+        {
+          "id": "JP2",
+          "pin_count": 5,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X05_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 17.78,
+              "y_mm": 15.24,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 15.24,
+              "y_mm": 15.24,
+              "net": "SDO_AUX"
+            },
+            {
+              "pad": "3",
+              "x_mm": 12.7,
+              "y_mm": 15.24,
+              "net": "OCS_AUX"
+            },
+            {
+              "pad": "4",
+              "x_mm": 10.16,
+              "y_mm": 15.24,
+              "net": "SDX"
+            },
+            {
+              "pad": "5",
+              "x_mm": 7.62,
+              "y_mm": 15.24,
+              "net": "SCX"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-LSM6DSOX-PCB/blob/c05abef4675b0380fbf3d23171615a2f1ac0b130/Adafruit_LSM6DSOX.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-LSM6DSOX-PCB/blob/c05abef4675b0380fbf3d23171615a2f1ac0b130/Adafruit_LSM6DSOX.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-LSM6DSOX-PCB/blob/c05abef4675b0380fbf3d23171615a2f1ac0b130/Adafruit_LSM6DSOX.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 14,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-LSM6DSOX-PCB/blob/c05abef4675b0380fbf3d23171615a2f1ac0b130/Adafruit_LSM6DSOX.brd",
+        "cad_commit": "c05abef4675b0380fbf3d23171615a2f1ac0b130",
+        "cad_file": "Adafruit-LSM6DSOX-PCB/Adafruit_LSM6DSOX.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/4438-06.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-3967",
+      "manufacturer": "Adafruit",
+      "sku": "3967",
+      "name": "Adafruit VL53L1X Time of Flight Distance Sensor",
+      "aliases": [
+        "VL53L1X",
+        "3967"
+      ],
+      "kind": "distance_sensor",
+      "source": "https://www.adafruit.com/product/3967",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP2",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X06_ROUND_70",
+          "cad_refs": [
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "GPIO"
+            },
+            {
+              "pad": "6",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "XSHUT"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-VL53L1X-PCB/blob/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-VL53L1X-PCB/blob/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-VL53L1X-PCB/blob/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 6,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-VL53L1X-PCB/blob/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd",
+        "cad_commit": "e2a85759d3b85907b3c2422f3c140d6bb45390d7",
+        "cad_file": "Adafruit-VL53L1X-PCB/Adafruit VL53L1X.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06",
+        "product_image": "https://cdn-shop.adafruit.com/970x728/3967-01.jpg"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification."
+      ]
+    },
+    {
+      "id": "adafruit-5346",
+      "manufacturer": "Adafruit",
+      "sku": "5346",
+      "name": "Adafruit MCP23017 I2C GPIO Expander",
+      "aliases": [
+        "MCP23017",
+        "5346"
+      ],
+      "kind": "gpio_expander",
+      "source": "https://www.adafruit.com/product/5346",
+      "revision": "STEMMA QT variant; exact CAD commit below",
+      "headers": [
+        {
+          "id": "JP7",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X08_ROUND_70",
+          "cad_refs": [
+            "JP7"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 19.05,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 21.59,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 24.13,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 26.67,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "5",
+              "x_mm": 29.21,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "6",
+              "x_mm": 31.75,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "7",
+              "x_mm": 34.29,
+              "y_mm": 12.7,
+              "net": "GND"
+            },
+            {
+              "pad": "8",
+              "x_mm": 36.83,
+              "y_mm": 12.7,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd"
+        },
+        {
+          "id": "JP8",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "1X08_ROUND_70",
+          "cad_refs": [
+            "JP8"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 19.05,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "2",
+              "x_mm": 21.59,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 24.13,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "4",
+              "x_mm": 26.67,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "5",
+              "x_mm": 29.21,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "6",
+              "x_mm": 31.75,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "7",
+              "x_mm": 34.29,
+              "y_mm": 5.08,
+              "net": "GND"
+            },
+            {
+              "pad": "8",
+              "x_mm": 36.83,
+              "y_mm": 5.08,
+              "net": "GND"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd"
+        },
+        {
+          "id": "edge_row_lower",
+          "pin_count": 13,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "contiguous 1x13 physical row composed of CAD 1x5 + 1x8",
+          "cad_refs": [
+            "JP5",
+            "JP2"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 2.54,
+              "net": "VCC"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 2.54,
+              "net": "GND"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 2.54,
+              "net": "SCL"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 2.54,
+              "net": "SDA"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 2.54,
+              "net": "RESET"
+            },
+            {
+              "pad": "1",
+              "x_mm": 19.05,
+              "y_mm": 2.54,
+              "net": "GPA0"
+            },
+            {
+              "pad": "2",
+              "x_mm": 21.59,
+              "y_mm": 2.54,
+              "net": "GPA1"
+            },
+            {
+              "pad": "3",
+              "x_mm": 24.13,
+              "y_mm": 2.54,
+              "net": "GPA2"
+            },
+            {
+              "pad": "4",
+              "x_mm": 26.67,
+              "y_mm": 2.54,
+              "net": "GPA3"
+            },
+            {
+              "pad": "5",
+              "x_mm": 29.21,
+              "y_mm": 2.54,
+              "net": "GPA4"
+            },
+            {
+              "pad": "6",
+              "x_mm": 31.75,
+              "y_mm": 2.54,
+              "net": "GPA5"
+            },
+            {
+              "pad": "7",
+              "x_mm": 34.29,
+              "y_mm": 2.54,
+              "net": "GPA6"
+            },
+            {
+              "pad": "8",
+              "x_mm": 36.83,
+              "y_mm": 2.54,
+              "net": "GPA7"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd"
+        },
+        {
+          "id": "edge_row_upper",
+          "pin_count": 13,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none_bare_plated_holes",
+          "population": "unpopulated",
+          "package": "contiguous 1x13 physical row composed of CAD 1x5 + 1x8",
+          "cad_refs": [
+            "JP1",
+            "JP6"
+          ],
+          "pad_positions": [
+            {
+              "pad": "1",
+              "x_mm": 6.35,
+              "y_mm": 15.24,
+              "net": "INTA"
+            },
+            {
+              "pad": "2",
+              "x_mm": 8.89,
+              "y_mm": 15.24,
+              "net": "INTB"
+            },
+            {
+              "pad": "3",
+              "x_mm": 11.43,
+              "y_mm": 15.24,
+              "net": "A0"
+            },
+            {
+              "pad": "4",
+              "x_mm": 13.97,
+              "y_mm": 15.24,
+              "net": "A1"
+            },
+            {
+              "pad": "5",
+              "x_mm": 16.51,
+              "y_mm": 15.24,
+              "net": "A2"
+            },
+            {
+              "pad": "8",
+              "x_mm": 19.05,
+              "y_mm": 15.24,
+              "net": "GPB7"
+            },
+            {
+              "pad": "7",
+              "x_mm": 21.59,
+              "y_mm": 15.24,
+              "net": "GPB6"
+            },
+            {
+              "pad": "6",
+              "x_mm": 24.13,
+              "y_mm": 15.24,
+              "net": "GPB5"
+            },
+            {
+              "pad": "5",
+              "x_mm": 26.67,
+              "y_mm": 15.24,
+              "net": "GPB4"
+            },
+            {
+              "pad": "4",
+              "x_mm": 29.21,
+              "y_mm": 15.24,
+              "net": "GPB3"
+            },
+            {
+              "pad": "3",
+              "x_mm": 31.75,
+              "y_mm": 15.24,
+              "net": "GPB2"
+            },
+            {
+              "pad": "2",
+              "x_mm": 34.29,
+              "y_mm": 15.24,
+              "net": "GPB1"
+            },
+            {
+              "pad": "1",
+              "x_mm": 36.83,
+              "y_mm": 15.24,
+              "net": "GPB0"
+            }
+          ],
+          "evidence": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd"
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "CONN3",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd"
+        },
+        {
+          "id": "CONN4",
+          "kind": "STEMMA_QT_JST_SH",
+          "pin_count": 4,
+          "pitch_mm": 1.0,
+          "rows": 1,
+          "gender": "male_contacts_shrouded_board_header",
+          "population": "factory_populated",
+          "notes": "Four mating electrical contacts; MT1/MT2 solder anchors excluded. Separate from 2.54 mm header rows.",
+          "evidence": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd"
+        }
+      ],
+      "total_254mm_header_contacts": 42,
+      "fit": "unknown",
+      "evidence": {
+        "cad_url": "https://github.com/adafruit/Adafruit-MCP23017-PCB/blob/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd",
+        "cad_commit": "f73186f1b593f7a5a3e710d9ced889005b580c38",
+        "cad_file": "Adafruit-MCP23017-PCB/Adafruit MCP23017 GPIO Expander.brd",
+        "method": "Eagle element/package plated-pad counts and center spacing, net references, and official product documentation. Physical contiguous edge segments merged only for MCP23017.",
+        "population_source": "Official product description/kit imagery; as-supplied bare header holes, not fitted loose male header strips.",
+        "checked_date": "2026-10-06"
+      },
+      "caveats": [
+        "Exact named manufacturer SKU and CAD revision only; clones, older PCB revisions and soldered variants may differ.",
+        "No actual JIG fit, retention, clearance, electrical or current qualification.",
+        "Two outer 1x13 rows plus two inner 1x8 rows = 42 contacts. CAD splits each outer 13-contact row into 5+8 elements."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "reference": [
+      "U9"
+    ],
+    "footprint": "Seeed_Studio_XIAO_Series:XIAO-14P-Add-On",
+    "at": [
+      [
+        "at",
+        "148.5011",
+        "104.9771",
+        "90"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "31",
+            "/03 XIAO ESP32-S3-Sense/D0{slash}A0"
+          ]
+        ]
+      },
+      {
+        "name": "1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-7.72"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "31",
+            "/03 XIAO ESP32-S3-Sense/D0{slash}A0"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "30",
+            "/03 XIAO ESP32-S3-Sense/D1{slash}A1"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-7.62"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "30",
+            "/03 XIAO ESP32-S3-Sense/D1{slash}A1"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "28",
+            "/03 XIAO ESP32-S3-Sense/D2{slash}A2"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-7.62"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "28",
+            "/03 XIAO ESP32-S3-Sense/D2{slash}A2"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "29",
+            "/03 XIAO ESP32-S3-Sense/D3{slash}A3"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "-7.62"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "29",
+            "/03 XIAO ESP32-S3-Sense/D3{slash}A3"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "27",
+            "/03 XIAO ESP32-S3-Sense/D4{slash}I2C_SDA"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-7.62"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "27",
+            "/03 XIAO ESP32-S3-Sense/D4{slash}I2C_SDA"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "25",
+            "/03 XIAO ESP32-S3-Sense/D5{slash}I2C_SCL"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-7.62"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "25",
+            "/03 XIAO ESP32-S3-Sense/D5{slash}I2C_SCL"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-8.89",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "26",
+            "/03 XIAO ESP32-S3-Sense/D6{slash}TX"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-7.72"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "26",
+            "/03 XIAO ESP32-S3-Sense/D6{slash}TX"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "7.72"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "21",
+            "/03 XIAO ESP32-S3-Sense/D7{slash}RX"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "21",
+            "/03 XIAO ESP32-S3-Sense/D7{slash}RX"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "7.62",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "24",
+            "/03 XIAO ESP32-S3-Sense/D8{slash}A8{slash}SCK"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "24",
+            "/03 XIAO ESP32-S3-Sense/D8{slash}A8{slash}SCK"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "7.62",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "23",
+            "/03 XIAO ESP32-S3-Sense/D9{slash}A9{slash}MISO"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "23",
+            "/03 XIAO ESP32-S3-Sense/D9{slash}A9{slash}MISO"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "7.62",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "22",
+            "/03 XIAO ESP32-S3-Sense/D10{slash}A10{slash}MOSI"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "22",
+            "/03 XIAO ESP32-S3-Sense/D10{slash}A10{slash}MOSI"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "7.62",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "7",
+            "/03 XIAO ESP32-S3-Sense/VCC_3V3"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "7",
+            "/03 XIAO ESP32-S3-Sense/VCC_3V3"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "7.62",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "1",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "1",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "7.72",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "10",
+            "/03 XIAO ESP32-S3-Sense/VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "8.89",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "10",
+            "/03 XIAO ESP32-S3-Sense/VBUS"
+          ]
+        ]
+      }
+    ]
+  }
+]

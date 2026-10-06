@@ -1,0 +1,542 @@
+[
+  {
+    "reference": [
+      "U2"
+    ],
+    "footprint": "Module:MOUDLE14P-XIAO-HALF-HOLE",
+    "at": [
+      [
+        "at",
+        "108.3977",
+        "72.876"
+      ]
+    ],
+    "pads": [
+      {
+        "name": "1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "43",
+            "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0"
+          ]
+        ]
+      },
+      {
+        "name": "1",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "43",
+            "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "44",
+            "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1"
+          ]
+        ]
+      },
+      {
+        "name": "2",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "44",
+            "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "45",
+            "GPIO2{slash}ADC1_CH2"
+          ]
+        ]
+      },
+      {
+        "name": "3",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "45",
+            "GPIO2{slash}ADC1_CH2"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "48",
+            "GPIO21{slash}SDIO_D1"
+          ]
+        ]
+      },
+      {
+        "name": "4",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "48",
+            "GPIO21{slash}SDIO_D1"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "47",
+            "GPIO22{slash}SDIO_D2"
+          ]
+        ]
+      },
+      {
+        "name": "5",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "47",
+            "GPIO22{slash}SDIO_D2"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "46",
+            "GPIO23{slash}SDIO_D3"
+          ]
+        ]
+      },
+      {
+        "name": "6",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "46",
+            "GPIO23{slash}SDIO_D3"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-8.89",
+            "180"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "33",
+            "D6{slash}TX"
+          ]
+        ]
+      },
+      {
+        "name": "7",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "-7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "33",
+            "D6{slash}TX"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "7.62",
+            "270"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "49",
+            "D7{slash}RX"
+          ]
+        ]
+      },
+      {
+        "name": "8",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-7.62",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "49",
+            "D7{slash}RX"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "35",
+            "GPIO19{slash}SDIO_CLK"
+          ]
+        ]
+      },
+      {
+        "name": "9",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-5.08",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "35",
+            "GPIO19{slash}SDIO_CLK"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "50",
+            "GPIO20{slash}SDIO_D0"
+          ]
+        ]
+      },
+      {
+        "name": "10",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "-2.54",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "50",
+            "GPIO20{slash}SDIO_D0"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "51",
+            "GPIO18{slash}SDIO_CMD"
+          ]
+        ]
+      },
+      {
+        "name": "11",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "0",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "51",
+            "GPIO18{slash}SDIO_CMD"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "6",
+            "+3V3"
+          ]
+        ]
+      },
+      {
+        "name": "12",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "2.54",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "6",
+            "+3V3"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "3",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "13",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "5.08",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "3",
+            "GND"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "7.62",
+            "90"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "5",
+            "VBUS"
+          ]
+        ]
+      },
+      {
+        "name": "14",
+        "type": "thru_hole",
+        "at": [
+          [
+            "at",
+            "7.62",
+            "8.89"
+          ]
+        ],
+        "net": [
+          [
+            "net",
+            "5",
+            "VBUS"
+          ]
+        ]
+      }
+    ]
+  }
+]

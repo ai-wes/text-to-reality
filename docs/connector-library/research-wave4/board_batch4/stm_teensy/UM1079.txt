@@ -1,0 +1,1726 @@
+                                                                                   UM1079
+                                                                               User manual
+                                                   Discovery kit with STM32L152RC MCU
+
+
+               Introduction
+               The 32L152CDISCOVERY Discovery kit helps the development of applications based on
+               the STM32L1 series microcontrollers and benefits from the ultra-low-power features of
+               these devices.
+               Based on the STM32L152RC microcontroller, this Discovery kit includes an ST-LINK/V2
+               embedded debugging tool interface, a 24-segment 4-common LCD, LEDs, push-buttons, a
+               linear touch sensor, and touchkeys.
+
+                                                Figure 1. 32L152CDISCOVERY board
+
+
+
+
+               1. Picture is not contractual.
+
+
+
+
+October 2023                                         UM1079 Rev 5                                  1/38
+                                                                                              www.st.com   1
+Contents                                                                                                                UM1079
+
+
+Contents
+
+1          Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2          Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+           2.1      Codification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3          System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.1      System requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.2      Development toolchains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           3.3      Demonstration software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+4          Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+5          Quick start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           5.1      Getting started . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+6          Hardware and layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+           6.1      32L152CDISCOVERY top and bottom layouts . . . . . . . . . . . . . . . . . . . . 12
+           6.2      Mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+           6.3      Embedded ST-LINK/V2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+                    6.3.1       Using the ST-LINK/V2 to program/debug the on-board microcontroller 16
+                    6.3.2       Using the ST-LINK/V2 to program/debug an external application . . . . . 17
+           6.4      Power supply and power selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+           6.5      LEDs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.6      Push-buttons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.7      Linear touch sensor and touchkeys . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+           6.8      Built-in IDD measurement circuit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+                    6.8.1       High IDD range mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+                    6.8.2       Low IDD range mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+                    6.8.3       IBIAS current measurement procedure . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+           6.9      Solder bridges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+           6.10     LCD (24 segments, four commons) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+7          Extension connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+
+
+2/38                                                UM1079 Rev 5
+UM1079                                                                                                                    Contents
+
+
+8        32L152CDISCOVERY product information . . . . . . . . . . . . . . . . . . . . . . 32
+         8.1      Product marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+         8.2      32L152CDISCOVERY product history . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+         8.3      Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+
+9        Federal Communications Commission (FCC)
+         and ISED Canada Compliance Statements . . . . . . . . . . . . . . . . . . . . . . 35
+         9.1      FCC Compliance Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+                  9.1.1       Part 15.19 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+                  9.1.2       Part 15.21 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+                  9.1.3       Part 15.105 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+         9.2      ISED Compliance Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+
+10       Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+
+
+
+                                                   UM1079 Rev 5                                                                    3/38
+                                                                                                                                            3
+List of tables                                                                                                                       UM1079
+
+
+List of tables
+
+Table 1.    Ordering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 2.    Codification explanation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Table 3.    ON/OFF conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Table 4.    Executed functions when clicking the B1 button. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Table 5.    Jumper states . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Table 6.    SWD debug connector (CN2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Table 7.    Solder bridges. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Table 8.    LCD connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Table 9.    MCU pin description versus board function . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+Table 10.   Product history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Table 11.   Board revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 12.   Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+
+
+
+4/38                                                       UM1079 Rev 5
+UM1079                                                                                                                         List of figures
+
+
+List of figures
+
+Figure 1.    32L152CDISCOVERY board . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Figure 2.    Hardware block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 3.    Top layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 4.    Bottom layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 5.    Mechanical drawing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Figure 6.    32L152CDISCOVERY connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Figure 7.    ST-LINK connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Figure 8.    IDD measurement circuit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Figure 9.    Low IDD range measurement timing diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Figure 10.   LCD segment mapping . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+
+
+
+                                                             UM1079 Rev 5                                                                       5/38
+                                                                                                                                                         5
+Features                                                                                                       UM1079
+
+
+1          Features
+
+           •     STM32L152RC Arm®(a) Cortex®-M3 core-based microcontroller with 256 Kbytes of
+                 flash memory, 32 Kbytes of RAM, and 8 Kbytes of data EEPROM in an LQFP64
+                 package
+           •     24-segment 4-common LCD in a DIP28 package
+           •     Four LEDs:
+                 –     LD1 (red/green) for USB communication
+                 –     LD2 (red) for 3.3 V power-on
+                 –     Two user LEDs, LD3 (green) and LD4 (blue)
+           •     User and reset push-buttons
+           •     One linear touch sensor and four touchkeys
+           •     Board connectors:
+                 –     Serial Wire Debug port (SWD)
+                 –     Extension header for LQFP64 I/Os for quick connection to prototyping board and
+                       easy probing
+           •     Flexible power supply options: ST-LINK USB VBUS or external sources
+           •     External application power supply: 3 V and 5 V
+           •     IDD current measurement
+           •     Comprehensive free software libraries and examples available with the STM32Cube
+                 MCU Package
+           •     On-board ST-LINK/V2 debugger/programmer with USB re-enumeration capability:
+                 Virtual COM port, and debug port
+           •     Support of a wide choice of Integrated Development Environments (IDEs) including
+                 IAR Embedded Workbench®, MDK-ARM, and STM32CubeIDE
+           •     The former STM32L-DISCOVERY Discovery kit offered the same features except for
+                 the STM32L152RB microcontroller with 128 Kbytes of flash memory, 16 Kbytes of
+                 RAM, and 4 Kbytes of data EEPROM, in an LQFP64 package.
+
+
+
+
+           a. Arm is a registered trademark of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+
+
+
+6/38                                               UM1079 Rev 5
+UM1079                                                                              Ordering information
+
+
+2        Ordering information
+
+         To order the 32L152CDISCOVERY ultra-low-power Discovery kit, refer to Table 1.
+
+                                            Table 1. Ordering information
+                 Order code                  Board reference                   Target STM32L1
+
+          STM32L152C-DISCO(1)                                                  STM32L152RCT6
+                                                  MB963
+          STM32L-DISCOVERY(2)                                                  STM32L152RBT6
+         1. Subsequently called main board in the rest of the documentation.
+         2. STM32L-DISCOVERY is replaced by STM32L152C-DISCO.
+
+
+
+2.1      Codification
+         The meaning of the codification is explained in Table 2.
+
+                                          Table 2. Codification explanation
+            STM32XXYYZ-                                                          Example: STM32L152C-
+                                                    Description
+               DISCO                                                                    DISCO
+
+                                  MCU series in STM32 32-bit Arm Cortex
+               STM32XX                                                         STM32L1 series
+                                  MCUs
+                   YY             MCU product line in the series               STM32L151/152
+                                  STM32L1 flash memory size:
+                    Z                                                          256 Kbytes
+                                  -C for 256 Kbytes
+                 DISCO            Discovery kit                                Discovery kit
+
+
+
+
+                                                UM1079 Rev 5                                        7/38
+                                                                                                           37
+System requirements                                                                                         UM1079
+
+
+3         System requirements
+
+3.1       System requirements
+          •     Multi-OS support: Windows® 10, Linux® 64-bit, or macOS®(a)(b)(c)
+          •     USB Type-A or USB Type-C® to Mini-B cable
+
+
+3.2       Development toolchains
+          •     IAR Systems® - IAR Embedded Workbench®(d)
+          •     Keil® - MDK-ARM(d)
+          •     STMicroelectronics - STM32CubeIDE
+
+
+3.3       Demonstration software
+          The demonstration software, included in the STM32Cube MCU Package corresponding to
+          the on-board microcontroller, is preloaded in the STM32 flash memory for easy
+          demonstration of the device peripherals in standalone mode. The latest versions of the
+          demonstration source code and associated documentation can be downloaded from
+          www.st.com.
+
+
+
+
+          a. macOS® is a trademark of Apple Inc., registered in the U.S. and other countries and regions.
+          b. Linux® is a registered trademark of Linus Torvalds.
+          c.   Windows is a trademark of the Microsoft group of companies.
+          d. On Windows® only.
+
+
+
+8/38                                              UM1079 Rev 5
+UM1079                                                                                     Conventions
+
+
+4        Conventions
+
+         Table 3 provides the conventions used for the ON and OFF settings in the present
+         document.
+
+                                     Table 3. ON/OFF conventions
+                 Convention                                    Definition
+
+               Jumper JPx ON                                  Jumper fitted
+               Jumper JPx OFF                               Jumper not fitted
+               Jumper JPx [1-2]                   Jumper fitted between pin 1 and pin 2
+            Solder bridge SBx ON                  SBx connections closed by 0 Ω resistor
+            Solder bridge SBx OFF                       SBx connections left open
+               Resistor Rx ON                               Resistor soldered
+               Resistor Rx OFF                            Resistor not soldered
+               Capacitor Cx ON                             Capacitor soldered
+              Capacitor Cx OFF                           Capacitor not soldered
+
+
+         The following sections of this user manual are also applicable to the STM32L-DISCOVERY
+         except for specific features of the STM32L152RB microcontroller with 128 Kbytes of flash
+         memory, 16 Kbytes of RAM, and 4 Kbytes of data EEPROM.
+
+
+
+
+                                        UM1079 Rev 5                                              9/38
+                                                                                                         37
+Quick start                                                                                       UM1079
+
+
+5              Quick start
+
+               Before using the Discovery kit, accept the evaluation product license agreement available
+               on the 32L152CDISCOVERY page of the www.st.com/mcu website.
+
+
+5.1            Getting started
+               The following sequence configures 32L152CDISCOVERY and launches the Discovery
+               application:
+               •    Check jumper positions on the board: JP1 and CN3 must be ON (Discovery selected)
+                    (refer to Figure 3).
+               •    Connect the 32L152CDISCOVERY to a computer with a USB cable to power the
+                    board. The red LEDs LD2 (PWR) and LD1 (COM) are lit up. Function 1 is executed.
+               •    Click on the user button (B1) to change the executed function as described in Table 4.
+                    The 4-LED bar shows the performed function (up to four bars can be switched ON).
+               Depending on the function selected, the voltage value, the linear touch sensor position, the
+               touchkeys status, or the STM32L152RC, the current consumption is displayed on the LCD.
+
+                          Table 4. Executed functions when clicking the B1 button
+                            Bar
+Function LED LD3/4                                Value displayed on LCD                 Main function
+                           status
+
+              LD3 and
+      1                             Measured STM32L152RC VDD voltage                 Voltage measurement
+              LD4 blink
+      2       LD3 ON                Linear touch sensor position from 0 to 100%
+                                                                                         Touch sensing
+      3       LD4 ON                Status of the four touchkeys
+                                    STM32L152RC consumption is measured in Run
+                                    mode (4 MHz).
+      4
+                                    STM32L152RC consumption is measured in Sleep
+                                    mode (4 MHz).
+                                    STM32L152RC consumption is measured in Run
+                                    mode (32 KHz).
+      5
+                                    STM32L152RC consumption is measured in
+                                                                                     STM32L152RC current
+              LD3 and               Low-power sleep mode (32 KHz).
+                                                                                        consumption
+              LD4 OFF
+                                    STM32L152RC consumption is measured in Stop         measurement
+                                    mode, RTC ON.
+      6
+                                    STM32L152RC consumption is measured in Stop
+                                    mode, RTC OFF.
+
+
+                                    STM32L152RC consumption is measured in Standby
+      7
+                                    mode.
+
+
+
+               Refer to the www.st.com/mcu website for more details on the Discovery project and the
+               STM32L152RC features.
+
+
+
+10/38                                              UM1079 Rev 5
+UM1079                                                                      Hardware and layout
+
+
+6        Hardware and layout
+
+         The 32L152CDISCOVERY is designed around one STM32L152RC packaged in an
+         LQFP64.
+         Figure 2 illustrates the connections between the STM32L152RC microcontroller and its
+         peripherals (ST-LINK/V2, push-buttons, LEDs, LCD, linear touch sensor, touchkeys, and
+         connectors). These connections are the same for the STM32L-DISCOVERY.
+
+                                    Figure 2. Hardware block diagram
+                                                    USB
+                                                    Mini-B
+
+
+
+
+                                                 Embedded
+                                                 ST-LINK/V2
+                     SWD
+
+
+
+
+                                               STM32L152RCT6
+
+
+
+
+                                      I/O                           I/O
+                     Header
+
+
+
+
+                                                                                 Header
+                                                                RESE
+                                                     I/O
+                                                                T
+
+
+                                      Green LED                RESET
+                                        (LD3)                   (B2)
+
+                                      Blue LED                  USER
+                                        (LD4)                    (B1)
+
+
+                                                                  IDD
+                                                              measurement
+
+
+                                              Linear touch sensor
+                                                 and touchkeys
+
+
+
+
+                                        LCD (24 segments, four commons)
+                                                                                                 DT19048V1
+
+
+
+
+         Figure 3 and Figure 4 locate these features on the board.
+
+
+
+
+                                            UM1079 Rev 5                                    11/38
+                                                                                                             37
+Hardware and layout                                                                                    UM1079
+
+
+6.1            32L152CDISCOVERY top and bottom layouts
+                                                 Figure 3. Top layout
+
+            COM LED
+               (LD1)
+        SWD connector                                                                PWR LED
+               (CN2)                                                                 (LD2)
+
+                         ST-LINK/V2
+                                                                                     ST-LINK/DISCOVERY
+                                                                                     selector
+      3V power supply                                                                (CN3)
+          input/output                                                               5V power supply
+                                                                                     input/output
+                 LCD                                                                 IDD module
+          24 segments
+    IDD measurement
+      (SB1 and SB2)                                                                  BOOT0
+                                                                                     (SB3)
+    IDD measurement
+               (JP1)
+
+
+
+
+   STM32L152RCT6                                                                     3V/VBAT selector
+                                                                                     (JP2)
+                                                                                     (optional not mounted)
+
+            B1-USER
+               (SB4)                                                                 B2-RESET
+                                                                                     (SB5)
+
+           User button                                                               Reset button
+                  (B1)                                                               (B2)
+           Green LED                                                                 Blue LED
+                (LD3)                                                                (LD4)
+
+  Linear touch sensor
+      and touch keys
+
+                                                                                                    MSv19049V4
+
+
+
+               1. A square identifies pin1 of the CN1, CN2, P1, and P2 connectors.
+
+
+
+
+12/38                                                 UM1079 Rev 5
+UM1079                                                                              Hardware and layout
+
+
+                                             Figure 4. Bottom layout
+
+
+
+                   Reserved
+                                                                                      NRST
+ (SB6, SB8, SB10, and SB12)
+                                                                                      (SB100)
+                     Default
+                                                                                      STM_RST
+ (SB7, SB9, SB11, and SB13)
+                                                                                      (SB102)
+                                                                                      SB101
+                                                                                      (SWO)
+
+                 Male header                                                          Male header
+                        (P2)                                                          (P1)
+                                                                                      IDD measurement
+                                                                                      (SB14)
+
+                           IDD
+                        (JP1)
+                                                                                      X2 crystal
+                      BOOT1                                                           (SB15 and SB16)
+                      (SB19)                                                          MCO
+                                                                                      (SB17)
+         VDD powered from 3V
+                      (SB21)                                                          X3 crystal
+                                                                                      (SB18 and SB20)
+
+               Battery enable
+                      (SB22)
+
+      CR2032 battery holder
+                     (CR1)
+                 (optional)
+
+
+
+
+                                                                                                MSv19050V2
+
+
+             1. A square identifies pin 1 of the CN1, CN2, P1, and P2 connectors.
+
+
+
+
+                                                    UM1079 Rev 5                                        13/38
+                                                                                                                37
+Hardware and layout                                        UM1079
+
+
+6.2       Mechanical drawing
+                        Figure 5. Mechanical drawing
+
+
+
+
+                       www.st.com/stm32l152c-discovery
+
+
+
+
+                                                MB963 C
+
+
+
+
+                                                          MS31848V1
+
+
+
+
+14/38                            UM1079 Rev 5
+UM1079                                                                         Hardware and layout
+
+
+6.3      Embedded ST-LINK/V2
+         The ST-LINK/V2 programming and debugging tool is integrated into the
+         32L152CDISCOVERY. The embedded ST-LINK/V2 can be used in two different ways
+         according to the jumper configuration (refer to Table 5):
+         •   Program/debug the MCU on board
+         •   Program/debug an MCU in an external application board using a cable connected to
+             the SWD connector (CN2)
+         The embedded ST-LINK/V2 supports only SWD for STM32 devices. For information about
+         debugging and programming features, refer to the user manual ST-LINK/V2 in-circuit
+         debugger/programmer for STM8 and STM32 (UM1075).
+
+                                        Table 5. Jumper states
+                   Jumper state                                  Description
+
+                                         ST-LINK/V2 functions are enabled for on-board programming
+         Both CN3 jumpers ON
+                                         (default).
+                                         ST-LINK/V2 functions are enabled for external application
+         Both CN3 jumpers OFF
+                                         through the CN2 connector (SWD supported).
+
+
+
+
+                                       UM1079 Rev 5                                              15/38
+                                                                                                         37
+Hardware and layout                                                                     UM1079
+
+
+6.3.1     Using the ST-LINK/V2 to program/debug the on-board microcontroller
+          Figure 6 shows how to plug the two jumpers on CN3 to program the STM32L152RC on the
+          board. The usage of CN2 is forbidden as it might disturb communication with the
+          microcontroller.
+
+                                Figure 6. 32L152CDISCOVERY connections
+
+
+
+              SWD connector
+               (pin 1 of CN2)
+
+
+
+
+                                                                      Both jumpers ON
+                                                                      (CN3)
+
+
+
+
+                                                                                        MSv19053V3
+
+
+
+
+16/38                                   UM1079 Rev 5
+UM1079                                                                        Hardware and layout
+
+
+6.3.2    Using the ST-LINK/V2 to program/debug an external application
+         The ST-LINK/V2 allows also the programming of an STM32 device on an external
+         application. Figure 7 shows how to remove the two jumpers from CN3 and connect the
+         external application to the CN2 debug connector according to the instructions in Table 6.
+Note:    SB100 must be OFF if the CN2 pin 5 is used in the external application.
+
+                                  Table 6. SWD debug connector (CN2)
+                      Pin                           CN2                        Designation
+
+                       1                        VDD_TARGET                 VDD from application
+                       2                           SWCLK                        SWD clock
+                       3                            GND                            Ground
+                       4                           SWDIO                   SWD data input/output
+                       5                            NRST                   RESET of target MCU
+                       6                            SWO                            Reserved
+
+
+                                      Figure 7. ST-LINK connections
+
+
+
+            SWD connector
+             (pin 1 of CN2)
+
+
+
+
+                                                                            Both jumpers OFF
+                                                                            (CN3)
+
+
+
+
+                                                                                              MSv19058V3
+
+
+
+
+                                         UM1079 Rev 5                                              17/38
+                                                                                                           37
+Hardware and layout                                                                         UM1079
+
+
+6.4       Power supply and power selection
+          The power supply is provided either by the host computer through the USB cable, or by an
+          external 5 V or 3.3 V power supply.
+          The D1 and D2 protection diodes allow using the EXT_5V and EXT_3V pins independently
+          as input or output power supplies (refer to Figure 3):
+          •    EXT_5V and EXT_3V can be used as output power supplies when the application
+               board is connected to pins P1 and P2. In this case, the EXT_5V and EXT_3V pins
+               deliver a 5 V or 3 V power supply and power consumption must be lower than 100 mA.
+          •    EXT_5V and EXT_3V can also be used as input power supplies when the USB
+               connector is not connected to the computer. In this case, a power supply unit or
+               auxiliary equipment complying with standard EN-60950-1: 2006+A11/2009 must
+               provide the power to the board. This power source must be safety extra low voltage
+               (SELV) with limited power capability.
+
+          Battery-powered (optional)
+          The 32L152CDISCOVERY board has been designed to run from a CR2032 standalone
+          battery (no connection with USB or other power supply is required).
+          By default, no battery holder is mounted on the board, and SB21 and SB22 are configured
+          in their default state (refer to Table 7).
+          Follow the procedure below to power the 32L152CDISCOVERYfrom the battery:
+          •    Solder a B7410AP2L battery holder from LOTES on CR1
+          •    Configure SB100 OFF
+          •    Remove both jumpers from CN3 (refer to Figure 7)
+          •    Select the battery as a power supply. Two solutions are possible:
+               –      Solder bridge: configure SB21 OFF and SB22 ON. No header is required on JP2.
+               –      Jumper: configure SB21 and SB22 OFF. Solder a header on JP2, identical to JP1
+                      on the top side. Set a jumper between VDD and VBAT to power the
+                      STM32L152RC of the board
+Note:     In this configuration, it is possible to power the STM32L152RC from the 3 V supply voltage
+          of the board by setting a jumper between VDD and 3V.
+          •    Plug the CR2032 battery into the CR1 holder.
+          The demonstration is now ready to run.
+
+
+                   Warning:    Wrong solder bridge configuration can damage the board
+                               components.
+
+
+
+
+18/38                                      UM1079 Rev 5
+UM1079                                                                        Hardware and layout
+
+
+6.5      LEDs
+         •   COM LED: LD1 default status is red. LD1 turns to green to indicate that the
+             communications are in progress between the computer and the ST-LINK/V2.
+         •   PWR LED: Red LD2 indicates that the board is powered.
+         •   User LD3: This user green LED is connected to the PB7 I/O of the STM32L152RC.
+         •   User LD4: This user blue LED is connected to the PB6 I/O of the STM32L152RC.
+
+
+6.6      Push-buttons
+         •   B1 USER: The user push-button is connected to the I/O PA0 of the MCU.
+         •   B2 RESET: The reset push-button is used to reset the MCU.
+
+
+6.7      Linear touch sensor and touchkeys
+         To demonstrate touch sensing capabilities, the 32L152CDISCOVERY includes a linear
+         touch sensor that can be used either as a 3-position linear touch sensor or as four
+         touchkeys. Both functionalities are illustrated in the demonstration software (refer to
+         Table 4).
+         Three pairs of I/O ports are assigned to the linear touch sensor and the touchkeys. Each
+         pair must belong to the same analog switch group:
+         •   PA6, PA7 (group 2)
+         •   PC4, PC5 (group 9)
+         •   PB0, PB1 (group 3)
+         To minimize the noise, these pairs are dedicated to the linear touch sensor and the
+         touchkeys and are not connected to external headers.
+         To design a touch-sensing application, refer to the following documentation and firmware:
+         •   For details concerning I/O ports, refer to the STM32L152RC datasheet.
+         •   For information on software development, refer to Discovery application software at
+             www.st.com/mcu.
+         •   For more detail concerning touch sensing application design and layout, refer to the
+             application note Guidelines for designing touch sensing applications with surface
+             sensors (AN4312).
+         •   STM32 touch-sensing library available from www.st.com/mcu
+
+
+
+
+                                         UM1079 Rev 5                                          19/38
+                                                                                                       37
+Hardware and layout                                                                                                                                                           UM1079
+
+
+6.8                        Built-in IDD measurement circuit
+                           The 32L152CDISCOVERY built-in IDD measurement circuit allows measuring the
+                           consumption of the STM32L152RC and displaying the value on the LCD glass while the
+                           MCU is in Run or Low-power modes.
+                           •         JP1 ON: The STM32L152RC is powered through the IDD measurement circuit
+                                     (default).
+                           •         JP1 OFF: The STM32L152RC is directly powered. The IDD measurement circuit is
+                                     bypassed.
+Note:                      When jumper JP1 is removed, the current consumption of the STM32L152RC can be
+                           measured by connecting an ammeter between jumper pin 1 and pin 2 of JP1.
+                           To perform the IDD measurement by the MCU itself, the circuit shown in Figure 8 is
+                           implemented on the 32L152CDISCOVERY. The solder bridges (SB1, SB2, and SB14) and
+                           jumper (JP1) must be ON. The low IDD range procedure (refer to Section 6.8.2) is
+                           recommended when the MCU is in Low-power mode and the IDD current does not exceed
+                           60 μA. The high IDD range procedure (refer to Section 6.8.1) is applicable when the MCU
+                           operates in Run mode and can sink up to 30 mA.
+
+                                                                 Figure 8. IDD measurement circuit
+
+    IDD measurement
+               VDD _MC U
+
+          off          on
+                   2
+               1
+
+                       3
+
+
+
+
+                                                   1
+
+
+
+
+                           JP 1                           U5
+                                               5          MA X 9938FEUK+   U6                                                                                        IDD_ Measure ment
+                                                              3          1                    2                R1 8                   R1 9
+                                                                            I/O         O/I                                                                            PA 4
+                                               4                         4                                     10 K                   0                      SB2
+                                                                            C                                               C1 3
+                                                                         3                    5
+                   R2 1           R2 2                                      GN D       VCC        VD D                      1uF
+        VD D
+                                                   2
+
+
+
+
+                   2(1% )         1K(1%)                                       74H 1G66STR
+                                                                     4
+
+
+
+
+                                                                             U7
+                                                                             74L X 1G04CT R                            VD D
+                                                                 5       3
+                                                   VD D
+
+                                                                                                      U3                              C1 4       VD D
+                                                                     2
+
+
+
+
+                                                                                                  1                    16             100n F
+                                                                                                       Q1 2   VCC
+                                                                                                  2                    15
+                                                                                                       Q1 3    Q1 0                                   R2 5
+                                                                                                  3                    14
+                                                                                                       Q1 4     Q8                                    10K
+                                                                                                  4                    13                                            IDD_CN T _E N
+                                                                                                       Q6       Q9
+                                                                             IDD_W AK E UP        5                    12
+                                                                                                       Q5     CL R                                                     PC1 3
+                                                                                                  6                    11                                    SB1 4
+                                                                               PA 0                    Q7        CI
+                       U2 0                               SB 1                                    7                    10
+                                                                                                       Q4       CO
+                   1                       8                                                      8                    9
+                           S1        D1            R2 0                                                GN D     CO
+                   2                       7
+                           G1        D1            47 K                                                                       C1 5     R2 3    R2 4
+                   3                       6
+ VD D                      S2        D2                                                               M74HC4 060TT R          1nF      15K     30K
+                   4                       5
+                           G2        D2
+
+                       STS 4DP F20 L                                                                                        Oscillator frequency 30 KHz
+
+
+                                                                                                                                                                          MSv19054V2
+
+
+
+6.8.1                      High IDD range mode
+                           In high IDD range mode, the IDD current is measured using the operational amplifier
+                           MAX9938FEUK+ (U5) connected to the 2 Ω shunt resistor (R21). In this case,
+                           IDD_CNT_EN remains high during the measurement. R22 remains in short-circuit during
+                           the measurement because the FET transistor 1 of U20 remains ON permanently.
+
+
+
+
+20/38                                                                                 UM1079 Rev 5
+UM1079                                                                           Hardware and layout
+
+
+6.8.2    Low IDD range mode
+         In low IDD range mode, the operational amplifier MAX9938FEUK+ (U5) is connected to the
+         1 kΩ shunt resistor (R22), controlled by the FET transistor 1 of U20. In this case, the counter
+         74HC4060 (U3) enabled by IDD_CNT_EN manages the measurement timing according to
+         Figure 9.
+         Low IDD range measurement principle
+         The principle used to measure the consumption current when the STM32L152RC is in low
+         IDD range mode is as follows:
+         1.   Configure the ADC to measure the voltage on the IDD_Measurement pin.
+         2.   Configure PA0 to serve as a wake-up pin.
+         3.   Enter low IDD range mode after setting IDD_CNT_EN (PC13) signal low.
+         4.   IDD_WAKEUP rising edge wakes up the MCU after around 300 ms.
+         5.   Start ADC conversion as soon as possible after waking up to measure the voltage
+              corresponding to the Low-power mode on the capacitor (C13).
+         6.   Reset the counter by programming IDD_CNT_EN high (in less than 150 ms after the
+              wake-up) to avoid the R22 1 kΩ resistor being connected later in Run mode.
+         The measurement timing is given in Figure 9. In low IDD range mode, the 1 kΩ resistor is
+         connected when the FET transistor 1 of U20 goes OFF, after entering low IDD range mode.
+         The Q13 output of the counter allows connecting the 1 kΩ resistor when the current IDD
+         becomes very low.
+         Figure 9 shows how the counter and the FET transistor 1 of U20 ensure that 150 ms after
+         IDD_CNT_EN falling edge, the shunt resistor R22 is connected between VDD_MCU and
+         the power supply to reduce the measurement range to 60 μA for the full scale. Then after
+         another 150 ms, which is required for current stabilization, R22 is shorted, the IDD
+         measurement is stored in C13, and the MCU is woken up. After waking up, the MCU
+         measures the IDD current corresponding to the Low-power mode stored in C13.
+
+
+
+
+                                          UM1079 Rev 5                                             21/38
+                                                                                                           37
+Hardware and layout                                                                                      UM1079
+
+
+                                Figure 9. Low IDD range measurement timing diagram
+                                                                                             Clear
+                         U3 counter enabled
+                                                                                           U3 counter
+
+
+                                                                                        IDD
+                                                   Low-power mode          Wakeup
+                     Run mode                                                       measurement
+
+
+
+          IDD_CNT_EN
+                                          150 ms
+
+Q13=LOW_POWER_EN
+          (U20 pin 2)
+                                                      300 ms
+
+                                                               450 ms
+
+
+  Q14 = IDD_WAKEUP
+
+
+
+        Q14 = U7 pin 4
+
+                                                                                                        MS19055V1
+
+
+
+6.8.3           IBIAS current measurement procedure
+                In low IDD range mode, the bias current of the operational amplifier input (U5 pin 4) is not
+                negligible compared to IDD current (typical IBIAS is ~240 nA). To obtain a reliable IDD
+                measurement, it is mandatory to subtract the bias current from the low IDD current value
+                since the MCU does not sink this current. IBIAS is measured during the production test and
+                stored in the MCU data EEPROM. The Discovery demonstration software uses this value to
+                display the correct IDD.
+                The procedure for IBIAS measurement implemented in the demonstration software is:
+                1.       Power off the board (disconnect the USB cable).
+                2.       Set JP1 OFF.
+                3.       Push down the USER button (B1), and power on the board from the USB.
+                4.       Wait at least 1 second before releasing B1. The LCD shows the IBIAS measurement.
+                5.       Power off the board (disconnect the USB cable).
+                6.       Set JP1 ON. The IBIAS value is stored in the data EEPROM. The bias current is then
+                         subtracted from the IDD measured in IDD range mode.
+
+
+
+
+22/38                                                  UM1079 Rev 5
+UM1079                                                                              Hardware and layout
+
+
+6.9      Solder bridges
+                                             Table 7. Solder bridges
+                Bridge            State(1)                            Description
+
+                                              PH0 and PH1 are connected to P1 (X3, C21, C22, R30 must
+                                    ON
+                                              not be fitted).
+               SB18,20
+                                              PH0 and PH1 are disconnected from P1.
+             (X3 crystal)(2)
+                                   OFF        X3, C21, C22, and R30 provide a clock.
+                                              Refer to electrical schematics.
+              SB7,9,11,13
+                                    ON        Reserved, do not modify.
+              (DEFAULT)
+              SB6,8,10,12
+                                   OFF        Reserved, do not modify.
+             (RESERVED)
+                                              PA0, PA4, and PC13 are used for the IDD measurement.
+                                    ON
+               SB1,2,14                       JP1 ON.
+          (IDD_Measurement)                   PA0, PA4, and PC13 are available and the IDD module cannot
+                                   OFF
+                                              be used JP1 OFF.
+                                              X2, C16, C17, and R28 deliver a 32 KHz clock.
+                                   OFF
+               SB15,16                        PC14 and PC15 are not connected to P1.
+              (X2 crystal)                    PC14 and PC15 are only connected to P1. Do not remove X2,
+                                    ON
+                                              C16, C17, and R28.
+                                              B2 push-button is connected to the NRST pin of the
+                                    ON
+                  SB5                         STM32L152 MCU.
+              (B2-RESET)                      B2 push-button is not connected to the NRST pin of the
+                                   OFF
+                                              STM32L152 MCU.
+
+                 SB4                ON        B1 push-button is connected to PA0.
+              (B1-USER)            OFF        B1 push-button is not connected to PA0.
+
+                 SB21               ON        VDD is powered from 3 V, SB22 must be OFF.
+         (VDD powered from 3 V)    OFF        VDD is not powered from 3 V, SB22 must be ON.
+                                              VDD is not powered by the CR2032 battery, SB21 must be
+                 SB22              OFF
+                                              ON.
+            (Battery enable)
+                                    ON        VDD is powered by the CR2032 battery, SB21 must be OFF.
+                                              The NRST signal of the CN2 connector is connected to the
+                                    ON
+                                              NRST pin of the STM32L152RC.
+             SB100 (NRST)
+                                              The NRST signal of the CN2 connector is not connected to the
+                                   OFF
+                                              NRST pin of the STM32L152RC.
+                                    ON        The SWO signal of the CN2 connector is connected to PB3.
+             SB101 (SWO)
+                                   OFF        The SWO signal is not connected.
+                                   OFF        No incidence on STM32L152RC NRST signal.
+           SB102 (STM_RST)
+                                    ON        STM32L152RC NRST signal is connected to GND.
+
+
+
+
+                                         UM1079 Rev 5                                                  23/38
+                                                                                                               37
+Hardware and layout                                                                                         UM1079
+
+
+                                           Table 7. Solder bridges (continued)
+                     Bridge               State(1)                           Description
+
+                                                      The BOOT0 signal of the STM32L152RC is held low through
+                                            ON
+                                                      a 510 Ω pull-down resistor.
+                  SB3 (BOOT0)
+                                                      The BOOT0 signal of the STM32L152RC is held high through
+                                            OFF
+                                                      a 10 kΩ pull-up resistor.
+                                                      The BOOT1 signal of the STM32L152RC is held high through
+                                            OFF
+                                                      a 10 kΩ pull-up resistor.
+                 SB19 (BOOT1)
+                                                      The BOOT1 signal of the STM32L152RC is held low through
+                                            ON
+                                                      a 510 Ω pull-down resistor.
+                                            OFF       STM32L152RC MCO clock signal is not used.
+                               (2)
+                 SB17 (MCO)                           STM32L152RC MCO clock signal is connected to OSC_IN of
+                                            ON
+                                                      the STM32L152RC
+           1. Default SBx state is shown in bold.
+           2. SB17 and SB20 are OFF to allow the user to choose between MCO and X3 crystal for the clock source.
+
+
+
+
+24/38                                               UM1079 Rev 5
+UM1079                                                                          Hardware and layout
+
+
+6.10     LCD (24 segments, four commons)
+         This LCD allows the STM32L152RC to display any information on six 14-segment digits and
+         four bars, using all COMs. (Refer to the LCD segment mapping in Figure 10 and pin
+         connections in Table 8.)
+Note:    This LCD also supports six 8-segment digits by only using COM0 and COM1.
+         This configuration allows COM2 and COM3 to be used as I/O ports. In this case, the two
+         LCD pins must not be plugged into the LCD socket. To proceed with this configuration,
+         remove the LCD carefully, slightly open the COM2 and COM3 pins (pin 13 and pin 14) of the
+         LCD, and then plug it into the socket.
+         Characteristics overview:
+         •   24 segments and four commons
+         •   Drive method: multiplexed 1/4 duty, 1/3 bias
+         •   Operating voltage: 3 V
+         •   Operating temperature: 0 to 50°C
+         •   Connector: 28-pin DIL 2.54 mm pitch
+Note:    When the LCD is plugged in, all the I/O ports listed in Table 8 are unavailable. To use one of
+         these as I/O, you must remove the LCD.
+
+                                      Figure 10. LCD segment mapping
+
+
+
+
+                                          UM1079 Rev 5                                            25/38
+                                                                                                          37
+Hardware and layout                                                       UM1079
+
+
+                                     Table 8. LCD connections
+            STM32L152RC                                LCD
+
+             GPIO Name    Pin   COM3         COM2       COM1    COM0    Name
+
+                 PA1      1      1N            1P         1D     1E    LCDSEG0
+                 PA2      2     1DP         1COLON        1C     1M    LCDSEG1
+                 PA3      3      2N            2P         2D     2E    LCDSEG2
+                 PB3      4     2DP         2COLON        2C     2M    LCDSEG3
+                 PB4      5      3N            3P         3D     3E    LCDSEG4
+                 PB5      6     3DP         3COLON        3C     3M    LCDSEG5
+                PB10      7      4N            4P         4D     4E    LCDSEG6
+                PB11      8     4DP         4COLON        4C     4M    LCDSEG7
+                PB12      9      5N            5P         5D     5E    LCDSEG8
+                PB13      10    BAR2         BAR3         5C     5M    LCDSEG9
+                PB14      11     6N            6P         6D     6E    LCDSEG10
+                PB15      12    BAR0         BAR1         6C     6M    LCDSEG11
+                 PB9      13    COM3           -           -     -     LCDCOM3
+                PA10      14     -           COM2          -     -     LCDCOM2
+                 PA9      15     -             -        COM1     -     LCDCOM1
+                 PA8      16     -             -           -    COM0   LCDCOM0
+                PA15      17     6J            6K         6A     6B    LCDSEG12
+                 PB8      18     6H            6Q         6F     6G    LCDSEG13
+                PC0       19     5J            5K         5A     5B    LCDSEG14
+                PC1       20     5H            5Q         5F     5G    LCDSEG15
+                PC2       21     4J            4K         4A     4B    LCDSEG16
+                PC3       22     4H            4Q         4F     4G    LCDSEG17
+                PC6       23     3J            3K         3A     3B    LCDSEG18
+                PC7       24     3H            3Q         3F     3G    LCDSEG19
+                PC8       25     2J            2K         2A     2B    LCDSEG20
+                PC9       26     2H            2Q         2F     2G    LCDSEG21
+                PC10      27     1J            1K         1A     1B    LCDSEG22
+                PC11      28     1H            1Q         1F     1G    LCDSEG23
+
+
+
+
+26/38                                 UM1079 Rev 5
+UM1079                                                                               Extension connectors
+
+
+7            Extension connectors
+
+             The male headers P1 and P2 can connect the 32L152CDISCOVERY to a standard
+             prototyping/wrapping board. The STM32L152RC GPIOs are available on these connectors.
+             An oscilloscope, a logic analyzer, or a voltmeter can also probe P1 and P2.
+
+                          Table 9. MCU pin description versus board function
+             MCU pin                                            Board function
+
+                              LQF                                                           Pow
+                                        Linear Push
+  Main        Alternate       P64 LCD                                                  Free  er
+                                        Touch butt       IDD      LED SWD OSC                    P1 P2
+function      functions       pin glass                                                 I/O supp
+                                        Sensor on
+                              num                                                            ly
+
+                                                                                            EXT_
+     -            -             -     -     -      -        -      -     -       -      -          1      -
+                                                                                             3V
+                                                                                            EXT_
+     -            -             -     -     -      -        -      -     -       -      -                 1
+                                                                                             5V
+BOOT0             -            60     -     -      -        -      -     -       -      -     -    -      6
+                                                                       NRS
+ NRST             -             7     -     -      -        -      -             -      -     -    10     -
+                                                                        T
+           WKUP1/USART2_
+                CTS/
+                                                        WAKE
+    PA0    ADC_IN0/TIM2_CH     14     -     -     PA0              -     -       -      -     -    15     -
+                                                         UP
+           1_ETR/COMP1_IN
+                  P
+           USART2_RTS/AD
+                C_IN1/              SEG
+    PA1                        15           -      -        -      -     -       -      -     -    16     -
+           TIM2_CH2/LCD_S            0
+           EG0/ COMP1_INP
+           USART2_TX/ADC_
+                 IN2/
+           TIM2_CH3/TIM9_C          SEG
+    PA2                        16           -      -        -      -     -       -      -     -    17     -
+                  H1/                1
+           LCD_SEG1/COMP
+                1_INP
+           USART2_RX/ADC
+                _IN3/
+           TIM2_CH4/TIM9_C          SEG
+    PA3                        17           -      -        -      -     -       -      -     -    18     -
+                 H2/                 2
+           LCD_SEG2/COMP
+                1_INP
+           SPI1_NSS/USART
+                                                        Measu
+                 2_CK/
+    PA4                        20     -     -      -    remen      -     -       -      -     -    19     -
+           ADC_IN4/DAC_OU
+                                                          t
+            T1/ COMP1_INP
+           SPI1_SCK/ADC_IN
+             5/ DAC_OUT2/
+    PA5                        21     -     -      -        -      -     -       -      X     -    20     -
+           TIM2_CH1_ETR/C
+               OMP1_INP
+
+
+                                             UM1079 Rev 5                                               27/38
+                                                                                                                37
+Extension connectors                                                                       UM1079
+
+
+                 Table 9. MCU pin description versus board function (continued)
+             MCU pin                                        Board function
+
+                             LQF                                                      Pow
+                                       Linear Push
+  Main        Alternate      P64 LCD                                             Free  er
+                                       Touch butt    IDD      LED SWD OSC                  P1 P2
+function      functions      pin glass                                            I/O supp
+                                       Sensor on
+                             num                                                       ly
+
+           SPI1_MISO/ADC_I
+                 N6/
+           TIM3_CH1/TIM1_B
+  PA6            KIN/        22    -    PA6     -       -      -     -       -    -    -    -   -
+           LCD_SEG3/TIM10
+                _CH1/
+              COMP1_INP
+           SPI1_MOSI/ADC_I
+                 N7/
+           TIM3_CH2/TIM1_C
+  PA7            H1N         23    -    PA7     -       -      -     -       -    -    -    -   -
+           /LCD_SEG4/TIM11
+                _CH1/
+              COMP1_INP
+           USART1_CK/MCO/         COM
+  PA8                        41          -      -       -      -     -       -    -    -    -   23
+             LCD_COM0              0
+           USART1_TX/LCD_         COM
+  PA9                        42          -      -       -      -     -       -    -    -    -   22
+               COM1                1
+           USART1_RX/LCD_         COM
+  PA10                       43          -      -       -      -     -       -    -    -    -   21
+               COM2                2
+           USART1_CTS/US
+  PA11                       44    -     -      -       -      -     -       -    X    -    -   20
+           BDM/ SPI1_MISO
+           USART1_RTS/US
+  PA12                       45    -     -      -       -      -     -       -    X    -    -   19
+           BDP/ SPI1_MOSI
+ JTMS/                                                             SWD
+                PA13         46    -     -      -       -      -             -    -    -    -   18
+ SWDIO                                                              IO
+ JTCK/                                                              SW
+                PA14         49    -     -      -       -      -             -    -    -    -   17
+SWCLK                                                               CLK
+           TIM2_CH1_ETR/P
+                 A15/             SEG
+  JTDI                       50          -      -       -      -     -       -    -    -    -   16
+           SPI1_NSS/LCD_S          12
+                EG17
+           ADC_IN8/TIM3_CH
+                   3/
+  PB0                        26    -    PB0     -       -      -     -       -    -    -    -   -
+           LCD_SEG5/COMP
+           1_INP/ VREF_OUT
+           ADC_IN9/TIM3_CH
+                   4/
+  PB1                        27    -    PB1     -       -      -     -       -    -    -    -   -
+           LCD_SEG6/COMP
+           1_INP/ VREF_OUT
+PB2/BO
+                  -          28    -     -      -       -      -     -       -    -    -   21   -
+ OT1
+
+
+
+28/38                                    UM1079 Rev 5
+UM1079                                                                           Extension connectors
+
+
+                 Table 9. MCU pin description versus board function (continued)
+             MCU pin                                        Board function
+
+                             LQF                                                        Pow
+                                       Linear Push
+  Main        Alternate      P64 LCD                                               Free  er
+                                       Touch butt    IDD      LED SWD OSC                    P1 P2
+function      functions      pin glass                                              I/O supp
+                                       Sensor on
+                             num                                                         ly
+
+           TIM2_CH2/PB3/TR
+           ACESWO/SPI1_S          SEG
+ JTDO                        55          -      -       -      -     SWO     -      -     -    -    11
+           CK/COMP2_INM/L          3
+              CD_SEG7
+       TIM3_CH1/PB4/SP
+                                  SEG
+JNTRST I1_MISO/COMP2_I       56          -      -       -      -      -      -      -     -    -    10
+                                   4
+         NP/LCD_SEG8
+           I2C1_SMBAl/TIM3
+                _CH2/             SEG
+  PB5                        57          -      -       -      -      -      -      -     -    -     9
+           SPI1_MOSI/COMP          5
+           2_INP/ LCD_SEG9
+           I2C1_SCL/TIM4_C
+                 H1/
+  PB6                        58    -     -      -       -     Blue    -      -      -     -    -     8
+           USART1_TX/LCD_
+                SEG8
+           I2C1_SDA/TIM4_C
+                 H2/                                          Gre
+  PB7                        59    -     -      -       -             -      -      -     -    -     7
+           USART1_RX/PVD_                                     en
+                  IN
+           TIM4_CH3/I2C1_S
+                 CL/              SEG
+  PB8                        61          -      -       -      -      -      -      -     -    -     4
+           LCD_SEG16/TIM1          13
+                0_CH1
+           TIM4_CH4/I2C1_S
+                 DA/              COM
+  PB9                        62          -      -       -      -      -      -      -     -    -     3
+           LCD_COM3/TIM11          3
+                _CH1
+           I2C2_SCL/USART
+                3_TX/             SEG
+ PB10                        29          -      -       -      -      -      -      -     -   22     -
+           TIM2_CH3/LCD_S          6
+                EG10
+           I2C2_SDA/USART
+                3_RX/             SEG
+ PB11                        30          -      -       -      -      -      -      -     -   23     -
+           TIM2_CH4/LCD_S          7
+                EG11
+           SPI2_NSS/I2C2_S
+                 MBA/
+           USART3_CK/LCD_         SEG
+ PB12                        33          -      -       -      -      -      -      -     -   24     -
+           SEG12/ADC_IN18/         8
+             COMP1_INP/
+              TIM10_CH1
+
+
+
+
+                                         UM1079 Rev 5                                              29/38
+                                                                                                           37
+Extension connectors                                                                       UM1079
+
+
+                 Table 9. MCU pin description versus board function (continued)
+             MCU pin                                        Board function
+
+                             LQF                                                      Pow
+                                       Linear Push
+  Main        Alternate      P64 LCD                                             Free  er
+                                       Touch butt    IDD      LED SWD OSC                  P1 P2
+function      functions      pin glass                                            I/O supp
+                                       Sensor on
+                             num                                                       ly
+
+           SPI2_SCK/USART
+                3_CTS/
+           LCD_SEG13/ADC_         SEG
+  PB13                       34          -      -       -      -     -       -    -    -   25   -
+                 IN19/             9
+           COMP1_INP/TIM9
+                 _CH1
+           SPI2_MISO/USAR
+           T3_RTS/LCD_SEG
+                                  SEG
+  PB14       14/ADC_IN20/    35          -      -       -      -     -       -    -    -   26   -
+                                   10
+           COMP1_INP/TIM9
+                 _CH2
+           SPI2_MOSI/TIM1_
+                CH3N/
+           LCD_SEG15/ADC_
+                                  SEG
+  PB15           IN21/       36          -      -       -      -     -       -    -    -   27   -
+                                   11
+           COMP1_INP/TIM1
+                1_CH1/
+             RTC_50_60Hz
+           ADC_IN10/LCD_S
+                                  SEG
+  PC0          EG18/          8          -      -       -      -     -       -    -    -   11   -
+                                   14
+             COMP1_INP
+           ADC_IN11/LCD_S
+                                  SEG
+  PC1          EG19/          9          -      -       -      -     -       -    -    -   12   -
+                                   15
+             COMP1_INP
+           ADC_IN12/LCD_S
+                                  SEG
+  PC2          EG20/         10          -      -       -      -     -       -    -    -   13   -
+                                   16
+             COMP1_INP
+           ADC_IN13/LCD_S
+                                  SEG
+  PC3          EG21/         11          -      -       -      -     -       -    -    -   14   -
+                                   17
+             COMP1_INP
+           ADC_IN14/LCD_S
+  PC4          EG22/         24    -    PC4     -       -      -     -       -    -    -    -   -
+             COMP1_INP
+           ADC_IN15/LCD_S
+  PC5          EG23/         25    -    PC5     -       -      -     -       -    -    -    -   -
+             COMP1_INP
+           TIM3_CH1/LCD_S         SEG
+  PC6                        37          -      -       -      -     -       -    -    -    -   27
+                EG24               18
+           TIM3_CH2/LCD_S         SEG
+  PC7                        38          -      -       -      -     -       -    -    -    -   26
+                EG25               19
+           TIM3_CH3/LCD_S         SEG
+  PC8                        39          -      -       -      -     -       -    -    -    -   25
+                EG26               20
+
+
+
+
+30/38                                    UM1079 Rev 5
+UM1079                                                                            Extension connectors
+
+
+                 Table 9. MCU pin description versus board function (continued)
+             MCU pin                                        Board function
+
+                            LQF                                                          Pow
+                                      Linear Push
+  Main        Alternate     P64 LCD                                                 Free  er
+                                      Touch butt     IDD      LED SWD OSC                     P1 P2
+function      functions     pin glass                                                I/O supp
+                                      Sensor on
+                            num                                                           ly
+
+           TIM3_CH4/LCD_S        SEG
+  PC9                       40           -      -       -      -     -        -      -     -    -    24
+                EG27              21
+           USART3_TX/LCD_
+                                 SEG
+ PC10      SEG28/LCD_SEG4   51           -      -       -      -     -        -      -     -    -    15
+                                  22
+             0/LCD_COM4
+           USART3_RX/LCD_
+                                 SEG
+ PC11      SEG29/LCD_SEG4   52           -      -       -      -     -        -      -     -    -    14
+                                  23
+             1/ LCD_COM5
+           USART3_CK/LCD_
+ PC12      SEG30/LCD_SEG4   53    -      -      -       -      -     -        -      X     -    -    13
+             2/ LCD_COM6
+                                                    CNT_
+ PC13      RTC_AF1/WKUP2     2    -      -      -              -     -        -      -     -    4     -
+                                                     EN
+                                                                             OSC
+ PC14         OSC32_IN       3    -      -      -       -      -     -       32_I    -     -    5     -
+                                                                              N
+                                                                         OSC
+ PC15        OSC32_OUT       4    -      -      -       -      -     -   32_O        -     -    6     -
+                                                                          UT
+           TIM3_ETR/LCD_S
+                EG31/
+  PD2                       54    -      -      -       -      -     -        -      X     -    -    12
+           LCD_SEG43/LCD_
+                COM7
+                                                                             OSC
+OSC_IN          PH0          5    -      -      -       -      -     -               -     -    7     -
+                                                                             _ IN
+                                                                             OSC
+OSC_O
+                PH1          6    -      -      -       -      -     -       _OU     -     -    8     -
+ UT
+                                                                              T
+   -              -          -    -      -      -       -      -     -        -      -   GND    2     2
+   -              -          -    -      -      -       -      -     -        -      -   GND    9     5
+   -              -          -    -      -      -       -      -     -        -      -   GND   28    28
+   -              -          -    -      -      -       -      -     -        -      -   VDD    3     -
+
+
+
+
+                                         UM1079 Rev 5                                               31/38
+                                                                                                            37
+32L152CDISCOVERY product information                                                             UM1079
+
+
+8         32L152CDISCOVERY product information
+
+8.1       Product marking
+          The stickers located on the top or bottom side of all PCBs provide product information:
+          •    First sticker: product order code and product identification, generally placed on the
+               main board featuring the target device.
+               Example:
+                 Product order code
+                 Product identification
+
+          •    Second sticker: board reference with revision and serial number, available on each
+               PCB.
+               Example:
+                 MBxxxx-Variant-yzz
+                 syywwxxxxx
+
+
+          On the first sticker, the first line provides the product order code, and the second line the
+          product identification.
+          On the second sticker, the first line has the following format: “MBxxxx-Variant-yzz”, where
+          “MBxxxx” is the board reference, “Variant” (optional) identifies the mounting variant when
+          several exist, "y" is the PCB revision and "zz" is the assembly revision, for example B01.
+          The second line shows the board serial number used for traceability.
+          Parts marked as "ES" or "E" are not yet qualified and therefore not approved for use in
+          production. ST is not responsible for any consequences resulting from such use. In no event
+          will ST be liable for the customer using any of these engineering samples in production.
+          ST’s Quality department must be contacted prior to any decision to use these engineering
+          samples to run a qualification activity.
+          "E" or "ES" marking examples of location:
+          •    On the targeted STM32 that is soldered on the board (for an illustration of STM32
+               marking, refer to the STM32 datasheet Package information paragraph at the
+               www.st.com website).
+          •    Next to the evaluation tool ordering part number that is stuck or silk-screen printed on
+               the board.
+          Some boards feature a specific STM32 device version, which allows the operation of any
+          bundled commercial stack/library available. This STM32 device shows a "U" marking option
+          at the end of the standard part number and is not available for sales.
+          To use the same commercial stack in their applications, the developers might need to
+          purchase a part number specific to this stack/library. The price of those part numbers
+          includes the stack/library royalties.
+
+
+
+
+32/38                                       UM1079 Rev 5
+UM1079                                                                 32L152CDISCOVERY product information
+
+
+8.2                    32L152CDISCOVERY product history
+                                                Table 10. Product history
+Order                    Product                                    Product change
+                                            Product details                                  Product limitations
+code                  identification                                  description
+
+                                       MCU:
+                                       – STM32L152RCT6
+                                         any revision
+                                       MCU errata sheet:
+                                       – STM32L15xxC and
+                    STM32L152CDISC/                             Initial revision          No limitation
+                                         STM32L162xC device
+                                         errata (ES0241)
+ STM32L152C-DISCO
+
+
+
+
+                                       Board:
+                                       – MB963-C02
+                                         (main board)
+                                       MCU:
+                                       – STM32L152RCT6
+                                         revision “1,v”
+                                       MCU errata sheet:
+                                                                Packaging: plastic blister
+                     DK32L152C$AX1     – STM32L15xxC and        replaced by a carton box. No limitation
+                                         STM32L162xC device
+                                                                Board revision upgrade
+                                         errata (ES0241)
+                                       Board:
+                                       – MB963-C03
+                                         (main board)
+
+
+
+
+                                                        UM1079 Rev 5                                          33/38
+                                                                                                                      37
+32L152CDISCOVERY product information                                                       UM1079
+
+
+8.3            Board revision history
+                               Table 11. Board revision history
+                            Board variant and           Board change
+        Board reference                                                        Board limitations
+                                revision                 description
+
+                          MB963-C02             Initial revision           No limitation
+                                                Several part references
+                                                updated due to
+                                                obsolescence such as:
+                                                – U3 STMicroelectronics
+                                                  M74HC4060 replaced
+                                                  by Texas Instruments
+                                                  SN74HC4060PWT
+                                                – U6 STMicroelectronics
+                                                  74H1G66 replaced by
+MB963                                             Maxim Integrated
+(main board)                                      MAX4514CUK+T
+                          MB963-C03                                        No limitation
+                                                – U7 STMicroelectronics
+                                                  74LX1G04 replaced by
+                                                  Diodes Incorporated
+                                                  74LVC1G04SE
+                                                – U20 STMicroelectronics
+                                                  STS4DPF20L replaced
+                                                  by Taiwan
+                                                  Semiconductor
+                                                  TSM4953DCS RLG
+                                                Refer to the bill of
+                                                materials for details.
+
+
+
+
+34/38                                    UM1079 Rev 5
+UM1079 Federal Communications Commission (FCC) and ISED Canada Compliance Statements
+
+
+9         Federal Communications Commission (FCC)
+          and ISED Canada Compliance Statements
+
+9.1       FCC Compliance Statement
+
+9.1.1     Part 15.19
+          This device complies with Part 15 of the FCC Rules. Operation is subject to the following
+          two conditions: (1) this device may not cause harmful interference, and (2) this device must
+          accept any interference received, including interference that may cause undesired
+          operation.
+
+9.1.2     Part 15.21
+          Any changes or modifications to this equipment not expressly approved by
+          STMicroelectronics may cause harmful interference and void the user’s authority to operate
+          this equipment.
+
+9.1.3     Part 15.105
+          This equipment has been tested and found to comply with the limits for a Class B digital
+          device, pursuant to part 15 of the FCC Rules. These limits are designed to provide
+          reasonable protection against harmful interference in a residential installation. This
+          equipment generates uses and can radiate radio frequency energy and, if not installed and
+          used in accordance with the instructions, may cause harmful interference to radio
+          communications. However, there is no guarantee that interference will not occur in a
+          particular installation. If this equipment does cause harmful interference to radio or
+          television reception, which can be determined by turning the equipment off and on, the user
+          is encouraged to try to correct the interference by one or more of the following measures:
+          •   Reorient or relocate the receiving antenna.
+          •   Increase the separation between the equipment and the receiver.
+          •   Connect the equipment into an outlet on a circuit different from that to which the
+              receiver is connected.
+          •   Consult the dealer or an experienced radio/TV technician for help.
+Note:     Use only shielded cables.
+
+          Responsible party (in the USA)
+          Terry Blanchard
+          Americas Region Legal | Group Vice President and Regional Legal Counsel, The Americas
+          STMicroelectronics, Inc.
+          750 Canyon Drive | Suite 300 | Coppell, Texas 75019
+          USA
+          Telephone: +1 972-466-7845
+
+
+
+
+                                          UM1079 Rev 5                                             35/38
+                                                                                                           37
+Federal Communications Commission (FCC) and ISED Canada Compliance Statements UM1079
+
+
+9.2       ISED Compliance Statement
+          Compliance Statement
+          ISED Canada ICES-003 Compliance Label: CAN ICES-3 (B) / NMB-3 (B).
+
+          Déclaration de conformité
+          Étiquette de conformité à la NMB-003 d'ISDE Canada : CAN ICES-3 (B) / NMB-3 (B).
+
+
+
+
+36/38                                   UM1079 Rev 5
+UM1079                                                                         Revision history
+
+
+10       Revision history
+
+                               Table 12. Document revision history
+             Date       Revision                             Changes
+
+         10-May-2011       1       Initial release.
+                                   Added Chapter 6: Mechanical drawing.
+         24-June-2011      2
+                                   Modified Chapter 4.3: Power supply and power selection.
+                                   Added 32L152CDISCOVERY, related features.
+                                   Updated STM32L-DISCOVERY URL.
+                                   Modified Section 2.2: System requirements, Section 2.5:
+                                   Order codes, Section 4.1: STM32L152RB or STM32L152RC
+                                   microcontroller, Section 4.2.1: Using the ST-LINK/V2 to
+         19-Apr-2013       3
+                                   program/debug an external STM32L application.
+                                   Updated Figure 1: STM32L1 Discovery board, Figure 2:
+                                   Hardware block diagram, Figure 3: Top layout, Figure 6:
+                                   STM32L152RB block diagram, Figure 13: LCD segment
+                                   mapping, and all schematics in Section 7.
+                                   Updated: Title, Section 4.6: Linear touch sensor and
+         23-Jan-2017       4       touchkeys where AN4312 replaces AN2869, and all
+                                   schematics in Section 7.
+                                   Document reshuffled to align with the latest standards:
+                                   – Introduction to Quick start reordering
+                                   – Removed Electrical schematics
+         06-Oct-2023       5
+                                   – Added 32L152CDISCOVERY product information and
+                                     Federal Communications Commission (FCC) and ISED
+                                     Canada Compliance Statements
+
+
+
+
+                                      UM1079 Rev 5                                           37/38
+                                                                                                     37
+                                                                                                                                 UM1079
+
+
+
+
+                                                IMPORTANT NOTICE – READ CAREFULLY
+
+
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and
+improvements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on
+ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order
+acknowledgment.
+
+
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or
+the design of purchasers’ products.
+
+
+No license, express or implied, to any intellectual property right is granted by ST herein.
+
+
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+
+
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, refer to www.st.com/trademarks. All other product
+or service names are the property of their respective owners.
+
+
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+
+
+                                               © 2023 STMicroelectronics – All rights reserved
+
+
+
+
+38/38                                                         UM1079 Rev 5
+

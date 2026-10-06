@@ -1,0 +1,92 @@
+[
+  {
+    "id": "adafruit-3406",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52%20Bluefruit%20Feather%20rev%20G.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4062",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-nRF52-Bluefruit-Feather-PCB/blob/20cfdfdcf656a3c3dd9d07e3db91b0f1ac79b31a/Adafruit%20nRF52840%20Bluefruit%20Feather%20Express%20Rev%20E.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-4516",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-nRF52840-Sense-PCB/blob/afeb0acb67e98c807cfdfbf7b5fe5e6e49490796/Adafruit%20Feather%20nRF52840%20Sense%20Rev%20C.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2995",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-Bluefruit-LE-PCB/blob/b2e0b3f2930568da3471d6c42cb4919d573d3481/Adafruit%20Feather%20Zero%20BLE%20rev%20A.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2829",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-32u4-Bluefruit-LE-PCB/blob/fab08d3f5f0755a29559b81ad54239b746906b56/Adafruit%20Feather%2032u4%20Bluefruit%20LE.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3010",
+    "claim": "Full physical rows 16+12 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-WiFi-WINC1500-PCB/blob/20e781d8d7d0b31002f9d2a8eaef18429f983815/Adafruit%20Feather%20M0%20WiFi.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5395",
+    "claim": "Full physical rows 7+7 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-Pico-PCB/blob/f45b12704ccbb7180d89db28e1af7bd861124133/Adafruit%20QT%20Py%20ESP32%20Pico.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-5405",
+    "claim": "Full physical rows 7+7 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/8618fb52d806fb184ec5807490db0a9b084ffa9c/Adafruit%20QT%20Py%20ESP32-C3.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-1500",
+    "claim": "Full physical rows 5+5 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%203V%20microUSB.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-1501",
+    "claim": "Full physical rows 5+5 with measured CAD pitches 2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Trinket-PCB/blob/3a2695463e52f72434d20daca6502fc62e8e2fcc/Adafruit%20Trinket%205V%20microUSB.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2000",
+    "claim": "Full physical rows 12+6+12+2 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%205v0.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-2010",
+    "claim": "Full physical rows 12+6+12+2 with measured CAD pitches 2.54,2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Pro-Trinket-PCBs/blob/8b181a70f0e2f6ba9ef7d983176a14ac0cc9c31a/Adafruit%20Pro%20Trinket%203v3.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3178",
+    "claim": "Full physical rows 16+12+3 with measured CAD pitches 2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3179",
+    "claim": "Full physical rows 16+12+3 with measured CAD pitches 2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/1b3616c9daf1cd0643bb7f6a98f4e3c71fe16c83/Adafruit%20Feather%20M0%20RFMxx.brd",
+    "rank": 1
+  },
+  {
+    "id": "adafruit-3078",
+    "claim": "Full physical rows 16+12+2 with measured CAD pitches 2.54,2.54,2.54",
+    "source": "https://github.com/adafruit/Adafruit-Feather-32u4-RFM-LoRa-PCB/blob/ace22faec73dda4b8dcfec16e1667551456689dd/Adafruit%20Feather%2032u4%20RFMxx.brd",
+    "rank": 1
+  }
+]

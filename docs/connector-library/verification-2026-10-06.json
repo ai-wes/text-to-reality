@@ -1,0 +1,15 @@
+{
+  "tests": "........................................................................ [ 56%]\n.......................................................                  [100%]\n127 passed in 2.42s",
+  "installed_wheel": {
+    "version": "0.1.0",
+    "boards": 320,
+    "resources": 3,
+    "tools": 13,
+    "guide_sha256": "e0d7d5a9370bdb68bc7bce9f9a785d680f920dfe6b103869e21e1d6c08d4528b",
+    "physical_validation": false
+  },
+  "catalog_sha256": "a883b0af6d9a3b8d11e361e378ac26b4a909fd0badf8b41de7fce008d53d73a1",
+  "rules_sha256": "20a40f41d1ed61e4452b45ca16390972b85543c193e6cbc396881ccf8dc72f8e",
+  "local_review_candidate": true,
+  "public_release": false
+}

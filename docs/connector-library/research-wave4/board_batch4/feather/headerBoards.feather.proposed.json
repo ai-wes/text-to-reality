@@ -1,0 +1,5053 @@
+{
+  "schemaVersion": 1,
+  "checked_utc": "2026-10-06",
+  "note": "Research import only; preserve role, gender, population and auxiliary connector gates. No mechanical fit qualified.",
+  "boards": [
+    {
+      "id": "adafruit-5000",
+      "name": "Adafruit ESP32-S2 Feather (4MB Flash / 2MB PSRAM, PCB antenna)",
+      "aliases": [
+        "Adafruit product 5000"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5000",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "TXD0",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM_NO",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "JST SH",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd",
+          "pin_count": 4
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather ESP32-S2 Rev C.brd",
+        "git_ref": "main",
+        "git_commit": "4a6263861580257d42a889a1518133441d25f35d",
+        "sha256": "fec4c6c2078c94baf1ba19e6bc836e25f4a41f1f2a83851b5a63616742cc4305",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/Adafruit%20Feather%20ESP32-S2%20Rev%20C.brd",
+          "local_file": "Adafruit-Feather-ESP32-S2-PCB/Adafruit Feather ESP32-S2 Rev C.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5000"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP32-S2-PCB/blob/4a6263861580257d42a889a1518133441d25f35d/README.md",
+          "local_file": "Adafruit-Feather-ESP32-S2-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5300",
+      "name": "Adafruit ESP32-S2 TFT Feather (4MB Flash / 2MB PSRAM)",
+      "aliases": [
+        "Adafruit product 5300"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5300",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "TXD0",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                6.35,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                8.89,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                11.43,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                13.97,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM_NO",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "STEMMA_I2C_QTRA",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd",
+          "pin_count": 4
+        },
+        {
+          "id": "DISP1",
+          "package": "TFT_1.14IN_240X135_WRAPUNDER",
+          "value": "DISP_LCD_GENERIC_SPI_1.14IN_240X135_WRAPUNDER",
+          "role": "built-in display flex footprint",
+          "population": "display assembly; not an external jumper header",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit ESP32-S2 TFT Feather.brd",
+        "git_ref": "main",
+        "git_commit": "9e9f52790239a755241bfee62628dc8b3c713c63",
+        "sha256": "965ed7daaab1077db23e78b9082959c6bcc10d84030de4b6256ed256af547bd3",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/Adafruit%20ESP32-S2%20TFT%20Feather.brd",
+          "local_file": "Adafruit-ESP32-S2-TFT-Feather-PCB/Adafruit ESP32-S2 TFT Feather.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5300"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S2-TFT-Feather-PCB/blob/9e9f52790239a755241bfee62628dc8b3c713c63/README.md",
+          "local_file": "Adafruit-ESP32-S2-TFT-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5345",
+      "name": "Adafruit ESP32-S2 Reverse TFT Feather",
+      "aliases": [
+        "Adafruit product 5345"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5345",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "TXD0",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM_NO",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "STEMMA_I2C_QTRA",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd",
+          "pin_count": 4
+        },
+        {
+          "id": "DISP1",
+          "package": "TFT_1.14IN_240X135_WRAPUNDER",
+          "value": "DISP_LCD_GENERIC_SPI_1.14IN_240X135_WRAPUNDER",
+          "role": "built-in display flex footprint",
+          "population": "display assembly; not an external jumper header",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather ESP32-S2 Reverse TFT.brd",
+        "git_ref": "main",
+        "git_commit": "ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3",
+        "sha256": "df882a54b640c12b1475ef399cd9252569d2a1511fddca1177e7cbf0d7818e1b",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/Adafruit%20Feather%20ESP32-S2%20Reverse%20TFT.brd",
+          "local_file": "Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/Adafruit Feather ESP32-S2 Reverse TFT.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5345"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/blob/ce3ce90565b9e49af0ebbd1c2e0abd300d2fd0d3/README.md",
+          "local_file": "Adafruit-ESP32-S2-Reverse-TFT-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5323",
+      "name": "Adafruit ESP32-S3 Feather (8MB Flash / No PSRAM, PCB antenna)",
+      "aliases": [
+        "Adafruit product 5323"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5323",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "TXD0",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM_NO",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "JST SH",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+          "pin_count": 4
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit ESP32-S3 8MB No PSRAM.brd",
+        "git_ref": "main",
+        "git_commit": "2c95ed51a500d929fd6d8f519b895f0c4daeb982",
+        "sha256": "5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+          "local_file": "Adafruit-Feather-ESP32-S3-PCB/Adafruit ESP32-S3 8MB No PSRAM.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5323"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/blob/2c95ed51a500d929fd6d8f519b895f0c4daeb982/README.md",
+          "local_file": "Adafruit-Feather-ESP32-S3-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5483",
+      "name": "Adafruit ESP32-S3 TFT Feather (4MB Flash / 2MB PSRAM)",
+      "aliases": [
+        "Adafruit product 5483"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5483",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "TXD0",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                6.35,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                8.89,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                11.43,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                13.97,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM_NO",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "STEMMA_I2C_QTRA",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd",
+          "pin_count": 4
+        },
+        {
+          "id": "DISP1",
+          "package": "TFT_1.14IN_240X135_WRAPUNDER",
+          "value": "DISP_LCD_GENERIC_SPI_1.14IN_240X135_WRAPUNDER",
+          "role": "built-in display flex footprint",
+          "population": "display assembly; not an external jumper header",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit ESP32-S3 TFT Feather.brd",
+        "git_ref": "main",
+        "git_commit": "e2cfb6b5e5edb46688429b701eead7a78738b0f8",
+        "sha256": "abfe3190c80f0fe3661998a4ea43cc30625adb4294c4dce3532287cb3d07492d",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/Adafruit%20ESP32-S3%20TFT%20Feather.brd",
+          "local_file": "Adafruit-ESP32-S3-TFT-Feather-PCB/Adafruit ESP32-S3 TFT Feather.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5483"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S3-TFT-Feather-PCB/blob/e2cfb6b5e5edb46688429b701eead7a78738b0f8/README.md",
+          "local_file": "Adafruit-ESP32-S3-TFT-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5691",
+      "name": "Adafruit ESP32-S3 Reverse TFT Feather (4MB Flash / 2MB PSRAM)",
+      "aliases": [
+        "Adafruit product 5691"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5691",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "TXD0",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "D13",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "D12",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "D11",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "D10",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "D9",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "D6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "D5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd"
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM_NO",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "STEMMA_I2C_QTRA",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd",
+          "pin_count": 4
+        },
+        {
+          "id": "DISP1",
+          "package": "TFT_1.14IN_240X135_WRAPUNDER",
+          "value": "DISP_LCD_GENERIC_SPI_1.14IN_240X135_WRAPUNDER",
+          "role": "built-in display flex footprint",
+          "population": "display assembly; not an external jumper header",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit ESP32-S3 Reverse TFT Feather.brd",
+        "git_ref": "main",
+        "git_commit": "633459d74623227a18f7c4b1594db0840ba5592d",
+        "sha256": "af760d002fb4a645a7e40f48b2b1b82fc0b280c41e40fdbfc90ce77b189775ef",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/Adafruit%20ESP32-S3%20Reverse%20TFT%20Feather.brd",
+          "local_file": "Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/Adafruit ESP32-S3 Reverse TFT Feather.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5691"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/blob/633459d74623227a18f7c4b1594db0840ba5592d/README.md",
+          "local_file": "Adafruit-ESP32-S3-Reverse-TFT-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5400",
+      "name": "Adafruit ESP32 Feather V2 (8MB Flash / 2MB PSRAM)",
+      "aliases": [
+        "Adafruit product 5400"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5400",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": null,
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0_DAC2",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1_DAC1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2_I34",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3_I39",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4_I36",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5_IO4",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX/IO7",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX/IO8",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "I37",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "IO13_A12",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "IO12_A11",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "IO27_A10",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "IO33_A9",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "IO15_A8",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "IO32_A7",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "IO14_A6",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "STEMMA_I2C_QTRA",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd",
+          "pin_count": 4
+        },
+        {
+          "id": "X6",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB Type C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit ESP32 Feather V2.brd",
+        "git_ref": "main",
+        "git_commit": "cbde2c6658acb3c788616ceb13423b5d36305ef0",
+        "sha256": "77fdb1f97d934c0ddbc536d5503b9c867a7815a944ac8c8f061de8632e5150fe",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/Adafruit%20ESP32%20Feather%20V2.brd",
+          "local_file": "Adafruit-ESP32-Feather-V2-PCB/Adafruit ESP32 Feather V2.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5400"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-Feather-V2-PCB/blob/cbde2c6658acb3c788616ceb13423b5d36305ef0/README.md",
+          "local_file": "Adafruit-ESP32-Feather-V2-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-3405",
+      "name": "Adafruit HUZZAH32 ESP32 Feather",
+      "aliases": [
+        "Adafruit product 3405"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3405",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": null,
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0_DAC2",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1_DAC1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2_I34",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3_I39",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4_IO36",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5_IO4",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "IO16",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "IO17",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "IO21",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "IO13_A12",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "IO12_A11",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "IO27_A10",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "IO33_A9",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "IO15_A8",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "IO32_A7",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "IO14_A6",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X4",
+          "package": "4UCONN_20329_V2",
+          "value": "20329",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit HUZZAH32 ESP32 Feather.brd",
+        "git_ref": "master",
+        "git_commit": "e23514c6f9e124a60f9d1de6567c791561b43e73",
+        "sha256": "992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+          "local_file": "Adafruit-HUZZAH32-ESP32-Feather-PCB/Adafruit HUZZAH32 ESP32 Feather.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3405"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/blob/e23514c6f9e124a60f9d1de6567c791561b43e73/README.md",
+          "local_file": "Adafruit-HUZZAH32-ESP32-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-2821",
+      "name": "Adafruit Feather HUZZAH ESP8266 (Loose Headers)",
+      "aliases": [
+        "Adafruit product 2821"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/2821",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": null,
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "ADC",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": null,
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": null,
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": null,
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": null,
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": null,
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "GPIO14/SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "GPIO13/MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "GPIO12/MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RXD",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TXD",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "CH_PD",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "GPIO14/SCK",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "GPIO12/MISO",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "GPIO13/MOSI",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "GPIO15",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "GPIO0",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "GPIO16",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "GPIO2",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "GPIO5/SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "GPIO4/SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X4",
+          "package": "4UCONN_20329_V2",
+          "value": "20329",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit ESP8266 Feather rev G.brd",
+        "git_ref": "master",
+        "git_commit": "957300988eee7d15d71649fd4e2cb023a6584acb",
+        "sha256": "c7f249dfa2b899d480b497107b002c45218093275dbc5b5e70952b957d8ad9f3",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/Adafruit%20ESP8266%20Feather%20rev%20G.brd",
+          "local_file": "Adafruit-Feather-ESP8266-HUZZAH-PCB/Adafruit ESP8266 Feather rev G.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/2821"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Feather-ESP8266-HUZZAH-PCB/blob/957300988eee7d15d71649fd4e2cb023a6584acb/README.md",
+          "local_file": "Adafruit-Feather-ESP8266-HUZZAH-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-5933",
+      "name": "Adafruit ESP32-C6 Feather (STEMMA QT)",
+      "aliases": [
+        "Adafruit product 5933"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/5933",
+      "headers": [
+        {
+          "id": "JP1",
+          "pin_count": 16,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "16",
+              "signal": "RESET",
+              "board_xy_mm": [
+                6.35,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "15",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                8.89,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "14",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                11.43,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "13",
+              "signal": "GND",
+              "board_xy_mm": [
+                13.97,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "12",
+              "signal": "A0",
+              "board_xy_mm": [
+                16.51,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "11",
+              "signal": "A1",
+              "board_xy_mm": [
+                19.05,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "10",
+              "signal": "A2/IO6",
+              "board_xy_mm": [
+                21.59,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "9",
+              "signal": "A3/IO5",
+              "board_xy_mm": [
+                24.13,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "8",
+              "signal": "A4",
+              "board_xy_mm": [
+                26.67,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "7",
+              "signal": "A5",
+              "board_xy_mm": [
+                29.21,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "6",
+              "signal": "SCK",
+              "board_xy_mm": [
+                31.75,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "5",
+              "signal": "MOSI",
+              "board_xy_mm": [
+                34.29,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "4",
+              "signal": "MISO",
+              "board_xy_mm": [
+                36.83,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "3",
+              "signal": "RX",
+              "board_xy_mm": [
+                39.37,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "2",
+              "signal": "TX",
+              "board_xy_mm": [
+                41.91,
+                1.27
+              ]
+            },
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "IO9/BOOT/NEOPIX",
+              "board_xy_mm": [
+                44.45,
+                1.27
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        },
+        {
+          "id": "JP3",
+          "pin_count": 12,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint configuration; installed header type and retail population must be checked",
+          "role": "main_edge_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "configuration-scoped"
+          },
+          "pins": [
+            {
+              "element": "JP3",
+              "pad": "1",
+              "signal": "VBAT",
+              "board_xy_mm": [
+                16.51,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "2",
+              "signal": "EN",
+              "board_xy_mm": [
+                19.05,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "3",
+              "signal": "VBUS",
+              "board_xy_mm": [
+                21.59,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "4",
+              "signal": "IO15",
+              "board_xy_mm": [
+                24.13,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "5",
+              "signal": "IO14",
+              "board_xy_mm": [
+                26.67,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "6",
+              "signal": "IO0",
+              "board_xy_mm": [
+                29.21,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "7",
+              "signal": "IO8",
+              "board_xy_mm": [
+                31.75,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "8",
+              "signal": "IO7",
+              "board_xy_mm": [
+                34.29,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "9",
+              "signal": "A2/IO6",
+              "board_xy_mm": [
+                36.83,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "10",
+              "signal": "A3/IO5",
+              "board_xy_mm": [
+                39.37,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "11",
+              "signal": "SCL",
+              "board_xy_mm": [
+                41.91,
+                21.59
+              ]
+            },
+            {
+              "element": "JP3",
+              "pad": "12",
+              "signal": "SDA",
+              "board_xy_mm": [
+                44.45,
+                21.59
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd",
+          "note": "Full independent row; do not merge into main edge rows."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "X1",
+          "package": "JSTPH2_BATT",
+          "value": "JSTPH",
+          "role": "LiPo battery connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd",
+          "pin_count": 2
+        },
+        {
+          "id": "X3",
+          "package": "USB_C_CUSB31-CFM2AX-01-X",
+          "value": "USB C",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd"
+        },
+        {
+          "id": "CONN1",
+          "package": "JST_SH4_RA",
+          "value": "JST SH",
+          "role": "STEMMA QT I2C connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd",
+          "pin_count": 4
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Feather ESP32-C6.brd",
+        "git_ref": "main",
+        "git_commit": "7376e394a3a889550e0092d7dbe3bea453b309b3",
+        "sha256": "add4a53eaab161613136ca410c236200e30a9d45928e110ae84e99bbceacf241",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/Adafruit%20Feather%20ESP32-C6.brd",
+          "local_file": "Adafruit-ESP32-C6-Feather-PCB/Adafruit Feather ESP32-C6.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/5933"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB/blob/7376e394a3a889550e0092d7dbe3bea453b309b3/README.md",
+          "local_file": "Adafruit-ESP32-C6-Feather-PCB/README.md"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Bare header footprints only. No gender, mechanical fit or installed-header claim for user samples. Exact SKU distinct from voltage/radio variants."
+    },
+    {
+      "id": "adafruit-3505",
+      "name": "Adafruit METRO M0 Express (ATSAMD21G18)",
+      "aliases": [
+        "Adafruit product 3505"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3505",
+      "headers": [
+        {
+          "id": "AD",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "AD",
+              "pad": "1",
+              "signal": "A0",
+              "board_xy_mm": [
+                50.8,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "2",
+              "signal": "A1",
+              "board_xy_mm": [
+                53.34,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "3",
+              "signal": "A2",
+              "board_xy_mm": [
+                55.88,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "4",
+              "signal": "A3",
+              "board_xy_mm": [
+                58.42,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "5",
+              "signal": "A4",
+              "board_xy_mm": [
+                60.96,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "6",
+              "signal": "A5",
+              "board_xy_mm": [
+                63.5,
+                2.54
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        },
+        {
+          "id": "IOH",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "IOH",
+              "pad": "1",
+              "signal": "SCL",
+              "board_xy_mm": [
+                18.796,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "2",
+              "signal": "SDA",
+              "board_xy_mm": [
+                21.336,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "3",
+              "signal": "AREF",
+              "board_xy_mm": [
+                23.876,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                26.416,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "5",
+              "signal": "D13",
+              "board_xy_mm": [
+                28.956,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "6",
+              "signal": "D12",
+              "board_xy_mm": [
+                31.496,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "7",
+              "signal": "D11",
+              "board_xy_mm": [
+                34.036,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "8",
+              "signal": "D10",
+              "board_xy_mm": [
+                36.576,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "9",
+              "signal": "D9",
+              "board_xy_mm": [
+                39.116,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "10",
+              "signal": "D8",
+              "board_xy_mm": [
+                41.656,
+                50.8
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        },
+        {
+          "id": "IOL",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "IOL",
+              "pad": "1",
+              "signal": "D7",
+              "board_xy_mm": [
+                45.72,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "2",
+              "signal": "D6",
+              "board_xy_mm": [
+                48.26,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "3",
+              "signal": "D5",
+              "board_xy_mm": [
+                50.8,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "4",
+              "signal": "D4",
+              "board_xy_mm": [
+                53.34,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "5",
+              "signal": "D3",
+              "board_xy_mm": [
+                55.88,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "6",
+              "signal": "D2",
+              "board_xy_mm": [
+                58.42,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "7",
+              "signal": "D1",
+              "board_xy_mm": [
+                60.96,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "8",
+              "signal": "D0",
+              "board_xy_mm": [
+                63.5,
+                50.8
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        },
+        {
+          "id": "POWER",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "POWER",
+              "pad": "1",
+              "signal": null,
+              "board_xy_mm": [
+                27.94,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "2",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                30.48,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "3",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                33.02,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "4",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                35.56,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "5",
+              "signal": "+5V",
+              "board_xy_mm": [
+                38.1,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "6",
+              "signal": "GND",
+              "board_xy_mm": [
+                40.64,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "7",
+              "signal": "GND",
+              "board_xy_mm": [
+                43.18,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "8",
+              "signal": "VIN",
+              "board_xy_mm": [
+                45.72,
+                2.54
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "ICSP",
+          "package": "2X03_ROUND_70MIL",
+          "value": "3x2 M",
+          "role": "SPI/ICSP",
+          "population": "populated in manufacturer product photograph",
+          "gender": "male",
+          "pitch_mm": 2.54,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "pin_count": 6,
+          "rows": 2,
+          "shrouded": false,
+          "note": "Separate two-row connector; cannot be flattened into a single comb row.",
+          "cad_pads": [
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "4",
+              "x": "0",
+              "y": "1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "6",
+              "x": "2.54",
+              "y": "1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "1",
+              "x": "-2.54",
+              "y": "-1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "3",
+              "x": "0",
+              "y": "-1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "5",
+              "x": "2.54",
+              "y": "-1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            }
+          ]
+        },
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "20329",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd"
+        },
+        {
+          "id": "JP1",
+          "package": "1X01_ROUND",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "N$13",
+              "board_xy_mm": [
+                7.747,
+                14.986
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "TP1",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd"
+        },
+        {
+          "id": "TP2",
+          "package": "TESTPOINT_ROUND_1.5MM",
+          "value": "",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd"
+        },
+        {
+          "id": "X2",
+          "package": "2X05_1.27MM_BOX_POSTS",
+          "value": "2x5 0.05\" SWD",
+          "role": "SWD debug",
+          "population": "populated in manufacturer product photograph",
+          "gender": "male",
+          "pitch_mm": 1.27,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "pin_count": 10,
+          "rows": 2,
+          "note": "Separate two-row connector; cannot be flattened into a single comb row.",
+          "cad_pads": [
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "8",
+              "x": "1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "10",
+              "x": "2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "1",
+              "x": "-2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "5",
+              "x": "0",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "7",
+              "x": "1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "9",
+              "x": "2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            }
+          ],
+          "shrouded": true
+        },
+        {
+          "id": "X5",
+          "package": "DCJACK_2MM_PTH",
+          "value": "2.1mm",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Metro M0 Express.brd",
+        "git_ref": "master",
+        "git_commit": "6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125",
+        "sha256": "5746b29051b8457f92396a12c4287c504589c502bf65d92afb5e98a6ab181736",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/Adafruit%20Metro%20M0%20Express.brd",
+          "local_file": "Adafruit-Metro-M0-Express-PCB/Adafruit Metro M0 Express.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3505"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/README.md",
+          "local_file": "Adafruit-Metro-M0-Express-PCB/README.md"
+        },
+        {
+          "type": "manufacturer product photograph; visually inspected",
+          "url": "https://github.com/adafruit/Adafruit-Metro-M0-Express-PCB/blob/6cdfd4d238f82ee87c0b3b3b91f90878fcc6a125/assets/3505.jpg",
+          "local_file": "Adafruit-Metro-M0-Express-PCB/3505.jpg"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Main rows are populated female sockets in manufacturer reference photo; auxiliary SPI and SWD are male. Exact CAD revision named; physical sample clearance remains unverified."
+    },
+    {
+      "id": "adafruit-3382",
+      "name": "Adafruit Metro M4 Express (ATSAMD51)",
+      "aliases": [
+        "Adafruit product 3382"
+      ],
+      "kind": "board",
+      "manufacturer": "Adafruit",
+      "source": "https://www.adafruit.com/product/3382",
+      "headers": [
+        {
+          "id": "AD",
+          "pin_count": 6,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "AD",
+              "pad": "1",
+              "signal": "A0",
+              "board_xy_mm": [
+                50.8,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "2",
+              "signal": "A1",
+              "board_xy_mm": [
+                53.34,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "3",
+              "signal": "A2",
+              "board_xy_mm": [
+                55.88,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "4",
+              "signal": "A3",
+              "board_xy_mm": [
+                58.42,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "5",
+              "signal": "A4",
+              "board_xy_mm": [
+                60.96,
+                2.54
+              ]
+            },
+            {
+              "element": "AD",
+              "pad": "6",
+              "signal": "A5",
+              "board_xy_mm": [
+                63.5,
+                2.54
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        },
+        {
+          "id": "IOH",
+          "pin_count": 10,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "IOH",
+              "pad": "1",
+              "signal": "SCL",
+              "board_xy_mm": [
+                18.796,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "2",
+              "signal": "SDA",
+              "board_xy_mm": [
+                21.336,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "3",
+              "signal": "AREF",
+              "board_xy_mm": [
+                23.876,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "4",
+              "signal": "GND",
+              "board_xy_mm": [
+                26.416,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "5",
+              "signal": "D13",
+              "board_xy_mm": [
+                28.956,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "6",
+              "signal": "D12",
+              "board_xy_mm": [
+                31.496,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "7",
+              "signal": "D11",
+              "board_xy_mm": [
+                34.036,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "8",
+              "signal": "D10",
+              "board_xy_mm": [
+                36.576,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "9",
+              "signal": "D9",
+              "board_xy_mm": [
+                39.116,
+                50.8
+              ]
+            },
+            {
+              "element": "IOH",
+              "pad": "10",
+              "signal": "D8",
+              "board_xy_mm": [
+                41.656,
+                50.8
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        },
+        {
+          "id": "IOL",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "IOL",
+              "pad": "1",
+              "signal": "D7",
+              "board_xy_mm": [
+                45.72,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "2",
+              "signal": "D6",
+              "board_xy_mm": [
+                48.26,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "3",
+              "signal": "D5",
+              "board_xy_mm": [
+                50.8,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "4",
+              "signal": "D4",
+              "board_xy_mm": [
+                53.34,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "5",
+              "signal": "D3",
+              "board_xy_mm": [
+                55.88,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "6",
+              "signal": "D2",
+              "board_xy_mm": [
+                58.42,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "7",
+              "signal": "D1",
+              "board_xy_mm": [
+                60.96,
+                50.8
+              ]
+            },
+            {
+              "element": "IOL",
+              "pad": "8",
+              "signal": "D0",
+              "board_xy_mm": [
+                63.5,
+                50.8
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        },
+        {
+          "id": "POWER",
+          "pin_count": 8,
+          "pitch_mm": 2.54,
+          "rows": 1,
+          "gender": "female",
+          "population": "populated female sockets visible in manufacturer photograph; verify physical revision",
+          "role": "main_socket_row",
+          "shrouded": false,
+          "fit_status": "unverified",
+          "automatic_fit_eligible": false,
+          "confidence": {
+            "physical_count": "CAD-verified",
+            "pitch": "CAD-verified",
+            "population": "manufacturer photo verified"
+          },
+          "pins": [
+            {
+              "element": "POWER",
+              "pad": "1",
+              "signal": null,
+              "board_xy_mm": [
+                27.94,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "2",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                30.48,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "3",
+              "signal": "!RESET",
+              "board_xy_mm": [
+                33.02,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "4",
+              "signal": "3.3V",
+              "board_xy_mm": [
+                35.56,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "5",
+              "signal": "+5V",
+              "board_xy_mm": [
+                38.1,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "6",
+              "signal": "GND",
+              "board_xy_mm": [
+                40.64,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "7",
+              "signal": "GND",
+              "board_xy_mm": [
+                43.18,
+                2.54
+              ]
+            },
+            {
+              "element": "POWER",
+              "pad": "8",
+              "signal": "VIN",
+              "board_xy_mm": [
+                45.72,
+                2.54
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "note": "Complete separate socket group. Do not merge across nonstandard Arduino-layout gaps. Female socket is not a direct mating target for a female jumper comb."
+        }
+      ],
+      "auxiliary_connectors": [
+        {
+          "id": "ICSP",
+          "package": "2X03_ROUND_70MIL",
+          "value": "3x2 M",
+          "role": "SPI/ICSP",
+          "population": "populated in manufacturer product photograph",
+          "gender": "male",
+          "pitch_mm": 2.54,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "pin_count": 6,
+          "rows": 2,
+          "shrouded": false,
+          "note": "Separate two-row connector; cannot be flattened into a single comb row.",
+          "cad_pads": [
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "4",
+              "x": "0",
+              "y": "1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "6",
+              "x": "2.54",
+              "y": "1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "1",
+              "x": "-2.54",
+              "y": "-1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "3",
+              "x": "0",
+              "y": "-1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            },
+            {
+              "name": "5",
+              "x": "2.54",
+              "y": "-1.27",
+              "drill": "0.9",
+              "diameter": "1.778",
+              "rot": "R90"
+            }
+          ]
+        },
+        {
+          "id": "X3",
+          "package": "4UCONN_20329_V2",
+          "value": "20329",
+          "role": "USB connector footprint",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd"
+        },
+        {
+          "id": "JP1",
+          "package": "1X01_ROUND",
+          "role": "single pad, not a multi-position comb row",
+          "pin_count": 1,
+          "pitch_mm": null,
+          "rows": 1,
+          "gender": "none",
+          "population": "bare footprint",
+          "pins": [
+            {
+              "element": "JP1",
+              "pad": "1",
+              "signal": "PWR_SWITCH",
+              "board_xy_mm": [
+                5.461,
+                13.716
+              ]
+            }
+          ],
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "included_in_main_comb_count": false
+        },
+        {
+          "id": "X2",
+          "package": "2X05_1.27MM_BOX_POSTS",
+          "value": "2x5 0.05\" SWD",
+          "role": "SWD debug",
+          "population": "populated in manufacturer product photograph",
+          "gender": "male",
+          "pitch_mm": 1.27,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "pin_count": 10,
+          "rows": 2,
+          "note": "Separate two-row connector; cannot be flattened into a single comb row.",
+          "cad_pads": [
+            {
+              "name": "2",
+              "x": "-2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "4",
+              "x": "-1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "6",
+              "x": "0",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "8",
+              "x": "1.27",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "10",
+              "x": "2.54",
+              "y": "2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "1",
+              "x": "-2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "3",
+              "x": "-1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "5",
+              "x": "0",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "7",
+              "x": "1.27",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            },
+            {
+              "name": "9",
+              "x": "2.54",
+              "y": "-2.15",
+              "dx": "0.76",
+              "dy": "2.6",
+              "layer": "1"
+            }
+          ],
+          "shrouded": true
+        },
+        {
+          "id": "X5",
+          "package": "DCJACK_2MM_PTH",
+          "value": "2.1mm",
+          "role": "auxiliary connector/pad",
+          "population": "CAD footprint exists; retail population not independently verified",
+          "gender": null,
+          "pitch_mm": null,
+          "included_in_main_comb_count": false,
+          "source": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd"
+        }
+      ],
+      "revision": {
+        "cad_file": "Adafruit Metro M4 Express.brd",
+        "git_ref": "master",
+        "git_commit": "4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6",
+        "sha256": "e25e2ece2b07b3a97d9f04ab1ecfb8a2522d5ed01d02eacc330d00470a85025b",
+        "retail_revision": "not checked against physical sample; geometry scoped to named CAD file"
+      },
+      "evidence": [
+        {
+          "type": "manufacturer PCB",
+          "url": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/Adafruit%20Metro%20M4%20Express.brd",
+          "local_file": "Adafruit-Metro-M4-Express-PCB/Adafruit Metro M4 Express.brd"
+        },
+        {
+          "type": "manufacturer SKU",
+          "url": "https://www.adafruit.com/product/3382"
+        },
+        {
+          "type": "manufacturer repository description",
+          "url": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/README.md",
+          "local_file": "Adafruit-Metro-M4-Express-PCB/README.md"
+        },
+        {
+          "type": "manufacturer product photograph; visually inspected",
+          "url": "https://github.com/adafruit/Adafruit-Metro-M4-Express-PCB/blob/4aafb2ac645c0d93eed7e4fd6cb71c8eef1a3ac6/assets/image.jpg",
+          "local_file": "Adafruit-Metro-M4-Express-PCB/image.jpg"
+        }
+      ],
+      "fit_status": "unverified",
+      "automatic_fit_eligible": false,
+      "scope_note": "Main rows are populated female sockets in manufacturer reference photo; auxiliary SPI and SWD are male. Exact CAD revision named; physical sample clearance remains unverified."
+    }
+  ]
+}

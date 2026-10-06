@@ -1,0 +1,78 @@
+{
+  "accepted": 12,
+  "quarantined": [],
+  "adjustments": [
+    {
+      "id": "st-nucleo-f207zg",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f303ze",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f412zg",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f413zh",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f429zi",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f439zi",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f446ze",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f722ze",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f746zg",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f756zg",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-f767zi",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    },
+    {
+      "id": "st-nucleo-h743zi",
+      "changes": [
+        "Map research category to board/module; raw kind preserved"
+      ]
+    }
+  ]
+}

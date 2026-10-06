@@ -1,0 +1,149 @@
+{
+  "purpose": "Research queue only; existing data/boards.json is the sole runtime catalog",
+  "wave2": {
+    "status": "integrated_research_only",
+    "source_records": 76,
+    "accepted": 76,
+    "quarantined": 0,
+    "catalog_total": 151,
+    "batches": {
+      "stm32_pjrc": 20,
+      "feather_seeed": 19,
+      "displays": 17,
+      "sensors_io": 20
+    },
+    "source_zip_sha256": "486629e8aae5ff6779d34d28487ac2868826a909b9266354f7bb607142492fb3",
+    "library_file_id": "libfile_ab88b9d4b9088191b8939e84ea592834",
+    "physical_validation": false
+  },
+  "wave3": {
+    "status": "integrated_research_only",
+    "source_records": 57,
+    "accepted": 57,
+    "quarantined": 0,
+    "catalog_total": 208,
+    "batches": {
+      "stm32_pjrc": 16,
+      "feather": 15,
+      "displays": 14,
+      "pololu": 12
+    },
+    "source_zip_sha256": "6ebc89ed22e6c6f2af9b1136b6141651c4d8449550ccbeb284eb48b63981e971",
+    "library_file_id": "libfile_067c022aef7481919bd0b44f843f9ee6",
+    "physical_validation": false
+  },
+  "wave4": {
+    "status": "integrated_research_only",
+    "source_records": 46,
+    "accepted": 46,
+    "quarantined": 0,
+    "catalog_total": 254,
+    "batches": {
+      "stm32_pjrc": 12,
+      "feather": 12,
+      "displays": 10,
+      "sparkfun": 12
+    },
+    "source_zip_sha256": "808fce5e404489c4b1c4a995e25b92bd6b0e12addb7f91e8e36e8b1549d95b3d",
+    "library_file_id": "libfile_527c8034f71c8191aa725c97472566fe",
+    "physical_validation": false
+  },
+  "wave5": {
+    "status": "integrated_research_only",
+    "source_records": 36,
+    "accepted": 36,
+    "quarantined": 0,
+    "catalog_total": 290,
+    "batches": {
+      "sbc": 11,
+      "feather": 13,
+      "sensors": 12
+    },
+    "source_zip_sha256": "27f54dfdbf51df5e705c620539c0304a63035a50974c980a9553f0738bde2d14",
+    "library_file_id": "libfile_cf46a2f97b708191becb1859fbf41181",
+    "physical_validation": false
+  },
+  "enrichment_patches": {
+    "status": "descriptive_research_only_applied",
+    "accepted": 3,
+    "quarantined": 0,
+    "fields": [
+      "gender",
+      "population"
+    ],
+    "updated_ids": [
+      "sparkfun-lcd-23453",
+      "sparkfun-lcd-15143",
+      "sparkfun-lcd-29530"
+    ],
+    "enrichment_id": "wave5-display-population-2026-10-06",
+    "physical_validation": false,
+    "preinstalled_modified": false,
+    "originals_modified": false
+  },
+  "wave6": {
+    "status": "integrated_research_only",
+    "source_records": 8,
+    "accepted": 8,
+    "quarantined": 0,
+    "catalog_total": 298,
+    "single_row_comb_proposals": 0,
+    "excluded_groups": 37,
+    "source_zip_sha256": "db8478e0637309b385a93c8fa2cdf38cd0bf403436f567d73c13b4314920a51e",
+    "library_file_id": "libfile_142677bb4e808191aa15e873b43b3f62",
+    "physical_validation": false
+  },
+  "wave7": {
+    "status": "integrated_research_only",
+    "source_records": 12,
+    "accepted": 12,
+    "quarantined": 0,
+    "catalog_total": 310,
+    "single_row_comb_proposals": 0,
+    "excluded_groups": 192,
+    "source_zip_sha256": "c863f686600803651c920c6fdc89206650390513ec7dc36218f5c721474b21ce",
+    "library_file_id": "libfile_bd8295bc36848191a50060edf7cd067b",
+    "physical_validation": false
+  },
+  "wave1": {
+    "status": "integrated_research_only",
+    "source_records": 56,
+    "new_ids": 55,
+    "enriched_legacy_id": "raspberry-pi-pico",
+    "catalog_total": 75,
+    "verified_source_files": 41,
+    "physical_validation": false
+  },
+  "consolidated": {
+    "catalog_total": 320,
+    "research_records": 301,
+    "legacy_family_references": 19,
+    "descriptive_enrichments": 3,
+    "quarantined_records": 0,
+    "approved_model_revision": null,
+    "battery_r29_qualified": false,
+    "currently_prepared_batches_remaining": 0,
+    "public_release": false,
+    "held_research_leads_not_imported": 1
+  },
+  "wave8": {
+    "status": "integrated_research_only",
+    "source_records": 10,
+    "accepted": 10,
+    "quarantined": 0,
+    "catalog_total": 320,
+    "single_rows": 20,
+    "header_positions": 168,
+    "assembly_fact": "factory_soldered_male_headers",
+    "source_zip_sha256": "3011ea03f5dc77e0999d7bb54af3475c5d4cf91bcfa9ff174771934a4d3bdc1f",
+    "library_file_id": "libfile_cbae875168f8819186cab3e14e97a8e6",
+    "physical_validation": false,
+    "held_leads": [
+      {
+        "sku": "102010634",
+        "reason": "CAD/model mismatch",
+        "not_imported": true
+      }
+    ]
+  }
+}

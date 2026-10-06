@@ -1,0 +1,1184 @@
+{
+  "bundle_version": 1,
+  "wave": 2,
+  "created_utc": "2026-10-06T19:20:39.061946+00:00",
+  "purpose": "Source-preserving proposal for catalog integration; no physical or model approval",
+  "record_count_semantics": "Exact source records, including scoped revisions and assembly variants; not a unique base-family count",
+  "constraints": [
+    "Never flatten multi-row connectors",
+    "Keep physical edge rows separate",
+    "Preserve nullable or provisional dimensions and population",
+    "No physical fit, electrical compatibility, retention or model approval is established"
+  ],
+  "batches": [
+    {
+      "directory": "board_batch2/stm_teensy",
+      "catalog_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "records_key": "boards",
+      "record_count": 20
+    },
+    {
+      "directory": "board_batch2/feather",
+      "catalog_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "records_key": "boards",
+      "record_count": 19
+    },
+    {
+      "directory": "board_batch2/displays",
+      "catalog_file": "board_batch2/displays/catalog.json",
+      "records_key": "records",
+      "record_count": 17
+    },
+    {
+      "directory": "board_batch2/sensors",
+      "catalog_file": "board_batch2/sensors/sensor_catalog.json",
+      "records_key": "records",
+      "record_count": 20
+    }
+  ],
+  "record_index": [
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/0",
+      "source_id": "st-nucleo-f031k6",
+      "normalized_id": "st-nucleo-f031k6",
+      "name": "NUCLEO-F031K6"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/1",
+      "source_id": "st-nucleo-f042k6",
+      "normalized_id": "st-nucleo-f042k6",
+      "name": "NUCLEO-F042K6"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/2",
+      "source_id": "st-nucleo-f301k8",
+      "normalized_id": "st-nucleo-f301k8",
+      "name": "NUCLEO-F301K8"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/3",
+      "source_id": "st-nucleo-f303k8",
+      "normalized_id": "st-nucleo-f303k8",
+      "name": "NUCLEO-F303K8"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/4",
+      "source_id": "st-nucleo-l011k4",
+      "normalized_id": "st-nucleo-l011k4",
+      "name": "NUCLEO-L011K4"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/5",
+      "source_id": "st-nucleo-l031k6",
+      "normalized_id": "st-nucleo-l031k6",
+      "name": "NUCLEO-L031K6"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/6",
+      "source_id": "st-nucleo-l412kb",
+      "normalized_id": "st-nucleo-l412kb",
+      "name": "NUCLEO-L412KB"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/7",
+      "source_id": "st-nucleo-l432kc",
+      "normalized_id": "st-nucleo-l432kc",
+      "name": "NUCLEO-L432KC"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/8",
+      "source_id": "st-nucleo-f401re",
+      "normalized_id": "st-nucleo-f401re",
+      "name": "NUCLEO-F401RE"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/9",
+      "source_id": "st-nucleo-f411re",
+      "normalized_id": "st-nucleo-f411re",
+      "name": "NUCLEO-F411RE"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/10",
+      "source_id": "st-nucleo-f446re",
+      "normalized_id": "st-nucleo-f446re",
+      "name": "NUCLEO-F446RE"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/11",
+      "source_id": "st-nucleo-l476rg",
+      "normalized_id": "st-nucleo-l476rg",
+      "name": "NUCLEO-L476RG"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/12",
+      "source_id": "st-stm32f0discovery-mb1034-b00",
+      "normalized_id": "st-stm32f0discovery-mb1034-b00",
+      "name": "STM32F0DISCOVERY"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/13",
+      "source_id": "st-stm32f407g-disc1",
+      "normalized_id": "st-stm32f407g-disc1",
+      "name": "STM32F407G-DISC1"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/14",
+      "source_id": "pjrc-teensy-lc-bare",
+      "normalized_id": "pjrc-teensy-lc-bare",
+      "name": "Teensy LC (bare board)"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/15",
+      "source_id": "pjrc-teensy-32-bare",
+      "normalized_id": "pjrc-teensy-32-bare",
+      "name": "Teensy 3.2 (bare board)"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/16",
+      "source_id": "pjrc-teensy-35-bare",
+      "normalized_id": "pjrc-teensy-35-bare",
+      "name": "Teensy 3.5 (bare board)"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/17",
+      "source_id": "pjrc-teensy-36-bare",
+      "normalized_id": "pjrc-teensy-36-bare",
+      "name": "Teensy 3.6 (bare board)"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/18",
+      "source_id": "pjrc-teensy-40-bare",
+      "normalized_id": "pjrc-teensy-40-bare",
+      "name": "Teensy 4.0 (bare board)"
+    },
+    {
+      "batch": "stm_teensy",
+      "source_file": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "json_pointer": "/boards/19",
+      "source_id": "pjrc-teensy-41-bare",
+      "normalized_id": "pjrc-teensy-41-bare",
+      "name": "Teensy 4.1 (bare board)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/0",
+      "source_id": "adafruit-3458",
+      "normalized_id": "adafruit-3458",
+      "name": "Adafruit Feather 328P"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/1",
+      "source_id": "adafruit-2795",
+      "normalized_id": "adafruit-2795",
+      "name": "Adafruit Feather 32u4 Adalogger"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/2",
+      "source_id": "adafruit-2771",
+      "normalized_id": "adafruit-2771",
+      "name": "Adafruit Feather 32u4 Basic Proto"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/3",
+      "source_id": "adafruit-2796",
+      "normalized_id": "adafruit-2796",
+      "name": "Adafruit Feather M0 Adalogger"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/4",
+      "source_id": "adafruit-2772",
+      "normalized_id": "adafruit-2772",
+      "name": "Adafruit Feather M0 Basic Proto"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/5",
+      "source_id": "adafruit-3403",
+      "normalized_id": "adafruit-3403",
+      "name": "Adafruit Feather M0 Express"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/6",
+      "source_id": "adafruit-3857",
+      "normalized_id": "adafruit-3857",
+      "name": "Adafruit Feather M4 Express"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/7",
+      "source_id": "adafruit-3675",
+      "normalized_id": "adafruit-3675",
+      "name": "Adafruit ItsyBitsy 32u4 3V 8MHz"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/8",
+      "source_id": "adafruit-3677",
+      "normalized_id": "adafruit-3677",
+      "name": "Adafruit ItsyBitsy 32u4 5V 16MHz"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/9",
+      "source_id": "adafruit-3727",
+      "normalized_id": "adafruit-3727",
+      "name": "Adafruit ItsyBitsy M0 Express"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/10",
+      "source_id": "adafruit-3800",
+      "normalized_id": "adafruit-3800",
+      "name": "Adafruit ItsyBitsy M4 Express"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/11",
+      "source_id": "adafruit-4481",
+      "normalized_id": "adafruit-4481",
+      "name": "Adafruit ItsyBitsy nRF52840 Express"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/12",
+      "source_id": "adafruit-5325",
+      "normalized_id": "adafruit-5325",
+      "name": "Adafruit QT Py ESP32-S2"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/13",
+      "source_id": "adafruit-5426",
+      "normalized_id": "adafruit-5426",
+      "name": "Adafruit QT Py ESP32-S3 (8 MB Flash / No PSRAM)"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/14",
+      "source_id": "adafruit-4600",
+      "normalized_id": "adafruit-4600",
+      "name": "Adafruit QT Py SAMD21"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/15",
+      "source_id": "adafruit-3500",
+      "normalized_id": "adafruit-3500",
+      "name": "Adafruit Trinket M0"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/16",
+      "source_id": "seeed-xiao-nrf52840",
+      "normalized_id": "seeed-xiao-nrf52840",
+      "name": "Seeed Studio XIAO nRF52840"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/17",
+      "source_id": "seeed-xiao-nrf52840-sense",
+      "normalized_id": "seeed-xiao-nrf52840-sense",
+      "name": "Seeed Studio XIAO nRF52840 Sense"
+    },
+    {
+      "batch": "feather",
+      "source_file": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "json_pointer": "/boards/18",
+      "source_id": "seeed-xiao-samd21",
+      "normalized_id": "seeed-xiao-samd21",
+      "name": "Seeed Studio XIAO SAMD21 (Seeeduino XIAO v1.0)"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/0",
+      "source_id": "adafruit-661",
+      "normalized_id": "adafruit-661",
+      "name": "Monochrome 128x32 SPI OLED graphic display"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/1",
+      "source_id": "adafruit-931",
+      "normalized_id": "adafruit-931",
+      "name": "Monochrome 128x32 I2C OLED graphic display, original"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/2",
+      "source_id": "adafruit-4440",
+      "normalized_id": "adafruit-4440",
+      "name": "Monochrome 0.91 inch 128x32 I2C OLED STEMMA QT"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/3",
+      "source_id": "adafruit-938",
+      "normalized_id": "adafruit-938",
+      "name": "Monochrome 1.3 inch 128x64 OLED STEMMA QT"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/4",
+      "source_id": "adafruit-1374",
+      "normalized_id": "adafruit-1374",
+      "name": "Standalone Momentary Capacitive Touch Sensor AT42QT1010"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/5",
+      "source_id": "adafruit-1375",
+      "normalized_id": "adafruit-1375",
+      "name": "Standalone Toggle Capacitive Touch Sensor AT42QT1012"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/6",
+      "source_id": "adafruit-1362",
+      "normalized_id": "adafruit-1362",
+      "name": "Standalone 5-Pad Capacitive Touch Sensor AT42QT1070"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/7",
+      "source_id": "adafruit-1602",
+      "normalized_id": "adafruit-1602",
+      "name": "CAP1188 8-Key Capacitive Touch Sensor Breakout"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/8",
+      "source_id": "adafruit-1571",
+      "normalized_id": "adafruit-1571",
+      "name": "Resistive Touch Screen Controller STMPE610"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/9",
+      "source_id": "adafruit-1982",
+      "normalized_id": "adafruit-1982",
+      "name": "12-Key Capacitive Touch Sensor MPR121 STEMMA QT"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/10",
+      "source_id": "adafruit-684",
+      "normalized_id": "adafruit-684",
+      "name": "0.96 inch 96x64 RGB OLED with microSD, v2.0"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/11",
+      "source_id": "adafruit-1431",
+      "normalized_id": "adafruit-1431",
+      "name": "1.5 inch 128x128 Color OLED with microSD, original pre-EYESPI CAD"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/12",
+      "source_id": "adafruit-3787",
+      "normalized_id": "adafruit-3787",
+      "name": "1.54 inch 240x240 ST7789 TFT with microSD EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/13",
+      "source_id": "adafruit-4313",
+      "normalized_id": "adafruit-4313",
+      "name": "1.3 inch 240x240 ST7789 TFT with microSD EYESPI"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/14",
+      "source_id": "adafruit-2090",
+      "normalized_id": "adafruit-2090",
+      "name": "2.8 inch TFT with Capacitive Touch microSD EYESPI rev D"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/15",
+      "source_id": "adafruit-1770",
+      "normalized_id": "adafruit-1770",
+      "name": "2.8 inch ILI9341 Resistive Touch TFT microSD Breakout v2"
+    },
+    {
+      "batch": "displays",
+      "source_file": "board_batch2/displays/catalog.json",
+      "json_pointer": "/records/16",
+      "source_id": "adafruit-2478",
+      "normalized_id": "adafruit-2478",
+      "name": "2.4 inch ILI9341 Resistive Touch TFT microSD Breakout"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/0",
+      "source_id": "adafruit-1083",
+      "normalized_id": "adafruit-1083",
+      "name": "Adafruit ADS1015 12-bit ADC"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/1",
+      "source_id": "adafruit-1085",
+      "normalized_id": "adafruit-1085",
+      "name": "Adafruit ADS1115 16-bit ADC"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/2",
+      "source_id": "adafruit-2717",
+      "normalized_id": "adafruit-2717",
+      "name": "Adafruit TCA9548A I2C Multiplexer"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/3",
+      "source_id": "adafruit-815",
+      "normalized_id": "adafruit-815",
+      "name": "Adafruit PCA9685 16-Channel PWM/Servo Driver"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/4",
+      "source_id": "adafruit-1899",
+      "normalized_id": "adafruit-1899",
+      "name": "Adafruit HTU21D-F Temperature Humidity Sensor STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/5",
+      "source_id": "adafruit-2651",
+      "normalized_id": "adafruit-2651",
+      "name": "Adafruit BMP280 Pressure Temperature Sensor STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/6",
+      "source_id": "adafruit-935",
+      "normalized_id": "adafruit-935",
+      "name": "Adafruit MCP4725 12-bit DAC STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/7",
+      "source_id": "adafruit-757",
+      "normalized_id": "adafruit-757",
+      "name": "Adafruit BSS138 Four-channel Bidirectional Logic Level Converter"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/8",
+      "source_id": "adafruit-904",
+      "normalized_id": "adafruit-904",
+      "name": "Adafruit INA219 Current Sensor STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/9",
+      "source_id": "adafruit-4832",
+      "normalized_id": "adafruit-4832",
+      "name": "Adafruit HTU31 Temperature Humidity Sensor"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/10",
+      "source_id": "adafruit-4886",
+      "normalized_id": "adafruit-4886",
+      "name": "Adafruit AW9523 GPIO Expander LED Driver"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/11",
+      "source_id": "adafruit-4681",
+      "normalized_id": "adafruit-4681",
+      "name": "Adafruit BH1750 Light Sensor"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/12",
+      "source_id": "adafruit-3966",
+      "normalized_id": "adafruit-3966",
+      "name": "Adafruit BMP388 Pressure Altimeter STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/13",
+      "source_id": "adafruit-4646",
+      "normalized_id": "adafruit-4646",
+      "name": "Adafruit BNO055 9-DOF Orientation IMU STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/14",
+      "source_id": "adafruit-4821",
+      "normalized_id": "adafruit-4821",
+      "name": "Adafruit TMP117 Temperature Sensor"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/15",
+      "source_id": "adafruit-4885",
+      "normalized_id": "adafruit-4885",
+      "name": "Adafruit SHT40 Temperature Humidity Sensor"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/16",
+      "source_id": "adafruit-2809",
+      "normalized_id": "adafruit-2809",
+      "name": "Adafruit LIS3DH Triple-axis Accelerometer STEMMA QT"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/17",
+      "source_id": "adafruit-4438",
+      "normalized_id": "adafruit-4438",
+      "name": "Adafruit LSM6DSOX 6-DoF Accelerometer Gyroscope"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/18",
+      "source_id": "adafruit-3967",
+      "normalized_id": "adafruit-3967",
+      "name": "Adafruit VL53L1X Time of Flight Distance Sensor"
+    },
+    {
+      "batch": "sensors",
+      "source_file": "board_batch2/sensors/sensor_catalog.json",
+      "json_pointer": "/records/19",
+      "source_id": "adafruit-5346",
+      "normalized_id": "adafruit-5346",
+      "name": "Adafruit MCP23017 I2C GPIO Expander"
+    }
+  ],
+  "identity_adjustments": [],
+  "omitted_support_directories": [
+    ".git repository machinery",
+    "__pycache__ caches"
+  ],
+  "omitted_redundant_archives": [
+    {
+      "path": "board_batch2/feather/xiao-samd21.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch2/feather/xiao-nrf52840-sense.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    },
+    {
+      "path": "board_batch2/feather/xiao-nrf52840.zip",
+      "reason": "Relevant CAD extracted and included; omit redundant vendor archive and unrelated history/log files"
+    }
+  ],
+  "total_record_count": 76,
+  "normalized_proposal": {
+    "path": "headerBoards.proposed.json",
+    "record_count": 76,
+    "status": "proposal_only_not_repository_ready_without_safety_review"
+  },
+  "edition": "compact_integration",
+  "full_evidence_library_file_id": "libfile_c6789e1d167c81918270cd2b6bc765a8",
+  "full_evidence_zip_sha256": "4bdb4199f756fcf1e448b47d8ac18824d6baf63db6e568174549e082bba54d64",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 941,
+      "sha256": "52bbfd6a5c66426b04b027b2978b7b2cd5a14fa6f630dfcb9ec5cf2a177bf6a3"
+    },
+    {
+      "path": "board_batch2/displays/2.8-TFT-Breakout-PCB.tree.json",
+      "bytes": 298,
+      "sha256": "5e3ac881027f747894b0439bc74183cef647652d97cd70587c9ed56ca7beb942"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-1.3-inch-240x240-TFT-PCB.tree.json",
+      "bytes": 318,
+      "sha256": "b971a0d9f4a0465a54aff9c2c010a335d1037653f024cc070e5daafa9b970396"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-1.3inch-128x64-Mono-OLED-PCB.tree.json",
+      "bytes": 2677,
+      "sha256": "21e78f1f07549b061403ba226b2f35984ba99d002605854b3fa61a17cc52b149"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-1.54-inch-240x240-TFT-PCB.tree.json",
+      "bytes": 510,
+      "sha256": "31501cb1c736a39beef0887dffa429ae8833bedba5e40fb9b4c904c8c743eab2"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-1.5inch-Color-OLED-PCB.tree.json",
+      "bytes": 211,
+      "sha256": "36b1a853b4c063d6256682923697f33d746e0af1b59de23b8d013474dada450b"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-128x32-I2C-OLED-Breakout-PCB.tree.json",
+      "bytes": 2421,
+      "sha256": "9171093bd08454a33ee91658882ba6fd9fc7289c41797a758c23fc8032372cc9"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-128x32-SPI-OLED-breakout-board-PCB.tree.json",
+      "bytes": 1852,
+      "sha256": "b9ccb2cd220e0dc842938ad7ae17a81f137b3a8223d1ef835d00999e25fa830b"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-2.4-TFT-Breakout-PCB.tree.json",
+      "bytes": 209,
+      "sha256": "b3db3afa57a389ad54814d1bc3fed73c3ef3ba74b55787a56fbdd71e1c782c28"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-2.8-TFT-with-Capacitive-Touch-PCB.tree.json",
+      "bytes": 337,
+      "sha256": "d440ba01cc32827f25e52edb89b1f94e4aa6634a0e7eb265d375fbd766d00873"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-96x64-RGB-OLED-Breakout-PCB.tree.json",
+      "bytes": 320,
+      "sha256": "efd365b9b0b816403d6e4497b0d4158aa0b2a8e5da153a1f8a908e63e792805e"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-CAP1188-PCB.tree.json",
+      "bytes": 198,
+      "sha256": "b2af0aafdffe643689fcc4b74fd037abdaaa4c18df97495755f6a4074b343725"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-MPR121-PCB.tree.json",
+      "bytes": 397,
+      "sha256": "6adbb65ab2c6e2aae3e059cdf10a0580ef1d0f29675aba78c1dbf9355c7cc042"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-STMPE610-Breakout-PCB.tree.json",
+      "bytes": 199,
+      "sha256": "623c0533a5390fde400cd56de66b96ca832feee6c09110c955bf04e352fbfe7c"
+    },
+    {
+      "path": "board_batch2/displays/Adafruit-Standalone-Capacitive-Sensor-PCB.tree.json",
+      "bytes": 3538,
+      "sha256": "bf513a7b18ea0c13c93fdaa92b042234ea8a21f43c3f396784e24ae2c8400e4b"
+    },
+    {
+      "path": "board_batch2/displays/catalog.json",
+      "bytes": 112131,
+      "sha256": "b527a7821f363e825a82e87b75c5973f3def6ebcc15f84f99d2629e1bbffd91b"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-328P-PCB.tree.json",
+      "bytes": 1990,
+      "sha256": "b2700fcb5b4f477f609387fbf4623699135f6d67f4ecaadd3789f164bc8a7a66"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-328P-PCB/README.md",
+      "bytes": 2204,
+      "sha256": "c1a7b38f0d6d4ba0817a10b13532024b9080e7c637e16702bd07af8bf7472efe"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-32u4-Adalogger-PCB.tree.json",
+      "bytes": 2100,
+      "sha256": "78678fd9d19a3ae511d7fc9aea021b40beec22e0a7271ed170444a1312155adb"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-32u4-Adalogger-PCB/README.md",
+      "bytes": 1461,
+      "sha256": "ec7cdb42d3e4be800e2bb81542faf4a3befd15dea5d6d0650d899af08fa30ce6"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-32u4-Basic-Proto-PCB.tree.json",
+      "bytes": 2122,
+      "sha256": "0dbae45f46a4a35ac8d8a67da730e630f90c38f118763bb7b9360d4c206c5af5"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-32u4-Basic-Proto-PCB/README.md",
+      "bytes": 1852,
+      "sha256": "ce63c04bd594900bad2afca57b0f60532fd613d963a49b50a5a20fdc7d67e498"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M0-Adalogger-PCB.tree.json",
+      "bytes": 2367,
+      "sha256": "fe8e0c08dcc76297975848d5ce2b7282e26b9e6afd2c7d9c7a72b58d3a80ba4d"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M0-Adalogger-PCB/README.md",
+      "bytes": 1454,
+      "sha256": "63dceddf8935e9edead976a07d966183dc02ee0d1bed00aa016749dae14626e3"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M0-Basic-Proto-PCB.tree.json",
+      "bytes": 2379,
+      "sha256": "84969e92b4065b2850af235b492095c6673aef1b41303c9a5d76f20e56942c24"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M0-Basic-Proto-PCB/README.md",
+      "bytes": 1712,
+      "sha256": "1b2a9a60334f4db580118520b5ddbcf7b1fe4b3489408c5d7965e16c1820e216"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M0-Express-PCB.tree.json",
+      "bytes": 2056,
+      "sha256": "c3d07378aba08406fa427820c619c8e61b00de880378b549f1ac085ab5dcce2e"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M0-Express-PCB/README.md",
+      "bytes": 4048,
+      "sha256": "2412d0ca9b7f4b1e502396ed3ab7e4b5c47f5d03d3279eb58d5285bb7b3e165c"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M4-Express-PCB.tree.json",
+      "bytes": 2058,
+      "sha256": "dccc17f901f66f3201214c23c2101e393a9cc54c78688a3c2263727fc0a301f0"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Feather-M4-Express-PCB/README.md",
+      "bytes": 2013,
+      "sha256": "d3b0239eed9ad96f1bb7c4f39f8099039141fec2610efe426d9a8970ee8694c5"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-ItsyBitsy-32u4-PCB.tree.json",
+      "bytes": 3053,
+      "sha256": "9be47b093d00ffc5ddefeeca3f7fba7349e23cd4bd40486b4594a2f6c05e434d"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-ItsyBitsy-32u4-PCB/README.md",
+      "bytes": 2038,
+      "sha256": "f673093412a42717a90441aa4c93e9e9316b9b85d912f25fd9bd39a0bf0531bb"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-ItsyBitsy-M0-PCB/README.md",
+      "bytes": 2182,
+      "sha256": "62d2a0bb86c98eafff3ed4be9c05526152f1c1d3b9de9fe502dabc12b0edbf4d"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-ItsyBitsy-M4-Express-PCB.tree.json",
+      "bytes": 2058,
+      "sha256": "66c2e66839bb65939d260d7b38ad97cd6ae12e47914a301a6f641aa62e3d80af"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-ItsyBitsy-M4-Express-PCB/README.md",
+      "bytes": 2422,
+      "sha256": "686c9af7c1bd7a4bb60e98d695fb9871324c2e6b09eeffb02450d07439096b96"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-ItsyBitsy-nRF52840-Express-PCB/README.md",
+      "bytes": 4083,
+      "sha256": "05133191ba0409cf7b7eb0476aa0919c8048362ad41dd91d1675d655840e781c"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-QT-Py-ESP32-S2-PCB/README.md",
+      "bytes": 2873,
+      "sha256": "584f1c52e5bdf1b28d200b5960258b56480d58d9eb2e4479edbf88fbda64a156"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-QT-Py-ESP32-S3-PCB/README.md",
+      "bytes": 4387,
+      "sha256": "51660197dc5259da037eb5717af326d0677d673d8074bce62fe86051513e3c7a"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-QT-Py-PCB.tree.json",
+      "bytes": 1920,
+      "sha256": "10da641dee5f5756402b5aa8031d0475e321cf1da68e7bd5c47975db63e801fd"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-QT-Py-PCB/README.md",
+      "bytes": 3142,
+      "sha256": "4e02e976c2517d4ba505b020f717b156f13b12213179cb8aa2a31bc08c573b25"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Trinket-M0-PCB.tree.json",
+      "bytes": 1963,
+      "sha256": "2cb7bb6c1350859d4bd9e44829e109f6228909fff1a7315d9943690cfe577a89"
+    },
+    {
+      "path": "board_batch2/feather/Adafruit-Trinket-M0-PCB/README.md",
+      "bytes": 2307,
+      "sha256": "341512702358d40cd519a3a23af2ecfa56d509d910daafc2dede50aecbd69178"
+    },
+    {
+      "path": "board_batch2/feather/EVIDENCE.md",
+      "bytes": 4977,
+      "sha256": "6d01ceea4f616bc512b5a6d70c55011a09e56cc86389bb9f0eaa454b7a7cb508"
+    },
+    {
+      "path": "board_batch2/feather/VALIDATION.txt",
+      "bytes": 162,
+      "sha256": "d03ba3e013a3630ce1b6688e78c023fc93d8e10c52ca9c5097fe0388caca3f9f"
+    },
+    {
+      "path": "board_batch2/feather/cad-inspection.txt",
+      "bytes": 17640,
+      "sha256": "7888e786dbc2f17cfab1e3d45362d285f228cca1f2fd18e9934e7907aabbaed5"
+    },
+    {
+      "path": "board_batch2/feather/findings-ledger.json",
+      "bytes": 5431,
+      "sha256": "7746cbdb74911fa46beb1a7aaf2f92d3643ba8cd8af4b35f8e19074297ad3040"
+    },
+    {
+      "path": "board_batch2/feather/headerBoards.feather.proposed.json",
+      "bytes": 187297,
+      "sha256": "9a551debbcd5c859f77aa42f4558070bead429dfb0a703be7b8c6a3404ac7754"
+    },
+    {
+      "path": "board_batch2/feather/seeed-cad-inspection.txt",
+      "bytes": 25591,
+      "sha256": "81f2c2543b3106a971aebaf5d8b6c71813188e2832c85863bee5e7bf7eaf9105"
+    },
+    {
+      "path": "board_batch2/feather/xiao-nrf-links.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "board_batch2/feather/xiao-nrf52840-sense/extracted-pads.json",
+      "bytes": 26931,
+      "sha256": "ce26ebd4920bea1a1d784ace1318838006d5b990565ab76c8440f8049ea9c83c"
+    },
+    {
+      "path": "board_batch2/feather/xiao-nrf52840/extracted-pads.json",
+      "bytes": 25545,
+      "sha256": "c9893a087c03b29b534ed372bfbc2d797f144fdce500d91277928d78494a71ee"
+    },
+    {
+      "path": "board_batch2/feather/xiao-samd-links.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "board_batch2/sensors/4-Channel-Level-Shifter-PCB/README.md",
+      "bytes": 1500,
+      "sha256": "f56bd8b0c3c47a2b509fc8c77bc7914e2076e62ae529063863277344a16ee917"
+    },
+    {
+      "path": "board_batch2/sensors/4-Channel-Level-Shifter-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-16-Channel-PWM-Servo-Driver-PCB/README.md",
+      "bytes": 3383,
+      "sha256": "3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-16-Channel-PWM-Servo-Driver-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-AW9523-PCB/README.md",
+      "bytes": 4050,
+      "sha256": "52552a4d8e04c29348723c0dc7ae087362ed0c19270b878bd4b8606a549a3e10"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-AW9523-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BH1750-PCB/README.md",
+      "bytes": 1434,
+      "sha256": "6e5ef3fb68161f3ec3312a8683d35a66e30524b80ae3b26fed5e10baf69c97e5"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BH1750-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BMP280-Breakout-PCB/README.md",
+      "bytes": 2138,
+      "sha256": "2cb5e53bab24eda4ab9cc2fb24ac900c73acad1b70ffed3f45d90075478f988a"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BMP280-Breakout-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BMP3xx-PCB/README.md",
+      "bytes": 3362,
+      "sha256": "94f7f927cf84412c25d2ff02f56f64e6333c87c3cff6cea0cf72d66100cdf000"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BMP3xx-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BNO055-Breakout-PCB/README.md",
+      "bytes": 2209,
+      "sha256": "385b1ecead01d895b472a9c5feadb74346ee50cfb803fd50383d915d72cf6c31"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-BNO055-Breakout-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-HTU21D-Breakout-PCB/README.md",
+      "bytes": 1965,
+      "sha256": "3147563b9292625bcce431747f13059803f5ab0010e5dd5fbc30f4363149e127"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-HTU21D-Breakout-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-HTU31-PCB/README.md",
+      "bytes": 2561,
+      "sha256": "b9726319ef46a8a7b3c6c7c93077cedbfd726b333a52fae4d43634cd23d9e404"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-HTU31-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-INA219-Current-Sensor-PCB/README.md",
+      "bytes": 2342,
+      "sha256": "e1d42f1cb081a076868289c96bfac6a2a71b023e9047b46cb543ff532eccb541"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-LIS3DH-Breakout-PCB/README.md",
+      "bytes": 2139,
+      "sha256": "3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-LIS3DH-Breakout-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-LSM6DSOX-PCB/README.md",
+      "bytes": 802,
+      "sha256": "baeae983e8d6afd022d590fa3b07986c18d62cfbf57a65a75fa80cc6a9fd9f7b"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-LSM6DSOX-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-MCP23017-PCB/README.md",
+      "bytes": 2460,
+      "sha256": "ab9be33b7f74b10a0a9fc26b62c9eb2e1224b587daf97adc4ed2af3140a81a00"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-MCP23017-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-MCP4725-PCB/README.md",
+      "bytes": 1722,
+      "sha256": "beafee545c275b3687d5ba9d995017c10bf293f38f7a67b33081b6311dd8dc49"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-MCP4725-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-SHT40-PCB/README.md",
+      "bytes": 3348,
+      "sha256": "6cfc5d9ef78c678ea39cfa427f2833f27d2e3ee15e76d980055f87bbd17cb189"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-SHT40-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-TCA9548A-I2C-Multiplexer-PCB/README.md",
+      "bytes": 1798,
+      "sha256": "16acac7d1ec65ea430f426d0a597bc543af8d30e5e850a730ffa0eebaa76323d"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-TCA9548A-I2C-Multiplexer-PCB/license.txt",
+      "bytes": 22597,
+      "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-TMP117-PCB/README.md",
+      "bytes": 2236,
+      "sha256": "b14b1733d56b2e8d0c31b31566a835a9582acd0b72a4e207dda27482903272a2"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-TMP117-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-VL53L1X-PCB/README.md",
+      "bytes": 3162,
+      "sha256": "9b70df353bf5b8104d363e1262d1861f8fa6960ab6f28ec45d86570309b84f0d"
+    },
+    {
+      "path": "board_batch2/sensors/Adafruit-VL53L1X-PCB/license.txt",
+      "bytes": 22239,
+      "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+    },
+    {
+      "path": "board_batch2/sensors/ads/README.md",
+      "bytes": 394,
+      "sha256": "a351dedc6a1456437b0f3efe0006a1df5da7631f94b5cd3e564a8d0df5648a7d"
+    },
+    {
+      "path": "board_batch2/sensors/cad_raw.json",
+      "bytes": 217158,
+      "sha256": "7db33435b78ac9e74a90cf02bbf4ad0544bb02f6c50853e76ca4cfce5adb856e"
+    },
+    {
+      "path": "board_batch2/sensors/evidence.md",
+      "bytes": 10411,
+      "sha256": "ddfd62f7c2aa119b7cf51906aa43f83bead66ecadf42e67c43adf023694ccfc7"
+    },
+    {
+      "path": "board_batch2/sensors/extracted_summary.txt",
+      "bytes": 13858,
+      "sha256": "5ab63a5e665731c5505644b5cad035832bc4d35d2b5ddddfa8abd3a36cd2dfae"
+    },
+    {
+      "path": "board_batch2/sensors/sensor_catalog.json",
+      "bytes": 110475,
+      "sha256": "970ec7893214d218f16ab52ad165e4a3eeb301f809d36c30dfb71f05149151f5"
+    },
+    {
+      "path": "board_batch2/stm_teensy/EVIDENCE.md",
+      "bytes": 6403,
+      "sha256": "5bf3305eb602f51279bb3efa28ce91e1980feb94c93e586af2fe911386664ab8"
+    },
+    {
+      "path": "board_batch2/stm_teensy/MB1180.txt",
+      "bytes": 119314,
+      "sha256": "ca0f15513a914b4e8425893d609f50fe04ec65d542a2c95736f661fbbe796e5d"
+    },
+    {
+      "path": "board_batch2/stm_teensy/UM1472.txt",
+      "bytes": 140822,
+      "sha256": "0129e22d0c113e4ad1278d82e33905030c5b8d50b397365bc0c7a55006d485eb"
+    },
+    {
+      "path": "board_batch2/stm_teensy/UM1525.txt",
+      "bytes": 165076,
+      "sha256": "8625f64a954932ee56e65a27c657e95b22df8ff1658907ee5179f84ba407fd61"
+    },
+    {
+      "path": "board_batch2/stm_teensy/UM1724.txt",
+      "bytes": 286068,
+      "sha256": "5327176f20c35c719454626e53e534f91b57678e34b25ed54e309ce3bcb9308b"
+    },
+    {
+      "path": "board_batch2/stm_teensy/UM1956.txt",
+      "bytes": 111813,
+      "sha256": "7ed97d0d137da4ca63cfc3bf8e967edd8cbd9aa36e083626627d0350b58a2a8f"
+    },
+    {
+      "path": "board_batch2/stm_teensy/stm_teensy_headers.json",
+      "bytes": 178633,
+      "sha256": "af5e36854a7ff1f2efaaa7d078f2a3245eb91aa4d22b0911b508d2273a26c679"
+    },
+    {
+      "path": "full-evidence-manifest.json",
+      "bytes": 81327,
+      "sha256": "dc2710dc1a35aa0cb1d875e9d398b9c5552235280215216a55d6c662fea07f2f"
+    },
+    {
+      "path": "headerBoards.proposed.json",
+      "bytes": 1356939,
+      "sha256": "bef5a55b30cebef3b7fcadab165a1f93b0fb7fa911d0cac3dee2e4df5bea06af"
+    }
+  ]
+}

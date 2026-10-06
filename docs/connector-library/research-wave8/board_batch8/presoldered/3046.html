@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en-US" id="product-info-page">
+<head>
+<meta name="globalsign-domain-verification" content="395EvTKgTnwb20iKcV68nItcl7lbY_JFqavc5s-uhP" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="author" content="Adafruit Industries" />
+<meta name="generator" content="Adafuit Shopping Cart based on Zencart" />
+<link rel="mask-icon" href="https://cdn-shop.adafruit.com/static/adafruit_favicon.svg" color="#000000">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#1a1919">
+<meta name="msapplication-TileImage" content="https://cdn-shop.adafruit.com/static/mstile-144x144.png">
+<meta name="format-detection" content="telephone=no">
+
+<title>Assembled Adafruit Feather HUZZAH with ESP8266 With Headers : Adafruit Industries, Unique &amp; fun DIY electronics and kits</title><link rel="alternate" type="application/rss+xml" title="adafruit industries blog  RSS Feed" href="http://blog.adafruit.com/feed/" /> 
+<script>
+		var fbPixelEventQueue = [];
+	var dataLayer = [];
+	function gtag(){dataLayer.push(arguments);}
+	window.dataLayer = window.dataLayer || [];
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/includes/templates/shop2019/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/includes/templates/shop2019/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<script src="/includes/javascript/jquery.min.js"></script>
+
+<script>
+  var ada_env = {"env":"prod"};
+  var ada_cookie_domain = '.adafruit.com';
+    var ada_reduce_motion_cookie = document.cookie.match(/^(.*;)?\s*reduce_motion\s*=\s*1(.*)?$/) !== null;
+  var reduceMotion = false;
+  // reduce motion if customer set account flag
+  if( (typeof ada_reduce_motion !== 'undefined') && ada_reduce_motion === true ){
+	  reduceMotion = true;
+  }
+  // reduce motion if reduce_motion cookie is present
+  if( (typeof ada_reduce_motion_cookie !== 'undefined') && ada_reduce_motion_cookie === true ){
+	  reduceMotion = true;
+  }
+  // reduce motion if OS / browser flag is set and available via media query
+  var reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if( reduceMotionQuery.matches ){
+    reduceMotion = true;
+  }
+  // for use in es6 classes
+  window.reduceMotion = reduceMotion;
+
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="https://www.adafruit.com/includes/templates/shop2019/css/style.3429320c36.css" />
+<!-- Add fancyBox main JS and CSS files -->
+  <style>
+  #selectable1 .ui-selecting {
+    background: #ccc;
+  }
+  #selectable1 .ui-selected {
+    background: #999;
+  }
+  </style>
+<script type="text/javascript">
+
+// for un-stickying the right sidebar if the content height > viewport height
+function stickySidebarHeightCheck(estHeightOfWishlistContents){
+    if (document.querySelector('#prod-right-side')){
+        var sidebarHeight = document.querySelector('#prod-right-side').offsetHeight;
+        if ((sidebarHeight + estHeightOfWishlistContents) > window.innerHeight){
+            document.querySelector('#prod-right-side').classList.remove('prod-right-sticky');
+        }
+    }
+}
+
+$(document).ready(function(){
+
+	// for un-stickying the right sidebar if the content height > viewport height
+		// estimating the height of the wishlist container based on current CSS values.
+	// because the contents of the wishlist container are set to display:none for a11y reasons,
+	// we can't measure the actual expanded container size without introducing a flash of unstyled content.
+	var numberOfWishlists = 0;
+	// baseHeight = 20px margin-top of main content + 20px height of #create-btn-container incl top/bottom margins
+	//              + 10px extra height of UL if any wishlists present.
+	var baseHeight = (numberOfWishlists === 0) ? 72 : 82;
+	var listItemHeight = 25;
+	var estHeightOfWishlistContents = (listItemHeight * numberOfWishlists) + listItemHeight*2; // leaving a bit of room in case some wishlist names are long enough for linebreaks
+	stickySidebarHeightCheck(estHeightOfWishlistContents);
+});
+
+
+
+
+$(document).ready(function(){
+    if($('.stacky_num').length) {
+		$('#prod-add-qty').keyup(function(){
+			stacky_val = $(".stacky_num").val();
+			if( isNaN(stacky_val) || (parseFloat(stacky_val) != parseInt(stacky_val) ) )
+			stacky_val = 1;
+			atc_val = $("#prod-add-qty").val();
+			stacky_val *= atc_val;
+
+			$(".stacky_num").html(parseInt(stacky_val));
+			$(".stacky-checkbox").prop('value', stacky_val);
+		});
+		$('#prod-add-qty-mobile').keyup(function(){
+			stacky_val = $(".stacky_num").val();
+			if( isNaN(stacky_val) || (parseFloat(stacky_val) != parseInt(stacky_val) ) )
+			stacky_val = 1;
+			atc_val = $("#prod-add-qty").val();
+			stacky_val *= atc_val;
+
+			$(".stacky_num").html(parseInt(stacky_val));
+			$(".stacky-checkbox").prop('value', stacky_val);
+		});
+	}
+});
+
+$(document).ready(function(){
+	$('.toggle-link').click(function(){
+		$(this).attr(
+			'aria-expanded',
+			($(this).attr('aria-expanded') === 'false') ? 'true' : 'false'
+		);
+	});
+
+	$('#prod-info').fitVids();
+
+});
+
+// meta group scripts
+$(document).ready(function(){
+
+	$('.meta_pid_dropdown').change(function(){
+		meta_selected($(this).find(":selected"));
+	});
+
+	// pass the entire element into meta_selected() - so far this can be an <option>, <div>
+	function meta_selected($el){
+		if($el.data('part-id'))
+			window.location = '/product/'+$el.data('part-id');
+
+	}
+});
+
+// enable lite youtube embeds
+$(document).ready(function(){
+	if(!!("srcdoc" in document.createElement("iframe"))){
+		$('iframe[srcdoc]').addClass("cansrcdoc");
+	}
+});
+
+</script>
+
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="adafruit">
+<meta name="twitter:creator" content="@adafruit">
+<meta name="twitter:title" content="Assembled Adafruit Feather HUZZAH with ESP8266 With Headers">
+<meta name="twitter:description" content="Feather is the flagship development board from Adafruit, and like its namesake, it is thin, light, and lets you fly! We designed Feather to be a new standard for portable microcontroller  ...">
+<meta name="twitter:image:src" content="https://www.adafruit.com/images/480x360/3046-07.jpg">
+<meta name="twitter:data1" content="$18.95 USD">
+<meta name="twitter:label1" content="Price">
+<meta name="twitter:data2" content="Out of stock">
+<meta name="twitter:label2" content="Stock">
+<meta name="twitter:domain" content="adafruit.com">
+
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Assembled Adafruit Feather HUZZAH with ESP8266 With Headers">
+<meta property="og:url" content="https://www.adafruit.com/product/3046">
+<meta property="og:image" content="https://www.adafruit.com/images/480x360/3046-07.jpg">
+<meta name="description" content="Feather is the flagship development board from Adafruit, and like its namesake, it is thin, light, and lets you fly! We designed Feather to be a new standard for portable microcontroller  ...">
+<meta property="product:price:amount" content="18.95">
+<meta property="product:price:currency" content="USD">
+
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+    var wishlistTimeout = new Array();
+    var wishlistMobileTimeout = new Array();
+    var wishlistNames = null; 
+
+    // Wishlist Stuff
+    if($('#add-btn').length) {
+
+        function wishlist_name_timeout(wid, type, length){
+
+            var name = $('#wishlabel-'+wid).data('name');
+            var label = $('#wishlabel-'+wid);
+            var mobileLabel = $('#wishlabel-mobile-'+wid);
+            if (wishlistTimeout[wid] != 0) {
+                clearTimeout(wishlistTimeout[wid]);
+                wishlistTimeout[wid] = 0;
+                clearTimeout(wishlistMobileTimeout[wid]);
+                wishlistMobileTimeout[wid] = 0;
+            }
+            if(type == 'SAVED'){
+                label.css('color','#178c33').html('SAVED');
+                mobileLabel.css('color','#178c33').html('SAVED');
+            }
+            else{
+                label.css('color','#ff0000').html('REMOVED');
+                mobileLabel.css('color','#ff0000').html('REMOVED');
+            }
+            
+            wishlistTimeout[wid] = setTimeout(function(){ label.css('color', '#000'); label.html(name); }, 3000);
+            wishlistMobileTimeout[wid] = setTimeout(function(){ mobileLabel.css('color', '#000'); mobileLabel.html(name); }, 3000);
+        }
+
+        function IsNumeric(input) {
+            return (input - 0) == input && (''+input).trim().length > 0;
+        }
+
+        // We run this on page load and every time there's a new wishlist created.
+        function hookup_checkboxes() {
+            $('.wid-checkbox, .wid-checkbox-mobile').off('change');
+            $('.wid-checkbox, .wid-checkbox-mobile').on('change',function(){
+
+                var pid = $(this).data('pid');
+
+                if($(this).is(':checked')) {
+                    // Ajax the wishlist form
+                    var wid = $(this).val();
+                    var qty = 1;
+                    if ($('#prod-add-qty').length > 0){
+                        qty = $('#prod-add-qty').val();
+                    }
+                    // #prod-add-qty is a number input that shows up in tpl_add_to_cart_form, but that template doesn't show up if the product is out of stock. so - qty defaults to 1, or to the value of the #prod-add-qty input if we have it. 
+
+                    var data = {
+                        'action' : 'add_to_wishlist',
+                        'wishlist_id' : wid,
+                        'part_id': pid,
+                        'qty': qty,
+                        'securityToken' : '8436bb623581520785dedc91dd4b4626'
+                    };					
+
+                    $.post('/api/wishlists.php',data)
+                    .done(function(data) {
+                        if(typeof data.error === 'undefined'){
+                            $('#wchkmbl-'+data.wishlist.wishlist_id).prop('checked', true);
+                            wishlist_name_timeout(data.wishlist.wishlist_id, 'SAVED', 3000);
+                        }
+                        gtag("event", "add_to_wishlist", {
+                            items: [{
+                                item_id: pid,
+                                quantity: qty
+                            }],
+                        });
+                    });
+                } else {
+                    // Ajax the delete form
+                    var wid = $(this).val();
+                    var data = {
+                        'action' : 'delete_from_wishlist',
+                        'wishlist_id' : wid,
+                        'part_id' : pid,
+                        'securityToken' : '8436bb623581520785dedc91dd4b4626'
+                    };
+                    $.post('/api/wishlists.php',data)
+                    .done(function(data) { 
+                        if(typeof data.error === 'undefined'){
+                            $('#wchkmbl-'+data.wishlist.wishlist_id).prop('checked', false);
+                            wishlist_name_timeout(data.wishlist.wishlist_id, 'REMOVED', 3000);
+                        }
+                    });
+                }
+            }); 
+            
+        }
+        
+        // Start the whole thing up!
+        hookup_checkboxes();
+
+        $('#create-btn, #create-btn-mobile').click(function (e) {
+            e.preventDefault();
+            $('#new-wishlist-name').val('');
+            $('#new-wishlist-description').val('');
+            var modal = $('#create-wishlist-modal');
+            modal.modal('show');
+        });
+        
+        $('#create-submit').click(function (e) {
+            e.preventDefault();
+            // Create the new wishlist
+            var newWishlistName = $('#new-wishlist-name').val();
+            var newWishlistDescription = $('#new-wishlist-description').val();
+
+            var data = {
+                'action' : 'create_wishlist',
+                'wishlist_name' : newWishlistName,
+                'wishlist_description' : newWishlistDescription,
+                'securityToken' : '8436bb623581520785dedc91dd4b4626'
+            }
+            
+            $.post('/api/wishlists.php', data)
+                .done(function(data) {
+                    if(!data.error){
+                        //add it to the desktop and mobile lists
+                        $('#add-to-wishlist-container ul').append('<li class="clearfix"><input class="wid-checkbox" id="wchk-'+data.wishlist.wishlist_id+'" type="checkbox" data-pid="3046" value="'+data.wishlist.wishlist_id+'" name="wid"><label for="wchk-'+data.wishlist.wishlist_id+'" class="wishlabel" data-id="'+data.wishlist.wishlist_id+'" id="wishlabel-'+data.wishlist.wishlist_id+'" data-name="'+data.wishlist.wishlist_name+'">'+data.wishlist.wishlist_name+'</label></li>');
+                        $('#add-to-wishlist-container-mobile ul').append('<li class="clearfix"><input id="wchkmbl-'+data.wishlist.wishlist_id+'" class="wid-checkbox-mobile" type="checkbox" value="'+data.wishlist.wishlist_id+'" name="wid"><label for=="wchkmbl-'+data.wishlist.wishlist_id+'" class="wishlabel" data-id="'+data.wishlist.wishlist_id+'" id="wishlabel-mobile-'+data.wishlist.wishlist_id+'" data-name="'+data.wishlist.wishlist_name+'">'+data.wishlist.wishlist_name+'</label></li>');
+                        // Add it to the wishlist names
+                        wishlistNames[data.new_wishlist_id] = data.new_wishlist_name;
+                        // And hook up the checkboxes
+                        hookup_checkboxes();
+                    }
+                    // Finally, hide the modal
+                    var modal = $('#create-wishlist-modal');
+                    modal.modal('hide');
+                });
+        });
+        
+        $('#add-btn').on('click',function(){
+                            window.location.href =	'/index.php?main_page=login';
+                    });
+        
+        $('#add-btn-mobile').on('click',function(){
+                            window.location.href =	'/index.php?main_page=login';
+                    });
+    }
+});
+
+
+</script>
+
+
+<script defer src="/includes/templates/shop2019/jscript/lite-yt-embed.js"></script>
+
+<!--[if lt IE 9]>
+<script src="/includes/templates/shop2019/jscript/respond.min.js"></script>
+<script src="/includes/templates/shop2019/jscript/html5shiv.min.js"></script>
+<script>
+$(document).ready(function(){
+$("a > button").on('click', function() { 
+    location.href = $(this).closest("a").attr("href");
+});
+});
+</script>
+<![endif]-->
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.adafruit.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.adafruit.com/search?g=1&q={search_term}",
+    "query-input": "required name=search_term"
+  }
+}
+</script>
+
+</head>
+<body class="no-js ">
+ <site-messages class="messages-container" ><div role="alert" data-msg-id="115" class="messaging-container messaging-halloween">
+	<div class="msg-container">
+		<div class="message">⏰ The Halloween countdown has begun 🎃👻🐍 Are you ready to <a href="https://www.adafruit.com/explore/halloween-2026">turn UP the TERROR!</a>?</div>
+	</div>
+</div></site-messages><form action="#main" onsubmit="skipNavigation(event)">
+        <span class="sr-only">&nbsp;</span>
+    <button type="submit" id="main-nav-skip-navigation" class="blue-button-large">Skip Navigation</button>
+</form>
+ 
+ <div id="outer-wrapper">
+    <div id="inner-wrapper">
+    
+<div class="header-wrap">
+	<header id="adafruit-header">
+
+		<div id="site-header" >
+			<div class="row-content">
+				<sites-navigation>
+    <nav aria-label="Adafruit sites">
+        <ol>
+            <li><a aria-current="true" href="https://www.adafruit.com/">Shop</a></li><li><a href="https://learn.adafruit.com/">Learn</a></li><li><a href="https://blog.adafruit.com/">Blog</a></li><li><a href="https://forums.adafruit.com/">Forums</a></li><li><a href="https://io.adafruit.com/">IO</a></li><li><a href="https://www.youtube.com/adafruit/live">LIVE!</a></li><li><a href="https://www.adafruit.com/adabox">AdaBox</a></li>
+        </ol>
+    </nav>
+</sites-navigation>				<div id="nav_account">
+											<span class="sign-in"><a href="https://www.adafruit.com/login">Sign In</a></span>
+											<div class="cart">
+						<a aria-live="polite" href="https://www.adafruit.com/shopping_cart"><i class="fa fa-shopping-cart"></i>
+							<span class="sr-only">Shopping cart, </span><span class="cart-count">0</span><span class="sr-only">items.</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="mobile-header-wrap">
+			<div id="mobile-header">
+				<a class="mobile-header-logo" href="https://www.adafruit.com">
+
+											<img alt="Adafruit Logo" height="50" width="50" id="logo_small" src="/includes/templates/shop2019/images/adafruit_logo_small.png" title="Adafruit"/>
+									</a>
+				<button id="mobile-menu-button" class="c-hamburger c-hamburger--htx" aria-controls="MobileNav" aria-expanded="false">
+					<span>toggle menu</span>
+					<i id="hamburger-arrow"></i>
+				</button>
+				<div id="MobileSearchWrapper" class="mobile-search">
+					<form id="MobileSearchForm" action="https://www.adafruit.com/search" method="get" role="search">
+						<label id="MobileSearchLabel" for="MobileSearch" style="display:none;">Search</label>
+						<input class="search"  type="text" id="MobileSearch" aria-labelledby="MobileSearchLabel" name="q" placeholder="" autocomplete="off" spellcheck="false" autocapitalize="none"/>
+						<button aria-label="Search" id="MobileSearchBtn" class="fa" type="submit"></button>
+					</form>
+				</div>
+				<a aria-live="polite" aria-atomic="true" class="mobile-header-cart" href="/shopping_cart">
+					<span class="sr-only">Shopping cart, </span><span class="cart-count" style="display:none;">0</span><span class="sr-only">items.</span>
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<nav id="MobileNav">
+				<div class="results-scroll-pane">
+					<div class="flex-col load-more load-prev">
+						<img alt="Adafruit Logo"  height="50" width="50" src="/includes/templates/shop2019/images/adafruit_logo_small.png">
+					</div>
+					<div class="flex-col load-more load-next">
+						<img alt="Adafruit Logo"  height="50" width="50" src="/includes/templates/shop2019/images/adafruit_logo_small.png">
+					</div>
+				</div>
+				<div class="mobile-menu-wrap">
+					<ul id="mm-topmenu" class="menu" hidden>
+	<li class="login direct-link">
+					<a href="/login">Sign In</a> | <a href="https://accounts.adafruit.com/users/sign_up/">Create Account</a>
+		 
+	</li>
+	<li><a href="/new">New Products</a></li>
+	<li><a href="/featured">Featured Products</a></li>
+	<li><a href="/explore">Gift Ideas</a></li>
+	<li class="mm-featured-categories"><a href="/category/965">Circuit Playground</a></li>
+	<li class="mm-featured-categories"><a href="/category/943">Feather</a></li>
+	<li class="mm-featured-categories"><a href="/category/105">Raspberry Pi</a></li>
+	<li class="mm-featured-categories"><a href="/category/17">Arduino</a></li>
+	<li class="mm-featured-categories"><a href="/category/37">LEDs</a></li>
+	<li class="direct-link"><a href="/categories">All Categories</a></li>
+	<li><a href="/support">Support</a></li>
+	<li><a href="/shipping">Shipping & Returns</a></li>
+	<li><a href="/about">About Us</a></li>
+</ul>
+				</div>
+			</nav>
+		</div>
+		<div id="shop-header">
+			<div class="row-content">
+				<div class="left-content">
+					<div class="logo-container">
+						<a href="https://www.adafruit.com">
+													<img alt="Adafruit Logo" height="40" width="115" id="logo" src="/includes/templates/shop2019/images/adafruit-logo.png" title="Adafruit"/>
+												</a>
+					</div>
+
+					<ul class="main-nav-links">
+						<li id="desktopMenuContainer">
+							<a id="desktopMenuButton" href="#adafruit-header">Products</a>
+							<nav id="desktopMenuFlyout" aria-labelledby="desktopMenuFlyoutProductsLabel">
+								<h2 class="sr-only" id="desktopMenuFlyoutProductsLabel">Products navigation</h2>
+								<div class="three-panels">
+									<div class="first-column">
+										<div class="content-header">
+											<h3 class="title">Shop Categories</h3><a class="view-all-count" href="/categories">view all<span class="sr-only"> categories</span></a>
+										</div>
+										<div class="categories">
+											<ul>
+											<li><a href='/category/17'>Arduino</a></li><li><a href='/category/956'>CircuitPython</a></li><li><a href='/category/965'>Circuit Playground</a></li><li><a href='/category/943'>Feather</a></li><li><a href='/category/1005'>STEMMA / STEMMA QT</a></li><li><a href='/category/63'>LCDs & Displays</a></li><li><a href='/category/105'>Raspberry Pi</a></li><li><a href='/category/875'>RP2040 / Pico</a></li><li><a href='/category/234'>Accessories</a></li><li><a href='/category/889'>Batteries</a></li><li><a href='/category/40'>Books</a></li><li><a href='/category/42'>Breakout Boards</a></li><li><a href='/category/33'>Cables</a></li><li><a href='/category/54'>Components & Parts</a></li><li><a href='/category/851'>Development Boards</a></li><li><a href='/category/150'>E-Ink / ThinkInk</a></li><li><a href='/category/14'>Gift Certificates</a></li><li><a href='/category/203'>Kits & Projects</a></li><li><a href='/category/37'>LEDs</a></li><li><a href='/category/1020'>Mechanical Keyboards</a></li><li><a href='/category/168'>Neopixels</a></li><li><a href='/category/44'>Power</a></li><li><a href='/category/82'>Prototyping</a></li><li><a href='/category/227'>Robotics & CNC</a></li><li><a href='/category/35'>Sensors</a></li><li><a href='/category/8'>Tools</a></li><li><a href='/category/65'>Wearables</a></li><li><a href='/category/112'>Wireless</a></li><li><a href='/category/1025'>Clearance Sale</a></li>											</ul>
+										</div>
+									</div>
+																												<div class="middle-column">
+											<div class="content-header">
+											<h3 class="title">New Products</h3><a class="view-all-count" href="/new">view all<span class="sr-only"> New Products</span></a>
+											</div>
+											<ul>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6526-00.jpg" alt="Angled Shot of the NeoPixel Ring - 12 x 5050 WWA with Integrated Drivers." loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6526">
+														<div>
+															<p>NeoPixel Ring - 12 x 5050 WWA with Integrated Drivers</p>
+															<p class="price">$8.95</p>
+															<div class="sr-only" role="img" aria-label="Angled Shot of the NeoPixel Ring - 12 x 5050 WWA with Integrated Drivers."></div>
+														</div>
+													</a>
+												</li>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6527-00.jpg" alt="Angled Shot of the NeoPixel Ring - 16 x 5050 WWA LED with Integrated Drivers" loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6527">
+														<div>
+															<p>NeoPixel Ring - 16 x 5050 WWA LED with Integrated Drivers</p>
+															<p class="price">$9.95</p>
+															<div class="sr-only" role="img" aria-label="Angled Shot of the NeoPixel Ring - 16 x 5050 WWA LED with Integrated Drivers"></div>
+														</div>
+													</a>
+												</li>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6525-00.jpg" alt="Angled Shot of the Adafruit TCS3448 Multi-Spectral Sensor" loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6525">
+														<div>
+															<p>Adafruit TCS3448 14-Channel Light / Color Sensor Breakout</p>
+															<p class="price">$19.95</p>
+															<div class="sr-only" role="img" aria-label="Angled Shot of the Adafruit TCS3448 Multi-Spectral Sensor"></div>
+														</div>
+													</a>
+												</li>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6524-00.jpg" alt="Angled Shot of the Adafruit TSL2585 Digital UVA and Ambient Light Sensor." loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6524">
+														<div>
+															<p>Adafruit TSL2585 Digital UVA and Ambient Light Sensor</p>
+															<p class="price">$7.50</p>
+															<div class="sr-only" role="img" aria-label="Angled Shot of the Adafruit TSL2585 Digital UVA and Ambient Light Sensor."></div>
+														</div>
+													</a>
+												</li>
+																						</ul>
+										</div>
+																			<div class="middle-column">
+											<div class="content-header">
+											<h3 class="title">Featured Products</h3><a class="view-all-count" href="/featured">view all<span class="sr-only"> Featured Products</span></a>
+											</div>
+											<ul>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6407-05.jpg" alt="Temperature and pressure sensor breakout displaying sensor information on a connected TFT display breakout." loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6407">
+														<div>
+															<p>Adafruit BMP581 I2C or SPI Temperature and Pressure Sensor</p>
+															<p class="price">$9.95</p>
+															<div class="sr-only" role="img" aria-label="Temperature and pressure sensor breakout displaying sensor information on a connected TFT display breakout."></div>
+														</div>
+													</a>
+												</li>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6200-10.jpg" alt="Angled shot of assembled mini computer PCB with plate." loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6200">
+														<div>
+															<p>Adafruit Fruit Jam - Mini RP2350 Computer</p>
+															<p class="price">$39.95</p>
+															<div class="sr-only" role="img" aria-label="Angled shot of assembled mini computer PCB with plate."></div>
+														</div>
+													</a>
+												</li>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/product-videos/320x240/6353-05.jpg" alt="Video of a motor stepper driver board driving a stepper motor connected to a microcontroller." loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6353">
+														<div>
+															<p>Adafruit STSPIN220 Stepper Motor Driver Breakout Board</p>
+															<p class="price">$6.50</p>
+															<div class="sr-only" role="img" aria-label="Video of a motor stepper driver board driving a stepper motor connected to a microcontroller."></div>
+														</div>
+													</a>
+												</li>
+																							<li class="featProductRow">
+													<div aria-hidden="true">
+																													<img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/100x75/6354-06.jpg" alt="Demo Shot of the Constant Current Boost Converter powering LED Letter Filaments that spell out &quot;Adafruit&quot;." loading="lazy" />																											</div>
+													<a href="https://www.adafruit.com/product/6354">
+														<div>
+															<p>Adafruit TPS61169 Constant Current Boost Converter for LEDs</p>
+															<p class="price">$4.50</p>
+															<div class="sr-only" role="img" aria-label="Demo Shot of the Constant Current Boost Converter powering LED Letter Filaments that spell out &quot;Adafruit&quot;."></div>
+														</div>
+													</a>
+												</li>
+																						</ul>
+										</div>
+																	</div>
+							</nav>
+						</li>
+						<li>
+							<a href="/explore">Gift Ideas</a>
+						</li>
+						<li>
+							<a href="/new">What's New</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right-content">
+					<div class="search-wrapper">
+						<form action="/search" method="get" role="search">
+							<input  id="search" aria-labelledby="searchBtn" type="text" name="q" autocapitalize="none" spellcheck="false" autocomplete="off" data-page="">
+							<button type="submit" id="searchBtn"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<nav aria-label="Breadcrumbs" class="breadcrumbs">
+    <div class="container">
+                <a href="/category/943">Feather</a>
+                 / 
+                        <a href="/category/946">Boards</a>
+                <span class="hidden-xs-inline">/</span>
+                        <span class="hidden-xs-inline">Assembled Adafruit Feather HUZZAH with ESP8266 With Headers</span>
+    </div>
+</nav>
+                <div class="main-container container" id="main" role="main" tabindex="-1">
+		    <div id="full-overlay"></div>
+		    
+<script type="application/ld+json">
+{"@context":"http:\/\/schema.org","@type":"Product","name":"Assembled Adafruit Feather HUZZAH with ESP8266 With Headers","description":"Feather is the flagship development board from Adafruit, and like its namesake, it is thin, light, and lets you fly! We designed Feather to be a new standard for portable microcontroller cores.","sku":3046,"image":["https:\/\/cdn-shop.adafruit.com\/\/970x728\/3046-07.jpg","https:\/\/cdn-shop.adafruit.com\/\/970x728\/3046-11.jpg","https:\/\/cdn-shop.adafruit.com\/\/970x728\/3046-10.jpg","https:\/\/cdn-shop.adafruit.com\/\/970x728\/3046-09.jpg","https:\/\/cdn-shop.adafruit.com\/\/970x728\/3046-08.jpg","https:\/\/cdn-shop.adafruit.com\/\/970x728\/3046-06.jpg"],"offers":{"@type":"Offer","availability":"http:\/\/schema.org\/OutOfStock","price":18.95,"priceCurrency":"USD","itemCondition":"http:\/\/schema.org\/NewCondition","url":"https:\/\/adafruit.com\/product\/3046","description":"Feather is the flagship development board from Adafruit, and like its namesake, it is thin, light, and lets you fly! We designed Feather to be a new standard for portable microcontroller cores.This is the Assembled Adafruit Feather HUZZAH ESP8266 with headers - our take on an &#39;all-in-one&#39; ESP8266 WiFi development board with built-in USB and battery charging and ready to go immediately! It&#39;s an&nbsp;ESP8266 WiFi module with all the extras you need, ready to rock!&nbsp;We have other boards in the Feather family, check&#39;em out here.At the Feather HUZZAH&#39;s heart is an ESP8266 WiFi microcontroller clocked at 80 MHz and at 3.3V logic. This microcontroller contains a Tensilica chip core as well as a full WiFi stack. You can program the microcontroller using the Arduino IDE for an easy-to-run Internet of Things core. We wired up a USB-Serial chip that an upload code at a blistering 921600 baud for fast development time. It also has auto-reset so no noodling with pins and reset button pressings.To make it easy to use for portable projects, we added a connector for any of our 3.7V Lithium polymer batteries and built-in battery charging. You don&#39;t need a battery, it will run just fine straight from the micro USB connector. But, if you do have a battery, you can take it on the go, then plug in the USB to recharge. The Feather will automatically switch over to USB power when it&#39;s available.Here&#39;s some handy specs!Measures 2.0&quot; x 0.9&quot; x 0.28&quot; (51mm x 23mm x 8mm) without headers soldered inLight as a (large?) feather - 9.7 gramsESP8266 v1.1 @ 80MHz with 3.3V logic\/power4MB of FLASH (32 MBit)Built in WiFi 802.11 b\/g\/n3.3V regulator with 500mA peak current outputCP2104 USB-Serial converter onboard with 921600 max baudrate for uploadingAuto-reset support for getting into bootload mode before firmware upload9 x GPIO pins - can also be used as I2C and SPI1 x analog inputs 1.0V maxBuilt-in 100mA LiPoly charger with charging status indicator LED, can also cut a trace to disable the chargerPin #0 red LED for general purpose blinking. Pin #2 blue LED for bootloading debug &amp; general purpose blinkingPower\/enable pin4 mounting holesReset buttonComes fully assembled and tested, with a USB interface that lets you quickly use it with the Arduino IDE or NodeMCU Lua (it comes preprogrammed with the Lua interpreter).&nbsp;This version of the board has also been pre-soldered, so you can&nbsp;plug it right into a solderless breadboard. Click here for the un-soldered version.&nbsp;Lipoly battery and USB cable not included&nbsp;(but we do have lots of options in the shop if you&#39;d like!)Check out our tutorial for all sorts of details, including schematics, files, IDE instructions, power management, and more!"}}</script>
+
+
+<div class="row product-info">
+
+	<div class="mobile-product-header">
+		<h1 class="product-name-large">Assembled Adafruit Feather HUZZAH with ESP8266 With Headers</h1>
+
+		<div class="product_id">Product ID: <span>3046</span></div>
+		<div class="product-price">
+			<span>$18.95</span>			
+		</div>
+	</div>
+
+
+	<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+			
+
+		
+<section class="product-image-gallery slideshow-gallery" aria-labelledby="gallery-heading" data-gallery-type="touch-carousel" data-gallery='[{"type":"image","alt_text":"Angled shot of rectangular microcontroller with headers.","thumbnail":"https:\/\/cdn-shop.adafruit.com\/145x109\/3046-07.jpg","thumbnail-srcset":"https:\/\/cdn-shop.adafruit.com\/480x360\/3046-07.jpg 480w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-07.jpg 310w, https:\/\/cdn-shop.adafruit.com\/230x173\/3046-07.jpg 230w, https:\/\/cdn-shop.adafruit.com\/145x109\/3046-07.jpg 145w, https:\/\/cdn-shop.adafruit.com\/82x62\/3046-07.jpg 82w","thumbnail-sizes":"(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px","gallery":{"width":970,"height":728,"file":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-07.jpg","srcset":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-07.jpg 970w, https:\/\/cdn-shop.adafruit.com\/640x480\/3046-07.jpg 640w, https:\/\/cdn-shop.adafruit.com\/480x360\/3046-07.jpg 480w, https:\/\/cdn-shop.adafruit.com\/413x309\/3046-07.jpg 413w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-07.jpg 310w","sizes":"(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"}},{"type":"image","alt_text":"Top-down view of rectangular microcontroller with headers. ","thumbnail":"https:\/\/cdn-shop.adafruit.com\/145x109\/3046-11.jpg","thumbnail-srcset":"https:\/\/cdn-shop.adafruit.com\/480x360\/3046-11.jpg 480w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-11.jpg 310w, https:\/\/cdn-shop.adafruit.com\/230x173\/3046-11.jpg 230w, https:\/\/cdn-shop.adafruit.com\/145x109\/3046-11.jpg 145w, https:\/\/cdn-shop.adafruit.com\/82x62\/3046-11.jpg 82w","thumbnail-sizes":"(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px","gallery":{"width":970,"height":728,"file":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-11.jpg","srcset":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-11.jpg 970w, https:\/\/cdn-shop.adafruit.com\/640x480\/3046-11.jpg 640w, https:\/\/cdn-shop.adafruit.com\/480x360\/3046-11.jpg 480w, https:\/\/cdn-shop.adafruit.com\/413x309\/3046-11.jpg 413w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-11.jpg 310w","sizes":"(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"}},{"type":"image","alt_text":"Side detail of STEMMA QT connector on rectangular microcontroller with headers.","thumbnail":"https:\/\/cdn-shop.adafruit.com\/145x109\/3046-10.jpg","thumbnail-srcset":"https:\/\/cdn-shop.adafruit.com\/480x360\/3046-10.jpg 480w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-10.jpg 310w, https:\/\/cdn-shop.adafruit.com\/230x173\/3046-10.jpg 230w, https:\/\/cdn-shop.adafruit.com\/145x109\/3046-10.jpg 145w, https:\/\/cdn-shop.adafruit.com\/82x62\/3046-10.jpg 82w","thumbnail-sizes":"(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px","gallery":{"width":970,"height":728,"file":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-10.jpg","srcset":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-10.jpg 970w, https:\/\/cdn-shop.adafruit.com\/640x480\/3046-10.jpg 640w, https:\/\/cdn-shop.adafruit.com\/480x360\/3046-10.jpg 480w, https:\/\/cdn-shop.adafruit.com\/413x309\/3046-10.jpg 413w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-10.jpg 310w","sizes":"(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"}},{"type":"image","alt_text":"Detailed shot of microUSB port on rectangular microcontroller with headers. ","thumbnail":"https:\/\/cdn-shop.adafruit.com\/145x109\/3046-09.jpg","thumbnail-srcset":"https:\/\/cdn-shop.adafruit.com\/480x360\/3046-09.jpg 480w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-09.jpg 310w, https:\/\/cdn-shop.adafruit.com\/230x173\/3046-09.jpg 230w, https:\/\/cdn-shop.adafruit.com\/145x109\/3046-09.jpg 145w, https:\/\/cdn-shop.adafruit.com\/82x62\/3046-09.jpg 82w","thumbnail-sizes":"(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px","gallery":{"width":970,"height":728,"file":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-09.jpg","srcset":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-09.jpg 970w, https:\/\/cdn-shop.adafruit.com\/640x480\/3046-09.jpg 640w, https:\/\/cdn-shop.adafruit.com\/480x360\/3046-09.jpg 480w, https:\/\/cdn-shop.adafruit.com\/413x309\/3046-09.jpg 413w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-09.jpg 310w","sizes":"(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"}},{"type":"image","alt_text":"Bottom of PCB next to US quarter for scale.","thumbnail":"https:\/\/cdn-shop.adafruit.com\/145x109\/3046-08.jpg","thumbnail-srcset":"https:\/\/cdn-shop.adafruit.com\/480x360\/3046-08.jpg 480w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-08.jpg 310w, https:\/\/cdn-shop.adafruit.com\/230x173\/3046-08.jpg 230w, https:\/\/cdn-shop.adafruit.com\/145x109\/3046-08.jpg 145w, https:\/\/cdn-shop.adafruit.com\/82x62\/3046-08.jpg 82w","thumbnail-sizes":"(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px","gallery":{"width":970,"height":728,"file":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-08.jpg","srcset":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-08.jpg 970w, https:\/\/cdn-shop.adafruit.com\/640x480\/3046-08.jpg 640w, https:\/\/cdn-shop.adafruit.com\/480x360\/3046-08.jpg 480w, https:\/\/cdn-shop.adafruit.com\/413x309\/3046-08.jpg 413w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-08.jpg 310w","sizes":"(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"}},{"type":"image","alt_text":"Back of rectangular microcontroller  next to US quarter for scale.","thumbnail":"https:\/\/cdn-shop.adafruit.com\/145x109\/3046-06.jpg","thumbnail-srcset":"https:\/\/cdn-shop.adafruit.com\/480x360\/3046-06.jpg 480w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-06.jpg 310w, https:\/\/cdn-shop.adafruit.com\/230x173\/3046-06.jpg 230w, https:\/\/cdn-shop.adafruit.com\/145x109\/3046-06.jpg 145w, https:\/\/cdn-shop.adafruit.com\/82x62\/3046-06.jpg 82w","thumbnail-sizes":"(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px","gallery":{"width":970,"height":728,"file":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-06.jpg","srcset":"https:\/\/cdn-shop.adafruit.com\/970x728\/3046-06.jpg 970w, https:\/\/cdn-shop.adafruit.com\/640x480\/3046-06.jpg 640w, https:\/\/cdn-shop.adafruit.com\/480x360\/3046-06.jpg 480w, https:\/\/cdn-shop.adafruit.com\/413x309\/3046-06.jpg 413w, https:\/\/cdn-shop.adafruit.com\/310x233\/3046-06.jpg 310w","sizes":"(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"}},{"alt_text":"ESP8266 Takeapart - Collin\u2019s Lab Notes #adafruit #collinslabnotes #adafruit","embed_params":"rel=0\u0026autoplay=1\u0026start=0","thumbnail":"https:\/\/cdn-shop.adafruit.com\/ytimg\/vi\/KK-TJ4ovy2Y\/hqdefault.jpg","type":"youtube","video_url":"\/\/www.youtube.com\/watch?v=KK-TJ4ovy2Y\u0026t=0","youtube_id":"KK-TJ4ovy2Y"}]' data-transition-duration="0.25">
+	<h2 id="gallery-heading" class="sr-only">Product Images and Video</h2>
+		<div class="gallery-thumbnails" role="tablist" aria-label="Choose gallery item to display" data-indicators>
+					<button
+				aria-controls="gallery-slide-0"
+				aria-description="Angled shot of rectangular microcontroller with headers."
+				aria-label="slide 1"
+				aria-selected="true"
+				class="gallery-thumbnail indicator-image"
+				data-indicator="0"
+				data-type="image"
+				role="tab"
+				tabindex="0"
+				type="button"
+			>
+												<img
+													srcset='https://cdn-shop.adafruit.com/480x360/3046-07.jpg 480w, https://cdn-shop.adafruit.com/310x233/3046-07.jpg 310w, https://cdn-shop.adafruit.com/230x173/3046-07.jpg 230w, https://cdn-shop.adafruit.com/145x109/3046-07.jpg 145w, https://cdn-shop.adafruit.com/82x62/3046-07.jpg 82w'
+							sizes='(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px'
+												src='https://cdn-shop.adafruit.com/145x109/3046-07.jpg'
+						alt="Angled shot of rectangular microcontroller with headers."
+						width="145"
+						height="109"
+					>
+										</button>
+					<button
+				aria-controls="gallery-slide-1"
+				aria-description="Top-down view of rectangular microcontroller with headers. "
+				aria-label="slide 2"
+				aria-selected="false"
+				class="gallery-thumbnail indicator-image"
+				data-indicator="1"
+				data-type="image"
+				role="tab"
+				tabindex="-1"
+				type="button"
+			>
+												<img
+													srcset='https://cdn-shop.adafruit.com/480x360/3046-11.jpg 480w, https://cdn-shop.adafruit.com/310x233/3046-11.jpg 310w, https://cdn-shop.adafruit.com/230x173/3046-11.jpg 230w, https://cdn-shop.adafruit.com/145x109/3046-11.jpg 145w, https://cdn-shop.adafruit.com/82x62/3046-11.jpg 82w'
+							sizes='(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px'
+												src='https://cdn-shop.adafruit.com/145x109/3046-11.jpg'
+						alt="Top-down view of rectangular microcontroller with headers. "
+						width="145"
+						height="109"
+					>
+										</button>
+					<button
+				aria-controls="gallery-slide-2"
+				aria-description="Side detail of STEMMA QT connector on rectangular microcontroller with headers."
+				aria-label="slide 3"
+				aria-selected="false"
+				class="gallery-thumbnail indicator-image"
+				data-indicator="2"
+				data-type="image"
+				role="tab"
+				tabindex="-1"
+				type="button"
+			>
+												<img
+													srcset='https://cdn-shop.adafruit.com/480x360/3046-10.jpg 480w, https://cdn-shop.adafruit.com/310x233/3046-10.jpg 310w, https://cdn-shop.adafruit.com/230x173/3046-10.jpg 230w, https://cdn-shop.adafruit.com/145x109/3046-10.jpg 145w, https://cdn-shop.adafruit.com/82x62/3046-10.jpg 82w'
+							sizes='(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px'
+												src='https://cdn-shop.adafruit.com/145x109/3046-10.jpg'
+						alt="Side detail of STEMMA QT connector on rectangular microcontroller with headers."
+						width="145"
+						height="109"
+					>
+										</button>
+					<button
+				aria-controls="gallery-slide-3"
+				aria-description="Detailed shot of microUSB port on rectangular microcontroller with headers. "
+				aria-label="slide 4"
+				aria-selected="false"
+				class="gallery-thumbnail indicator-image"
+				data-indicator="3"
+				data-type="image"
+				role="tab"
+				tabindex="-1"
+				type="button"
+			>
+												<img
+													srcset='https://cdn-shop.adafruit.com/480x360/3046-09.jpg 480w, https://cdn-shop.adafruit.com/310x233/3046-09.jpg 310w, https://cdn-shop.adafruit.com/230x173/3046-09.jpg 230w, https://cdn-shop.adafruit.com/145x109/3046-09.jpg 145w, https://cdn-shop.adafruit.com/82x62/3046-09.jpg 82w'
+							sizes='(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px'
+												src='https://cdn-shop.adafruit.com/145x109/3046-09.jpg'
+						alt="Detailed shot of microUSB port on rectangular microcontroller with headers. "
+						width="145"
+						height="109"
+					>
+										</button>
+					<button
+				aria-controls="gallery-slide-4"
+				aria-description="Bottom of PCB next to US quarter for scale."
+				aria-label="slide 5"
+				aria-selected="false"
+				class="gallery-thumbnail indicator-image"
+				data-indicator="4"
+				data-type="image"
+				role="tab"
+				tabindex="-1"
+				type="button"
+			>
+												<img
+													srcset='https://cdn-shop.adafruit.com/480x360/3046-08.jpg 480w, https://cdn-shop.adafruit.com/310x233/3046-08.jpg 310w, https://cdn-shop.adafruit.com/230x173/3046-08.jpg 230w, https://cdn-shop.adafruit.com/145x109/3046-08.jpg 145w, https://cdn-shop.adafruit.com/82x62/3046-08.jpg 82w'
+							sizes='(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px'
+												src='https://cdn-shop.adafruit.com/145x109/3046-08.jpg'
+						alt="Bottom of PCB next to US quarter for scale."
+						width="145"
+						height="109"
+					>
+										</button>
+					<button
+				aria-controls="gallery-slide-5"
+				aria-description="Back of rectangular microcontroller  next to US quarter for scale."
+				aria-label="slide 6"
+				aria-selected="false"
+				class="gallery-thumbnail indicator-image"
+				data-indicator="5"
+				data-type="image"
+				role="tab"
+				tabindex="-1"
+				type="button"
+			>
+												<img
+													srcset='https://cdn-shop.adafruit.com/480x360/3046-06.jpg 480w, https://cdn-shop.adafruit.com/310x233/3046-06.jpg 310w, https://cdn-shop.adafruit.com/230x173/3046-06.jpg 230w, https://cdn-shop.adafruit.com/145x109/3046-06.jpg 145w, https://cdn-shop.adafruit.com/82x62/3046-06.jpg 82w'
+							sizes='(min-width: 1366px) 165px, (min-width: 1024px) 122px, 1px'
+												src='https://cdn-shop.adafruit.com/145x109/3046-06.jpg'
+						alt="Back of rectangular microcontroller  next to US quarter for scale."
+						width="145"
+						height="109"
+					>
+										</button>
+					<button
+				aria-controls="gallery-slide-6"
+				aria-description="ESP8266 Takeapart - Collin’s Lab Notes #adafruit #collinslabnotes #adafruit"
+				aria-label="slide 7"
+				aria-selected="false"
+				class="gallery-thumbnail indicator-youtube"
+				data-indicator="6"
+				data-type="youtube"
+				role="tab"
+				tabindex="-1"
+				type="button"
+			>
+												<img
+												src='https://cdn-shop.adafruit.com/ytimg/vi/KK-TJ4ovy2Y/hqdefault.jpg'
+						alt="ESP8266 Takeapart - Collin’s Lab Notes #adafruit #collinslabnotes #adafruit"
+						width="145"
+						height="109"
+					>
+										</button>
+			</div>
+		<div class="gallery-slides-block">
+		<div class="gallery-slides">
+						<div class="gallery-arrow arrow-left fa fa-angle-left" data-gallery-action="prev"></div>
+			<div class="gallery-arrow arrow-right fa fa-angle-right" data-gallery-action="next"></div>
+						<div class="gallery-slides-scroll" data-slides-container>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-0" data-slide="0" aria-labelledby="Slide1" tabindex="0">
+											<img
+							id="Slide1"
+							src="https://cdn-shop.adafruit.com/970x728/3046-07.jpg"
+							alt="Angled shot of rectangular microcontroller with headers."
+														srcset="https://cdn-shop.adafruit.com/970x728/3046-07.jpg 970w, https://cdn-shop.adafruit.com/640x480/3046-07.jpg 640w, https://cdn-shop.adafruit.com/480x360/3046-07.jpg 480w, https://cdn-shop.adafruit.com/413x309/3046-07.jpg 413w, https://cdn-shop.adafruit.com/310x233/3046-07.jpg 310w"
+							sizes="(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"
+						>
+										</div>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-1" data-slide="1" aria-labelledby="Slide2" hidden>
+											<img
+							id="Slide2"
+							src="https://cdn-shop.adafruit.com/970x728/3046-11.jpg"
+							alt="Top-down view of rectangular microcontroller with headers. "
+							loading="lazy"							srcset="https://cdn-shop.adafruit.com/970x728/3046-11.jpg 970w, https://cdn-shop.adafruit.com/640x480/3046-11.jpg 640w, https://cdn-shop.adafruit.com/480x360/3046-11.jpg 480w, https://cdn-shop.adafruit.com/413x309/3046-11.jpg 413w, https://cdn-shop.adafruit.com/310x233/3046-11.jpg 310w"
+							sizes="(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"
+						>
+										</div>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-2" data-slide="2" aria-labelledby="Slide3" hidden>
+											<img
+							id="Slide3"
+							src="https://cdn-shop.adafruit.com/970x728/3046-10.jpg"
+							alt="Side detail of STEMMA QT connector on rectangular microcontroller with headers."
+							loading="lazy"							srcset="https://cdn-shop.adafruit.com/970x728/3046-10.jpg 970w, https://cdn-shop.adafruit.com/640x480/3046-10.jpg 640w, https://cdn-shop.adafruit.com/480x360/3046-10.jpg 480w, https://cdn-shop.adafruit.com/413x309/3046-10.jpg 413w, https://cdn-shop.adafruit.com/310x233/3046-10.jpg 310w"
+							sizes="(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"
+						>
+										</div>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-3" data-slide="3" aria-labelledby="Slide4" hidden>
+											<img
+							id="Slide4"
+							src="https://cdn-shop.adafruit.com/970x728/3046-09.jpg"
+							alt="Detailed shot of microUSB port on rectangular microcontroller with headers. "
+							loading="lazy"							srcset="https://cdn-shop.adafruit.com/970x728/3046-09.jpg 970w, https://cdn-shop.adafruit.com/640x480/3046-09.jpg 640w, https://cdn-shop.adafruit.com/480x360/3046-09.jpg 480w, https://cdn-shop.adafruit.com/413x309/3046-09.jpg 413w, https://cdn-shop.adafruit.com/310x233/3046-09.jpg 310w"
+							sizes="(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"
+						>
+										</div>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-4" data-slide="4" aria-labelledby="Slide5" hidden>
+											<img
+							id="Slide5"
+							src="https://cdn-shop.adafruit.com/970x728/3046-08.jpg"
+							alt="Bottom of PCB next to US quarter for scale."
+							loading="lazy"							srcset="https://cdn-shop.adafruit.com/970x728/3046-08.jpg 970w, https://cdn-shop.adafruit.com/640x480/3046-08.jpg 640w, https://cdn-shop.adafruit.com/480x360/3046-08.jpg 480w, https://cdn-shop.adafruit.com/413x309/3046-08.jpg 413w, https://cdn-shop.adafruit.com/310x233/3046-08.jpg 310w"
+							sizes="(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"
+						>
+										</div>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-5" data-slide="5" aria-labelledby="Slide6" hidden>
+											<img
+							id="Slide6"
+							src="https://cdn-shop.adafruit.com/970x728/3046-06.jpg"
+							alt="Back of rectangular microcontroller  next to US quarter for scale."
+							loading="lazy"							srcset="https://cdn-shop.adafruit.com/970x728/3046-06.jpg 970w, https://cdn-shop.adafruit.com/640x480/3046-06.jpg 640w, https://cdn-shop.adafruit.com/480x360/3046-06.jpg 480w, https://cdn-shop.adafruit.com/413x309/3046-06.jpg 413w, https://cdn-shop.adafruit.com/310x233/3046-06.jpg 310w"
+							sizes="(min-width: 1366px) 970px, (min-width: 1024px) 647px, (min-width: 768px) 728px, 100vw"
+						>
+										</div>
+								<div role="tabpanel" class="gallery-slide"  id="gallery-slide-6" data-slide="6" aria-labelledby="Slide7" hidden>
+											<div id="Slide7">
+							<lite-youtube
+  videoid="KK-TJ4ovy2Y"
+  title="ESP8266 Takeapart - Collin&rsquo;s Lab Notes #adafruit #collinslabnotes #adafruit"
+  style="background-image: url(https://cdn-shop.adafruit.com/ytimg/vi/KK-TJ4ovy2Y/hqdefault.jpg)"
+  params="rel=0&amp;autoplay=1&amp;start=0"
+  data-dnt-warn>
+  <a href="https://www.youtube.com/watch?v=KK-TJ4ovy2Y&t=0" class="lyt-playbtn" title="Play video">
+  <span class="lyt-visually-hidden">Play video: ESP8266 Takeapart - Collin&rsquo;s Lab Notes #adafruit #collinslabnotes #adafruit</span>
+</a>
+</lite-youtube>							<a class="gallery-slide gallery-slide-youtube" href="//www.youtube.com/watch?v=KK-TJ4ovy2Y&t=0">
+																	<img src='https://cdn-shop.adafruit.com/ytimg/vi/KK-TJ4ovy2Y/hqdefault.jpg' alt="ESP8266 Takeapart - Collin’s Lab Notes #adafruit #collinslabnotes #adafruit">
+															</a>
+						</div>
+										</div>
+							</div>
+		</div>
+	</div>
+</section>
+
+		<div class="visible-sm visible-xs">
+			
+			<div class="row top-twenty">
+	<div class="col-sm-6 hidden-xs">
+		<div class="productQuantityDiscounts">
+
+  <table class="quantityDiscount">
+    <tr>
+      <th class="discount-header">Qty</th>
+      <th class="discount-header">Discount</th>
+    </tr>
+          	<tr class="discount-row">
+          <td>1-9</td>
+          <td>$18.95</td>
+        </tr>
+              	<tr class="discount-row">
+          <td>10-99</td>
+          <td>$17.06</td>
+        </tr>
+              	<tr class="discount-row">
+          <td>100+</td>
+          <td>$15.16</td>
+        </tr>
+          </table>
+
+</div>
+		<div class="mobile-text-margins top-ten" style="font-weight: bold; margin-bottom: 10px;">
+
+			<div class="prod-oos-box"><div itemprop="availability" class="oos-header">Out of stock</div>			<form name="back_in_stock_notification" action="https://www.adafruit.com/index.php?main_page=back_in_stock_notification_subscribe&amp;part_id=3046" method="post"><input type="hidden" name="securityToken" value="8436bb623581520785dedc91dd4b4626" />			<fieldset>
+			<legend>Please enter your details below and we will send you an email when this item is back in stock! You will only be emailed about this product.</legend>
+
+			<div class="top-ten">
+			<label class="inputLabel sg-label top-ten">Your Email
+			<input class="sg-input" type="email" size="25" maxlength="96" name="email" value="" /></label>
+			<input type="hidden" name="securityToken" value="8436bb623581520785dedc91dd4b4626" />
+			<input type="hidden" name="notify_me" value="true" />
+			<div class="mobile-button-row"><button type="submit" class="blue-button top-ten">Notify Me</button></div>
+			</div>
+
+			</fieldset>
+			</form>
+			<br class="clearBoth">
+			</div>		<div class="buy-on-digikey-container">
+  <a href="https://www.digikey.com/en/products?mpart=3046&v=1528" class="buyOnDigiKey">Buy on DigiKey</a>
+  <a href="/buyfromdigikey" class="explainer" target="_blank" rel="noopener">Why buy on DigiKey?</a>
+</div>
+
+			</div>
+	</div>
+	<div class="col-sm-6 col-xs-12">
+		<div class="row">
+			<div id="prod-stock-mobile">
+				<div class="col-sm-12 col-xs-12 mobile-button-row">
+
+										<div class="top_10">
+			<label id="meta0_group_label">
+			There are multiple versions of this item. Please select one from the options below:			</label>
+							<ol class="meta_pid_boxes">
+											<li
+							id="meta0_option_2821"
+							class="top_10 enabled "
+							data-part-id="2821"
+						>
+							<a href="/product/2821"  class="">
+									<span class="option_name">
+									Loose Headers - Soldering Required																	</span>
+								<span class="option_meta">
+									$14.95								</span>
+							</a>
+						</li>
+												<li
+							id="meta0_option_3213"
+							class="top_10 enabled "
+							data-part-id="3213"
+						>
+							<a href="/product/3213"  class="">
+									<span class="option_name">
+									Stacking Headers - Solder-free																	</span>
+								<span class="option_meta">
+									$19.95								</span>
+							</a>
+						</li>
+												<li
+							id="meta0_option_3046"
+							class="top_10 enabled  ui-selected "
+							data-part-id="3046"
+						>
+							<a href="/product/3046" aria-current="page" class="ui-selected">
+									<span class="option_name">
+									Assembled Headers - Solder-free																	</span>
+								<span class="option_meta">
+									Out of stock								</span>
+							</a>
+						</li>
+										</ol>
+						</div>
+					</div>
+
+				<div class="col-xs-12 visible-xs">
+					<div class="productQuantityDiscounts">
+
+  <table class="quantityDiscount">
+    <tr>
+      <th class="discount-header">Qty</th>
+      <th class="discount-header">Discount</th>
+    </tr>
+          	<tr class="discount-row">
+          <td>1-9</td>
+          <td>$18.95</td>
+        </tr>
+              	<tr class="discount-row">
+          <td>10-99</td>
+          <td>$17.06</td>
+        </tr>
+              	<tr class="discount-row">
+          <td>100+</td>
+          <td>$15.16</td>
+        </tr>
+          </table>
+
+</div>
+				</div>
+				<div class="clearfix visible-sm visible-xs"></div>
+				<div class="col-xs-12 top-ten hidden-sm" style="margin-bottom: 10px;">
+					<div class="prod-oos-box"><div itemprop="availability" class="oos-header">Out of stock</div>			<form name="back_in_stock_notification" action="https://www.adafruit.com/index.php?main_page=back_in_stock_notification_subscribe&amp;part_id=3046" method="post"><input type="hidden" name="securityToken" value="8436bb623581520785dedc91dd4b4626" />			<fieldset>
+			<legend>Please enter your details below and we will send you an email when this item is back in stock! You will only be emailed about this product.</legend>
+
+			<div class="top-ten">
+			<label class="inputLabel sg-label top-ten">Your Email
+			<input class="sg-input" type="email" size="25" maxlength="96" name="email" value="" /></label>
+			<input type="hidden" name="securityToken" value="8436bb623581520785dedc91dd4b4626" />
+			<input type="hidden" name="notify_me" value="true" />
+			<div class="mobile-button-row"><button type="submit" class="blue-button top-ten">Notify Me</button></div>
+			</div>
+
+			</fieldset>
+			</form>
+			<br class="clearBoth">
+			</div>		<div class="buy-on-digikey-container">
+  <a href="https://www.digikey.com/en/products?mpart=3046&v=1528" class="buyOnDigiKey">Buy on DigiKey</a>
+  <a href="/buyfromdigikey" class="explainer" target="_blank" rel="noopener">Why buy on DigiKey?</a>
+</div>
+
+					</div>
+
+									<div class="col-xs-12 mobile-button-row">
+						<div id="add-to-wishlist-container-mobile">
+							<button id="add-btn-mobile" class="secondary-button" style="width: 100%;">Add to Wishlist</button>
+													</div>
+					</div>	
+							</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div id="prod-info">
+			<section id="description" class="prod-accordion-content prod-accordion-content-description mobile-text-wrapper" aria-labelledby="tab-description-heading">
+			<div class="tab-heading-row">
+				<h2 id="tab-description-heading">
+											Description									</h2>
+			</div>
+			<div id="tab-description-content" class="panel-collapse collapse in">
+				<p>Feather is the flagship development board from Adafruit, and like its namesake, it is thin, light, and lets you fly! We designed Feather to be a new standard for portable microcontroller cores.</p><p>This is the <strong>Assembled Adafruit Feather HUZZAH ESP8266</strong><strong> with headers</strong> - our take on an &#39;all-in-one&#39; ESP8266 WiFi development board with built-in USB and battery charging and ready to go immediately! It&#39;s an&nbsp;ESP8266 WiFi module with all the extras you need, ready to rock!&nbsp;<a href="https://www.adafruit.com/categories/777">We have other boards in the Feather family, check&#39;em out here</a>.</p><p>At the Feather HUZZAH&#39;s heart is an ESP8266 WiFi microcontroller clocked at 80 MHz and at 3.3V logic. This microcontroller contains a Tensilica chip core as well as a full WiFi stack. You can program the microcontroller using the Arduino IDE for an easy-to-run Internet of Things core. We wired up a USB-Serial chip that an upload code at a blistering 921600 baud for fast development time. It also has auto-reset so no noodling with pins and reset button pressings.</p><p>To make it easy to use for portable projects, we added a connector for any of our 3.7V Lithium polymer batteries and built-in battery charging. You don&#39;t need a battery, it will run just fine straight from the micro USB connector. But, if you do have a battery, you can take it on the go, then plug in the USB to recharge. The Feather will automatically switch over to USB power when it&#39;s available.</p><p><strong>Here&#39;s some handy specs!</strong></p><ul><li>Measures 2.0&quot; x 0.9&quot; x 0.28&quot; (51mm x 23mm x 8mm) without headers soldered in</li><li>Light as a (large?) feather - 9.7 grams</li><li>ESP8266 v1.1 @ 80MHz with 3.3V logic/power</li><li>4MB of FLASH (32 MBit)</li><li>Built in WiFi 802.11 b/g/n</li><li>3.3V regulator with 500mA peak current output</li><li>CP2104 USB-Serial converter onboard with 921600 max baudrate for uploading</li><li>Auto-reset support for getting into bootload mode before firmware upload</li><li>9 x GPIO pins - can also be used as I2C and SPI</li><li>1 x analog inputs 1.0V max</li><li>Built-in 100mA LiPoly charger with charging status indicator LED, can also cut a trace to disable the charger</li><li>Pin #0 red LED for general purpose blinking. Pin #2 blue LED for bootloading debug &amp; general purpose blinking</li><li>Power/enable pin</li><li>4 mounting holes</li><li>Reset button</li></ul><p>Comes fully assembled and tested, with a USB interface that lets you quickly use it with the Arduino IDE or NodeMCU Lua (it comes preprogrammed with the Lua interpreter).&nbsp;This version of the board has also been <strong>pre-soldered</strong>, so you can&nbsp;plug it right into a solderless breadboard. <a href="https://www.adafruit.com/product/2821">Click here for the un-soldered version.</a>&nbsp;<strong>Lipoly battery and USB cable not included</strong>&nbsp;(but we do have lots of options in the shop if you&#39;d like!)</p><p><a href="https://learn.adafruit.com/adafruit-feather-huzzah-esp8266">Check out our tutorial for all sorts of details, including schematics, files, IDE instructions, power management, and more!</a></p><p><lite-youtube
+  videoid="KK-TJ4ovy2Y"
+  title="ESP8266 Takeapart - Collin&rsquo;s Lab Notes #adafruit #collinslabnotes #adafruit"
+  style="background-image: url(https://cdn-shop.adafruit.com/ytimg/vi/KK-TJ4ovy2Y/hqdefault.jpg)"
+  params="start=566"
+  data-dnt-warn>
+  <a href="https://www.youtube.com/watch?v=KK-TJ4ovy2Y&t=566" class="lyt-playbtn" title="Play video">
+  <span class="lyt-visually-hidden">Play video: ESP8266 Takeapart - Collin&rsquo;s Lab Notes #adafruit #collinslabnotes #adafruit</span>
+</a>
+</lite-youtube></p>			</div>
+		</section>
+				<section id="technical-details" class="prod-accordion-content prod-accordion-content-technical-details mobile-text-wrapper" aria-labelledby="tab-technical-details-heading">
+			<div class="tab-heading-row">
+				<h2 id="tab-technical-details-heading">
+											Technical Details									</h2>
+			</div>
+			<div id="tab-technical-details-content" class="panel-collapse collapse in">
+				<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><ul><li>23mm x 51mm x 18mm / 0.9&quot; x 2&quot; x 0.71&quot;</li><li>Weight: 8g</li></ul><p><strong>Revision History:</strong></p><ul><li><strong>As of September 10, 2024</strong> - We updated this PCB with&nbsp;<a href="https://github.com/adafruit/Adafruit_Pinguin">Adafruit Pinguin</a>&nbsp;to make a lovely and legible silkscreen. You may get the new PCB or the older version with vector fonts; both are identical other than the fancy silkscreen.</li></ul></div>
+  </div><div class="row"><div class="col-lg-2 col-md-3 col-sm-3 col-xs-4"><img src="/includes/templates/shop2019/images/RoHS2_2011_65_EU.svg" alt="RoHS 2 2011 65 EU Compliant" width="145" height="80"/></div><div class="col-lg-2 col-md-3 col-sm-3 col-xs-4"><img src="/includes/templates/shop2019/images/RoHS2_2015_863_EU.svg" alt="RoHS 2 2015 863 EU Compliant" width="145" height="80"/></div></div>			</div>
+		</section>
+				<section id="learn" class="prod-accordion-content prod-accordion-content-learn mobile-text-wrapper" aria-labelledby="tab-learn-heading">
+			<div class="tab-heading-row">
+				<h2 id="tab-learn-heading">
+											Learn									</h2>
+			</div>
+			<div id="tab-learn-content" class="panel-collapse collapse in">
+				<div class="learn-guides-list">
+        <div class="product-learn-guide ">
+        <div>
+            <a class="product-learn-guide-img-container" href="https://learn.adafruit.com/adafruit-feather">
+                                                        <img src="//cdn-learn.adafruit.com/guides/images/000/001/638/medium640/fam.jpg" alt="Eighteen different Adafruit Feather boards are arranged in a grid. Each board features various components and connectors, such as microcontrollers and wireless modules." class="img-responsive"/>
+                            </a>
+        </div>
+        <div class="product-learn-guide-text">
+            <div class="product-learn-guide-title">
+                <a href="https://learn.adafruit.com/adafruit-feather">
+                                Introducing Adafruit Feather                </a>
+            </div>
+            <div class="product-learn-guide-tagline">
+                Boards of a Feather flock together!            </div>
+        </div>
+    </div>
+        <div class="product-learn-guide ">
+        <div>
+            <a class="product-learn-guide-img-container" href="https://learn.adafruit.com/integrating-adafruit-io-with-home-assistant">
+                                                        <img src="//cdn-learn.adafruit.com/guides/images/000/002/385/medium640/New_Project.png" alt="A blue square with a white house icon featuring a circuit pattern next to a stylized &quot;Adafruit IO&quot; logo with an Adafruit logo flower in the &quot;O&quot;." class="img-responsive"/>
+                            </a>
+        </div>
+        <div class="product-learn-guide-text">
+            <div class="product-learn-guide-title">
+                <a href="https://learn.adafruit.com/integrating-adafruit-io-with-home-assistant">
+                                Integrating Home Assistant with Adafruit IO                </a>
+            </div>
+            <div class="product-learn-guide-tagline">
+                Home Assistant tracks the state of all the devices in your home, so you don't have to, and Adafruit IO can store it all!            </div>
+        </div>
+    </div>
+        <a class="all-guides-link" href="https://learn.adafruit.com/products/3046/guides"><div>See All Guides <i class="fa fa-external-link"></i></div></a>
+</div>
+			</div>
+		</section>
+				<section id="related-products" class="prod-accordion-content prod-accordion-content-related-products mobile-text-wrapper" aria-labelledby="tab-related-products-heading">
+			<div class="tab-heading-row">
+				<h2 id="tab-related-products-heading">
+											May We Also Suggest&hellip;									</h2>
+			</div>
+			<div id="tab-related-products-content" class="panel-collapse collapse in">
+				<!-- bof: tpl_modules_xsell_products -->
+<ul class="basicProductPreviewList xsellContainer">
+	<li>
+		<a href="/product/2795"
+    class="basicProductPreview"
+    data-pid="2795"
+    data-name="Adafruit Feather 32u4 Adalogger"
+    aria-description="Adafruit Feather 32u4 Adalogger - Angled shot of a Adafruit Feather 32u4 Adalogger."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2795-14.jpg" alt="Adafruit Feather 32u4 Adalogger - Angled shot of a Adafruit Feather 32u4 Adalogger." loading="lazy" />
+    <span>Adafruit Feather 32u4 Adalogger</span>
+</a>	</li>
+	<li>
+		<a href="/product/2771"
+    class="basicProductPreview"
+    data-pid="2771"
+    data-name="Adafruit Feather 32u4 Basic Proto"
+    aria-description="Adafruit Feather 32u4 Basic Proto - Angled shot of a Adafruit Feather 32u4 Basic Proto. "
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2771-14.jpg" alt="Adafruit Feather 32u4 Basic Proto - Angled shot of a Adafruit Feather 32u4 Basic Proto. " loading="lazy" />
+    <span>Adafruit Feather 32u4 Basic Proto</span>
+</a>	</li>
+	<li>
+		<a href="/product/2829"
+    class="basicProductPreview"
+    data-pid="2829"
+    data-name="Adafruit Feather 32u4 Bluefruit LE"
+    aria-description="Adafruit Feather 32u4 Bluefruit LE - Angled shot of rectangular microcontroller."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2829-16.jpg" alt="Adafruit Feather 32u4 Bluefruit LE - Angled shot of rectangular microcontroller." loading="lazy" />
+    <span>Adafruit Feather 32u4 Bluefruit LE</span>
+</a>	</li>
+	<li>
+		<a href="/product/2471"
+    class="basicProductPreview"
+    data-pid="2471"
+    data-name="Adafruit HUZZAH ESP8266 Breakout"
+    aria-description="Adafruit HUZZAH ESP8266 Breakout - Angled shot of a Adafruit HUZZAH ESP8266 Breakout. "
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2471-06.jpg" alt="Adafruit HUZZAH ESP8266 Breakout - Angled shot of a Adafruit HUZZAH ESP8266 Breakout. " loading="lazy" />
+    <span>Adafruit HUZZAH ESP8266 Breakout</span>
+</a>	</li>
+	<li>
+		<a href="/product/2830"
+    class="basicProductPreview"
+    data-pid="2830"
+    data-name="Stacking Headers for Feather - 12-pin and 16-pin female headers"
+    aria-description="Stacking Headers for Feather - 12-pin and 16-pin female headers - Angled shot of a Stacking Headers for Feather - 12-pin and 16-pin female headers. "
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2830-08.jpg" alt="Stacking Headers for Feather - 12-pin and 16-pin female headers - Angled shot of a Stacking Headers for Feather - 12-pin and 16-pin female headers. " loading="lazy" />
+    <span>Stacking Headers for Feather - 12-pin and 16-pin female headers</span>
+</a>	</li>
+	<li>
+		<a href="/product/2491"
+    class="basicProductPreview"
+    data-pid="2491"
+    data-name="ESP8266 SMT Module - ESP-12F - ESP-12F"
+    aria-description="ESP8266 SMT Module - ESP-12F - ESP-12F - Angled shot of a ESP8266 SMT Module ."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2491-03.jpg" alt="ESP8266 SMT Module - ESP-12F - ESP-12F - Angled shot of a ESP8266 SMT Module ." loading="lazy" />
+    <span>ESP8266 SMT Module - ESP-12F - ESP-12F</span>
+</a>	</li>
+	<li>
+		<a href="/product/2884"
+    class="basicProductPreview"
+    data-pid="2884"
+    data-name="FeatherWing Proto - Prototyping Add-on For All Feather Boards"
+    aria-description="FeatherWing Proto - Prototyping Add-on For All Feather Boards - Angled Shot of the FeatherWing Proto - Prototyping Add-on For All Feather Boards."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2884-13.jpg" alt="FeatherWing Proto - Prototyping Add-on For All Feather Boards - Angled Shot of the FeatherWing Proto - Prototyping Add-on For All Feather Boards." loading="lazy" />
+    <span>FeatherWing Proto - Prototyping Add-on For All Feather Boards</span>
+</a>	</li>
+	<li>
+		<a href="/product/2680"
+    class="basicProductPreview"
+    data-pid="2680"
+    data-name="Huzzah! Adafruit.io Internet of Things Feather ESP8266 - WiFi Starter Kit - WiFi Starter Kit"
+    aria-description="Huzzah! Adafruit.io Internet of Things Feather ESP8266 - WiFi Starter Kit - WiFi Starter Kit - Top view of kit contents for Huzzah! Adafruit.io Internet of Things Feather ESP8266 - WiFi Starter Kit."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2680-01.jpg" alt="Huzzah! Adafruit.io Internet of Things Feather ESP8266 - WiFi Starter Kit - WiFi Starter Kit - Top view of kit contents for Huzzah! Adafruit.io Internet of Things Feather ESP8266 - WiFi Starter Kit." loading="lazy" />
+    <span>Huzzah! Adafruit.io Internet of Things Feather ESP8266 - WiFi Starter Kit - WiFi Starter Kit</span>
+</a>	</li>
+	<li>
+		<a href="/product/2821"
+    class="basicProductPreview"
+    data-pid="2821"
+    data-name="Adafruit Feather HUZZAH with ESP8266 - Loose Headers"
+    aria-description="Adafruit Feather HUZZAH with ESP8266 - Loose Headers - Angled shot of black, rectangular WiFi development board."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/2821-07.jpg" alt="Adafruit Feather HUZZAH with ESP8266 - Loose Headers - Angled shot of black, rectangular WiFi development board." loading="lazy" />
+    <span>Adafruit Feather HUZZAH with ESP8266 - Loose Headers</span>
+</a>	</li>
+	<li>
+		<a href="/product/3200"
+    class="basicProductPreview"
+    data-pid="3200"
+    data-name="Teensy 3.x Feather Adapter"
+    aria-description="Teensy 3.x Feather Adapter - Angled shot of a black rectangular microcontroller adapter board assembled with an even smaller green microcontroller board."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/3200-06.jpg" alt="Teensy 3.x Feather Adapter - Angled shot of a black rectangular microcontroller adapter board assembled with an even smaller green microcontroller board." loading="lazy" />
+    <span>Teensy 3.x Feather Adapter</span>
+</a>	</li>
+	<li>
+		<a href="/product/3404"
+    class="basicProductPreview"
+    data-pid="3404"
+    data-name="Adafruit Feather HUZZAH with ESP8266 WiFi - with or without headers - with or without headers"
+    aria-description="Adafruit Feather HUZZAH with ESP8266 WiFi - with or without headers - with or without headers - Angled shot of rectangular microcontroller."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/3404-06.jpg" alt="Adafruit Feather HUZZAH with ESP8266 WiFi - with or without headers - with or without headers - Angled shot of rectangular microcontroller." loading="lazy" />
+    <span>Adafruit Feather HUZZAH with ESP8266 WiFi - with or without headers - with or without headers</span>
+</a>	</li>
+	<li>
+		<a href="/product/3213"
+    class="basicProductPreview"
+    data-pid="3213"
+    data-name="Assembled Feather HUZZAH w/ ESP8266 WiFi With Stacking Headers"
+    aria-description="Assembled Feather HUZZAH w/ ESP8266 WiFi With Stacking Headers - Angled shot of black, rectangular microcontroller with stacking headers."
+>
+    <img class="img-responsive productThumb " src="https://cdn-shop.adafruit.com/413x309/3213-09.jpg" alt="Assembled Feather HUZZAH w/ ESP8266 WiFi With Stacking Headers - Angled shot of black, rectangular microcontroller with stacking headers." loading="lazy" />
+    <span>Assembled Feather HUZZAH w/ ESP8266 WiFi With Stacking Headers</span>
+</a>	</li>
+</ul>
+<!-- eof: tpl_modules_xsell_products -->
+			</div>
+		</section>
+				<section id="distributors" class="prod-accordion-content prod-accordion-content-distributors mobile-text-wrapper" aria-labelledby="tab-distributors-heading">
+			<div class="tab-heading-row">
+				<h2 id="tab-distributors-heading">
+											<button data-toggle="collapse" data-target="#tab-distributors-content" aria-controls="tab-distributors-content" aria-expanded="false" class="toggle-link">Distributors</button>
+									</h2>
+			</div>
+			<div id="tab-distributors-content" class="panel-collapse collapse">
+					<ul id="prod-distributors">
+					<li>
+				<a href="https://www.mouser.com/manufacturer/adafruit/" target="_blank"  rel="noopener">
+					<h3>Mouser Electronics</h3>
+					<span>United States</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://www.digikey.com/en/supplier-centers/a/adafruit?WT.z_link_source=Supplier%2520Index" target="_blank"  rel="noopener">
+					<h3>DigiKey Electronics</h3>
+					<span>United States</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://thepihut.com/" target="_blank"  rel="noopener">
+					<h3>The Pi Hut</h3>
+					<span>United Kingdom</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://makersify.com/" target="_blank"  rel="noopener">
+					<h3>Makersify</h3>
+					<span>United Kingdom</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://www.core-electronics.com.au/" target="_blank"  rel="noopener">
+					<h3>Core Electronics</h3>
+					<span>Australia</span>
+				</a>
+			</li>
+					<li>
+				<a href="http://www.microcenter.com" target="_blank"  rel="noopener">
+					<h3>MicroCenter</h3>
+					<span>United States</span>
+				</a>
+			</li>
+			</ul>
+	<p style="clear: both;">See our <a href="/distributors">Distributors page</a> for a complete list of distributors.</p>
+			</div>
+		</section>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+		<div id="prod-right-side" class="prod-right-sticky">
+			<h1 class="products_name">Assembled Adafruit Feather HUZZAH with ESP8266 With Headers</h1>
+			<div class="product_id">
+
+			Product ID: <span>3046</span>
+			</div>
+
+			<div id="prod-price">
+										<span itemprop="price" content="18.95">
+						<meta itemprop='priceCurrency' content='USD'/>
+						$18.95						</span>
+									</div>
+			<div
+	id="prod-stock"
+	class=""
+>
+			<div class="top_10">
+			<label id="meta2_group_label">
+			There are multiple versions of this item. Please select one from the options below:			</label>
+							<ol class="meta_pid_boxes">
+											<li
+							id="meta2_option_2821"
+							class="top_10 enabled "
+							data-part-id="2821"
+						>
+							<a href="/product/2821"  class="">
+									<span class="option_name">
+									Loose Headers - Soldering Required																	</span>
+								<span class="option_meta">
+									$14.95								</span>
+							</a>
+						</li>
+												<li
+							id="meta2_option_3213"
+							class="top_10 enabled "
+							data-part-id="3213"
+						>
+							<a href="/product/3213"  class="">
+									<span class="option_name">
+									Stacking Headers - Solder-free																	</span>
+								<span class="option_meta">
+									$19.95								</span>
+							</a>
+						</li>
+												<li
+							id="meta2_option_3046"
+							class="top_10 enabled  ui-selected "
+							data-part-id="3046"
+						>
+							<a href="/product/3046" aria-current="page" class="ui-selected">
+									<span class="option_name">
+									Assembled Headers - Solder-free																	</span>
+								<span class="option_meta">
+									Out of stock								</span>
+							</a>
+						</li>
+										</ol>
+						</div>
+		<div class="prod-oos-box"><div itemprop="availability" class="oos-header">Out of stock</div>			<form name="back_in_stock_notification" action="https://www.adafruit.com/index.php?main_page=back_in_stock_notification_subscribe&amp;part_id=3046" method="post"><input type="hidden" name="securityToken" value="8436bb623581520785dedc91dd4b4626" />			<fieldset>
+			<legend>Please enter your details below and we will send you an email when this item is back in stock! You will only be emailed about this product.</legend>
+
+			<div class="top-ten">
+			<label class="inputLabel sg-label top-ten">Your Email
+			<input class="sg-input" type="email" size="25" maxlength="96" name="email" value="" /></label>
+			<input type="hidden" name="securityToken" value="8436bb623581520785dedc91dd4b4626" />
+			<input type="hidden" name="notify_me" value="true" />
+			<div class="mobile-button-row"><button type="submit" class="blue-button top-ten">Notify Me</button></div>
+			</div>
+
+			</fieldset>
+			</form>
+			<br class="clearBoth">
+			</div>		<div class="buy-on-digikey-container">
+  <a href="https://www.digikey.com/en/products?mpart=3046&v=1528" class="buyOnDigiKey">Buy on DigiKey</a>
+  <a href="/buyfromdigikey" class="explainer" target="_blank" rel="noopener">Why buy on DigiKey?</a>
+</div>
+
+	
+						<div id="add-to-wishlist-container">
+					<button id="add-btn" class="secondary-button" style="width: 100%;">Add to Wishlist</button>
+									</div>
+			</div>
+			<div id="prod-rightnav">
+				<ul class="nav">
+												<li><a class="prod-rightnav-link" id="prod-rightnav-description" href="/product/3046#description">Description</a></li>
+														<li><a class="prod-rightnav-link" id="prod-rightnav-technical-details" href="/product/3046#technical-details">Technical Details</a></li>
+											</ul>
+									<div id="add-to-wishlist-placeholder"></div>
+								</div>
+
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var top_offset = $('#prod-right-side').offset().top || $('#adafruit-header').height() + 20;
+				$('#prod-right-side').data('offset-top', top_offset);
+				var bottom_offset = $('#footer').height() + 40;
+				$('#prod-right-side').data('offset-bottom', bottom_offset);
+			});
+		</script>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+gtag("event", "view_item", {
+    "currency": "USD",
+    "value": 18.95,
+    "items": [
+        {
+            "item_id": 3046,
+            "price": 18
+        }
+    ]
+});
+if (typeof remarketingParams !== 'undefined') {
+	remarketingParams.ecomm_pagetype = 'product'
+	remarketingParams.ecomm_prodid = 3046;
+	remarketingParams.ecomm_category = 'Feather';
+	remarketingParams.ecomm_totalvalue = 18.95;
+}
+</script>
+
+        </div>         <footer id="siteFooter">
+    <div class="footerContainer">
+        <nav aria-label="Need Help?">
+            <ul>
+                <li>
+                    <a href="/contact_us">Contact Us</a>
+                </li>
+                <li>
+                    <a href="https://forums.adafruit.com/">Tech Support Forums</a>
+                </li>
+                <li>
+                    <a href="/faq">FAQs</a>
+                </li>
+                <li>
+                    <a href="/shipping">Shipping &amp; Returns</a>
+                </li>
+                <li>
+                    <a href="/free">Freebies</a>
+                </li>
+                <li>
+                    <a href="/terms_of_service">Terms of Service</a>
+                </li>
+                <li>
+                    <a href="/privacy">Privacy &amp; Legal</a>
+                </li>
+                <li>
+                    <a href="/accessibility">Website Accessibility</a>
+                </li>
+            </ul>
+        </nav>
+        <nav aria-label="Explore Adafruit">
+            <ul>
+                <li>
+                    <a href="/about">About Us</a>
+                </li>
+                <li>
+                    <a href="/press">Press</a>
+                </li>
+                <li>
+                    <a href="/educators">Educators</a>
+                </li>
+                <li>
+                    <a href="/distributors">Distributors</a>
+                </li>
+                <li>
+                    <a href="https://jobs.adafruit.com">Jobs</a>
+                </li>
+                <li>
+                    <a href="/category/14">Gift Cards</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-quote">
+            
+<span class="quoteClass  ">
+	&ldquo;&nbsp;The economy of human time is the next advantage of machinery in manufactures&rdquo;
+</span>
+<div class="quoteAttribution">
+		<a href="http://en.wikipedia.org/wiki/Charles_Babbage">Charles Babbage</a>
+</div>        </div>
+    </div>
+    <div class="footerContainer bottom">
+        <script>
+            if (typeof remarketingParams !== 'undefined') {
+                dataLayer.push({
+                'event': 'remarketingReady',
+                    'remarketingParams': remarketingParams
+                });
+            }
+        </script>
+        <a href="/about" aria-label="About Adafruit" id="footerFlower">
+            <span aria-hidden="true"><svg viewBox="0 0 196 196" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M117.352 104.241c-7.533 1.204-14.03-.304-14.517-3.358-.487-3.054 5.225-6.504 12.759-7.7 7.529-1.196 14.025.304 14.512 3.354.488 3.054-5.22 6.508-12.754 7.704m-7.154 31.459c-2.759 1.404-7.804-2.959-11.267-9.746-3.467-6.796-4.046-13.45-1.283-14.854 2.75-1.4 7.787 2.962 11.258 9.754 3.467 6.787 4.05 13.437 1.292 14.846m-29.675-12.646c-5.388 5.396-11.525 7.996-13.713 5.808-2.191-2.183.404-8.33 5.792-13.725 5.383-5.404 11.52-8.004 13.717-5.817 2.187 2.184-.405 8.334-5.796 13.734M59.902 85.479c1.396-2.759 8.046-2.184 14.833 1.27 6.8 3.455 11.18 8.496 9.775 11.25-1.404 2.75-8.046 2.188-14.841-1.266-6.796-3.454-11.171-8.496-9.767-11.254m39.117-19.971c3.058.475 4.57 6.979 3.375 14.512-1.18 7.534-4.613 13.246-7.675 12.767-3.05-.483-4.567-6.98-3.384-14.508 1.188-7.534 4.625-13.25 7.684-12.771m96.454 20.617c-.633-4.005-2.808-5.15-8.054-6.825-3.984-1.28-30.667-9.78-30.667-9.78s-18.6-7.029-32.383 2.909c-1.859 1.341-3.784 2.866-5.713 4.491 1.621-1.933 3.146-3.854 4.484-5.712 9.908-13.804 2.85-32.396 2.85-32.396s-8.546-26.663-9.834-30.654c-1.687-5.234-2.833-7.409-6.842-8.03-4.016-.637-5.766 1.076-8.983 5.542-2.45 3.392-18.783 26.146-18.783 26.146S69.13 47.333 74.31 63.52c.704 2.171 1.559 4.475 2.513 6.817-1.342-2.142-2.7-4.187-4.054-6.03C62.698 50.626 42.848 51.58 42.848 51.58s-28.004-.109-32.188-.113c-5.508-.02-7.925.409-9.766 4.021-1.842 3.613-.755 5.82 2.5 10.254 2.47 3.38 19.07 25.938 19.07 25.938s10.917 16.616 27.905 16.683c2.283.013 4.729-.092 7.241-.275a100.38 100.38 0 00-6.97 1.988c-16.13 5.35-21.342 24.533-21.342 24.533s-8.759 26.6-10.067 30.583c-1.708 5.225-2.054 7.654.813 10.517 2.87 2.875 5.304 2.52 10.529.796 3.979-1.304 30.566-10.117 30.566-10.117s19.163-5.254 24.475-21.392c.721-2.166 1.375-4.525 1.984-6.958-.18 2.508-.275 4.95-.254 7.233.087 16.992 16.725 27.88 16.725 27.88s22.583 16.541 25.966 19.016c4.45 3.238 6.65 4.325 10.267 2.48 3.608-1.842 4.03-4.259 4.004-9.767-.016-4.184-.183-32.188-.183-32.188s.933-19.854-12.771-29.9c-1.842-1.35-3.88-2.704-6.02-4.037 2.337.941 4.628 1.796 6.812 2.479 16.187 5.162 31.687-7.288 31.687-7.288s22.717-16.37 26.113-18.82c4.458-3.225 6.162-4.996 5.529-9" fill="#fff" fill-rule="nonzero"/></svg></span>
+        </a>
+	<div class="socialLinks"><a rel="noopener" target="_blank" href="https://www.instagram.com/adafruit/" aria-label="Adafruit on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a><a rel="noopener" target="_blank" href="https://twitter.com/adafruit/" aria-label="Adafruit on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><a rel="noopener" target="_blank" href="https://fosstodon.org/@adafruit" aria-label="Adafruit on Mastodon"><svg role="presentation" style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.4144 232.00976"><path d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915" fill="currentColor"/><path d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675" fill="#000"/></svg></a><a rel="noopener" target="_blank" href="https://www.facebook.com/adafruitindustries" aria-label="Adafruit on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a><a rel="noopener" target="_blank" href="https://www.youtube.com/adafruit" aria-label="Adafruit on YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a><a rel="noopener" target="_blank" href="https://github.com/adafruit" aria-label="Adafruit on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a><a rel="noopener" target="_blank" href="https://www.tiktok.com/@adafruit" aria-label="Adafruit on TikTok"><svg role="presentation" style="height: 1em; margin-bottom: -0.15em;" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 20"><path d="M19.8059,7.50695c-1.029,0,-1.978,-0.341,-2.74,-0.916c-0.875,-0.659,-1.503,-1.626,-1.725,-2.74c-0.055,-0.276,-0.084,-0.56,-0.087,-0.851h-2.939v8.031l-0.003,4.399c0,1.176,-0.766,2.173,-1.828,2.524c-0.308,0.101,-0.641,0.15,-0.987,0.131c-0.443,-0.025,-0.857,-0.158,-1.217,-0.374c-0.767,-0.458,-1.286,-1.29,-1.3,-2.241c-0.023,-1.487,1.179,-2.699,2.665,-2.699c0.294,0,0.575,0.048,0.839,0.134v-2.195v-0.789c-0.278,-0.041,-0.561,-0.062,-0.847,-0.062c-1.627,0,-3.148,0.676,-4.235,1.894c-0.822,0.92,-1.315,2.094,-1.391,3.326c-0.1,1.617,0.492,3.155,1.64,4.289c0.169,0.167,0.346,0.322,0.531,0.464c0.984,0.757,2.187,1.168,3.455,1.168c0.286,0,0.569,-0.021,0.847,-0.062c1.184,-0.176,2.276,-0.718,3.138,-1.57c1.059,-1.046,1.644,-2.436,1.651,-3.915l-0.015,-6.569c0.505,0.39,1.057,0.712,1.65,0.962c0.922,0.389,1.9,0.587,2.907,0.586v-2.134v-0.792c0,0.001,-0.008,0.001,-0.009,0.001z" fill="currentColor"></path></svg></a><a rel="noopener" target="_blank" href="https://adafruit.tumblr.com/" aria-label="Adafruit on Tumblr"><i class="fa fa-tumblr" aria-hidden="true"></i></a><a rel="noopener" target="_blank" href="https://www.threads.net/@adafruit" aria-label="Adafruit on Threads"><svg role="presentation" style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg></a><a rel="noopener" target="_blank" href="https://adafru.it/discord" aria-label="Adafruit on Discord"><svg role="presentation" style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"><path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg></a><a rel="noopener" target="_blank" href="https://bsky.app/profile/adafruit.com" aria-label="Adafruit on BlueSky"><svg role="presentation" style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg></a></div>
+        <div id="footer-messaging">
+            <a href="/about">A Minority and Woman-owned Business Enterprise (M/WBE)</a>
+        </div>
+    </div>
+</footer>
+    </div>
+</div>
+ <script src="/includes/templates/shop2019/dist/adafruit_shop.lib.min.a813855f2b.js"></script><script src="/includes/templates/shop2019/dist/adafruit_shop.min.525bbb13c4.js"></script><script src="/includes/templates/shop2019/dist/adafruit_shop.modules.min.177c413c9d.js"></script><div class="modal fade" id="create-wishlist-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="close create wishlist dialog">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Create New Wishlist</h4>
+			</div>
+			<div class="modal-body">
+				<form id="form-wishlist-create" method="post">
+					<label for="new-wishlist-name">Name</label>
+					<input type="text" name="name" id="new-wishlist-name" value=""/>
+					<label for="new-wishlist-description">Description</label>
+					<textarea name="description" id="new-wishlist-description"></textarea>
+					<div style="text-align: right;">
+						<button id="create-submit" class="blue-button">Create Wishlist</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
