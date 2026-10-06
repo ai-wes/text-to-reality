@@ -201,6 +201,6 @@
     "physical_validation": false,
     "automatic_signal_wiring_eligible": false,
     "qualified_power_path": false,
-    "source_context": "AUTO_IOT main fccba6d2e92fe06e1f4a25b36afabfc346cb1685; physical grip/cycles and solder/lid acceptance untested"
+    "source_context": "JIG_ internal design files (not distributed); physical grip/cycles and solder/lid acceptance untested"
   }
 }

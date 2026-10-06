@@ -48,7 +48,7 @@
         "canonical_resource": "text-to-reality://connectors/usage-rules"
       },
       "cad": {
-        "source_snapshot": "AUTO_IOT/cad/universal_dupont_adapter",
+        "source_snapshot": "JIG_ internal design files (not distributed)",
         "approved_revision": null,
         "mount_source": null,
         "clearance_geometry": null,
