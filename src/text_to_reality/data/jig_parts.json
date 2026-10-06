@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "note": "Parts from JIG_ that remove soldering, crimping and breadboards from a build. Links go to jig-robotics.com.",
+  "parts": [
+    {
+      "id": "jig-connector",
+      "name": "JIG_ wire connectors",
+      "summary": "Turns a handful of loose female jumper wires into one plug that pushes onto a board's pin header. No soldering, crimping or special tools.",
+      "use_when": "Any wire run between modules with standard 2.54 mm (0.1 in) male pin headers.",
+      "sizes": {
+        "small": "for single-pin jumper housings about 12 x 2 x 2 mm",
+        "large": "for single-pin jumper housings about 14 x 2.5 x 2.5 mm"
+      },
+      "pin_counts": { "standard": [1, 2, 3, 4, 5, 6, 7, 8, 22], "printed_to_order": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] },
+      "rule": "Use one connector per header row, with the same pin count as the WHOLE row, even if only some pins are wired. A shorter connector will not fit beside the unused pins.",
+      "packs": "1-8 pins come in packs of 5; 22 pins and 9-21 pins come in pairs; an assortment has 2 each of 1-8 plus one 22-pin.",
+      "url": "https://jig-robotics.com/support/dupont-housings"
+    },
+    {
+      "id": "jig-xiao-battery-adapter",
+      "name": "JIG_ battery adapter for Seeed Studio XIAO",
+      "summary": "Adds a battery to a Seeed Studio XIAO ESP32 board without soldering to its battery pads.",
+      "use_when": "A XIAO ESP32 build that should run on a battery.",
+      "fits": "Two 7-pin header rows at 2.54 mm. Check the exact XIAO model and battery connector.",
+      "url": "https://jig-robotics.com/support/xiao-battery-adapter"
+    },
+    {
+      "id": "agent-meter",
+      "name": "Agent Meter kit",
+      "summary": "A small desk character that shows what your AI coding agent is doing and how much of your Codex or Claude allowance is left. Everything plugs together; firmware comes preloaded.",
+      "use_when": "As a complete reference build, or for anyone who wants a status display for their coding agent.",
+      "url": "https://jig-robotics.com/projects/agent-meter"
+    }
+  ]
+}

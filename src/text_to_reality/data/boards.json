@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "note": "Header rows use the text-to-reality HeaderProfile fields (id, pitch_mm) plus pin_count. Only male 2.54 mm header rows that a jumper connector plugs onto are listed.",
+  "boards": [
+    { "id": "seeed-xiao", "name": "Seeed Studio XIAO", "aliases": ["XIAO ESP32S3", "XIAO ESP32S3 Sense", "XIAO ESP32C3", "XIAO ESP32C6", "XIAO RP2040", "XIAO SAMD21", "XIAO nRF52840"], "kind": "board", "source": "text-to-reality", "headers": [{ "id": "left", "pin_count": 7, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 7, "pitch_mm": 2.54 }] },
+    { "id": "raspberry-pi-pico", "name": "Raspberry Pi Pico", "aliases": ["Pico H", "Pico W", "Pico WH", "Pico 2", "RP2040"], "kind": "board", "source": "text-to-reality", "headers": [{ "id": "left", "pin_count": 20, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 20, "pitch_mm": 2.54 }] },
+    { "id": "esp32-devkitc-v4", "name": "ESP32-DevKitC V4", "aliases": ["ESP32-WROOM-32 DevKitC", "ESP32 38-pin"], "kind": "board", "source": "standard", "headers": [{ "id": "j2", "pin_count": 19, "pitch_mm": 2.54 }, { "id": "j3", "pin_count": 19, "pitch_mm": 2.54 }] },
+    { "id": "esp32-devkit-v1-30", "name": "ESP32 DevKit V1 (30-pin)", "aliases": ["DOIT ESP32 DevKit V1", "ESP32 30-pin"], "kind": "board", "source": "standard", "headers": [{ "id": "left", "pin_count": 15, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 15, "pitch_mm": 2.54 }] },
+    { "id": "esp32-s3-devkitc-1", "name": "ESP32-S3-DevKitC-1", "aliases": ["ESP32-S3 DevKit"], "kind": "board", "source": "standard", "headers": [{ "id": "j1", "pin_count": 22, "pitch_mm": 2.54 }, { "id": "j3", "pin_count": 22, "pitch_mm": 2.54 }] },
+    { "id": "arduino-nano", "name": "Arduino Nano", "aliases": ["Nano Every", "Nano 33 IoT", "Nano 33 BLE", "Nano ESP32"], "kind": "board", "source": "standard", "headers": [{ "id": "left", "pin_count": 15, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 15, "pitch_mm": 2.54 }] },
+    { "id": "pro-micro", "name": "Pro Micro", "aliases": ["SparkFun Pro Micro", "ATmega32U4 Pro Micro"], "kind": "board", "source": "standard", "headers": [{ "id": "left", "pin_count": 12, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 12, "pitch_mm": 2.54 }] },
+    { "id": "wemos-d1-mini", "name": "Wemos D1 mini", "aliases": ["LOLIN D1 mini", "ESP8266 D1 mini"], "kind": "board", "source": "standard", "headers": [{ "id": "left", "pin_count": 8, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 8, "pitch_mm": 2.54 }] },
+    { "id": "nodemcu-esp8266", "name": "NodeMCU ESP8266", "aliases": ["NodeMCU v2", "NodeMCU v3", "ESP-12E NodeMCU"], "kind": "board", "source": "standard", "headers": [{ "id": "left", "pin_count": 15, "pitch_mm": 2.54 }, { "id": "right", "pin_count": 15, "pitch_mm": 2.54 }] },
+    { "id": "st7735s-128", "name": "1.44-inch ST7735S display (128 × 128)", "aliases": ["ST7735", "Red 1.44 TFT", "Agent Meter Mini screen"], "kind": "module", "source": "text-to-reality", "headers": [{ "id": "j1", "pin_count": 8, "pitch_mm": 2.54 }] },
+    { "id": "gmt020-02-8p", "name": "2-inch ST7789 display (GMT020-02-8P)", "aliases": ["ST7789", "2.0 TFT", "Agent Meter Regular screen"], "kind": "module", "source": "text-to-reality", "headers": [{ "id": "j1", "pin_count": 8, "pitch_mm": 2.54 }] },
+    { "id": "ssd1306-i2c", "name": "0.96-inch SSD1306 OLED (I2C)", "aliases": ["SSD1306", "0.96 OLED", "I2C OLED"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 4, "pitch_mm": 2.54 }] },
+    { "id": "hc-sr04", "name": "HC-SR04 ultrasonic sensor", "aliases": ["Ultrasonic distance sensor"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 4, "pitch_mm": 2.54 }] },
+    { "id": "hc-sr501", "name": "HC-SR501 PIR motion sensor", "aliases": ["PIR sensor", "Motion sensor"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 3, "pitch_mm": 2.54 }] },
+    { "id": "gy-521", "name": "MPU-6050 accelerometer/gyro (GY-521)", "aliases": ["MPU6050", "GY-521"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 8, "pitch_mm": 2.54 }] },
+    { "id": "rc522", "name": "RC522 RFID reader", "aliases": ["MFRC522", "RFID-RC522"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 8, "pitch_mm": 2.54 }] },
+    { "id": "max7219-matrix", "name": "MAX7219 8 × 8 LED matrix module", "aliases": ["MAX7219", "LED matrix"], "kind": "module", "source": "standard", "headers": [{ "id": "in", "pin_count": 5, "pitch_mm": 2.54 }, { "id": "out", "pin_count": 5, "pitch_mm": 2.54 }] },
+    { "id": "tm1637", "name": "TM1637 4-digit display", "aliases": ["TM1637", "7-segment display"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 4, "pitch_mm": 2.54 }] },
+    { "id": "microsd-spi", "name": "MicroSD card module (SPI)", "aliases": ["SD card module", "Micro SD"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 6, "pitch_mm": 2.54 }] },
+    { "id": "relay-1ch", "name": "1-channel relay module", "aliases": ["Relay module", "5V relay"], "kind": "module", "source": "standard", "headers": [{ "id": "j1", "pin_count": 3, "pitch_mm": 2.54 }] }
+  ]
+}

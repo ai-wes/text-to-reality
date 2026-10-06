@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "text-to-reality": {
+      "command": "uvx",
+      "args": [
+        "--no-config",
+        "--managed-python",
+        "--python",
+        "3.13",
+        "--from",
+        "text-to-reality==0.1.0",
+        "text-to-reality",
+        "mcp"
+      ],
+      "env": {
+        "TEXT_TO_REALITY_INSTALL_CHANNEL": "claude-github"
+      }
+    }
+  }
+}

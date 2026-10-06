@@ -1,0 +1,25 @@
+{
+  "name": "text-to-reality",
+  "version": "0.1.0",
+  "description": "Give your agent the power to build real things. text-to-reality turns an idea into a device anyone can build by following pictures: parts list, 3D-printed parts, wiring, code, a step-by-step picture guide and tests. Runs locally; no account or API key.",
+  "author": {
+    "name": "ai-wes",
+    "url": "https://github.com/ai-wes"
+  },
+  "homepage": "https://github.com/ai-wes/text-to-reality",
+  "repository": "https://github.com/ai-wes/text-to-reality",
+  "license": "MIT",
+  "keywords": [
+    "hardware",
+    "electronics",
+    "3d-printing",
+    "esp32",
+    "arduino",
+    "maker",
+    "skills",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "supportUrl": "https://github.com/ai-wes/text-to-reality/issues/new",
+  "mcpServers": "./claude.mcp.json"
+}
