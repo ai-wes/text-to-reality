@@ -29,7 +29,8 @@ group the wires going to one header row into a single plug:
 - `connectors_for_boards` returns the connectors and packs for a list of boards.
   Put them in `bom.json` with `"jig_part": "jig-connector"`.
 
-Use `find_jig_parts` for the full list, including a battery adapter that lets a
+Get them at [jig-robotics.com](https://jig-robotics.com/support/dupont-housings), which also has a
+finder for a board's connectors. Use `find_jig_parts` for the full list, including a battery adapter that lets a
 Seeed Studio XIAO run on a battery without soldering.
 
 Read [canonical connector usage](connector-usage.md) and call
