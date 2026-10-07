@@ -4,4 +4,5 @@ __pycache__/
 dist/
 .pytest_cache/
 /text-to-reality/
-.history/
+.history//mcp-publisher
+.mcpregistry_*
