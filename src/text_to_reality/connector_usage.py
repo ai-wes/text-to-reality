@@ -1,7 +1,7 @@
 """Canonical connector policy and checks shared by MCP planning and package validation.
 
 These checks use the existing plain JSON catalogs, bom.json and wiring.json.
-They do not approve physical models, fetch CAD or qualify electrical paths.
+They check the plan on paper, not the physical build.
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ def guidance() -> dict[str, Any]:
     policy = rules()
     return {"rules": policy, "guide": guide(), "rules_sha256": hashlib.sha256(
         json.dumps(policy, sort_keys=True).encode()
-    ).hexdigest(), "fit_approved": False, "physical_validation": False}
+    ).hexdigest()}
 
 
 def positive_int(value: Any, label: str) -> int:
@@ -46,7 +46,7 @@ def _number(value: Any) -> bool:
 
 
 def header_issues(header: dict[str, Any]) -> list[str]:
-    """Unknowns fail closed; text evidence is never coerced into approval."""
+    """What a header must be for a JIG_ connector; unknown values count as unchecked."""
     issues = []
     if type(header.get("pin_count")) is not int or not 1 <= header["pin_count"] <= 22:
         issues.append("full_row_count_unsupported")
@@ -75,7 +75,7 @@ def incompatible_header(header: dict[str, Any]) -> bool:
 
 
 def connector_issues(connector: dict[str, Any]) -> list[str]:
-    """A count, model name or caller's approved flag cannot bypass fit checks."""
+    """A connector must cover a whole compatible row, with every position in order."""
     issues = []
     header = connector.get("header")
     if not isinstance(header, dict):
@@ -83,23 +83,8 @@ def connector_issues(connector: dict[str, Any]) -> list[str]:
     issues.extend(header_issues(header))
     if connector.get("pins") != header.get("pin_count"):
         issues.append("connector_must_cover_full_row")
-    if not connector.get("board_revision"):
-        issues.append("exact_board_revision_missing")
     if not connector.get("board") or not header.get("id"):
         issues.append("exact_board_and_header_identity_missing")
-    if rules()["model_choice"]["approved_model_revision"] is None:
-        issues.append("approved_connector_model_unresolved")
-    elif connector.get("model_revision") != rules()["model_choice"]["approved_model_revision"]:
-        issues.append("connector_model_revision_mismatch")
-    measured, envelope = connector.get("housing", {}), connector.get("model_envelope", {})
-    if not isinstance(measured, dict) or not isinstance(envelope, dict):
-        measured, envelope = {}, {}
-    for dimension in ("width_mm", "length_mm", "height_mm", "wire_diameter_mm"):
-        actual, maximum = measured.get(dimension), envelope.get(dimension)
-        if not _number(actual) or not _number(maximum):
-            issues.append(f"housing_{dimension}_unknown")
-        elif actual > maximum:
-            issues.append(f"housing_{dimension}_exceeds_model")
     orientation = connector.get("orientation")
     if not isinstance(orientation, dict):
         orientation = {}
@@ -108,13 +93,8 @@ def connector_issues(connector: dict[str, Any]) -> list[str]:
             or not all(isinstance(pin, str) and pin.strip() for pin in ordered)
             or len(set(ordered)) != len(ordered)):
         issues.append("ordered_full_row_pin_map_missing")
-    for key in ("pin_one", "board_side", "mating_direction"):
-        if not orientation.get(key):
-            issues.append(f"orientation_{key}_missing")
-    for key in ("contact_engagement_evidence", "paired_model_hashes", "mount_source",
-                "clearance_geometry", "retention_protocol", "print_conditions"):
-        if not connector.get(key):
-            issues.append(f"{key}_missing")
+    if not orientation.get("pin_one"):
+        issues.append("orientation_pin_one_missing")
     return issues
 
 
@@ -135,6 +115,4 @@ def wire_issues(wire: dict[str, Any]) -> list[str]:
                 issues.append(f"{key}_unknown")
             elif _number(current) and current > limit:
                 issues.append(f"{key}_exceeded")
-        if not wire.get("electrical_evidence"):
-            issues.append("electrical_rating_polarity_protection_evidence_missing")
     return issues

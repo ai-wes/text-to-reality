@@ -144,8 +144,8 @@ The agent uses JIG_ connectors by default. It looks up each board's pin rows, pi
 one connector per row, lists what to buy, and notes any row a connector can't fit.
 **[Get them at jig-robotics.com →](https://jig-robotics.com/support/dupont-housings)**
 
-The exact connector model is still being finalized, so for now the picture guide
-points to JIG_ for the step where the wires go into the connector.
+Each connector is a base that holds the wires in order and a cover that snaps on.
+The picture guide shows how to load it, close it and plug it on.
 
 ## License
 

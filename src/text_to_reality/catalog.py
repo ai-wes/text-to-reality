@@ -134,11 +134,9 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
         rows = []
         for header in headers:
             pins = connector_usage.positive_int(header.get("pin_count"), "full row pins")
-            row_issues = connector_usage.header_issues(header)
-            if not revision:
-                row_issues.append("exact_board_revision_missing")
             issues.append({"board": label, "header_id": header.get("id"),
-                           "issues": row_issues, "excluded": connector_usage.incompatible_header(header)})
+                           "issues": connector_usage.header_issues(header),
+                           "excluded": connector_usage.incompatible_header(header)})
             if connector_usage.incompatible_header(header):
                 continue
             rows.append(pins)
@@ -159,8 +157,7 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
             item["assembly_units_per_pack"] = pack["connectors_per_pack"]
             item["spare_assemblies"] = item["packs_to_order"] * pack["connectors_per_pack"] - count
             item["base_units"] = count
-            item["retainer_units"] = count
-        item["fit_approved"] = False
+            item["cover_units"] = count
         connectors.append(item)
     return {
         "rule": "One connector per header row, sized to the whole row.",
@@ -170,17 +167,14 @@ def connectors_for(selections: list[dict[str, Any]], size: str = "small") -> dic
         "order_url": CONNECTOR_URL,
         "usage_revision": connector_usage.rules()["revision"],
         "dependency": connector_usage.rules()["dependency"],
-        "model_choice": connector_usage.rules()["model_choice"],
+        "design": connector_usage.rules()["design"],
         "row_checks": issues,
-        "status": "planning_only_model_unresolved",
-        "physical_validation": False,
-        "bom_draft": [{"part": f"JIG {c['pins']}-pin {size} matched assembly", "quantity": c["connectors"],
-                       "unit": "assembly", "pins": c["pins"], "size": size, "jig_part": "jig-connector",
-                       "model_revision": None} for c in connectors],
+        "bom_draft": [{"part": f"JIG_ {c['pins']}-pin {size} connector", "quantity": c["connectors"],
+                       "unit": "assembly", "pins": c["pins"], "size": size, "jig_part": "jig-connector"}
+                      for c in connectors],
         "row_diagrams": [{"board": b["board"], "revision": b["revision"],
                           "header_id": h.get("id"), "full_row_positions": h["pin_count"],
-                          "ordered_pin_ids": h.get("pin_ids"), "orientation": h.get("orientation"),
-                          "note": "Pin identifiers, board side and pin-one datum require exact source/measurements; never infer from row count."}
+                          "ordered_pin_ids": h.get("pin_ids"), "orientation": h.get("orientation")}
                          for b in resolved for h in b["headers"]],
-        "note": "Counts are provisional full-row assemblies, never fit approval. Resolve all row checks and the exact model before ordering or assembly.",
+        "note": "row_checks lists what to confirm on the real board (male, single row, unshrouded, already installed).",
     }

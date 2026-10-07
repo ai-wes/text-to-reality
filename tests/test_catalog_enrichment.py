@@ -51,8 +51,6 @@ def test_enrichment_preserves_originals_qualification_and_replays(tmp_path, monk
     monkeypatch.setattr(catalog, "boards", lambda: result["boards"])
     plan = catalog.connectors_for([{"board": "sample"}])
     assert "header_installation_unverified" in plan["row_checks"][0]["issues"]
-    assert plan["physical_validation"] is False
-    assert not plan["connectors"][0]["fit_approved"]
 
 
 @pytest.mark.parametrize("field,value", [("sku", "other"), ("revision", "r2"), ("id", "other"),

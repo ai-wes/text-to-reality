@@ -46,8 +46,9 @@ def test_counts_only_header_package_is_blocked_and_links_parts(tmp_path):
     _, folder = finished_project(tmp_path)
     report = package.validate(folder)
     assert not report["complete"]
-    assert any("approved_connector_model_unresolved" in p for p in report["problems"])
-    assert report["get_the_parts"] == [{"name": "JIG_ wire connectors", "url": "https://jig-robotics.com/support/dupont-housings"}]
+    assert any("declare endpoint boards" in p for p in report["problems"])
+    assert any("ordered_full_row_pin_map_missing" in p for p in report["problems"])
+    assert report["get_the_parts"] == [{"name": "JIG_ connectors", "url": "https://jig-robotics.com/support/dupont-housings"}]
 
 
 def test_edited_file_is_caught(tmp_path):
@@ -96,7 +97,6 @@ def test_connectors_use_one_per_full_row():
     custom = catalog.connectors_for([{"board": "my board", "rows": [6, 6], "quantity": 3}], "large")
     assert custom["connectors"][0]["connectors"] == 6
     assert custom["connectors"][0]["packs_to_order"] == 2
-    assert custom["connectors"][0]["fit_approved"] is False
 
 
 def test_history_and_outcomes(tmp_path):

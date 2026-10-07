@@ -4,9 +4,9 @@
   "parts": [
     {
       "id": "jig-connector",
-      "name": "JIG_ wire connectors",
-      "summary": "Turns a handful of loose female jumper wires into one plug that pushes onto a board's pin header. No soldering, crimping or special tools.",
-      "use_when": "Required default for compatible board-to-board installed, unshrouded, single-row 2.54 mm male headers, subject to exact model and all fit/electrical checks.",
+      "name": "JIG_ connectors",
+      "summary": "Turns the loose female jumper wires going to one row of header pins into a single plug. Two pieces: a base that holds each wire's plug in order, and a cover that snaps on. No soldering, crimping or tools.",
+      "use_when": "The default for wiring onto any male, single-row, 2.54 mm, unshrouded header that is already on the board.",
       "sizes": {
         "small": "for single-pin jumper housings about 12 x 2 x 2 mm",
         "large": "for single-pin jumper housings about 14 x 2.5 x 2.5 mm"
@@ -40,21 +40,9 @@
         ]
       },
       "rule": "Use one connector per header row, with the same pin count as the WHOLE row, even if only some pins are wired. A shorter connector will not fit beside the unused pins.",
-      "packs": "1-8 pins come in packs of 5; 22 pins and 9-21 pins come in pairs; an assortment has 2 each of 1-8 plus one 22-pin.",
+      "packs": "1-8 pins come in packs of 5; 9-22 pins come in pairs; an assortment has 2 each of 1-8 plus one 22-pin.",
       "url": "https://jig-robotics.com/support/dupont-housings",
-      "qualification": {
-        "model_choice": "unresolved",
-        "physical_validation": false,
-        "canonical_resource": "text-to-reality://connectors/usage-rules"
-      },
-      "cad": {
-        "source_snapshot": "JIG_ internal design files (not distributed)",
-        "approved_revision": null,
-        "mount_source": null,
-        "clearance_geometry": null,
-        "retention_protocol": null,
-        "retrieval_status": "exact_approved_version_required; no CAD bundled"
-      }
+      "guide_url": "https://jig-robotics.com/support/dupont-housings/combs"
     },
     {
       "id": "jig-xiao-battery-adapter",

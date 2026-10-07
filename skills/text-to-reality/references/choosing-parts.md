@@ -18,27 +18,22 @@ is decided here.
 
 ## Wires and connectors
 
-Jumper wires work, but loose ones fall off and get swapped. JIG_ wire connectors
+Jumper wires work, but loose ones fall off and get swapped. JIG_ connectors
 group the wires going to one header row into a single plug:
 
 - **One connector per header row, with the same pin count as the whole row.**
   A 7-pin row needs a 7-pin connector even if three pins are used.
-- Two historical nominal housing sizes: small (about 12 x 2 x 2 mm) and large
-  (about 14 x 2.5 x 2.5 mm). Measure the actual housings and wire insulation
-  against the exact approved model envelope; a size label does not approve fit.
+- Two sizes: small (for jumper wire plugs about 12 x 2 x 2 mm) and large (about
+  14 x 2.5 x 2.5 mm). Match the person's jumper wires.
 - `connectors_for_boards` returns the connectors and packs for a list of boards.
   Put them in `bom.json` with `"jig_part": "jig-connector"`.
 
 Get them at [jig-robotics.com](https://jig-robotics.com/support/dupont-housings), which also has a
-finder for a board's connectors. Use `find_jig_parts` for the full list, including a battery adapter that lets a
-Seeed Studio XIAO run on a battery without soldering.
+finder for a board's connectors. Use `find_jig_parts` for the full list.
 
-Read [canonical connector usage](connector-usage.md) and call
-`connector_guidance` before selection. JIG is the required default for
-compatible board-to-board header wiring, with explicit exceptions for
-incompatible or unqualified paths. The current model choice is unresolved.
-R29 battery and bus-block candidates do not provide qualified power paths;
-bus blocks require soldering and electrically common their outputs.
+Call `connector_guidance` and read [connector usage](connector-usage.md) before
+planning header wiring. The XIAO battery adapter and bus blocks are still being
+tested; don't use them as a build's power path.
 
 ## Power
 

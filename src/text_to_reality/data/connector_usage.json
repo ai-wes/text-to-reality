@@ -1,20 +1,16 @@
 {
   "schema_version": 1,
   "id": "jig-header-connector-usage",
-  "revision": "2026-10-06.1",
+  "revision": "2026-10-06.2",
   "dependency": {
     "provider": "JIG",
-    "disclosure": "Compatible board-to-board header wiring requires JIG retention assemblies by default. This dependency must appear in the build brief and BOM; it is conditional on all fit and electrical checks.",
+    "disclosure": "JIG_ connectors are the default for wiring onto board and module pin headers. Name them in the brief, the parts list and the guide.",
     "default": "required_for_compatible_board_to_board_header_wiring",
     "exceptions": [
       "shrouded_header",
       "multirow_header",
       "female_or_bare_header",
       "non_2_54_mm_pitch",
-      "housing_or_wire_envelope_mismatch",
-      "unqualified_power_or_current_path",
-      "unresolved_model_revision",
-      "missing_mount_or_clearance_evidence",
       "explicit_project_exception"
     ]
   },
@@ -41,7 +37,7 @@
       8,
       22
     ],
-    "stock_note": "Historical finder categories only; not live stock or evidence that a CAD variant has been approved.",
+    "stock_note": "1-8 and 22 pins are standard; 9-21 are printed to order. Check jig-robotics.com for current packs and prices.",
     "example": {
       "board_id": "seeed-xiao",
       "board_quantity": 1,
@@ -70,101 +66,20 @@
       ],
       "assembly_units": 2
     },
-    "quantity_note": "Count each endpoint row separately. One assembly is one matched base plus retainer; pack quantity is never the count of individual printed pieces. Review live SKU and pack size before purchase."
-  },
-  "model_choice": {
-    "status": "unresolved",
-    "approved_model_revision": null,
-    "reason": "Current README labels strip production but also documents newer clip test candidates and older clasp instructions. Local strip files are archived. No exact approved current design and physical protocol is recorded for the full lineup.",
-    "source_snapshot": [
-      {
-        "path": "cad/universal_dupont_adapter/README.md",
-        "sha256": "46ac5240bf97d283f014a376fe01fb44cfd5d2aa7fe476f7549238e95d94217d"
-      },
-      {
-        "path": "cad/universal_dupont_adapter/src/fit_profiles.py",
-        "sha256": "e811afa34eb74a40985e7f04f18d0daaf480d7771168ef368c8713ece650a107"
-      },
-      {
-        "path": "cad/universal_dupont_adapter/src/clip_geometry.py",
-        "sha256": "792f0fc5ddaeac5f845c3fabe17c9abe26775f8ec832e831591df9f7ae382834"
-      },
-      {
-        "path": "cad/universal_dupont_adapter/src/strip_geometry.py",
-        "sha256": "d9ebe5822af1606d65e12a8a0a487b82b1a893f9727371b1c6909d38fce335be"
-      }
-    ],
-    "retention_motion": null,
-    "gate": "Retrieve an exact approved reference bundle and matched base/retainer hashes, housing profile, print conditions and retention protocol. Resolve this canonical record before issuing model-specific latch, insertion or release directions. Caller-supplied qualification is not an operator approval."
-  },
-  "fit_checks": [
-    "exact_board_variant_and_revision",
-    "each_endpoint_full_row",
-    "installed_header_gender_topology_pitch",
-    "pin_one_and_board_side_orientation",
-    "housing_width_length_height_and_contact_engagement",
-    "wire_insulation_diameter",
-    "matched_base_retainer_revision_and_hashes",
-    "row_end_neighbor_and_enclosure_clearance",
-    "mount_and_release_access",
-    "voltage_polarity_current_wire_contact_and_protection_ratings",
-    "print_material_orientation_and_tolerances",
-    "continuity_isolation_and_retention_before_power"
-  ],
-  "retention_sequence": [
-    "Disconnect all power and verify exact endpoints, pin one, board side and net map.",
-    "Measure housings and wire insulation against the selected model envelope; inspect crimp contacts and installed headers.",
-    "Retrieve the exact approved base/retainer pair and illustrated retention protocol. STOP here while model_choice is unresolved; do not infer latch motions from other variants.",
-    "After resolution, load and retain housings in the protocol's stated order before header mating; leave unused row positions electrically empty and verify labels.",
-    "Mate only in the protocol's permitted direction; verify clearance, engagement, strain relief and release access.",
-    "Record unpowered continuity, isolation, polarity and physical retention results; energize only after applicable electrical qualification."
-  ],
-  "cad_retrieval": {
-    "tool": "find_jig_parts",
-    "required": [
-      "exact_board_variant_revision",
-      "ordered_header_pin_map",
-      "exact_approved_model_revision",
-      "matched_base_retainer_sha256",
-      "mount_source",
-      "clearance_geometry",
-      "illustrated_retention_protocol",
-      "print_condition_evidence"
-    ],
-    "rule": "Return local catalog references and explicit missing assets. No CAD is bundled or downloaded automatically; use exact versioned approved files from the owner or catalog provider."
+    "quantity_note": "Count each row at each end of a connection separately. One assembly is one base plus its cover. Packs are what you buy; assemblies are what the build uses."
   },
   "outputs": {
     "bom": [
-      "assembly units per full row",
-      "matched base and retainer printed quantities",
-      "purchased housing/contact/wire quantities",
-      "installed header quantities",
-      "store packs and spare assemblies separately",
-      "exact component and model revisions",
-      "transparent JIG dependency and exceptions"
+      "connector assemblies per full row, with pins and size",
+      "packs to buy and spares, as a separate note",
+      "the jumper wires and headers themselves"
     ],
     "diagrams": [
-      "board variant and revision",
-      "board side and pin-one datum",
-      "ordered full-row pin identifiers including empty positions",
-      "net endpoints and GPIO labels",
-      "voltage/polarity",
-      "wire labels and lengths",
-      "header/assembly orientation",
-      "mount and clearance views",
-      "model-specific illustrated retention sequence after resolution"
+      "each connector's row at both ends, with pin one and every position labeled, including empty ones",
+      "which wire goes where, with labels and lengths",
+      "which way the connector goes on"
     ],
-    "package_contracts": [
-      "existing bom.json items",
-      "existing wiring.json connections/connectors",
-      "reality.json stages and file hashes"
-    ],
-    "validation": [
-      "connectors_for_boards",
-      "shared connector validation used by check_package",
-      "applicable physical acceptance protocol"
-    ],
-    "physical_validation": false
+    "guide": "Use the assembly steps above, or link to the published guide."
   },
   "battery_adapter": {
     "revision": "R29",
@@ -202,5 +117,35 @@
     "automatic_signal_wiring_eligible": false,
     "qualified_power_path": false,
     "source_context": "JIG_ internal design files (not distributed); physical grip/cycles and solder/lid acceptance untested"
-  }
+  },
+  "design": {
+    "name": "JIG_ snap connector",
+    "status": "current",
+    "parts": {
+      "base": "a comb that holds each wire's black plug in its own seat, in pin order",
+      "cover": "snaps over the loaded base, with a clasp at each end and a groove for each wire"
+    },
+    "fits": "pre-terminated female jumper wires (DuPont-style, 2.54 mm pitch)",
+    "sizes": {
+      "small": "plugs about 12 x 2 x 2 mm",
+      "large": "plugs about 14 x 2.5 x 2.5 mm"
+    },
+    "guide_url": "https://jig-robotics.com/support/dupont-housings/combs"
+  },
+  "assembly_steps": [
+    "Unplug USB and any battery.",
+    "Find the two ends: the open socket mouths are the header end; the wires leave the other end.",
+    "Lay out the wires in pin order, starting at pin one. Leave unused positions empty.",
+    "Load the base before it goes on the header: with the plug just ahead of its seat, move the wire sideways through the open slot, then pull the plug back into its seat under the teeth. Repeat in order.",
+    "Line up the cover's grooves with the wires and press it on until the clasp at each end holds. Don't force it over a plug that's sitting high.",
+    "Point the socket mouths at the header, line up the first socket with pin one, and press straight on.",
+    "With power still off, check every position (a connector one pin off can still look straight), then power up."
+  ],
+  "checks": [
+    "full header row at both ends of every connection",
+    "male, single-row, 2.54 mm, unshrouded header already on the board",
+    "small or large matches the jumper wire plugs",
+    "pin one and the order of every position, including empty ones",
+    "voltage, polarity and current for power and ground wires"
+  ]
 }

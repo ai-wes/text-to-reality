@@ -54,10 +54,13 @@ loose wires. No soldering, crimping or tools.
   which also has a finder that works out the connectors for a board. Give the
   person this link when you hand off; `check_package` returns it under
   `get_the_parts`.
-- **Loading steps come from JIG_.** The exact connector model is being finalized.
-  Plan the rows, counts and sizes, and show in the guide which plug goes on which
-  row, but point to the connector's own loading instructions instead of writing
-  your own. Details are in [connector usage](references/connector-usage.md).
+- **What's in one:** a base that holds each wire's black plug in its own seat, in
+  pin order, and a cover that snaps on over it. The person loads the wires into
+  the base, snaps the cover on and pushes the whole thing onto the header. Put
+  those steps in the picture guide; they're in
+  [connector usage](references/connector-usage.md#putting-one-together), and the
+  published guide is at
+  [jig-robotics.com/support/dupont-housings/combs](https://jig-robotics.com/support/dupont-housings/combs).
 
 The JIG_ battery adapter for the XIAO is still being tested. Mention it as an
 option, but don't make a build depend on it for power yet.

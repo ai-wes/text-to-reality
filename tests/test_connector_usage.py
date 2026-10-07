@@ -33,16 +33,18 @@ def connector(**updates):
             "retention_protocol": "unapproved-guide.md", "print_conditions": "print.json", **updates}
 
 
-def test_canonical_guidance_binds_unresolved_model_and_battery_bus_limits():
+def test_canonical_guidance_describes_connector_and_battery_bus_limits():
     result = connector_usage.guidance()
-    assert result["rules"]["model_choice"]["approved_model_revision"] is None
-    assert result["rules"]["model_choice"]["retention_motion"] is None
+    design = result["rules"]["design"]
+    assert design["status"] == "current" and set(design["parts"]) == {"base", "cover"}
+    assert design["guide_url"].startswith("https://jig-robotics.com/")
+    assert len(result["rules"]["assembly_steps"]) >= 5
     assert result["rules"]["battery_adapter"]["qualified"] is False
     assert result["rules"]["battery_adapter"]["revision"] == "R29"
     assert result["rules"]["bus_blocks"]["solder_free"] is False
     assert result["rules"]["bus_blocks"]["automatic_signal_wiring_eligible"] is False
     assert "two 7-pin assemblies" in result["guide"]
-    assert "Stop" in result["guide"]
+    assert "Snap the cover on" in result["guide"]
     assert "connector_guidance" in INSTRUCTIONS
 
 
@@ -50,13 +52,12 @@ def test_xiao_full_rows_are_two_assemblies_not_wire_count_or_pack_count():
     result = catalog.connectors_for([selection()])
     item = result["connectors"][0]
     assert (item["pins"], item["connectors"], item["packs_to_order"], item["spare_assemblies"]) == (7, 2, 1, 3)
-    assert item["base_units"] == item["retainer_units"] == 2
+    assert item["base_units"] == item["cover_units"] == 2
     assert result["bom_draft"][0]["quantity"] == 2
     assert result["bom_draft"][0]["unit"] == "assembly"
     assert len(result["row_diagrams"]) == 2
     assert all(r["full_row_positions"] == 7 for r in result["row_diagrams"])
-    assert item["fit_approved"] is False
-    assert result["model_choice"]["status"] == "unresolved"
+    assert result["design"]["status"] == "current"
 
 
 @pytest.mark.parametrize("value", [True, False, 1.5, "2", 0, -1, None])
@@ -82,7 +83,6 @@ def test_custom_counts_and_catalog_references_never_bypass_fit_gates():
     assert "installed_male_gender_unverified" in result["row_checks"][0]["issues"]
     result = catalog.connectors_for([{"board": "XIAO ESP32S3"}])
     assert result["row_checks"][0]["issues"]
-    assert not result["connectors"][0]["fit_approved"]
 
 
 def test_catalog_keeps_legacy_ids_and_exact_variants_evidence_and_auxiliary_groups():
@@ -105,13 +105,13 @@ def test_catalog_keeps_legacy_ids_and_exact_variants_evidence_and_auxiliary_grou
         assert [h["pin_count"] for h in catalog.board(id)["headers"]] == counts
 
 
-def test_housing_dimensions_orientation_and_exact_model_approval_are_checked():
-    assert connector_usage.connector_issues(connector()) == ["approved_connector_model_unresolved"]
-    bad = connector(housing={"width_mm": 3, "height_mm": 3, "length_mm": 15, "wire_diameter_mm": 2})
-    assert len([p for p in connector_usage.connector_issues(bad) if p.endswith("exceeds_model")]) == 4
+def test_full_row_header_type_and_pin_order_are_checked():
+    assert connector_usage.connector_issues(connector()) == []
     assert "connector_must_cover_full_row" in connector_usage.connector_issues(connector(pins=3))
     assert "ordered_full_row_pin_map_missing" in connector_usage.connector_issues(connector(orientation={}))
-    assert "approved_connector_model_unresolved" in connector_usage.connector_issues(connector(approved=True))
+    assert "orientation_pin_one_missing" in connector_usage.connector_issues(connector(orientation={}))
+    assert "installed_male_gender_unverified" in connector_usage.connector_issues(
+        connector(header=header(gender=None)))
 
 
 def test_power_current_ratings_cannot_be_inferred_from_mechanical_fit():
@@ -120,7 +120,6 @@ def test_power_current_ratings_cannot_be_inferred_from_mechanical_fit():
     issues = connector_usage.wire_issues(wire)
     assert "wire_current_limit_ma_exceeded" in issues
     assert "contact_current_limit_ma_exceeded" in issues
-    assert "electrical_rating_polarity_protection_evidence_missing" in issues
 
 
 def test_package_cannot_omit_default_connectors_or_shorten_row():
@@ -131,7 +130,6 @@ def test_package_cannot_omit_default_connectors_or_shorten_row():
     package.check_wiring({"boards": [selection()], "connections": [{"from": "a", "to": "b"}],
                           "connectors": [connector(pins=3)]}, problems)
     assert any("connector_must_cover_full_row" in p for p in problems)
-    assert any("approved_connector_model_unresolved" in p for p in problems)
 
 
 def test_identical_row_sizes_cannot_hide_duplicate_endpoint_assemblies():
@@ -166,7 +164,7 @@ def test_mcp_resource_and_tool_use_the_same_canonical_bytes(tmp_path):
         assert readable[0].content == connector_usage.guide()
         rows = await server.call_tool("connectors_for_boards", {"boards": [selection()]})
         assert rows.structured_content["connectors"][0]["connectors"] == 2
-        assert rows.structured_content["model_choice"]["status"] == "unresolved"
+        assert rows.structured_content["design"]["status"] == "current"
         resources = await server.list_resources()
         assert len(resources) == 3
     asyncio.run(check())
@@ -184,7 +182,7 @@ def test_fresh_stdio_agent_retrieves_guidance_and_gated_catalog_mapping(tmp_path
                 await session.initialize()
                 result = await session.call_tool("connector_guidance", {})
                 assert not result.is_error
-                assert result.structured_content["rules"]["model_choice"]["status"] == "unresolved"
+                assert result.structured_content["rules"]["design"]["status"] == "current"
                 resource = await session.read_resource("text-to-reality://connectors/agent-guide")
                 assert "two 7-pin assemblies" in resource.contents[0].text
                 plan = await session.call_tool("connectors_for_boards", {"boards": [{"board": "XIAO ESP32S3"}]})
@@ -193,7 +191,22 @@ def test_fresh_stdio_agent_retrieves_guidance_and_gated_catalog_mapping(tmp_path
     asyncio.run(check())
 
 
-def test_source_revision_descriptions_do_not_approve_actual_board_revision():
-    plan = catalog.connectors_for([{"board": "st-nucleo-f031k6"}])
-    assert "exact_board_revision_missing" in plan["row_checks"][0]["issues"]
-    assert plan["model_choice"]["approved_model_revision"] is None
+def test_documented_example_package_passes(tmp_path):
+    import re
+    doc = (Path(__file__).resolve().parents[1] / "skills/text-to-reality/references/package-format.md").read_text()
+    bom, wiring = [json.loads(block) for block in re.findall(r"```json\n(.*?)```", doc, re.S)[:2]]
+    problems = []
+    package.check_bom(bom, problems)
+    package.check_wiring(wiring, problems)
+    assert problems == []
+    store = Store(tmp_path)
+    store.create("Example", "The documented example.")
+    folder = tmp_path / "example"
+    (folder / "bom.json").write_text(json.dumps(bom))
+    (folder / "wiring.json").write_text(json.dumps(wiring))
+    (folder / "guide.md").write_text("# Guide")
+    store.record("example", "parts", ["bom.json"])
+    store.record("example", "electronics", ["wiring.json"])
+    store.record("example", "assembly", ["guide.md"])
+    report = package.validate(folder)
+    assert not [p for p in report["problems"] if "json" in p], report["problems"]

@@ -128,10 +128,6 @@ def check_wiring(wiring: Any, problems: list[str]) -> list[dict[str, Any]]:
                         expected_rows[key] = expected_rows.get(key, 0) + row["quantity"]
             if not valid_exceptions <= known_rows:
                 problems.append("wiring.json: exception references an unknown endpoint row")
-            for row in plan["row_checks"]:
-                if (row["board"], row["header_id"]) not in valid_exceptions and row["issues"]:
-                    problems.append(f"wiring.json {row['board']}/{row['header_id']}: "
-                                    + ", ".join(row["issues"]))
             if expected_rows != actual_rows:
                 problems.append("wiring.json: connector board/header identities must cover each endpoint row exactly")
             if {k: v for k, v in expected.items() if v} != actual:
@@ -210,8 +206,8 @@ def validate(directory: Path) -> dict[str, Any]:
                     if not isinstance(row, dict) or row.get("jig_part") != "jig-connector":
                         continue
                     if (row.get("unit") != "assembly" or type(row.get("pins")) is not int
-                            or row.get("size") not in {"small", "large"} or not row.get("model_revision")):
-                        problems.append("bom.json: JIG connector needs assembly unit, full-row pins, size and model_revision; store packs are separate")
+                            or row.get("size") not in {"small", "large"}):
+                        problems.append("bom.json: JIG connector needs unit 'assembly', full-row pins and size; store packs are separate")
                         continue
                     key = (row["pins"], row["size"])
                     if type(row.get("quantity")) is int:

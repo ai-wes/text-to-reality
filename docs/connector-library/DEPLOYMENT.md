@@ -34,10 +34,5 @@ A published version can't be replaced, so bump the version for any fix.
 
 ## Still open
 
-- The exact JIG_ connector model is being finalized. Until it is, `check_package`
-  reports the model as unresolved and no package that uses connectors passes.
-  When it's final, record the approved model in `connector_usage.json` and
-  `jig_parts.json`, and replace the "Stop" step in the connector guide with
-  JIG_'s loading steps.
 - The XIAO battery adapter (R29) and bus blocks are untested.
 - The server runs over stdio only; there is no hosted endpoint.

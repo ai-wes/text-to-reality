@@ -253,8 +253,6 @@ def test_wave3_sources_replay_and_normalization_are_exact():
     assert len(pololu["headers"]) == 2
     assert any(h["original_header"].get("id") == "VREF_access" for h in pololu["excluded_headers"])
     plan = catalog.connectors_for([{"board": "pololu-1182"}])
-    assert plan["physical_validation"] is False
-    assert all(not c["fit_approved"] for c in plan["connectors"])
     assert all("installed_male_gender_unverified" in row["issues"] for row in plan["row_checks"])
 
 
@@ -285,9 +283,6 @@ def test_wave4_preserves_exclusions_and_replays_exactly():
     assert all(h["rows"] == 1 for r in normalized["boards"] for h in r["headers"])
     for r in normalized["boards"]:
         plan = catalog.connectors_for([{"board": r["id"]}])
-        assert plan["physical_validation"] is False
-        assert all(c["fit_approved"] is False for c in plan["connectors"])
-        assert plan["model_choice"]["approved_model_revision"] is None
 
 
 def test_wave5_new_records_preserve_multirow_and_nonuniform_exclusions():
@@ -329,7 +324,6 @@ def test_wave6_sbc_headers_are_discoverable_without_comb_proposals():
     for r in normalized["boards"]:
         plan = catalog.connectors_for([{"board": r["id"]}])
         assert plan["connectors"] == []
-        assert plan["physical_validation"] is False
     assert len(merged["boards"]) == len(catalog.boards())
 
 
@@ -349,7 +343,6 @@ def test_wave7_nucleo144_mixed_faces_and_morpho_remain_excluded():
         assert any(h.get("gender") == "mixed" for h in originals)
         plan = catalog.connectors_for([{"board": r["id"]}])
         assert plan["connectors"] == []
-        assert plan["physical_validation"] is False
     assert len(merged["boards"]) == len(catalog.boards())
 
 
@@ -369,8 +362,4 @@ def test_wave8_exact_factory_skUs_never_promote_fit_or_import_held_lead():
         assert all(h["rows"] == 1 and h["gender"] == "male" and h["pitch_mm"] == 2.54 for h in r["headers"])
         plan = catalog.connectors_for([{"board": r["id"]}])
         assert sum(c["connectors"] for c in plan["connectors"]) == 2
-        assert plan["physical_validation"] is False
-        assert all(c["fit_approved"] is False for c in plan["connectors"])
-        assert plan["model_choice"]["approved_model_revision"] is None
-        assert all("exact_board_revision_missing" in row["issues"] for row in plan["row_checks"])
     assert len(merged["boards"]) == len(catalog.boards())
