@@ -30,7 +30,7 @@ machine: no account, no API key, and your projects are plain folders you own.
 > *"Build me a little desk character that shows what my coding agent is doing and
 > how much of my Claude allowance is left."*
 
-<p align="center"><img src="docs/media/agent-meter.png" alt="Agent Meter, a small printed robot character with a screen in its head (concept render)" width="420"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ai-wes/text-to-reality/main/docs/media/agent-meter.png" alt="Agent Meter, a small printed robot character with a screen in its head (concept render)" width="420"></p>
 
 Agent Meter illustrates this workflow: a Seeed Studio XIAO ESP32-S3 and a small
 screen inside a printed character, wired with plug-on connectors, with firmware and
@@ -137,14 +137,15 @@ uvx text-to-reality check ./text-to-reality/my-build
 ## Parts that plug together
 
 Loose jumper wires fall off and get swapped. [JIG_](https://jig-robotics.com) makes
-parts that turn wiring into plugging things in: connectors that make a group of wires
-one plug, and a battery adapter that adds a battery to a XIAO board without soldering.
-The agent retrieves canonical connector guidance, checks full physical header
-rows and fit, then lists the assemblies and store packs separately. JIG assemblies
-are the required default for compatible board-to-board headers; the build records
-exceptions and alternatives for incompatible or unqualified paths. The current
-exact connector model decision is unresolved, and R29 battery and power-bus parts
-remain test candidates. Catalog counts do not establish physical or electrical fit.
+connectors that turn the wires going to one row of pins into a single plug, so
+wiring becomes plugging things in.
+
+The agent uses JIG_ connectors by default. It looks up each board's pin rows, picks
+one connector per row, lists what to buy, and notes any row a connector can't fit.
+**[Get them at jig-robotics.com →](https://jig-robotics.com/support/dupont-housings)**
+
+The exact connector model is still being finalized, so for now the picture guide
+points to JIG_ for the step where the wires go into the connector.
 
 ## License
 
