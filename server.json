@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ai-wes/text-to-reality",
+  "title": "text-to-reality",
+  "description": "Turn an idea into a device anyone can build: parts, printed parts, wiring, code and a picture guide.",
+  "repository": {
+    "url": "https://github.com/ai-wes/text-to-reality",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/ai-wes/text-to-reality",
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "text-to-reality",
+      "version": "0.1.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "TEXT_TO_REALITY_DIR",
+          "description": "Folder where build projects are saved (default: ./text-to-reality)",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

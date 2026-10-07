@@ -1,3 +1,5 @@
+<!-- mcp-name: io.github.ai-wes/text-to-reality -->
+
 <div align="center">
 
 # text-to-reality
@@ -87,7 +89,7 @@ restart. If it can't find `uvx`, use its full path (`which uvx`).
   "mcpServers": {
     "text-to-reality": {
       "command": "uvx",
-      "args": ["--no-config", "--managed-python", "--python", "3.13", "--from", "text-to-reality==0.1.0", "text-to-reality", "mcp"]
+      "args": ["--no-config", "--managed-python", "--python", "3.13", "--from", "text-to-reality==0.1.1", "text-to-reality", "mcp"]
     }
   }
 }
